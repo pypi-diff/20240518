@@ -1080,3 +1080,45 @@
 [2024-05-18 01:03:30] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Remove: archive file [/home/abi/fetcher/tmp/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl.zip]
 [2024-05-18 01:03:30] INFO root fetch - main [MainThread]: End processing [aind-exaspim-pipeline-utils]: success
 [2024-05-18 01:03:30] INFO root fetch - main [MainThread]: Store serial: [23261624]
+[2024-05-18 01:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261624]
+[2024-05-18 01:05:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 01:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aind-exaspim-pipeline-utils
+[2024-05-18 01:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: orangeatz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balsamic
+[2024-05-18 01:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmnt
+[2024-05-18 01:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: romsearch
+[2024-05-18 01:05:39] INFO root fetch - processPackages [balsamic]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-05-18 01:05:39] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-05-18 01:05:39] INFO root fetch - processPackages [romsearch]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 01:05:39] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240516] Old Version: [0.7.52b20240515]
+[2024-05-18 01:05:39] WARNING root fetch - processPackages [orangeatz]: Skipping, unable to determine old version
+[2024-05-18 01:05:39] INFO root fetch - main [MainThread]: End processing [orangeatz] error
+[2024-05-18 01:05:39] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/cf/09/2b7a871ea76b1c6eaa834e308f539aece10e2beb9eea4d2b066d86cb6ba6/balsamic-0.0.17.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Downloading https://files.pythonhosted.org/packages/10/2c/5b3774411a0f43ab224714982aa97b16dab938d7cf6f3cfbed99ab83212f/aind_exaspim_pipeline_utils-0.8.3.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [romsearch]: Downloading https://files.pythonhosted.org/packages/a1/b0/9474d6835dc76daa720f8fe51a01108e5bd3e3b4b6c5d5c8178e92d0ea51/romsearch-0.0.4.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/59/58/e1cbf4036f2c031840ea94e208c999b34ae00f339e11b9d602c8f5c4ccae/tmnt-0.7.52b20240515.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Downloading https://files.pythonhosted.org/packages/b0/4c/f3693d32c3cf34f33dcf66df7d3078dfd39b899a6650f1fc17e1eda7b5d0/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl
+[2024-05-18 01:05:39] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/bd/55/04f724f153f44d5e454dd56eb3d1ceff578c6f0df2bb0d50635315238b9f/balsamic-0.0.18.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [romsearch]: Downloading https://files.pythonhosted.org/packages/8b/94/61a65109ff9ff6127bd91171cb0da6834773a4c7d1494af67a1ae24fa9cc/romsearch-0.0.5.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: executing diffoscope
+[2024-05-18 01:05:39] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_exaspim_pipeline_utils-0.8.3.tar.gz tmp/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl.zip --markdown 20240518/a/aind-exaspim-pipeline-utils/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-05-18 01:05:39] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/f2/17/cc463b6908f44ba1ad2415ee8f03be777bd5b9263a888260be2877646491/tmnt-0.7.52b20240516.tar.gz
+[2024-05-18 01:05:39] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 01:05:39] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.0.17.tar.gz tmp/balsamic-0.0.18.tar.gz --markdown 20240518/b/balsamic/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-05-18 01:05:39] INFO root fetch - processPackages [romsearch]: executing diffoscope
+[2024-05-18 01:05:39] INFO root fetch - processPackages [romsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/romsearch-0.0.4.tar.gz tmp/romsearch-0.0.5.tar.gz --markdown 20240518/r/romsearch/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 01:05:39] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-18 01:05:39] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240515.tar.gz tmp/tmnt-0.7.52b20240516.tar.gz --markdown 20240518/t/tmnt/0.7.52b20240515-0.7.52b20240516/README.md --exclude *.pyd
+[2024-05-18 01:05:40] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Remove: archive file [/home/abi/fetcher/tmp/aind_exaspim_pipeline_utils-0.8.3.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Remove: archive file [/home/abi/fetcher/tmp/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl.zip]
+[2024-05-18 01:05:40] INFO root fetch - main [MainThread]: End processing [aind-exaspim-pipeline-utils]: success
+[2024-05-18 01:05:40] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.17.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.18.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 01:05:40] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240515.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240516.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-18 01:05:40] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.4.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.5.tar.gz]
+[2024-05-18 01:05:40] INFO root fetch - main [MainThread]: End processing [romsearch]: success
+[2024-05-18 01:05:40] INFO root fetch - main [MainThread]: Store serial: [23261640]
