@@ -751,3 +751,33 @@
 [2024-05-18 00:43:48] INFO root fetch - processPackages [std.algorithm]: Remove: archive file [/home/abi/fetcher/tmp/std.algorithm-1.2.9.tar.gz]
 [2024-05-18 00:43:48] INFO root fetch - main [MainThread]: End processing [std.algorithm]: success
 [2024-05-18 00:43:48] INFO root fetch - main [MainThread]: Store serial: [23261487]
+[2024-05-18 00:45:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261487]
+[2024-05-18 00:45:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nmuwd
+[2024-05-18 00:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promptflow-evals
+[2024-05-18 00:45:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: speechtoolkit
+[2024-05-18 00:45:59] INFO root fetch - processPackages [nmuwd]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 00:45:59] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/fd/a1141ab1fbf3ce08581a4159c3eb398fb0620311dfc3d6fbac1da254424b/nmuwd-0.0.8.tar.gz
+[2024-05-18 00:45:59] INFO root fetch - processPackages [speechtoolkit]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 00:45:59] INFO root fetch - processPackages [promptflow-evals]: New version: [0.3.0] Old Version: [0.2.0.dev0]
+[2024-05-18 00:45:59] INFO root fetch - processPackages [promptflow-evals]: Downloading https://files.pythonhosted.org/packages/e9/16/5da580659dc9f590b55167d4e86d0acb3e52b5b8e11b7203946bd78fcc23/promptflow_evals-0.2.0.dev0-py3-none-any.whl
+[2024-05-18 00:45:59] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/b0/79/c49606bf1da5c61a7c9c0f89274582bbca3825388d388dafae7938b040c0/nmuwd-0.0.9.tar.gz
+[2024-05-18 00:45:59] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/f4/dc/7205953553ded87057ccf2fdbd215b1465865499cc785d8ba9ff8ca50b0a/speechtoolkit-0.0.4.tar.gz
+[2024-05-18 00:46:00] INFO root fetch - processPackages [nmuwd]: executing diffoscope
+[2024-05-18 00:46:00] INFO root fetch - processPackages [nmuwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmuwd-0.0.8.tar.gz tmp/nmuwd-0.0.9.tar.gz --markdown 20240518/n/nmuwd/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 00:46:00] INFO root fetch - processPackages [promptflow-evals]: Downloading https://files.pythonhosted.org/packages/48/aa/204cd72a101d5ce8d2e15835aaa03746087d38689e7c45ef96d3f6c7e69b/promptflow_evals-0.3.0-py3-none-any.whl
+[2024-05-18 00:46:00] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/94/4d/768a846f72611a11dfca4cc988b5d0e4df30d023db00d3c54f225a7a74e2/speechtoolkit-0.0.5.tar.gz
+[2024-05-18 00:46:00] INFO root fetch - processPackages [promptflow-evals]: executing diffoscope
+[2024-05-18 00:46:00] INFO root fetch - processPackages [promptflow-evals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptflow_evals-0.2.0.dev0-py3-none-any.whl.zip tmp/promptflow_evals-0.3.0-py3-none-any.whl.zip --markdown 20240518/p/promptflow-evals/0.2.0.dev0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 00:46:00] INFO root fetch - processPackages [speechtoolkit]: executing diffoscope
+[2024-05-18 00:46:00] INFO root fetch - processPackages [speechtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechtoolkit-0.0.4.tar.gz tmp/speechtoolkit-0.0.5.tar.gz --markdown 20240518/s/speechtoolkit/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 00:46:00] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.8.tar.gz]
+[2024-05-18 00:46:00] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.9.tar.gz]
+[2024-05-18 00:46:00] INFO root fetch - main [MainThread]: End processing [nmuwd]: success
+[2024-05-18 00:46:01] INFO root fetch - processPackages [promptflow-evals]: Remove: archive file [/home/abi/fetcher/tmp/promptflow_evals-0.2.0.dev0-py3-none-any.whl.zip]
+[2024-05-18 00:46:01] INFO root fetch - processPackages [promptflow-evals]: Remove: archive file [/home/abi/fetcher/tmp/promptflow_evals-0.3.0-py3-none-any.whl.zip]
+[2024-05-18 00:46:01] INFO root fetch - main [MainThread]: End processing [promptflow-evals]: success
+[2024-05-18 00:46:01] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.4.tar.gz]
+[2024-05-18 00:46:01] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.5.tar.gz]
+[2024-05-18 00:46:01] INFO root fetch - main [MainThread]: End processing [speechtoolkit]: success
+[2024-05-18 00:46:01] INFO root fetch - main [MainThread]: Store serial: [23261496]
