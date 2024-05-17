@@ -1122,3 +1122,60 @@
 [2024-05-18 01:05:40] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.5.tar.gz]
 [2024-05-18 01:05:40] INFO root fetch - main [MainThread]: End processing [romsearch]: success
 [2024-05-18 01:05:40] INFO root fetch - main [MainThread]: Store serial: [23261640]
+[2024-05-18 01:07:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261640]
+[2024-05-18 01:07:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 01:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flwr-nightly
+[2024-05-18 01:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arize-phoenix
+[2024-05-18 01:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langgraph-cli
+[2024-05-18 01:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev
+[2024-05-18 01:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: WPyrogram
+[2024-05-18 01:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ob-metaflow-stubs
+[2024-05-18 01:07:49] INFO root fetch - processPackages [WPyrogram]: New version: [2.0.143] Old Version: [2.0.142]
+[2024-05-18 01:07:49] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240516] Old Version: [1.9.0.dev20240514]
+[2024-05-18 01:07:49] INFO root fetch - processPackages [WPyrogram]: Downloading https://files.pythonhosted.org/packages/cd/bf/5c003b8776f03dc2fc4119746541843034aa835f4ce4b9f47d870cb8e9ab/WPyrogram-2.0.142.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [arize-phoenix]: New version: [4.1.1] Old Version: [4.1.0]
+[2024-05-18 01:07:49] INFO root fetch - processPackages [langgraph-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 01:07:49] INFO root fetch - processPackages [ob-metaflow-stubs]: New version: [3.5] Old Version: [3.4]
+[2024-05-18 01:07:49] INFO root fetch - processPackages [nbdev]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-05-18 01:07:49] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/37/a2/807dea37ee0c4123ff9f9d576f634014889f1ce22c2bfa356e66996159f6/flwr_nightly-1.9.0.dev20240514.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [arize-phoenix]: Downloading https://files.pythonhosted.org/packages/bb/47/c9e3b8a81a6a2b546c6b8947b6e44a2b71a2b089bb734dbe97aa20f0a7d8/arize_phoenix-4.1.0.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [ob-metaflow-stubs]: Downloading https://files.pythonhosted.org/packages/53/2a/073744b9c789d2d558bb369a5a25a6008f8faaabf308e4362da45df03e72/ob-metaflow-stubs-3.4.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [langgraph-cli]: Downloading https://files.pythonhosted.org/packages/fc/56/9c893aa50c9bdec2cb8649d7ef7ebf200dc6b66993eaf52ee01fef032cb5/langgraph_cli-0.1.8.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/81/51/fab74a54685fb8abc7a3e35834c91c5b2dace9b02d4cb11fdd42c1e1671e/nbdev-2.3.8.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [WPyrogram]: Downloading https://files.pythonhosted.org/packages/55/e4/1c69dca200e1b0b9283d863aec9dad0ff56ee24300398f56da090a8e4a1e/wpyrogram-2.0.143.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/d2/d1/94b8b040a9bee3433e838eaf2776630bfe87d989502781e4d1c0014a5d3e/flwr_nightly-1.9.0.dev20240516.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-05-18 01:07:49] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240514.tar.gz tmp/flwr_nightly-1.9.0.dev20240516.tar.gz --markdown 20240518/f/flwr-nightly/1.9.0.dev20240514-1.9.0.dev20240516/README.md --exclude *.pyd
+[2024-05-18 01:07:49] INFO root fetch - processPackages [WPyrogram]: executing diffoscope
+[2024-05-18 01:07:49] INFO root fetch - processPackages [WPyrogram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WPyrogram-2.0.142.tar.gz tmp/wpyrogram-2.0.143.tar.gz --markdown 20240518/W/WPyrogram/2.0.142-2.0.143/README.md --exclude *.pyd
+[2024-05-18 01:07:49] INFO root fetch - processPackages [arize-phoenix]: Downloading https://files.pythonhosted.org/packages/84/63/2355ff3c2de2b55f85c1f692d394f9b724efdc616293de7c5303763ff571/arize_phoenix-4.1.1.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [ob-metaflow-stubs]: Downloading https://files.pythonhosted.org/packages/5c/ab/7e20ec657daf08b1bb39a4aa1534fad5c8439237137e49fc22d358790fbe/ob-metaflow-stubs-3.5.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [langgraph-cli]: Downloading https://files.pythonhosted.org/packages/77/ca/8e1b0b1db8b8eecd87faeb6c20af5e19e5561f1c240cb26d5c92f30a80a2/langgraph_cli-0.1.9.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [langgraph-cli]: executing diffoscope
+[2024-05-18 01:07:49] INFO root fetch - processPackages [langgraph-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langgraph_cli-0.1.8.tar.gz tmp/langgraph_cli-0.1.9.tar.gz --markdown 20240518/l/langgraph-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 01:07:49] INFO root fetch - processPackages [arize-phoenix]: executing diffoscope
+[2024-05-18 01:07:49] INFO root fetch - processPackages [arize-phoenix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arize_phoenix-4.1.0.tar.gz tmp/arize_phoenix-4.1.1.tar.gz --markdown 20240518/a/arize-phoenix/4.1.0-4.1.1/README.md --exclude *.pyd
+[2024-05-18 01:07:49] INFO root fetch - processPackages [nbdev]: Downloading https://files.pythonhosted.org/packages/40/d2/c90832233197e9f55e8869a7f75fd019929dcd8c6c18e14a34a4c1c087aa/nbdev-2.3.9.tar.gz
+[2024-05-18 01:07:49] INFO root fetch - processPackages [ob-metaflow-stubs]: executing diffoscope
+[2024-05-18 01:07:49] INFO root fetch - processPackages [ob-metaflow-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-metaflow-stubs-3.4.tar.gz tmp/ob-metaflow-stubs-3.5.tar.gz --markdown 20240518/o/ob-metaflow-stubs/3.4-3.5/README.md --exclude *.pyd
+[2024-05-18 01:07:50] INFO root fetch - processPackages [nbdev]: executing diffoscope
+[2024-05-18 01:07:50] INFO root fetch - processPackages [nbdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-2.3.8.tar.gz tmp/nbdev-2.3.9.tar.gz --markdown 20240518/n/nbdev/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-05-18 01:07:50] INFO root fetch - processPackages [langgraph-cli]: Remove: archive file [/home/abi/fetcher/tmp/langgraph_cli-0.1.8.tar.gz]
+[2024-05-18 01:07:50] INFO root fetch - processPackages [langgraph-cli]: Remove: archive file [/home/abi/fetcher/tmp/langgraph_cli-0.1.9.tar.gz]
+[2024-05-18 01:07:50] INFO root fetch - main [MainThread]: End processing [langgraph-cli]: success
+[2024-05-18 01:07:50] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.8.tar.gz]
+[2024-05-18 01:07:50] INFO root fetch - processPackages [nbdev]: Remove: archive file [/home/abi/fetcher/tmp/nbdev-2.3.9.tar.gz]
+[2024-05-18 01:07:50] INFO root fetch - main [MainThread]: End processing [nbdev]: success
+[2024-05-18 01:07:50] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240514.tar.gz]
+[2024-05-18 01:07:50] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240516.tar.gz]
+[2024-05-18 01:07:50] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-05-18 01:07:51] INFO root fetch - processPackages [arize-phoenix]: Remove: archive file [/home/abi/fetcher/tmp/arize_phoenix-4.1.0.tar.gz]
+[2024-05-18 01:07:51] INFO root fetch - processPackages [arize-phoenix]: Remove: archive file [/home/abi/fetcher/tmp/arize_phoenix-4.1.1.tar.gz]
+[2024-05-18 01:07:51] INFO root fetch - main [MainThread]: End processing [arize-phoenix]: success
+[2024-05-18 01:07:51] INFO root fetch - processPackages [ob-metaflow-stubs]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-stubs-3.4.tar.gz]
+[2024-05-18 01:07:51] INFO root fetch - processPackages [ob-metaflow-stubs]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-stubs-3.5.tar.gz]
+[2024-05-18 01:07:51] INFO root fetch - main [MainThread]: End processing [ob-metaflow-stubs]: success
+[2024-05-18 01:07:51] INFO root fetch - processPackages [WPyrogram]: Remove: archive file [/home/abi/fetcher/tmp/WPyrogram-2.0.142.tar.gz]
+[2024-05-18 01:07:51] INFO root fetch - processPackages [WPyrogram]: Remove: archive file [/home/abi/fetcher/tmp/wpyrogram-2.0.143.tar.gz]
+[2024-05-18 01:07:51] INFO root fetch - main [MainThread]: End processing [WPyrogram]: success
+[2024-05-18 01:07:51] INFO root fetch - main [MainThread]: Store serial: [23261658]
