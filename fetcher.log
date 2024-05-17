@@ -1233,3 +1233,27 @@
 [2024-05-18 01:12:15] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-18 01:12:15] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-18 01:12:15] INFO root fetch - main [MainThread]: Store serial: [23261679]
+[2024-05-18 01:14:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261679]
+[2024-05-18 01:14:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 01:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Surfactant
+[2024-05-18 01:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langgraph-sdk
+[2024-05-18 01:14:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: loungersz
+[2024-05-18 01:14:24] INFO root fetch - processPackages [Surfactant]: New version: [0.0.0rc6] Old Version: [0.0.0rc5]
+[2024-05-18 01:14:24] WARNING root fetch - processPackages [loungersz]: Skipping, unable to determine old version
+[2024-05-18 01:14:24] INFO root fetch - processPackages [langgraph-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 01:14:24] INFO root fetch - main [MainThread]: End processing [loungersz] error
+[2024-05-18 01:14:24] INFO root fetch - processPackages [Surfactant]: Downloading https://files.pythonhosted.org/packages/c0/69/ff7507e33d322307a2fb74273db54bb2805aea6635102530fc78298b0241/surfactant-0.0.0rc5.tar.gz
+[2024-05-18 01:14:24] INFO root fetch - processPackages [langgraph-sdk]: Downloading https://files.pythonhosted.org/packages/2f/d6/3e18dc0897ffacd07f4650981b3877b7072e98f22794c8419f0b7b441b59/langgraph_sdk-0.1.8.tar.gz
+[2024-05-18 01:14:24] INFO root fetch - processPackages [langgraph-sdk]: Downloading https://files.pythonhosted.org/packages/d2/c3/49fda358745f0e6fbadf8b07afbd8ad5e9c27db313cefdec8712a17ad51c/langgraph_sdk-0.1.9.tar.gz
+[2024-05-18 01:14:24] INFO root fetch - processPackages [Surfactant]: Downloading https://files.pythonhosted.org/packages/89/3a/f9992074e7f59326afa1c51eb73fa7a93e8f52721afbf2824b9bcb0466e3/surfactant-0.0.0rc6.tar.gz
+[2024-05-18 01:14:24] INFO root fetch - processPackages [langgraph-sdk]: executing diffoscope
+[2024-05-18 01:14:24] INFO root fetch - processPackages [langgraph-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langgraph_sdk-0.1.8.tar.gz tmp/langgraph_sdk-0.1.9.tar.gz --markdown 20240518/l/langgraph-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 01:14:24] INFO root fetch - processPackages [Surfactant]: executing diffoscope
+[2024-05-18 01:14:24] INFO root fetch - processPackages [Surfactant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfactant-0.0.0rc5.tar.gz tmp/surfactant-0.0.0rc6.tar.gz --markdown 20240518/S/Surfactant/0.0.0rc5-0.0.0rc6/README.md --exclude *.pyd
+[2024-05-18 01:14:25] INFO root fetch - processPackages [langgraph-sdk]: Remove: archive file [/home/abi/fetcher/tmp/langgraph_sdk-0.1.8.tar.gz]
+[2024-05-18 01:14:25] INFO root fetch - processPackages [langgraph-sdk]: Remove: archive file [/home/abi/fetcher/tmp/langgraph_sdk-0.1.9.tar.gz]
+[2024-05-18 01:14:25] INFO root fetch - main [MainThread]: End processing [langgraph-sdk]: success
+[2024-05-18 01:14:25] INFO root fetch - processPackages [Surfactant]: Remove: archive file [/home/abi/fetcher/tmp/surfactant-0.0.0rc5.tar.gz]
+[2024-05-18 01:14:25] INFO root fetch - processPackages [Surfactant]: Remove: archive file [/home/abi/fetcher/tmp/surfactant-0.0.0rc6.tar.gz]
+[2024-05-18 01:14:25] INFO root fetch - main [MainThread]: End processing [Surfactant]: success
+[2024-05-18 01:14:25] INFO root fetch - main [MainThread]: Store serial: [23261698]
