@@ -1400,3 +1400,42 @@
 [2024-05-18 01:23:12] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.4.0.tar.gz]
 [2024-05-18 01:23:12] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
 [2024-05-18 01:23:12] INFO root fetch - main [MainThread]: Store serial: [23261749]
+[2024-05-18 01:25:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261749]
+[2024-05-18 01:25:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 01:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neon-audio
+[2024-05-18 01:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: camera-ui-python-types
+[2024-05-18 01:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: benedictsz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: balsamic
+[2024-05-18 01:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yandex-balance-deepdiff
+[2024-05-18 01:25:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yandex-hec-sender
+[2024-05-18 01:25:21] INFO root fetch - processPackages [balsamic]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 01:25:21] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 01:25:21] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/cf/1a/184aa44494b0bc0f875bf50c00e99119b60e4248a082e9d8cdbfe5e92d71/balsamic-0.1.0.tar.gz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [neon-audio]: New version: [1.5.2a6] Old Version: [1.5.2a5]
+[2024-05-18 01:25:21] ERROR root fetch - processPackages [yandex-balance-deepdiff]: Unable to get metadata: No such project 'yandex-balance-deepdiff'
+[2024-05-18 01:25:21] INFO root fetch - main [MainThread]: End processing [yandex-balance-deepdiff] error
+[2024-05-18 01:25:21] WARNING root fetch - processPackages [benedictsz]: Skipping, unable to determine old version
+[2024-05-18 01:25:21] INFO root fetch - main [MainThread]: End processing [benedictsz] error
+[2024-05-18 01:25:21] ERROR root fetch - processPackages [yandex-hec-sender]: Unable to get metadata: No such project 'yandex-hec-sender'
+[2024-05-18 01:25:21] INFO root fetch - main [MainThread]: End processing [yandex-hec-sender] error
+[2024-05-18 01:25:21] INFO root fetch - processPackages [neon-audio]: Downloading https://files.pythonhosted.org/packages/e7/f0/e04824a2f8b0ca6224f4c5ca6b69e514425e69be3b655b127c29ec46940e/neon-audio-1.5.2a5.tar.gz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-18 01:25:21] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240518/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 01:25:21] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/72/d8/9a15773560d645535a7495188ae1ddb8ba8d77443d16c79fa97bfbbdf924/balsamic-0.1.1.tar.gz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 01:25:21] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.0.tar.gz tmp/balsamic-0.1.1.tar.gz --markdown 20240518/b/balsamic/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 01:25:21] INFO root fetch - processPackages [neon-audio]: Downloading https://files.pythonhosted.org/packages/c1/b6/2cea4d02be624e65714e954ddf59ffcfa3cb592639bf5b57cf2b245739c4/neon-audio-1.5.2a6.tar.gz
+[2024-05-18 01:25:21] INFO root fetch - processPackages [neon-audio]: executing diffoscope
+[2024-05-18 01:25:21] INFO root fetch - processPackages [neon-audio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon-audio-1.5.2a5.tar.gz tmp/neon-audio-1.5.2a6.tar.gz --markdown 20240518/n/neon-audio/1.5.2a5-1.5.2a6/README.md --exclude *.pyd
+[2024-05-18 01:25:22] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-18 01:25:22] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-18 01:25:22] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-18 01:25:22] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.0.tar.gz]
+[2024-05-18 01:25:22] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.1.tar.gz]
+[2024-05-18 01:25:22] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 01:25:22] INFO root fetch - processPackages [neon-audio]: Remove: archive file [/home/abi/fetcher/tmp/neon-audio-1.5.2a5.tar.gz]
+[2024-05-18 01:25:22] INFO root fetch - processPackages [neon-audio]: Remove: archive file [/home/abi/fetcher/tmp/neon-audio-1.5.2a6.tar.gz]
+[2024-05-18 01:25:22] INFO root fetch - main [MainThread]: End processing [neon-audio]: success
+[2024-05-18 01:25:22] INFO root fetch - main [MainThread]: Store serial: [23261850]
