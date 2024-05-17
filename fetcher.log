@@ -1529,3 +1529,48 @@
 [2024-05-18 01:34:01] INFO root fetch - processPackages [pynrw]: Remove: archive file [/home/abi/fetcher/tmp/pynrw-1.4.0.tar.gz]
 [2024-05-18 01:34:01] INFO root fetch - main [MainThread]: End processing [pynrw]: success
 [2024-05-18 01:34:01] INFO root fetch - main [MainThread]: Store serial: [23261903]
+[2024-05-18 01:36:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261903]
+[2024-05-18 01:36:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 01:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fleingz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yt-dlp
+[2024-05-18 01:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opentrons-shared-data
+[2024-05-18 01:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cnparser
+[2024-05-18 01:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balsamic
+[2024-05-18 01:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: celery-debug
+[2024-05-18 01:36:10] WARNING root fetch - processPackages [celery-debug]: Skipping, unable to determine old version
+[2024-05-18 01:36:10] INFO root fetch - main [MainThread]: End processing [celery-debug] error
+[2024-05-18 01:36:10] INFO root fetch - processPackages [balsamic]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-18 01:36:10] INFO root fetch - processPackages [opentrons-shared-data]: New version: [7.3.0a4] Old Version: [7.3.0a3]
+[2024-05-18 01:36:10] INFO root fetch - processPackages [yt-dlp]: New version: [2024.5.8.232715.dev0] Old Version: [2024.5.5.232701.dev0]
+[2024-05-18 01:36:10] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/84/da/590392ee0fd9a8ba3e75593530b4a2d1a780a466a90a325e93bebacc7236/balsamic-0.1.4.tar.gz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [cnparser]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-05-18 01:36:10] WARNING root fetch - processPackages [fleingz]: Skipping, unable to determine old version
+[2024-05-18 01:36:10] INFO root fetch - main [MainThread]: End processing [fleingz] error
+[2024-05-18 01:36:10] INFO root fetch - processPackages [opentrons-shared-data]: Downloading https://files.pythonhosted.org/packages/b8/de/cef481e603002d253f1b856b0784a3a84e95ef53cf9a0742392a99f76582/opentrons_shared_data-7.3.0a3.tar.gz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/84/b9/776c1dd6af3d11b008b3d15993bd9675fea67e86f7b78a1dac88febb9fcf/yt_dlp-2024.5.5.232701.dev0.tar.gz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [cnparser]: Downloading https://files.pythonhosted.org/packages/81/41/de232370da23f745abf8b44ecd548a193b187bccccbe300f6f58700b0ab1/cnparser-1.5.2.tar.gz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/99/bc/b21bd601c71311fde41a66242ef381dd2b96bc00cfb4a45d6e71491eb1a7/balsamic-0.1.5.tar.gz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [opentrons-shared-data]: Downloading https://files.pythonhosted.org/packages/77/42/a1c03a21bfecda1ccd5e9419aeecd2f5036a614e01c0e03703faade8941a/opentrons_shared_data-7.3.0a4.tar.gz
+[2024-05-18 01:36:10] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 01:36:10] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.4.tar.gz tmp/balsamic-0.1.5.tar.gz --markdown 20240518/b/balsamic/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-18 01:36:10] INFO root fetch - processPackages [opentrons-shared-data]: executing diffoscope
+[2024-05-18 01:36:10] INFO root fetch - processPackages [opentrons-shared-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentrons_shared_data-7.3.0a3.tar.gz tmp/opentrons_shared_data-7.3.0a4.tar.gz --markdown 20240518/o/opentrons-shared-data/7.3.0a3-7.3.0a4/README.md --exclude *.pyd
+[2024-05-18 01:36:10] INFO root fetch - processPackages [yt-dlp]: Downloading https://files.pythonhosted.org/packages/29/37/4d7e7b1d095d515aef0e3e9af758d0dc33fceebfe46ebce02a1a240d274c/yt_dlp-2024.5.8.232715.dev0.tar.gz
+[2024-05-18 01:36:11] INFO root fetch - processPackages [cnparser]: Downloading https://files.pythonhosted.org/packages/24/9f/3d80565b3b1a937ecf726bc5dfd8a98a219fee38f4518a5608340e7d96a0/cnparser-1.5.3.tar.gz
+[2024-05-18 01:36:11] INFO root fetch - processPackages [cnparser]: executing diffoscope
+[2024-05-18 01:36:11] INFO root fetch - processPackages [cnparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnparser-1.5.2.tar.gz tmp/cnparser-1.5.3.tar.gz --markdown 20240518/c/cnparser/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-05-18 01:36:11] INFO root fetch - processPackages [yt-dlp]: executing diffoscope
+[2024-05-18 01:36:11] INFO root fetch - processPackages [yt-dlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz --markdown 20240518/y/yt-dlp/2024.5.5.232701.dev0-2024.5.8.232715.dev0/README.md --exclude *.pyd
+[2024-05-18 01:36:11] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.4.tar.gz]
+[2024-05-18 01:36:11] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.5.tar.gz]
+[2024-05-18 01:36:11] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 01:36:11] INFO root fetch - processPackages [cnparser]: Remove: archive file [/home/abi/fetcher/tmp/cnparser-1.5.2.tar.gz]
+[2024-05-18 01:36:11] INFO root fetch - processPackages [cnparser]: Remove: archive file [/home/abi/fetcher/tmp/cnparser-1.5.3.tar.gz]
+[2024-05-18 01:36:11] INFO root fetch - main [MainThread]: End processing [cnparser]: success
+[2024-05-18 01:36:12] INFO root fetch - processPackages [opentrons-shared-data]: Remove: archive file [/home/abi/fetcher/tmp/opentrons_shared_data-7.3.0a3.tar.gz]
+[2024-05-18 01:36:12] INFO root fetch - processPackages [opentrons-shared-data]: Remove: archive file [/home/abi/fetcher/tmp/opentrons_shared_data-7.3.0a4.tar.gz]
+[2024-05-18 01:36:12] INFO root fetch - main [MainThread]: End processing [opentrons-shared-data]: success
+[2024-05-18 01:36:16] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.5.232701.dev0.tar.gz]
+[2024-05-18 01:36:16] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
+[2024-05-18 01:36:16] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
+[2024-05-18 01:36:16] INFO root fetch - main [MainThread]: Store serial: [23261922]
