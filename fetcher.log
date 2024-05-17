@@ -1640,3 +1640,21 @@
 [2024-05-18 01:40:43] INFO root fetch - processPackages [opentrons]: Remove: archive file [/home/abi/fetcher/tmp/opentrons-7.3.0a5.tar.gz]
 [2024-05-18 01:40:43] INFO root fetch - main [MainThread]: End processing [opentrons]: success
 [2024-05-18 01:40:43] INFO root fetch - main [MainThread]: Store serial: [23261948]
+[2024-05-18 01:42:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261948]
+[2024-05-18 01:42:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 01:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dfiq
+[2024-05-18 01:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycde
+[2024-05-18 01:42:52] INFO root fetch - processPackages [dfiq]: New version: [1.0.1] Old Version: [0.0.1]
+[2024-05-18 01:42:52] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev1004] Old Version: [0.3.0]
+[2024-05-18 01:42:52] INFO root fetch - processPackages [dfiq]: Downloading https://files.pythonhosted.org/packages/db/a2/8b76ab88b1e2bec854a693d1f92decaee4d2923bb8dd04983bf7ddde55ff/dfiq-0.0.1.tar.gz
+[2024-05-18 01:42:52] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/72/60/8ffab5d54bccb02a3c7b699d1242b48e89600f3506dfdf0df2e33dcbc437/pycde-0.3.0-cp39-cp39-win_amd64.whl
+[2024-05-18 01:42:53] INFO root fetch - processPackages [dfiq]: Downloading https://files.pythonhosted.org/packages/2f/50/d22a01e5c26d2e26f736457bc523f9739645d203ba56073ab9063c193a63/dfiq-1.0.1.tar.gz
+[2024-05-18 01:42:53] INFO root fetch - processPackages [dfiq]: executing diffoscope
+[2024-05-18 01:42:53] INFO root fetch - processPackages [dfiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfiq-0.0.1.tar.gz tmp/dfiq-1.0.1.tar.gz --markdown 20240518/d/dfiq/0.0.1-1.0.1/README.md --exclude *.pyd
+[2024-05-18 01:42:53] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/ee/db/ff625fa7c54b68ea2d013db0ba0ab63d59b447a6a3e40a4f2733b691a396/pycde-0.3.1.dev1004-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 01:42:53] INFO root fetch - processPackages [dfiq]: Remove: archive file [/home/abi/fetcher/tmp/dfiq-0.0.1.tar.gz]
+[2024-05-18 01:42:53] INFO root fetch - processPackages [dfiq]: Remove: archive file [/home/abi/fetcher/tmp/dfiq-1.0.1.tar.gz]
+[2024-05-18 01:42:53] INFO root fetch - main [MainThread]: End processing [dfiq]: success
+[2024-05-18 01:42:53] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21678313>=10485760
+[2024-05-18 01:42:53] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-05-18 01:42:53] INFO root fetch - main [MainThread]: Store serial: [23261953]
