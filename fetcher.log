@@ -715,3 +715,39 @@
 [2024-05-18 00:41:34] INFO root fetch - processPackages [dom-tokenizers]: Remove: archive file [/home/abi/fetcher/tmp/dom_tokenizers-0.0.5.tar.gz]
 [2024-05-18 00:41:34] INFO root fetch - main [MainThread]: End processing [dom-tokenizers]: success
 [2024-05-18 00:41:34] INFO root fetch - main [MainThread]: Store serial: [23261472]
+[2024-05-18 00:43:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261472]
+[2024-05-18 00:43:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 00:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: STAR-outliers
+[2024-05-18 00:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oda-api
+[2024-05-18 00:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: std.algorithm
+[2024-05-18 00:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kvalchemy
+[2024-05-18 00:43:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: superavitz
+[2024-05-18 00:43:43] WARNING root fetch - processPackages [kvalchemy]: Skipping, unable to determine old version
+[2024-05-18 00:43:43] INFO root fetch - main [MainThread]: End processing [kvalchemy] error
+[2024-05-18 00:43:43] INFO root fetch - processPackages [oda-api]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-18 00:43:43] INFO root fetch - processPackages [STAR-outliers]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:43:43] INFO root fetch - processPackages [std.algorithm]: New version: [1.2.9] Old Version: [1.2.7]
+[2024-05-18 00:43:43] INFO root fetch - processPackages [oda-api]: Downloading https://files.pythonhosted.org/packages/95/dc/fbf18dd3735f910560213f1424c6fc597d7f5e36e1ba06cf680b8c8762ee/oda_api-1.2.8.tar.gz
+[2024-05-18 00:43:43] WARNING root fetch - processPackages [superavitz]: Skipping, unable to determine old version
+[2024-05-18 00:43:43] INFO root fetch - main [MainThread]: End processing [superavitz] error
+[2024-05-18 00:43:43] INFO root fetch - processPackages [STAR-outliers]: Downloading https://files.pythonhosted.org/packages/6c/84/73ec09e76d28468cbb20c64b8cda5f9fe1dd109266993c590d550edc5d2c/STAR_outliers-0.1.8.tar.gz
+[2024-05-18 00:43:43] INFO root fetch - processPackages [std.algorithm]: Downloading https://files.pythonhosted.org/packages/65/03/d0adac1756ba9662368a0edf75e75f5313b5e23e64a95b5bd347a785b52d/std.algorithm-1.2.7.tar.gz
+[2024-05-18 00:43:43] INFO root fetch - processPackages [oda-api]: Downloading https://files.pythonhosted.org/packages/b2/5d/5ffa93f91beafff6177972217920ebbc40108b59fc6f345449b13a5adca6/oda_api-1.2.9.tar.gz
+[2024-05-18 00:43:43] INFO root fetch - processPackages [oda-api]: executing diffoscope
+[2024-05-18 00:43:43] INFO root fetch - processPackages [oda-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oda_api-1.2.8.tar.gz tmp/oda_api-1.2.9.tar.gz --markdown 20240518/o/oda-api/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-18 00:43:43] INFO root fetch - processPackages [STAR-outliers]: Downloading https://files.pythonhosted.org/packages/75/1e/db4af784f9a5593f34c33f74c3627dbc80e9bc7615984d96734803b32a2d/STAR_outliers-0.1.9.tar.gz
+[2024-05-18 00:43:44] INFO root fetch - processPackages [STAR-outliers]: executing diffoscope
+[2024-05-18 00:43:44] INFO root fetch - processPackages [STAR-outliers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAR_outliers-0.1.8.tar.gz tmp/STAR_outliers-0.1.9.tar.gz --markdown 20240518/S/STAR-outliers/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:43:44] INFO root fetch - processPackages [oda-api]: Remove: archive file [/home/abi/fetcher/tmp/oda_api-1.2.8.tar.gz]
+[2024-05-18 00:43:44] INFO root fetch - processPackages [oda-api]: Remove: archive file [/home/abi/fetcher/tmp/oda_api-1.2.9.tar.gz]
+[2024-05-18 00:43:44] INFO root fetch - main [MainThread]: End processing [oda-api]: success
+[2024-05-18 00:43:44] INFO root fetch - processPackages [STAR-outliers]: Remove: archive file [/home/abi/fetcher/tmp/STAR_outliers-0.1.8.tar.gz]
+[2024-05-18 00:43:44] INFO root fetch - processPackages [STAR-outliers]: Remove: archive file [/home/abi/fetcher/tmp/STAR_outliers-0.1.9.tar.gz]
+[2024-05-18 00:43:44] INFO root fetch - main [MainThread]: End processing [STAR-outliers]: success
+[2024-05-18 00:43:44] INFO root fetch - processPackages [std.algorithm]: Downloading https://files.pythonhosted.org/packages/9b/ad/917d134f8ef04b9a24afdc6188e15a73913a3f230dc2ad15cdc60a8e6400/std.algorithm-1.2.9.tar.gz
+[2024-05-18 00:43:45] INFO root fetch - processPackages [std.algorithm]: executing diffoscope
+[2024-05-18 00:43:45] INFO root fetch - processPackages [std.algorithm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/std.algorithm-1.2.7.tar.gz tmp/std.algorithm-1.2.9.tar.gz --markdown 20240518/s/std.algorithm/1.2.7-1.2.9/README.md --exclude *.pyd
+[2024-05-18 00:43:48] INFO root fetch - processPackages [std.algorithm]: Remove: archive file [/home/abi/fetcher/tmp/std.algorithm-1.2.7.tar.gz]
+[2024-05-18 00:43:48] INFO root fetch - processPackages [std.algorithm]: Remove: archive file [/home/abi/fetcher/tmp/std.algorithm-1.2.9.tar.gz]
+[2024-05-18 00:43:48] INFO root fetch - main [MainThread]: End processing [std.algorithm]: success
+[2024-05-18 00:43:48] INFO root fetch - main [MainThread]: Store serial: [23261487]
