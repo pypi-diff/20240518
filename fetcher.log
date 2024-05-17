@@ -1356,3 +1356,21 @@
 [2024-05-18 01:18:48] INFO root fetch - processPackages [vmklib]: Remove: archive file [/home/abi/fetcher/tmp/vmklib-2.0.0.tar.gz]
 [2024-05-18 01:18:48] INFO root fetch - main [MainThread]: End processing [vmklib]: success
 [2024-05-18 01:18:48] INFO root fetch - main [MainThread]: Store serial: [23261731]
+[2024-05-18 01:20:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261731]
+[2024-05-18 01:20:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 01:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phocaz
+[2024-05-18 01:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiotraq-bot
+[2024-05-18 01:20:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glidergun
+[2024-05-18 01:20:57] INFO root fetch - processPackages [glidergun]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-18 01:20:57] WARNING root fetch - processPackages [aiotraq-bot]: Skipping, unable to determine old version
+[2024-05-18 01:20:57] INFO root fetch - main [MainThread]: End processing [aiotraq-bot] error
+[2024-05-18 01:20:57] INFO root fetch - processPackages [glidergun]: Downloading https://files.pythonhosted.org/packages/d2/12/43f7c7fc6f33ba98c4d8e57807c53005ad9b3cf4ffbede32c3c2e33626a6/glidergun-0.5.6.tar.gz
+[2024-05-18 01:20:57] WARNING root fetch - processPackages [phocaz]: Skipping, unable to determine old version
+[2024-05-18 01:20:57] INFO root fetch - main [MainThread]: End processing [phocaz] error
+[2024-05-18 01:20:58] INFO root fetch - processPackages [glidergun]: Downloading https://files.pythonhosted.org/packages/c9/eb/59cf2effe0e22b30328daa5a55b6859ccd32803c2b7d012bc6a0486b6474/glidergun-0.5.7.tar.gz
+[2024-05-18 01:20:58] INFO root fetch - processPackages [glidergun]: executing diffoscope
+[2024-05-18 01:20:58] INFO root fetch - processPackages [glidergun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glidergun-0.5.6.tar.gz tmp/glidergun-0.5.7.tar.gz --markdown 20240518/g/glidergun/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-18 01:20:58] INFO root fetch - processPackages [glidergun]: Remove: archive file [/home/abi/fetcher/tmp/glidergun-0.5.6.tar.gz]
+[2024-05-18 01:20:58] INFO root fetch - processPackages [glidergun]: Remove: archive file [/home/abi/fetcher/tmp/glidergun-0.5.7.tar.gz]
+[2024-05-18 01:20:58] INFO root fetch - main [MainThread]: End processing [glidergun]: success
+[2024-05-18 01:20:58] INFO root fetch - main [MainThread]: Store serial: [23261741]
