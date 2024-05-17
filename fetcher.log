@@ -409,3 +409,27 @@
 [2024-05-18 00:18:59] INFO root fetch - processPackages [vertagus]: Remove: archive file [/home/abi/fetcher/tmp/vertagus-0.1.0b4.tar.gz]
 [2024-05-18 00:18:59] INFO root fetch - main [MainThread]: End processing [vertagus]: success
 [2024-05-18 00:18:59] INFO root fetch - main [MainThread]: Store serial: [23261322]
+[2024-05-18 00:21:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261322]
+[2024-05-18 00:21:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unstructured
+[2024-05-18 00:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ua-generator
+[2024-05-18 00:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiotraq-bot
+[2024-05-18 00:21:08] INFO root fetch - processPackages [unstructured]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-18 00:21:08] WARNING root fetch - processPackages [aiotraq-bot]: Skipping, unable to determine old version
+[2024-05-18 00:21:08] INFO root fetch - processPackages [ua-generator]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-05-18 00:21:08] INFO root fetch - main [MainThread]: End processing [aiotraq-bot] error
+[2024-05-18 00:21:08] INFO root fetch - processPackages [unstructured]: Downloading https://files.pythonhosted.org/packages/2b/07/65dbf266473566e0ec468de7b1dde0f34f9ec418de3f2fd0a36ec1c81a29/unstructured-0.9.2.tar.gz
+[2024-05-18 00:21:08] INFO root fetch - processPackages [ua-generator]: Downloading https://files.pythonhosted.org/packages/1f/8e/9d25d860ea90a524bf13366084abb13d1c7adde919dd5222307b2f243982/ua-generator-0.4.2.tar.gz
+[2024-05-18 00:21:08] INFO root fetch - processPackages [ua-generator]: Downloading https://files.pythonhosted.org/packages/03/e4/4322622cac27f21320b4e191ce5003c22c45e49aa054ef1f37345ae2a563/ua_generator-0.5.0.tar.gz
+[2024-05-18 00:21:08] INFO root fetch - processPackages [ua-generator]: executing diffoscope
+[2024-05-18 00:21:08] INFO root fetch - processPackages [ua-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ua-generator-0.4.2.tar.gz tmp/ua_generator-0.5.0.tar.gz --markdown 20240518/u/ua-generator/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-05-18 00:21:09] INFO root fetch - processPackages [unstructured]: Downloading https://files.pythonhosted.org/packages/ac/a9/a2a4960862c51f378935fe68784e0e92c49da56872740acd70e6c10853e0/unstructured-0.9.3.tar.gz
+[2024-05-18 00:21:09] INFO root fetch - processPackages [unstructured]: executing diffoscope
+[2024-05-18 00:21:09] INFO root fetch - processPackages [unstructured]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unstructured-0.9.2.tar.gz tmp/unstructured-0.9.3.tar.gz --markdown 20240518/u/unstructured/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-18 00:21:09] INFO root fetch - processPackages [ua-generator]: Remove: archive file [/home/abi/fetcher/tmp/ua-generator-0.4.2.tar.gz]
+[2024-05-18 00:21:09] INFO root fetch - processPackages [ua-generator]: Remove: archive file [/home/abi/fetcher/tmp/ua_generator-0.5.0.tar.gz]
+[2024-05-18 00:21:09] INFO root fetch - main [MainThread]: End processing [ua-generator]: success
+[2024-05-18 00:21:10] INFO root fetch - processPackages [unstructured]: Remove: archive file [/home/abi/fetcher/tmp/unstructured-0.9.2.tar.gz]
+[2024-05-18 00:21:10] INFO root fetch - processPackages [unstructured]: Remove: archive file [/home/abi/fetcher/tmp/unstructured-0.9.3.tar.gz]
+[2024-05-18 00:21:10] INFO root fetch - main [MainThread]: End processing [unstructured]: success
+[2024-05-18 00:21:10] INFO root fetch - main [MainThread]: Store serial: [23261333]
