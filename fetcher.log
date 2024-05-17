@@ -1692,3 +1692,42 @@
 [2024-05-18 01:45:04] INFO root fetch - processPackages [pydeephaven]: Remove: archive file [/home/abi/fetcher/tmp/pydeephaven-0.9.0-py3-none-any.whl.zip]
 [2024-05-18 01:45:04] INFO root fetch - main [MainThread]: End processing [pydeephaven]: success
 [2024-05-18 01:45:04] INFO root fetch - main [MainThread]: Store serial: [23261972]
+[2024-05-18 01:47:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261972]
+[2024-05-18 01:47:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 01:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KT17
+[2024-05-18 01:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai-priority-loadbalancer
+[2024-05-18 01:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkscreener
+[2024-05-18 01:47:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: camera-ui-python-types
+[2024-05-18 01:47:14] INFO root fetch - processPackages [openai-priority-loadbalancer]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-18 01:47:14] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 01:47:14] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240517.381] Old Version: [0.44.20240517.380]
+[2024-05-18 01:47:14] INFO root fetch - processPackages [openai-priority-loadbalancer]: Downloading https://files.pythonhosted.org/packages/cb/cd/a410b3479bf817811ca760936800b7c29d4308003eebfb930e8f66d7edcf/openai_priority_loadbalancer-1.0.5.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [KT17]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-18 01:47:14] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/15/b5/2d3a21d94ecba349cf8c18912346ec3ab976858ab37ea97ec25fe056035d/pkscreener-0.44.20240517.380.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [KT17]: Downloading https://files.pythonhosted.org/packages/e1/c3/68f10b8b12ca0ed20562e07d974d918271d3e680447c283c59c7a3222ec0/KT17-1.1.0-py3-none-any.whl
+[2024-05-18 01:47:14] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [openai-priority-loadbalancer]: Downloading https://files.pythonhosted.org/packages/cf/39/fb5dabf34e87ccd3aaf5a44d3151fb57ac1db787b90b73ae2697b0b2ec67/openai_priority_loadbalancer-1.0.6.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-18 01:47:14] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240518/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 01:47:14] INFO root fetch - processPackages [openai-priority-loadbalancer]: executing diffoscope
+[2024-05-18 01:47:14] INFO root fetch - processPackages [openai-priority-loadbalancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai_priority_loadbalancer-1.0.5.tar.gz tmp/openai_priority_loadbalancer-1.0.6.tar.gz --markdown 20240518/o/openai-priority-loadbalancer/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-18 01:47:14] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/50/22/fdad53bc122c24cb2826ccda1c8b96f21d42e2239f80a84b773bc64af982/pkscreener-0.44.20240517.381.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [KT17]: Downloading https://files.pythonhosted.org/packages/5c/c7/bbaf0a7918c9447b1d546dfb4e6242f944e8b2bd3642e9247d58678fb06c/KT17-1.1.1.tar.gz
+[2024-05-18 01:47:14] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-18 01:47:14] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240517.380.tar.gz tmp/pkscreener-0.44.20240517.381.tar.gz --markdown 20240518/p/pkscreener/0.44.20240517.380-0.44.20240517.381/README.md --exclude *.pyd
+[2024-05-18 01:47:15] INFO root fetch - processPackages [KT17]: executing diffoscope
+[2024-05-18 01:47:15] INFO root fetch - processPackages [KT17]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KT17-1.1.0-py3-none-any.whl.zip tmp/KT17-1.1.1.tar.gz --markdown 20240518/K/KT17/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-18 01:47:15] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-18 01:47:15] INFO root fetch - processPackages [openai-priority-loadbalancer]: Remove: archive file [/home/abi/fetcher/tmp/openai_priority_loadbalancer-1.0.5.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - processPackages [openai-priority-loadbalancer]: Remove: archive file [/home/abi/fetcher/tmp/openai_priority_loadbalancer-1.0.6.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - main [MainThread]: End processing [openai-priority-loadbalancer]: success
+[2024-05-18 01:47:15] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240517.380.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240517.381.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-18 01:47:15] INFO root fetch - processPackages [KT17]: Remove: archive file [/home/abi/fetcher/tmp/KT17-1.1.0-py3-none-any.whl.zip]
+[2024-05-18 01:47:15] INFO root fetch - processPackages [KT17]: Remove: archive file [/home/abi/fetcher/tmp/KT17-1.1.1.tar.gz]
+[2024-05-18 01:47:15] INFO root fetch - main [MainThread]: End processing [KT17]: success
+[2024-05-18 01:47:15] INFO root fetch - main [MainThread]: Store serial: [23261983]
