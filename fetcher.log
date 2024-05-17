@@ -918,3 +918,50 @@
 [2024-05-18 00:54:41] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.9.tar.gz]
 [2024-05-18 00:54:41] INFO root fetch - main [MainThread]: End processing [fc-pruning]: success
 [2024-05-18 00:54:41] INFO root fetch - main [MainThread]: Store serial: [23261553]
+[2024-05-18 00:56:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261553]
+[2024-05-18 00:56:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mcshapley
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: open-space-toolkit-astrodynamics
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensorset
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mat-data
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: romsearch
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ob-metaflow
+[2024-05-18 00:56:49] WARNING root fetch - processPackages [mcshapley]: Skipping, unable to determine old version
+[2024-05-18 00:56:49] INFO root fetch - main [MainThread]: End processing [mcshapley] error
+[2024-05-18 00:56:49] INFO root fetch - processPackages [ob-metaflow]: New version: [2.9.8.2] Old Version: [2.9.7.2]
+[2024-05-18 00:56:49] INFO root fetch - processPackages [romsearch]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 00:56:50] INFO root fetch - processPackages [tensorset]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-18 00:56:50] INFO root fetch - processPackages [mat-data]: New version: [0.1rc1] Old Version: [0.1b9]
+[2024-05-18 00:56:50] INFO root fetch - processPackages [ob-metaflow]: Downloading https://files.pythonhosted.org/packages/d3/01/7b00a35e44dcec3a289d7ce4bbd4fbf5ba60a0d517faf7eefab46462c416/ob-metaflow-2.9.7.2.tar.gz
+[2024-05-18 00:56:50] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: New version: [9.1.8] Old Version: [9.1.7]
+[2024-05-18 00:56:50] INFO root fetch - processPackages [romsearch]: Downloading https://files.pythonhosted.org/packages/cf/b8/3fcfd88aeff513892b69f6c2238d68d2534f633b39f938e009a3dc32330e/romsearch-0.0.3.tar.gz
+[2024-05-18 00:56:50] INFO root fetch - processPackages [tensorset]: Downloading https://files.pythonhosted.org/packages/78/c9/5a95b198865972f56435ca0014490d384c8a0f6604af7f6221735c648467/tensorset-0.4.1.tar.gz
+[2024-05-18 00:56:50] INFO root fetch - processPackages [open-space-toolkit-astrodynamics]: Downloading https://files.pythonhosted.org/packages/05/9b/38b70492205ab01d793faa7085df1e0c6e016eebadb6cecec5ebc5ab33e4/open_space_toolkit_astrodynamics-9.1.7-py39-none-manylinux2014_x86_64.whl
+[2024-05-18 00:56:50] INFO root fetch - processPackages [mat-data]: Downloading https://files.pythonhosted.org/packages/58/98/665876b7be323fc301e67df5c5ef6b9c418531845be7e12fcd7a3b24f332/mat-data-0.1b9.tar.gz
+[2024-05-18 00:56:50] INFO root fetch - processPackages [ob-metaflow]: Downloading https://files.pythonhosted.org/packages/87/6a/263a2c169f08c12eb7a83616e2011c96487f3c804fb07915ab6f6677dd0b/ob-metaflow-2.9.8.2.tar.gz
+[2024-05-18 00:56:50] WARNING root fetch - processPackages [open-space-toolkit-astrodynamics]: Skipping package: exceeds size limit 27365845>=10485760
+[2024-05-18 00:56:50] INFO root fetch - main [MainThread]: End processing [open-space-toolkit-astrodynamics] error
+[2024-05-18 00:56:50] INFO root fetch - processPackages [tensorset]: Downloading https://files.pythonhosted.org/packages/2c/c5/386218b24ee31455c79b4c80693fa7b6b7aca9429d685b032f9eb2fa9eb6/tensorset-0.4.2.tar.gz
+[2024-05-18 00:56:50] INFO root fetch - processPackages [ob-metaflow]: executing diffoscope
+[2024-05-18 00:56:50] INFO root fetch - processPackages [ob-metaflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-metaflow-2.9.7.2.tar.gz tmp/ob-metaflow-2.9.8.2.tar.gz --markdown 20240518/o/ob-metaflow/2.9.7.2-2.9.8.2/README.md --exclude *.pyd
+[2024-05-18 00:56:50] INFO root fetch - processPackages [romsearch]: Downloading https://files.pythonhosted.org/packages/a1/b0/9474d6835dc76daa720f8fe51a01108e5bd3e3b4b6c5d5c8178e92d0ea51/romsearch-0.0.4.tar.gz
+[2024-05-18 00:56:50] INFO root fetch - processPackages [tensorset]: executing diffoscope
+[2024-05-18 00:56:50] INFO root fetch - processPackages [tensorset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorset-0.4.1.tar.gz tmp/tensorset-0.4.2.tar.gz --markdown 20240518/t/tensorset/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-18 00:56:50] INFO root fetch - processPackages [romsearch]: executing diffoscope
+[2024-05-18 00:56:50] INFO root fetch - processPackages [romsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/romsearch-0.0.3.tar.gz tmp/romsearch-0.0.4.tar.gz --markdown 20240518/r/romsearch/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 00:56:51] INFO root fetch - processPackages [tensorset]: Remove: archive file [/home/abi/fetcher/tmp/tensorset-0.4.1.tar.gz]
+[2024-05-18 00:56:51] INFO root fetch - processPackages [tensorset]: Remove: archive file [/home/abi/fetcher/tmp/tensorset-0.4.2.tar.gz]
+[2024-05-18 00:56:51] INFO root fetch - main [MainThread]: End processing [tensorset]: success
+[2024-05-18 00:56:51] INFO root fetch - processPackages [mat-data]: Downloading https://files.pythonhosted.org/packages/8c/7a/0a9ea9856a9bc3ba3b2c56bec4388afb65aab75be7061a9f444b49729a4f/mat_data-0.1rc1.tar.gz
+[2024-05-18 00:56:51] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.3.tar.gz]
+[2024-05-18 00:56:51] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.4.tar.gz]
+[2024-05-18 00:56:51] INFO root fetch - main [MainThread]: End processing [romsearch]: success
+[2024-05-18 00:56:52] INFO root fetch - processPackages [mat-data]: executing diffoscope
+[2024-05-18 00:56:52] INFO root fetch - processPackages [mat-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mat-data-0.1b9.tar.gz tmp/mat_data-0.1rc1.tar.gz --markdown 20240518/m/mat-data/0.1b9-0.1rc1/README.md --exclude *.pyd
+[2024-05-18 00:56:54] INFO root fetch - processPackages [mat-data]: Remove: archive file [/home/abi/fetcher/tmp/mat-data-0.1b9.tar.gz]
+[2024-05-18 00:56:54] INFO root fetch - processPackages [mat-data]: Remove: archive file [/home/abi/fetcher/tmp/mat_data-0.1rc1.tar.gz]
+[2024-05-18 00:56:54] INFO root fetch - main [MainThread]: End processing [mat-data]: success
+[2024-05-18 00:56:55] INFO root fetch - processPackages [ob-metaflow]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-2.9.7.2.tar.gz]
+[2024-05-18 00:56:55] INFO root fetch - processPackages [ob-metaflow]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-2.9.8.2.tar.gz]
+[2024-05-18 00:56:55] INFO root fetch - main [MainThread]: End processing [ob-metaflow]: success
+[2024-05-18 00:56:55] INFO root fetch - main [MainThread]: Store serial: [23261576]
