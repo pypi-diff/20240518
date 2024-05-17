@@ -1047,3 +1047,36 @@
 [2024-05-18 01:01:20] INFO root fetch - processPackages [robustintelligence]: Remove: archive file [/home/abi/fetcher/tmp/robustintelligence-0.1.0rc9.tar.gz]
 [2024-05-18 01:01:20] INFO root fetch - main [MainThread]: End processing [robustintelligence]: success
 [2024-05-18 01:01:20] INFO root fetch - main [MainThread]: Store serial: [23261610]
+[2024-05-18 01:03:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261610]
+[2024-05-18 01:03:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 01:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CNAsim
+[2024-05-18 01:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DPRED
+[2024-05-18 01:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docassemble.ALDashboard
+[2024-05-18 01:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aind-exaspim-pipeline-utils
+[2024-05-18 01:03:28] INFO root fetch - processPackages [docassemble.ALDashboard]: New version: [0.9.0] Old Version: [0.23.0]
+[2024-05-18 01:03:28] INFO root fetch - processPackages [DPRED]: New version: [1.0.1] Old Version: [1.0]
+[2024-05-18 01:03:28] WARNING root fetch - processPackages [CNAsim]: Skipping, unable to determine old version
+[2024-05-18 01:03:28] INFO root fetch - main [MainThread]: End processing [CNAsim] error
+[2024-05-18 01:03:28] INFO root fetch - processPackages [DPRED]: Downloading https://files.pythonhosted.org/packages/4d/cc/a1308719fb25653e661ccd02a341e1a5e81020f9e383228832d447f804fe/DPRED-1.0.tar.gz
+[2024-05-18 01:03:28] INFO root fetch - processPackages [docassemble.ALDashboard]: Downloading https://files.pythonhosted.org/packages/18/48/60c8025ed699e16813b8b2dc7cadebc0119c180260471022b972277151fa/docassemble_aldashboard-0.23.0.tar.gz
+[2024-05-18 01:03:29] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-05-18 01:03:29] INFO root fetch - processPackages [docassemble.ALDashboard]: Downloading https://files.pythonhosted.org/packages/f9/58/6147d5e8576b6e494c87c867cb586dc7c81667493716abd1469e2c5d6d30/docassemble.ALDashboard-0.9.0.tar.gz
+[2024-05-18 01:03:29] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Downloading https://files.pythonhosted.org/packages/10/2c/5b3774411a0f43ab224714982aa97b16dab938d7cf6f3cfbed99ab83212f/aind_exaspim_pipeline_utils-0.8.3.tar.gz
+[2024-05-18 01:03:29] INFO root fetch - processPackages [DPRED]: Downloading https://files.pythonhosted.org/packages/87/c5/21cc8f7a5bc058af45043e033b6988765cf882c663f51ab8cead13490b15/DPRED-1.0.1.tar.gz
+[2024-05-18 01:03:29] INFO root fetch - processPackages [docassemble.ALDashboard]: executing diffoscope
+[2024-05-18 01:03:29] INFO root fetch - processPackages [docassemble.ALDashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docassemble_aldashboard-0.23.0.tar.gz tmp/docassemble.ALDashboard-0.9.0.tar.gz --markdown 20240518/d/docassemble.ALDashboard/0.23.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 01:03:29] INFO root fetch - processPackages [DPRED]: executing diffoscope
+[2024-05-18 01:03:29] INFO root fetch - processPackages [DPRED]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DPRED-1.0.tar.gz tmp/DPRED-1.0.1.tar.gz --markdown 20240518/D/DPRED/1.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 01:03:29] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Downloading https://files.pythonhosted.org/packages/b0/4c/f3693d32c3cf34f33dcf66df7d3078dfd39b899a6650f1fc17e1eda7b5d0/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl
+[2024-05-18 01:03:30] INFO root fetch - processPackages [DPRED]: Remove: archive file [/home/abi/fetcher/tmp/DPRED-1.0.tar.gz]
+[2024-05-18 01:03:30] INFO root fetch - processPackages [DPRED]: Remove: archive file [/home/abi/fetcher/tmp/DPRED-1.0.1.tar.gz]
+[2024-05-18 01:03:30] INFO root fetch - processPackages [docassemble.ALDashboard]: Remove: archive file [/home/abi/fetcher/tmp/docassemble_aldashboard-0.23.0.tar.gz]
+[2024-05-18 01:03:30] INFO root fetch - main [MainThread]: End processing [DPRED]: success
+[2024-05-18 01:03:30] INFO root fetch - processPackages [docassemble.ALDashboard]: Remove: archive file [/home/abi/fetcher/tmp/docassemble.ALDashboard-0.9.0.tar.gz]
+[2024-05-18 01:03:30] INFO root fetch - main [MainThread]: End processing [docassemble.ALDashboard]: success
+[2024-05-18 01:03:30] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: executing diffoscope
+[2024-05-18 01:03:30] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_exaspim_pipeline_utils-0.8.3.tar.gz tmp/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl.zip --markdown 20240518/a/aind-exaspim-pipeline-utils/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-05-18 01:03:30] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Remove: archive file [/home/abi/fetcher/tmp/aind_exaspim_pipeline_utils-0.8.3.tar.gz]
+[2024-05-18 01:03:30] INFO root fetch - processPackages [aind-exaspim-pipeline-utils]: Remove: archive file [/home/abi/fetcher/tmp/aind_exaspim_pipeline_utils-0.9.0-py3-none-any.whl.zip]
+[2024-05-18 01:03:30] INFO root fetch - main [MainThread]: End processing [aind-exaspim-pipeline-utils]: success
+[2024-05-18 01:03:30] INFO root fetch - main [MainThread]: Store serial: [23261624]
