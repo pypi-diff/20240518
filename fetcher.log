@@ -472,3 +472,51 @@
 [2024-05-18 00:23:20] INFO root fetch - processPackages [hypernetx]: Remove: archive file [/home/abi/fetcher/tmp/hypernetx-2.3.0.tar.gz]
 [2024-05-18 00:23:20] INFO root fetch - main [MainThread]: End processing [hypernetx]: success
 [2024-05-18 00:23:20] INFO root fetch - main [MainThread]: Store serial: [23261355]
+[2024-05-18 00:25:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261355]
+[2024-05-18 00:25:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 00:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocoon-data
+[2024-05-18 00:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-explorer-onnx
+[2024-05-18 00:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: corvic-engine
+[2024-05-18 00:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: haliax
+[2024-05-18 00:25:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nmuwd
+[2024-05-18 00:25:29] INFO root fetch - processPackages [nmuwd]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 00:25:29] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:25:29] INFO root fetch - processPackages [corvic-engine]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:25:29] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/fd/a1141ab1fbf3ce08581a4159c3eb398fb0620311dfc3d6fbac1da254424b/nmuwd-0.0.8.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [haliax]: New version: [1.4.dev296] Old Version: [1.4.dev295]
+[2024-05-18 00:25:29] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 00:25:29] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [corvic-engine]: Downloading https://files.pythonhosted.org/packages/28/81/73d66a8b87408209ecb35a7c2bc6678eed7152cd47281836f38fe9d103aa/corvic_engine-0.1.8.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [haliax]: Downloading https://files.pythonhosted.org/packages/70/be/54bcb1bcbdfb98df4ca0da8bc40072a94bfae2c24aeac78c7e52bf1d10a1/haliax-1.4.dev295.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/e0/d7/1560261f5809af67b7ccd8439dafbe0738a0cb162cd4af13911936399615/model_explorer_onnx-0.1.1.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [corvic-engine]: Downloading https://files.pythonhosted.org/packages/09/86/d913022f7e6621ce441c8b834aa1f7c0a01a99f249b2e74671b9da6c2acc/corvic_engine-0.1.9.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/b0/79/c49606bf1da5c61a7c9c0f89274582bbca3825388d388dafae7938b040c0/nmuwd-0.0.9.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [corvic-engine]: executing diffoscope
+[2024-05-18 00:25:29] INFO root fetch - processPackages [corvic-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/corvic_engine-0.1.8.tar.gz tmp/corvic_engine-0.1.9.tar.gz --markdown 20240518/c/corvic-engine/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:25:29] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-05-18 00:25:29] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240518/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:25:29] INFO root fetch - processPackages [nmuwd]: executing diffoscope
+[2024-05-18 00:25:29] INFO root fetch - processPackages [nmuwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmuwd-0.0.8.tar.gz tmp/nmuwd-0.0.9.tar.gz --markdown 20240518/n/nmuwd/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 00:25:29] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/b2/ee/6c46f9f21b96d243715555f1effe6c9c420023a825f6a8ee0abbe7970a5d/model_explorer_onnx-0.1.2.tar.gz
+[2024-05-18 00:25:29] INFO root fetch - processPackages [haliax]: Downloading https://files.pythonhosted.org/packages/1a/c1/6332bac0db8a6e3e6a8a3463dd2fcd74032fc7c6c56d47ececf12a36dae1/haliax-1.4.dev296.tar.gz
+[2024-05-18 00:25:30] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-18 00:25:30] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.1.tar.gz tmp/model_explorer_onnx-0.1.2.tar.gz --markdown 20240518/m/model-explorer-onnx/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 00:25:30] INFO root fetch - processPackages [haliax]: executing diffoscope
+[2024-05-18 00:25:30] INFO root fetch - processPackages [haliax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haliax-1.4.dev295.tar.gz tmp/haliax-1.4.dev296.tar.gz --markdown 20240518/h/haliax/1.4.dev295-1.4.dev296/README.md --exclude *.pyd
+[2024-05-18 00:25:30] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.8.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.9.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - main [MainThread]: End processing [nmuwd]: success
+[2024-05-18 00:25:30] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.1.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.2.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-18 00:25:30] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-05-18 00:25:30] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.8.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - processPackages [corvic-engine]: Remove: archive file [/home/abi/fetcher/tmp/corvic_engine-0.1.9.tar.gz]
+[2024-05-18 00:25:30] INFO root fetch - main [MainThread]: End processing [corvic-engine]: success
+[2024-05-18 00:25:31] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev295.tar.gz]
+[2024-05-18 00:25:31] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev296.tar.gz]
+[2024-05-18 00:25:31] INFO root fetch - main [MainThread]: End processing [haliax]: success
+[2024-05-18 00:25:31] INFO root fetch - main [MainThread]: Store serial: [23261375]
