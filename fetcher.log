@@ -611,3 +611,71 @@
 [2024-05-18 00:35:03] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-05-18 00:35:03] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-05-18 00:35:03] INFO root fetch - main [MainThread]: Store serial: [23261405]
+[2024-05-18 00:37:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261405]
+[2024-05-18 00:37:11] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: idrisidz
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balsamic
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ventures
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sapiopycommons
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: carbon-python-sdk
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: resistify
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hmmix
+[2024-05-18 00:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vuc3
+[2024-05-18 00:37:11] INFO root fetch - processPackages [balsamic]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-18 00:37:11] INFO root fetch - processPackages [sapiopycommons]: New version: [31.3.0.23.12.3] Old Version: [31.2.0.23.12.3]
+[2024-05-18 00:37:11] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-05-18 00:37:11] INFO root fetch - processPackages [carbon-python-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:37:11] WARNING root fetch - processPackages [ventures]: Skipping, unable to determine old version
+[2024-05-18 00:37:11] INFO root fetch - main [MainThread]: End processing [ventures] error
+[2024-05-18 00:37:11] INFO root fetch - processPackages [resistify]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-18 00:37:11] WARNING root fetch - processPackages [idrisidz]: Skipping, unable to determine old version
+[2024-05-18 00:37:11] INFO root fetch - main [MainThread]: End processing [idrisidz] error
+[2024-05-18 00:37:11] INFO root fetch - processPackages [vuc3]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 00:37:11] INFO root fetch - processPackages [hmmix]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-18 00:37:11] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/87/88/9b98304aa07fec8c597ad526941284e2d0dacfba0b27d7fbfa696c87e8e5/balsamic-0.0.13.tar.gz
+[2024-05-18 00:37:11] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/bb/8e/ffbfcdcdcdef085f3c02a0c0361d5f2b5c73f377a58d5055485920fd480d/sapiopycommons-31.2.0.23.12.3.tar.gz
+[2024-05-18 00:37:11] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/26/57/15366437f225c4db33f10eefc2dcaaeb5785566711f4dad3fdfdad41d1c5/carbon_python_sdk-0.1.8.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [resistify]: Downloading https://files.pythonhosted.org/packages/62/6b/2cbf9ea70f23b9815b31505888ff73b6ba1244077cc25e5d96355779da67/resistify-0.1.1.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [vuc3]: Downloading https://files.pythonhosted.org/packages/f2/66/f15fea11d0588cb4be9173b46a738b1e23180222553f1672391b3e7275c5/vuc3-0.0.2.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [hmmix]: Downloading https://files.pythonhosted.org/packages/8c/07/a82cdb5a5569a663171636b4072053a3294941ba9cb7973c7666b7411cbe/hmmix-0.7.0.tar.gz
+[2024-05-18 00:37:12] WARNING root fetch - processPackages [resistify]: Skipping package: exceeds size limit 78167608>=10485760
+[2024-05-18 00:37:12] INFO root fetch - main [MainThread]: End processing [resistify] error
+[2024-05-18 00:37:12] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/65/85/c26462638385d6921c9e6e2dd91d7bb1d0ce38c3a35ccf5becf78fea900d/sapiopycommons-31.3.0.23.12.3.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/4a/24/a89b80a75b84ca68ae2e53bdaf89e4894b6ce0c3558b3d948a7fe82effb2/balsamic-0.0.14.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-05-18 00:37:12] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.2.0.23.12.3.tar.gz tmp/sapiopycommons-31.3.0.23.12.3.tar.gz --markdown 20240518/s/sapiopycommons/31.2.0.23.12.3-31.3.0.23.12.3/README.md --exclude *.pyd
+[2024-05-18 00:37:12] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-05-18 00:37:12] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240518/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-05-18 00:37:12] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 00:37:12] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.0.13.tar.gz tmp/balsamic-0.0.14.tar.gz --markdown 20240518/b/balsamic/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-18 00:37:12] INFO root fetch - processPackages [carbon-python-sdk]: Downloading https://files.pythonhosted.org/packages/e1/f5/2a5b19b30b427b767c9d7c7a83eccb5295f3370ba53da57b38913bff315c/carbon_python_sdk-0.1.9.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [hmmix]: Downloading https://files.pythonhosted.org/packages/f4/34/8f3488425db810d4227e3cc95891ac3de20274ccb9efa477f76e9d33025e/hmmix-0.7.1.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [vuc3]: Downloading https://files.pythonhosted.org/packages/88/c5/b30cf1c9e6ba84e206e5eeec864d1b852da9e4a31b98adbe50e9af659141/vuc3-0.0.3.tar.gz
+[2024-05-18 00:37:12] INFO root fetch - processPackages [hmmix]: executing diffoscope
+[2024-05-18 00:37:12] INFO root fetch - processPackages [hmmix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hmmix-0.7.0.tar.gz tmp/hmmix-0.7.1.tar.gz --markdown 20240518/h/hmmix/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-18 00:37:12] INFO root fetch - processPackages [carbon-python-sdk]: executing diffoscope
+[2024-05-18 00:37:12] INFO root fetch - processPackages [carbon-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon_python_sdk-0.1.8.tar.gz tmp/carbon_python_sdk-0.1.9.tar.gz --markdown 20240518/c/carbon-python-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:37:12] INFO root fetch - processPackages [vuc3]: executing diffoscope
+[2024-05-18 00:37:12] INFO root fetch - processPackages [vuc3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vuc3-0.0.2.tar.gz tmp/vuc3-0.0.3.tar.gz --markdown 20240518/v/vuc3/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 00:37:12] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.13.tar.gz]
+[2024-05-18 00:37:12] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.14.tar.gz]
+[2024-05-18 00:37:12] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 00:37:12] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-05-18 00:37:12] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-05-18 00:37:12] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-05-18 00:37:13] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.2.0.23.12.3.tar.gz]
+[2024-05-18 00:37:13] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.3.0.23.12.3.tar.gz]
+[2024-05-18 00:37:13] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-05-18 00:37:13] INFO root fetch - processPackages [vuc3]: Remove: archive file [/home/abi/fetcher/tmp/vuc3-0.0.2.tar.gz]
+[2024-05-18 00:37:13] INFO root fetch - processPackages [vuc3]: Remove: archive file [/home/abi/fetcher/tmp/vuc3-0.0.3.tar.gz]
+[2024-05-18 00:37:13] INFO root fetch - main [MainThread]: End processing [vuc3]: success
+[2024-05-18 00:37:13] INFO root fetch - processPackages [hmmix]: Remove: archive file [/home/abi/fetcher/tmp/hmmix-0.7.0.tar.gz]
+[2024-05-18 00:37:13] INFO root fetch - processPackages [hmmix]: Remove: archive file [/home/abi/fetcher/tmp/hmmix-0.7.1.tar.gz]
+[2024-05-18 00:37:13] INFO root fetch - main [MainThread]: End processing [hmmix]: success
+[2024-05-18 00:37:15] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.8.tar.gz]
+[2024-05-18 00:37:15] INFO root fetch - processPackages [carbon-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/carbon_python_sdk-0.1.9.tar.gz]
+[2024-05-18 00:37:15] INFO root fetch - main [MainThread]: End processing [carbon-python-sdk]: success
+[2024-05-18 00:37:15] INFO root fetch - main [MainThread]: Store serial: [23261459]
