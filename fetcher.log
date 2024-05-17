@@ -1179,3 +1179,27 @@
 [2024-05-18 01:07:51] INFO root fetch - processPackages [WPyrogram]: Remove: archive file [/home/abi/fetcher/tmp/wpyrogram-2.0.143.tar.gz]
 [2024-05-18 01:07:51] INFO root fetch - main [MainThread]: End processing [WPyrogram]: success
 [2024-05-18 01:07:51] INFO root fetch - main [MainThread]: Store serial: [23261658]
+[2024-05-18 01:09:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261658]
+[2024-05-18 01:10:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 01:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: compassesz
+[2024-05-18 01:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: romsearch
+[2024-05-18 01:10:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freegenius
+[2024-05-18 01:10:00] INFO root fetch - processPackages [romsearch]: New version: [0.0.5.post1] Old Version: [0.0.5]
+[2024-05-18 01:10:00] WARNING root fetch - processPackages [compassesz]: Skipping, unable to determine old version
+[2024-05-18 01:10:00] INFO root fetch - main [MainThread]: End processing [compassesz] error
+[2024-05-18 01:10:00] INFO root fetch - processPackages [romsearch]: Downloading https://files.pythonhosted.org/packages/8b/94/61a65109ff9ff6127bd91171cb0da6834773a4c7d1494af67a1ae24fa9cc/romsearch-0.0.5.tar.gz
+[2024-05-18 01:10:00] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 01:10:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-18 01:10:00] INFO root fetch - processPackages [romsearch]: Downloading https://files.pythonhosted.org/packages/61/d6/92512fc9b4d2ea1f3d1a5efabae8cc14d89b08d2bf2b9314fb9b801d332b/romsearch-0.0.5.post1.tar.gz
+[2024-05-18 01:10:00] INFO root fetch - processPackages [romsearch]: executing diffoscope
+[2024-05-18 01:10:00] INFO root fetch - processPackages [romsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/romsearch-0.0.5.tar.gz tmp/romsearch-0.0.5.post1.tar.gz --markdown 20240518/r/romsearch/0.0.5-0.0.5.post1/README.md --exclude *.pyd
+[2024-05-18 01:10:01] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-18 01:10:01] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-18 01:10:01] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240518/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 01:10:01] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.5.tar.gz]
+[2024-05-18 01:10:01] INFO root fetch - processPackages [romsearch]: Remove: archive file [/home/abi/fetcher/tmp/romsearch-0.0.5.post1.tar.gz]
+[2024-05-18 01:10:01] INFO root fetch - main [MainThread]: End processing [romsearch]: success
+[2024-05-18 01:10:03] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-18 01:10:03] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-18 01:10:03] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-18 01:10:03] INFO root fetch - main [MainThread]: Store serial: [23261667]
