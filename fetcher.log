@@ -1439,3 +1439,24 @@
 [2024-05-18 01:25:22] INFO root fetch - processPackages [neon-audio]: Remove: archive file [/home/abi/fetcher/tmp/neon-audio-1.5.2a6.tar.gz]
 [2024-05-18 01:25:22] INFO root fetch - main [MainThread]: End processing [neon-audio]: success
 [2024-05-18 01:25:22] INFO root fetch - main [MainThread]: Store serial: [23261850]
+[2024-05-18 01:27:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261850]
+[2024-05-18 01:27:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 01:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fc-pruning
+[2024-05-18 01:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yandex-mathvista
+[2024-05-18 01:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yandex-nanny-yp-proto
+[2024-05-18 01:27:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yandex-pygherkin-lint
+[2024-05-18 01:27:31] INFO root fetch - processPackages [fc-pruning]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 01:27:31] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/ef/65/1df4b1d753fb0d30cac409d59ff9b529a1e0e44cb7522c778fb9a7a09e92/fc_pruning-0.0.8.tar.gz
+[2024-05-18 01:27:31] WARNING root fetch - processPackages [yandex-nanny-yp-proto]: Skipping, unable to determine old version
+[2024-05-18 01:27:31] INFO root fetch - main [MainThread]: End processing [yandex-nanny-yp-proto] error
+[2024-05-18 01:27:31] WARNING root fetch - processPackages [yandex-mathvista]: Skipping, unable to determine old version
+[2024-05-18 01:27:31] INFO root fetch - main [MainThread]: End processing [yandex-mathvista] error
+[2024-05-18 01:27:31] WARNING root fetch - processPackages [yandex-pygherkin-lint]: Skipping, unable to determine old version
+[2024-05-18 01:27:31] INFO root fetch - main [MainThread]: End processing [yandex-pygherkin-lint] error
+[2024-05-18 01:27:31] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/dc/cf/b28755154c93468dea6192908ed75101aa4ae5c85df475fe558f59e35258/fc_pruning-0.0.9.tar.gz
+[2024-05-18 01:27:31] INFO root fetch - processPackages [fc-pruning]: executing diffoscope
+[2024-05-18 01:27:31] INFO root fetch - processPackages [fc-pruning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fc_pruning-0.0.8.tar.gz tmp/fc_pruning-0.0.9.tar.gz --markdown 20240518/f/fc-pruning/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 01:27:32] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.8.tar.gz]
+[2024-05-18 01:27:32] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.9.tar.gz]
+[2024-05-18 01:27:32] INFO root fetch - main [MainThread]: End processing [fc-pruning]: success
+[2024-05-18 01:27:32] INFO root fetch - main [MainThread]: Store serial: [23261870]
