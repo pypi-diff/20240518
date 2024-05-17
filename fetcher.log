@@ -1731,3 +1731,9 @@
 [2024-05-18 01:47:15] INFO root fetch - processPackages [KT17]: Remove: archive file [/home/abi/fetcher/tmp/KT17-1.1.1.tar.gz]
 [2024-05-18 01:47:15] INFO root fetch - main [MainThread]: End processing [KT17]: success
 [2024-05-18 01:47:15] INFO root fetch - main [MainThread]: Store serial: [23261983]
+[2024-05-18 01:49:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261983]
+[2024-05-18 01:49:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 01:49:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CNAsim
+[2024-05-18 01:49:25] WARNING root fetch - processPackages [CNAsim]: Skipping, unable to determine old version
+[2024-05-18 01:49:25] INFO root fetch - main [MainThread]: End processing [CNAsim] error
+[2024-05-18 01:49:25] INFO root fetch - main [MainThread]: Store serial: [23261996]
