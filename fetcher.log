@@ -965,3 +965,50 @@
 [2024-05-18 00:56:55] INFO root fetch - processPackages [ob-metaflow]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-2.9.8.2.tar.gz]
 [2024-05-18 00:56:55] INFO root fetch - main [MainThread]: End processing [ob-metaflow]: success
 [2024-05-18 00:56:55] INFO root fetch - main [MainThread]: Store serial: [23261576]
+[2024-05-18 00:59:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261576]
+[2024-05-18 00:59:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 00:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beats-swing
+[2024-05-18 00:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-18 00:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hypernetx
+[2024-05-18 00:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: threeML
+[2024-05-18 00:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: json-extracter
+[2024-05-18 00:59:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: whoresonsz
+[2024-05-18 00:59:04] INFO root fetch - processPackages [balsamic]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-05-18 00:59:04] INFO root fetch - processPackages [hypernetx]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-18 00:59:05] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/f9/7e/d06128942bc4d5af79dbca8395204c6b3ee4b0ad91b3873368ee625f0188/balsamic-0.0.16.tar.gz
+[2024-05-18 00:59:05] WARNING root fetch - processPackages [whoresonsz]: Skipping, unable to determine old version
+[2024-05-18 00:59:05] INFO root fetch - main [MainThread]: End processing [whoresonsz] error
+[2024-05-18 00:59:05] INFO root fetch - processPackages [hypernetx]: Downloading https://files.pythonhosted.org/packages/fd/e7/a39c3c191c7b7456fed08c0f27bae01decd17e3e95cd5b12ed4268097105/hypernetx-2.2.0.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [json-extracter]: New version: [1.0.2] Old Version: [0.0.1]
+[2024-05-18 00:59:05] INFO root fetch - processPackages [beats-swing]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 00:59:05] INFO root fetch - processPackages [threeML]: New version: [v0.0.5] Old Version: [2.4.2.dev2]
+[2024-05-18 00:59:05] INFO root fetch - processPackages [json-extracter]: Downloading https://files.pythonhosted.org/packages/1a/01/abddae0a31ab6a10adc9d0b08abf84cfa9d955e629ebf9c44fdf005f8062/json_extracter-0.0.1.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [hypernetx]: Downloading https://files.pythonhosted.org/packages/23/6e/8de6081d28dd8b60f86540cef96fb32fca21d5a0cf31dfca127141f721f8/hypernetx-2.3.0.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [beats-swing]: Downloading https://files.pythonhosted.org/packages/6b/f5/ab51e1aa73687c7d26cce399716306d5bb3df5e1bfc594dbdbb1a4dc459a/beats_swing-0.1.3.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [threeML]: Downloading https://files.pythonhosted.org/packages/26/b8/9096f37c42b802d5694d93d5a636fc7c80f0bdec0b27d349890d4d84d5e0/threeml-2.4.2.dev2.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/cf/09/2b7a871ea76b1c6eaa834e308f539aece10e2beb9eea4d2b066d86cb6ba6/balsamic-0.0.17.tar.gz
+[2024-05-18 00:59:05] WARNING root fetch - processPackages [threeML]: Skipping package: exceeds size limit 51380485>=10485760
+[2024-05-18 00:59:05] INFO root fetch - main [MainThread]: End processing [threeML] error
+[2024-05-18 00:59:05] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 00:59:05] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.0.16.tar.gz tmp/balsamic-0.0.17.tar.gz --markdown 20240518/b/balsamic/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-05-18 00:59:05] INFO root fetch - processPackages [hypernetx]: executing diffoscope
+[2024-05-18 00:59:05] INFO root fetch - processPackages [hypernetx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypernetx-2.2.0.tar.gz tmp/hypernetx-2.3.0.tar.gz --markdown 20240518/h/hypernetx/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-18 00:59:05] INFO root fetch - processPackages [json-extracter]: Downloading https://files.pythonhosted.org/packages/b8/28/3f39d0b71a8bd3f2aa331095a66c0fc2d9624d0196a887fb57b595cca184/json_extracter-1.0.2.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [beats-swing]: Downloading https://files.pythonhosted.org/packages/ea/f7/4529d1a3449f54a56c8583ba7fca710071d86e2d6000d41c87c63195ed0b/beats_swing-0.1.4.tar.gz
+[2024-05-18 00:59:05] INFO root fetch - processPackages [json-extracter]: executing diffoscope
+[2024-05-18 00:59:05] INFO root fetch - processPackages [json-extracter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_extracter-0.0.1.tar.gz tmp/json_extracter-1.0.2.tar.gz --markdown 20240518/j/json-extracter/0.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 00:59:05] INFO root fetch - processPackages [beats-swing]: executing diffoscope
+[2024-05-18 00:59:05] INFO root fetch - processPackages [beats-swing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beats_swing-0.1.3.tar.gz tmp/beats_swing-0.1.4.tar.gz --markdown 20240518/b/beats-swing/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 00:59:06] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.16.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.17.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 00:59:06] INFO root fetch - processPackages [hypernetx]: Remove: archive file [/home/abi/fetcher/tmp/hypernetx-2.2.0.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - processPackages [hypernetx]: Remove: archive file [/home/abi/fetcher/tmp/hypernetx-2.3.0.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - main [MainThread]: End processing [hypernetx]: success
+[2024-05-18 00:59:06] INFO root fetch - processPackages [json-extracter]: Remove: archive file [/home/abi/fetcher/tmp/json_extracter-0.0.1.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - processPackages [json-extracter]: Remove: archive file [/home/abi/fetcher/tmp/json_extracter-1.0.2.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - main [MainThread]: End processing [json-extracter]: success
+[2024-05-18 00:59:06] INFO root fetch - processPackages [beats-swing]: Remove: archive file [/home/abi/fetcher/tmp/beats_swing-0.1.3.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - processPackages [beats-swing]: Remove: archive file [/home/abi/fetcher/tmp/beats_swing-0.1.4.tar.gz]
+[2024-05-18 00:59:06] INFO root fetch - main [MainThread]: End processing [beats-swing]: success
+[2024-05-18 00:59:06] INFO root fetch - main [MainThread]: Store serial: [23261596]
