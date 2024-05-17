@@ -900,3 +900,21 @@
 [2024-05-18 00:52:31] INFO root fetch - processPackages [DPRED]: Remove: archive file [/home/abi/fetcher/tmp/DPRED-1.0.tar.gz]
 [2024-05-18 00:52:31] INFO root fetch - main [MainThread]: End processing [DPRED]: success
 [2024-05-18 00:52:31] INFO root fetch - main [MainThread]: Store serial: [23261542]
+[2024-05-18 00:54:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261542]
+[2024-05-18 00:54:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diemakerz
+[2024-05-18 00:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kaquel
+[2024-05-18 00:54:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fc-pruning
+[2024-05-18 00:54:40] INFO root fetch - processPackages [fc-pruning]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 00:54:40] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/ef/65/1df4b1d753fb0d30cac409d59ff9b529a1e0e44cb7522c778fb9a7a09e92/fc_pruning-0.0.8.tar.gz
+[2024-05-18 00:54:40] WARNING root fetch - processPackages [diemakerz]: Skipping, unable to determine old version
+[2024-05-18 00:54:40] INFO root fetch - main [MainThread]: End processing [diemakerz] error
+[2024-05-18 00:54:40] WARNING root fetch - processPackages [kaquel]: Skipping, unable to determine old version
+[2024-05-18 00:54:40] INFO root fetch - main [MainThread]: End processing [kaquel] error
+[2024-05-18 00:54:40] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/dc/cf/b28755154c93468dea6192908ed75101aa4ae5c85df475fe558f59e35258/fc_pruning-0.0.9.tar.gz
+[2024-05-18 00:54:40] INFO root fetch - processPackages [fc-pruning]: executing diffoscope
+[2024-05-18 00:54:40] INFO root fetch - processPackages [fc-pruning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fc_pruning-0.0.8.tar.gz tmp/fc_pruning-0.0.9.tar.gz --markdown 20240518/f/fc-pruning/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 00:54:41] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.8.tar.gz]
+[2024-05-18 00:54:41] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.9.tar.gz]
+[2024-05-18 00:54:41] INFO root fetch - main [MainThread]: End processing [fc-pruning]: success
+[2024-05-18 00:54:41] INFO root fetch - main [MainThread]: Store serial: [23261553]
