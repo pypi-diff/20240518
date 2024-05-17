@@ -184,3 +184,27 @@
 [2024-05-18 00:07:59] INFO root fetch - processPackages [ipyoptimade]: Remove: archive file [/home/abi/fetcher/tmp/ipyoptimade-1.0.0a0.tar.gz]
 [2024-05-18 00:07:59] INFO root fetch - main [MainThread]: End processing [ipyoptimade]: success
 [2024-05-18 00:07:59] INFO root fetch - main [MainThread]: Store serial: [23261165]
+[2024-05-18 00:10:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261165]
+[2024-05-18 00:10:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: surya-ocr
+[2024-05-18 00:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yahoo-oauth
+[2024-05-18 00:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fuzzquery
+[2024-05-18 00:10:09] INFO root fetch - processPackages [yahoo-oauth]: New version: [2.0] Old Version: [1.1]
+[2024-05-18 00:10:10] WARNING root fetch - processPackages [fuzzquery]: Skipping, unable to determine old version
+[2024-05-18 00:10:10] INFO root fetch - main [MainThread]: End processing [fuzzquery] error
+[2024-05-18 00:10:10] INFO root fetch - processPackages [surya-ocr]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-18 00:10:10] INFO root fetch - processPackages [yahoo-oauth]: Downloading https://files.pythonhosted.org/packages/3b/ef/8a13e59badc8987a92f5184f34a2f7177947d1c75209e31558d12327dd87/yahoo_oauth-1.1.tar.gz
+[2024-05-18 00:10:10] INFO root fetch - processPackages [surya-ocr]: Downloading https://files.pythonhosted.org/packages/51/ea/46eaf9855bbe01ee8a2ddaba71db45ee458109d81a736e816ced34f28897/surya_ocr-0.4.5.tar.gz
+[2024-05-18 00:10:10] INFO root fetch - processPackages [yahoo-oauth]: Downloading https://files.pythonhosted.org/packages/52/76/9939f6f2333f0d5413693ae8cf8db05a61be3f35c014fc727b82296784a8/yahoo_oauth-2.0.tar.gz
+[2024-05-18 00:10:10] INFO root fetch - processPackages [surya-ocr]: Downloading https://files.pythonhosted.org/packages/e7/4c/daed027e18a47176818685818bd878f774513fedff52e3eece344782286e/surya_ocr-0.4.6.tar.gz
+[2024-05-18 00:10:10] INFO root fetch - processPackages [yahoo-oauth]: executing diffoscope
+[2024-05-18 00:10:10] INFO root fetch - processPackages [yahoo-oauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yahoo_oauth-1.1.tar.gz tmp/yahoo_oauth-2.0.tar.gz --markdown 20240518/y/yahoo-oauth/1.1-2.0/README.md --exclude *.pyd
+[2024-05-18 00:10:10] INFO root fetch - processPackages [surya-ocr]: executing diffoscope
+[2024-05-18 00:10:10] INFO root fetch - processPackages [surya-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surya_ocr-0.4.5.tar.gz tmp/surya_ocr-0.4.6.tar.gz --markdown 20240518/s/surya-ocr/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-18 00:10:11] INFO root fetch - processPackages [yahoo-oauth]: Remove: archive file [/home/abi/fetcher/tmp/yahoo_oauth-1.1.tar.gz]
+[2024-05-18 00:10:11] INFO root fetch - processPackages [yahoo-oauth]: Remove: archive file [/home/abi/fetcher/tmp/yahoo_oauth-2.0.tar.gz]
+[2024-05-18 00:10:11] INFO root fetch - main [MainThread]: End processing [yahoo-oauth]: success
+[2024-05-18 00:10:11] INFO root fetch - processPackages [surya-ocr]: Remove: archive file [/home/abi/fetcher/tmp/surya_ocr-0.4.5.tar.gz]
+[2024-05-18 00:10:11] INFO root fetch - processPackages [surya-ocr]: Remove: archive file [/home/abi/fetcher/tmp/surya_ocr-0.4.6.tar.gz]
+[2024-05-18 00:10:11] INFO root fetch - main [MainThread]: End processing [surya-ocr]: success
+[2024-05-18 00:10:11] INFO root fetch - main [MainThread]: Store serial: [23261175]
