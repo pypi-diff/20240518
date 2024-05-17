@@ -109,3 +109,42 @@
 [2024-05-18 00:03:37] INFO root fetch - processPackages [remla-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/remla_preprocess-0.1.1.tar.gz]
 [2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [remla-preprocess]: success
 [2024-05-18 00:03:37] INFO root fetch - main [MainThread]: Store serial: [23261137]
+[2024-05-18 00:05:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261137]
+[2024-05-18 00:05:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 00:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kaas-cli
+[2024-05-18 00:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: amilib
+[2024-05-18 00:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: owega
+[2024-05-18 00:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SQLDataModel
+[2024-05-18 00:05:46] INFO root fetch - processPackages [kaas-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:05:46] INFO root fetch - processPackages [owega]: New version: [5.8.0] Old Version: [5.7.5]
+[2024-05-18 00:05:46] INFO root fetch - processPackages [amilib]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 00:05:46] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/53/7a/9bd004bc31f267a96dff892bf0f442d5811b21163a87f9b0108aeb144645/kaas_cli-0.1.8.tar.gz
+[2024-05-18 00:05:46] INFO root fetch - processPackages [SQLDataModel]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-18 00:05:46] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/8e/25/decf22e5c94d974f176149362467c5cae72d9ac300a99123402391c08bdd/owega-5.7.5.tar.gz
+[2024-05-18 00:05:46] INFO root fetch - processPackages [amilib]: Downloading https://files.pythonhosted.org/packages/6c/34/3288a7fd568099209f1f3feceff81c15e509125d2b4bfc6f3e005d8bb117/amilib-0.1.0.tar.gz
+[2024-05-18 00:05:46] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/e5/6c/30a6a7bb074d6e698d7d40c648a46c4749a0123a444f6fa7793f94cb0bab/kaas_cli-0.1.9.tar.gz
+[2024-05-18 00:05:46] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/b9/aa/3afc8660c28e59093146c08ae58363faf40956b423cfcc40684162a97064/owega-5.8.0.tar.gz
+[2024-05-18 00:05:46] INFO root fetch - processPackages [SQLDataModel]: Downloading https://files.pythonhosted.org/packages/8a/bb/ea32ca73f93b07e4014245bf6f10562e7c1327c48642bb67d5a53818e66b/sqldatamodel-0.6.3.tar.gz
+[2024-05-18 00:05:46] INFO root fetch - processPackages [kaas-cli]: executing diffoscope
+[2024-05-18 00:05:46] INFO root fetch - processPackages [kaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaas_cli-0.1.8.tar.gz tmp/kaas_cli-0.1.9.tar.gz --markdown 20240518/k/kaas-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:05:46] INFO root fetch - processPackages [owega]: executing diffoscope
+[2024-05-18 00:05:46] INFO root fetch - processPackages [owega]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owega-5.7.5.tar.gz tmp/owega-5.8.0.tar.gz --markdown 20240518/o/owega/5.7.5-5.8.0/README.md --exclude *.pyd
+[2024-05-18 00:05:47] INFO root fetch - processPackages [SQLDataModel]: Downloading https://files.pythonhosted.org/packages/f8/1a/bedffed9d55ab317d6fdf1a67de76dbc5dc383ef73ed2fd28a552725e7d7/SQLDataModel-0.6.4-py3-none-any.whl
+[2024-05-18 00:05:47] INFO root fetch - processPackages [amilib]: Downloading https://files.pythonhosted.org/packages/98/d7/8432b0040f6de277c426d1d4411e8e163c3a44a4f69ea116d2ec2b5c4768/amilib-0.1.1.tar.gz
+[2024-05-18 00:05:47] INFO root fetch - processPackages [SQLDataModel]: executing diffoscope
+[2024-05-18 00:05:47] INFO root fetch - processPackages [SQLDataModel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqldatamodel-0.6.3.tar.gz tmp/SQLDataModel-0.6.4-py3-none-any.whl.zip --markdown 20240518/S/SQLDataModel/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-18 00:05:47] INFO root fetch - processPackages [amilib]: executing diffoscope
+[2024-05-18 00:05:47] INFO root fetch - processPackages [amilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amilib-0.1.0.tar.gz tmp/amilib-0.1.1.tar.gz --markdown 20240518/a/amilib/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 00:05:47] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.8.tar.gz]
+[2024-05-18 00:05:47] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.9.tar.gz]
+[2024-05-18 00:05:47] INFO root fetch - main [MainThread]: End processing [kaas-cli]: success
+[2024-05-18 00:05:47] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.7.5.tar.gz]
+[2024-05-18 00:05:47] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.8.0.tar.gz]
+[2024-05-18 00:05:47] INFO root fetch - main [MainThread]: End processing [owega]: success
+[2024-05-18 00:05:48] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.1.0.tar.gz]
+[2024-05-18 00:05:48] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.1.1.tar.gz]
+[2024-05-18 00:05:48] INFO root fetch - main [MainThread]: End processing [amilib]: success
+[2024-05-18 00:05:48] INFO root fetch - processPackages [SQLDataModel]: Remove: archive file [/home/abi/fetcher/tmp/sqldatamodel-0.6.3.tar.gz]
+[2024-05-18 00:05:48] INFO root fetch - processPackages [SQLDataModel]: Remove: archive file [/home/abi/fetcher/tmp/SQLDataModel-0.6.4-py3-none-any.whl.zip]
+[2024-05-18 00:05:48] INFO root fetch - main [MainThread]: End processing [SQLDataModel]: success
+[2024-05-18 00:05:48] INFO root fetch - main [MainThread]: Store serial: [23261147]
