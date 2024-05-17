@@ -520,3 +520,33 @@
 [2024-05-18 00:25:31] INFO root fetch - processPackages [haliax]: Remove: archive file [/home/abi/fetcher/tmp/haliax-1.4.dev296.tar.gz]
 [2024-05-18 00:25:31] INFO root fetch - main [MainThread]: End processing [haliax]: success
 [2024-05-18 00:25:31] INFO root fetch - main [MainThread]: Store serial: [23261375]
+[2024-05-18 00:27:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261375]
+[2024-05-18 00:27:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cog
+[2024-05-18 00:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kaas-cli
+[2024-05-18 00:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: splinepy
+[2024-05-18 00:27:39] INFO root fetch - processPackages [kaas-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:27:39] INFO root fetch - processPackages [cog]: New version: [0.9.8a0] Old Version: [0.9.8]
+[2024-05-18 00:27:39] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/53/7a/9bd004bc31f267a96dff892bf0f442d5811b21163a87f9b0108aeb144645/kaas_cli-0.1.8.tar.gz
+[2024-05-18 00:27:39] INFO root fetch - processPackages [cog]: Downloading https://files.pythonhosted.org/packages/fb/da/6608bae97ef02ff239bea9bc24aa4e5fb78aa8c9203e91f7cc6cf5b29339/cog-0.9.8-py3-none-any.whl
+[2024-05-18 00:27:39] INFO root fetch - processPackages [splinepy]: New version: [0.1.0] Old Version: [0.0.52]
+[2024-05-18 00:27:40] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/e5/6c/30a6a7bb074d6e698d7d40c648a46c4749a0123a444f6fa7793f94cb0bab/kaas_cli-0.1.9.tar.gz
+[2024-05-18 00:27:40] INFO root fetch - processPackages [cog]: Downloading https://files.pythonhosted.org/packages/c5/9b/0e04fc3523e838f31e043fec5afb025f5f9b9806e2388305389d0a73e797/cog-0.9.8a0-py3-none-any.whl
+[2024-05-18 00:27:40] INFO root fetch - processPackages [splinepy]: Downloading https://files.pythonhosted.org/packages/3d/aa/e1c4a95469876d6f72f9b268e3ab99f03fd98ee39c7ae94842986ea060d9/splinepy-0.0.52.tar.gz
+[2024-05-18 00:27:40] INFO root fetch - processPackages [kaas-cli]: executing diffoscope
+[2024-05-18 00:27:40] INFO root fetch - processPackages [kaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaas_cli-0.1.8.tar.gz tmp/kaas_cli-0.1.9.tar.gz --markdown 20240518/k/kaas-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:27:40] INFO root fetch - processPackages [cog]: executing diffoscope
+[2024-05-18 00:27:40] INFO root fetch - processPackages [cog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cog-0.9.8-py3-none-any.whl.zip tmp/cog-0.9.8a0-py3-none-any.whl.zip --markdown 20240518/c/cog/0.9.8-0.9.8a0/README.md --exclude *.pyd
+[2024-05-18 00:27:40] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.8.tar.gz]
+[2024-05-18 00:27:40] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.9.tar.gz]
+[2024-05-18 00:27:40] INFO root fetch - main [MainThread]: End processing [kaas-cli]: success
+[2024-05-18 00:27:40] INFO root fetch - processPackages [cog]: Remove: archive file [/home/abi/fetcher/tmp/cog-0.9.8-py3-none-any.whl.zip]
+[2024-05-18 00:27:40] INFO root fetch - processPackages [cog]: Remove: archive file [/home/abi/fetcher/tmp/cog-0.9.8a0-py3-none-any.whl.zip]
+[2024-05-18 00:27:40] INFO root fetch - main [MainThread]: End processing [cog]: success
+[2024-05-18 00:27:40] INFO root fetch - processPackages [splinepy]: Downloading https://files.pythonhosted.org/packages/dd/f3/a664c66cc80f40b22d92430bae87b365426696a189f6d595c14a5d8958b5/splinepy-0.1.0-cp310-cp310-macosx_11_0_arm64.whl
+[2024-05-18 00:27:42] INFO root fetch - processPackages [splinepy]: executing diffoscope
+[2024-05-18 00:27:42] INFO root fetch - processPackages [splinepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splinepy-0.0.52.tar.gz tmp/splinepy-0.1.0-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240518/s/splinepy/0.0.52-0.1.0/README.md --exclude *.pyd
+[2024-05-18 00:27:43] INFO root fetch - processPackages [splinepy]: Remove: archive file [/home/abi/fetcher/tmp/splinepy-0.0.52.tar.gz]
+[2024-05-18 00:27:43] INFO root fetch - processPackages [splinepy]: Remove: archive file [/home/abi/fetcher/tmp/splinepy-0.1.0-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-05-18 00:27:43] INFO root fetch - main [MainThread]: End processing [splinepy]: success
+[2024-05-18 00:27:43] INFO root fetch - main [MainThread]: Store serial: [23261383]
