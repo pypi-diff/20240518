@@ -208,3 +208,57 @@
 [2024-05-18 00:10:11] INFO root fetch - processPackages [surya-ocr]: Remove: archive file [/home/abi/fetcher/tmp/surya_ocr-0.4.6.tar.gz]
 [2024-05-18 00:10:11] INFO root fetch - main [MainThread]: End processing [surya-ocr]: success
 [2024-05-18 00:10:11] INFO root fetch - main [MainThread]: Store serial: [23261175]
+[2024-05-18 00:12:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261175]
+[2024-05-18 00:12:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-meraki
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: replit-river
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bosesoundtouchapi
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: climweb-wdqms
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nexus3-cli
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nested-pandas
+[2024-05-18 00:12:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fuzzquery
+[2024-05-18 00:12:20] WARNING root fetch - processPackages [fuzzquery]: Skipping, unable to determine old version
+[2024-05-18 00:12:20] INFO root fetch - main [MainThread]: End processing [fuzzquery] error
+[2024-05-18 00:12:20] INFO root fetch - processPackages [nexus3-cli]: New version: [4.1.9] Old Version: [4.1.8]
+[2024-05-18 00:12:20] INFO root fetch - processPackages [pulumi-meraki]: New version: [0.2.0a1715896924] Old Version: [0.2.0a1715890779]
+[2024-05-18 00:12:20] INFO root fetch - processPackages [bosesoundtouchapi]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-18 00:12:21] ERROR root fetch - processPackages [nested-pandas]: Unable to get metadata: No such project 'nested-pandas'
+[2024-05-18 00:12:21] INFO root fetch - main [MainThread]: End processing [nested-pandas] error
+[2024-05-18 00:12:21] INFO root fetch - processPackages [replit-river]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:12:21] INFO root fetch - processPackages [climweb-wdqms]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 00:12:21] INFO root fetch - processPackages [pulumi-meraki]: Downloading https://files.pythonhosted.org/packages/07/3b/6665f61b8b1766967c0c042ab29eb6b8f56203f6c3ed512fb83e726cf088/pulumi_meraki-0.2.0a1715890779.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/cf/e2/27416aa49fec3f7e18b1a22c5d976f2267ab5715d97c1314236a77e3a30a/bosesoundtouchapi-1.0.7-py3-none-any.whl
+[2024-05-18 00:12:21] INFO root fetch - processPackages [nexus3-cli]: Downloading https://files.pythonhosted.org/packages/7d/c2/aa4ff27f198b89ac87a5e6f768b27745c5d604eaeac81c7b632eba0c25ca/nexus3-cli-4.1.8.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [replit-river]: Downloading https://files.pythonhosted.org/packages/a3/60/d3406253d300f18664bf91712096240dd839c49b54c397c7d87c30c92ca3/replit_river-0.1.8.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [climweb-wdqms]: Downloading https://files.pythonhosted.org/packages/00/82/9d5c4376d1910fe86fee3ae34de4a482f4b5ec8907c810058bd6aa8f8427/climweb_wdqms-0.0.5.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/2d/eb/4a9e6b4a41569551a0d849ecbd1619975ae1d3dc5f7649e91fdf88547693/bosesoundtouchapi-1.0.9-py3-none-any.whl
+[2024-05-18 00:12:21] INFO root fetch - processPackages [pulumi-meraki]: Downloading https://files.pythonhosted.org/packages/48/8c/de4ef88c5bf775281848679fc6c20535d8b1ae88dafc6afd663edeaef12c/pulumi_meraki-0.2.0a1715896924.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [nexus3-cli]: Downloading https://files.pythonhosted.org/packages/8c/47/f0e6ecdf498474a88ee3bf4f19dcdc29e8d9be279d1cb6ca51ef4b787160/nexus3-cli-4.1.9.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [replit-river]: Downloading https://files.pythonhosted.org/packages/63/d0/cf3e1765cd7b168b65aab1449b4829714a8999032e46f8c202867d284f77/replit_river-0.1.9.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [bosesoundtouchapi]: executing diffoscope
+[2024-05-18 00:12:21] INFO root fetch - processPackages [bosesoundtouchapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip --markdown 20240518/b/bosesoundtouchapi/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-18 00:12:21] INFO root fetch - processPackages [climweb-wdqms]: Downloading https://files.pythonhosted.org/packages/10/e3/769398203d7640bf4d40b77f107491b53e45649c0355f72d0b3920e4fcc2/climweb_wdqms-0.0.6.tar.gz
+[2024-05-18 00:12:21] INFO root fetch - processPackages [pulumi-meraki]: executing diffoscope
+[2024-05-18 00:12:21] INFO root fetch - processPackages [pulumi-meraki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_meraki-0.2.0a1715890779.tar.gz tmp/pulumi_meraki-0.2.0a1715896924.tar.gz --markdown 20240518/p/pulumi-meraki/0.2.0a1715890779-0.2.0a1715896924/README.md --exclude *.pyd
+[2024-05-18 00:12:21] INFO root fetch - processPackages [nexus3-cli]: executing diffoscope
+[2024-05-18 00:12:21] INFO root fetch - processPackages [nexus3-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus3-cli-4.1.8.tar.gz tmp/nexus3-cli-4.1.9.tar.gz --markdown 20240518/n/nexus3-cli/4.1.8-4.1.9/README.md --exclude *.pyd
+[2024-05-18 00:12:21] INFO root fetch - processPackages [replit-river]: executing diffoscope
+[2024-05-18 00:12:21] INFO root fetch - processPackages [replit-river]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/replit_river-0.1.8.tar.gz tmp/replit_river-0.1.9.tar.gz --markdown 20240518/r/replit-river/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:12:21] INFO root fetch - processPackages [climweb-wdqms]: executing diffoscope
+[2024-05-18 00:12:21] INFO root fetch - processPackages [climweb-wdqms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climweb_wdqms-0.0.5.tar.gz tmp/climweb_wdqms-0.0.6.tar.gz --markdown 20240518/c/climweb-wdqms/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 00:12:22] INFO root fetch - processPackages [replit-river]: Remove: archive file [/home/abi/fetcher/tmp/replit_river-0.1.8.tar.gz]
+[2024-05-18 00:12:22] INFO root fetch - processPackages [replit-river]: Remove: archive file [/home/abi/fetcher/tmp/replit_river-0.1.9.tar.gz]
+[2024-05-18 00:12:22] INFO root fetch - main [MainThread]: End processing [replit-river]: success
+[2024-05-18 00:12:22] INFO root fetch - processPackages [nexus3-cli]: Remove: archive file [/home/abi/fetcher/tmp/nexus3-cli-4.1.8.tar.gz]
+[2024-05-18 00:12:22] INFO root fetch - processPackages [nexus3-cli]: Remove: archive file [/home/abi/fetcher/tmp/nexus3-cli-4.1.9.tar.gz]
+[2024-05-18 00:12:22] INFO root fetch - main [MainThread]: End processing [nexus3-cli]: success
+[2024-05-18 00:12:22] INFO root fetch - processPackages [climweb-wdqms]: Remove: archive file [/home/abi/fetcher/tmp/climweb_wdqms-0.0.5.tar.gz]
+[2024-05-18 00:12:22] INFO root fetch - processPackages [climweb-wdqms]: Remove: archive file [/home/abi/fetcher/tmp/climweb_wdqms-0.0.6.tar.gz]
+[2024-05-18 00:12:22] INFO root fetch - main [MainThread]: End processing [climweb-wdqms]: success
+[2024-05-18 00:12:23] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip]
+[2024-05-18 00:12:23] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
+[2024-05-18 00:12:23] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
+[2024-05-18 00:12:24] INFO root fetch - processPackages [pulumi-meraki]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_meraki-0.2.0a1715890779.tar.gz]
+[2024-05-18 00:12:24] INFO root fetch - processPackages [pulumi-meraki]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_meraki-0.2.0a1715896924.tar.gz]
+[2024-05-18 00:12:24] INFO root fetch - main [MainThread]: End processing [pulumi-meraki]: success
+[2024-05-18 00:12:24] INFO root fetch - main [MainThread]: Store serial: [23261197]
