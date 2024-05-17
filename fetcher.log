@@ -1595,3 +1595,48 @@
 [2024-05-18 01:38:31] INFO root fetch - processPackages [google-cloud-pipeline-components]: Remove: archive file [/home/abi/fetcher/tmp/google_cloud_pipeline_components-2.9.0-py3-none-any.whl.zip]
 [2024-05-18 01:38:31] INFO root fetch - main [MainThread]: End processing [google-cloud-pipeline-components]: success
 [2024-05-18 01:38:31] INFO root fetch - main [MainThread]: Store serial: [23261927]
+[2024-05-18 01:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261927]
+[2024-05-18 01:40:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgedb-pydantic-codegen
+[2024-05-18 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: instancedz
+[2024-05-18 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opentrons
+[2024-05-18 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langspace
+[2024-05-18 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opvious
+[2024-05-18 01:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cartesia
+[2024-05-18 01:40:40] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-18 01:40:40] INFO root fetch - processPackages [cartesia]: New version: [0.0.6] Old Version: [0.0.5rc1]
+[2024-05-18 01:40:40] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-05-18 01:40:40] WARNING root fetch - processPackages [instancedz]: Skipping, unable to determine old version
+[2024-05-18 01:40:40] INFO root fetch - main [MainThread]: End processing [instancedz] error
+[2024-05-18 01:40:40] WARNING root fetch - processPackages [langspace]: Skipping, unable to determine old version
+[2024-05-18 01:40:40] INFO root fetch - main [MainThread]: End processing [langspace] error
+[2024-05-18 01:40:40] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.5.2] Old Version: [2024.5.1]
+[2024-05-18 01:40:40] INFO root fetch - processPackages [opentrons]: New version: [7.3.0a5] Old Version: [7.3.0a4]
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [cartesia]: Downloading https://files.pythonhosted.org/packages/e4/92/4605e6682264a192282c26d3cdd8fc05c3007bacc3b98dfd3265e63c699e/cartesia-0.0.5rc1.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/a5/05/db0e4fc16ff64fe07be17892917d9d356e32394fc476b2dbffd2e537bab6/edgedb_pydantic_codegen-2024.5.1.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opentrons]: Downloading https://files.pythonhosted.org/packages/3d/ab/3647b38d6065f025c1d62400c67652f9cd3f659844aef30e0d40143f9c5c/opentrons-7.3.0a4.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240518/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-18 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/e8/bc/22fa3a1211a6f11af588a06b0ecddc0bc613e4d089a2bdea15055c003479/edgedb_pydantic_codegen-2024.5.2.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [cartesia]: Downloading https://files.pythonhosted.org/packages/8f/24/96d4e3fc380f53bf069d7bc05f399a0c91d8b3336c156a202eae86078d29/cartesia-0.0.6.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-05-18 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.5.1.tar.gz tmp/edgedb_pydantic_codegen-2024.5.2.tar.gz --markdown 20240518/e/edgedb-pydantic-codegen/2024.5.1-2024.5.2/README.md --exclude *.pyd
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opentrons]: Downloading https://files.pythonhosted.org/packages/e0/32/ea776b9b3bc0baedb7f23068b78f540fed8fc39a4a097582f453db82c86d/opentrons-7.3.0a5.tar.gz
+[2024-05-18 01:40:41] INFO root fetch - processPackages [cartesia]: executing diffoscope
+[2024-05-18 01:40:41] INFO root fetch - processPackages [cartesia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cartesia-0.0.5rc1.tar.gz tmp/cartesia-0.0.6.tar.gz --markdown 20240518/c/cartesia/0.0.5rc1-0.0.6/README.md --exclude *.pyd
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opentrons]: executing diffoscope
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opentrons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentrons-7.3.0a4.tar.gz tmp/opentrons-7.3.0a5.tar.gz --markdown 20240518/o/opentrons/7.3.0a4-7.3.0a5/README.md --exclude *.pyd
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-05-18 01:40:41] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-05-18 01:40:41] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-05-18 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.1.tar.gz]
+[2024-05-18 01:40:41] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.2.tar.gz]
+[2024-05-18 01:40:41] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-05-18 01:40:42] INFO root fetch - processPackages [cartesia]: Remove: archive file [/home/abi/fetcher/tmp/cartesia-0.0.5rc1.tar.gz]
+[2024-05-18 01:40:42] INFO root fetch - processPackages [cartesia]: Remove: archive file [/home/abi/fetcher/tmp/cartesia-0.0.6.tar.gz]
+[2024-05-18 01:40:42] INFO root fetch - main [MainThread]: End processing [cartesia]: success
+[2024-05-18 01:40:43] INFO root fetch - processPackages [opentrons]: Remove: archive file [/home/abi/fetcher/tmp/opentrons-7.3.0a4.tar.gz]
+[2024-05-18 01:40:43] INFO root fetch - processPackages [opentrons]: Remove: archive file [/home/abi/fetcher/tmp/opentrons-7.3.0a5.tar.gz]
+[2024-05-18 01:40:43] INFO root fetch - main [MainThread]: End processing [opentrons]: success
+[2024-05-18 01:40:43] INFO root fetch - main [MainThread]: Store serial: [23261948]
