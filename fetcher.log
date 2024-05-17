@@ -1374,3 +1374,29 @@
 [2024-05-18 01:20:58] INFO root fetch - processPackages [glidergun]: Remove: archive file [/home/abi/fetcher/tmp/glidergun-0.5.7.tar.gz]
 [2024-05-18 01:20:58] INFO root fetch - main [MainThread]: End processing [glidergun]: success
 [2024-05-18 01:20:58] INFO root fetch - main [MainThread]: Store serial: [23261741]
+[2024-05-18 01:23:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261741]
+[2024-05-18 01:23:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 01:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seismic-rna
+[2024-05-18 01:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outerbounds
+[2024-05-18 01:23:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vitriolic
+[2024-05-18 01:23:07] INFO root fetch - processPackages [outerbounds]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-18 01:23:07] INFO root fetch - processPackages [outerbounds]: Downloading https://files.pythonhosted.org/packages/db/c3/414322f3ea100053ac3662e6bb112f6d3bc83f54c5c0996e89fef5c3d384/outerbounds-0.3.8-py3-none-any.whl
+[2024-05-18 01:23:07] INFO root fetch - processPackages [seismic-rna]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-18 01:23:07] INFO root fetch - processPackages [vitriolic]: New version: [3.4.0] Old Version: [3.3.9]
+[2024-05-18 01:23:07] INFO root fetch - processPackages [seismic-rna]: Downloading https://files.pythonhosted.org/packages/53/f2/8420279ae686df28989f0588c8721f9d88b14d4957345c82135aa63930bd/seismic_rna-0.9.7.tar.gz
+[2024-05-18 01:23:07] INFO root fetch - processPackages [outerbounds]: Downloading https://files.pythonhosted.org/packages/eb/c8/c87d25484be12f66ee78314f7ebd89ca4200a29e85c757b1d2e469e06c52/outerbounds-0.3.9-py3-none-any.whl
+[2024-05-18 01:23:08] WARNING root fetch - processPackages [seismic-rna]: Skipping package: exceeds size limit 25833813>=10485760
+[2024-05-18 01:23:08] INFO root fetch - main [MainThread]: End processing [seismic-rna] error
+[2024-05-18 01:23:08] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/6c/7d/03f484d4d2194c9f9fcef1675ffb773978d7735c2d3e6708532d70eba67f/vitriolic-3.3.9.tar.gz
+[2024-05-18 01:23:08] INFO root fetch - processPackages [outerbounds]: executing diffoscope
+[2024-05-18 01:23:08] INFO root fetch - processPackages [outerbounds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outerbounds-0.3.8-py3-none-any.whl.zip tmp/outerbounds-0.3.9-py3-none-any.whl.zip --markdown 20240518/o/outerbounds/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-18 01:23:08] INFO root fetch - processPackages [vitriolic]: Downloading https://files.pythonhosted.org/packages/76/98/352e8b8e31a2f85d89c4443a2f9b84f3d484615f349f632bcf5662c7c59f/vitriolic-3.4.0.tar.gz
+[2024-05-18 01:23:08] INFO root fetch - processPackages [outerbounds]: Remove: archive file [/home/abi/fetcher/tmp/outerbounds-0.3.8-py3-none-any.whl.zip]
+[2024-05-18 01:23:08] INFO root fetch - processPackages [outerbounds]: Remove: archive file [/home/abi/fetcher/tmp/outerbounds-0.3.9-py3-none-any.whl.zip]
+[2024-05-18 01:23:08] INFO root fetch - main [MainThread]: End processing [outerbounds]: success
+[2024-05-18 01:23:08] INFO root fetch - processPackages [vitriolic]: executing diffoscope
+[2024-05-18 01:23:08] INFO root fetch - processPackages [vitriolic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vitriolic-3.3.9.tar.gz tmp/vitriolic-3.4.0.tar.gz --markdown 20240518/v/vitriolic/3.3.9-3.4.0/README.md --exclude *.pyd
+[2024-05-18 01:23:12] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.3.9.tar.gz]
+[2024-05-18 01:23:12] INFO root fetch - processPackages [vitriolic]: Remove: archive file [/home/abi/fetcher/tmp/vitriolic-3.4.0.tar.gz]
+[2024-05-18 01:23:12] INFO root fetch - main [MainThread]: End processing [vitriolic]: success
+[2024-05-18 01:23:12] INFO root fetch - main [MainThread]: Store serial: [23261749]
