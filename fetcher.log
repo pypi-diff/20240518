@@ -814,3 +814,41 @@
 [2024-05-18 00:48:11] INFO root fetch - processPackages [semantic-kernel]: Remove: archive file [/home/abi/fetcher/tmp/semantic_kernel-1.0.0rc1.tar.gz]
 [2024-05-18 00:48:11] INFO root fetch - main [MainThread]: End processing [semantic-kernel]: success
 [2024-05-18 00:48:11] INFO root fetch - main [MainThread]: Store serial: [23261508]
+[2024-05-18 00:50:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261508]
+[2024-05-18 00:50:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 00:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pinguescencez
+[2024-05-18 00:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-18 00:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: resistify
+[2024-05-18 00:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kvalchemy
+[2024-05-18 00:50:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RealTimeTTS
+[2024-05-18 00:50:19] INFO root fetch - processPackages [resistify]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-18 00:50:19] INFO root fetch - processPackages [balsamic]: New version: [0.0.15] Old Version: [0.0.14]
+[2024-05-18 00:50:19] INFO root fetch - processPackages [kvalchemy]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 00:50:19] WARNING root fetch - processPackages [pinguescencez]: Skipping, unable to determine old version
+[2024-05-18 00:50:19] INFO root fetch - main [MainThread]: End processing [pinguescencez] error
+[2024-05-18 00:50:19] INFO root fetch - processPackages [resistify]: Downloading https://files.pythonhosted.org/packages/62/6b/2cbf9ea70f23b9815b31505888ff73b6ba1244077cc25e5d96355779da67/resistify-0.1.1.tar.gz
+[2024-05-18 00:50:19] INFO root fetch - processPackages [RealTimeTTS]: New version: [0.4.0] Old Version: [0.3.48]
+[2024-05-18 00:50:19] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/4a/24/a89b80a75b84ca68ae2e53bdaf89e4894b6ce0c3558b3d948a7fe82effb2/balsamic-0.0.14.tar.gz
+[2024-05-18 00:50:19] WARNING root fetch - processPackages [resistify]: Skipping package: exceeds size limit 78167608>=10485760
+[2024-05-18 00:50:20] INFO root fetch - main [MainThread]: End processing [resistify] error
+[2024-05-18 00:50:20] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/a7/54/060820a48aa611bbb96dafc14123947c20aa18f3bb91d387a64b76a7c3aa/kvalchemy-0.0.3.tar.gz
+[2024-05-18 00:50:20] INFO root fetch - processPackages [RealTimeTTS]: Downloading https://files.pythonhosted.org/packages/1f/52/f3731e52cb350d0ebe1d907f08a5ab0f659a19ad230d55479240e865de06/RealTimeTTS-0.3.48.tar.gz
+[2024-05-18 00:50:20] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/58/28/ef1612d145b293441edd4aea2f50788f9c1e49ff10eec7e2f692289aaa04/balsamic-0.0.15.tar.gz
+[2024-05-18 00:50:20] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 00:50:20] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.0.14.tar.gz tmp/balsamic-0.0.15.tar.gz --markdown 20240518/b/balsamic/0.0.14-0.0.15/README.md --exclude *.pyd
+[2024-05-18 00:50:20] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/5b/30/ec49afb7b1cefd5eff6847435ed9d1fddaec2d41904b998b278754cd4acc/kvalchemy-0.0.4.tar.gz
+[2024-05-18 00:50:20] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-05-18 00:50:20] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.0.3.tar.gz tmp/kvalchemy-0.0.4.tar.gz --markdown 20240518/k/kvalchemy/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 00:50:20] INFO root fetch - processPackages [RealTimeTTS]: Downloading https://files.pythonhosted.org/packages/52/fd/e7b88197da99903cbb46625042b2389f66ef5196beaa9db291a5bba81fd0/RealTimeTTS-0.4.0.tar.gz
+[2024-05-18 00:50:20] INFO root fetch - processPackages [RealTimeTTS]: executing diffoscope
+[2024-05-18 00:50:20] INFO root fetch - processPackages [RealTimeTTS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RealTimeTTS-0.3.48.tar.gz tmp/RealTimeTTS-0.4.0.tar.gz --markdown 20240518/R/RealTimeTTS/0.3.48-0.4.0/README.md --exclude *.pyd
+[2024-05-18 00:50:20] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.14.tar.gz]
+[2024-05-18 00:50:20] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.15.tar.gz]
+[2024-05-18 00:50:20] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 00:50:20] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.3.tar.gz]
+[2024-05-18 00:50:20] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.4.tar.gz]
+[2024-05-18 00:50:20] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-05-18 00:50:21] INFO root fetch - processPackages [RealTimeTTS]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeTTS-0.3.48.tar.gz]
+[2024-05-18 00:50:21] INFO root fetch - processPackages [RealTimeTTS]: Remove: archive file [/home/abi/fetcher/tmp/RealTimeTTS-0.4.0.tar.gz]
+[2024-05-18 00:50:21] INFO root fetch - main [MainThread]: End processing [RealTimeTTS]: success
+[2024-05-18 00:50:21] INFO root fetch - main [MainThread]: Store serial: [23261526]
