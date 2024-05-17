@@ -1257,3 +1257,69 @@
 [2024-05-18 01:14:25] INFO root fetch - processPackages [Surfactant]: Remove: archive file [/home/abi/fetcher/tmp/surfactant-0.0.0rc6.tar.gz]
 [2024-05-18 01:14:25] INFO root fetch - main [MainThread]: End processing [Surfactant]: success
 [2024-05-18 01:14:25] INFO root fetch - main [MainThread]: Store serial: [23261698]
+[2024-05-18 01:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261698]
+[2024-05-18 01:16:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hcs-core
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hcs-cli
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: masscube
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-source-iterable
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: featureform-enterprise
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: optprompt
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ontobio
+[2024-05-18 01:16:35] INFO root fetch - processPackages [featureform-enterprise]: New version: [0.13.9] Old Version: [0.13.8rc1]
+[2024-05-18 01:16:35] INFO root fetch - processPackages [ontobio]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-05-18 01:16:35] INFO root fetch - processPackages [airbyte-source-iterable]: New version: [0.5.1.dev202405172314] Old Version: [0.5.1.dev202405100348]
+[2024-05-18 01:16:36] INFO root fetch - processPackages [featureform-enterprise]: Downloading https://files.pythonhosted.org/packages/43/8a/c03938ad0cd2893595e362dd5b194983490daa635f4356551848cb92943d/featureform_enterprise-0.13.8rc1.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-core]: New version: [0.1.233] Old Version: [0.1.232]
+[2024-05-18 01:16:36] INFO root fetch - processPackages [masscube]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 01:16:36] INFO root fetch - processPackages [optprompt]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-cli]: New version: [0.1.98] Old Version: [0.1.97]
+[2024-05-18 01:16:36] INFO root fetch - processPackages [ontobio]: Downloading https://files.pythonhosted.org/packages/f1/a6/6d5d1753d910fbc0f214330051513f4103cbb080bb9868b132e3126879bf/ontobio-2.8.8.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/2c/9c/fea2ba1004968cbc68db8ee3bbcdab141c4e71b616adf25c1a804926bbfa/airbyte_source_iterable-0.5.1.dev202405100348.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-core]: Downloading https://files.pythonhosted.org/packages/c6/00/e59e5237f78158ac1aa0c00dc9fc0cec05942290f828de9add1cc8e9d4ba/hcs_core-0.1.232.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [optprompt]: Downloading https://files.pythonhosted.org/packages/59/1b/301c24dbfe7b4053902af843207da107b46b9c6033b33a3ddc20da379e2d/optprompt-0.4.0.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [masscube]: Downloading https://files.pythonhosted.org/packages/2d/db/d89b0c94182f9a980eb8ccbe6a67015e382e56c741eb440f976bba4f6632/masscube-0.0.8.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-cli]: Downloading https://files.pythonhosted.org/packages/f8/df/208577492e791a01b215928ef17543dd71d1db9c71661a2eaf3b2c739e78/hcs-cli-0.1.97.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [ontobio]: Downloading https://files.pythonhosted.org/packages/ad/92/e2a3395f640a74f7463bfca765a8abf5eafbfa06acb1767dd34cdb4d90c5/ontobio-2.8.9.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [featureform-enterprise]: Downloading https://files.pythonhosted.org/packages/39/bb/57d83cef3f3872f1518035317d856894f036fe954bac5b805677e753fe76/featureform_enterprise-0.13.9.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/75/4c/e3bef983ac82ffff1d476f98b618a61874a5b392d0fedb1ab1ce91c4e565/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [ontobio]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [ontobio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontobio-2.8.8.tar.gz tmp/ontobio-2.8.9.tar.gz --markdown 20240518/o/ontobio/2.8.8-2.8.9/README.md --exclude *.pyd
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-core]: Downloading https://files.pythonhosted.org/packages/72/28/ac30525140ee91b87556a6451e0cb23d03a9af1597d50303bf1a8f1576d3/hcs_core-0.1.233.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-cli]: Downloading https://files.pythonhosted.org/packages/75/92/ba28bbaff4bfb3aa8084610c7992979d23060c125c74f6a73fdffaed4d58/hcs-cli-0.1.98.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [optprompt]: Downloading https://files.pythonhosted.org/packages/4e/5f/ce7382fc335081a23dff308e05f4be8f559f006cfa85906f718698341785/optprompt-0.5.0.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [masscube]: Downloading https://files.pythonhosted.org/packages/0c/7c/bba8006bb6b76d1d8768783a3d30f994e908adfb08f2a87be88aea597a2c/masscube-0.0.9.tar.gz
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-core]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcs_core-0.1.232.tar.gz tmp/hcs_core-0.1.233.tar.gz --markdown 20240518/h/hcs-core/0.1.232-0.1.233/README.md --exclude *.pyd
+[2024-05-18 01:16:36] INFO root fetch - processPackages [airbyte-source-iterable]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [airbyte-source-iterable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_iterable-0.5.1.dev202405100348.tar.gz tmp/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz --markdown 20240518/a/airbyte-source-iterable/0.5.1.dev202405100348-0.5.1.dev202405172314/README.md --exclude *.pyd
+[2024-05-18 01:16:36] INFO root fetch - processPackages [featureform-enterprise]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [featureform-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featureform_enterprise-0.13.8rc1.tar.gz tmp/featureform_enterprise-0.13.9.tar.gz --markdown 20240518/f/featureform-enterprise/0.13.8rc1-0.13.9/README.md --exclude *.pyd
+[2024-05-18 01:16:36] INFO root fetch - processPackages [optprompt]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [optprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optprompt-0.4.0.tar.gz tmp/optprompt-0.5.0.tar.gz --markdown 20240518/o/optprompt/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-cli]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [hcs-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcs-cli-0.1.97.tar.gz tmp/hcs-cli-0.1.98.tar.gz --markdown 20240518/h/hcs-cli/0.1.97-0.1.98/README.md --exclude *.pyd
+[2024-05-18 01:16:36] INFO root fetch - processPackages [masscube]: executing diffoscope
+[2024-05-18 01:16:36] INFO root fetch - processPackages [masscube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masscube-0.0.8.tar.gz tmp/masscube-0.0.9.tar.gz --markdown 20240518/m/masscube/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 01:16:37] INFO root fetch - processPackages [masscube]: Remove: archive file [/home/abi/fetcher/tmp/masscube-0.0.8.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - processPackages [masscube]: Remove: archive file [/home/abi/fetcher/tmp/masscube-0.0.9.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - main [MainThread]: End processing [masscube]: success
+[2024-05-18 01:16:37] INFO root fetch - processPackages [optprompt]: Remove: archive file [/home/abi/fetcher/tmp/optprompt-0.4.0.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - processPackages [optprompt]: Remove: archive file [/home/abi/fetcher/tmp/optprompt-0.5.0.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - main [MainThread]: End processing [optprompt]: success
+[2024-05-18 01:16:37] INFO root fetch - processPackages [hcs-core]: Remove: archive file [/home/abi/fetcher/tmp/hcs_core-0.1.232.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - processPackages [hcs-core]: Remove: archive file [/home/abi/fetcher/tmp/hcs_core-0.1.233.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - main [MainThread]: End processing [hcs-core]: success
+[2024-05-18 01:16:37] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405100348.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - main [MainThread]: End processing [airbyte-source-iterable]: success
+[2024-05-18 01:16:37] INFO root fetch - processPackages [ontobio]: Remove: archive file [/home/abi/fetcher/tmp/ontobio-2.8.8.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - processPackages [ontobio]: Remove: archive file [/home/abi/fetcher/tmp/ontobio-2.8.9.tar.gz]
+[2024-05-18 01:16:37] INFO root fetch - main [MainThread]: End processing [ontobio]: success
+[2024-05-18 01:16:38] INFO root fetch - processPackages [hcs-cli]: Remove: archive file [/home/abi/fetcher/tmp/hcs-cli-0.1.97.tar.gz]
+[2024-05-18 01:16:38] INFO root fetch - processPackages [hcs-cli]: Remove: archive file [/home/abi/fetcher/tmp/hcs-cli-0.1.98.tar.gz]
+[2024-05-18 01:16:38] INFO root fetch - main [MainThread]: End processing [hcs-cli]: success
+[2024-05-18 01:16:38] INFO root fetch - processPackages [featureform-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/featureform_enterprise-0.13.8rc1.tar.gz]
+[2024-05-18 01:16:38] INFO root fetch - processPackages [featureform-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/featureform_enterprise-0.13.9.tar.gz]
+[2024-05-18 01:16:38] INFO root fetch - main [MainThread]: End processing [featureform-enterprise]: success
+[2024-05-18 01:16:38] INFO root fetch - main [MainThread]: Store serial: [23261719]
