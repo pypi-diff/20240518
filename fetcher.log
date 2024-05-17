@@ -1508,3 +1508,24 @@
 [2024-05-18 01:31:51] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.3.tar.gz]
 [2024-05-18 01:31:51] INFO root fetch - main [MainThread]: End processing [balsamic]: success
 [2024-05-18 01:31:51] INFO root fetch - main [MainThread]: Store serial: [23261896]
+[2024-05-18 01:33:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261896]
+[2024-05-18 01:34:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 01:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynrw
+[2024-05-18 01:34:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-18 01:34:00] INFO root fetch - processPackages [balsamic]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 01:34:00] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/6e/da/a386b5d26055e38aa7c2a8dba1bc3d8a6250cc83fe55f422a5bf31a6c3fa/balsamic-0.1.3.tar.gz
+[2024-05-18 01:34:00] INFO root fetch - processPackages [pynrw]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-18 01:34:00] INFO root fetch - processPackages [pynrw]: Downloading https://files.pythonhosted.org/packages/c1/8f/1ee8a250a8a7a12cd71b7e85d931622d574e50e3cbb5b544e943f03efcfe/pynrw-1.3.0.tar.gz
+[2024-05-18 01:34:00] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/84/da/590392ee0fd9a8ba3e75593530b4a2d1a780a466a90a325e93bebacc7236/balsamic-0.1.4.tar.gz
+[2024-05-18 01:34:00] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 01:34:00] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.3.tar.gz tmp/balsamic-0.1.4.tar.gz --markdown 20240518/b/balsamic/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 01:34:00] INFO root fetch - processPackages [pynrw]: Downloading https://files.pythonhosted.org/packages/35/2e/f1411f2bb7f6a0df1abc5be20c29c83007a9a7439dda67f566ff96d1ef24/pynrw-1.4.0.tar.gz
+[2024-05-18 01:34:01] INFO root fetch - processPackages [pynrw]: executing diffoscope
+[2024-05-18 01:34:01] INFO root fetch - processPackages [pynrw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynrw-1.3.0.tar.gz tmp/pynrw-1.4.0.tar.gz --markdown 20240518/p/pynrw/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-18 01:34:01] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.3.tar.gz]
+[2024-05-18 01:34:01] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.4.tar.gz]
+[2024-05-18 01:34:01] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 01:34:01] INFO root fetch - processPackages [pynrw]: Remove: archive file [/home/abi/fetcher/tmp/pynrw-1.3.0.tar.gz]
+[2024-05-18 01:34:01] INFO root fetch - processPackages [pynrw]: Remove: archive file [/home/abi/fetcher/tmp/pynrw-1.4.0.tar.gz]
+[2024-05-18 01:34:01] INFO root fetch - main [MainThread]: End processing [pynrw]: success
+[2024-05-18 01:34:01] INFO root fetch - main [MainThread]: Store serial: [23261903]
