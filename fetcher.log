@@ -1323,3 +1323,36 @@
 [2024-05-18 01:16:38] INFO root fetch - processPackages [featureform-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/featureform_enterprise-0.13.9.tar.gz]
 [2024-05-18 01:16:38] INFO root fetch - main [MainThread]: End processing [featureform-enterprise]: success
 [2024-05-18 01:16:38] INFO root fetch - main [MainThread]: Store serial: [23261719]
+[2024-05-18 01:18:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261719]
+[2024-05-18 01:18:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 01:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balsamic
+[2024-05-18 01:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blackchirp
+[2024-05-18 01:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vmklib
+[2024-05-18 01:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiotraq
+[2024-05-18 01:18:47] INFO root fetch - processPackages [balsamic]: New version: [0.1.0] Old Version: [0.0.19]
+[2024-05-18 01:18:47] WARNING root fetch - processPackages [aiotraq]: Skipping, unable to determine old version
+[2024-05-18 01:18:47] INFO root fetch - main [MainThread]: End processing [aiotraq] error
+[2024-05-18 01:18:47] INFO root fetch - processPackages [vmklib]: New version: [2.0.0] Old Version: [1.9.0]
+[2024-05-18 01:18:47] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/a1/7d/7819e1123cf0eb4f734605001d4f54383d6de8bcd90a071a94cfb69241a5/balsamic-0.0.19.tar.gz
+[2024-05-18 01:18:47] INFO root fetch - processPackages [blackchirp]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 01:18:47] INFO root fetch - processPackages [vmklib]: Downloading https://files.pythonhosted.org/packages/f4/b0/58bb77fef5d8a0347e565208f96e8fa7f66804ac2f039ea33ac938a59f3c/vmklib-1.9.0.tar.gz
+[2024-05-18 01:18:47] INFO root fetch - processPackages [blackchirp]: Downloading https://files.pythonhosted.org/packages/a0/29/deae4f8c95675f72e6335bc057d3c739ee2592a019f24b44e99746398639/blackchirp-0.0.2.tar.gz
+[2024-05-18 01:18:47] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/cf/1a/184aa44494b0bc0f875bf50c00e99119b60e4248a082e9d8cdbfe5e92d71/balsamic-0.1.0.tar.gz
+[2024-05-18 01:18:47] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 01:18:47] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.0.19.tar.gz tmp/balsamic-0.1.0.tar.gz --markdown 20240518/b/balsamic/0.0.19-0.1.0/README.md --exclude *.pyd
+[2024-05-18 01:18:47] INFO root fetch - processPackages [blackchirp]: Downloading https://files.pythonhosted.org/packages/e6/d3/716bbc908752f96bb5a69bb8fd1082799c5db00dc8463d7acc43d735efb0/blackchirp-0.0.3.tar.gz
+[2024-05-18 01:18:47] INFO root fetch - processPackages [blackchirp]: executing diffoscope
+[2024-05-18 01:18:47] INFO root fetch - processPackages [blackchirp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blackchirp-0.0.2.tar.gz tmp/blackchirp-0.0.3.tar.gz --markdown 20240518/b/blackchirp/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 01:18:47] INFO root fetch - processPackages [vmklib]: Downloading https://files.pythonhosted.org/packages/cd/93/af99d7fa561dc3e632eb68d36259d9ca398c8df6c59a5eb9b88e061fa121/vmklib-2.0.0.tar.gz
+[2024-05-18 01:18:48] INFO root fetch - processPackages [vmklib]: executing diffoscope
+[2024-05-18 01:18:48] INFO root fetch - processPackages [vmklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vmklib-1.9.0.tar.gz tmp/vmklib-2.0.0.tar.gz --markdown 20240518/v/vmklib/1.9.0-2.0.0/README.md --exclude *.pyd
+[2024-05-18 01:18:48] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.19.tar.gz]
+[2024-05-18 01:18:48] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.0.tar.gz]
+[2024-05-18 01:18:48] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 01:18:48] INFO root fetch - processPackages [blackchirp]: Remove: archive file [/home/abi/fetcher/tmp/blackchirp-0.0.2.tar.gz]
+[2024-05-18 01:18:48] INFO root fetch - processPackages [blackchirp]: Remove: archive file [/home/abi/fetcher/tmp/blackchirp-0.0.3.tar.gz]
+[2024-05-18 01:18:48] INFO root fetch - main [MainThread]: End processing [blackchirp]: success
+[2024-05-18 01:18:48] INFO root fetch - processPackages [vmklib]: Remove: archive file [/home/abi/fetcher/tmp/vmklib-1.9.0.tar.gz]
+[2024-05-18 01:18:48] INFO root fetch - processPackages [vmklib]: Remove: archive file [/home/abi/fetcher/tmp/vmklib-2.0.0.tar.gz]
+[2024-05-18 01:18:48] INFO root fetch - main [MainThread]: End processing [vmklib]: success
+[2024-05-18 01:18:48] INFO root fetch - main [MainThread]: Store serial: [23261731]
