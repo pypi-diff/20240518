@@ -574,3 +574,40 @@
 [2024-05-18 00:29:53] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
 [2024-05-18 00:29:53] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
 [2024-05-18 00:29:53] INFO root fetch - main [MainThread]: Store serial: [23261393]
+[2024-05-18 00:31:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261393]
+[2024-05-18 00:32:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 00:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nmuwd
+[2024-05-18 00:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-radiance
+[2024-05-18 00:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-uwg
+[2024-05-18 00:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: netron
+[2024-05-18 00:32:02] INFO root fetch - processPackages [nmuwd]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 00:32:02] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/fd/a1141ab1fbf3ce08581a4159c3eb398fb0620311dfc3d6fbac1da254424b/nmuwd-0.0.8.tar.gz
+[2024-05-18 00:32:02] INFO root fetch - processPackages [netron]: New version: [7.6.7] Old Version: [7.6.6]
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-05-18 00:32:02] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/b0/79/c49606bf1da5c61a7c9c0f89274582bbca3825388d388dafae7938b040c0/nmuwd-0.0.9.tar.gz
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a2/41/805cddd3de27bfc114d3b54bbf0a558b1d450bb0bc346c8bbfc9f9e1ca04/dragonfly-radiance-0.3.8.tar.gz
+[2024-05-18 00:32:02] INFO root fetch - processPackages [nmuwd]: executing diffoscope
+[2024-05-18 00:32:02] INFO root fetch - processPackages [nmuwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmuwd-0.0.8.tar.gz tmp/nmuwd-0.0.9.tar.gz --markdown 20240518/n/nmuwd/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 00:32:02] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/27/92/b71dcb40e627333f0634d1f5e0ea768101432568607f27466f5297e6d424/netron-7.6.7-py3-none-any.whl
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a9/93/8933c5c67b8d336f624b3e7f9cb128678c38867dac08b6bb30a824b7cb3d/dragonfly-radiance-0.3.9.tar.gz
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2024-05-18 00:32:02] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-05-18 00:32:02] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.6-py3-none-any.whl.zip tmp/netron-7.6.7-py3-none-any.whl.zip --markdown 20240518/n/netron/7.6.6-7.6.7/README.md --exclude *.pyd
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2024-05-18 00:32:02] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.3.8.tar.gz tmp/dragonfly-radiance-0.3.9.tar.gz --markdown 20240518/d/dragonfly-radiance/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-18 00:32:03] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2024-05-18 00:32:03] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20240518/d/dragonfly-uwg/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-05-18 00:32:03] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.8.tar.gz]
+[2024-05-18 00:32:03] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.9.tar.gz]
+[2024-05-18 00:32:03] INFO root fetch - main [MainThread]: End processing [nmuwd]: success
+[2024-05-18 00:32:03] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.8.tar.gz]
+[2024-05-18 00:32:03] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.9.tar.gz]
+[2024-05-18 00:32:03] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2024-05-18 00:32:03] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.98.tar.gz]
+[2024-05-18 00:32:03] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
+[2024-05-18 00:32:03] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2024-05-18 00:35:03] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-05-18 00:35:03] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-05-18 00:35:03] INFO root fetch - main [MainThread]: Store serial: [23261405]
