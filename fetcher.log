@@ -49,3 +49,63 @@
 [2024-05-18 00:01:27] INFO root fetch - processPackages [taffy]: Remove: archive file [/home/abi/fetcher/tmp/taffy-0.0.3.tar.gz]
 [2024-05-18 00:01:27] INFO root fetch - main [MainThread]: End processing [taffy]: success
 [2024-05-18 00:01:27] INFO root fetch - main [MainThread]: Store serial: [23261115]
+[2024-05-18 00:03:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261115]
+[2024-05-18 00:03:35] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kaas-cli
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: faucetconfrpc
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: campanistz
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fractal-matrix-client
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nmuwd
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: referrers
+[2024-05-18 00:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: remla-preprocess
+[2024-05-18 00:03:36] INFO root fetch - processPackages [kaas-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:03:36] WARNING root fetch - processPackages [campanistz]: Skipping, unable to determine old version
+[2024-05-18 00:03:36] INFO root fetch - main [MainThread]: End processing [campanistz] error
+[2024-05-18 00:03:36] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/53/7a/9bd004bc31f267a96dff892bf0f442d5811b21163a87f9b0108aeb144645/kaas_cli-0.1.8.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [referrers]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-18 00:03:36] INFO root fetch - processPackages [nmuwd]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 00:03:36] INFO root fetch - processPackages [faucetconfrpc]: New version: [0.9] Old Version: [0.8]
+[2024-05-18 00:03:36] INFO root fetch - processPackages [remla-preprocess]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 00:03:36] INFO root fetch - processPackages [fractal-matrix-client]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 00:03:36] INFO root fetch - processPackages [remla-preprocess]: Downloading https://files.pythonhosted.org/packages/16/dc/26dff47980f6c38a5d6c599def19f1259c46476efc0d45493a1723ab1003/remla_preprocess-0.1.0.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [faucetconfrpc]: Downloading https://files.pythonhosted.org/packages/04/ab/9211c7bc1a14ae84b63427b94b9eff1fa292cf14afa607f6264bd6631dbf/faucetconfrpc-0.8.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/04/295d81971c2d12392210d91174de86657c8bbd469dfc35f776f3d390bbe2/nmuwd-0.0.7.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/41/1b/68b0927256d7cb081bb50af3fc1d84d585a54e2e69a8fc478cd2f579ca09/referrers-0.5.0.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/e5/6c/30a6a7bb074d6e698d7d40c648a46c4749a0123a444f6fa7793f94cb0bab/kaas_cli-0.1.9.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [fractal-matrix-client]: Downloading https://files.pythonhosted.org/packages/d1/c9/fdc1a97384b440f8ddfd049059e2c1d43352bf7142c7410a021b0aba61a0/fractal_matrix_client-0.0.5.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [kaas-cli]: executing diffoscope
+[2024-05-18 00:03:36] INFO root fetch - processPackages [kaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaas_cli-0.1.8.tar.gz tmp/kaas_cli-0.1.9.tar.gz --markdown 20240518/k/kaas-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:03:36] INFO root fetch - processPackages [remla-preprocess]: Downloading https://files.pythonhosted.org/packages/71/08/a062d2ff41b5b42b7d9a3c017f8374af66f8a7780cf6cc88079118f47f61/remla_preprocess-0.1.1.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [faucetconfrpc]: Downloading https://files.pythonhosted.org/packages/65/6c/3d6a93f305a4a5dd20e2ec3b3ff84c4af817bb3de6b7f4de59eaf6342e35/faucetconfrpc-0.9.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/0c/95/5db9321ab382ee5ca15f8da3733c64c3641fabdad85e71ada60a613a6662/referrers-0.5.1.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [fractal-matrix-client]: Downloading https://files.pythonhosted.org/packages/a1/5a/0a43ce098395504dd0e6baaee8bcc7ed54bcfe9b5775819a701e2353f617/fractal_matrix_client-0.0.6.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/fd/a1141ab1fbf3ce08581a4159c3eb398fb0620311dfc3d6fbac1da254424b/nmuwd-0.0.8.tar.gz
+[2024-05-18 00:03:36] INFO root fetch - processPackages [faucetconfrpc]: executing diffoscope
+[2024-05-18 00:03:36] INFO root fetch - processPackages [faucetconfrpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faucetconfrpc-0.8.tar.gz tmp/faucetconfrpc-0.9.tar.gz --markdown 20240518/f/faucetconfrpc/0.8-0.9/README.md --exclude *.pyd
+[2024-05-18 00:03:36] INFO root fetch - processPackages [fractal-matrix-client]: executing diffoscope
+[2024-05-18 00:03:36] INFO root fetch - processPackages [referrers]: executing diffoscope
+[2024-05-18 00:03:36] INFO root fetch - processPackages [fractal-matrix-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fractal_matrix_client-0.0.5.tar.gz tmp/fractal_matrix_client-0.0.6.tar.gz --markdown 20240518/f/fractal-matrix-client/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 00:03:36] INFO root fetch - processPackages [referrers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/referrers-0.5.0.tar.gz tmp/referrers-0.5.1.tar.gz --markdown 20240518/r/referrers/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-18 00:03:36] INFO root fetch - processPackages [remla-preprocess]: executing diffoscope
+[2024-05-18 00:03:36] INFO root fetch - processPackages [remla-preprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remla_preprocess-0.1.0.tar.gz tmp/remla_preprocess-0.1.1.tar.gz --markdown 20240518/r/remla-preprocess/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 00:03:37] INFO root fetch - processPackages [nmuwd]: executing diffoscope
+[2024-05-18 00:03:37] INFO root fetch - processPackages [nmuwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmuwd-0.0.7.tar.gz tmp/nmuwd-0.0.8.tar.gz --markdown 20240518/n/nmuwd/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 00:03:37] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.8.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.9.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [kaas-cli]: success
+[2024-05-18 00:03:37] INFO root fetch - processPackages [faucetconfrpc]: Remove: archive file [/home/abi/fetcher/tmp/faucetconfrpc-0.8.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - processPackages [faucetconfrpc]: Remove: archive file [/home/abi/fetcher/tmp/faucetconfrpc-0.9.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [faucetconfrpc]: success
+[2024-05-18 00:03:37] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.0.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.1.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [referrers]: success
+[2024-05-18 00:03:37] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.7.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.8.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [nmuwd]: success
+[2024-05-18 00:03:37] INFO root fetch - processPackages [fractal-matrix-client]: Remove: archive file [/home/abi/fetcher/tmp/fractal_matrix_client-0.0.5.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - processPackages [fractal-matrix-client]: Remove: archive file [/home/abi/fetcher/tmp/fractal_matrix_client-0.0.6.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [fractal-matrix-client]: success
+[2024-05-18 00:03:37] INFO root fetch - processPackages [remla-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/remla_preprocess-0.1.0.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - processPackages [remla-preprocess]: Remove: archive file [/home/abi/fetcher/tmp/remla_preprocess-0.1.1.tar.gz]
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: End processing [remla-preprocess]: success
+[2024-05-18 00:03:37] INFO root fetch - main [MainThread]: Store serial: [23261137]
