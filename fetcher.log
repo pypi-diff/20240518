@@ -346,3 +346,42 @@
 [2024-05-18 00:14:36] INFO root fetch - processPackages [WPyrogram]: Remove: archive file [/home/abi/fetcher/tmp/wpyrogram-2.0.143.tar.gz]
 [2024-05-18 00:14:36] INFO root fetch - main [MainThread]: End processing [WPyrogram]: success
 [2024-05-18 00:14:36] INFO root fetch - main [MainThread]: Store serial: [23261289]
+[2024-05-18 00:16:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261289]
+[2024-05-18 00:16:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 00:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: referrers
+[2024-05-18 00:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: owega
+[2024-05-18 00:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-core
+[2024-05-18 00:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lephare
+[2024-05-18 00:16:46] INFO root fetch - processPackages [referrers]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-18 00:16:46] INFO root fetch - processPackages [owega]: New version: [5.8.1] Old Version: [5.8.0]
+[2024-05-18 00:16:46] INFO root fetch - processPackages [lephare]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:16:46] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/b9/aa/3afc8660c28e59093146c08ae58363faf40956b423cfcc40684162a97064/owega-5.8.0.tar.gz
+[2024-05-18 00:16:46] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/41/1b/68b0927256d7cb081bb50af3fc1d84d585a54e2e69a8fc478cd2f579ca09/referrers-0.5.0.tar.gz
+[2024-05-18 00:16:46] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-18 00:16:46] INFO root fetch - processPackages [lephare]: Downloading https://files.pythonhosted.org/packages/13/a5/ed45c7eb19d8706037e3e4cfe195633f86fc0c300d593ef929fcede8831d/lephare-0.1.8.tar.gz
+[2024-05-18 00:16:46] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/0c/95/5db9321ab382ee5ca15f8da3733c64c3641fabdad85e71ada60a613a6662/referrers-0.5.1.tar.gz
+[2024-05-18 00:16:46] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-05-18 00:16:46] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/61/06/2e849bcce90d928828da53a2194b75b4dd84cf5811dfb6fc984380378ab8/owega-5.8.1.tar.gz
+[2024-05-18 00:16:46] INFO root fetch - processPackages [referrers]: executing diffoscope
+[2024-05-18 00:16:46] INFO root fetch - processPackages [referrers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/referrers-0.5.0.tar.gz tmp/referrers-0.5.1.tar.gz --markdown 20240518/r/referrers/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-18 00:16:46] INFO root fetch - processPackages [owega]: executing diffoscope
+[2024-05-18 00:16:46] INFO root fetch - processPackages [owega]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owega-5.8.0.tar.gz tmp/owega-5.8.1.tar.gz --markdown 20240518/o/owega/5.8.0-5.8.1/README.md --exclude *.pyd
+[2024-05-18 00:16:47] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-05-18 00:16:47] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-05-18 00:16:47] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240518/d/dragonfly-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-18 00:16:47] INFO root fetch - processPackages [lephare]: Downloading https://files.pythonhosted.org/packages/e1/70/5c47d57c405862cbf5fefee4460373e19fbc60f49a5cdaed68d787df23ad/lephare-0.1.9-cp312-cp312-macosx_10_15_x86_64.whl
+[2024-05-18 00:16:47] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.0.tar.gz]
+[2024-05-18 00:16:47] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.1.tar.gz]
+[2024-05-18 00:16:47] INFO root fetch - main [MainThread]: End processing [referrers]: success
+[2024-05-18 00:16:47] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.8.0.tar.gz]
+[2024-05-18 00:16:47] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.8.1.tar.gz]
+[2024-05-18 00:16:47] INFO root fetch - main [MainThread]: End processing [owega]: success
+[2024-05-18 00:16:47] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-05-18 00:16:47] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-05-18 00:16:47] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-05-18 00:16:49] INFO root fetch - processPackages [lephare]: executing diffoscope
+[2024-05-18 00:16:49] INFO root fetch - processPackages [lephare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lephare-0.1.8.tar.gz tmp/lephare-0.1.9-cp312-cp312-macosx_10_15_x86_64.whl.zip --markdown 20240518/l/lephare/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:16:49] INFO root fetch - processPackages [lephare]: Remove: archive file [/home/abi/fetcher/tmp/lephare-0.1.8.tar.gz]
+[2024-05-18 00:16:49] INFO root fetch - processPackages [lephare]: Remove: archive file [/home/abi/fetcher/tmp/lephare-0.1.9-cp312-cp312-macosx_10_15_x86_64.whl.zip]
+[2024-05-18 00:16:49] INFO root fetch - main [MainThread]: End processing [lephare]: success
+[2024-05-18 00:16:49] INFO root fetch - main [MainThread]: Store serial: [23261304]
