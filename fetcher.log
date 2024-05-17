@@ -1770,3 +1770,24 @@
 [2024-05-18 01:51:37] INFO root fetch - processPackages [overturemaps]: Remove: archive file [/home/abi/fetcher/tmp/overturemaps-0.5.0.tar.gz]
 [2024-05-18 01:51:37] INFO root fetch - main [MainThread]: End processing [overturemaps]: success
 [2024-05-18 01:51:37] INFO root fetch - main [MainThread]: Store serial: [23262009]
+[2024-05-18 01:53:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262009]
+[2024-05-18 01:53:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 01:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elfobs
+[2024-05-18 01:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: camera-ui-python-types
+[2024-05-18 01:53:45] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 01:53:45] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-18 01:53:45] INFO root fetch - processPackages [elfobs]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 01:53:46] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-18 01:53:46] INFO root fetch - processPackages [elfobs]: Downloading https://files.pythonhosted.org/packages/95/65/f2f6be7821f2960b65fcf48d10fa8af01ccb28e5d844986bb191a5705359/elfobs-0.1.2.tar.gz
+[2024-05-18 01:53:46] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-18 01:53:46] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240518/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 01:53:46] INFO root fetch - processPackages [elfobs]: Downloading https://files.pythonhosted.org/packages/45/65/3e75e0d47a5a07a3940a11db7ca1c5f84b4ccb7ba2a0e051959500a35e3b/elfobs-0.1.3.tar.gz
+[2024-05-18 01:53:46] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-18 01:53:46] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-18 01:53:46] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-18 01:53:46] INFO root fetch - processPackages [elfobs]: executing diffoscope
+[2024-05-18 01:53:46] INFO root fetch - processPackages [elfobs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elfobs-0.1.2.tar.gz tmp/elfobs-0.1.3.tar.gz --markdown 20240518/e/elfobs/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 01:53:48] INFO root fetch - processPackages [elfobs]: Remove: archive file [/home/abi/fetcher/tmp/elfobs-0.1.2.tar.gz]
+[2024-05-18 01:53:48] INFO root fetch - processPackages [elfobs]: Remove: archive file [/home/abi/fetcher/tmp/elfobs-0.1.3.tar.gz]
+[2024-05-18 01:53:48] INFO root fetch - main [MainThread]: End processing [elfobs]: success
+[2024-05-18 01:53:48] INFO root fetch - main [MainThread]: Store serial: [23262014]
