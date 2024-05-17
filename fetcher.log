@@ -1791,3 +1791,27 @@
 [2024-05-18 01:53:48] INFO root fetch - processPackages [elfobs]: Remove: archive file [/home/abi/fetcher/tmp/elfobs-0.1.3.tar.gz]
 [2024-05-18 01:53:48] INFO root fetch - main [MainThread]: End processing [elfobs]: success
 [2024-05-18 01:53:48] INFO root fetch - main [MainThread]: Store serial: [23262014]
+[2024-05-18 01:55:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262014]
+[2024-05-18 01:55:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 01:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlglot
+[2024-05-18 01:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-explorer-onnx
+[2024-05-18 01:55:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superordinatedz
+[2024-05-18 01:55:56] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 01:55:56] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-18 01:55:56] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/e0/d7/1560261f5809af67b7ccd8439dafbe0738a0cb162cd4af13911936399615/model_explorer_onnx-0.1.1.tar.gz
+[2024-05-18 01:55:56] WARNING root fetch - processPackages [superordinatedz]: Skipping, unable to determine old version
+[2024-05-18 01:55:56] INFO root fetch - main [MainThread]: End processing [superordinatedz] error
+[2024-05-18 01:55:56] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-18 01:55:56] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/b2/ee/6c46f9f21b96d243715555f1effe6c9c420023a825f6a8ee0abbe7970a5d/model_explorer_onnx-0.1.2.tar.gz
+[2024-05-18 01:55:56] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-18 01:55:56] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-18 01:55:56] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.1.tar.gz tmp/model_explorer_onnx-0.1.2.tar.gz --markdown 20240518/m/model-explorer-onnx/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 01:55:57] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-18 01:55:57] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240518/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-18 01:55:57] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.1.tar.gz]
+[2024-05-18 01:55:57] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.2.tar.gz]
+[2024-05-18 01:55:57] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-18 01:55:57] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-18 01:55:57] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-18 01:55:57] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-18 01:55:57] INFO root fetch - main [MainThread]: Store serial: [23262024]
