@@ -148,3 +148,39 @@
 [2024-05-18 00:05:48] INFO root fetch - processPackages [SQLDataModel]: Remove: archive file [/home/abi/fetcher/tmp/SQLDataModel-0.6.4-py3-none-any.whl.zip]
 [2024-05-18 00:05:48] INFO root fetch - main [MainThread]: End processing [SQLDataModel]: success
 [2024-05-18 00:05:48] INFO root fetch - main [MainThread]: Store serial: [23261147]
+[2024-05-18 00:07:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261147]
+[2024-05-18 00:07:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipyoptimade
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uemygsczrfcajprd
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DPRED
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: obstetricatingz
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mixpanel-utils
+[2024-05-18 00:07:58] INFO root fetch - processPackages [DPRED]: New version: [0.9] Old Version: [0.8]
+[2024-05-18 00:07:58] WARNING root fetch - processPackages [uemygsczrfcajprd]: Skipping, unable to determine old version
+[2024-05-18 00:07:58] INFO root fetch - main [MainThread]: End processing [uemygsczrfcajprd] error
+[2024-05-18 00:07:58] INFO root fetch - processPackages [DPRED]: Downloading https://files.pythonhosted.org/packages/21/2d/298a00d4c596d9fe94d591bcec15e82a9836d97cda8055f26fc5a536bf4b/DPRED-0.8.tar.gz
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ipyoptimade]: New version: [1.0.0a0] Old Version: [1.0.0]
+[2024-05-18 00:07:58] WARNING root fetch - processPackages [obstetricatingz]: Skipping, unable to determine old version
+[2024-05-18 00:07:58] INFO root fetch - main [MainThread]: End processing [obstetricatingz] error
+[2024-05-18 00:07:58] INFO root fetch - processPackages [mixpanel-utils]: New version: [2.2.6] Old Version: [2.2.5]
+[2024-05-18 00:07:58] INFO root fetch - processPackages [ipyoptimade]: Downloading https://files.pythonhosted.org/packages/47/4d/00345385b13403d31e6e714927db91577dffdb6766fdb4d7158bb8c70f4b/ipyoptimade-1.0.0.tar.gz
+[2024-05-18 00:07:58] INFO root fetch - processPackages [mixpanel-utils]: Downloading https://files.pythonhosted.org/packages/47/3a/843da6369d8ff91cbdf477e3da2db157ac434cba90e0a83fb0bbc0dd5f6f/mixpanel-utils-2.2.5.tar.gz
+[2024-05-18 00:07:59] INFO root fetch - processPackages [DPRED]: Downloading https://files.pythonhosted.org/packages/44/12/fa4897b18a27515c011aec0e592428b0967d4b1fb3838529aa214e55d90b/DPRED-0.9.tar.gz
+[2024-05-18 00:07:59] INFO root fetch - processPackages [ipyoptimade]: Downloading https://files.pythonhosted.org/packages/3a/e2/dc6b4647ffaca4fa8011dd3e5eb131d0f6ae047bacbbf0f5d99c702aa2f0/ipyoptimade-1.0.0a0.tar.gz
+[2024-05-18 00:07:59] INFO root fetch - processPackages [DPRED]: executing diffoscope
+[2024-05-18 00:07:59] INFO root fetch - processPackages [DPRED]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DPRED-0.8.tar.gz tmp/DPRED-0.9.tar.gz --markdown 20240518/D/DPRED/0.8-0.9/README.md --exclude *.pyd
+[2024-05-18 00:07:59] INFO root fetch - processPackages [mixpanel-utils]: Downloading https://files.pythonhosted.org/packages/17/a9/21dbede81dc5d4c38daac324141bbabcd33c9a068627ce0d479f3a680258/mixpanel_utils-2.2.6.tar.gz
+[2024-05-18 00:07:59] INFO root fetch - processPackages [ipyoptimade]: executing diffoscope
+[2024-05-18 00:07:59] INFO root fetch - processPackages [ipyoptimade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyoptimade-1.0.0.tar.gz tmp/ipyoptimade-1.0.0a0.tar.gz --markdown 20240518/i/ipyoptimade/1.0.0-1.0.0a0/README.md --exclude *.pyd
+[2024-05-18 00:07:59] INFO root fetch - processPackages [mixpanel-utils]: executing diffoscope
+[2024-05-18 00:07:59] INFO root fetch - processPackages [mixpanel-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixpanel-utils-2.2.5.tar.gz tmp/mixpanel_utils-2.2.6.tar.gz --markdown 20240518/m/mixpanel-utils/2.2.5-2.2.6/README.md --exclude *.pyd
+[2024-05-18 00:07:59] INFO root fetch - processPackages [DPRED]: Remove: archive file [/home/abi/fetcher/tmp/DPRED-0.8.tar.gz]
+[2024-05-18 00:07:59] INFO root fetch - processPackages [DPRED]: Remove: archive file [/home/abi/fetcher/tmp/DPRED-0.9.tar.gz]
+[2024-05-18 00:07:59] INFO root fetch - main [MainThread]: End processing [DPRED]: success
+[2024-05-18 00:07:59] INFO root fetch - processPackages [mixpanel-utils]: Remove: archive file [/home/abi/fetcher/tmp/mixpanel-utils-2.2.5.tar.gz]
+[2024-05-18 00:07:59] INFO root fetch - processPackages [mixpanel-utils]: Remove: archive file [/home/abi/fetcher/tmp/mixpanel_utils-2.2.6.tar.gz]
+[2024-05-18 00:07:59] INFO root fetch - main [MainThread]: End processing [mixpanel-utils]: success
+[2024-05-18 00:07:59] INFO root fetch - processPackages [ipyoptimade]: Remove: archive file [/home/abi/fetcher/tmp/ipyoptimade-1.0.0.tar.gz]
+[2024-05-18 00:07:59] INFO root fetch - processPackages [ipyoptimade]: Remove: archive file [/home/abi/fetcher/tmp/ipyoptimade-1.0.0a0.tar.gz]
+[2024-05-18 00:07:59] INFO root fetch - main [MainThread]: End processing [ipyoptimade]: success
+[2024-05-18 00:07:59] INFO root fetch - main [MainThread]: Store serial: [23261165]
