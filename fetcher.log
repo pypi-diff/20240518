@@ -1,0 +1,51 @@
+[2024-05-18 00:01:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261065]
+[2024-05-18 00:01:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 00:01:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uk_bin_collection
+[2024-05-18 00:01:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: italian-ats-evaluator
+[2024-05-18 00:01:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deephaven-ib
+[2024-05-18 00:01:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: taffy
+[2024-05-18 00:01:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tweepy-authlib
+[2024-05-18 00:01:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kaas-cli
+[2024-05-18 00:01:25] INFO root fetch - processPackages [kaas-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 00:01:25] INFO root fetch - processPackages [uk_bin_collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 00:01:25] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/53/7a/9bd004bc31f267a96dff892bf0f442d5811b21163a87f9b0108aeb144645/kaas_cli-0.1.8.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [taffy]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 00:01:25] INFO root fetch - processPackages [tweepy-authlib]: New version: [1.5.0] Old Version: [1.4.1]
+[2024-05-18 00:01:25] INFO root fetch - processPackages [deephaven-ib]: New version: [0.3.1] Old Version: [0.2.9]
+[2024-05-18 00:01:25] WARNING root fetch - processPackages [italian-ats-evaluator]: Skipping, unable to determine old version
+[2024-05-18 00:01:25] INFO root fetch - main [MainThread]: End processing [italian-ats-evaluator] error
+[2024-05-18 00:01:25] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [taffy]: Downloading https://files.pythonhosted.org/packages/da/cb/2d80695b50fb97bb4a7e03baffc7df06a08123d4b7088eaeb06c422d1cb3/taffy-0.0.2.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [kaas-cli]: Downloading https://files.pythonhosted.org/packages/e5/6c/30a6a7bb074d6e698d7d40c648a46c4749a0123a444f6fa7793f94cb0bab/kaas_cli-0.1.9.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [deephaven-ib]: Downloading https://files.pythonhosted.org/packages/dd/4a/572342ce61c07ff42ad50ef64c8cd575e3d4ae3bf7e2d7543c965a7d5061/deephaven_ib-0.2.9.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [tweepy-authlib]: Downloading https://files.pythonhosted.org/packages/33/ff/4458c27793c32ca596e406d33c9e3d222bb65dc6d52243eb7de0b5ddbeea/tweepy_authlib-1.4.1.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-05-18 00:01:25] INFO root fetch - processPackages [kaas-cli]: executing diffoscope
+[2024-05-18 00:01:25] INFO root fetch - processPackages [kaas-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaas_cli-0.1.8.tar.gz tmp/kaas_cli-0.1.9.tar.gz --markdown 20240518/k/kaas-cli/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 00:01:25] INFO root fetch - processPackages [uk_bin_collection]: executing diffoscope
+[2024-05-18 00:01:25] INFO root fetch - processPackages [uk_bin_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240518/u/uk_bin_collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 00:01:26] INFO root fetch - processPackages [tweepy-authlib]: Downloading https://files.pythonhosted.org/packages/f5/5d/8c1d0a28dbf1d1fdd7f147217891e423adea5f6aea4313917655f4a4a4b5/tweepy_authlib-1.5.0.tar.gz
+[2024-05-18 00:01:26] INFO root fetch - processPackages [deephaven-ib]: Downloading https://files.pythonhosted.org/packages/93/42/a93cab7566a2fdc6a3a7f6367f4075bc71a064492bffd713cdfb1980c734/deephaven_ib-0.3.1.tar.gz
+[2024-05-18 00:01:26] INFO root fetch - processPackages [taffy]: Downloading https://files.pythonhosted.org/packages/c0/83/d32e671f69c5183251f04498d7fc177abbb1a8ec972924a71dc4e68c2d77/taffy-0.0.3.tar.gz
+[2024-05-18 00:01:26] INFO root fetch - processPackages [deephaven-ib]: executing diffoscope
+[2024-05-18 00:01:26] INFO root fetch - processPackages [deephaven-ib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deephaven_ib-0.2.9.tar.gz tmp/deephaven_ib-0.3.1.tar.gz --markdown 20240518/d/deephaven-ib/0.2.9-0.3.1/README.md --exclude *.pyd
+[2024-05-18 00:01:26] INFO root fetch - processPackages [taffy]: executing diffoscope
+[2024-05-18 00:01:26] INFO root fetch - processPackages [taffy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taffy-0.0.2.tar.gz tmp/taffy-0.0.3.tar.gz --markdown 20240518/t/taffy/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 00:01:26] INFO root fetch - processPackages [tweepy-authlib]: executing diffoscope
+[2024-05-18 00:01:26] INFO root fetch - processPackages [tweepy-authlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweepy_authlib-1.4.1.tar.gz tmp/tweepy_authlib-1.5.0.tar.gz --markdown 20240518/t/tweepy-authlib/1.4.1-1.5.0/README.md --exclude *.pyd
+[2024-05-18 00:01:26] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.8.tar.gz]
+[2024-05-18 00:01:26] INFO root fetch - processPackages [kaas-cli]: Remove: archive file [/home/abi/fetcher/tmp/kaas_cli-0.1.9.tar.gz]
+[2024-05-18 00:01:26] INFO root fetch - main [MainThread]: End processing [kaas-cli]: success
+[2024-05-18 00:01:26] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-05-18 00:01:26] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-05-18 00:01:26] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
+[2024-05-18 00:01:27] INFO root fetch - processPackages [deephaven-ib]: Remove: archive file [/home/abi/fetcher/tmp/deephaven_ib-0.2.9.tar.gz]
+[2024-05-18 00:01:27] INFO root fetch - processPackages [deephaven-ib]: Remove: archive file [/home/abi/fetcher/tmp/deephaven_ib-0.3.1.tar.gz]
+[2024-05-18 00:01:27] INFO root fetch - main [MainThread]: End processing [deephaven-ib]: success
+[2024-05-18 00:01:27] INFO root fetch - processPackages [tweepy-authlib]: Remove: archive file [/home/abi/fetcher/tmp/tweepy_authlib-1.4.1.tar.gz]
+[2024-05-18 00:01:27] INFO root fetch - processPackages [tweepy-authlib]: Remove: archive file [/home/abi/fetcher/tmp/tweepy_authlib-1.5.0.tar.gz]
+[2024-05-18 00:01:27] INFO root fetch - main [MainThread]: End processing [tweepy-authlib]: success
+[2024-05-18 00:01:27] INFO root fetch - processPackages [taffy]: Remove: archive file [/home/abi/fetcher/tmp/taffy-0.0.2.tar.gz]
+[2024-05-18 00:01:27] INFO root fetch - processPackages [taffy]: Remove: archive file [/home/abi/fetcher/tmp/taffy-0.0.3.tar.gz]
+[2024-05-18 00:01:27] INFO root fetch - main [MainThread]: End processing [taffy]: success
+[2024-05-18 00:01:27] INFO root fetch - main [MainThread]: Store serial: [23261115]
