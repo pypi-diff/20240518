@@ -1012,3 +1012,38 @@
 [2024-05-18 00:59:06] INFO root fetch - processPackages [beats-swing]: Remove: archive file [/home/abi/fetcher/tmp/beats_swing-0.1.4.tar.gz]
 [2024-05-18 00:59:06] INFO root fetch - main [MainThread]: End processing [beats-swing]: success
 [2024-05-18 00:59:06] INFO root fetch - main [MainThread]: Store serial: [23261596]
+[2024-05-18 01:01:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261596]
+[2024-05-18 01:01:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 01:01:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: marker-pdf
+[2024-05-18 01:01:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ob-metaflow-extensions
+[2024-05-18 01:01:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docprompt
+[2024-05-18 01:01:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robustintelligence
+[2024-05-18 01:01:16] INFO root fetch - processPackages [robustintelligence]: New version: [0.1.0rc9] Old Version: [0.1.0rc8]
+[2024-05-18 01:01:16] INFO root fetch - processPackages [docprompt]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-18 01:01:16] INFO root fetch - processPackages [ob-metaflow-extensions]: New version: [1.1.9rc1] Old Version: [1.1.9rc0]
+[2024-05-18 01:01:16] INFO root fetch - processPackages [marker-pdf]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-18 01:01:16] INFO root fetch - processPackages [robustintelligence]: Downloading https://files.pythonhosted.org/packages/32/35/9b4e4ad2d1d42bb03c0766d49a7786c9aa597ecf11fee795fd077ab8a025/robustintelligence-0.1.0rc8.tar.gz
+[2024-05-18 01:01:16] INFO root fetch - processPackages [ob-metaflow-extensions]: Downloading https://files.pythonhosted.org/packages/f6/24/4fdd704647ebdded38ac1efc2b8dba106c9ab672518ddbb9b1dd783862e9/ob-metaflow-extensions-1.1.9rc0.tar.gz
+[2024-05-18 01:01:16] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/76/8e/235652d4950c142edd0a139c19add688bc41ae5a9b0ee2356f966724417a/docprompt-0.5.2.tar.gz
+[2024-05-18 01:01:16] WARNING root fetch - processPackages [docprompt]: Skipping package: exceeds size limit 19680826>=10485760
+[2024-05-18 01:01:16] INFO root fetch - main [MainThread]: End processing [docprompt] error
+[2024-05-18 01:01:16] INFO root fetch - processPackages [marker-pdf]: Downloading https://files.pythonhosted.org/packages/9c/04/eea4de58702ef9ee9a836e02cb27fb6564b9a9d7e8d28758315304a77872/marker_pdf-0.2.6.tar.gz
+[2024-05-18 01:01:16] INFO root fetch - processPackages [ob-metaflow-extensions]: Downloading https://files.pythonhosted.org/packages/13/fa/f6774ac8df2d55f441049045a0ed08e5ff1eef840d3cc15235e8a9411f42/ob-metaflow-extensions-1.1.9rc1.tar.gz
+[2024-05-18 01:01:16] INFO root fetch - processPackages [robustintelligence]: Downloading https://files.pythonhosted.org/packages/74/fa/e849c3646a8011059f6e787d5565960f79df87cc0ed091d07b638176526e/robustintelligence-0.1.0rc9.tar.gz
+[2024-05-18 01:01:16] INFO root fetch - processPackages [ob-metaflow-extensions]: executing diffoscope
+[2024-05-18 01:01:16] INFO root fetch - processPackages [ob-metaflow-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ob-metaflow-extensions-1.1.9rc0.tar.gz tmp/ob-metaflow-extensions-1.1.9rc1.tar.gz --markdown 20240518/o/ob-metaflow-extensions/1.1.9rc0-1.1.9rc1/README.md --exclude *.pyd
+[2024-05-18 01:01:16] INFO root fetch - processPackages [robustintelligence]: executing diffoscope
+[2024-05-18 01:01:16] INFO root fetch - processPackages [robustintelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robustintelligence-0.1.0rc8.tar.gz tmp/robustintelligence-0.1.0rc9.tar.gz --markdown 20240518/r/robustintelligence/0.1.0rc8-0.1.0rc9/README.md --exclude *.pyd
+[2024-05-18 01:01:16] INFO root fetch - processPackages [marker-pdf]: Downloading https://files.pythonhosted.org/packages/44/81/f0648dfa1b515972b4aedee485252e6f830eca5a0d3e2942a7ce68fd8c8e/marker_pdf-0.2.7.tar.gz
+[2024-05-18 01:01:16] INFO root fetch - processPackages [marker-pdf]: executing diffoscope
+[2024-05-18 01:01:16] INFO root fetch - processPackages [marker-pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marker_pdf-0.2.6.tar.gz tmp/marker_pdf-0.2.7.tar.gz --markdown 20240518/m/marker-pdf/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-18 01:01:17] INFO root fetch - processPackages [ob-metaflow-extensions]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-extensions-1.1.9rc0.tar.gz]
+[2024-05-18 01:01:17] INFO root fetch - processPackages [ob-metaflow-extensions]: Remove: archive file [/home/abi/fetcher/tmp/ob-metaflow-extensions-1.1.9rc1.tar.gz]
+[2024-05-18 01:01:17] INFO root fetch - main [MainThread]: End processing [ob-metaflow-extensions]: success
+[2024-05-18 01:01:17] INFO root fetch - processPackages [marker-pdf]: Remove: archive file [/home/abi/fetcher/tmp/marker_pdf-0.2.6.tar.gz]
+[2024-05-18 01:01:17] INFO root fetch - processPackages [marker-pdf]: Remove: archive file [/home/abi/fetcher/tmp/marker_pdf-0.2.7.tar.gz]
+[2024-05-18 01:01:17] INFO root fetch - main [MainThread]: End processing [marker-pdf]: success
+[2024-05-18 01:01:20] INFO root fetch - processPackages [robustintelligence]: Remove: archive file [/home/abi/fetcher/tmp/robustintelligence-0.1.0rc8.tar.gz]
+[2024-05-18 01:01:20] INFO root fetch - processPackages [robustintelligence]: Remove: archive file [/home/abi/fetcher/tmp/robustintelligence-0.1.0rc9.tar.gz]
+[2024-05-18 01:01:20] INFO root fetch - main [MainThread]: End processing [robustintelligence]: success
+[2024-05-18 01:01:20] INFO root fetch - main [MainThread]: Store serial: [23261610]
