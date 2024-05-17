@@ -550,3 +550,27 @@
 [2024-05-18 00:27:43] INFO root fetch - processPackages [splinepy]: Remove: archive file [/home/abi/fetcher/tmp/splinepy-0.1.0-cp310-cp310-macosx_11_0_arm64.whl.zip]
 [2024-05-18 00:27:43] INFO root fetch - main [MainThread]: End processing [splinepy]: success
 [2024-05-18 00:27:43] INFO root fetch - main [MainThread]: Store serial: [23261383]
+[2024-05-18 00:29:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261383]
+[2024-05-18 00:29:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: requisitorz
+[2024-05-18 00:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: owega
+[2024-05-18 00:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-energy
+[2024-05-18 00:29:52] INFO root fetch - processPackages [owega]: New version: [5.8.2] Old Version: [5.8.1]
+[2024-05-18 00:29:52] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/61/06/2e849bcce90d928828da53a2194b75b4dd84cf5811dfb6fc984380378ab8/owega-5.8.1.tar.gz
+[2024-05-18 00:29:52] WARNING root fetch - processPackages [requisitorz]: Skipping, unable to determine old version
+[2024-05-18 00:29:52] INFO root fetch - main [MainThread]: End processing [requisitorz] error
+[2024-05-18 00:29:52] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-18 00:29:52] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-05-18 00:29:52] INFO root fetch - processPackages [owega]: Downloading https://files.pythonhosted.org/packages/e6/5d/8c29efab63356522aaa34ce2325c07d4afd45b366d3bfb926058ad9f4d1e/owega-5.8.2.tar.gz
+[2024-05-18 00:29:52] INFO root fetch - processPackages [owega]: executing diffoscope
+[2024-05-18 00:29:52] INFO root fetch - processPackages [owega]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owega-5.8.1.tar.gz tmp/owega-5.8.2.tar.gz --markdown 20240518/o/owega/5.8.1-5.8.2/README.md --exclude *.pyd
+[2024-05-18 00:29:53] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-05-18 00:29:53] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-05-18 00:29:53] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240518/d/dragonfly-energy/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-18 00:29:53] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.8.1.tar.gz]
+[2024-05-18 00:29:53] INFO root fetch - processPackages [owega]: Remove: archive file [/home/abi/fetcher/tmp/owega-5.8.2.tar.gz]
+[2024-05-18 00:29:53] INFO root fetch - main [MainThread]: End processing [owega]: success
+[2024-05-18 00:29:53] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-05-18 00:29:53] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-05-18 00:29:53] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-05-18 00:29:53] INFO root fetch - main [MainThread]: Store serial: [23261393]
