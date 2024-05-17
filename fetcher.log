@@ -385,3 +385,27 @@
 [2024-05-18 00:16:49] INFO root fetch - processPackages [lephare]: Remove: archive file [/home/abi/fetcher/tmp/lephare-0.1.9-cp312-cp312-macosx_10_15_x86_64.whl.zip]
 [2024-05-18 00:16:49] INFO root fetch - main [MainThread]: End processing [lephare]: success
 [2024-05-18 00:16:49] INFO root fetch - main [MainThread]: Store serial: [23261304]
+[2024-05-18 00:18:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261304]
+[2024-05-18 00:18:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 00:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyAlStruct
+[2024-05-18 00:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vertagus
+[2024-05-18 00:18:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnibenevolentz
+[2024-05-18 00:18:58] INFO root fetch - processPackages [PyAlStruct]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 00:18:58] WARNING root fetch - processPackages [omnibenevolentz]: Skipping, unable to determine old version
+[2024-05-18 00:18:58] INFO root fetch - main [MainThread]: End processing [omnibenevolentz] error
+[2024-05-18 00:18:58] INFO root fetch - processPackages [vertagus]: New version: [0.1.0b4] Old Version: [0.1.0b3]
+[2024-05-18 00:18:58] INFO root fetch - processPackages [PyAlStruct]: Downloading https://files.pythonhosted.org/packages/c6/25/07cb02ac2c664a2b5efc26591e6f887436d2f5edb6b74b2f493fbbd76c9b/PyAlStruct-0.8.0.tar.gz
+[2024-05-18 00:18:58] INFO root fetch - processPackages [vertagus]: Downloading https://files.pythonhosted.org/packages/59/b9/9e6f11bc19a4e85e139a0fea00685636646953cb6be0c78d4e0f675459c4/vertagus-0.1.0b3.tar.gz
+[2024-05-18 00:18:58] INFO root fetch - processPackages [PyAlStruct]: Downloading https://files.pythonhosted.org/packages/44/fb/d75b4fd6f3bed145acc6f6eb66114da5e644b219a7c0abbc1d50d55b951e/pyalstruct-0.9.0.tar.gz
+[2024-05-18 00:18:58] INFO root fetch - processPackages [vertagus]: Downloading https://files.pythonhosted.org/packages/a7/04/652c0134594a3541488eae29bd0d6f916618497176e1435f7c72978b198e/vertagus-0.1.0b4.tar.gz
+[2024-05-18 00:18:58] INFO root fetch - processPackages [PyAlStruct]: executing diffoscope
+[2024-05-18 00:18:58] INFO root fetch - processPackages [PyAlStruct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAlStruct-0.8.0.tar.gz tmp/pyalstruct-0.9.0.tar.gz --markdown 20240518/P/PyAlStruct/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 00:18:59] INFO root fetch - processPackages [vertagus]: executing diffoscope
+[2024-05-18 00:18:59] INFO root fetch - processPackages [vertagus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vertagus-0.1.0b3.tar.gz tmp/vertagus-0.1.0b4.tar.gz --markdown 20240518/v/vertagus/0.1.0b3-0.1.0b4/README.md --exclude *.pyd
+[2024-05-18 00:18:59] INFO root fetch - processPackages [PyAlStruct]: Remove: archive file [/home/abi/fetcher/tmp/PyAlStruct-0.8.0.tar.gz]
+[2024-05-18 00:18:59] INFO root fetch - processPackages [PyAlStruct]: Remove: archive file [/home/abi/fetcher/tmp/pyalstruct-0.9.0.tar.gz]
+[2024-05-18 00:18:59] INFO root fetch - main [MainThread]: End processing [PyAlStruct]: success
+[2024-05-18 00:18:59] INFO root fetch - processPackages [vertagus]: Remove: archive file [/home/abi/fetcher/tmp/vertagus-0.1.0b3.tar.gz]
+[2024-05-18 00:18:59] INFO root fetch - processPackages [vertagus]: Remove: archive file [/home/abi/fetcher/tmp/vertagus-0.1.0b4.tar.gz]
+[2024-05-18 00:18:59] INFO root fetch - main [MainThread]: End processing [vertagus]: success
+[2024-05-18 00:18:59] INFO root fetch - main [MainThread]: Store serial: [23261322]
