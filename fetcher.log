@@ -433,3 +433,42 @@
 [2024-05-18 00:21:10] INFO root fetch - processPackages [unstructured]: Remove: archive file [/home/abi/fetcher/tmp/unstructured-0.9.3.tar.gz]
 [2024-05-18 00:21:10] INFO root fetch - main [MainThread]: End processing [unstructured]: success
 [2024-05-18 00:21:10] INFO root fetch - main [MainThread]: Store serial: [23261333]
+[2024-05-18 00:23:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261333]
+[2024-05-18 00:23:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 00:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magnetsting
+[2024-05-18 00:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mypackagetest20240517
+[2024-05-18 00:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nmuwd
+[2024-05-18 00:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: marsdeniaz
+[2024-05-18 00:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hypernetx
+[2024-05-18 00:23:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zhihubackup
+[2024-05-18 00:23:19] INFO root fetch - processPackages [nmuwd]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 00:23:19] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/04/295d81971c2d12392210d91174de86657c8bbd469dfc35f776f3d390bbe2/nmuwd-0.0.7.tar.gz
+[2024-05-18 00:23:19] WARNING root fetch - processPackages [mypackagetest20240517]: Skipping, unable to determine old version
+[2024-05-18 00:23:19] INFO root fetch - main [MainThread]: End processing [mypackagetest20240517] error
+[2024-05-18 00:23:19] WARNING root fetch - processPackages [magnetsting]: Skipping, unable to determine old version
+[2024-05-18 00:23:19] INFO root fetch - main [MainThread]: End processing [magnetsting] error
+[2024-05-18 00:23:19] WARNING root fetch - processPackages [marsdeniaz]: Skipping, unable to determine old version
+[2024-05-18 00:23:19] INFO root fetch - main [MainThread]: End processing [marsdeniaz] error
+[2024-05-18 00:23:19] INFO root fetch - processPackages [zhihubackup]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-18 00:23:19] INFO root fetch - processPackages [hypernetx]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-18 00:23:19] INFO root fetch - processPackages [nmuwd]: Downloading https://files.pythonhosted.org/packages/44/fd/a1141ab1fbf3ce08581a4159c3eb398fb0620311dfc3d6fbac1da254424b/nmuwd-0.0.8.tar.gz
+[2024-05-18 00:23:19] INFO root fetch - processPackages [hypernetx]: Downloading https://files.pythonhosted.org/packages/fd/e7/a39c3c191c7b7456fed08c0f27bae01decd17e3e95cd5b12ed4268097105/hypernetx-2.2.0.tar.gz
+[2024-05-18 00:23:19] INFO root fetch - processPackages [zhihubackup]: Downloading https://files.pythonhosted.org/packages/d1/65/1afc63498b3ef218d285239bf36fd677d55c9d4b0781f003552d09a21d31/zhihubackup-0.2.1.tar.gz
+[2024-05-18 00:23:19] INFO root fetch - processPackages [nmuwd]: executing diffoscope
+[2024-05-18 00:23:19] INFO root fetch - processPackages [nmuwd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nmuwd-0.0.7.tar.gz tmp/nmuwd-0.0.8.tar.gz --markdown 20240518/n/nmuwd/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 00:23:19] INFO root fetch - processPackages [hypernetx]: Downloading https://files.pythonhosted.org/packages/23/6e/8de6081d28dd8b60f86540cef96fb32fca21d5a0cf31dfca127141f721f8/hypernetx-2.3.0.tar.gz
+[2024-05-18 00:23:20] INFO root fetch - processPackages [zhihubackup]: Downloading https://files.pythonhosted.org/packages/1a/09/faafa6554497945aaa971bfc2b2db965a9d9d3ad694741243ff08307ac4e/zhihubackup-0.2.2.tar.gz
+[2024-05-18 00:23:20] INFO root fetch - processPackages [hypernetx]: executing diffoscope
+[2024-05-18 00:23:20] INFO root fetch - processPackages [hypernetx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypernetx-2.2.0.tar.gz tmp/hypernetx-2.3.0.tar.gz --markdown 20240518/h/hypernetx/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-18 00:23:20] INFO root fetch - processPackages [zhihubackup]: executing diffoscope
+[2024-05-18 00:23:20] INFO root fetch - processPackages [zhihubackup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhihubackup-0.2.1.tar.gz tmp/zhihubackup-0.2.2.tar.gz --markdown 20240518/z/zhihubackup/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-18 00:23:20] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.7.tar.gz]
+[2024-05-18 00:23:20] INFO root fetch - processPackages [nmuwd]: Remove: archive file [/home/abi/fetcher/tmp/nmuwd-0.0.8.tar.gz]
+[2024-05-18 00:23:20] INFO root fetch - main [MainThread]: End processing [nmuwd]: success
+[2024-05-18 00:23:20] INFO root fetch - processPackages [zhihubackup]: Remove: archive file [/home/abi/fetcher/tmp/zhihubackup-0.2.1.tar.gz]
+[2024-05-18 00:23:20] INFO root fetch - processPackages [zhihubackup]: Remove: archive file [/home/abi/fetcher/tmp/zhihubackup-0.2.2.tar.gz]
+[2024-05-18 00:23:20] INFO root fetch - main [MainThread]: End processing [zhihubackup]: success
+[2024-05-18 00:23:20] INFO root fetch - processPackages [hypernetx]: Remove: archive file [/home/abi/fetcher/tmp/hypernetx-2.2.0.tar.gz]
+[2024-05-18 00:23:20] INFO root fetch - processPackages [hypernetx]: Remove: archive file [/home/abi/fetcher/tmp/hypernetx-2.3.0.tar.gz]
+[2024-05-18 00:23:20] INFO root fetch - main [MainThread]: End processing [hypernetx]: success
+[2024-05-18 00:23:20] INFO root fetch - main [MainThread]: Store serial: [23261355]
