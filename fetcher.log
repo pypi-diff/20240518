@@ -1203,3 +1203,33 @@
 [2024-05-18 01:10:03] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-18 01:10:03] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-18 01:10:03] INFO root fetch - main [MainThread]: Store serial: [23261667]
+[2024-05-18 01:12:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261667]
+[2024-05-18 01:12:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 01:12:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-05-18 01:12:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ontobio
+[2024-05-18 01:12:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balsamic
+[2024-05-18 01:12:12] INFO root fetch - processPackages [balsamic]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-05-18 01:12:12] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 01:12:13] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/bd/55/04f724f153f44d5e454dd56eb3d1ceff578c6f0df2bb0d50635315238b9f/balsamic-0.0.18.tar.gz
+[2024-05-18 01:12:13] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-18 01:12:13] INFO root fetch - processPackages [ontobio]: New version: [2.8.9] Old Version: [2.8.8]
+[2024-05-18 01:12:13] INFO root fetch - processPackages [ontobio]: Downloading https://files.pythonhosted.org/packages/f1/a6/6d5d1753d910fbc0f214330051513f4103cbb080bb9868b132e3126879bf/ontobio-2.8.8.tar.gz
+[2024-05-18 01:12:13] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/a1/7d/7819e1123cf0eb4f734605001d4f54383d6de8bcd90a071a94cfb69241a5/balsamic-0.0.19.tar.gz
+[2024-05-18 01:12:13] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 01:12:13] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.0.18.tar.gz tmp/balsamic-0.0.19.tar.gz --markdown 20240518/b/balsamic/0.0.18-0.0.19/README.md --exclude *.pyd
+[2024-05-18 01:12:13] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-18 01:12:13] INFO root fetch - processPackages [ontobio]: Downloading https://files.pythonhosted.org/packages/ad/92/e2a3395f640a74f7463bfca765a8abf5eafbfa06acb1767dd34cdb4d90c5/ontobio-2.8.9.tar.gz
+[2024-05-18 01:12:13] INFO root fetch - processPackages [ontobio]: executing diffoscope
+[2024-05-18 01:12:13] INFO root fetch - processPackages [ontobio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ontobio-2.8.8.tar.gz tmp/ontobio-2.8.9.tar.gz --markdown 20240518/o/ontobio/2.8.8-2.8.9/README.md --exclude *.pyd
+[2024-05-18 01:12:13] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-18 01:12:13] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240518/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 01:12:13] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.18.tar.gz]
+[2024-05-18 01:12:13] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.0.19.tar.gz]
+[2024-05-18 01:12:13] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 01:12:14] INFO root fetch - processPackages [ontobio]: Remove: archive file [/home/abi/fetcher/tmp/ontobio-2.8.8.tar.gz]
+[2024-05-18 01:12:14] INFO root fetch - processPackages [ontobio]: Remove: archive file [/home/abi/fetcher/tmp/ontobio-2.8.9.tar.gz]
+[2024-05-18 01:12:14] INFO root fetch - main [MainThread]: End processing [ontobio]: success
+[2024-05-18 01:12:15] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-18 01:12:15] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-18 01:12:15] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-18 01:12:15] INFO root fetch - main [MainThread]: Store serial: [23261679]
