@@ -1737,3 +1737,36 @@
 [2024-05-18 01:49:25] WARNING root fetch - processPackages [CNAsim]: Skipping, unable to determine old version
 [2024-05-18 01:49:25] INFO root fetch - main [MainThread]: End processing [CNAsim] error
 [2024-05-18 01:49:25] INFO root fetch - main [MainThread]: Store serial: [23261996]
+[2024-05-18 01:51:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23261996]
+[2024-05-18 01:51:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 01:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fissure-engine
+[2024-05-18 01:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plungyz
+[2024-05-18 01:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: overturemaps
+[2024-05-18 01:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opvious
+[2024-05-18 01:51:35] INFO root fetch - processPackages [opvious]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-18 01:51:36] INFO root fetch - processPackages [overturemaps]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-18 01:51:36] WARNING root fetch - processPackages [plungyz]: Skipping, unable to determine old version
+[2024-05-18 01:51:36] INFO root fetch - main [MainThread]: End processing [plungyz] error
+[2024-05-18 01:51:36] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/d1/8f/b7e05d9b24e4dd1af2b9eab96fa7d1f97af088ed0836d9d8cfdb60c51360/opvious-0.9.5.tar.gz
+[2024-05-18 01:51:36] INFO root fetch - processPackages [fissure-engine]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-18 01:51:36] INFO root fetch - processPackages [overturemaps]: Downloading https://files.pythonhosted.org/packages/c4/94/8af1e2cf9f8bf96cf06647bef8b1b7d68ebbfcf7e8b2bdb1778145c1eb4d/overturemaps-0.4.0.tar.gz
+[2024-05-18 01:51:36] INFO root fetch - processPackages [fissure-engine]: Downloading https://files.pythonhosted.org/packages/d2/9f/1ad6155cc305d4ca01f36bc099916c247b16337373f5bdd2c175958e4df2/fissure_engine-1.0.6.tar.gz
+[2024-05-18 01:51:36] INFO root fetch - processPackages [opvious]: Downloading https://files.pythonhosted.org/packages/c2/c3/e2b95ca71e91eb624497389cb2391d3310907b4f9f25dee1a75b99798c14/opvious-0.9.6.tar.gz
+[2024-05-18 01:51:36] INFO root fetch - processPackages [opvious]: executing diffoscope
+[2024-05-18 01:51:36] INFO root fetch - processPackages [opvious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opvious-0.9.5.tar.gz tmp/opvious-0.9.6.tar.gz --markdown 20240518/o/opvious/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-18 01:51:36] INFO root fetch - processPackages [fissure-engine]: Downloading https://files.pythonhosted.org/packages/23/6c/752cf1df9f6657b8b92508de971e1a0f4e860d800a90c3d122877260bf58/fissure_engine-1.0.7.tar.gz
+[2024-05-18 01:51:36] INFO root fetch - processPackages [overturemaps]: Downloading https://files.pythonhosted.org/packages/c7/85/5cb9aabaa06fe3faaeb50f2535ae4e7efba87d1df1e3f5afdb6e1e1611d4/overturemaps-0.5.0.tar.gz
+[2024-05-18 01:51:36] INFO root fetch - processPackages [fissure-engine]: executing diffoscope
+[2024-05-18 01:51:36] INFO root fetch - processPackages [fissure-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fissure_engine-1.0.6.tar.gz tmp/fissure_engine-1.0.7.tar.gz --markdown 20240518/f/fissure-engine/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-18 01:51:36] INFO root fetch - processPackages [overturemaps]: executing diffoscope
+[2024-05-18 01:51:36] INFO root fetch - processPackages [overturemaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overturemaps-0.4.0.tar.gz tmp/overturemaps-0.5.0.tar.gz --markdown 20240518/o/overturemaps/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-18 01:51:37] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.5.tar.gz]
+[2024-05-18 01:51:37] INFO root fetch - processPackages [opvious]: Remove: archive file [/home/abi/fetcher/tmp/opvious-0.9.6.tar.gz]
+[2024-05-18 01:51:37] INFO root fetch - main [MainThread]: End processing [opvious]: success
+[2024-05-18 01:51:37] INFO root fetch - processPackages [fissure-engine]: Remove: archive file [/home/abi/fetcher/tmp/fissure_engine-1.0.6.tar.gz]
+[2024-05-18 01:51:37] INFO root fetch - processPackages [fissure-engine]: Remove: archive file [/home/abi/fetcher/tmp/fissure_engine-1.0.7.tar.gz]
+[2024-05-18 01:51:37] INFO root fetch - main [MainThread]: End processing [fissure-engine]: success
+[2024-05-18 01:51:37] INFO root fetch - processPackages [overturemaps]: Remove: archive file [/home/abi/fetcher/tmp/overturemaps-0.4.0.tar.gz]
+[2024-05-18 01:51:37] INFO root fetch - processPackages [overturemaps]: Remove: archive file [/home/abi/fetcher/tmp/overturemaps-0.5.0.tar.gz]
+[2024-05-18 01:51:37] INFO root fetch - main [MainThread]: End processing [overturemaps]: success
+[2024-05-18 01:51:37] INFO root fetch - main [MainThread]: Store serial: [23262009]
