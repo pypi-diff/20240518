@@ -22421,3 +22421,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:43:28] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.0.post4.tar.gz]
 [2024-05-18 23:43:28] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
 [2024-05-18 23:43:28] INFO root fetch - main [MainThread]: Store serial: [23271436]
+[2024-05-18 23:45:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271436]
+[2024-05-18 23:45:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 23:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwdtm
+[2024-05-18 23:45:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blamsz
+[2024-05-18 23:45:37] WARNING root fetch - processPackages [blamsz]: Skipping, unable to determine old version
+[2024-05-18 23:45:37] INFO root fetch - main [MainThread]: End processing [blamsz] error
+[2024-05-18 23:45:37] INFO root fetch - processPackages [wwdtm]: New version: [2.9.1] Old Version: [2.9.0]
+[2024-05-18 23:45:37] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/4a/97/932c29ba40f01d50f24cde324db56ec4b06f9dc923eb6012ca9c95684e5f/wwdtm-2.9.0.tar.gz
+[2024-05-18 23:45:37] INFO root fetch - processPackages [wwdtm]: Downloading https://files.pythonhosted.org/packages/79/87/b64a383c0bb0931dffebec810e0acbf86a5fd7ba9a047230fd96ffe62090/wwdtm-2.9.1.tar.gz
+[2024-05-18 23:45:37] INFO root fetch - processPackages [wwdtm]: executing diffoscope
+[2024-05-18 23:45:37] INFO root fetch - processPackages [wwdtm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwdtm-2.9.0.tar.gz tmp/wwdtm-2.9.1.tar.gz --markdown 20240518/w/wwdtm/2.9.0-2.9.1/README.md --exclude *.pyd
+[2024-05-18 23:45:38] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.9.0.tar.gz]
+[2024-05-18 23:45:38] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.9.1.tar.gz]
+[2024-05-18 23:45:38] INFO root fetch - main [MainThread]: End processing [wwdtm]: success
+[2024-05-18 23:45:38] INFO root fetch - main [MainThread]: Store serial: [23271445]
