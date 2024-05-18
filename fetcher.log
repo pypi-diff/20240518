@@ -16515,3 +16515,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:38:17] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
 [2024-05-18 16:38:17] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
 [2024-05-18 16:38:17] INFO root fetch - main [MainThread]: Store serial: [23268515]
+[2024-05-18 16:40:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268515]
+[2024-05-18 16:40:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 16:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warp-python
+[2024-05-18 16:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-transformation-library-ingri
+[2024-05-18 16:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: musketz
+[2024-05-18 16:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lukasdata
+[2024-05-18 16:40:25] INFO root fetch - processPackages [warp-python]: New version: [1.2.1] Old Version: [1.1.2]
+[2024-05-18 16:40:25] INFO root fetch - processPackages [data-transformation-library-ingri]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 16:40:25] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/1a/3b/e69020a2dad4525e2a45c25497e05017ecf9909be1365716c57b06c40467/warp_python-1.1.2.tar.gz
+[2024-05-18 16:40:25] INFO root fetch - processPackages [lukasdata]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-05-18 16:40:25] WARNING root fetch - processPackages [musketz]: Skipping, unable to determine old version
+[2024-05-18 16:40:25] INFO root fetch - main [MainThread]: End processing [musketz] error
+[2024-05-18 16:40:26] INFO root fetch - processPackages [data-transformation-library-ingri]: Downloading https://files.pythonhosted.org/packages/93/5b/178c7234f9d19392adee75c1908dbdfe6a43df5bc19f52eebb4d244ca144/data_transformation_library_ingri-0.1.0.tar.gz
+[2024-05-18 16:40:26] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/ee/1b/cfcc93286d179a85bca35d8eb857fa8006203ba0570b3a48c6811924aadb/lukasdata-1.3.5.tar.gz
+[2024-05-18 16:40:26] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/d5/04/893424b1b00317c1be3c0d37ec844298ba1bee40ab6f043f3773a34a018a/warp_python-1.2.1.tar.gz
+[2024-05-18 16:40:26] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 16:40:26] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.1.2.tar.gz tmp/warp_python-1.2.1.tar.gz --markdown 20240518/w/warp-python/1.1.2-1.2.1/README.md --exclude *.pyd
+[2024-05-18 16:40:26] INFO root fetch - processPackages [data-transformation-library-ingri]: Downloading https://files.pythonhosted.org/packages/a1/9f/c0fd39bde806fd0af299efee4e1a4363a00c1464d107c52e82850b47008c/data_transformation_library_ingri-0.1.1.tar.gz
+[2024-05-18 16:40:26] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/4c/34/9f313272a79a5557a0106f467c3fe0a1afc9e90e99200a32eb884ef0c757/lukasdata-1.3.6.tar.gz
+[2024-05-18 16:40:26] INFO root fetch - processPackages [data-transformation-library-ingri]: executing diffoscope
+[2024-05-18 16:40:26] INFO root fetch - processPackages [data-transformation-library-ingri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_library_ingri-0.1.0.tar.gz tmp/data_transformation_library_ingri-0.1.1.tar.gz --markdown 20240518/d/data-transformation-library-ingri/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 16:40:26] INFO root fetch - processPackages [lukasdata]: executing diffoscope
+[2024-05-18 16:40:26] INFO root fetch - processPackages [lukasdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lukasdata-1.3.5.tar.gz tmp/lukasdata-1.3.6.tar.gz --markdown 20240518/l/lukasdata/1.3.5-1.3.6/README.md --exclude *.pyd
+[2024-05-18 16:40:26] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.1.2.tar.gz]
+[2024-05-18 16:40:26] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.1.tar.gz]
+[2024-05-18 16:40:26] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 16:40:27] INFO root fetch - processPackages [data-transformation-library-ingri]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_library_ingri-0.1.0.tar.gz]
+[2024-05-18 16:40:27] INFO root fetch - processPackages [data-transformation-library-ingri]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_library_ingri-0.1.1.tar.gz]
+[2024-05-18 16:40:27] INFO root fetch - main [MainThread]: End processing [data-transformation-library-ingri]: success
+[2024-05-18 16:40:27] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.5.tar.gz]
+[2024-05-18 16:40:27] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.6.tar.gz]
+[2024-05-18 16:40:27] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
+[2024-05-18 16:40:27] INFO root fetch - main [MainThread]: Store serial: [23268528]
