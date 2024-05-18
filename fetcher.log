@@ -12260,3 +12260,41 @@
 [2024-05-18 10:57:09] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.4.8.tar.gz]
 [2024-05-18 10:57:09] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
 [2024-05-18 10:57:09] INFO root fetch - main [MainThread]: Store serial: [23266311]
+[2024-05-18 10:59:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266311]
+[2024-05-18 10:59:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 11:01:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266312]
+[2024-05-18 11:01:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 11:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple_openid_connect
+[2024-05-18 11:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: msg9191-otp-widget-python
+[2024-05-18 11:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opticalpy
+[2024-05-18 11:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: novnc
+[2024-05-18 11:01:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: youtube-video-analyzer
+[2024-05-18 11:01:23] INFO root fetch - processPackages [youtube-video-analyzer]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 11:01:23] WARNING root fetch - processPackages [novnc]: Skipping, unable to determine old version
+[2024-05-18 11:01:23] INFO root fetch - main [MainThread]: End processing [novnc] error
+[2024-05-18 11:01:23] INFO root fetch - processPackages [youtube-video-analyzer]: Downloading https://files.pythonhosted.org/packages/95/2c/caf463d3b3733bf502aba688f8dfb58778d2ab608e0110acc223edeb3e85/youtube_video_analyzer-0.1.1.tar.gz
+[2024-05-18 11:01:23] WARNING root fetch - processPackages [msg9191-otp-widget-python]: Skipping, unable to determine old version
+[2024-05-18 11:01:23] INFO root fetch - main [MainThread]: End processing [msg9191-otp-widget-python] error
+[2024-05-18 11:01:23] INFO root fetch - processPackages [simple_openid_connect]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 11:01:23] INFO root fetch - processPackages [opticalpy]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 11:01:23] INFO root fetch - processPackages [simple_openid_connect]: Downloading https://files.pythonhosted.org/packages/80/84/6d0ecb131469149e6d6dd7f5dfea30e6c9f9d144a6cdda63be55a6b28493/simple_openid_connect-1.0.0.tar.gz
+[2024-05-18 11:01:23] INFO root fetch - processPackages [opticalpy]: Downloading https://files.pythonhosted.org/packages/7e/6d/717e7a2925de15ce1384f9b26fb6eb58ddf5872675598e017976a7f1a0f5/opticalpy-1.0.0.tar.gz
+[2024-05-18 11:01:23] INFO root fetch - processPackages [youtube-video-analyzer]: Downloading https://files.pythonhosted.org/packages/c1/6a/7ea6b3fdabfd4a59679cc1ba118cbbe30e81abc6ebf2bfc780ff2ae3a37e/youtube_video_analyzer-0.1.2.tar.gz
+[2024-05-18 11:01:23] INFO root fetch - processPackages [youtube-video-analyzer]: executing diffoscope
+[2024-05-18 11:01:23] INFO root fetch - processPackages [youtube-video-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_video_analyzer-0.1.1.tar.gz tmp/youtube_video_analyzer-0.1.2.tar.gz --markdown 20240518/y/youtube-video-analyzer/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 11:01:23] INFO root fetch - processPackages [opticalpy]: Downloading https://files.pythonhosted.org/packages/6b/13/f5e91a56671e13dbe22b30bd27db29d07991124e5e50962bd5d8f4c6498d/opticalpy-1.0.1.tar.gz
+[2024-05-18 11:01:24] INFO root fetch - processPackages [simple_openid_connect]: Downloading https://files.pythonhosted.org/packages/0d/62/1f67f02c5565b0e5d87137b3594dd7ddfae8564b0de5e7d253dbfd515257/simple_openid_connect-1.0.1.tar.gz
+[2024-05-18 11:01:24] INFO root fetch - processPackages [opticalpy]: executing diffoscope
+[2024-05-18 11:01:24] INFO root fetch - processPackages [opticalpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opticalpy-1.0.0.tar.gz tmp/opticalpy-1.0.1.tar.gz --markdown 20240518/o/opticalpy/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 11:01:24] INFO root fetch - processPackages [simple_openid_connect]: executing diffoscope
+[2024-05-18 11:01:24] INFO root fetch - processPackages [simple_openid_connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_openid_connect-1.0.0.tar.gz tmp/simple_openid_connect-1.0.1.tar.gz --markdown 20240518/s/simple_openid_connect/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 11:01:24] INFO root fetch - processPackages [youtube-video-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/youtube_video_analyzer-0.1.1.tar.gz]
+[2024-05-18 11:01:24] INFO root fetch - processPackages [youtube-video-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/youtube_video_analyzer-0.1.2.tar.gz]
+[2024-05-18 11:01:24] INFO root fetch - main [MainThread]: End processing [youtube-video-analyzer]: success
+[2024-05-18 11:01:24] INFO root fetch - processPackages [opticalpy]: Remove: archive file [/home/abi/fetcher/tmp/opticalpy-1.0.0.tar.gz]
+[2024-05-18 11:01:24] INFO root fetch - processPackages [opticalpy]: Remove: archive file [/home/abi/fetcher/tmp/opticalpy-1.0.1.tar.gz]
+[2024-05-18 11:01:24] INFO root fetch - main [MainThread]: End processing [opticalpy]: success
+[2024-05-18 11:01:24] INFO root fetch - processPackages [simple_openid_connect]: Remove: archive file [/home/abi/fetcher/tmp/simple_openid_connect-1.0.0.tar.gz]
+[2024-05-18 11:01:24] INFO root fetch - processPackages [simple_openid_connect]: Remove: archive file [/home/abi/fetcher/tmp/simple_openid_connect-1.0.1.tar.gz]
+[2024-05-18 11:01:24] INFO root fetch - main [MainThread]: End processing [simple_openid_connect]: success
+[2024-05-18 11:01:24] INFO root fetch - main [MainThread]: Store serial: [23266328]
