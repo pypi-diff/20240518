@@ -19373,3 +19373,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:50:58] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.9.tar.gz]
 [2024-05-18 19:50:58] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
 [2024-05-18 19:50:58] INFO root fetch - main [MainThread]: Store serial: [23269818]
+[2024-05-18 19:53:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269818]
+[2024-05-18 19:53:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plexutils
+[2024-05-18 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-web-widget-pattern-partner-autocomplete
+[2024-05-18 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-web-widget-pattern
+[2024-05-18 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-sale-force-invoiced
+[2024-05-18 19:53:08] WARNING root fetch - processPackages [plexutils]: Skipping, unable to determine old version
+[2024-05-18 19:53:08] WARNING root fetch - processPackages [odoo-addon-web-widget-pattern]: Skipping, unable to determine old version
+[2024-05-18 19:53:08] INFO root fetch - main [MainThread]: End processing [plexutils] error
+[2024-05-18 19:53:08] WARNING root fetch - processPackages [odoo-addon-web-widget-pattern-partner-autocomplete]: Skipping, unable to determine old version
+[2024-05-18 19:53:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-widget-pattern] error
+[2024-05-18 19:53:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-widget-pattern-partner-autocomplete] error
+[2024-05-18 19:53:08] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: New version: [17.0.1.1.0.4] Old Version: [17.0.1.1.0.3]
+[2024-05-18 19:53:08] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Downloading https://files.pythonhosted.org/packages/31/55/e9dc6ac194ed65f0eefe8485f3ea057dc9359500aac32f137c57ca83bbc0/odoo_addon_sale_force_invoiced-17.0.1.1.0.3-py3-none-any.whl
+[2024-05-18 19:53:08] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Downloading https://files.pythonhosted.org/packages/31/4c/d8c9cdfc8008f70734e45fbf0fbc56b0a5fd43d68502ceb09cc93a379aae/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl
+[2024-05-18 19:53:08] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: executing diffoscope
+[2024-05-18 19:53:08] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-sale-force-invoiced/17.0.1.1.0.3-17.0.1.1.0.4/README.md --exclude *.pyd
+[2024-05-18 19:53:09] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.3-py3-none-any.whl.zip]
+[2024-05-18 19:53:09] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl.zip]
+[2024-05-18 19:53:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-force-invoiced]: success
+[2024-05-18 19:53:09] INFO root fetch - main [MainThread]: Store serial: [23269831]
