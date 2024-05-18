@@ -10806,3 +10806,20 @@
 [2024-05-18 08:46:12] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.634.24139.tar.gz]
 [2024-05-18 08:46:12] INFO root fetch - main [MainThread]: End processing [mo-json]: success
 [2024-05-18 08:46:12] INFO root fetch - main [MainThread]: Store serial: [23265418]
+[2024-05-18 08:48:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265418]
+[2024-05-18 08:48:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: example-python-package-with-rust-backend
+[2024-05-18 08:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DePTH
+[2024-05-18 08:48:22] INFO root fetch - processPackages [example-python-package-with-rust-backend]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-18 08:48:22] INFO root fetch - processPackages [DePTH]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 08:48:22] INFO root fetch - processPackages [DePTH]: Downloading https://files.pythonhosted.org/packages/7d/e4/b1dcd33f84fd343b1c7d93b646f161308e6d29e20376a57db4112fad0f4d/depth-1.0.0.tar.gz
+[2024-05-18 08:48:22] WARNING root fetch - processPackages [DePTH]: Skipping package: exceeds size limit 40517094>=10485760
+[2024-05-18 08:48:22] INFO root fetch - main [MainThread]: End processing [DePTH] error
+[2024-05-18 08:48:22] INFO root fetch - processPackages [example-python-package-with-rust-backend]: Downloading https://files.pythonhosted.org/packages/ca/18/324fad262216d34bbf40c9f52c3d648224307ddb92d7ecceb405d9ae71ae/example_python_package_with_rust_backend-1.1.6.tar.gz
+[2024-05-18 08:48:23] INFO root fetch - processPackages [example-python-package-with-rust-backend]: Downloading https://files.pythonhosted.org/packages/cf/be/4039425de19f21cd587a4a808f6405a3a690bccbae9c37aa00471590abdf/example_python_package_with_rust_backend-1.1.7.tar.gz
+[2024-05-18 08:48:23] INFO root fetch - processPackages [example-python-package-with-rust-backend]: executing diffoscope
+[2024-05-18 08:48:23] INFO root fetch - processPackages [example-python-package-with-rust-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/example_python_package_with_rust_backend-1.1.6.tar.gz tmp/example_python_package_with_rust_backend-1.1.7.tar.gz --markdown 20240518/e/example-python-package-with-rust-backend/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-18 08:48:23] INFO root fetch - processPackages [example-python-package-with-rust-backend]: Remove: archive file [/home/abi/fetcher/tmp/example_python_package_with_rust_backend-1.1.6.tar.gz]
+[2024-05-18 08:48:23] INFO root fetch - processPackages [example-python-package-with-rust-backend]: Remove: archive file [/home/abi/fetcher/tmp/example_python_package_with_rust_backend-1.1.7.tar.gz]
+[2024-05-18 08:48:23] INFO root fetch - main [MainThread]: End processing [example-python-package-with-rust-backend]: success
+[2024-05-18 08:48:23] INFO root fetch - main [MainThread]: Store serial: [23265476]
