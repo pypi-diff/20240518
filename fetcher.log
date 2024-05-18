@@ -19663,3 +19663,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:10:30] INFO root fetch - processPackages [arikaim]: Remove: archive file [/home/abi/fetcher/tmp/arikaim-0.5.9.tar.gz]
 [2024-05-18 20:10:30] INFO root fetch - main [MainThread]: End processing [arikaim]: success
 [2024-05-18 20:10:30] INFO root fetch - main [MainThread]: Store serial: [23269944]
+[2024-05-18 20:12:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269944]
+[2024-05-18 20:12:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 20:12:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warp-python
+[2024-05-18 20:12:39] INFO root fetch - processPackages [warp-python]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-18 20:12:39] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-18 20:12:39] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/79/d6/9261521110c41c899ba586c14f59cda7d7020f83001a463cf90aa12040b9/warp_python-1.2.9.tar.gz
+[2024-05-18 20:12:39] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 20:12:39] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.8.tar.gz tmp/warp_python-1.2.9.tar.gz --markdown 20240518/w/warp-python/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-18 20:12:40] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-18 20:12:40] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
+[2024-05-18 20:12:40] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 20:12:40] INFO root fetch - main [MainThread]: Store serial: [23269967]
