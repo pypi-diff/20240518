@@ -20738,3 +20738,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:25:42] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django_appointment-3.5.0.tar.gz]
 [2024-05-18 21:25:42] INFO root fetch - main [MainThread]: End processing [django-appointment]: success
 [2024-05-18 21:25:42] INFO root fetch - main [MainThread]: Store serial: [23270537]
+[2024-05-18 21:27:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270537]
+[2024-05-18 21:27:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-text-detect
+[2024-05-18 21:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEasyDbApi
+[2024-05-18 21:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biserratez
+[2024-05-18 21:27:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airbyte-source-iterable
+[2024-05-18 21:27:51] INFO root fetch - processPackages [airbyte-source-iterable]: New version: [0.5.1.dev202405172314] Old Version: [0.5.1.dev202405100348]
+[2024-05-18 21:27:51] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 21:27:51] WARNING root fetch - processPackages [biserratez]: Skipping, unable to determine old version
+[2024-05-18 21:27:51] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/8e/e6/fe9c5b41c225da64c4730d517e57e912c448b15e94e8b70e1bd321f64935/pyeasydbapi-0.0.8.tar.gz
+[2024-05-18 21:27:51] INFO root fetch - main [MainThread]: End processing [biserratez] error
+[2024-05-18 21:27:51] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/2c/9c/fea2ba1004968cbc68db8ee3bbcdab141c4e71b616adf25c1a804926bbfa/airbyte_source_iterable-0.5.1.dev202405100348.tar.gz
+[2024-05-18 21:27:51] WARNING root fetch - processPackages [fast-text-detect]: Skipping, unable to determine old version
+[2024-05-18 21:27:51] INFO root fetch - main [MainThread]: End processing [fast-text-detect] error
+[2024-05-18 21:27:51] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/df/92/38cb754f72251c2c8d197badd801c29e8eab3f02272c8b95c103d004fd3a/pyeasydbapi-0.0.9.tar.gz
+[2024-05-18 21:27:51] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/75/4c/e3bef983ac82ffff1d476f98b618a61874a5b392d0fedb1ab1ce91c4e565/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz
+[2024-05-18 21:27:51] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:27:51] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.0.8.tar.gz tmp/pyeasydbapi-0.0.9.tar.gz --markdown 20240518/p/pyEasyDbApi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 21:27:52] INFO root fetch - processPackages [airbyte-source-iterable]: executing diffoscope
+[2024-05-18 21:27:52] INFO root fetch - processPackages [airbyte-source-iterable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_iterable-0.5.1.dev202405100348.tar.gz tmp/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz --markdown 20240518/a/airbyte-source-iterable/0.5.1.dev202405100348-0.5.1.dev202405172314/README.md --exclude *.pyd
+[2024-05-18 21:27:52] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.8.tar.gz]
+[2024-05-18 21:27:52] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.9.tar.gz]
+[2024-05-18 21:27:52] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:27:52] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405100348.tar.gz]
+[2024-05-18 21:27:52] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz]
+[2024-05-18 21:27:52] INFO root fetch - main [MainThread]: End processing [airbyte-source-iterable]: success
+[2024-05-18 21:27:52] INFO root fetch - main [MainThread]: Store serial: [23270553]
