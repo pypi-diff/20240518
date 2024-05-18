@@ -15251,3 +15251,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:54:45] INFO root fetch - processPackages [nomad-media-pip]: Remove: archive file [/home/abi/fetcher/tmp/nomad_media_pip-0.0.99.tar.gz]
 [2024-05-18 14:54:45] INFO root fetch - main [MainThread]: End processing [nomad-media-pip]: success
 [2024-05-18 14:54:45] INFO root fetch - main [MainThread]: Store serial: [23267849]
+[2024-05-18 14:56:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267849]
+[2024-05-18 14:56:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 14:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commits2pdf
+[2024-05-18 14:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbhydra
+[2024-05-18 14:56:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: StdioBridge
+[2024-05-18 14:56:54] INFO root fetch - processPackages [StdioBridge]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-18 14:56:54] INFO root fetch - processPackages [dbhydra]: New version: [2.2.3] Old Version: [2.2.1]
+[2024-05-18 14:56:54] INFO root fetch - processPackages [commits2pdf]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-18 14:56:54] INFO root fetch - processPackages [dbhydra]: Downloading https://files.pythonhosted.org/packages/cc/a0/c053413cbc29eadba4bbd344387d9c1c1e235638405a76ff844ebffd90cd/dbhydra-2.2.1.tar.gz
+[2024-05-18 14:56:54] INFO root fetch - processPackages [StdioBridge]: Downloading https://files.pythonhosted.org/packages/cd/2a/7c74bc763447a1450d45f243a21703549407d47e56f48dad0dd39eb8efd6/StdioBridge-1.1.0.tar.gz
+[2024-05-18 14:56:54] INFO root fetch - processPackages [commits2pdf]: Downloading https://files.pythonhosted.org/packages/ef/1c/55c500e7c22bcc4664d5fb44dad59f1a5a2e616962c86f25bad73b7c5443/commits2pdf-1.1.8.tar.gz
+[2024-05-18 14:56:54] INFO root fetch - processPackages [dbhydra]: Downloading https://files.pythonhosted.org/packages/26/7f/27f8444c6a8fc3180879a4ab73f8883597d96e80c035d97ef00261d563c1/dbhydra-2.2.3.tar.gz
+[2024-05-18 14:56:54] INFO root fetch - processPackages [dbhydra]: executing diffoscope
+[2024-05-18 14:56:54] INFO root fetch - processPackages [dbhydra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbhydra-2.2.1.tar.gz tmp/dbhydra-2.2.3.tar.gz --markdown 20240518/d/dbhydra/2.2.1-2.2.3/README.md --exclude *.pyd
+[2024-05-18 14:56:54] INFO root fetch - processPackages [StdioBridge]: Downloading https://files.pythonhosted.org/packages/1a/af/3d679cca189d5e6273d9f052c8b8de20b4b08ba17ef1e5d870f70be54339/StdioBridge-1.2.0.tar.gz
+[2024-05-18 14:56:54] INFO root fetch - processPackages [commits2pdf]: Downloading https://files.pythonhosted.org/packages/5f/44/0731ba05a6961252355314fd2a0083730736c8c4a7484953b8b9b9f1c19e/commits2pdf-1.1.9.tar.gz
+[2024-05-18 14:56:54] INFO root fetch - processPackages [StdioBridge]: executing diffoscope
+[2024-05-18 14:56:54] INFO root fetch - processPackages [StdioBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StdioBridge-1.1.0.tar.gz tmp/StdioBridge-1.2.0.tar.gz --markdown 20240518/S/StdioBridge/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-18 14:56:54] INFO root fetch - processPackages [commits2pdf]: executing diffoscope
+[2024-05-18 14:56:54] INFO root fetch - processPackages [commits2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commits2pdf-1.1.8.tar.gz tmp/commits2pdf-1.1.9.tar.gz --markdown 20240518/c/commits2pdf/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-18 14:56:55] INFO root fetch - processPackages [StdioBridge]: Remove: archive file [/home/abi/fetcher/tmp/StdioBridge-1.1.0.tar.gz]
+[2024-05-18 14:56:55] INFO root fetch - processPackages [StdioBridge]: Remove: archive file [/home/abi/fetcher/tmp/StdioBridge-1.2.0.tar.gz]
+[2024-05-18 14:56:55] INFO root fetch - main [MainThread]: End processing [StdioBridge]: success
+[2024-05-18 14:56:55] INFO root fetch - processPackages [dbhydra]: Remove: archive file [/home/abi/fetcher/tmp/dbhydra-2.2.1.tar.gz]
+[2024-05-18 14:56:55] INFO root fetch - processPackages [dbhydra]: Remove: archive file [/home/abi/fetcher/tmp/dbhydra-2.2.3.tar.gz]
+[2024-05-18 14:56:55] INFO root fetch - main [MainThread]: End processing [dbhydra]: success
+[2024-05-18 14:56:55] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.1.8.tar.gz]
+[2024-05-18 14:56:55] INFO root fetch - processPackages [commits2pdf]: Remove: archive file [/home/abi/fetcher/tmp/commits2pdf-1.1.9.tar.gz]
+[2024-05-18 14:56:55] INFO root fetch - main [MainThread]: End processing [commits2pdf]: success
+[2024-05-18 14:56:55] INFO root fetch - main [MainThread]: Store serial: [23267859]
