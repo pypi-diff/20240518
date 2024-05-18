@@ -12496,3 +12496,60 @@
 [2024-05-18 11:14:32] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
 [2024-05-18 11:14:32] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-18 11:14:32] INFO root fetch - main [MainThread]: Store serial: [23266543]
+[2024-05-18 11:16:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266543]
+[2024-05-18 11:16:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 11:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-18 11:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: markrunner-server
+[2024-05-18 11:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvfuser-cu121
+[2024-05-18 11:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BigEDA
+[2024-05-18 11:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eprllib
+[2024-05-18 11:16:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nvfuser-cu118
+[2024-05-18 11:16:41] INFO root fetch - processPackages [markrunner-server]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 11:16:41] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 11:16:41] INFO root fetch - processPackages [eprllib]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-18 11:16:41] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.4.dev20240517] Old Version: [0.2.4.dev20240516]
+[2024-05-18 11:16:41] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.4.dev20240517] Old Version: [0.2.4.dev20240516]
+[2024-05-18 11:16:41] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/79/6f/04e90cae45f6f556c569010ea810347677b094518a1d41bec71e7f1b3812/nvfuser_cu118-0.2.4.dev20240516.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [eprllib]: Downloading https://files.pythonhosted.org/packages/2e/5c/0b49b758b3e24154172877ac207eaefd0339c5c29b588dfb128051246dd3/eprllib-1.1.1.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [markrunner-server]: Downloading https://files.pythonhosted.org/packages/69/de/2c61a4d00029f39a251decd72924693a3435b9a256c17d5991b394556081/markrunner_server-0.1.0.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/7b/27/4cd3b20c480137911c91c8a655cd2cf81e7ea51fbd748454342d53608e46/nvfuser_cu121-0.2.4.dev20240516.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [eprllib]: Downloading https://files.pythonhosted.org/packages/66/18/9f8b07c736d426795c3b22807706be491edefc6506f7f36458749485523a/eprllib-1.1.2.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [markrunner-server]: Downloading https://files.pythonhosted.org/packages/40/a1/94cef22d5e9c987eb4d694fe2d413dc62f7e7bffa940ddf8e183c6416722/markrunner_server-0.1.1.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/b5/93/baf40d3d569ce99d43ddd65933a25c489310b0a1facdeab85766e38eb75d/nvfuser_cu118-0.2.4.dev20240517.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/03/db/48e729369362e2c0fe2e657d38fe018c9eb30146c216ad2956680a8da469/nvfuser_cu121-0.2.4.dev20240517.tar.gz
+[2024-05-18 11:16:42] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-18 11:16:42] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240518/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-18 11:16:42] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 11:16:42] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 11:16:42] INFO root fetch - processPackages [markrunner-server]: executing diffoscope
+[2024-05-18 11:16:42] INFO root fetch - processPackages [markrunner-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markrunner_server-0.1.0.tar.gz tmp/markrunner_server-0.1.1.tar.gz --markdown 20240518/m/markrunner-server/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.4.dev20240516.tar.gz tmp/nvfuser_cu121-0.2.4.dev20240517.tar.gz --markdown 20240518/n/nvfuser-cu121/0.2.4.dev20240516-0.2.4.dev20240517/README.md --exclude *.pyd
+[2024-05-18 11:16:42] INFO root fetch - processPackages [eprllib]: executing diffoscope
+[2024-05-18 11:16:42] INFO root fetch - processPackages [eprllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eprllib-1.1.1.tar.gz tmp/eprllib-1.1.2.tar.gz --markdown 20240518/e/eprllib/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-18 11:16:42] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.4.dev20240516.tar.gz tmp/nvfuser_cu118-0.2.4.dev20240517.tar.gz --markdown 20240518/n/nvfuser-cu118/0.2.4.dev20240516-0.2.4.dev20240517/README.md --exclude *.pyd
+[2024-05-18 11:16:43] INFO root fetch - processPackages [markrunner-server]: Remove: archive file [/home/abi/fetcher/tmp/markrunner_server-0.1.0.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - processPackages [markrunner-server]: Remove: archive file [/home/abi/fetcher/tmp/markrunner_server-0.1.1.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [markrunner-server]: success
+[2024-05-18 11:16:43] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.4.dev20240516.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.4.dev20240517.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-18 11:16:43] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-18 11:16:43] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 11:16:43] INFO root fetch - processPackages [eprllib]: Remove: archive file [/home/abi/fetcher/tmp/eprllib-1.1.1.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - processPackages [eprllib]: Remove: archive file [/home/abi/fetcher/tmp/eprllib-1.1.2.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [eprllib]: success
+[2024-05-18 11:16:43] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.4.dev20240516.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.4.dev20240517.tar.gz]
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-18 11:16:43] INFO root fetch - main [MainThread]: Store serial: [23266560]
