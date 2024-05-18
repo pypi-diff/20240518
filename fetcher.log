@@ -16711,3 +16711,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:53:37] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.72.tar.gz]
 [2024-05-18 16:53:37] INFO root fetch - main [MainThread]: End processing [yuag]: success
 [2024-05-18 16:53:37] INFO root fetch - main [MainThread]: Store serial: [23268602]
+[2024-05-18 16:55:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268602]
+[2024-05-18 16:55:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynrw
+[2024-05-18 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lora-modem
+[2024-05-18 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rikishaz
+[2024-05-18 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sourmash-plugin-betterplot
+[2024-05-18 16:55:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PayNexus
+[2024-05-18 16:55:46] INFO root fetch - processPackages [PayNexus]: New version: [0.2.3] Old Version: [0.2.1]
+[2024-05-18 16:55:46] WARNING root fetch - processPackages [sourmash-plugin-betterplot]: Skipping, unable to determine old version
+[2024-05-18 16:55:46] INFO root fetch - processPackages [pynrw]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-18 16:55:46] INFO root fetch - main [MainThread]: End processing [sourmash-plugin-betterplot] error
+[2024-05-18 16:55:46] WARNING root fetch - processPackages [rikishaz]: Skipping, unable to determine old version
+[2024-05-18 16:55:46] INFO root fetch - main [MainThread]: End processing [rikishaz] error
+[2024-05-18 16:55:46] INFO root fetch - processPackages [lora-modem]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-05-18 16:55:46] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/e0/6f/729f8fd1942cec83c6b68920a03ff046900035d5cc34f8c9dc5abf0013a9/PayNexus-0.2.1-py3-none-any.whl
+[2024-05-18 16:55:46] INFO root fetch - processPackages [pynrw]: Downloading https://files.pythonhosted.org/packages/c1/8f/1ee8a250a8a7a12cd71b7e85d931622d574e50e3cbb5b544e943f03efcfe/pynrw-1.3.0.tar.gz
+[2024-05-18 16:55:46] INFO root fetch - processPackages [lora-modem]: Downloading https://files.pythonhosted.org/packages/87/ac/f77df4a2a01825331f54341beb85df9f02e8f7dc89ed955db5746d021d72/lora-modem-1.4.0.tar.gz
+[2024-05-18 16:55:47] INFO root fetch - processPackages [pynrw]: Downloading https://files.pythonhosted.org/packages/35/2e/f1411f2bb7f6a0df1abc5be20c29c83007a9a7439dda67f566ff96d1ef24/pynrw-1.4.0.tar.gz
+[2024-05-18 16:55:47] INFO root fetch - processPackages [pynrw]: executing diffoscope
+[2024-05-18 16:55:47] INFO root fetch - processPackages [pynrw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynrw-1.3.0.tar.gz tmp/pynrw-1.4.0.tar.gz --markdown 20240518/p/pynrw/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-18 16:55:47] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/1a/04/48972b73b52fd01b893fc205f1560a0b5810dcae9bbb7683fbf10a07f734/paynexus-0.2.3.tar.gz
+[2024-05-18 16:55:47] INFO root fetch - processPackages [lora-modem]: Downloading https://files.pythonhosted.org/packages/e3/82/c1d81efb4d8631489039dea5cd011fc552af083bae0b10b94e90a5b8a53a/lora_modem-1.4.1.tar.gz
+[2024-05-18 16:55:47] INFO root fetch - processPackages [PayNexus]: executing diffoscope
+[2024-05-18 16:55:47] INFO root fetch - processPackages [PayNexus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PayNexus-0.2.1-py3-none-any.whl.zip tmp/paynexus-0.2.3.tar.gz --markdown 20240518/P/PayNexus/0.2.1-0.2.3/README.md --exclude *.pyd
+[2024-05-18 16:55:47] INFO root fetch - processPackages [lora-modem]: executing diffoscope
+[2024-05-18 16:55:47] INFO root fetch - processPackages [lora-modem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lora-modem-1.4.0.tar.gz tmp/lora_modem-1.4.1.tar.gz --markdown 20240518/l/lora-modem/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-05-18 16:55:47] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/PayNexus-0.2.1-py3-none-any.whl.zip]
+[2024-05-18 16:55:47] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/paynexus-0.2.3.tar.gz]
+[2024-05-18 16:55:47] INFO root fetch - main [MainThread]: End processing [PayNexus]: success
+[2024-05-18 16:55:47] INFO root fetch - processPackages [pynrw]: Remove: archive file [/home/abi/fetcher/tmp/pynrw-1.3.0.tar.gz]
+[2024-05-18 16:55:47] INFO root fetch - processPackages [pynrw]: Remove: archive file [/home/abi/fetcher/tmp/pynrw-1.4.0.tar.gz]
+[2024-05-18 16:55:47] INFO root fetch - main [MainThread]: End processing [pynrw]: success
+[2024-05-18 16:55:47] INFO root fetch - processPackages [lora-modem]: Remove: archive file [/home/abi/fetcher/tmp/lora-modem-1.4.0.tar.gz]
+[2024-05-18 16:55:47] INFO root fetch - processPackages [lora-modem]: Remove: archive file [/home/abi/fetcher/tmp/lora_modem-1.4.1.tar.gz]
+[2024-05-18 16:55:47] INFO root fetch - main [MainThread]: End processing [lora-modem]: success
+[2024-05-18 16:55:47] INFO root fetch - main [MainThread]: Store serial: [23268620]
