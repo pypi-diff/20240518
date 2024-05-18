@@ -1976,3 +1976,36 @@
 [2024-05-18 02:06:46] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240517.tar.gz]
 [2024-05-18 02:06:46] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
 [2024-05-18 02:06:46] INFO root fetch - main [MainThread]: Store serial: [23262086]
+[2024-05-18 02:08:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262086]
+[2024-05-18 02:08:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heliumcli
+[2024-05-18 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: photorec-sorter
+[2024-05-18 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-common
+[2024-05-18 02:08:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moesifasgi
+[2024-05-18 02:08:55] INFO root fetch - processPackages [moesifasgi]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-18 02:08:55] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-18 02:08:55] WARNING root fetch - processPackages [photorec-sorter]: Skipping, unable to determine old version
+[2024-05-18 02:08:55] INFO root fetch - main [MainThread]: End processing [photorec-sorter] error
+[2024-05-18 02:08:55] INFO root fetch - processPackages [heliumcli]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-05-18 02:08:55] INFO root fetch - processPackages [moesifasgi]: Downloading https://files.pythonhosted.org/packages/6f/b2/0b583e0c480a418ca075ece74179e0d41b38f581c984345431d7916ad512/moesifasgi-1.0.2.tar.gz
+[2024-05-18 02:08:55] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-18 02:08:55] INFO root fetch - processPackages [heliumcli]: Downloading https://files.pythonhosted.org/packages/ca/5d/539d15851aa22419e9462bda1d11d575d4bd2b00db92ec105066ae25caa7/heliumcli-1.6.8.tar.gz
+[2024-05-18 02:08:55] INFO root fetch - processPackages [moesifasgi]: Downloading https://files.pythonhosted.org/packages/82/e0/4f766d8fda5a7e0f47a0692ec357df0afc813c4fc6afd82e447f3aa4e06e/moesifasgi-1.0.3.tar.gz
+[2024-05-18 02:08:55] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-18 02:08:55] INFO root fetch - processPackages [heliumcli]: Downloading https://files.pythonhosted.org/packages/4a/29/675e3edaf5f29ff50c79ff73478d031fd3e909dbb85cbf6ce44cf99fd15b/heliumcli-1.6.9.tar.gz
+[2024-05-18 02:08:55] INFO root fetch - processPackages [moesifasgi]: executing diffoscope
+[2024-05-18 02:08:55] INFO root fetch - processPackages [moesifasgi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moesifasgi-1.0.2.tar.gz tmp/moesifasgi-1.0.3.tar.gz --markdown 20240518/m/moesifasgi/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-18 02:08:55] INFO root fetch - processPackages [heliumcli]: executing diffoscope
+[2024-05-18 02:08:55] INFO root fetch - processPackages [heliumcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heliumcli-1.6.8.tar.gz tmp/heliumcli-1.6.9.tar.gz --markdown 20240518/h/heliumcli/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-05-18 02:08:55] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-18 02:08:55] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240518/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-18 02:08:56] INFO root fetch - processPackages [moesifasgi]: Remove: archive file [/home/abi/fetcher/tmp/moesifasgi-1.0.2.tar.gz]
+[2024-05-18 02:08:56] INFO root fetch - processPackages [moesifasgi]: Remove: archive file [/home/abi/fetcher/tmp/moesifasgi-1.0.3.tar.gz]
+[2024-05-18 02:08:56] INFO root fetch - main [MainThread]: End processing [moesifasgi]: success
+[2024-05-18 02:08:56] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-18 02:08:56] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-18 02:08:56] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-18 02:08:56] INFO root fetch - processPackages [heliumcli]: Remove: archive file [/home/abi/fetcher/tmp/heliumcli-1.6.8.tar.gz]
+[2024-05-18 02:08:56] INFO root fetch - processPackages [heliumcli]: Remove: archive file [/home/abi/fetcher/tmp/heliumcli-1.6.9.tar.gz]
+[2024-05-18 02:08:56] INFO root fetch - main [MainThread]: End processing [heliumcli]: success
+[2024-05-18 02:08:56] INFO root fetch - main [MainThread]: Store serial: [23262101]
