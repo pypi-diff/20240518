@@ -10924,3 +10924,24 @@
 [2024-05-18 08:54:53] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-05-18 08:54:53] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-18 08:54:53] INFO root fetch - main [MainThread]: Store serial: [23265544]
+[2024-05-18 08:56:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265544]
+[2024-05-18 08:57:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zorch
+[2024-05-18 08:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AllFilesReader
+[2024-05-18 08:57:04] INFO root fetch - processPackages [zorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 08:57:04] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/50/d5/20b0dac0ae23cf0da1ac26121361a57833e4c90c03953c298d882b7d835d/zorch-0.0.8.tar.gz
+[2024-05-18 08:57:04] INFO root fetch - processPackages [AllFilesReader]: New version: [0.0.8] Old Version: [0.0.5]
+[2024-05-18 08:57:04] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/bf/a0/75fc2c4170d35fb1a7605723b68b9cd28d1d2e0cbd176afc077833e6d119/zorch-0.0.9.tar.gz
+[2024-05-18 08:57:04] INFO root fetch - processPackages [AllFilesReader]: Downloading https://files.pythonhosted.org/packages/4f/7f/07e0966291ddde932c31bdb535ffdb2f3e6f6daf0850ee7178dd2784b95e/allfilesreader-0.0.5.tar.gz
+[2024-05-18 08:57:04] INFO root fetch - processPackages [zorch]: executing diffoscope
+[2024-05-18 08:57:04] INFO root fetch - processPackages [zorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zorch-0.0.8.tar.gz tmp/zorch-0.0.9.tar.gz --markdown 20240518/z/zorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 08:57:04] INFO root fetch - processPackages [AllFilesReader]: Downloading https://files.pythonhosted.org/packages/db/63/348d688adc11b3efa1c4ea307264f6b59e311d40c553256e57e00d3225cb/allfilesreader-0.0.8.tar.gz
+[2024-05-18 08:57:04] INFO root fetch - processPackages [AllFilesReader]: executing diffoscope
+[2024-05-18 08:57:04] INFO root fetch - processPackages [AllFilesReader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allfilesreader-0.0.5.tar.gz tmp/allfilesreader-0.0.8.tar.gz --markdown 20240518/A/AllFilesReader/0.0.5-0.0.8/README.md --exclude *.pyd
+[2024-05-18 08:57:05] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.8.tar.gz]
+[2024-05-18 08:57:05] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
+[2024-05-18 08:57:05] INFO root fetch - main [MainThread]: End processing [zorch]: success
+[2024-05-18 08:57:05] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.5.tar.gz]
+[2024-05-18 08:57:05] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.8.tar.gz]
+[2024-05-18 08:57:05] INFO root fetch - main [MainThread]: End processing [AllFilesReader]: success
+[2024-05-18 08:57:05] INFO root fetch - main [MainThread]: Store serial: [23265549]
