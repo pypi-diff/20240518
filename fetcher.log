@@ -9068,3 +9068,54 @@
 [2024-05-18 06:08:17] WARNING root fetch - processPackages [python-gpapi2]: Skipping, unable to determine old version
 [2024-05-18 06:08:17] INFO root fetch - main [MainThread]: End processing [python-gpapi2] error
 [2024-05-18 06:08:17] INFO root fetch - main [MainThread]: Store serial: [23264611]
+[2024-05-18 06:10:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264611]
+[2024-05-18 06:10:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 06:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-fleet-vehicle-log-fuel
+[2024-05-18 06:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2024-05-18 06:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-fleet-vehicle-stock
+[2024-05-18 06:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yiyangzhang0201
+[2024-05-18 06:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xiaogpt
+[2024-05-18 06:10:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: psychonomyz
+[2024-05-18 06:10:27] INFO root fetch - processPackages [xiaogpt]: New version: [2.81] Old Version: [2.80]
+[2024-05-18 06:10:27] INFO root fetch - processPackages [yiyangzhang0201]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 06:10:27] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-05-18 06:10:27] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: New version: [14.0.2.0.1.dev4] Old Version: [14.0.2.0.1.dev3]
+[2024-05-18 06:10:27] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: New version: [16.0.1.0.0.9] Old Version: [16.0.1.0.0.8]
+[2024-05-18 06:10:27] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/b2/48/0c46baabf6b75fe84c25bc1c4f600466c7e757f16f2cf666b0c9a4c6d336/xiaogpt-2.80.tar.gz
+[2024-05-18 06:10:27] INFO root fetch - processPackages [yiyangzhang0201]: Downloading https://files.pythonhosted.org/packages/46/f2/ed633ad5b0b6af6b253fa4d973518acd3c4164180de47c0352196c217f42/yiyangzhang0201-0.1.2.tar.gz
+[2024-05-18 06:10:27] WARNING root fetch - processPackages [psychonomyz]: Skipping, unable to determine old version
+[2024-05-18 06:10:27] INFO root fetch - main [MainThread]: End processing [psychonomyz] error
+[2024-05-18 06:10:27] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-05-18 06:10:27] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: Downloading https://files.pythonhosted.org/packages/af/5e/a934950632a1b0df0e1ddf08dd500bb4785cc922646a17c86853a523aa91/odoo_addon_fleet_vehicle_stock-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-18 06:10:27] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: Downloading https://files.pythonhosted.org/packages/a9/d5/ea192bd74c5a8b0ce6fedd671e829e0dc38706de917362f8592e5da327a8/odoo14_addon_fleet_vehicle_log_fuel-14.0.2.0.1.dev3-py3-none-any.whl
+[2024-05-18 06:10:27] INFO root fetch - processPackages [yiyangzhang0201]: Downloading https://files.pythonhosted.org/packages/97/d0/1fabf22584e7d1fb328820e48177684bc911111611a2ed8e387dd7a94b5d/yiyangzhang0201-0.1.3.tar.gz
+[2024-05-18 06:10:27] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/d7/b1/5bf37aa14730d78d7d77f75484d5cee38e2db401bf2ecb4e09f088a79168/xiaogpt-2.81.tar.gz
+[2024-05-18 06:10:27] INFO root fetch - processPackages [yiyangzhang0201]: executing diffoscope
+[2024-05-18 06:10:27] INFO root fetch - processPackages [yiyangzhang0201]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yiyangzhang0201-0.1.2.tar.gz tmp/yiyangzhang0201-0.1.3.tar.gz --markdown 20240518/y/yiyangzhang0201/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 06:10:28] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2024-05-18 06:10:28] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-2.80.tar.gz tmp/xiaogpt-2.81.tar.gz --markdown 20240518/x/xiaogpt/2.80-2.81/README.md --exclude *.pyd
+[2024-05-18 06:10:28] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: Downloading https://files.pythonhosted.org/packages/1f/e0/6cc677dcd6bdb7ece9c01c2cb81bb194b40bc090639fd9f0d28eb923151b/odoo14_addon_fleet_vehicle_log_fuel-14.0.2.0.1.dev4-py3-none-any.whl
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: Downloading https://files.pythonhosted.org/packages/f4/bc/ca6a60613d53beec0dd50978334dc7e7a941933ae4cb48126c39c8991da5/odoo_addon_fleet_vehicle_stock-16.0.1.0.0.9-py3-none-any.whl
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: executing diffoscope
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_fleet_vehicle_log_fuel-14.0.2.0.1.dev3-py3-none-any.whl.zip tmp/odoo14_addon_fleet_vehicle_log_fuel-14.0.2.0.1.dev4-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-fleet-vehicle-log-fuel/14.0.2.0.1.dev3-14.0.2.0.1.dev4/README.md --exclude *.pyd
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: executing diffoscope
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fleet_vehicle_stock-16.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_fleet_vehicle_stock-16.0.1.0.0.9-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-fleet-vehicle-stock/16.0.1.0.0.8-16.0.1.0.0.9/README.md --exclude *.pyd
+[2024-05-18 06:10:28] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-05-18 06:10:28] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240518/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-05-18 06:10:28] INFO root fetch - processPackages [yiyangzhang0201]: Remove: archive file [/home/abi/fetcher/tmp/yiyangzhang0201-0.1.2.tar.gz]
+[2024-05-18 06:10:28] INFO root fetch - processPackages [yiyangzhang0201]: Remove: archive file [/home/abi/fetcher/tmp/yiyangzhang0201-0.1.3.tar.gz]
+[2024-05-18 06:10:28] INFO root fetch - main [MainThread]: End processing [yiyangzhang0201]: success
+[2024-05-18 06:10:28] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.80.tar.gz]
+[2024-05-18 06:10:28] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.81.tar.gz]
+[2024-05-18 06:10:28] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_fleet_vehicle_log_fuel-14.0.2.0.1.dev3-py3-none-any.whl.zip]
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo14-addon-fleet-vehicle-log-fuel]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_fleet_vehicle_log_fuel-14.0.2.0.1.dev4-py3-none-any.whl.zip]
+[2024-05-18 06:10:28] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fleet-vehicle-log-fuel]: success
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fleet_vehicle_stock-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-18 06:10:28] INFO root fetch - processPackages [odoo-addon-fleet-vehicle-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fleet_vehicle_stock-16.0.1.0.0.9-py3-none-any.whl.zip]
+[2024-05-18 06:10:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-fleet-vehicle-stock]: success
+[2024-05-18 06:10:29] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-05-18 06:10:29] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-05-18 06:10:29] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-05-18 06:10:29] INFO root fetch - main [MainThread]: Store serial: [23264628]
