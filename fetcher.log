@@ -13016,3 +13016,33 @@
 [2024-05-18 11:54:10] INFO root fetch - processPackages [todotree]: Remove: archive file [/home/abi/fetcher/tmp/todotree-2.5.0.tar.gz]
 [2024-05-18 11:54:10] INFO root fetch - main [MainThread]: End processing [todotree]: success
 [2024-05-18 11:54:10] INFO root fetch - main [MainThread]: Store serial: [23266757]
+[2024-05-18 11:56:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266757]
+[2024-05-18 11:56:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 11:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: batchrun
+[2024-05-18 11:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: org-ds-cdk
+[2024-05-18 11:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: markrunner-server
+[2024-05-18 11:56:20] INFO root fetch - processPackages [org-ds-cdk]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-18 11:56:20] INFO root fetch - processPackages [org-ds-cdk]: Downloading https://files.pythonhosted.org/packages/a4/f9/250015790b6f63ea62897083f424583b20f8185ce2abd7c12728bb9ac956/org-ds-cdk-0.1.4.tar.gz
+[2024-05-18 11:56:20] INFO root fetch - processPackages [batchrun]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-18 11:56:20] INFO root fetch - processPackages [markrunner-server]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 11:56:20] INFO root fetch - processPackages [batchrun]: Downloading https://files.pythonhosted.org/packages/e0/48/0c7fadbbc664d4f95e1d4853edb60cbbc6fe0e34f6e8e7574b5a19378806/batchrun-0.0.13.tar.gz
+[2024-05-18 11:56:20] INFO root fetch - processPackages [markrunner-server]: Downloading https://files.pythonhosted.org/packages/66/ff/cec14987e06190e62ceece37c0c03cee25e167106e72da966da1f69f2884/markrunner_server-0.1.5.tar.gz
+[2024-05-18 11:56:20] INFO root fetch - processPackages [org-ds-cdk]: Downloading https://files.pythonhosted.org/packages/c3/7d/3d52adb3f022da49b6b8de83efb3f12524ad3baa68c4ee120e039533c241/org-ds-cdk-0.1.5.tar.gz
+[2024-05-18 11:56:20] INFO root fetch - processPackages [org-ds-cdk]: executing diffoscope
+[2024-05-18 11:56:20] INFO root fetch - processPackages [org-ds-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/org-ds-cdk-0.1.4.tar.gz tmp/org-ds-cdk-0.1.5.tar.gz --markdown 20240518/o/org-ds-cdk/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-18 11:56:20] INFO root fetch - processPackages [batchrun]: Downloading https://files.pythonhosted.org/packages/24/84/2063d550eb98aa24acb298a3631d643db72562bd7dad7d970cf212bec2a9/batchrun-0.0.14.tar.gz
+[2024-05-18 11:56:20] INFO root fetch - processPackages [markrunner-server]: Downloading https://files.pythonhosted.org/packages/f8/5b/56a893b16f2277218c9dcabb07f74ae4d7ed13ffbaaaf058321272ff8b85/markrunner_server-0.1.6.tar.gz
+[2024-05-18 11:56:20] INFO root fetch - processPackages [batchrun]: executing diffoscope
+[2024-05-18 11:56:20] INFO root fetch - processPackages [batchrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batchrun-0.0.13.tar.gz tmp/batchrun-0.0.14.tar.gz --markdown 20240518/b/batchrun/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-18 11:56:20] INFO root fetch - processPackages [markrunner-server]: executing diffoscope
+[2024-05-18 11:56:20] INFO root fetch - processPackages [markrunner-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markrunner_server-0.1.5.tar.gz tmp/markrunner_server-0.1.6.tar.gz --markdown 20240518/m/markrunner-server/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 11:56:21] INFO root fetch - processPackages [org-ds-cdk]: Remove: archive file [/home/abi/fetcher/tmp/org-ds-cdk-0.1.4.tar.gz]
+[2024-05-18 11:56:21] INFO root fetch - processPackages [org-ds-cdk]: Remove: archive file [/home/abi/fetcher/tmp/org-ds-cdk-0.1.5.tar.gz]
+[2024-05-18 11:56:21] INFO root fetch - main [MainThread]: End processing [org-ds-cdk]: success
+[2024-05-18 11:56:21] INFO root fetch - processPackages [batchrun]: Remove: archive file [/home/abi/fetcher/tmp/batchrun-0.0.13.tar.gz]
+[2024-05-18 11:56:21] INFO root fetch - processPackages [batchrun]: Remove: archive file [/home/abi/fetcher/tmp/batchrun-0.0.14.tar.gz]
+[2024-05-18 11:56:21] INFO root fetch - main [MainThread]: End processing [batchrun]: success
+[2024-05-18 11:56:21] INFO root fetch - processPackages [markrunner-server]: Remove: archive file [/home/abi/fetcher/tmp/markrunner_server-0.1.5.tar.gz]
+[2024-05-18 11:56:21] INFO root fetch - processPackages [markrunner-server]: Remove: archive file [/home/abi/fetcher/tmp/markrunner_server-0.1.6.tar.gz]
+[2024-05-18 11:56:21] INFO root fetch - main [MainThread]: End processing [markrunner-server]: success
+[2024-05-18 11:56:21] INFO root fetch - main [MainThread]: Store serial: [23266767]
