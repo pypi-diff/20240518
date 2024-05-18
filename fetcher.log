@@ -14562,3 +14562,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:00:12] INFO root fetch - processPackages [runhelper]: Remove: archive file [/home/abi/fetcher/tmp/runhelper-0.2.4.tar.gz]
 [2024-05-18 14:00:12] INFO root fetch - main [MainThread]: End processing [runhelper]: success
 [2024-05-18 14:00:12] INFO root fetch - main [MainThread]: Store serial: [23267455]
+[2024-05-18 14:02:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267455]
+[2024-05-18 14:02:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pop-sort
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statedict2pytree
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Unified-python-sdk
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altstore-proxy
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: distyll-info
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: apportioningz
+[2024-05-18 14:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: thymus-ast
+[2024-05-18 14:02:22] INFO root fetch - processPackages [statedict2pytree]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-18 14:02:22] INFO root fetch - processPackages [altstore-proxy]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-18 14:02:22] INFO root fetch - processPackages [distyll-info]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 14:02:22] INFO root fetch - processPackages [Unified-python-sdk]: New version: [0.22.3] Old Version: [0.22.2]
+[2024-05-18 14:02:22] INFO root fetch - processPackages [pop-sort]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 14:02:22] WARNING root fetch - processPackages [apportioningz]: Skipping, unable to determine old version
+[2024-05-18 14:02:22] INFO root fetch - main [MainThread]: End processing [apportioningz] error
+[2024-05-18 14:02:22] INFO root fetch - processPackages [distyll-info]: Downloading https://files.pythonhosted.org/packages/87/aa/812379e6f0aff454c1390325f7139a421533c4da3d190b6f3ec8187bc269/distyll_info-0.2.2.tar.gz
+[2024-05-18 14:02:22] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/09/67/38228bb1b2c10c49b4ec478bd2eb1990efb0fc64cf899ed54d9d7048cc7a/Unified-python-sdk-0.22.2.tar.gz
+[2024-05-18 14:02:22] INFO root fetch - processPackages [thymus-ast]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 14:02:22] INFO root fetch - processPackages [statedict2pytree]: Downloading https://files.pythonhosted.org/packages/9b/1b/64a47dfc1c3dd57bbc3555fc8604e800a69976683f6c1181298f1210e43c/statedict2pytree-0.3.0.tar.gz
+[2024-05-18 14:02:22] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/93/76/baaa171394ee2ee9cadf22dacdbe9a36dd0c52036b205322519052d01aa5/altstore_proxy-1.0.2.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [pop-sort]: Downloading https://files.pythonhosted.org/packages/de/a5/ce2293900fdf4c1c9a9793c860eece6aeecff255668267a78d350c0e6e54/pop_sort-0.1-py3-none-any.whl
+[2024-05-18 14:02:23] INFO root fetch - processPackages [distyll-info]: Downloading https://files.pythonhosted.org/packages/cd/ad/90b43970beb4d0ce52540b97e1b307cf20e2f925244d101062280d670036/distyll_info-0.2.3.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [thymus-ast]: Downloading https://files.pythonhosted.org/packages/f2/84/45b54e8b80eced45b898034821f524a7ddf8cc7edc462285f3401a2c5046/thymus_ast-0.1.7.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [distyll-info]: executing diffoscope
+[2024-05-18 14:02:23] INFO root fetch - processPackages [distyll-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/distyll_info-0.2.2.tar.gz tmp/distyll_info-0.2.3.tar.gz --markdown 20240518/d/distyll-info/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 14:02:23] INFO root fetch - processPackages [Unified-python-sdk]: Downloading https://files.pythonhosted.org/packages/b6/6b/03ac5b163743c89af9a5f7c52b6fde9060552ac994e88f031fd2235d0a74/Unified-python-sdk-0.22.3.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [statedict2pytree]: Downloading https://files.pythonhosted.org/packages/fc/63/1bb7826c1f61ebd783437c08301a3e58111179226cf6ed1b544e020c7e8b/statedict2pytree-0.4.0.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/a5/9e/996e4453d807a70cf0015157fef34bde5d37c699f1ddb458b33f7cdb0ddf/altstore_proxy-1.0.3.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [pop-sort]: Downloading https://files.pythonhosted.org/packages/98/97/a251eee952ae6e15b70518ac463cc0f5eb4deb5593159963654fe0ba7bb1/pop_sort-0.2.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [Unified-python-sdk]: executing diffoscope
+[2024-05-18 14:02:23] INFO root fetch - processPackages [Unified-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Unified-python-sdk-0.22.2.tar.gz tmp/Unified-python-sdk-0.22.3.tar.gz --markdown 20240518/U/Unified-python-sdk/0.22.2-0.22.3/README.md --exclude *.pyd
+[2024-05-18 14:02:23] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-18 14:02:23] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.0.2.tar.gz tmp/altstore_proxy-1.0.3.tar.gz --markdown 20240518/a/altstore-proxy/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-18 14:02:23] INFO root fetch - processPackages [pop-sort]: executing diffoscope
+[2024-05-18 14:02:23] INFO root fetch - processPackages [pop-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pop_sort-0.1-py3-none-any.whl.zip tmp/pop_sort-0.2.tar.gz --markdown 20240518/p/pop-sort/0.1-0.2/README.md --exclude *.pyd
+[2024-05-18 14:02:23] INFO root fetch - processPackages [statedict2pytree]: executing diffoscope
+[2024-05-18 14:02:23] INFO root fetch - processPackages [statedict2pytree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statedict2pytree-0.3.0.tar.gz tmp/statedict2pytree-0.4.0.tar.gz --markdown 20240518/s/statedict2pytree/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-18 14:02:23] INFO root fetch - processPackages [thymus-ast]: Downloading https://files.pythonhosted.org/packages/60/9e/41bdd93aff22a94ef085bcf694374f85cc381d2e16fef0a589989f21b874/thymus_ast-0.1.8.tar.gz
+[2024-05-18 14:02:23] INFO root fetch - processPackages [thymus-ast]: executing diffoscope
+[2024-05-18 14:02:23] INFO root fetch - processPackages [thymus-ast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thymus_ast-0.1.7.tar.gz tmp/thymus_ast-0.1.8.tar.gz --markdown 20240518/t/thymus-ast/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 14:02:24] INFO root fetch - processPackages [distyll-info]: Remove: archive file [/home/abi/fetcher/tmp/distyll_info-0.2.2.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - processPackages [distyll-info]: Remove: archive file [/home/abi/fetcher/tmp/distyll_info-0.2.3.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - main [MainThread]: End processing [distyll-info]: success
+[2024-05-18 14:02:24] INFO root fetch - processPackages [pop-sort]: Remove: archive file [/home/abi/fetcher/tmp/pop_sort-0.1-py3-none-any.whl.zip]
+[2024-05-18 14:02:24] INFO root fetch - processPackages [pop-sort]: Remove: archive file [/home/abi/fetcher/tmp/pop_sort-0.2.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - main [MainThread]: End processing [pop-sort]: success
+[2024-05-18 14:02:24] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.0.2.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.0.3.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-18 14:02:24] INFO root fetch - processPackages [statedict2pytree]: Remove: archive file [/home/abi/fetcher/tmp/statedict2pytree-0.3.0.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - processPackages [statedict2pytree]: Remove: archive file [/home/abi/fetcher/tmp/statedict2pytree-0.4.0.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - main [MainThread]: End processing [statedict2pytree]: success
+[2024-05-18 14:02:24] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.7.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - processPackages [thymus-ast]: Remove: archive file [/home/abi/fetcher/tmp/thymus_ast-0.1.8.tar.gz]
+[2024-05-18 14:02:24] INFO root fetch - main [MainThread]: End processing [thymus-ast]: success
+[2024-05-18 14:02:25] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.2.tar.gz]
+[2024-05-18 14:02:25] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.3.tar.gz]
+[2024-05-18 14:02:25] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
+[2024-05-18 14:02:25] INFO root fetch - main [MainThread]: Store serial: [23267477]
