@@ -20693,3 +20693,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:23:31] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-18 21:23:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-invoice-policy]: success
 [2024-05-18 21:23:31] INFO root fetch - main [MainThread]: Store serial: [23270518]
+[2024-05-18 21:25:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270518]
+[2024-05-18 21:25:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 21:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastqwiper
+[2024-05-18 21:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEasyDbApi
+[2024-05-18 21:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-sale-restricted-qty
+[2024-05-18 21:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-appointment
+[2024-05-18 21:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: djangorestframework-hybridrouter
+[2024-05-18 21:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-sale-procurement-group-by-commitment-date
+[2024-05-18 21:25:40] INFO root fetch - processPackages [django-appointment]: New version: [3.5.0] Old Version: [3.4.1]
+[2024-05-18 21:25:40] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.0.8] Old Version: [0.0.5]
+[2024-05-18 21:25:40] WARNING root fetch - processPackages [odoo-addon-sale-restricted-qty]: Skipping, unable to determine old version
+[2024-05-18 21:25:40] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-restricted-qty] error
+[2024-05-18 21:25:40] INFO root fetch - processPackages [django-appointment]: Downloading https://files.pythonhosted.org/packages/fe/0d/a637ae974ef664a5ab1b851afb48b1dede90cb6bdccb7c7effbfdab51ca9/django-appointment-3.4.1.tar.gz
+[2024-05-18 21:25:40] INFO root fetch - processPackages [djangorestframework-hybridrouter]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 21:25:40] INFO root fetch - processPackages [fastqwiper]: New version: [2024.1.86] Old Version: [2023.2.82]
+[2024-05-18 21:25:40] WARNING root fetch - processPackages [odoo-addon-sale-procurement-group-by-commitment-date]: Skipping, unable to determine old version
+[2024-05-18 21:25:40] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-procurement-group-by-commitment-date] error
+[2024-05-18 21:25:40] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/b3/a3/ddef5ceb678c5f1afe48cfd8efbb642474a332aa147e1fd5a60815f7d364/pyeasydbapi-0.0.5.tar.gz
+[2024-05-18 21:25:40] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/b9/a0/9829f12bbf95fc6c1d55f8f12dbece24b7311967d6f346769b0f53e5f35b/fastqwiper-2023.2.82-py3-none-any.whl
+[2024-05-18 21:25:40] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Downloading https://files.pythonhosted.org/packages/82/7b/73f4684b38f8ebd7db04f226de3c4e85108401873d99d25305ecd34cc7bc/djangorestframework_hybridrouter-0.1.3.tar.gz
+[2024-05-18 21:25:40] INFO root fetch - processPackages [django-appointment]: Downloading https://files.pythonhosted.org/packages/f4/61/7680c866202cc1baa711793c3c9ce4e84a43396af32fba559cdac996cb11/django_appointment-3.5.0.tar.gz
+[2024-05-18 21:25:41] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/8e/e6/fe9c5b41c225da64c4730d517e57e912c448b15e94e8b70e1bd321f64935/pyeasydbapi-0.0.8.tar.gz
+[2024-05-18 21:25:41] INFO root fetch - processPackages [django-appointment]: executing diffoscope
+[2024-05-18 21:25:41] INFO root fetch - processPackages [django-appointment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-appointment-3.4.1.tar.gz tmp/django_appointment-3.5.0.tar.gz --markdown 20240518/d/django-appointment/3.4.1-3.5.0/README.md --exclude *.pyd
+[2024-05-18 21:25:41] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:25:41] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.0.5.tar.gz tmp/pyeasydbapi-0.0.8.tar.gz --markdown 20240518/p/pyEasyDbApi/0.0.5-0.0.8/README.md --exclude *.pyd
+[2024-05-18 21:25:41] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/21/e7/0de7faeb58bbb0aba0acf81320b1500a4638de58d519a9f8903c2d9d10c4/fastqwiper-2024.1.86-py3-none-any.whl
+[2024-05-18 21:25:41] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Downloading https://files.pythonhosted.org/packages/16/8e/e4923af070c299d034d47b5a105cf275081d116bd5fcb4d28047b58da3ff/djangorestframework_hybridrouter-0.1.4.tar.gz
+[2024-05-18 21:25:41] INFO root fetch - processPackages [fastqwiper]: executing diffoscope
+[2024-05-18 21:25:41] INFO root fetch - processPackages [fastqwiper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastqwiper-2023.2.82-py3-none-any.whl.zip tmp/fastqwiper-2024.1.86-py3-none-any.whl.zip --markdown 20240518/f/fastqwiper/2023.2.82-2024.1.86/README.md --exclude *.pyd
+[2024-05-18 21:25:41] INFO root fetch - processPackages [djangorestframework-hybridrouter]: executing diffoscope
+[2024-05-18 21:25:41] INFO root fetch - processPackages [djangorestframework-hybridrouter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangorestframework_hybridrouter-0.1.3.tar.gz tmp/djangorestframework_hybridrouter-0.1.4.tar.gz --markdown 20240518/d/djangorestframework-hybridrouter/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 21:25:41] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.5.tar.gz]
+[2024-05-18 21:25:41] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.8.tar.gz]
+[2024-05-18 21:25:41] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:25:41] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2023.2.82-py3-none-any.whl.zip]
+[2024-05-18 21:25:41] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.86-py3-none-any.whl.zip]
+[2024-05-18 21:25:41] INFO root fetch - main [MainThread]: End processing [fastqwiper]: success
+[2024-05-18 21:25:41] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework_hybridrouter-0.1.3.tar.gz]
+[2024-05-18 21:25:41] INFO root fetch - processPackages [djangorestframework-hybridrouter]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework_hybridrouter-0.1.4.tar.gz]
+[2024-05-18 21:25:41] INFO root fetch - main [MainThread]: End processing [djangorestframework-hybridrouter]: success
+[2024-05-18 21:25:42] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django-appointment-3.4.1.tar.gz]
+[2024-05-18 21:25:42] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django_appointment-3.5.0.tar.gz]
+[2024-05-18 21:25:42] INFO root fetch - main [MainThread]: End processing [django-appointment]: success
+[2024-05-18 21:25:42] INFO root fetch - main [MainThread]: Store serial: [23270537]
