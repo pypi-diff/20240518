@@ -20803,3 +20803,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:32:09] INFO root fetch - processPackages [jmc-beet]: Remove: archive file [/home/abi/fetcher/tmp/jmc-beet-0.0.1a9.tar.gz]
 [2024-05-18 21:32:09] INFO root fetch - main [MainThread]: End processing [jmc-beet]: success
 [2024-05-18 21:32:09] INFO root fetch - main [MainThread]: Store serial: [23270569]
+[2024-05-18 21:34:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270569]
+[2024-05-18 21:34:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 21:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEasyDbApi
+[2024-05-18 21:34:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mercapy
+[2024-05-18 21:34:18] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 21:34:18] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/6a/5a/5d684a00811d1e6d43256f342a7c0263df583790c39124c5b40758f11b36/pyeasydbapi-0.1.0.tar.gz
+[2024-05-18 21:34:18] INFO root fetch - processPackages [mercapy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 21:34:18] INFO root fetch - processPackages [mercapy]: Downloading https://files.pythonhosted.org/packages/72/92/302b21ff07bfb7fb2603ccfffe4bae148141627a3aca82fa2854279d8efb/mercapy-0.0.1.tar.gz
+[2024-05-18 21:34:18] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/c5/65/4674c6a960b32d62e23e565a7b63003c72f6c171f61f83270a290521e6f7/pyeasydbapi-0.1.1.tar.gz
+[2024-05-18 21:34:19] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:34:19] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.0.tar.gz tmp/pyeasydbapi-0.1.1.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 21:34:19] INFO root fetch - processPackages [mercapy]: Downloading https://files.pythonhosted.org/packages/91/90/114ccd4b83d8b1b52068fa4520290b3f80d418de772c8c74ed59946e53d9/mercapy-0.0.2.tar.gz
+[2024-05-18 21:34:19] INFO root fetch - processPackages [mercapy]: executing diffoscope
+[2024-05-18 21:34:19] INFO root fetch - processPackages [mercapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercapy-0.0.1.tar.gz tmp/mercapy-0.0.2.tar.gz --markdown 20240518/m/mercapy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 21:34:19] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.0.tar.gz]
+[2024-05-18 21:34:19] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.1.tar.gz]
+[2024-05-18 21:34:19] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:34:19] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-0.0.1.tar.gz]
+[2024-05-18 21:34:19] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-0.0.2.tar.gz]
+[2024-05-18 21:34:19] INFO root fetch - main [MainThread]: End processing [mercapy]: success
+[2024-05-18 21:34:19] INFO root fetch - main [MainThread]: Store serial: [23270576]
