@@ -2090,3 +2090,66 @@
 [2024-05-18 02:13:18] INFO root fetch - processPackages [cdk-nag]: Remove: archive file [/home/abi/fetcher/tmp/cdk-nag-2.9.7.tar.gz]
 [2024-05-18 02:13:18] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
 [2024-05-18 02:13:18] INFO root fetch - main [MainThread]: Store serial: [23262130]
+[2024-05-18 02:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262130]
+[2024-05-18 02:15:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-events-notify
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytorch-ignite
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-skylight
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-common
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: d-fake-seeder
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: photorec-sorter
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: taxeopodz
+[2024-05-18 02:15:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: colossalai-nightly
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-18 02:15:28] WARNING root fetch - processPackages [photorec-sorter]: Skipping, unable to determine old version
+[2024-05-18 02:15:28] INFO root fetch - main [MainThread]: End processing [photorec-sorter] error
+[2024-05-18 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: New version: [0.6.0.dev20240517] Old Version: [0.6.0.dev20240516]
+[2024-05-18 02:15:28] WARNING root fetch - processPackages [taxeopodz]: Skipping, unable to determine old version
+[2024-05-18 02:15:28] INFO root fetch - main [MainThread]: End processing [taxeopodz] error
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-skylight]: New version: [1.1.99] Old Version: [1.1.98]
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-18 02:15:28] INFO root fetch - processPackages [d-fake-seeder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/b7/7d/50ca1bff3db85ede28826faf2d11bb449770cac87fe89483636e0fe57d94/cdk-events-notify-2.2.98.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [colossalai-nightly]: New version: [2024.5.4] Old Version: [2024.5.18]
+[2024-05-18 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/2e/67/cd184a6417119da75e844a712e19f0db906d8055552cb642d43479ecb958/pytorch_ignite-0.6.0.dev20240516.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/86/f2/01b58f6183b48ce1105016a7f5045925a49464b8c20408459bd101fe5f25/cdk-skylight-1.1.98.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [d-fake-seeder]: Downloading https://files.pythonhosted.org/packages/5a/3d/dd8859ac650af2eca18fdfe4bee902f66fbac12a9823cd7a7ccde6e0570a/d_fake_seeder-0.0.8.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/4f/80/097cc5b30eb451476edcce62a20d9b46d5f0e9fce29a9ecc05bd1cc4c456/colossalai-nightly-2024.5.18.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: Downloading https://files.pythonhosted.org/packages/56/4a/9c2a145913d7a35ac252cb2bddabca89cdc95c802a8e342f192100f709be/cdk-events-notify-2.2.99.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-skylight]: Downloading https://files.pythonhosted.org/packages/59/49/3e035cb98d5f97f79c174e211129a2dbe596df70c5df50ac701242fabea2/cdk-skylight-1.1.99.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: executing diffoscope
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-events-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-events-notify-2.2.98.tar.gz tmp/cdk-events-notify-2.2.99.tar.gz --markdown 20240518/c/cdk-events-notify/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-skylight]: executing diffoscope
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-skylight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-skylight-1.1.98.tar.gz tmp/cdk-skylight-1.1.99.tar.gz --markdown 20240518/c/cdk-skylight/1.1.98-1.1.99/README.md --exclude *.pyd
+[2024-05-18 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: Downloading https://files.pythonhosted.org/packages/dc/6e/87a9227d160a4452a3444c9567f8daabba598f5dc2e4c0067dcbafc0e574/pytorch_ignite-0.6.0.dev20240517.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [d-fake-seeder]: Downloading https://files.pythonhosted.org/packages/7a/14/7bd315d0aa9f162efb68e3fa76708564d5e536a6150b1bb427ea1dcb37f6/d_fake_seeder-0.0.9.tar.gz
+[2024-05-18 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: executing diffoscope
+[2024-05-18 02:15:28] INFO root fetch - processPackages [pytorch-ignite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytorch_ignite-0.6.0.dev20240516.tar.gz tmp/pytorch_ignite-0.6.0.dev20240517.tar.gz --markdown 20240518/p/pytorch-ignite/0.6.0.dev20240516-0.6.0.dev20240517/README.md --exclude *.pyd
+[2024-05-18 02:15:28] INFO root fetch - processPackages [d-fake-seeder]: executing diffoscope
+[2024-05-18 02:15:28] INFO root fetch - processPackages [d-fake-seeder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d_fake_seeder-0.0.8.tar.gz tmp/d_fake_seeder-0.0.9.tar.gz --markdown 20240518/d/d-fake-seeder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 02:15:29] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-18 02:15:29] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240518/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-18 02:15:29] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.98.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - processPackages [cdk-skylight]: Remove: archive file [/home/abi/fetcher/tmp/cdk-skylight-1.1.99.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - main [MainThread]: End processing [cdk-skylight]: success
+[2024-05-18 02:15:29] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.98.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - processPackages [cdk-events-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-events-notify-2.2.99.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - main [MainThread]: End processing [cdk-events-notify]: success
+[2024-05-18 02:15:29] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/e6/44/486fd79264aea07659649b19981068e182adb8d2d334acb004f686b0dc55/colossalai-nightly-2024.5.4.tar.gz
+[2024-05-18 02:15:29] INFO root fetch - processPackages [d-fake-seeder]: Remove: archive file [/home/abi/fetcher/tmp/d_fake_seeder-0.0.8.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - processPackages [d-fake-seeder]: Remove: archive file [/home/abi/fetcher/tmp/d_fake_seeder-0.0.9.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - main [MainThread]: End processing [d-fake-seeder]: success
+[2024-05-18 02:15:29] INFO root fetch - processPackages [colossalai-nightly]: executing diffoscope
+[2024-05-18 02:15:29] INFO root fetch - processPackages [colossalai-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colossalai-nightly-2024.5.18.tar.gz tmp/colossalai-nightly-2024.5.4.tar.gz --markdown 20240518/c/colossalai-nightly/2024.5.18-2024.5.4/README.md --exclude *.pyd
+[2024-05-18 02:15:29] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch_ignite-0.6.0.dev20240516.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - processPackages [pytorch-ignite]: Remove: archive file [/home/abi/fetcher/tmp/pytorch_ignite-0.6.0.dev20240517.tar.gz]
+[2024-05-18 02:15:29] INFO root fetch - main [MainThread]: End processing [pytorch-ignite]: success
+[2024-05-18 02:15:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-18 02:15:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-18 02:15:30] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-18 02:15:33] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.18.tar.gz]
+[2024-05-18 02:15:33] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.4.tar.gz]
+[2024-05-18 02:15:33] INFO root fetch - main [MainThread]: End processing [colossalai-nightly]: success
+[2024-05-18 02:15:33] INFO root fetch - main [MainThread]: Store serial: [23262154]
