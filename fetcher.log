@@ -13436,3 +13436,27 @@
 [2024-05-18 12:31:04] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
 [2024-05-18 12:31:04] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
 [2024-05-18 12:31:04] INFO root fetch - main [MainThread]: Store serial: [23266937]
+[2024-05-18 12:33:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266937]
+[2024-05-18 12:33:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm-types
+[2024-05-18 12:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sdkfabric-airtable
+[2024-05-18 12:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solaredge2mqtt
+[2024-05-18 12:33:13] INFO root fetch - processPackages [litellm-types]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 12:33:13] INFO root fetch - processPackages [litellm-types]: Downloading https://files.pythonhosted.org/packages/02/1c/67a6e608494bb30ddf3547a232c16678dd06c80c22f4df013f8fa316b270/litellm_types-0.0.8.tar.gz
+[2024-05-18 12:33:13] WARNING root fetch - processPackages [sdkfabric-airtable]: Skipping, unable to determine old version
+[2024-05-18 12:33:13] INFO root fetch - main [MainThread]: End processing [sdkfabric-airtable] error
+[2024-05-18 12:33:13] INFO root fetch - processPackages [solaredge2mqtt]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-05-18 12:33:13] INFO root fetch - processPackages [litellm-types]: Downloading https://files.pythonhosted.org/packages/f8/38/b30caecfa083d3931ff91977ee73dfe55e5b98f18744a1cc28107832b581/litellm_types-0.0.9.tar.gz
+[2024-05-18 12:33:13] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/ca/c5/a64aea7e2c53a6394780bba16ed730d8ac2ea082c079e0a277582653596a/solaredge2mqtt-1.0.9.tar.gz
+[2024-05-18 12:33:13] INFO root fetch - processPackages [litellm-types]: executing diffoscope
+[2024-05-18 12:33:13] INFO root fetch - processPackages [litellm-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm_types-0.0.8.tar.gz tmp/litellm_types-0.0.9.tar.gz --markdown 20240518/l/litellm-types/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 12:33:14] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/c8/b0/5484917512df0b01adfa9d881d8d35558519142208d2d8e72907704acba3/solaredge2mqtt-1.1.0.tar.gz
+[2024-05-18 12:33:14] INFO root fetch - processPackages [solaredge2mqtt]: executing diffoscope
+[2024-05-18 12:33:14] INFO root fetch - processPackages [solaredge2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaredge2mqtt-1.0.9.tar.gz tmp/solaredge2mqtt-1.1.0.tar.gz --markdown 20240518/s/solaredge2mqtt/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-05-18 12:33:14] INFO root fetch - processPackages [litellm-types]: Remove: archive file [/home/abi/fetcher/tmp/litellm_types-0.0.8.tar.gz]
+[2024-05-18 12:33:14] INFO root fetch - processPackages [litellm-types]: Remove: archive file [/home/abi/fetcher/tmp/litellm_types-0.0.9.tar.gz]
+[2024-05-18 12:33:14] INFO root fetch - main [MainThread]: End processing [litellm-types]: success
+[2024-05-18 12:33:14] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
+[2024-05-18 12:33:14] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.1.0.tar.gz]
+[2024-05-18 12:33:14] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
+[2024-05-18 12:33:14] INFO root fetch - main [MainThread]: Store serial: [23266948]
