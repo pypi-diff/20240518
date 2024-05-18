@@ -13158,3 +13158,15 @@
 [2024-05-18 12:05:05] INFO root fetch - main [MainThread]: End processing [synapse-prometheus-exporter]: success
 [2024-05-18 12:05:05] INFO root fetch - main [MainThread]: End processing [synapse-prometheus-exporter]: success
 [2024-05-18 12:05:05] INFO root fetch - main [MainThread]: Store serial: [23266817]
+[2024-05-18 12:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266817]
+[2024-05-18 12:07:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 12:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: debloat
+[2024-05-18 12:07:13] INFO root fetch - processPackages [debloat]: New version: [1.5.6] Old Version: [1.5.5]
+[2024-05-18 12:07:14] INFO root fetch - processPackages [debloat]: Downloading https://files.pythonhosted.org/packages/9e/a4/63a5def18bbbe0f09c5af07368203bdd53a9fef0a70938932f47b8cfbfd4/debloat-1.5.5.tar.gz
+[2024-05-18 12:07:14] INFO root fetch - processPackages [debloat]: Downloading https://files.pythonhosted.org/packages/71/55/e80e410c7fb9f32a3bcfd60d4fc67b2f8d63533fe9cff91fbab52aed627b/debloat-1.5.6.tar.gz
+[2024-05-18 12:07:14] INFO root fetch - processPackages [debloat]: executing diffoscope
+[2024-05-18 12:07:14] INFO root fetch - processPackages [debloat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/debloat-1.5.5.tar.gz tmp/debloat-1.5.6.tar.gz --markdown 20240518/d/debloat/1.5.5-1.5.6/README.md --exclude *.pyd
+[2024-05-18 12:07:15] INFO root fetch - processPackages [debloat]: Remove: archive file [/home/abi/fetcher/tmp/debloat-1.5.5.tar.gz]
+[2024-05-18 12:07:15] INFO root fetch - processPackages [debloat]: Remove: archive file [/home/abi/fetcher/tmp/debloat-1.5.6.tar.gz]
+[2024-05-18 12:07:15] INFO root fetch - main [MainThread]: End processing [debloat]: success
+[2024-05-18 12:07:15] INFO root fetch - main [MainThread]: Store serial: [23266820]
