@@ -11909,3 +11909,42 @@
 [2024-05-18 10:26:11] INFO root fetch - processPackages [pathvalidate-cli]: Remove: archive file [/home/abi/fetcher/tmp/pathvalidate_cli-0.0.2.tar.gz]
 [2024-05-18 10:26:11] INFO root fetch - main [MainThread]: End processing [pathvalidate-cli]: success
 [2024-05-18 10:26:11] INFO root fetch - main [MainThread]: Store serial: [23265982]
+[2024-05-18 10:28:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265982]
+[2024-05-18 10:28:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swanknessz
+[2024-05-18 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biosimulator-processes
+[2024-05-18 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: youtube-video-analyzer
+[2024-05-18 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dicom2image
+[2024-05-18 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crawler-user-agents
+[2024-05-18 10:28:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pgs3
+[2024-05-18 10:28:21] INFO root fetch - processPackages [crawler-user-agents]: New version: [0.2.0] Old Version: [0.1]
+[2024-05-18 10:28:21] INFO root fetch - processPackages [pgs3]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 10:28:21] WARNING root fetch - processPackages [swanknessz]: Skipping, unable to determine old version
+[2024-05-18 10:28:21] INFO root fetch - main [MainThread]: End processing [swanknessz] error
+[2024-05-18 10:28:22] WARNING root fetch - processPackages [dicom2image]: Skipping, unable to determine old version
+[2024-05-18 10:28:22] INFO root fetch - main [MainThread]: End processing [dicom2image] error
+[2024-05-18 10:28:22] INFO root fetch - processPackages [biosimulator-processes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 10:28:22] INFO root fetch - processPackages [pgs3]: Downloading https://files.pythonhosted.org/packages/a4/8a/a68c8952361310c70cddb77214b2763920b30482d97bf1bbac6fb45fb56b/pgs3-0.0.2.tar.gz
+[2024-05-18 10:28:22] WARNING root fetch - processPackages [youtube-video-analyzer]: Skipping, unable to determine old version
+[2024-05-18 10:28:22] INFO root fetch - main [MainThread]: End processing [youtube-video-analyzer] error
+[2024-05-18 10:28:22] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/76/dd/3c915c00244d63cc20bf6deb8ca4498b3080246839fec3489adc6a79de3c/crawler_user_agents-0.1.tar.gz
+[2024-05-18 10:28:22] INFO root fetch - processPackages [biosimulator-processes]: Downloading https://files.pythonhosted.org/packages/7d/51/1b73552fade705186ccd81446180148070dc1a2faacb60c3b6ff368aac74/biosimulator-processes-0.0.8.tar.gz
+[2024-05-18 10:28:22] INFO root fetch - processPackages [pgs3]: Downloading https://files.pythonhosted.org/packages/0b/cd/c473e9ae7ed7504f3c3369928aaa193dab569fb6aa46a49df6c08995941b/pgs3-0.0.3.tar.gz
+[2024-05-18 10:28:22] INFO root fetch - processPackages [pgs3]: executing diffoscope
+[2024-05-18 10:28:22] INFO root fetch - processPackages [pgs3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgs3-0.0.2.tar.gz tmp/pgs3-0.0.3.tar.gz --markdown 20240518/p/pgs3/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 10:28:22] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/30/d7/29f07e425eaec5fcd89e34126060a5351088ac84c429984da4f0d9dbf8ed/crawler_user_agents-0.2.0.tar.gz
+[2024-05-18 10:28:22] INFO root fetch - processPackages [crawler-user-agents]: executing diffoscope
+[2024-05-18 10:28:22] INFO root fetch - processPackages [crawler-user-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_user_agents-0.1.tar.gz tmp/crawler_user_agents-0.2.0.tar.gz --markdown 20240518/c/crawler-user-agents/0.1-0.2.0/README.md --exclude *.pyd
+[2024-05-18 10:28:22] INFO root fetch - processPackages [biosimulator-processes]: Downloading https://files.pythonhosted.org/packages/20/bd/b4740713cca94bc52ac50d53ce3cdc2881f202d3d02b517851617ad668f7/biosimulator-processes-0.0.9.tar.gz
+[2024-05-18 10:28:22] INFO root fetch - processPackages [biosimulator-processes]: executing diffoscope
+[2024-05-18 10:28:22] INFO root fetch - processPackages [biosimulator-processes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biosimulator-processes-0.0.8.tar.gz tmp/biosimulator-processes-0.0.9.tar.gz --markdown 20240518/b/biosimulator-processes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 10:28:22] INFO root fetch - processPackages [pgs3]: Remove: archive file [/home/abi/fetcher/tmp/pgs3-0.0.2.tar.gz]
+[2024-05-18 10:28:22] INFO root fetch - processPackages [pgs3]: Remove: archive file [/home/abi/fetcher/tmp/pgs3-0.0.3.tar.gz]
+[2024-05-18 10:28:22] INFO root fetch - main [MainThread]: End processing [pgs3]: success
+[2024-05-18 10:28:23] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.1.tar.gz]
+[2024-05-18 10:28:23] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.2.0.tar.gz]
+[2024-05-18 10:28:23] INFO root fetch - main [MainThread]: End processing [crawler-user-agents]: success
+[2024-05-18 10:28:23] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.8.tar.gz]
+[2024-05-18 10:28:23] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.9.tar.gz]
+[2024-05-18 10:28:23] INFO root fetch - main [MainThread]: End processing [biosimulator-processes]: success
+[2024-05-18 10:28:23] INFO root fetch - main [MainThread]: Store serial: [23266003]
