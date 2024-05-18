@@ -9291,3 +9291,20 @@
 [2024-05-18 06:27:53] INFO root fetch - processPackages [docmake]: Remove: archive file [/home/abi/fetcher/tmp/docmake-0.1.5.tar.gz]
 [2024-05-18 06:27:53] INFO root fetch - main [MainThread]: End processing [docmake]: success
 [2024-05-18 06:27:53] INFO root fetch - main [MainThread]: Store serial: [23264715]
+[2024-05-18 06:29:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264715]
+[2024-05-18 06:30:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-azurerm
+[2024-05-18 06:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-testing
+[2024-05-18 06:30:03] INFO root fetch - processPackages [mo-testing]: New version: [8.631.24139] Old Version: [8.629.24136]
+[2024-05-18 06:30:03] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/1b/e9/7aaa3b1439701873986fea3d281fdea7a6e0e0d2f01ae7d95ef52c58e4e1/mo_testing-8.629.24136.tar.gz
+[2024-05-18 06:30:03] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [9.0.8] Old Version: [9.0.7]
+[2024-05-18 06:30:03] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/b4/43/b0c08cb301a3d2899518122e941749085163a35c8b9962cab542cb95c827/mo_testing-8.631.24139.tar.gz
+[2024-05-18 06:30:03] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/bf/17/c9386b4842b68525aae4b3da38fa0030881fa08061804f556c93dd424cda/cdktf-cdktf-provider-azurerm-9.0.7.tar.gz
+[2024-05-18 06:30:03] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
+[2024-05-18 06:30:03] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2024-05-18 06:30:03] INFO root fetch - processPackages [mo-testing]: executing diffoscope
+[2024-05-18 06:30:03] INFO root fetch - processPackages [mo-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_testing-8.629.24136.tar.gz tmp/mo_testing-8.631.24139.tar.gz --markdown 20240518/m/mo-testing/8.629.24136-8.631.24139/README.md --exclude *.pyd
+[2024-05-18 06:30:04] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.629.24136.tar.gz]
+[2024-05-18 06:30:04] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.631.24139.tar.gz]
+[2024-05-18 06:30:04] INFO root fetch - main [MainThread]: End processing [mo-testing]: success
+[2024-05-18 06:30:04] INFO root fetch - main [MainThread]: Store serial: [23264721]
