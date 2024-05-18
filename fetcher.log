@@ -18424,3 +18424,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:52:16] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_asset_management-12.0.3.3.0-py3-none-any.whl.zip]
 [2024-05-18 18:52:16] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-asset-management]: success
 [2024-05-18 18:52:16] INFO root fetch - main [MainThread]: Store serial: [23269410]
+[2024-05-18 18:54:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269410]
+[2024-05-18 18:54:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 18:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: incoronatez
+[2024-05-18 18:54:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: espy-contact
+[2024-05-18 18:54:26] INFO root fetch - processPackages [espy-contact]: New version: [0.9] Old Version: [0.8]
+[2024-05-18 18:54:26] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/07/4c/6d6ed1c239b72208f165ce670dcdc6ffc30e2eb8f70f1f7e5b6106e832a0/espy_contact-0.8.tar.gz
+[2024-05-18 18:54:26] WARNING root fetch - processPackages [incoronatez]: Skipping, unable to determine old version
+[2024-05-18 18:54:26] INFO root fetch - main [MainThread]: End processing [incoronatez] error
+[2024-05-18 18:54:26] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/1f/a2/722fe00e34c488a1e91c9eb0ebe6b27115da9bc5c6d0311da983b6ab22d9/espy_contact-0.9.tar.gz
+[2024-05-18 18:54:26] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-18 18:54:26] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-0.8.tar.gz tmp/espy_contact-0.9.tar.gz --markdown 20240518/e/espy-contact/0.8-0.9/README.md --exclude *.pyd
+[2024-05-18 18:54:27] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.8.tar.gz]
+[2024-05-18 18:54:27] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.9.tar.gz]
+[2024-05-18 18:54:27] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-18 18:54:27] INFO root fetch - main [MainThread]: Store serial: [23269417]
