@@ -16968,3 +16968,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:09:34] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.2.tar.gz]
 [2024-05-18 17:09:34] INFO root fetch - main [MainThread]: End processing [model-checker]: success
 [2024-05-18 17:09:34] INFO root fetch - main [MainThread]: Store serial: [23268717]
+[2024-05-18 17:11:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268717]
+[2024-05-18 17:11:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 17:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-checker
+[2024-05-18 17:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxonfunctions
+[2024-05-18 17:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adb-tool-py
+[2024-05-18 17:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mosatenanz
+[2024-05-18 17:11:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zjuintl-assistant
+[2024-05-18 17:11:44] INFO root fetch - processPackages [adb-tool-py]: New version: [0.1.0] Old Version: [0.0.4]
+[2024-05-18 17:11:44] INFO root fetch - processPackages [model-checker]: New version: [0.3.2] Old Version: [0.2.9]
+[2024-05-18 17:11:44] WARNING root fetch - processPackages [jaxonfunctions]: Skipping, unable to determine old version
+[2024-05-18 17:11:44] INFO root fetch - main [MainThread]: End processing [jaxonfunctions] error
+[2024-05-18 17:11:44] WARNING root fetch - processPackages [mosatenanz]: Skipping, unable to determine old version
+[2024-05-18 17:11:44] INFO root fetch - main [MainThread]: End processing [mosatenanz] error
+[2024-05-18 17:11:44] INFO root fetch - processPackages [zjuintl-assistant]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 17:11:44] INFO root fetch - processPackages [adb-tool-py]: Downloading https://files.pythonhosted.org/packages/03/3c/22664618883fd4b405fa3194f386e52d6dd808cbe2a7fd0433e228fd66cb/adb-tool-py-0.0.4.tar.gz
+[2024-05-18 17:11:44] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/b0/5d/2fd0841d97c92fe2c2e0aad9e80136575bc38e7eef167fe4380eda54a596/model_checker-0.2.9.tar.gz
+[2024-05-18 17:11:44] INFO root fetch - processPackages [zjuintl-assistant]: Downloading https://files.pythonhosted.org/packages/ff/3e/bc9992c881ed2b7ea7a54b913c9a497a6a22c7d2089e2017a31c49a32fb6/zjuintl_assistant-0.0.2.tar.gz
+[2024-05-18 17:11:44] INFO root fetch - processPackages [adb-tool-py]: Downloading https://files.pythonhosted.org/packages/cf/a7/760030aab52458892df424834edcc65ef9011882fdd55a89b70d18bd0a20/adb-tool-py-0.1.0.tar.gz
+[2024-05-18 17:11:44] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/24/a9/1a665c0ce562bd14385e9542bbe47ef445f370e2c6a005da375479cb6371/model_checker-0.3.2.tar.gz
+[2024-05-18 17:11:44] INFO root fetch - processPackages [adb-tool-py]: executing diffoscope
+[2024-05-18 17:11:44] INFO root fetch - processPackages [adb-tool-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adb-tool-py-0.0.4.tar.gz tmp/adb-tool-py-0.1.0.tar.gz --markdown 20240518/a/adb-tool-py/0.0.4-0.1.0/README.md --exclude *.pyd
+[2024-05-18 17:11:44] INFO root fetch - processPackages [model-checker]: executing diffoscope
+[2024-05-18 17:11:44] INFO root fetch - processPackages [model-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_checker-0.2.9.tar.gz tmp/model_checker-0.3.2.tar.gz --markdown 20240518/m/model-checker/0.2.9-0.3.2/README.md --exclude *.pyd
+[2024-05-18 17:11:44] INFO root fetch - processPackages [zjuintl-assistant]: Downloading https://files.pythonhosted.org/packages/65/74/bf4807e459d4019cf5eff76396bc9bd2375b000784db3ec6791b6d78e188/zjuintl_assistant-0.0.3.tar.gz
+[2024-05-18 17:11:44] INFO root fetch - processPackages [zjuintl-assistant]: executing diffoscope
+[2024-05-18 17:11:44] INFO root fetch - processPackages [zjuintl-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zjuintl_assistant-0.0.2.tar.gz tmp/zjuintl_assistant-0.0.3.tar.gz --markdown 20240518/z/zjuintl-assistant/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 17:11:45] INFO root fetch - processPackages [adb-tool-py]: Remove: archive file [/home/abi/fetcher/tmp/adb-tool-py-0.0.4.tar.gz]
+[2024-05-18 17:11:45] INFO root fetch - processPackages [adb-tool-py]: Remove: archive file [/home/abi/fetcher/tmp/adb-tool-py-0.1.0.tar.gz]
+[2024-05-18 17:11:45] INFO root fetch - main [MainThread]: End processing [adb-tool-py]: success
+[2024-05-18 17:11:45] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.2.9.tar.gz]
+[2024-05-18 17:11:45] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.2.tar.gz]
+[2024-05-18 17:11:45] INFO root fetch - main [MainThread]: End processing [model-checker]: success
+[2024-05-18 17:11:45] INFO root fetch - processPackages [zjuintl-assistant]: Remove: archive file [/home/abi/fetcher/tmp/zjuintl_assistant-0.0.2.tar.gz]
+[2024-05-18 17:11:45] INFO root fetch - processPackages [zjuintl-assistant]: Remove: archive file [/home/abi/fetcher/tmp/zjuintl_assistant-0.0.3.tar.gz]
+[2024-05-18 17:11:45] INFO root fetch - main [MainThread]: End processing [zjuintl-assistant]: success
+[2024-05-18 17:11:45] INFO root fetch - main [MainThread]: Store serial: [23268735]
