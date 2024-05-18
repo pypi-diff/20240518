@@ -21367,3 +21367,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:07:22] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.3.0.tar.gz]
 [2024-05-18 22:07:22] INFO root fetch - main [MainThread]: End processing [django_bocor_ds]: success
 [2024-05-18 22:07:22] INFO root fetch - main [MainThread]: Store serial: [23270826]
+[2024-05-18 22:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270826]
+[2024-05-18 22:09:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 22:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: karellen-llvm-clang
+[2024-05-18 22:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: buncoingz
+[2024-05-18 22:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: karellen-llvm-core
+[2024-05-18 22:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lcn-frontend
+[2024-05-18 22:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: karellen-llvm-toolchain-tools
+[2024-05-18 22:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aim
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: New version: [18.1.5.0.post45] Old Version: [18.1.5.0.post39]
+[2024-05-18 22:09:31] INFO root fetch - processPackages [lcn-frontend]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-core]: New version: [18.1.5.0.post45] Old Version: [18.1.5.0.post39]
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/14/89/832df376917352c1645a78f170b94c96d15e7b8ff284ed028c6b522dc44a/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-clang]: New version: [18.1.6.0] Old Version: [18.1.5.0.post45]
+[2024-05-18 22:09:31] WARNING root fetch - processPackages [buncoingz]: Skipping, unable to determine old version
+[2024-05-18 22:09:31] INFO root fetch - main [MainThread]: End processing [buncoingz] error
+[2024-05-18 22:09:31] INFO root fetch - processPackages [lcn-frontend]: Downloading https://files.pythonhosted.org/packages/10/d9/1b52841ae9e499a9f961c305fb3b2bf1cea4e304383d2ed898e5110caf82/lcn_frontend-0.1.1.tar.gz
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-core]: Downloading https://files.pythonhosted.org/packages/2c/81/284b59de05ca4a8c2daa74124be31750559be703b28c15ad4f7baea4b343/karellen_llvm_core-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 22:09:31] WARNING root fetch - processPackages [karellen-llvm-core]: Skipping package: exceeds size limit 28600624>=10485760
+[2024-05-18 22:09:31] INFO root fetch - main [MainThread]: End processing [karellen-llvm-core] error
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-clang]: Downloading https://files.pythonhosted.org/packages/94/89/74f1216ba4d71ffdea0bc449d8de2f6dc0c7ced31fb56c9bfe89de25a79b/karellen_llvm_clang-18.1.5.0.post45-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 22:09:31] WARNING root fetch - processPackages [karellen-llvm-clang]: Skipping package: exceeds size limit 78658963>=10485760
+[2024-05-18 22:09:31] INFO root fetch - main [MainThread]: End processing [karellen-llvm-clang] error
+[2024-05-18 22:09:31] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/ba/72/403672852ccadef8ae19e546d348e4cfc1c969f59fdd11bd8676433c891e/karellen_llvm_toolchain_tools-18.1.5.0.post45-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 22:09:31] INFO root fetch - processPackages [lcn-frontend]: Downloading https://files.pythonhosted.org/packages/91/4d/472dadcfdeceab66c9f7e5f6d66a2c7e76f34ed89a3e6cdf17dd0e8c9a0e/lcn_frontend-0.1.2.tar.gz
+[2024-05-18 22:09:32] INFO root fetch - processPackages [lcn-frontend]: executing diffoscope
+[2024-05-18 22:09:32] INFO root fetch - processPackages [lcn-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcn_frontend-0.1.1.tar.gz tmp/lcn_frontend-0.1.2.tar.gz --markdown 20240518/l/lcn-frontend/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 22:09:32] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: executing diffoscope
+[2024-05-18 22:09:32] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl.zip tmp/karellen_llvm_toolchain_tools-18.1.5.0.post45-py3-none-manylinux2014_x86_64.whl.zip --markdown 20240518/k/karellen-llvm-toolchain-tools/18.1.5.0.post39-18.1.5.0.post45/README.md --exclude *.pyd
+[2024-05-18 22:09:34] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-18 22:09:34] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-05-18 22:09:35] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-05-18 22:09:35] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-05-18 22:09:35] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240518/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-18 22:09:39] INFO root fetch - processPackages [lcn-frontend]: Remove: archive file [/home/abi/fetcher/tmp/lcn_frontend-0.1.1.tar.gz]
+[2024-05-18 22:09:39] INFO root fetch - processPackages [lcn-frontend]: Remove: archive file [/home/abi/fetcher/tmp/lcn_frontend-0.1.2.tar.gz]
+[2024-05-18 22:09:39] INFO root fetch - main [MainThread]: End processing [lcn-frontend]: success
+[2024-05-18 22:09:40] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-05-18 22:09:40] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-05-18 22:09:40] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-05-18 22:09:59] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-05-18 22:09:59] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post45-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-05-18 22:09:59] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
+[2024-05-18 22:09:59] INFO root fetch - main [MainThread]: Store serial: [23270843]
