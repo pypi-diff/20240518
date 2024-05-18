@@ -16004,3 +16004,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:56:38] INFO root fetch - processPackages [gehomesdk]: Remove: archive file [/home/abi/fetcher/tmp/gehomesdk-0.5.9.tar.gz]
 [2024-05-18 15:56:38] INFO root fetch - main [MainThread]: End processing [gehomesdk]: success
 [2024-05-18 15:56:38] INFO root fetch - main [MainThread]: Store serial: [23268232]
+[2024-05-18 15:58:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268232]
+[2024-05-18 15:58:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ease_recommender
+[2024-05-18 15:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spleaf
+[2024-05-18 15:58:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sarcharts
+[2024-05-18 15:58:47] INFO root fetch - processPackages [sarcharts]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 15:58:47] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/4b/5c/0f3fee9badc170feb95c60deb10582e28f51208829e9339730532c6b1cbf/sarcharts-0.2.2.tar.gz
+[2024-05-18 15:58:47] WARNING root fetch - processPackages [ease_recommender]: Skipping, unable to determine old version
+[2024-05-18 15:58:47] INFO root fetch - main [MainThread]: End processing [ease_recommender] error
+[2024-05-18 15:58:47] INFO root fetch - processPackages [spleaf]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-18 15:58:47] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/6f/7b/28bbad9f431bd5f5d12bbe42e9a9a1f5d531dc17c179337bc6bb0111fc18/sarcharts-0.2.3.tar.gz
+[2024-05-18 15:58:47] INFO root fetch - processPackages [spleaf]: Downloading https://files.pythonhosted.org/packages/ce/b4/a2a684ab4536df0593f4c98b21e11250fa8528327b3a0c2e5da2ef77d59f/spleaf-2.1.8.tar.gz
+[2024-05-18 15:58:47] INFO root fetch - processPackages [sarcharts]: executing diffoscope
+[2024-05-18 15:58:47] INFO root fetch - processPackages [sarcharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarcharts-0.2.2.tar.gz tmp/sarcharts-0.2.3.tar.gz --markdown 20240518/s/sarcharts/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 15:58:48] INFO root fetch - processPackages [spleaf]: Downloading https://files.pythonhosted.org/packages/dd/12/92717f66926745e5737936575fc5aadd0aec4c00efc740ad1079ead24547/spleaf-2.1.9.tar.gz
+[2024-05-18 15:58:48] INFO root fetch - processPackages [spleaf]: executing diffoscope
+[2024-05-18 15:58:48] INFO root fetch - processPackages [spleaf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spleaf-2.1.8.tar.gz tmp/spleaf-2.1.9.tar.gz --markdown 20240518/s/spleaf/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-18 15:58:48] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.2.tar.gz]
+[2024-05-18 15:58:48] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.3.tar.gz]
+[2024-05-18 15:58:48] INFO root fetch - main [MainThread]: End processing [sarcharts]: success
+[2024-05-18 15:58:48] INFO root fetch - processPackages [spleaf]: Remove: archive file [/home/abi/fetcher/tmp/spleaf-2.1.8.tar.gz]
+[2024-05-18 15:58:48] INFO root fetch - processPackages [spleaf]: Remove: archive file [/home/abi/fetcher/tmp/spleaf-2.1.9.tar.gz]
+[2024-05-18 15:58:48] INFO root fetch - main [MainThread]: End processing [spleaf]: success
+[2024-05-18 15:58:48] INFO root fetch - main [MainThread]: Store serial: [23268250]
