@@ -6812,3 +6812,45 @@
 [2024-05-18 03:37:05] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.4.tar.gz]
 [2024-05-18 03:37:05] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2024-05-18 03:37:05] INFO root fetch - main [MainThread]: Store serial: [23263758]
+[2024-05-18 03:39:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263758]
+[2024-05-18 03:39:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyAgrum-nightly
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fangotherapyz
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PKDevTools
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansar-connect
+[2024-05-18 03:39:14] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240518.121] Old Version: [0.13.20240517.120]
+[2024-05-18 03:39:14] WARNING root fetch - processPackages [fangotherapyz]: Skipping, unable to determine old version
+[2024-05-18 03:39:14] INFO root fetch - main [MainThread]: End processing [fangotherapyz] error
+[2024-05-18 03:39:14] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/11/a3/7095fb08e5796aea38d3e543c191ec1e8e249c2e22e93d5f30f1b9d65557/PKDevTools-0.13.20240517.120.tar.gz
+[2024-05-18 03:39:14] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1715995443] Old Version: [0.0.21a1715995115]
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.246] Old Version: [0.1.245]
+[2024-05-18 03:39:14] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-05-18 03:39:14] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/8c/9f/d130ed4726c428fc73322fdea1bd8888b8f0aed18152c4442061e468cff9/pulumi_kubernetes_the_hard_way-0.0.21a1715995115.tar.gz
+[2024-05-18 03:39:14] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-05-18 03:39:14] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/af/d1/815b0b0e555bfb34cda82a51f214a07a2ac82439c094068b7572628a0d30/ansar_connect-0.1.245.tar.gz
+[2024-05-18 03:39:14] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/84/c6/5727344fca93ec8f390be0359c58c6fb941d433fa17b97ce1458ba91470d/PKDevTools-0.13.20240518.121.tar.gz
+[2024-05-18 03:39:15] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-18 03:39:15] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240517.120.tar.gz tmp/PKDevTools-0.13.20240518.121.tar.gz --markdown 20240518/P/PKDevTools/0.13.20240517.120-0.13.20240518.121/README.md --exclude *.pyd
+[2024-05-18 03:39:15] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/ef/10/da53779c380a31b28780f2b8b7c266c2a8dd085b478c9e0b288bcce23466/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz
+[2024-05-18 03:39:15] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-18 03:39:15] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995115.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz --markdown 20240518/p/pulumi-kubernetes-the-hard-way/0.0.21a1715995115-0.0.21a1715995443/README.md --exclude *.pyd
+[2024-05-18 03:39:15] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/55/c8/acdc0105bf2cf3bbc5bdd8233aaf046d17467b3d24f2b0dd2cac2b208726/ansar_connect-0.1.246.tar.gz
+[2024-05-18 03:39:15] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-05-18 03:39:15] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240517.120.tar.gz]
+[2024-05-18 03:39:15] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240518.121.tar.gz]
+[2024-05-18 03:39:15] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-18 03:39:15] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-05-18 03:39:15] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.245.tar.gz tmp/ansar_connect-0.1.246.tar.gz --markdown 20240518/a/ansar-connect/0.1.245-0.1.246/README.md --exclude *.pyd
+[2024-05-18 03:39:16] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-05-18 03:39:16] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240518/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-05-18 03:39:16] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995115.tar.gz]
+[2024-05-18 03:39:16] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz]
+[2024-05-18 03:39:16] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-18 03:39:16] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.245.tar.gz]
+[2024-05-18 03:39:16] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.246.tar.gz]
+[2024-05-18 03:39:16] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-05-18 03:39:16] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-18 03:39:16] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-18 03:39:16] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-05-18 03:39:16] INFO root fetch - main [MainThread]: Store serial: [23263794]
