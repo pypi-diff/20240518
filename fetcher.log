@@ -7162,3 +7162,29 @@
 [2024-05-18 04:04:19] INFO root fetch - processPackages [flowMC]: Remove: archive file [/home/abi/fetcher/tmp/flowmc-0.3.4.tar.gz]
 [2024-05-18 04:04:19] INFO root fetch - main [MainThread]: End processing [flowMC]: success
 [2024-05-18 04:04:19] INFO root fetch - main [MainThread]: Store serial: [23263900]
+[2024-05-18 04:06:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263900]
+[2024-05-18 04:06:28] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 04:08:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263901]
+[2024-05-18 04:08:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 04:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neon-homeassistant-skill
+[2024-05-18 04:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cocnc
+[2024-05-18 04:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mopz
+[2024-05-18 04:08:34] INFO root fetch - processPackages [cocnc]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 04:08:34] INFO root fetch - processPackages [neon-homeassistant-skill]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 04:08:34] WARNING root fetch - processPackages [mopz]: Skipping, unable to determine old version
+[2024-05-18 04:08:34] INFO root fetch - main [MainThread]: End processing [mopz] error
+[2024-05-18 04:08:34] INFO root fetch - processPackages [neon-homeassistant-skill]: Downloading https://files.pythonhosted.org/packages/43/f5/55b8a45285ba5562b4bd5610d412869df0c9524a80930f046427bd05f6fe/neon_homeassistant_skill-0.0.8.tar.gz
+[2024-05-18 04:08:34] INFO root fetch - processPackages [cocnc]: Downloading https://files.pythonhosted.org/packages/9d/98/6fdfbd528cb21c9b96a8066d0447d5aff633f29f281756c92893187380b9/cocnc-0.1.7.tar.gz
+[2024-05-18 04:08:34] INFO root fetch - processPackages [neon-homeassistant-skill]: Downloading https://files.pythonhosted.org/packages/ed/cd/d57fc3688c6ff44460374912e50042853099587df2b98373e338db8e1385/neon_homeassistant_skill-0.0.9.tar.gz
+[2024-05-18 04:08:34] INFO root fetch - processPackages [neon-homeassistant-skill]: executing diffoscope
+[2024-05-18 04:08:34] INFO root fetch - processPackages [neon-homeassistant-skill]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_homeassistant_skill-0.0.8.tar.gz tmp/neon_homeassistant_skill-0.0.9.tar.gz --markdown 20240518/n/neon-homeassistant-skill/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 04:08:34] INFO root fetch - processPackages [cocnc]: Downloading https://files.pythonhosted.org/packages/8f/53/d222655a3184119ad7235757e60bc9421995dfdb5c684744be497a60ccbe/cocnc-0.1.8.tar.gz
+[2024-05-18 04:08:34] INFO root fetch - processPackages [cocnc]: executing diffoscope
+[2024-05-18 04:08:34] INFO root fetch - processPackages [cocnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocnc-0.1.7.tar.gz tmp/cocnc-0.1.8.tar.gz --markdown 20240518/c/cocnc/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 04:08:35] INFO root fetch - processPackages [neon-homeassistant-skill]: Remove: archive file [/home/abi/fetcher/tmp/neon_homeassistant_skill-0.0.8.tar.gz]
+[2024-05-18 04:08:35] INFO root fetch - processPackages [neon-homeassistant-skill]: Remove: archive file [/home/abi/fetcher/tmp/neon_homeassistant_skill-0.0.9.tar.gz]
+[2024-05-18 04:08:35] INFO root fetch - main [MainThread]: End processing [neon-homeassistant-skill]: success
+[2024-05-18 04:08:35] INFO root fetch - processPackages [cocnc]: Remove: archive file [/home/abi/fetcher/tmp/cocnc-0.1.7.tar.gz]
+[2024-05-18 04:08:35] INFO root fetch - processPackages [cocnc]: Remove: archive file [/home/abi/fetcher/tmp/cocnc-0.1.8.tar.gz]
+[2024-05-18 04:08:35] INFO root fetch - main [MainThread]: End processing [cocnc]: success
+[2024-05-18 04:08:35] INFO root fetch - main [MainThread]: Store serial: [23263911]
