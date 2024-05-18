@@ -21464,3 +21464,106 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:14:24] WARNING root fetch - processPackages [cantalaz]: Skipping, unable to determine old version
 [2024-05-18 22:14:24] INFO root fetch - main [MainThread]: End processing [cantalaz] error
 [2024-05-18 22:14:24] INFO root fetch - main [MainThread]: Store serial: [23270879]
+[2024-05-18 22:16:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270879]
+[2024-05-18 22:16:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 22:16:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-18 22:16:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-18 22:16:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: griffe
+[2024-05-18 22:16:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docugenr8
+[2024-05-18 22:16:33] INFO root fetch - processPackages [docugenr8]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 22:16:33] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9b/01/1d7afde6078300322a758bab883a343aad43657961631bdf9eac9b892b06/docugenr8-0.0.8.tar.gz
+[2024-05-18 22:16:33] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 22:16:33] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9a/a5/aa6030a12b43fe39bfa3f72277e6448f95801c71f37824996f2a765bef62/docugenr8-0.0.9.tar.gz
+[2024-05-18 22:16:33] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/32/dd/bc07e7e6b53772e9c44c34a18ca7e4ceb99b58bfb2c2f72f7913e3f0d303/griffe-0.8.0.tar.gz
+[2024-05-18 22:16:33] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-18 22:16:33] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.8.tar.gz tmp/docugenr8-0.0.9.tar.gz --markdown 20240518/d/docugenr8/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 22:16:33] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/97/67/6905162d0aeccc0a65143c6fda9d6510d04561725f6df7df71457a053c3d/griffe-0.9.0.tar.gz
+[2024-05-18 22:16:34] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2024-05-18 22:16:34] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20240518/g/griffe/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 22:16:34] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.8.tar.gz]
+[2024-05-18 22:16:34] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.9.tar.gz]
+[2024-05-18 22:16:34] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-18 22:16:34] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.8.0.tar.gz]
+[2024-05-18 22:16:34] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.9.0.tar.gz]
+[2024-05-18 22:16:34] INFO root fetch - main [MainThread]: End processing [griffe]: success
+[2024-05-18 22:18:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270879]
+[2024-05-18 22:18:48] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: griffe
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docugenr8
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: itkwasm-image-io-wasi
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: itkwasm-image-io-emscripten
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: itkwasm-image-io
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: smallagesz
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pg-sync-roles
+[2024-05-18 22:18:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: otonagai-dl
+[2024-05-18 22:18:48] INFO root fetch - processPackages [docugenr8]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [griffe]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io]: New version: [1.2.0] Old Version: [1.0.1]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: New version: [1.2.0] Old Version: [1.0.1]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [otonagai-dl]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-18 22:18:49] WARNING root fetch - processPackages [smallagesz]: Skipping, unable to determine old version
+[2024-05-18 22:18:49] INFO root fetch - main [MainThread]: End processing [smallagesz] error
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-wasi]: New version: [1.2.0] Old Version: [1.0.1]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-18 22:18:49] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9b/01/1d7afde6078300322a758bab883a343aad43657961631bdf9eac9b892b06/docugenr8-0.0.8.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/32/dd/bc07e7e6b53772e9c44c34a18ca7e4ceb99b58bfb2c2f72f7913e3f0d303/griffe-0.8.0.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: Downloading https://files.pythonhosted.org/packages/4d/21/ec0452e24205c06d8a4b7894b6a5b35a693628279eb2f1576db37fdc0c47/itkwasm_image_io_emscripten-1.0.1.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-wasi]: Downloading https://files.pythonhosted.org/packages/33/32/fbe6e1a5bb7aada7df511a9bd80c369e33653fcff13ae43555c2cd9bb2c2/itkwasm_image_io_wasi-1.0.1.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io]: Downloading https://files.pythonhosted.org/packages/14/68/db8afaa7483c130a0f3b2767e15cba9fa5eaaae300811f8e9f49ba6f7476/itkwasm_image_io-1.0.1.tar.gz
+[2024-05-18 22:18:49] WARNING root fetch - processPackages [itkwasm-image-io-wasi]: Skipping package: exceeds size limit 13640258>=10485760
+[2024-05-18 22:18:49] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/dd/33/445081be10c13dc9ebd2e133ff265fd57cf332228f4b18e9bf58e667ce22/otonagai_dl-1.0.4.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - main [MainThread]: End processing [itkwasm-image-io-wasi] error
+[2024-05-18 22:18:49] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9a/a5/aa6030a12b43fe39bfa3f72277e6448f95801c71f37824996f2a765bef62/docugenr8-0.0.9.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [griffe]: Downloading https://files.pythonhosted.org/packages/97/67/6905162d0aeccc0a65143c6fda9d6510d04561725f6df7df71457a053c3d/griffe-0.9.0.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-18 22:18:49] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.8.tar.gz tmp/docugenr8-0.0.9.tar.gz --markdown 20240518/d/docugenr8/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: Downloading https://files.pythonhosted.org/packages/5e/34/23ae940a524d0854bc27d62b10ca7842b4d003b13cffa1d82e5e09362004/itkwasm_image_io_emscripten-1.2.0.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-18 22:18:49] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240518/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 22:18:49] INFO root fetch - processPackages [griffe]: executing diffoscope
+[2024-05-18 22:18:49] INFO root fetch - processPackages [griffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griffe-0.8.0.tar.gz tmp/griffe-0.9.0.tar.gz --markdown 20240518/g/griffe/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240518/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-18 22:18:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240518/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io]: Downloading https://files.pythonhosted.org/packages/67/9d/452f69a3fbc8583fed21977dc12fc82981f2da0dedf31a447988db15a718/itkwasm_image_io-1.2.0.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/d2/fe/10a3350f40dcfdda444357f6959ee5faedcaed2a1009fddaf79ac240209b/otonagai_dl-1.0.5.tar.gz
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: executing diffoscope
+[2024-05-18 22:18:49] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_image_io_emscripten-1.0.1.tar.gz tmp/itkwasm_image_io_emscripten-1.2.0.tar.gz --markdown 20240518/i/itkwasm-image-io-emscripten/1.0.1-1.2.0/README.md --exclude *.pyd
+[2024-05-18 22:18:50] INFO root fetch - processPackages [itkwasm-image-io]: executing diffoscope
+[2024-05-18 22:18:50] INFO root fetch - processPackages [itkwasm-image-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_image_io-1.0.1.tar.gz tmp/itkwasm_image_io-1.2.0.tar.gz --markdown 20240518/i/itkwasm-image-io/1.0.1-1.2.0/README.md --exclude *.pyd
+[2024-05-18 22:18:50] INFO root fetch - processPackages [otonagai-dl]: executing diffoscope
+[2024-05-18 22:18:50] INFO root fetch - processPackages [otonagai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otonagai_dl-1.0.4.tar.gz tmp/otonagai_dl-1.0.5.tar.gz --markdown 20240518/o/otonagai-dl/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-18 22:18:50] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-18 22:18:50] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.8.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.9.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-18 22:18:50] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-18 22:18:50] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-18 22:18:50] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.8.0.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - processPackages [griffe]: Remove: archive file [/home/abi/fetcher/tmp/griffe-0.9.0.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - main [MainThread]: End processing [griffe]: success
+[2024-05-18 22:18:50] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.4.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.5.tar.gz]
+[2024-05-18 22:18:50] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
+[2024-05-18 22:18:51] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_image_io_emscripten-1.0.1.tar.gz]
+[2024-05-18 22:18:51] INFO root fetch - processPackages [itkwasm-image-io-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_image_io_emscripten-1.2.0.tar.gz]
+[2024-05-18 22:18:51] INFO root fetch - main [MainThread]: End processing [itkwasm-image-io-emscripten]: success
+[2024-05-18 22:18:51] INFO root fetch - processPackages [itkwasm-image-io]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_image_io-1.0.1.tar.gz]
+[2024-05-18 22:18:51] INFO root fetch - processPackages [itkwasm-image-io]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_image_io-1.2.0.tar.gz]
+[2024-05-18 22:18:51] INFO root fetch - main [MainThread]: End processing [itkwasm-image-io]: success
+[2024-05-18 22:18:51] INFO root fetch - main [MainThread]: Store serial: [23270946]
