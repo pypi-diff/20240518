@@ -8484,3 +8484,15 @@
 [2024-05-18 05:20:21] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.6.tar.gz]
 [2024-05-18 05:20:21] INFO root fetch - main [MainThread]: End processing [FirstGame]: success
 [2024-05-18 05:20:21] INFO root fetch - main [MainThread]: Store serial: [23264375]
+[2024-05-18 05:22:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264375]
+[2024-05-18 05:22:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 05:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nightly
+[2024-05-18 05:22:30] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024051703] Old Version: [3.3.3.dev2024051603]
+[2024-05-18 05:22:30] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/f4/c7/838e9a70c12c3a686a43ed2f3446495e288eeda34f5c6beb0f2e4d86d5ff/keras_nightly-3.3.3.dev2024051603.tar.gz
+[2024-05-18 05:22:30] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/6e/6d/b4bcf485be6659b96eb6fba5a64e3b4c132da46c3d25c2d22592d6b7a69d/keras_nightly-3.3.3.dev2024051703.tar.gz
+[2024-05-18 05:22:31] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-05-18 05:22:31] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024051603.tar.gz tmp/keras_nightly-3.3.3.dev2024051703.tar.gz --markdown 20240518/k/keras-nightly/3.3.3.dev2024051603-3.3.3.dev2024051703/README.md --exclude *.pyd
+[2024-05-18 05:22:33] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024051603.tar.gz]
+[2024-05-18 05:22:33] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024051703.tar.gz]
+[2024-05-18 05:22:33] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-05-18 05:22:33] INFO root fetch - main [MainThread]: Store serial: [23264378]
