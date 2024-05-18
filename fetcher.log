@@ -17719,3 +17719,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:59:38] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.1.0a1.tar.gz]
 [2024-05-18 17:59:38] INFO root fetch - main [MainThread]: End processing [reasonify-headless]: success
 [2024-05-18 17:59:38] INFO root fetch - main [MainThread]: Store serial: [23269027]
+[2024-05-18 18:01:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269027]
+[2024-05-18 18:01:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 18:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freecodecamp-reader
+[2024-05-18 18:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-18 18:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: propensenessz
+[2024-05-18 18:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: klldFN
+[2024-05-18 18:01:46] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 18:01:46] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 18:01:46] WARNING root fetch - processPackages [propensenessz]: Skipping, unable to determine old version
+[2024-05-18 18:01:46] INFO root fetch - main [MainThread]: End processing [propensenessz] error
+[2024-05-18 18:01:46] WARNING root fetch - processPackages [freecodecamp-reader]: Skipping, unable to determine old version
+[2024-05-18 18:01:46] INFO root fetch - main [MainThread]: End processing [freecodecamp-reader] error
+[2024-05-18 18:01:47] INFO root fetch - processPackages [klldFN]: New version: [2.0.0b1] Old Version: [1.1.7]
+[2024-05-18 18:01:47] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 18:01:47] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 18:01:47] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 18:01:47] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/e1/51/78fa09aab675a74b8e69defd41de80e9430402310aa563c2b9392deb88da/klldFN-1.1.7.tar.gz
+[2024-05-18 18:01:47] INFO root fetch - processPackages [klldFN]: Downloading https://files.pythonhosted.org/packages/5e/f6/4eaa21cb31e382fd1949ebe2ea4afaece002819ca3a9b92409de8c8ce806/klldFN-2.0.0b1.tar.gz
+[2024-05-18 18:01:47] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 18:01:47] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 18:01:47] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 18:01:47] INFO root fetch - processPackages [klldFN]: executing diffoscope
+[2024-05-18 18:01:47] INFO root fetch - processPackages [klldFN]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/klldFN-1.1.7.tar.gz tmp/klldFN-2.0.0b1.tar.gz --markdown 20240518/k/klldFN/1.1.7-2.0.0b1/README.md --exclude *.pyd
+[2024-05-18 18:01:48] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-1.1.7.tar.gz]
+[2024-05-18 18:01:48] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-2.0.0b1.tar.gz]
+[2024-05-18 18:01:48] INFO root fetch - main [MainThread]: End processing [klldFN]: success
+[2024-05-18 18:01:48] INFO root fetch - main [MainThread]: Store serial: [23269040]
