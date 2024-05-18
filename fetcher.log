@@ -9062,3 +9062,9 @@
 [2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_stock-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-stock]: success
 [2024-05-18 06:06:08] INFO root fetch - main [MainThread]: Store serial: [23264578]
+[2024-05-18 06:08:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264578]
+[2024-05-18 06:08:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 06:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-gpapi2
+[2024-05-18 06:08:17] WARNING root fetch - processPackages [python-gpapi2]: Skipping, unable to determine old version
+[2024-05-18 06:08:17] INFO root fetch - main [MainThread]: End processing [python-gpapi2] error
+[2024-05-18 06:08:17] INFO root fetch - main [MainThread]: Store serial: [23264611]
