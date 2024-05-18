@@ -20916,3 +20916,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_io-1.2.0.tar.gz]
 [2024-05-18 21:40:50] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-io]: success
 [2024-05-18 21:40:50] INFO root fetch - main [MainThread]: Store serial: [23270625]
+[2024-05-18 21:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270625]
+[2024-05-18 21:43:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEasyDbApi
+[2024-05-18 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nqrduck
+[2024-05-18 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Radicale
+[2024-05-18 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-cms
+[2024-05-18 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gluciniumz
+[2024-05-18 21:43:00] INFO root fetch - processPackages [django-cms]: New version: [4.1.1] Old Version: [4.1.0rc5]
+[2024-05-18 21:43:00] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 21:43:00] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/e0/bd/12bdadcf94ce181d1e6dff0e4b9825a7225870425d803f606e1eb13092df/pyeasydbapi-0.1.3.tar.gz
+[2024-05-18 21:43:00] WARNING root fetch - processPackages [gluciniumz]: Skipping, unable to determine old version
+[2024-05-18 21:43:00] INFO root fetch - main [MainThread]: End processing [gluciniumz] error
+[2024-05-18 21:43:00] INFO root fetch - processPackages [nqrduck]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 21:43:00] INFO root fetch - processPackages [Radicale]: New version: [3.2.0] Old Version: [3.1.9]
+[2024-05-18 21:43:00] INFO root fetch - processPackages [django-cms]: Downloading https://files.pythonhosted.org/packages/a2/a9/ade0234849d41b7c812fe796fb850af0133eaf5c35e62a5fbcc1ad0a2516/django-cms-4.1.0rc5.tar.gz
+[2024-05-18 21:43:00] INFO root fetch - processPackages [nqrduck]: Downloading https://files.pythonhosted.org/packages/01/90/6d67e83852222440e96a56b12ec9b753c1aade8e960005fec82a99222d5f/nqrduck-0.0.8.tar.gz
+[2024-05-18 21:43:00] INFO root fetch - processPackages [Radicale]: Downloading https://files.pythonhosted.org/packages/f1/29/39c91b3be664f8b614cc27e6083c6b2a23bd45f4a4d312b9cd00df3cde28/Radicale-3.1.9.tar.gz
+[2024-05-18 21:43:00] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/70/28/eddca3e9272a88766c0ec345dfc9536bcb1d20629e1514eab7e55c63e686/pyeasydbapi-0.1.4.tar.gz
+[2024-05-18 21:43:01] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:43:01] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.3.tar.gz tmp/pyeasydbapi-0.1.4.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 21:43:01] INFO root fetch - processPackages [Radicale]: Downloading https://files.pythonhosted.org/packages/e6/91/f9a26bb6067c6fe71c644e868e27b2b24e866c183b80645f53f08d676ea4/radicale-3.2.0.tar.gz
+[2024-05-18 21:43:01] INFO root fetch - processPackages [Radicale]: executing diffoscope
+[2024-05-18 21:43:01] INFO root fetch - processPackages [Radicale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Radicale-3.1.9.tar.gz tmp/radicale-3.2.0.tar.gz --markdown 20240518/R/Radicale/3.1.9-3.2.0/README.md --exclude *.pyd
+[2024-05-18 21:43:01] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.3.tar.gz]
+[2024-05-18 21:43:01] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.4.tar.gz]
+[2024-05-18 21:43:01] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:43:01] INFO root fetch - processPackages [nqrduck]: Downloading https://files.pythonhosted.org/packages/76/82/466ce7f56607c2b837af35d7fa5fde02713003f1e3dae700835d86444973/nqrduck-0.0.9.tar.gz
+[2024-05-18 21:43:01] INFO root fetch - processPackages [django-cms]: Downloading https://files.pythonhosted.org/packages/48/6a/d9ed4a56b322b790f7c12ed1fd1e71f546528774c402433d7af3654cc302/django_cms-4.1.1.tar.gz
+[2024-05-18 21:43:01] INFO root fetch - processPackages [nqrduck]: executing diffoscope
+[2024-05-18 21:43:01] INFO root fetch - processPackages [nqrduck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nqrduck-0.0.8.tar.gz tmp/nqrduck-0.0.9.tar.gz --markdown 20240518/n/nqrduck/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 21:43:02] INFO root fetch - processPackages [django-cms]: executing diffoscope
+[2024-05-18 21:43:02] INFO root fetch - processPackages [django-cms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-cms-4.1.0rc5.tar.gz tmp/django_cms-4.1.1.tar.gz --markdown 20240518/d/django-cms/4.1.0rc5-4.1.1/README.md --exclude *.pyd
+[2024-05-18 21:43:02] INFO root fetch - processPackages [nqrduck]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck-0.0.8.tar.gz]
+[2024-05-18 21:43:02] INFO root fetch - processPackages [nqrduck]: Remove: archive file [/home/abi/fetcher/tmp/nqrduck-0.0.9.tar.gz]
+[2024-05-18 21:43:02] INFO root fetch - main [MainThread]: End processing [nqrduck]: success
+[2024-05-18 21:43:02] INFO root fetch - processPackages [Radicale]: Remove: archive file [/home/abi/fetcher/tmp/Radicale-3.1.9.tar.gz]
+[2024-05-18 21:43:02] INFO root fetch - processPackages [Radicale]: Remove: archive file [/home/abi/fetcher/tmp/radicale-3.2.0.tar.gz]
+[2024-05-18 21:43:02] INFO root fetch - main [MainThread]: End processing [Radicale]: success
+[2024-05-18 21:43:17] INFO root fetch - processPackages [django-cms]: Remove: archive file [/home/abi/fetcher/tmp/django-cms-4.1.0rc5.tar.gz]
+[2024-05-18 21:43:17] INFO root fetch - processPackages [django-cms]: Remove: archive file [/home/abi/fetcher/tmp/django_cms-4.1.1.tar.gz]
+[2024-05-18 21:43:17] INFO root fetch - main [MainThread]: End processing [django-cms]: success
+[2024-05-18 21:43:17] INFO root fetch - main [MainThread]: Store serial: [23270641]
