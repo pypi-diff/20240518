@@ -10105,3 +10105,33 @@
 [2024-05-18 07:43:43] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.8.0a1715970151.tar.gz]
 [2024-05-18 07:43:43] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
 [2024-05-18 07:43:43] INFO root fetch - main [MainThread]: Store serial: [23265054]
+[2024-05-18 07:45:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265054]
+[2024-05-18 07:45:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 07:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-18 07:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quickstart-vdk
+[2024-05-18 07:45:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-05-18 07:45:52] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1716009809] Old Version: [0.0.21a1716005968]
+[2024-05-18 07:45:52] INFO root fetch - processPackages [quickstart-vdk]: New version: [0.2.999091100.dev13356] Old Version: [0.2.998635022.dev13355]
+[2024-05-18 07:45:52] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-18 07:45:52] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/87/f9/33655751ac4859cd492a599c1a3af8f32565e0d1c12e7467c9e92cd79632/pulumi_kubernetes_the_hard_way-0.0.21a1716005968.tar.gz
+[2024-05-18 07:45:52] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-18 07:45:52] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/b7424a3be777980068df32f41ef9085422b79289fef725cba5cabf2b502e/quickstart-vdk-0.2.998635022.dev13355.tar.gz
+[2024-05-18 07:45:52] INFO root fetch - processPackages [quickstart-vdk]: Downloading https://files.pythonhosted.org/packages/fa/72/2a48eb94b876fa0c01eda0450a3e80c80101dd5fdfe10124d5474b64f5fd/quickstart-vdk-0.2.999091100.dev13356.tar.gz
+[2024-05-18 07:45:52] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/18/37/d3fe5f5cbc513f10bedc60794052160672708e5688e64b4f7f459411c765/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz
+[2024-05-18 07:45:52] INFO root fetch - processPackages [quickstart-vdk]: executing diffoscope
+[2024-05-18 07:45:52] INFO root fetch - processPackages [quickstart-vdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz --markdown 20240518/q/quickstart-vdk/0.2.998635022.dev13355-0.2.999091100.dev13356/README.md --exclude *.pyd
+[2024-05-18 07:45:52] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-18 07:45:53] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-18 07:45:53] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716005968.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz --markdown 20240518/p/pulumi-kubernetes-the-hard-way/0.0.21a1716005968-0.0.21a1716009809/README.md --exclude *.pyd
+[2024-05-18 07:45:53] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-18 07:45:53] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240518/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-18 07:45:53] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.998635022.dev13355.tar.gz]
+[2024-05-18 07:45:53] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
+[2024-05-18 07:45:53] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
+[2024-05-18 07:45:53] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-18 07:45:53] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-18 07:45:53] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-18 07:45:53] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716005968.tar.gz]
+[2024-05-18 07:45:53] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz]
+[2024-05-18 07:45:53] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-18 07:45:53] INFO root fetch - main [MainThread]: Store serial: [23265062]
