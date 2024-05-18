@@ -15819,3 +15819,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:39:17] INFO root fetch - processPackages [wmcore]: Remove: archive file [/home/abi/fetcher/tmp/wmcore-2.3.4rc4.tar.gz]
 [2024-05-18 15:39:17] INFO root fetch - main [MainThread]: End processing [wmcore]: success
 [2024-05-18 15:39:17] INFO root fetch - main [MainThread]: Store serial: [23268138]
+[2024-05-18 15:41:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268138]
+[2024-05-18 15:41:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dchcaptcha
+[2024-05-18 15:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matrix-reportbot
+[2024-05-18 15:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: web-assets-downloader
+[2024-05-18 15:41:26] INFO root fetch - processPackages [web-assets-downloader]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-18 15:41:26] INFO root fetch - processPackages [matrix-reportbot]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 15:41:26] WARNING root fetch - processPackages [py-dchcaptcha]: Skipping, unable to determine old version
+[2024-05-18 15:41:26] INFO root fetch - main [MainThread]: End processing [py-dchcaptcha] error
+[2024-05-18 15:41:26] INFO root fetch - processPackages [web-assets-downloader]: Downloading https://files.pythonhosted.org/packages/ca/1f/6859c31e4a6fa7f5491c348c230d3f5b87eb53d185ba2e012a1c9cf5c755/web_assets_downloader-2.1.0.tar.gz
+[2024-05-18 15:41:26] INFO root fetch - processPackages [matrix-reportbot]: Downloading https://files.pythonhosted.org/packages/fd/2d/68810c625b22f0a159438c975f9dd9b630cfb256d9ba10739c0366650aca/matrix_reportbot-0.0.1.tar.gz
+[2024-05-18 15:41:26] INFO root fetch - processPackages [web-assets-downloader]: Downloading https://files.pythonhosted.org/packages/58/29/3fafb3959e99d9a8a018c86d243d0b39f09fdd9788147611ffcf7c2b001c/web_assets_downloader-2.2.0.tar.gz
+[2024-05-18 15:41:26] INFO root fetch - processPackages [matrix-reportbot]: Downloading https://files.pythonhosted.org/packages/c4/8f/ed72497bd160f80c51be9d1e910f71881997cd92d8e0cf71bed41e8470ce/matrix_reportbot-0.0.2.tar.gz
+[2024-05-18 15:41:26] INFO root fetch - processPackages [web-assets-downloader]: executing diffoscope
+[2024-05-18 15:41:26] INFO root fetch - processPackages [web-assets-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web_assets_downloader-2.1.0.tar.gz tmp/web_assets_downloader-2.2.0.tar.gz --markdown 20240518/w/web-assets-downloader/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-18 15:41:26] INFO root fetch - processPackages [matrix-reportbot]: executing diffoscope
+[2024-05-18 15:41:26] INFO root fetch - processPackages [matrix-reportbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix_reportbot-0.0.1.tar.gz tmp/matrix_reportbot-0.0.2.tar.gz --markdown 20240518/m/matrix-reportbot/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 15:41:27] INFO root fetch - processPackages [matrix-reportbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_reportbot-0.0.1.tar.gz]
+[2024-05-18 15:41:27] INFO root fetch - processPackages [matrix-reportbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_reportbot-0.0.2.tar.gz]
+[2024-05-18 15:41:27] INFO root fetch - main [MainThread]: End processing [matrix-reportbot]: success
+[2024-05-18 15:41:27] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.1.0.tar.gz]
+[2024-05-18 15:41:27] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.2.0.tar.gz]
+[2024-05-18 15:41:27] INFO root fetch - main [MainThread]: End processing [web-assets-downloader]: success
+[2024-05-18 15:41:27] INFO root fetch - main [MainThread]: Store serial: [23268151]
