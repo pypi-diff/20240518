@@ -7135,3 +7135,15 @@
 [2024-05-18 03:59:59] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.3.tar.gz]
 [2024-05-18 03:59:59] INFO root fetch - main [MainThread]: End processing [zettel-org]: success
 [2024-05-18 03:59:59] INFO root fetch - main [MainThread]: Store serial: [23263891]
+[2024-05-18 04:02:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263891]
+[2024-05-18 04:02:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 04:02:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-18 04:02:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1715995443] Old Version: [0.0.21a1715995115]
+[2024-05-18 04:02:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/8c/9f/d130ed4726c428fc73322fdea1bd8888b8f0aed18152c4442061e468cff9/pulumi_kubernetes_the_hard_way-0.0.21a1715995115.tar.gz
+[2024-05-18 04:02:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/ef/10/da53779c380a31b28780f2b8b7c266c2a8dd085b478c9e0b288bcce23466/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz
+[2024-05-18 04:02:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-18 04:02:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995115.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz --markdown 20240518/p/pulumi-kubernetes-the-hard-way/0.0.21a1715995115-0.0.21a1715995443/README.md --exclude *.pyd
+[2024-05-18 04:02:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995115.tar.gz]
+[2024-05-18 04:02:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz]
+[2024-05-18 04:02:09] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-18 04:02:09] INFO root fetch - main [MainThread]: Store serial: [23263894]
