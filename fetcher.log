@@ -9578,3 +9578,15 @@
 [2024-05-18 06:58:03] INFO root fetch - processPackages [fast-version]: Remove: archive file [/home/abi/fetcher/tmp/fast_version-1.2.0.tar.gz]
 [2024-05-18 06:58:03] INFO root fetch - main [MainThread]: End processing [fast-version]: success
 [2024-05-18 06:58:03] INFO root fetch - main [MainThread]: Store serial: [23264815]
+[2024-05-18 07:00:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264815]
+[2024-05-18 07:00:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 07:00:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightbt
+[2024-05-18 07:00:11] INFO root fetch - processPackages [lightbt]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-18 07:00:12] INFO root fetch - processPackages [lightbt]: Downloading https://files.pythonhosted.org/packages/cd/93/be7470a8995d9f3afcc71cf5ad6657fcb604777e52eb05c05360e9db2da4/lightbt-0.2.0.tar.gz
+[2024-05-18 07:00:12] INFO root fetch - processPackages [lightbt]: Downloading https://files.pythonhosted.org/packages/88/cd/3f1b1b9096d38ab760dc402cd8b3eb202f95ffa008781d561e138198a10e/lightbt-0.2.1.tar.gz
+[2024-05-18 07:00:12] INFO root fetch - processPackages [lightbt]: executing diffoscope
+[2024-05-18 07:00:12] INFO root fetch - processPackages [lightbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightbt-0.2.0.tar.gz tmp/lightbt-0.2.1.tar.gz --markdown 20240518/l/lightbt/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-18 07:00:13] INFO root fetch - processPackages [lightbt]: Remove: archive file [/home/abi/fetcher/tmp/lightbt-0.2.0.tar.gz]
+[2024-05-18 07:00:13] INFO root fetch - processPackages [lightbt]: Remove: archive file [/home/abi/fetcher/tmp/lightbt-0.2.1.tar.gz]
+[2024-05-18 07:00:13] INFO root fetch - main [MainThread]: End processing [lightbt]: success
+[2024-05-18 07:00:13] INFO root fetch - main [MainThread]: Store serial: [23264819]
