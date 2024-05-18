@@ -8841,3 +8841,36 @@
 [2024-05-18 05:52:54] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.9.44-py3-none-any.whl.zip]
 [2024-05-18 05:52:54] INFO root fetch - main [MainThread]: End processing [cns]: success
 [2024-05-18 05:52:54] INFO root fetch - main [MainThread]: Store serial: [23264511]
+[2024-05-18 05:54:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264511]
+[2024-05-18 05:55:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 05:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: so-vits-svc-fork
+[2024-05-18 05:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hoosegowz
+[2024-05-18 05:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: citation-crawler
+[2024-05-18 05:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbopenapi
+[2024-05-18 05:55:04] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [4.2.6] Old Version: [4.2.5]
+[2024-05-18 05:55:04] WARNING root fetch - processPackages [hoosegowz]: Skipping, unable to determine old version
+[2024-05-18 05:55:04] INFO root fetch - processPackages [dbopenapi]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 05:55:04] INFO root fetch - main [MainThread]: End processing [hoosegowz] error
+[2024-05-18 05:55:04] INFO root fetch - processPackages [citation-crawler]: New version: [2.9.4.1] Old Version: [2.9.4]
+[2024-05-18 05:55:04] INFO root fetch - processPackages [dbopenapi]: Downloading https://files.pythonhosted.org/packages/05/df/caa8c5d1fcf0c762e1e2d2f50fbe1a932a8c82b98ec52ef606ac6b8fb182/dbopenapi-0.0.5.tar.gz
+[2024-05-18 05:55:04] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/4f/01/076bd64851e93ea53315261c74b6a366351ebbdf059bd3697ba88d9080a1/so_vits_svc_fork-4.2.5.tar.gz
+[2024-05-18 05:55:04] INFO root fetch - processPackages [citation-crawler]: Downloading https://files.pythonhosted.org/packages/09/28/e9c332535e9ac1e434981cacd6ba971fed57493fbd7184754209a4433432/citation_crawler-2.9.4.tar.gz
+[2024-05-18 05:55:05] INFO root fetch - processPackages [dbopenapi]: Downloading https://files.pythonhosted.org/packages/f4/ea/333325b51b5e78ee881f555885f8ec9a6162c02dabd5c3d651f9cb6f0650/dbopenapi-0.0.6.tar.gz
+[2024-05-18 05:55:05] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/41/b1/ce149234f1447dbfc0bda21df05e8271eaf79ce8cea5f5e58ce39592f777/so_vits_svc_fork-4.2.6.tar.gz
+[2024-05-18 05:55:05] INFO root fetch - processPackages [citation-crawler]: Downloading https://files.pythonhosted.org/packages/2d/c0/b48e0686fa42d3b88f9792e1581cbd106effcab3b284b4150c66b8803a91/citation_crawler-2.9.4.1.tar.gz
+[2024-05-18 05:55:05] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2024-05-18 05:55:05] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-4.2.5.tar.gz tmp/so_vits_svc_fork-4.2.6.tar.gz --markdown 20240518/s/so-vits-svc-fork/4.2.5-4.2.6/README.md --exclude *.pyd
+[2024-05-18 05:55:05] INFO root fetch - processPackages [dbopenapi]: executing diffoscope
+[2024-05-18 05:55:05] INFO root fetch - processPackages [dbopenapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbopenapi-0.0.5.tar.gz tmp/dbopenapi-0.0.6.tar.gz --markdown 20240518/d/dbopenapi/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 05:55:05] INFO root fetch - processPackages [citation-crawler]: executing diffoscope
+[2024-05-18 05:55:05] INFO root fetch - processPackages [citation-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citation_crawler-2.9.4.tar.gz tmp/citation_crawler-2.9.4.1.tar.gz --markdown 20240518/c/citation-crawler/2.9.4-2.9.4.1/README.md --exclude *.pyd
+[2024-05-18 05:55:05] INFO root fetch - processPackages [dbopenapi]: Remove: archive file [/home/abi/fetcher/tmp/dbopenapi-0.0.5.tar.gz]
+[2024-05-18 05:55:05] INFO root fetch - processPackages [dbopenapi]: Remove: archive file [/home/abi/fetcher/tmp/dbopenapi-0.0.6.tar.gz]
+[2024-05-18 05:55:05] INFO root fetch - main [MainThread]: End processing [dbopenapi]: success
+[2024-05-18 05:55:05] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.2.5.tar.gz]
+[2024-05-18 05:55:05] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.2.6.tar.gz]
+[2024-05-18 05:55:05] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2024-05-18 05:55:06] INFO root fetch - processPackages [citation-crawler]: Remove: archive file [/home/abi/fetcher/tmp/citation_crawler-2.9.4.tar.gz]
+[2024-05-18 05:55:06] INFO root fetch - processPackages [citation-crawler]: Remove: archive file [/home/abi/fetcher/tmp/citation_crawler-2.9.4.1.tar.gz]
+[2024-05-18 05:55:06] INFO root fetch - main [MainThread]: End processing [citation-crawler]: success
+[2024-05-18 05:55:06] INFO root fetch - main [MainThread]: Store serial: [23264521]
