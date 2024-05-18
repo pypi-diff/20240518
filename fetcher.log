@@ -10373,3 +10373,18 @@
 [2024-05-18 08:09:44] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240517.tar.gz]
 [2024-05-18 08:09:44] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-05-18 08:09:44] INFO root fetch - main [MainThread]: Store serial: [23265175]
+[2024-05-18 08:11:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265175]
+[2024-05-18 08:11:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: org-ds-cdk.apigateway
+[2024-05-18 08:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autochat
+[2024-05-18 08:11:53] WARNING root fetch - processPackages [org-ds-cdk.apigateway]: Skipping, unable to determine old version
+[2024-05-18 08:11:53] INFO root fetch - main [MainThread]: End processing [org-ds-cdk.apigateway] error
+[2024-05-18 08:11:53] INFO root fetch - processPackages [autochat]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 08:11:53] INFO root fetch - processPackages [autochat]: Downloading https://files.pythonhosted.org/packages/71/76/4a2ec672875b5b1aa991a487426feab6c26052dae90988ecf2b5b7c24331/autochat-0.1.8.tar.gz
+[2024-05-18 08:11:54] INFO root fetch - processPackages [autochat]: Downloading https://files.pythonhosted.org/packages/31/5e/a63e47185c8792b1c68c398f0458853519a9eaaf590f34b56cb69678bbc5/autochat-0.1.9.tar.gz
+[2024-05-18 08:11:54] INFO root fetch - processPackages [autochat]: executing diffoscope
+[2024-05-18 08:11:54] INFO root fetch - processPackages [autochat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autochat-0.1.8.tar.gz tmp/autochat-0.1.9.tar.gz --markdown 20240518/a/autochat/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 08:11:54] INFO root fetch - processPackages [autochat]: Remove: archive file [/home/abi/fetcher/tmp/autochat-0.1.8.tar.gz]
+[2024-05-18 08:11:54] INFO root fetch - processPackages [autochat]: Remove: archive file [/home/abi/fetcher/tmp/autochat-0.1.9.tar.gz]
+[2024-05-18 08:11:54] INFO root fetch - main [MainThread]: End processing [autochat]: success
+[2024-05-18 08:11:54] INFO root fetch - main [MainThread]: Store serial: [23265183]
