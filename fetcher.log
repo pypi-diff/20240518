@@ -18374,3 +18374,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:47:56] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.1.tar.gz]
 [2024-05-18 18:47:56] INFO root fetch - main [MainThread]: End processing [tinyagent]: success
 [2024-05-18 18:47:56] INFO root fetch - main [MainThread]: Store serial: [23269391]
+[2024-05-18 18:50:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269391]
+[2024-05-18 18:50:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 18:52:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269398]
+[2024-05-18 18:52:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 18:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tinyagent
+[2024-05-18 18:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-account-asset-management
+[2024-05-18 18:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codefly-sdk
+[2024-05-18 18:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nkeys
+[2024-05-18 18:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-delivery-postlogistics
+[2024-05-18 18:52:13] INFO root fetch - processPackages [tinyagent]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 18:52:13] INFO root fetch - processPackages [tinyagent]: Downloading https://files.pythonhosted.org/packages/92/c4/ec7cf63d26945ffd1139f703a26d8bbc4780a8a7198d20f856531705b551/tinyagent-0.1.1.tar.gz
+[2024-05-18 18:52:13] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: New version: [16.0.1.0.5] Old Version: [16.0.1.0.4.3]
+[2024-05-18 18:52:13] INFO root fetch - processPackages [codefly-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 18:52:13] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: New version: [12.0.3.3.0] Old Version: [12.0.3.2.0.99.dev8]
+[2024-05-18 18:52:14] INFO root fetch - processPackages [codefly-sdk]: Downloading https://files.pythonhosted.org/packages/d4/9e/20275acefb6235e97d4d366511900d6a5efe46eac73b4f2e695e663d7a8d/codefly_sdk-0.0.8.tar.gz
+[2024-05-18 18:52:14] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Downloading https://files.pythonhosted.org/packages/3e/70/a503610346750505020b13a0fec585f06f7d9afb81fa4fc211f61228d229/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl
+[2024-05-18 18:52:14] INFO root fetch - processPackages [nkeys]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 18:52:14] INFO root fetch - processPackages [tinyagent]: Downloading https://files.pythonhosted.org/packages/76/69/5dd7be48fb2418ba5762b35764d484976bbf2f2353d5ac6eafc78a981cba/tinyagent-0.1.2.tar.gz
+[2024-05-18 18:52:14] INFO root fetch - processPackages [tinyagent]: executing diffoscope
+[2024-05-18 18:52:14] INFO root fetch - processPackages [tinyagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyagent-0.1.1.tar.gz tmp/tinyagent-0.1.2.tar.gz --markdown 20240518/t/tinyagent/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 18:52:14] INFO root fetch - processPackages [nkeys]: Downloading https://files.pythonhosted.org/packages/73/fe/d788a4fe70442e527d73f52d3091be3a980d539b63b8574349b5a3732881/nkeys-0.1.0.tar.gz
+[2024-05-18 18:52:14] INFO root fetch - processPackages [codefly-sdk]: Downloading https://files.pythonhosted.org/packages/c4/ff/1ff9eaa91de9207a7b791f46eda51160915435817eda5eacc4eae231a8c1/codefly_sdk-0.0.9.tar.gz
+[2024-05-18 18:52:14] INFO root fetch - processPackages [codefly-sdk]: executing diffoscope
+[2024-05-18 18:52:14] INFO root fetch - processPackages [codefly-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefly_sdk-0.0.8.tar.gz tmp/codefly_sdk-0.0.9.tar.gz --markdown 20240518/c/codefly-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 18:52:14] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: Downloading https://files.pythonhosted.org/packages/e5/55/a771eb7ce31cf07b30be19e0b211b692ae934275f65e16b5ed881a4dddf7/odoo_addon_delivery_postlogistics-16.0.1.0.4.3-py3-none-any.whl
+[2024-05-18 18:52:14] INFO root fetch - processPackages [nkeys]: Downloading https://files.pythonhosted.org/packages/08/d2/7a4a3660b4b047789d18196e75563d29c852e904c1d34af974e6b8632099/nkeys-0.2.0.tar.gz
+[2024-05-18 18:52:14] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.1.tar.gz]
+[2024-05-18 18:52:14] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.2.tar.gz]
+[2024-05-18 18:52:14] INFO root fetch - main [MainThread]: End processing [tinyagent]: success
+[2024-05-18 18:52:15] INFO root fetch - processPackages [nkeys]: executing diffoscope
+[2024-05-18 18:52:15] INFO root fetch - processPackages [nkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nkeys-0.1.0.tar.gz tmp/nkeys-0.2.0.tar.gz --markdown 20240518/n/nkeys/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 18:52:15] INFO root fetch - processPackages [codefly-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codefly_sdk-0.0.8.tar.gz]
+[2024-05-18 18:52:15] INFO root fetch - processPackages [codefly-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codefly_sdk-0.0.9.tar.gz]
+[2024-05-18 18:52:15] INFO root fetch - main [MainThread]: End processing [codefly-sdk]: success
+[2024-05-18 18:52:15] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: Downloading https://files.pythonhosted.org/packages/86/12/fb49af071a1eeee3758685750a42116251a8134472db417e97739707a3da/odoo_addon_delivery_postlogistics-16.0.1.0.5-py3-none-any.whl
+[2024-05-18 18:52:15] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Downloading https://files.pythonhosted.org/packages/98/f7/3fbc79c43ab2a8a9d3b099919c9913c43125c4d5f0c180fd649243d89dce/odoo12_addon_account_asset_management-12.0.3.3.0-py3-none-any.whl
+[2024-05-18 18:52:15] INFO root fetch - processPackages [nkeys]: Remove: archive file [/home/abi/fetcher/tmp/nkeys-0.1.0.tar.gz]
+[2024-05-18 18:52:15] INFO root fetch - processPackages [nkeys]: Remove: archive file [/home/abi/fetcher/tmp/nkeys-0.2.0.tar.gz]
+[2024-05-18 18:52:15] INFO root fetch - main [MainThread]: End processing [nkeys]: success
+[2024-05-18 18:52:15] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: executing diffoscope
+[2024-05-18 18:52:15] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_account_asset_management-12.0.3.3.0-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-account-asset-management/12.0.3.2.0.99.dev8-12.0.3.3.0/README.md --exclude *.pyd
+[2024-05-18 18:52:16] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: executing diffoscope
+[2024-05-18 18:52:16] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_delivery_postlogistics-16.0.1.0.4.3-py3-none-any.whl.zip tmp/odoo_addon_delivery_postlogistics-16.0.1.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-delivery-postlogistics/16.0.1.0.4.3-16.0.1.0.5/README.md --exclude *.pyd
+[2024-05-18 18:52:16] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_delivery_postlogistics-16.0.1.0.4.3-py3-none-any.whl.zip]
+[2024-05-18 18:52:16] INFO root fetch - processPackages [odoo-addon-delivery-postlogistics]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_delivery_postlogistics-16.0.1.0.5-py3-none-any.whl.zip]
+[2024-05-18 18:52:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-delivery-postlogistics]: success
+[2024-05-18 18:52:16] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl.zip]
+[2024-05-18 18:52:16] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_asset_management-12.0.3.3.0-py3-none-any.whl.zip]
+[2024-05-18 18:52:16] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-asset-management]: success
+[2024-05-18 18:52:16] INFO root fetch - main [MainThread]: Store serial: [23269410]
