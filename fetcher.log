@@ -13100,3 +13100,27 @@
 [2024-05-18 11:58:33] INFO root fetch - processPackages [fiftyone-devicedetection-onpremise]: Remove: archive file [/home/abi/fetcher/tmp/fiftyone_devicedetection_onpremise-4.4.9.tar.gz]
 [2024-05-18 11:58:33] INFO root fetch - main [MainThread]: End processing [fiftyone-devicedetection-onpremise]: success
 [2024-05-18 11:58:33] INFO root fetch - main [MainThread]: Store serial: [23266792]
+[2024-05-18 12:00:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266792]
+[2024-05-18 12:00:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-keras-nightly
+[2024-05-18 12:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crawler-user-agents
+[2024-05-18 12:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: urlgenie
+[2024-05-18 12:00:42] INFO root fetch - processPackages [crawler-user-agents]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-18 12:00:42] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024051709] Old Version: [2.17.0.dev2024051609]
+[2024-05-18 12:00:42] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/e0/52/1938b092b959adb67896ede40c0acbb7c53c6bca5787e303f9d290dfeec3/crawler_user_agents-0.4.0.tar.gz
+[2024-05-18 12:00:42] WARNING root fetch - processPackages [urlgenie]: Skipping, unable to determine old version
+[2024-05-18 12:00:42] INFO root fetch - main [MainThread]: End processing [urlgenie] error
+[2024-05-18 12:00:42] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/02/b8/5561e3f87cbe435fc585c5fc4ac1c7e36851e3d89b7448b074da6368d1fd/tf_keras_nightly-2.17.0.dev2024051609.tar.gz
+[2024-05-18 12:00:42] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/10/31/d55ac18814ccb737d6d3d3c56e617391ecdc8929fa3a1517dfda221a0f9a/crawler_user_agents-0.5.0-py3-none-any.whl
+[2024-05-18 12:00:42] INFO root fetch - processPackages [crawler-user-agents]: executing diffoscope
+[2024-05-18 12:00:42] INFO root fetch - processPackages [crawler-user-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_user_agents-0.4.0.tar.gz tmp/crawler_user_agents-0.5.0-py3-none-any.whl.zip --markdown 20240518/c/crawler-user-agents/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-18 12:00:42] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/ee/f0/52c6b6d7ab8a9ab075e736261e2e8728f044dfc9f33b2db386361e966c7d/tf_keras_nightly-2.17.0.dev2024051709.tar.gz
+[2024-05-18 12:00:42] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-18 12:00:42] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024051609.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024051709.tar.gz --markdown 20240518/t/tf-keras-nightly/2.17.0.dev2024051609-2.17.0.dev2024051709/README.md --exclude *.pyd
+[2024-05-18 12:00:43] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.4.0.tar.gz]
+[2024-05-18 12:00:43] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.5.0-py3-none-any.whl.zip]
+[2024-05-18 12:00:43] INFO root fetch - main [MainThread]: End processing [crawler-user-agents]: success
+[2024-05-18 12:00:45] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051609.tar.gz]
+[2024-05-18 12:00:45] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051709.tar.gz]
+[2024-05-18 12:00:45] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-18 12:00:45] INFO root fetch - main [MainThread]: Store serial: [23266801]
