@@ -20463,3 +20463,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:05:58] INFO root fetch - processPackages [byteforge-coinmarketcap]: Remove: archive file [/home/abi/fetcher/tmp/byteforge_coinmarketcap-1.5.tar.gz]
 [2024-05-18 21:05:58] INFO root fetch - main [MainThread]: End processing [byteforge-coinmarketcap]: success
 [2024-05-18 21:05:58] INFO root fetch - main [MainThread]: Store serial: [23270413]
+[2024-05-18 21:08:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270413]
+[2024-05-18 21:08:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 21:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: battlez
+[2024-05-18 21:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-sso
+[2024-05-18 21:08:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikyuu
+[2024-05-18 21:08:09] WARNING root fetch - processPackages [battlez]: Skipping, unable to determine old version
+[2024-05-18 21:08:09] INFO root fetch - main [MainThread]: End processing [battlez] error
+[2024-05-18 21:08:09] INFO root fetch - processPackages [fastapi-sso]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-18 21:08:09] INFO root fetch - processPackages [hikyuu]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-05-18 21:08:09] INFO root fetch - processPackages [fastapi-sso]: Downloading https://files.pythonhosted.org/packages/60/65/695d97e99fa01f3228803b6a3e4203321a2c8ae5827e004c8a5e291d4f6b/fastapi_sso-0.9.0.tar.gz
+[2024-05-18 21:08:09] INFO root fetch - processPackages [hikyuu]: Downloading https://files.pythonhosted.org/packages/5f/bf/117493487bdc17d2ca75e3599838d024c3766d628428be8c56fa309ff6d9/hikyuu-2.0.6-cp39-none-win_amd64.whl
+[2024-05-18 21:08:09] WARNING root fetch - processPackages [hikyuu]: Skipping package: exceeds size limit 15659483>=10485760
+[2024-05-18 21:08:09] INFO root fetch - main [MainThread]: End processing [hikyuu] error
+[2024-05-18 21:08:09] INFO root fetch - processPackages [fastapi-sso]: Downloading https://files.pythonhosted.org/packages/88/28/756cc1a53391071c9cc6802ed5e9f0ad12aec5c632dfb0fdcbda75fdea19/fastapi_sso-0.9.1.tar.gz
+[2024-05-18 21:08:10] INFO root fetch - processPackages [fastapi-sso]: executing diffoscope
+[2024-05-18 21:08:10] INFO root fetch - processPackages [fastapi-sso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_sso-0.9.0.tar.gz tmp/fastapi_sso-0.9.1.tar.gz --markdown 20240518/f/fastapi-sso/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-18 21:08:10] INFO root fetch - processPackages [fastapi-sso]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sso-0.9.0.tar.gz]
+[2024-05-18 21:08:10] INFO root fetch - processPackages [fastapi-sso]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sso-0.9.1.tar.gz]
+[2024-05-18 21:08:10] INFO root fetch - main [MainThread]: End processing [fastapi-sso]: success
+[2024-05-18 21:08:10] INFO root fetch - main [MainThread]: Store serial: [23270426]
