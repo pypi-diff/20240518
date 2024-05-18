@@ -1,0 +1,110 @@
+# Comparing `tmp/rnasqlite-0.1.tar.gz` & `tmp/rnasqlite-0.1.1.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "rnasqlite-0.1.tar", last modified: Sat May 18 13:47:54 2024, max compression
++gzip compressed data, was "rnasqlite-0.1.1.tar", last modified: Sat May 18 13:54:02 2024, max compression
+```
+
+## Comparing `rnasqlite-0.1.tar` & `rnasqlite-0.1.1.tar`
+
+### file list
+
+```diff
+@@ -1,17 +1,17 @@
+-drwxrwxrwx   0        0        0        0 2024-05-18 13:47:54.251494 rnasqlite-0.1/
+--rw-rw-rw-   0        0        0      416 2024-05-18 13:47:54.250498 rnasqlite-0.1/PKG-INFO
+--rw-rw-rw-   0        0        0     1899 2024-05-18 13:46:45.000000 rnasqlite-0.1/README.md
+-drwxrwxrwx   0        0        0        0 2024-05-18 13:47:54.212501 rnasqlite-0.1/RNASQLite/
+--rw-rw-rw-   0        0        0       23 2024-05-18 13:34:52.000000 rnasqlite-0.1/RNASQLite/__init__.py
+--rw-rw-rw-   0        0        0     1479 2024-05-18 13:46:47.000000 rnasqlite-0.1/RNASQLite/cli.py
+--rw-rw-rw-   0        0        0     2097 2024-05-18 13:46:51.000000 rnasqlite-0.1/RNASQLite/db_utils.py
+--rw-rw-rw-   0        0        0     3676 2024-05-18 13:46:48.000000 rnasqlite-0.1/RNASQLite/process_file.py
+-drwxrwxrwx   0        0        0        0 2024-05-18 13:47:54.247494 rnasqlite-0.1/RNASQLite.egg-info/
+--rw-rw-rw-   0        0        0      416 2024-05-18 13:47:54.000000 rnasqlite-0.1/RNASQLite.egg-info/PKG-INFO
+--rw-rw-rw-   0        0        0      305 2024-05-18 13:47:54.000000 rnasqlite-0.1/RNASQLite.egg-info/SOURCES.txt
+--rw-rw-rw-   0        0        0        1 2024-05-18 13:47:54.000000 rnasqlite-0.1/RNASQLite.egg-info/dependency_links.txt
+--rw-rw-rw-   0        0        0       49 2024-05-18 13:47:54.000000 rnasqlite-0.1/RNASQLite.egg-info/entry_points.txt
+--rw-rw-rw-   0        0        0        7 2024-05-18 13:47:54.000000 rnasqlite-0.1/RNASQLite.egg-info/requires.txt
+--rw-rw-rw-   0        0        0       10 2024-05-18 13:47:54.000000 rnasqlite-0.1/RNASQLite.egg-info/top_level.txt
+--rw-rw-rw-   0        0        0       42 2024-05-18 13:47:54.251494 rnasqlite-0.1/setup.cfg
+--rw-rw-rw-   0        0        0      689 2024-05-18 13:47:16.000000 rnasqlite-0.1/setup.py
++drwxrwxrwx   0        0        0        0 2024-05-18 13:54:02.748168 rnasqlite-0.1.1/
++-rw-rw-rw-   0        0        0      418 2024-05-18 13:54:02.747168 rnasqlite-0.1.1/PKG-INFO
++-rw-rw-rw-   0        0        0     1899 2024-05-18 13:46:45.000000 rnasqlite-0.1.1/README.md
++drwxrwxrwx   0        0        0        0 2024-05-18 13:54:02.722643 rnasqlite-0.1.1/RNASQLite/
++-rw-rw-rw-   0        0        0       23 2024-05-18 13:34:52.000000 rnasqlite-0.1.1/RNASQLite/__init__.py
++-rw-rw-rw-   0        0        0     1526 2024-05-18 13:51:07.000000 rnasqlite-0.1.1/RNASQLite/cli.py
++-rw-rw-rw-   0        0        0     2097 2024-05-18 13:46:51.000000 rnasqlite-0.1.1/RNASQLite/db_utils.py
++-rw-rw-rw-   0        0        0     3676 2024-05-18 13:46:48.000000 rnasqlite-0.1.1/RNASQLite/process_file.py
++drwxrwxrwx   0        0        0        0 2024-05-18 13:54:02.746168 rnasqlite-0.1.1/RNASQLite.egg-info/
++-rw-rw-rw-   0        0        0      418 2024-05-18 13:54:02.000000 rnasqlite-0.1.1/RNASQLite.egg-info/PKG-INFO
++-rw-rw-rw-   0        0        0      305 2024-05-18 13:54:02.000000 rnasqlite-0.1.1/RNASQLite.egg-info/SOURCES.txt
++-rw-rw-rw-   0        0        0        1 2024-05-18 13:54:02.000000 rnasqlite-0.1.1/RNASQLite.egg-info/dependency_links.txt
++-rw-rw-rw-   0        0        0       49 2024-05-18 13:54:02.000000 rnasqlite-0.1.1/RNASQLite.egg-info/entry_points.txt
++-rw-rw-rw-   0        0        0        7 2024-05-18 13:54:02.000000 rnasqlite-0.1.1/RNASQLite.egg-info/requires.txt
++-rw-rw-rw-   0        0        0       10 2024-05-18 13:54:02.000000 rnasqlite-0.1.1/RNASQLite.egg-info/top_level.txt
++-rw-rw-rw-   0        0        0       42 2024-05-18 13:54:02.748168 rnasqlite-0.1.1/setup.cfg
++-rw-rw-rw-   0        0        0      727 2024-05-18 13:52:44.000000 rnasqlite-0.1.1/setup.py
+```
+
+### Comparing `rnasqlite-0.1/README.md` & `rnasqlite-0.1.1/README.md`
+
+ * *Files identical despite different names*
+
+### Comparing `rnasqlite-0.1/RNASQLite/cli.py` & `rnasqlite-0.1.1/RNASQLite/cli.py`
+
+ * *Files 3% similar despite different names*
+
+```diff
+@@ -1,8 +1,9 @@
+ import argparse
++import os  # os 모듈을 임포트합니다.
+ from RNASQLite.db_utils import setup_database, insert_counts_into_db, get_count_files, fetch_all_samples
+ from RNASQLite.process_file import process_file
+ 
+ def main():
+     parser = argparse.ArgumentParser(description='RNASQLite command line tool')
+     parser.add_argument('-create', action='store_true', help='Create the SQLite database')
+     parser.add_argument('-split', type=str, help='Process RNAseq counts file and split into count files')
+```
+
+### Comparing `rnasqlite-0.1/RNASQLite/db_utils.py` & `rnasqlite-0.1.1/RNASQLite/db_utils.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rnasqlite-0.1/RNASQLite/process_file.py` & `rnasqlite-0.1.1/RNASQLite/process_file.py`
+
+ * *Files identical despite different names*
+
+### Comparing `rnasqlite-0.1/setup.py` & `rnasqlite-0.1.1/setup.py`
+
+ * *Files 24% similar despite different names*
+
+```diff
+@@ -1,12 +1,12 @@
+ from setuptools import setup, find_packages
+ 
+ setup(
+     name='RNASQLite',
+-    version='0.1',
++    version='0.1.1',  # 버전을 업데이트합니다.
+     packages=find_packages(),
+     install_requires=[
+         'pandas',
+     ],
+     entry_points={
+         'console_scripts': [
+             'RNASQLite=RNASQLite.cli:main',
+```
+
+#### encoding
+
+```diff
+@@ -1 +1 @@
+-us-ascii
++utf-8
+```
+
