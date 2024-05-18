@@ -12790,3 +12790,33 @@
 [2024-05-18 11:34:40] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.777.0.tar.gz]
 [2024-05-18 11:34:40] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
 [2024-05-18 11:34:40] INFO root fetch - main [MainThread]: Store serial: [23266652]
+[2024-05-18 11:36:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266652]
+[2024-05-18 11:36:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 11:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msg91-otp-widget
+[2024-05-18 11:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almo
+[2024-05-18 11:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: workgraph-collections
+[2024-05-18 11:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bcitoolbox
+[2024-05-18 11:36:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BigEDA
+[2024-05-18 11:36:50] WARNING root fetch - processPackages [msg91-otp-widget]: Skipping, unable to determine old version
+[2024-05-18 11:36:50] INFO root fetch - main [MainThread]: End processing [msg91-otp-widget] error
+[2024-05-18 11:36:50] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 11:36:50] WARNING root fetch - processPackages [almo]: Skipping, unable to determine old version
+[2024-05-18 11:36:50] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 11:36:50] INFO root fetch - main [MainThread]: End processing [almo] error
+[2024-05-18 11:36:50] WARNING root fetch - processPackages [workgraph-collections]: Skipping, unable to determine old version
+[2024-05-18 11:36:50] INFO root fetch - main [MainThread]: End processing [workgraph-collections] error
+[2024-05-18 11:36:50] INFO root fetch - processPackages [bcitoolbox]: New version: [0.1.0.1] Old Version: [0.0.2.9]
+[2024-05-18 11:36:50] INFO root fetch - processPackages [bcitoolbox]: Downloading https://files.pythonhosted.org/packages/8e/71/db1a873c5c2121808cb01666b13d55fdbe9bd937fdf560a88125e4c87796/bcitoolbox-0.0.2.9.tar.gz
+[2024-05-18 11:36:50] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 11:36:50] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 11:36:50] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 11:36:50] INFO root fetch - processPackages [bcitoolbox]: Downloading https://files.pythonhosted.org/packages/8b/e4/9a1db3dab2c59fb17a13c47e08540042dc409e57432f11d604e9ea67e328/bcitoolbox-0.1.0.1.tar.gz
+[2024-05-18 11:36:50] INFO root fetch - processPackages [bcitoolbox]: executing diffoscope
+[2024-05-18 11:36:50] INFO root fetch - processPackages [bcitoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcitoolbox-0.0.2.9.tar.gz tmp/bcitoolbox-0.1.0.1.tar.gz --markdown 20240518/b/bcitoolbox/0.0.2.9-0.1.0.1/README.md --exclude *.pyd
+[2024-05-18 11:36:51] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 11:36:51] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 11:36:51] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 11:36:51] INFO root fetch - processPackages [bcitoolbox]: Remove: archive file [/home/abi/fetcher/tmp/bcitoolbox-0.0.2.9.tar.gz]
+[2024-05-18 11:36:51] INFO root fetch - processPackages [bcitoolbox]: Remove: archive file [/home/abi/fetcher/tmp/bcitoolbox-0.1.0.1.tar.gz]
+[2024-05-18 11:36:51] INFO root fetch - main [MainThread]: End processing [bcitoolbox]: success
+[2024-05-18 11:36:51] INFO root fetch - main [MainThread]: Store serial: [23266670]
