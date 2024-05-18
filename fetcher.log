@@ -19936,3 +19936,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:28:49] INFO root fetch - processPackages [caikit-nlp]: Remove: archive file [/home/abi/fetcher/tmp/caikit_nlp-0.4.9.tar.gz]
 [2024-05-18 20:28:49] INFO root fetch - main [MainThread]: End processing [caikit-nlp]: success
 [2024-05-18 20:28:49] INFO root fetch - main [MainThread]: Store serial: [23270071]
+[2024-05-18 20:30:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270071]
+[2024-05-18 20:31:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-reservation-date-show
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-banking-mandate
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-partner-statement
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unconscious-core
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-sale-triple-discount
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyawsopstoolkit
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SQLLite3HelperClass
+[2024-05-18 20:31:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: daredevilismz
+[2024-05-18 20:31:00] WARNING root fetch - processPackages [pyawsopstoolkit]: Skipping, unable to determine old version
+[2024-05-18 20:31:00] INFO root fetch - main [MainThread]: End processing [pyawsopstoolkit] error
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo14-addon-partner-statement]: New version: [14.0.1.4.6.dev1] Old Version: [14.0.1.4.5.dev8]
+[2024-05-18 20:31:00] ERROR root fetch - processPackages [unconscious-core]: Unable to get metadata: No such project 'unconscious-core'
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: New version: [17.0.1.0.1.2] Old Version: [17.0.1.0.1.1]
+[2024-05-18 20:31:00] INFO root fetch - main [MainThread]: End processing [unconscious-core] error
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo14-addon-partner-statement]: Downloading https://files.pythonhosted.org/packages/71/cf/7c674b87c3203685c437de34e30f57b6ca8dbf361eb3e3b7b6f9169479b4/odoo14_addon_partner_statement-14.0.1.4.5.dev8-py3-none-any.whl
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: New version: [16.0.1.0.2] Old Version: [16.0.1.0.1.8]
+[2024-05-18 20:31:00] WARNING root fetch - processPackages [odoo-addon-stock-reservation-date-show]: Skipping, unable to determine old version
+[2024-05-18 20:31:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-reservation-date-show] error
+[2024-05-18 20:31:00] WARNING root fetch - processPackages [daredevilismz]: Skipping, unable to determine old version
+[2024-05-18 20:31:00] INFO root fetch - main [MainThread]: End processing [daredevilismz] error
+[2024-05-18 20:31:00] INFO root fetch - processPackages [SQLLite3HelperClass]: New version: [1.0] Old Version: [0.5]
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: Downloading https://files.pythonhosted.org/packages/cb/c5/cc82bcccde56d44c92e8dca11744e0b975072bfb0301e019fe2050baead6/odoo_addon_account_banking_mandate-17.0.1.0.1.1-py3-none-any.whl
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo14-addon-partner-statement]: Downloading https://files.pythonhosted.org/packages/24/bb/6dc012e36578102765ab71a289fc5718b0402364b34a17d1cb2448691d01/odoo14_addon_partner_statement-14.0.1.4.6.dev1-py3-none-any.whl
+[2024-05-18 20:31:00] INFO root fetch - processPackages [SQLLite3HelperClass]: Downloading https://files.pythonhosted.org/packages/0b/f4/0c7bed644472ce13c6d9e8a53c90fe4aaf5a8da11b8611b97a54c46dc1eb/SQLLite3HelperClass-0.5.tar.gz
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo14-addon-partner-statement]: executing diffoscope
+[2024-05-18 20:31:00] INFO root fetch - processPackages [odoo14-addon-partner-statement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_partner_statement-14.0.1.4.5.dev8-py3-none-any.whl.zip tmp/odoo14_addon_partner_statement-14.0.1.4.6.dev1-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-partner-statement/14.0.1.4.5.dev8-14.0.1.4.6.dev1/README.md --exclude *.pyd
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: Downloading https://files.pythonhosted.org/packages/7e/1b/a28aea7070742a31129b9e4fce7b88daf66d3049819483317a371652977e/odoo_addon_sale_triple_discount-16.0.1.0.1.8-py3-none-any.whl
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: Downloading https://files.pythonhosted.org/packages/72/1d/3e28ace559574b81ba6056688b9264223da52b5314acee2ed7602d32f47c/odoo_addon_account_banking_mandate-17.0.1.0.1.2-py3-none-any.whl
+[2024-05-18 20:31:01] INFO root fetch - processPackages [SQLLite3HelperClass]: Downloading https://files.pythonhosted.org/packages/77/f6/365641cc4915819c4721850f4829c80ea007ce423f2b6b3c60ce6b0ca316/SQLLite3HelperClass-1.0.tar.gz
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: executing diffoscope
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_banking_mandate-17.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_account_banking_mandate-17.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-banking-mandate/17.0.1.0.1.1-17.0.1.0.1.2/README.md --exclude *.pyd
+[2024-05-18 20:31:01] INFO root fetch - processPackages [SQLLite3HelperClass]: executing diffoscope
+[2024-05-18 20:31:01] INFO root fetch - processPackages [SQLLite3HelperClass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLLite3HelperClass-0.5.tar.gz tmp/SQLLite3HelperClass-1.0.tar.gz --markdown 20240518/S/SQLLite3HelperClass/0.5-1.0/README.md --exclude *.pyd
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: Downloading https://files.pythonhosted.org/packages/da/61/2a6b42aaa2bdd178105cac1d4552ed4a334ce25a90501b07d67b6d76321b/odoo_addon_sale_triple_discount-16.0.1.0.2-py3-none-any.whl
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: executing diffoscope
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_triple_discount-16.0.1.0.1.8-py3-none-any.whl.zip tmp/odoo_addon_sale_triple_discount-16.0.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-sale-triple-discount/16.0.1.0.1.8-16.0.1.0.2/README.md --exclude *.pyd
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo14-addon-partner-statement]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_partner_statement-14.0.1.4.5.dev8-py3-none-any.whl.zip]
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo14-addon-partner-statement]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_partner_statement-14.0.1.4.6.dev1-py3-none-any.whl.zip]
+[2024-05-18 20:31:01] INFO root fetch - main [MainThread]: End processing [odoo14-addon-partner-statement]: success
+[2024-05-18 20:31:01] INFO root fetch - processPackages [SQLLite3HelperClass]: Remove: archive file [/home/abi/fetcher/tmp/SQLLite3HelperClass-0.5.tar.gz]
+[2024-05-18 20:31:01] INFO root fetch - processPackages [SQLLite3HelperClass]: Remove: archive file [/home/abi/fetcher/tmp/SQLLite3HelperClass-1.0.tar.gz]
+[2024-05-18 20:31:01] INFO root fetch - main [MainThread]: End processing [SQLLite3HelperClass]: success
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_banking_mandate-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-05-18 20:31:01] INFO root fetch - processPackages [odoo-addon-account-banking-mandate]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_banking_mandate-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-18 20:31:01] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-mandate]: success
+[2024-05-18 20:31:02] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_triple_discount-16.0.1.0.1.8-py3-none-any.whl.zip]
+[2024-05-18 20:31:02] INFO root fetch - processPackages [odoo-addon-sale-triple-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_triple_discount-16.0.1.0.2-py3-none-any.whl.zip]
+[2024-05-18 20:31:02] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-triple-discount]: success
+[2024-05-18 20:31:02] INFO root fetch - main [MainThread]: Store serial: [23270094]
