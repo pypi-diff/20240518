@@ -8304,3 +8304,57 @@
 [2024-05-18 05:13:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-brand]: success
 [2024-05-18 05:13:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-brand]: success
 [2024-05-18 05:13:47] INFO root fetch - main [MainThread]: Store serial: [23264324]
+[2024-05-18 05:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264324]
+[2024-05-18 05:15:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whineyz
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-business-requirement-sale
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: argrelay
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-cv-nightly
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfred24
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo11-addon-sale-commission
+[2024-05-18 05:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo12-addon-sale-commission
+[2024-05-18 05:15:57] INFO root fetch - processPackages [argrelay]: New version: [0.7.1.dev0] Old Version: [0.7.0.dev1]
+[2024-05-18 05:15:57] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-18 05:15:57] INFO root fetch - processPackages [odoo12-addon-sale-commission]: New version: [12.0.3.3.3.99.dev3] Old Version: [12.0.3.3.3.99.dev2]
+[2024-05-18 05:15:57] WARNING root fetch - processPackages [whineyz]: Skipping, unable to determine old version
+[2024-05-18 05:15:57] INFO root fetch - main [MainThread]: End processing [whineyz] error
+[2024-05-18 05:15:57] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev7]
+[2024-05-18 05:15:57] INFO root fetch - processPackages [odoo11-addon-sale-commission]: New version: [11.0.2.3.0.99.dev9] Old Version: [11.0.2.3.0.99.dev8]
+[2024-05-18 05:15:57] WARNING root fetch - processPackages [pyfred24]: Skipping, unable to determine old version
+[2024-05-18 05:15:57] INFO root fetch - main [MainThread]: End processing [pyfred24] error
+[2024-05-18 05:15:57] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-18 05:15:57] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/9f/1e/96c7e2dcdb12c7ddd01f85cef9bb2d0f1fc719dbf9ad6e24602ebbd0d973/argrelay-0.7.0.dev1.tar.gz
+[2024-05-18 05:15:57] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/e5/8c/76c3f1a3993d4c6c543eef602ec58eafa7bcc4b676834229781f42922b5c/odoo12_addon_sale_commission-12.0.3.3.3.99.dev2-py3-none-any.whl
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: Downloading https://files.pythonhosted.org/packages/b1/ad/b90d5ec87f535b604f72b42aead82f283561a033c0b5c598518ae99f1b1e/odoo14_addon_business_requirement_sale-14.0.1.0.1.dev7-py3-none-any.whl
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo11-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/67/b7/b74401694f0b73a360341f5c25267a37061e564fe779f28a6f2bdd7a4f5d/odoo11_addon_sale_commission-11.0.2.3.0.99.dev8-py2.py3-none-any.whl
+[2024-05-18 05:15:58] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-18 05:15:58] INFO root fetch - processPackages [argrelay]: Downloading https://files.pythonhosted.org/packages/9d/46/20eb2073a3b3f35342a846ab1d4a32a17fb85513fcf0da6239b137220b37/argrelay-0.7.1.dev0.tar.gz
+[2024-05-18 05:15:58] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-18 05:15:58] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240518/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-18 05:15:58] INFO root fetch - processPackages [argrelay]: executing diffoscope
+[2024-05-18 05:15:58] INFO root fetch - processPackages [argrelay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argrelay-0.7.0.dev1.tar.gz tmp/argrelay-0.7.1.dev0.tar.gz --markdown 20240518/a/argrelay/0.7.0.dev1-0.7.1.dev0/README.md --exclude *.pyd
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: Downloading https://files.pythonhosted.org/packages/17/ef/b278102a53ab0bf6cc83e994a37164101ef5350bd14eb6f5d034e3cc5e00/odoo14_addon_business_requirement_sale-14.0.1.0.1.dev8-py3-none-any.whl
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/2f/82/b5604a4dea1d4ee80f5e0364c49a3be4d2012a7397f5c1f3db3b8e6b6290/odoo12_addon_sale_commission-12.0.3.3.3.99.dev3-py3-none-any.whl
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: executing diffoscope
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_business_requirement_sale-14.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_business_requirement_sale-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-business-requirement-sale/14.0.1.0.1.dev7-14.0.1.0.1.dev8/README.md --exclude *.pyd
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo11-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/4a/01/d6cc3284ace845f14f14031ce76e7d12696f491d6f619120cbc65f5839d3/odoo11_addon_sale_commission-11.0.2.3.0.99.dev9-py2.py3-none-any.whl
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo12-addon-sale-commission]: executing diffoscope
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo12-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev3-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-sale-commission/12.0.3.3.3.99.dev2-12.0.3.3.3.99.dev3/README.md --exclude *.pyd
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo11-addon-sale-commission]: executing diffoscope
+[2024-05-18 05:15:58] INFO root fetch - processPackages [odoo11-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_sale_commission-11.0.2.3.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_sale_commission-11.0.2.3.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20240518/o/odoo11-addon-sale-commission/11.0.2.3.0.99.dev8-11.0.2.3.0.99.dev9/README.md --exclude *.pyd
+[2024-05-18 05:15:59] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_business_requirement_sale-14.0.1.0.1.dev7-py3-none-any.whl.zip]
+[2024-05-18 05:15:59] INFO root fetch - processPackages [odoo14-addon-business-requirement-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_business_requirement_sale-14.0.1.0.1.dev8-py3-none-any.whl.zip]
+[2024-05-18 05:15:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-business-requirement-sale]: success
+[2024-05-18 05:15:59] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev2-py3-none-any.whl.zip]
+[2024-05-18 05:15:59] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev3-py3-none-any.whl.zip]
+[2024-05-18 05:15:59] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-commission]: success
+[2024-05-18 05:15:59] INFO root fetch - processPackages [odoo11-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo11_addon_sale_commission-11.0.2.3.0.99.dev8-py2.py3-none-any.whl.zip]
+[2024-05-18 05:15:59] INFO root fetch - processPackages [odoo11-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo11_addon_sale_commission-11.0.2.3.0.99.dev9-py2.py3-none-any.whl.zip]
+[2024-05-18 05:15:59] INFO root fetch - main [MainThread]: End processing [odoo11-addon-sale-commission]: success
+[2024-05-18 05:15:59] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.0.dev1.tar.gz]
+[2024-05-18 05:15:59] INFO root fetch - processPackages [argrelay]: Remove: archive file [/home/abi/fetcher/tmp/argrelay-0.7.1.dev0.tar.gz]
+[2024-05-18 05:15:59] INFO root fetch - main [MainThread]: End processing [argrelay]: success
+[2024-05-18 05:15:59] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-18 05:15:59] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-18 05:15:59] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-18 05:15:59] INFO root fetch - main [MainThread]: Store serial: [23264342]
