@@ -10135,3 +10135,9 @@
 [2024-05-18 07:45:53] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz]
 [2024-05-18 07:45:53] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-18 07:45:53] INFO root fetch - main [MainThread]: Store serial: [23265062]
+[2024-05-18 07:47:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265062]
+[2024-05-18 07:48:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 07:48:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shantihz
+[2024-05-18 07:48:02] WARNING root fetch - processPackages [shantihz]: Skipping, unable to determine old version
+[2024-05-18 07:48:02] INFO root fetch - main [MainThread]: End processing [shantihz] error
+[2024-05-18 07:48:02] INFO root fetch - main [MainThread]: Store serial: [23265066]
