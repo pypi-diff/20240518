@@ -7455,3 +7455,36 @@
 [2024-05-18 04:32:00] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
 [2024-05-18 04:32:00] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
 [2024-05-18 04:32:00] INFO root fetch - main [MainThread]: Store serial: [23264038]
+[2024-05-18 04:34:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264038]
+[2024-05-18 04:34:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 04:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoto-api
+[2024-05-18 04:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isokurticz
+[2024-05-18 04:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zrb
+[2024-05-18 04:34:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-account-analytic-distribution-required
+[2024-05-18 04:34:10] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev7]
+[2024-05-18 04:34:10] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-18 04:34:10] WARNING root fetch - processPackages [isokurticz]: Skipping, unable to determine old version
+[2024-05-18 04:34:10] INFO root fetch - main [MainThread]: End processing [isokurticz] error
+[2024-05-18 04:34:10] INFO root fetch - processPackages [zrb]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-18 04:34:10] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: Downloading https://files.pythonhosted.org/packages/35/67/2a3a57c12a978c267802934d85b75b6b682bb1de7fb39455aaa92600c0b3/odoo14_addon_account_analytic_distribution_required-14.0.1.0.1.dev7-py3-none-any.whl
+[2024-05-18 04:34:10] INFO root fetch - processPackages [zrb]: Downloading https://files.pythonhosted.org/packages/32/39/a7e9fbbb7d0cb16c4ef2cdecfa0052b5b5059c4b0f8cd6cc390052054a0b/zrb-0.9.2.tar.gz
+[2024-05-18 04:34:10] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-18 04:34:11] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-18 04:34:11] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-18 04:34:11] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240518/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-18 04:34:11] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: Downloading https://files.pythonhosted.org/packages/9d/5f/92caa0293156fe973fdaa6cde7d1a253fa33123a5a196404258379ce2517/odoo14_addon_account_analytic_distribution_required-14.0.1.0.1.dev8-py3-none-any.whl
+[2024-05-18 04:34:11] INFO root fetch - processPackages [zrb]: Downloading https://files.pythonhosted.org/packages/f6/b9/43574b23dd1c57d67788b82511937efe23fc957250685ba62b6025db3166/zrb-0.9.3.tar.gz
+[2024-05-18 04:34:11] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: executing diffoscope
+[2024-05-18 04:34:11] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_analytic_distribution_required-14.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_account_analytic_distribution_required-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-account-analytic-distribution-required/14.0.1.0.1.dev7-14.0.1.0.1.dev8/README.md --exclude *.pyd
+[2024-05-18 04:34:11] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-18 04:34:11] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-18 04:34:11] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-18 04:34:12] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_analytic_distribution_required-14.0.1.0.1.dev7-py3-none-any.whl.zip]
+[2024-05-18 04:34:12] INFO root fetch - processPackages [odoo14-addon-account-analytic-distribution-required]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_analytic_distribution_required-14.0.1.0.1.dev8-py3-none-any.whl.zip]
+[2024-05-18 04:34:12] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-analytic-distribution-required]: success
+[2024-05-18 04:34:12] INFO root fetch - processPackages [zrb]: executing diffoscope
+[2024-05-18 04:34:12] INFO root fetch - processPackages [zrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrb-0.9.2.tar.gz tmp/zrb-0.9.3.tar.gz --markdown 20240518/z/zrb/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-18 04:34:16] INFO root fetch - processPackages [zrb]: Remove: archive file [/home/abi/fetcher/tmp/zrb-0.9.2.tar.gz]
+[2024-05-18 04:34:16] INFO root fetch - processPackages [zrb]: Remove: archive file [/home/abi/fetcher/tmp/zrb-0.9.3.tar.gz]
+[2024-05-18 04:34:16] INFO root fetch - main [MainThread]: End processing [zrb]: success
+[2024-05-18 04:34:16] INFO root fetch - main [MainThread]: Store serial: [23264050]
