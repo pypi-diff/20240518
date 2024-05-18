@@ -19777,3 +19777,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:17:04] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-05-18 20:17:04] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-05-18 20:17:04] INFO root fetch - main [MainThread]: Store serial: [23270010]
+[2024-05-18 20:19:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270010]
+[2024-05-18 20:19:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 20:19:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer-onnx
+[2024-05-18 20:19:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-05-18 20:19:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rustberry
+[2024-05-18 20:19:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-web-pivot-hide-total
+[2024-05-18 20:19:13] INFO root fetch - processPackages [rustberry]: New version: [0.0.9] Old Version: [0.0.12]
+[2024-05-18 20:19:13] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 20:19:13] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-18 20:19:13] WARNING root fetch - processPackages [odoo14-addon-web-pivot-hide-total]: Skipping, unable to determine old version
+[2024-05-18 20:19:13] INFO root fetch - main [MainThread]: End processing [odoo14-addon-web-pivot-hide-total] error
+[2024-05-18 20:19:13] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/2f/1c/b4f6fb8929991d4a100a4e3113fbac97441a9d044be6a2426db93a73c624/model_explorer_onnx-0.1.6.tar.gz
+[2024-05-18 20:19:13] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-05-18 20:19:13] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/5d/6f/a5c8cfa014cc3a7d83ba3335f563d83bbbede7543cabad05e070c8c990e6/rustberry-0.0.12-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 20:19:13] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/a9/01/d182f5f056bf8d0fbf3f250c46e7bfc5df27cf684263064647d83896cbc1/model_explorer_onnx-0.1.7.tar.gz
+[2024-05-18 20:19:13] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-05-18 20:19:13] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-18 20:19:13] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.6.tar.gz tmp/model_explorer_onnx-0.1.7.tar.gz --markdown 20240518/m/model-explorer-onnx/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 20:19:14] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-18 20:19:14] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240518/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-18 20:19:14] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.6.tar.gz]
+[2024-05-18 20:19:14] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.7.tar.gz]
+[2024-05-18 20:19:14] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-18 20:19:14] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/a6/56/1f0ec5be80288e33920ec3da3dbd110ee9baede31e753231cecd3bc10d69/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 20:19:14] INFO root fetch - processPackages [rustberry]: executing diffoscope
+[2024-05-18 20:19:14] INFO root fetch - processPackages [rustberry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustberry-0.0.12-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip --markdown 20240518/r/rustberry/0.0.12-0.0.9/README.md --exclude *.pyd
+[2024-05-18 20:19:16] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-05-18 20:19:16] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-05-18 20:19:16] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-18 20:19:52] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.12-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 20:19:52] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 20:19:52] INFO root fetch - main [MainThread]: End processing [rustberry]: success
+[2024-05-18 20:19:52] INFO root fetch - main [MainThread]: Store serial: [23270030]
