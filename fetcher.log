@@ -13625,3 +13625,21 @@
 [2024-05-18 12:44:58] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.5.tar.gz]
 [2024-05-18 12:44:58] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
 [2024-05-18 12:44:58] INFO root fetch - main [MainThread]: Store serial: [23267032]
+[2024-05-18 12:47:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267032]
+[2024-05-18 12:47:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dp-PDF-Crawler
+[2024-05-18 12:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyphyi
+[2024-05-18 12:47:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openaiisrich
+[2024-05-18 12:47:07] WARNING root fetch - processPackages [openaiisrich]: Skipping, unable to determine old version
+[2024-05-18 12:47:07] INFO root fetch - main [MainThread]: End processing [openaiisrich] error
+[2024-05-18 12:47:07] INFO root fetch - processPackages [dp-PDF-Crawler]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-18 12:47:07] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/cd/af/e88dd3258b656ebd56171fb0104e3676df2d10776f6ac33fb0074eed6491/dp-PDF-Crawler-0.3.0.tar.gz
+[2024-05-18 12:47:07] ERROR root fetch - processPackages [pyphyi]: Unable to get metadata: No such project 'pyphyi'
+[2024-05-18 12:47:07] INFO root fetch - main [MainThread]: End processing [pyphyi] error
+[2024-05-18 12:47:08] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/9f/4a/2141b12915cca46df530ca9c7af0b19e779895567b20db480e005b2d640e/dp-PDF-Crawler-0.4.0.tar.gz
+[2024-05-18 12:47:08] INFO root fetch - processPackages [dp-PDF-Crawler]: executing diffoscope
+[2024-05-18 12:47:08] INFO root fetch - processPackages [dp-PDF-Crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp-PDF-Crawler-0.3.0.tar.gz tmp/dp-PDF-Crawler-0.4.0.tar.gz --markdown 20240518/d/dp-PDF-Crawler/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-18 12:47:08] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.3.0.tar.gz]
+[2024-05-18 12:47:08] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.4.0.tar.gz]
+[2024-05-18 12:47:08] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
+[2024-05-18 12:47:08] INFO root fetch - main [MainThread]: Store serial: [23267043]
