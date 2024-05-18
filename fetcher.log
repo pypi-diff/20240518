@@ -11638,3 +11638,24 @@
 [2024-05-18 09:58:04] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
 [2024-05-18 09:58:04] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
 [2024-05-18 09:58:04] INFO root fetch - main [MainThread]: Store serial: [23265867]
+[2024-05-18 10:00:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265867]
+[2024-05-18 10:00:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 10:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: typedload
+[2024-05-18 10:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2024-05-18 10:00:13] INFO root fetch - processPackages [typedload]: New version: [2.9] Old Version: [2.8]
+[2024-05-18 10:00:13] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240518] Old Version: [2.17.0.dev20240517]
+[2024-05-18 10:00:13] INFO root fetch - processPackages [typedload]: Downloading https://files.pythonhosted.org/packages/1a/9c/b3e79bbe539b796edf6f784dfe2cd45ba8c239e727d1a2bd66bae1ce323b/typedload-2.8.tar.gz
+[2024-05-18 10:00:13] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/10/9f/47e8d4581751309235f50c162c0509b95e613a6c0df9b2de0683d13ff36d/tf_nightly-2.17.0.dev20240517-cp39-cp39-win_amd64.whl
+[2024-05-18 10:00:13] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/53/98/36d5da1efbbfacffc215eefc45c1db3b6e4084b5508bd8ed43acd35c9976/tf_nightly-2.17.0.dev20240518-cp39-cp39-win_amd64.whl
+[2024-05-18 10:00:14] INFO root fetch - processPackages [typedload]: Downloading https://files.pythonhosted.org/packages/16/9e/9a2ddfc41dadcfa54a39c136817e339764a9005b8ba3fad58d75a9592040/typedload-2.9.tar.gz
+[2024-05-18 10:00:14] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-05-18 10:00:14] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240517-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240518-cp39-cp39-win_amd64.whl.zip --markdown 20240518/t/tf-nightly/2.17.0.dev20240517-2.17.0.dev20240518/README.md --exclude *.pyd
+[2024-05-18 10:00:14] INFO root fetch - processPackages [typedload]: executing diffoscope
+[2024-05-18 10:00:14] INFO root fetch - processPackages [typedload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedload-2.8.tar.gz tmp/typedload-2.9.tar.gz --markdown 20240518/t/typedload/2.8-2.9/README.md --exclude *.pyd
+[2024-05-18 10:00:14] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240517-cp39-cp39-win_amd64.whl.zip]
+[2024-05-18 10:00:14] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240518-cp39-cp39-win_amd64.whl.zip]
+[2024-05-18 10:00:14] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-05-18 10:00:14] INFO root fetch - processPackages [typedload]: Remove: archive file [/home/abi/fetcher/tmp/typedload-2.8.tar.gz]
+[2024-05-18 10:00:14] INFO root fetch - processPackages [typedload]: Remove: archive file [/home/abi/fetcher/tmp/typedload-2.9.tar.gz]
+[2024-05-18 10:00:14] INFO root fetch - main [MainThread]: End processing [typedload]: success
+[2024-05-18 10:00:14] INFO root fetch - main [MainThread]: Store serial: [23265875]
