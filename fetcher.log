@@ -16219,3 +16219,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:11:56] INFO root fetch - processPackages [soxr]: Remove: archive file [/home/abi/fetcher/tmp/soxr-0.4.0b1.tar.gz]
 [2024-05-18 16:11:56] INFO root fetch - main [MainThread]: End processing [soxr]: success
 [2024-05-18 16:11:56] INFO root fetch - main [MainThread]: Store serial: [23268337]
+[2024-05-18 16:14:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268337]
+[2024-05-18 16:14:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 16:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cuallee
+[2024-05-18 16:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostkit
+[2024-05-18 16:14:06] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-18 16:14:06] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-18 16:14:06] INFO root fetch - processPackages [cuallee]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-18 16:14:06] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-18 16:14:06] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/fd/be/322bcff4927906c5cfbe06fe9eabf62bd910ea9dcd6f3a5f66214c0cbffb/cuallee-0.9.1.tar.gz
+[2024-05-18 16:14:07] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-18 16:14:07] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240518/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-18 16:14:07] INFO root fetch - processPackages [cuallee]: Downloading https://files.pythonhosted.org/packages/b1/4f/47854a0a26c3ffd377a09074e97e7146d8079e237be1b2bf6b05eb0334c2/cuallee-0.9.2.tar.gz
+[2024-05-18 16:14:07] INFO root fetch - processPackages [cuallee]: executing diffoscope
+[2024-05-18 16:14:07] INFO root fetch - processPackages [cuallee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuallee-0.9.1.tar.gz tmp/cuallee-0.9.2.tar.gz --markdown 20240518/c/cuallee/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-18 16:14:07] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-18 16:14:07] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-18 16:14:07] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-18 16:14:08] INFO root fetch - processPackages [cuallee]: Remove: archive file [/home/abi/fetcher/tmp/cuallee-0.9.1.tar.gz]
+[2024-05-18 16:14:08] INFO root fetch - processPackages [cuallee]: Remove: archive file [/home/abi/fetcher/tmp/cuallee-0.9.2.tar.gz]
+[2024-05-18 16:14:08] INFO root fetch - main [MainThread]: End processing [cuallee]: success
+[2024-05-18 16:14:08] INFO root fetch - main [MainThread]: Store serial: [23268343]
