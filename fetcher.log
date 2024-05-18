@@ -13871,3 +13871,157 @@
 [2024-05-18 13:13:18] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
 [2024-05-18 13:13:18] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-05-18 13:13:18] INFO root fetch - main [MainThread]: Store serial: [23267155]
+[2024-05-18 13:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267155]
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd-21
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-prep-toolkit-kfp
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-core-cpp
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sling-linux-amd64
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pydantic-pkgr
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyurlib
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sling-linux-arm64
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: FleekAPI
+[2024-05-18 13:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: physisz
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [FleekAPI]: Skipping, unable to determine old version
+[2024-05-18 13:15:28] INFO root fetch - processPackages [FleekAPI]: Start processing: sling-mac-amd64
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [FleekAPI] error
+[2024-05-18 13:15:28] INFO root fetch - processPackages [sling-linux-amd64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-05-18 13:15:28] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.1.0] Old Version: [0.0.1.dev9]
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [pydantic-pkgr]: Skipping, unable to determine old version
+[2024-05-18 13:15:28] INFO root fetch - processPackages [pydantic-pkgr]: Start processing: flask-projects
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [pydantic-pkgr] error
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [pyurlib]: Skipping, unable to determine old version
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [pyurlib] error
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [physisz]: Skipping, unable to determine old version
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [physisz] error
+[2024-05-18 13:15:28] INFO root fetch - processPackages [sling-linux-arm64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-05-18 13:15:28] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240518] Old Version: [2.5.0b20240517]
+[2024-05-18 13:15:28] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240518] Old Version: [2.5.0b20240517]
+[2024-05-18 13:15:28] INFO root fetch - processPackages [sling-mac-amd64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-05-18 13:15:28] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [flask-projects]: Skipping, unable to determine old version
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [flask-projects] error
+[2024-05-18 13:15:28] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/99/ee/b83b94e703ce630244ff18dc40c3deb6949625acb43c4ba311ce6b91fb1e/bigdl_core_xe_esimd_21-2.5.0b20240517-cp39-cp39-win_amd64.whl
+[2024-05-18 13:15:28] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ba/bf/e95575aad408e2aa50198d2c293f708992db973fc14a205c8aaefd64e700/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz
+[2024-05-18 13:15:28] INFO root fetch - processPackages [sling-linux-arm64]: Downloading https://files.pythonhosted.org/packages/b8/47/09950e394d4b27939a22faa5960c386e779e5020c3da14522c43baa6fc32/sling-linux-arm64-1.2.6.tar.gz
+[2024-05-18 13:15:28] INFO root fetch - processPackages [sling-linux-amd64]: Downloading https://files.pythonhosted.org/packages/73/e2/af36d4d00bf02e2e7dbcbd5b5ba0e52151c2958221bcfbd13b5bd070f878/sling-linux-amd64-1.2.6.tar.gz
+[2024-05-18 13:15:28] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/55/4e/5dd45f8a126957506c07577da204e08fff1584b1cbc39931bf61bec7917e/bigdl_core_cpp-2.5.0b20240517-py3-none-win_amd64.whl
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [sling-linux-arm64]: Skipping package: exceeds size limit 45847624>=10485760
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [sling-linux-arm64] error
+[2024-05-18 13:15:28] INFO root fetch - processPackages [sling-mac-amd64]: Downloading https://files.pythonhosted.org/packages/ec/9f/a6ab1c28dbbba19f9a140d669fe7b8fc20d4d2702f78be573dbe62b22581/sling-mac-amd64-1.2.6.tar.gz
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 33300228>=10485760
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-05-18 13:15:28] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-05-18 13:15:28] WARNING root fetch - processPackages [sling-mac-amd64]: Skipping package: exceeds size limit 54789710>=10485760
+[2024-05-18 13:15:28] INFO root fetch - main [MainThread]: End processing [sling-mac-amd64] error
+[2024-05-18 13:15:29] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/c5/c8/8d6d7be956979a103c6894ce424548dff678de6bfc85be8018d305469e67/data_prep_toolkit_kfp-0.1.0.tar.gz
+[2024-05-18 13:15:29] WARNING root fetch - processPackages [sling-linux-amd64]: Skipping package: exceeds size limit 49118064>=10485760
+[2024-05-18 13:15:29] INFO root fetch - main [MainThread]: End processing [sling-linux-amd64] error
+[2024-05-18 13:15:29] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/bf/97/01fe1764cb6037311243ddb6c7b2d0723c88b501c6187df8fce4a583433f/bigdl_core_xe_esimd_21-2.5.0b20240518-cp310-cp310-win_amd64.whl
+[2024-05-18 13:15:29] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-18 13:15:29] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz tmp/data_prep_toolkit_kfp-0.1.0.tar.gz --markdown 20240518/d/data-prep-toolkit-kfp/0.0.1.dev9-0.1.0/README.md --exclude *.pyd
+[2024-05-18 13:15:29] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: executing diffoscope
+[2024-05-18 13:15:29] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_esimd_21-2.5.0b20240517-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_esimd_21-2.5.0b20240518-cp310-cp310-win_amd64.whl.zip --markdown 20240518/b/bigdl-core-xe-esimd-21/2.5.0b20240517-2.5.0b20240518/README.md --exclude *.pyd
+[2024-05-18 13:15:29] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-05-18 13:15:29] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz]
+[2024-05-18 13:15:29] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.1.0.tar.gz]
+[2024-05-18 13:15:29] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-18 13:15:30] ERROR root fetch - processPackages [bigdl-core-xe-esimd-21]: Diffoscope failed: time="2024-05-18T13:15:29+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140089820716432)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140089954934272)
+
+[2024-05-18 13:15:30] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-05-18 13:15:30] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-05-18 13:15:30] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240518/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-05-18 13:15:31] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-05-18 13:15:31] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-05-18 13:15:31] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-05-18 13:15:31] INFO root fetch - main [MainThread]: Store serial: [23267192]
