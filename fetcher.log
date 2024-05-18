@@ -21812,3 +21812,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:44:52] INFO root fetch - processPackages [normcap]: Remove: archive file [/home/abi/fetcher/tmp/normcap-0.5.7.tar.gz]
 [2024-05-18 22:44:52] INFO root fetch - main [MainThread]: End processing [normcap]: success
 [2024-05-18 22:44:52] INFO root fetch - main [MainThread]: Store serial: [23271141]
+[2024-05-18 22:46:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271141]
+[2024-05-18 22:47:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 22:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rag-cli
+[2024-05-18 22:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nnsight
+[2024-05-18 22:47:01] WARNING root fetch - processPackages [rag-cli]: Skipping, unable to determine old version
+[2024-05-18 22:47:01] INFO root fetch - main [MainThread]: End processing [rag-cli] error
+[2024-05-18 22:47:01] INFO root fetch - processPackages [nnsight]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 22:47:01] INFO root fetch - processPackages [nnsight]: Downloading https://files.pythonhosted.org/packages/ff/60/1acd92c862457178d4b9ade3b0a16ec2816f8bebf47bbd5eeed678a9be29/nnsight-0.2.8.tar.gz
+[2024-05-18 22:47:03] INFO root fetch - processPackages [nnsight]: Downloading https://files.pythonhosted.org/packages/47/33/8eae8afc3570554943405d61b9f2d64dc535632ef4f55fb5079be311e11c/nnsight-0.2.9.tar.gz
+[2024-05-18 22:47:04] INFO root fetch - processPackages [nnsight]: executing diffoscope
+[2024-05-18 22:47:04] INFO root fetch - processPackages [nnsight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsight-0.2.8.tar.gz tmp/nnsight-0.2.9.tar.gz --markdown 20240518/n/nnsight/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 22:47:07] INFO root fetch - processPackages [nnsight]: Remove: archive file [/home/abi/fetcher/tmp/nnsight-0.2.8.tar.gz]
+[2024-05-18 22:47:07] INFO root fetch - processPackages [nnsight]: Remove: archive file [/home/abi/fetcher/tmp/nnsight-0.2.9.tar.gz]
+[2024-05-18 22:47:07] INFO root fetch - main [MainThread]: End processing [nnsight]: success
+[2024-05-18 22:47:07] INFO root fetch - main [MainThread]: Store serial: [23271147]
