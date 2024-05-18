@@ -14505,3 +14505,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:53:39] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
 [2024-05-18 13:53:39] INFO root fetch - main [MainThread]: End processing [biliup]: success
 [2024-05-18 13:53:39] INFO root fetch - main [MainThread]: Store serial: [23267434]
+[2024-05-18 13:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267434]
+[2024-05-18 13:55:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 13:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PepperPepper
+[2024-05-18 13:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiocmcapi
+[2024-05-18 13:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkgcheck
+[2024-05-18 13:55:48] INFO root fetch - processPackages [aiocmcapi]: New version: [0.6.3] Old Version: [0.5]
+[2024-05-18 13:55:48] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-18 13:55:48] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-18 13:55:48] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/71/36/f3f67d0df44683e1a1d2554770d44e1555eb4bc4fca81356f7ce8f729e01/aiocmcapi-0.5.tar.gz
+[2024-05-18 13:55:48] INFO root fetch - processPackages [pkgcheck]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-18 13:55:48] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/e1/a2/8048b8d126e88ded44ec83c191a4b98ad420d5fbda44e33774c93cb0bed2/aiocmcapi-0.6.3.tar.gz
+[2024-05-18 13:55:48] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-18 13:55:49] INFO root fetch - processPackages [pkgcheck]: Downloading https://files.pythonhosted.org/packages/30/ca/2bf8765f1b74a746cb0e9c24dad6d2f90ada3c4544ff04ed98dfa28dcd27/pkgcheck-0.9.6.tar.gz
+[2024-05-18 13:55:49] INFO root fetch - processPackages [aiocmcapi]: executing diffoscope
+[2024-05-18 13:55:49] INFO root fetch - processPackages [aiocmcapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocmcapi-0.5.tar.gz tmp/aiocmcapi-0.6.3.tar.gz --markdown 20240518/a/aiocmcapi/0.5-0.6.3/README.md --exclude *.pyd
+[2024-05-18 13:55:49] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-18 13:55:49] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240518/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-18 13:55:49] INFO root fetch - processPackages [pkgcheck]: Downloading https://files.pythonhosted.org/packages/a0/48/fde3cb83d91caa96bbef0e333d8bd71f403e8496427532ef532329a36cd0/pkgcheck-0.9.7.tar.gz
+[2024-05-18 13:55:49] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.5.tar.gz]
+[2024-05-18 13:55:49] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.6.3.tar.gz]
+[2024-05-18 13:55:49] INFO root fetch - main [MainThread]: End processing [aiocmcapi]: success
+[2024-05-18 13:55:49] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-18 13:55:49] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-18 13:55:49] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-18 13:55:50] INFO root fetch - processPackages [pkgcheck]: executing diffoscope
+[2024-05-18 13:55:50] INFO root fetch - processPackages [pkgcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkgcheck-0.9.6.tar.gz tmp/pkgcheck-0.9.7.tar.gz --markdown 20240518/p/pkgcheck/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-18 13:55:51] INFO root fetch - processPackages [pkgcheck]: Remove: archive file [/home/abi/fetcher/tmp/pkgcheck-0.9.6.tar.gz]
+[2024-05-18 13:55:51] INFO root fetch - processPackages [pkgcheck]: Remove: archive file [/home/abi/fetcher/tmp/pkgcheck-0.9.7.tar.gz]
+[2024-05-18 13:55:51] INFO root fetch - main [MainThread]: End processing [pkgcheck]: success
+[2024-05-18 13:55:51] INFO root fetch - main [MainThread]: Store serial: [23267443]
