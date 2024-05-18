@@ -8469,3 +8469,18 @@
 [2024-05-18 05:18:11] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.9.tar.gz]
 [2024-05-18 05:18:11] INFO root fetch - main [MainThread]: End processing [hagworm]: success
 [2024-05-18 05:18:11] INFO root fetch - main [MainThread]: Store serial: [23264368]
+[2024-05-18 05:20:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264368]
+[2024-05-18 05:20:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 05:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simblotz
+[2024-05-18 05:20:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FirstGame
+[2024-05-18 05:20:20] INFO root fetch - processPackages [FirstGame]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-18 05:20:20] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/ae/88/5e3052870032b35daf55c8b98ec0d4a853dee3a6d777a2995ce87c52fcb2/FirstGame-1.0.5.tar.gz
+[2024-05-18 05:20:20] WARNING root fetch - processPackages [simblotz]: Skipping, unable to determine old version
+[2024-05-18 05:20:20] INFO root fetch - main [MainThread]: End processing [simblotz] error
+[2024-05-18 05:20:21] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/a4/2a/e04249da7990c930ce1754aef66d4843270039cda4af5d5af3d6e1f61d2f/FirstGame-1.0.6.tar.gz
+[2024-05-18 05:20:21] INFO root fetch - processPackages [FirstGame]: executing diffoscope
+[2024-05-18 05:20:21] INFO root fetch - processPackages [FirstGame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FirstGame-1.0.5.tar.gz tmp/FirstGame-1.0.6.tar.gz --markdown 20240518/F/FirstGame/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-18 05:20:21] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.5.tar.gz]
+[2024-05-18 05:20:21] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.6.tar.gz]
+[2024-05-18 05:20:21] INFO root fetch - main [MainThread]: End processing [FirstGame]: success
+[2024-05-18 05:20:21] INFO root fetch - main [MainThread]: Store serial: [23264375]
