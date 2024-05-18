@@ -14255,3 +14255,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:36:11] INFO root fetch - processPackages [SparkleLogging]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-1.0.9.tar.gz]
 [2024-05-18 13:36:11] INFO root fetch - main [MainThread]: End processing [SparkleLogging]: success
 [2024-05-18 13:36:11] INFO root fetch - main [MainThread]: Store serial: [23267332]
+[2024-05-18 13:38:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267332]
+[2024-05-18 13:38:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiocmcapi
+[2024-05-18 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchserve-nightly
+[2024-05-18 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-model-archiver-nightly
+[2024-05-18 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-workflow-archiver-nightly
+[2024-05-18 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiosmtpd
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torchserve-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-18 13:38:21] INFO root fetch - processPackages [aiocmcapi]: New version: [0.6.3] Old Version: [0.5]
+[2024-05-18 13:38:21] INFO root fetch - processPackages [aiosmtpd]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/8c/43/921f1201a16b139e5df27112c5f8b7328ee4289bfc10ce1f76883a5ba87d/torchserve_nightly-2024.5.8-py3-none-any.whl
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/39/78/71d3bda9b58dfb022af392de084f78f15d848683db00d19d604fd076ecff/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/38/34/a73ff276b5dc5c3f2e6e02c0282c2f5aedce8951e022f3add74d284d17a6/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl
+[2024-05-18 13:38:21] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 24333047>=10485760
+[2024-05-18 13:38:21] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2024-05-18 13:38:21] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/71/36/f3f67d0df44683e1a1d2554770d44e1555eb4bc4fca81356f7ce8f729e01/aiocmcapi-0.5.tar.gz
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/55/73/d6cac6137d8889445aa6a2fbae4644d9528d66859fb2e8149098c685de95/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/5c/3d/7e9f420b3d052022aab0ce6e49d396d1d147acccfc51748d2cfa54ae3390/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl
+[2024-05-18 13:38:21] INFO root fetch - processPackages [aiosmtpd]: Downloading https://files.pythonhosted.org/packages/da/30/ec2e28136fecc7802849bf117857db980a014a01b75bbead312dd1942d84/aiosmtpd-1.4.5.tar.gz
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240518/t/torch-model-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2024-05-18 13:38:21] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240518/t/torch-workflow-archiver-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-18 13:38:21] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/e1/a2/8048b8d126e88ded44ec83c191a4b98ad420d5fbda44e33774c93cb0bed2/aiocmcapi-0.6.3.tar.gz
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiosmtpd]: Downloading https://files.pythonhosted.org/packages/c4/ca/b2b7cc880403ef24be77383edaadfcf0098f5d7b9ddbf3e2c17ef0a6af0d/aiosmtpd-1.4.6.tar.gz
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiocmcapi]: executing diffoscope
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiocmcapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocmcapi-0.5.tar.gz tmp/aiocmcapi-0.6.3.tar.gz --markdown 20240518/a/aiocmcapi/0.5-0.6.3/README.md --exclude *.pyd
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiosmtpd]: executing diffoscope
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiosmtpd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosmtpd-1.4.5.tar.gz tmp/aiosmtpd-1.4.6.tar.gz --markdown 20240518/a/aiosmtpd/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-05-18 13:38:22] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-18 13:38:22] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_workflow_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-18 13:38:22] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2024-05-18 13:38:22] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-18 13:38:22] INFO root fetch - processPackages [torch-model-archiver-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_archiver_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-18 13:38:22] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.5.tar.gz]
+[2024-05-18 13:38:22] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.6.3.tar.gz]
+[2024-05-18 13:38:22] INFO root fetch - main [MainThread]: End processing [aiocmcapi]: success
+[2024-05-18 13:38:23] INFO root fetch - processPackages [aiosmtpd]: Remove: archive file [/home/abi/fetcher/tmp/aiosmtpd-1.4.5.tar.gz]
+[2024-05-18 13:38:23] INFO root fetch - processPackages [aiosmtpd]: Remove: archive file [/home/abi/fetcher/tmp/aiosmtpd-1.4.6.tar.gz]
+[2024-05-18 13:38:23] INFO root fetch - main [MainThread]: End processing [aiosmtpd]: success
+[2024-05-18 13:38:23] INFO root fetch - main [MainThread]: Store serial: [23267345]
