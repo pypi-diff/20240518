@@ -20035,3 +20035,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:33:13] INFO root fetch - processPackages [MediaStation]: Remove: archive file [/home/abi/fetcher/tmp/MediaStation-0.9.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-18 20:33:13] INFO root fetch - main [MainThread]: End processing [MediaStation]: success
 [2024-05-18 20:33:13] INFO root fetch - main [MainThread]: Store serial: [23270118]
+[2024-05-18 20:35:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270118]
+[2024-05-18 20:35:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 20:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robust-extraction
+[2024-05-18 20:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-account-financial-report
+[2024-05-18 20:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sabctools
+[2024-05-18 20:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coherent.build
+[2024-05-18 20:35:23] INFO root fetch - processPackages [robust-extraction]: New version: [0.2.1] Old Version: [0.1.9]
+[2024-05-18 20:35:23] INFO root fetch - processPackages [coherent.build]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-18 20:35:23] INFO root fetch - processPackages [sabctools]: New version: [8.2.1] Old Version: [8.2.0]
+[2024-05-18 20:35:23] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: New version: [14.0.3.9.3.dev9] Old Version: [14.0.3.9.3.dev6]
+[2024-05-18 20:35:23] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/70/e2/66079b700096c9b2452b033a1b26ddb218b5eea2e4392442bcae03b815ca/odoo14_addon_account_financial_report-14.0.3.9.3.dev6-py3-none-any.whl
+[2024-05-18 20:35:24] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/35/31/10b3bcf0bad37ea153d55f9b39c121567f72ced4b0a4e4cbdbdb0f76464d/coherent_build-0.6.0.tar.gz
+[2024-05-18 20:35:24] INFO root fetch - processPackages [sabctools]: Downloading https://files.pythonhosted.org/packages/e2/5a/73246dbbd6a14ad944fc741b3e6547a8e82c6ca3d982f9648df9fa626a0e/sabctools-8.2.0.tar.gz
+[2024-05-18 20:35:24] INFO root fetch - processPackages [robust-extraction]: Downloading https://files.pythonhosted.org/packages/0d/43/a8bb93d85a7bbbec00eecbb969e011477bfd7816348453ad4d8b6f46a7f2/robust_extraction-0.1.9.tar.gz
+[2024-05-18 20:35:24] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/21/a7/771096313bde3d9574e0eb85bb4291d5412c96e493fa7c05aa1626d3c771/odoo14_addon_account_financial_report-14.0.3.9.3.dev9-py3-none-any.whl
+[2024-05-18 20:35:24] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/90/1d/a3ebec08cd2a07f69be8570ed4b1dcfb06859eebc2fb838a2fb3c87408e9/coherent_build-0.7.0.tar.gz
+[2024-05-18 20:35:24] INFO root fetch - processPackages [sabctools]: Downloading https://files.pythonhosted.org/packages/10/de/97672884bb19f918d0209992e4529ae3816a6f427ee0bb0a61548b40d7d1/sabctools-8.2.1.tar.gz
+[2024-05-18 20:35:24] INFO root fetch - processPackages [robust-extraction]: Downloading https://files.pythonhosted.org/packages/18/95/6aca8a7eebc924ba45bad84336cc47d87fc6b56bcf77d2348e9ab29f35a5/robust_extraction-0.2.1.tar.gz
+[2024-05-18 20:35:24] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: executing diffoscope
+[2024-05-18 20:35:24] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev6-py3-none-any.whl.zip tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-account-financial-report/14.0.3.9.3.dev6-14.0.3.9.3.dev9/README.md --exclude *.pyd
+[2024-05-18 20:35:24] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-18 20:35:24] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.6.0.tar.gz tmp/coherent_build-0.7.0.tar.gz --markdown 20240518/c/coherent.build/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-18 20:35:24] INFO root fetch - processPackages [robust-extraction]: executing diffoscope
+[2024-05-18 20:35:24] INFO root fetch - processPackages [robust-extraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robust_extraction-0.1.9.tar.gz tmp/robust_extraction-0.2.1.tar.gz --markdown 20240518/r/robust-extraction/0.1.9-0.2.1/README.md --exclude *.pyd
+[2024-05-18 20:35:24] INFO root fetch - processPackages [sabctools]: executing diffoscope
+[2024-05-18 20:35:24] INFO root fetch - processPackages [sabctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabctools-8.2.0.tar.gz tmp/sabctools-8.2.1.tar.gz --markdown 20240518/s/sabctools/8.2.0-8.2.1/README.md --exclude *.pyd
+[2024-05-18 20:35:25] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.6.0.tar.gz]
+[2024-05-18 20:35:25] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.7.0.tar.gz]
+[2024-05-18 20:35:25] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-18 20:35:25] INFO root fetch - processPackages [robust-extraction]: Remove: archive file [/home/abi/fetcher/tmp/robust_extraction-0.1.9.tar.gz]
+[2024-05-18 20:35:25] INFO root fetch - processPackages [robust-extraction]: Remove: archive file [/home/abi/fetcher/tmp/robust_extraction-0.2.1.tar.gz]
+[2024-05-18 20:35:25] INFO root fetch - main [MainThread]: End processing [robust-extraction]: success
+[2024-05-18 20:35:25] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev6-py3-none-any.whl.zip]
+[2024-05-18 20:35:25] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev9-py3-none-any.whl.zip]
+[2024-05-18 20:35:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-financial-report]: success
+[2024-05-18 20:35:25] INFO root fetch - processPackages [sabctools]: Remove: archive file [/home/abi/fetcher/tmp/sabctools-8.2.0.tar.gz]
+[2024-05-18 20:35:25] INFO root fetch - processPackages [sabctools]: Remove: archive file [/home/abi/fetcher/tmp/sabctools-8.2.1.tar.gz]
+[2024-05-18 20:35:25] INFO root fetch - main [MainThread]: End processing [sabctools]: success
+[2024-05-18 20:35:25] INFO root fetch - main [MainThread]: Store serial: [23270174]
