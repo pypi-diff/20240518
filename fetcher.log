@@ -6770,3 +6770,15 @@
 [2024-05-18 03:32:31] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715961641.tar.gz]
 [2024-05-18 03:32:31] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-18 03:32:31] INFO root fetch - main [MainThread]: Store serial: [23263722]
+[2024-05-18 03:34:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263722]
+[2024-05-18 03:34:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 03:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abcli
+[2024-05-18 03:34:40] INFO root fetch - processPackages [abcli]: New version: [8.170.1] Old Version: [8.168.1]
+[2024-05-18 03:34:40] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e6/e0/f2da8eb93e4c6059ab84df502d604eae283cc62ae2f82da1dfa5919ba8b7/abcli-8.168.1.tar.gz
+[2024-05-18 03:34:41] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/f1/1d/9e00db0aeb298b614361841618c5bf87be2e40e1366b525fa89f09cd40f3/abcli-8.170.1.tar.gz
+[2024-05-18 03:34:41] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-18 03:34:41] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.168.1.tar.gz tmp/abcli-8.170.1.tar.gz --markdown 20240518/a/abcli/8.168.1-8.170.1/README.md --exclude *.pyd
+[2024-05-18 03:34:41] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.168.1.tar.gz]
+[2024-05-18 03:34:41] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.170.1.tar.gz]
+[2024-05-18 03:34:41] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-18 03:34:41] INFO root fetch - main [MainThread]: Store serial: [23263747]
