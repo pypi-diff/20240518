@@ -13313,3 +13313,54 @@
 [2024-05-18 12:22:21] INFO root fetch - processPackages [fastapi-keycloak-middleware]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_keycloak_middleware-0.4.2.tar.gz]
 [2024-05-18 12:22:21] INFO root fetch - main [MainThread]: End processing [fastapi-keycloak-middleware]: success
 [2024-05-18 12:22:21] INFO root fetch - main [MainThread]: Store serial: [23266881]
+[2024-05-18 12:24:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266881]
+[2024-05-18 12:24:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 12:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyguiadapter
+[2024-05-18 12:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lycoris-lora
+[2024-05-18 12:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CRR
+[2024-05-18 12:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tweeterpy
+[2024-05-18 12:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: underfeelz
+[2024-05-18 12:24:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rag4p
+[2024-05-18 12:24:30] INFO root fetch - processPackages [CRR]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 12:24:30] INFO root fetch - processPackages [tweeterpy]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-18 12:24:30] INFO root fetch - processPackages [rag4p]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 12:24:30] WARNING root fetch - processPackages [underfeelz]: Skipping, unable to determine old version
+[2024-05-18 12:24:30] INFO root fetch - main [MainThread]: End processing [underfeelz] error
+[2024-05-18 12:24:30] INFO root fetch - processPackages [tweeterpy]: Downloading https://files.pythonhosted.org/packages/b9/01/b5b1e86b73a56f3d6364209a7b2faca53aa809843a7a9e3a875edfa95a2b/tweeterpy-1.1.0.tar.gz
+[2024-05-18 12:24:30] INFO root fetch - processPackages [rag4p]: Downloading https://files.pythonhosted.org/packages/db/68/546a750228f3cd517be4b88f7715cdcf5cbe3a0c9dc07f04a952c11e7710/rag4p-0.2.2.tar.gz
+[2024-05-18 12:24:30] INFO root fetch - processPackages [pyguiadapter]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-18 12:24:30] INFO root fetch - processPackages [lycoris-lora]: New version: [3.0.0.dev1] Old Version: [2.3.0.dev9]
+[2024-05-18 12:24:30] INFO root fetch - processPackages [CRR]: Downloading https://files.pythonhosted.org/packages/3e/0c/21bd4fec9afd0d5aef83e94225422bcec24669731cbc54a0c6a905b83287/CRR-0.0.1.tar.gz
+[2024-05-18 12:24:30] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/54/d4/a1a34883153a5cc663a0324cdfd1a4d1f3b94b352adb8b5f21fd9fd61be9/pyguiadapter-0.3.8.tar.gz
+[2024-05-18 12:24:30] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/d2/76/b9b8612cf8e9e812055d7f98dec84386109b39d02af8977ab7cea3d3d785/lycoris_lora-2.3.0.dev9.tar.gz
+[2024-05-18 12:24:30] INFO root fetch - processPackages [rag4p]: Downloading https://files.pythonhosted.org/packages/13/8b/e605bf849b03ed8e50070557ba2f5edf416b84d2fccb14d8389b215a375c/rag4p-0.2.3.tar.gz
+[2024-05-18 12:24:31] INFO root fetch - processPackages [tweeterpy]: Downloading https://files.pythonhosted.org/packages/f6/b8/5f988832e51808269771957644fd70ad4819ebd31c55f9b26c28d899fba3/tweeterpy-1.1.1.tar.gz
+[2024-05-18 12:24:31] INFO root fetch - processPackages [rag4p]: executing diffoscope
+[2024-05-18 12:24:31] INFO root fetch - processPackages [rag4p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag4p-0.2.2.tar.gz tmp/rag4p-0.2.3.tar.gz --markdown 20240518/r/rag4p/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 12:24:31] INFO root fetch - processPackages [CRR]: Downloading https://files.pythonhosted.org/packages/52/c0/14fe4fc11f403b79069bdf8da7381520f8354582a49ae9ca68c10e530fe3/crr-0.0.2.tar.gz
+[2024-05-18 12:24:31] INFO root fetch - processPackages [tweeterpy]: executing diffoscope
+[2024-05-18 12:24:31] INFO root fetch - processPackages [tweeterpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweeterpy-1.1.0.tar.gz tmp/tweeterpy-1.1.1.tar.gz --markdown 20240518/t/tweeterpy/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-18 12:24:31] INFO root fetch - processPackages [CRR]: executing diffoscope
+[2024-05-18 12:24:31] INFO root fetch - processPackages [CRR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CRR-0.0.1.tar.gz tmp/crr-0.0.2.tar.gz --markdown 20240518/C/CRR/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 12:24:31] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/fc/60/f2285a116491c6c6de7151c07f307181ba4d31f9c70be07d8fa5b5ae77f3/pyguiadapter-0.3.9.tar.gz
+[2024-05-18 12:24:31] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/37/37/3db452d29f3809ec79beaf59a62112fff1f51d05a9aa5e2c642448e4c77f/lycoris_lora-3.0.0.dev1.tar.gz
+[2024-05-18 12:24:31] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2024-05-18 12:24:31] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-2.3.0.dev9.tar.gz tmp/lycoris_lora-3.0.0.dev1.tar.gz --markdown 20240518/l/lycoris-lora/2.3.0.dev9-3.0.0.dev1/README.md --exclude *.pyd
+[2024-05-18 12:24:31] INFO root fetch - processPackages [pyguiadapter]: executing diffoscope
+[2024-05-18 12:24:31] INFO root fetch - processPackages [pyguiadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyguiadapter-0.3.8.tar.gz tmp/pyguiadapter-0.3.9.tar.gz --markdown 20240518/p/pyguiadapter/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-18 12:24:31] INFO root fetch - processPackages [CRR]: Remove: archive file [/home/abi/fetcher/tmp/CRR-0.0.1.tar.gz]
+[2024-05-18 12:24:31] INFO root fetch - processPackages [CRR]: Remove: archive file [/home/abi/fetcher/tmp/crr-0.0.2.tar.gz]
+[2024-05-18 12:24:31] INFO root fetch - main [MainThread]: End processing [CRR]: success
+[2024-05-18 12:24:31] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.1.0.tar.gz]
+[2024-05-18 12:24:31] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.1.1.tar.gz]
+[2024-05-18 12:24:31] INFO root fetch - main [MainThread]: End processing [tweeterpy]: success
+[2024-05-18 12:24:31] INFO root fetch - processPackages [rag4p]: Remove: archive file [/home/abi/fetcher/tmp/rag4p-0.2.2.tar.gz]
+[2024-05-18 12:24:31] INFO root fetch - processPackages [rag4p]: Remove: archive file [/home/abi/fetcher/tmp/rag4p-0.2.3.tar.gz]
+[2024-05-18 12:24:31] INFO root fetch - main [MainThread]: End processing [rag4p]: success
+[2024-05-18 12:24:32] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-2.3.0.dev9.tar.gz]
+[2024-05-18 12:24:32] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-3.0.0.dev1.tar.gz]
+[2024-05-18 12:24:32] INFO root fetch - main [MainThread]: End processing [lycoris-lora]: success
+[2024-05-18 12:24:32] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.8.tar.gz]
+[2024-05-18 12:24:32] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.9.tar.gz]
+[2024-05-18 12:24:32] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
+[2024-05-18 12:24:32] INFO root fetch - main [MainThread]: Store serial: [23266900]
