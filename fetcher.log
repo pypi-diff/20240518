@@ -22024,3 +22024,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:08:47] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.99.tar.gz]
 [2024-05-18 23:08:47] INFO root fetch - main [MainThread]: End processing [parea-ai]: success
 [2024-05-18 23:08:47] INFO root fetch - main [MainThread]: Store serial: [23271236]
+[2024-05-18 23:10:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271236]
+[2024-05-18 23:10:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 23:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: table2text
+[2024-05-18 23:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: detenuez
+[2024-05-18 23:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-road
+[2024-05-18 23:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hexdoc-hexdebug
+[2024-05-18 23:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: attributee
+[2024-05-18 23:10:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-allauth-ui
+[2024-05-18 23:10:56] INFO root fetch - processPackages [my-road]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 23:10:56] INFO root fetch - processPackages [hexdoc-hexdebug]: New version: [0.1.1.1.20.1.1.0] Old Version: [0.1.0.1.20.1.1.0.dev0]
+[2024-05-18 23:10:56] WARNING root fetch - processPackages [table2text]: Skipping, unable to determine old version
+[2024-05-18 23:10:56] INFO root fetch - main [MainThread]: End processing [table2text] error
+[2024-05-18 23:10:56] INFO root fetch - processPackages [attributee]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 23:10:56] WARNING root fetch - processPackages [detenuez]: Skipping, unable to determine old version
+[2024-05-18 23:10:56] INFO root fetch - main [MainThread]: End processing [detenuez] error
+[2024-05-18 23:10:56] INFO root fetch - processPackages [django-allauth-ui]: New version: [0.3.0] Old Version: [0.2.2]
+[2024-05-18 23:10:56] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/8a/73/e66efcc1e9f5e5567ce6bfec4c53dfbd3997d7d1e1c045bdbbbba9e628e1/my_road-1.0.1.tar.gz
+[2024-05-18 23:10:56] INFO root fetch - processPackages [hexdoc-hexdebug]: Downloading https://files.pythonhosted.org/packages/bc/4e/fb1456ab69251aec661a1777c9af87d31e589a2abd618ef6343332f92d60/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz
+[2024-05-18 23:10:56] INFO root fetch - processPackages [django-allauth-ui]: Downloading https://files.pythonhosted.org/packages/e5/a3/841fa604038d54b01d2cf510e47c88937d66254cdc43aeba4aa4bdef4889/django_allauth_ui-0.2.2.tar.gz
+[2024-05-18 23:10:56] INFO root fetch - processPackages [attributee]: Downloading https://files.pythonhosted.org/packages/bd/d7/df9143416157b28e9639d13cae2d00de061d5d5e334cf9879ed9db8cc5e5/attributee-0.1.8.tar.gz
+[2024-05-18 23:10:56] INFO root fetch - processPackages [hexdoc-hexdebug]: Downloading https://files.pythonhosted.org/packages/a6/dc/59cae7af16041f974ea8a746e60556ccc108c7f38fabc900534d311336f5/hexdoc_hexdebug-0.1.1.1.20.1.1.0.tar.gz
+[2024-05-18 23:10:56] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/8e/0b/c2cdbd1f11f18c56904969c809e82d195f57ecbb106b8b1e5614dbdd53fe/my_road-1.0.2.tar.gz
+[2024-05-18 23:10:57] INFO root fetch - processPackages [hexdoc-hexdebug]: executing diffoscope
+[2024-05-18 23:10:57] INFO root fetch - processPackages [hexdoc-hexdebug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz tmp/hexdoc_hexdebug-0.1.1.1.20.1.1.0.tar.gz --markdown 20240518/h/hexdoc-hexdebug/0.1.0.1.20.1.1.0.dev0-0.1.1.1.20.1.1.0/README.md --exclude *.pyd
+[2024-05-18 23:10:57] INFO root fetch - processPackages [my-road]: executing diffoscope
+[2024-05-18 23:10:57] INFO root fetch - processPackages [my-road]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_road-1.0.1.tar.gz tmp/my_road-1.0.2.tar.gz --markdown 20240518/m/my-road/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 23:10:57] INFO root fetch - processPackages [attributee]: Downloading https://files.pythonhosted.org/packages/03/ef/5474c00800d0b52149907702b78a49627618d74f5da81c8708288378a200/attributee-0.1.9.tar.gz
+[2024-05-18 23:10:57] INFO root fetch - processPackages [django-allauth-ui]: Downloading https://files.pythonhosted.org/packages/d8/fa/243b055450d2af3a82454d07dcc2d6a30c148e503c493df705e75bde239f/django_allauth_ui-0.3.0.tar.gz
+[2024-05-18 23:10:57] INFO root fetch - processPackages [attributee]: executing diffoscope
+[2024-05-18 23:10:57] INFO root fetch - processPackages [attributee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attributee-0.1.8.tar.gz tmp/attributee-0.1.9.tar.gz --markdown 20240518/a/attributee/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 23:10:57] INFO root fetch - processPackages [django-allauth-ui]: executing diffoscope
+[2024-05-18 23:10:57] INFO root fetch - processPackages [django-allauth-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_allauth_ui-0.2.2.tar.gz tmp/django_allauth_ui-0.3.0.tar.gz --markdown 20240518/d/django-allauth-ui/0.2.2-0.3.0/README.md --exclude *.pyd
+[2024-05-18 23:10:57] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-1.0.1.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-1.0.2.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - main [MainThread]: End processing [my-road]: success
+[2024-05-18 23:10:57] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.1.1.20.1.1.0.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - main [MainThread]: End processing [hexdoc-hexdebug]: success
+[2024-05-18 23:10:57] INFO root fetch - processPackages [attributee]: Remove: archive file [/home/abi/fetcher/tmp/attributee-0.1.8.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - processPackages [attributee]: Remove: archive file [/home/abi/fetcher/tmp/attributee-0.1.9.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - main [MainThread]: End processing [attributee]: success
+[2024-05-18 23:10:57] INFO root fetch - processPackages [django-allauth-ui]: Remove: archive file [/home/abi/fetcher/tmp/django_allauth_ui-0.2.2.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - processPackages [django-allauth-ui]: Remove: archive file [/home/abi/fetcher/tmp/django_allauth_ui-0.3.0.tar.gz]
+[2024-05-18 23:10:57] INFO root fetch - main [MainThread]: End processing [django-allauth-ui]: success
+[2024-05-18 23:10:57] INFO root fetch - main [MainThread]: Store serial: [23271255]
