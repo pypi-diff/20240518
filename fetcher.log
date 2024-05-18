@@ -18789,3 +18789,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:16:59] INFO root fetch - processPackages [nomadnet]: Remove: archive file [/home/abi/fetcher/tmp/nomadnet-0.4.9.tar.gz]
 [2024-05-18 19:16:59] INFO root fetch - main [MainThread]: End processing [nomadnet]: success
 [2024-05-18 19:16:59] INFO root fetch - main [MainThread]: Store serial: [23269562]
+[2024-05-18 19:19:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269562]
+[2024-05-18 19:19:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 19:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amethyst-rdkit
+[2024-05-18 19:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: buckhoundz
+[2024-05-18 19:19:09] WARNING root fetch - processPackages [amethyst-rdkit]: Skipping, unable to determine old version
+[2024-05-18 19:19:09] INFO root fetch - main [MainThread]: End processing [amethyst-rdkit] error
+[2024-05-18 19:19:09] WARNING root fetch - processPackages [buckhoundz]: Skipping, unable to determine old version
+[2024-05-18 19:19:09] INFO root fetch - main [MainThread]: End processing [buckhoundz] error
+[2024-05-18 19:19:09] INFO root fetch - main [MainThread]: Store serial: [23269571]
