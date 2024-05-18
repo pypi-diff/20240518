@@ -10752,3 +10752,27 @@
 [2024-05-18 08:41:50] INFO root fetch - processPackages [odoo-addon-sign-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sign_oca-16.0.2.0.0-py3-none-any.whl.zip]
 [2024-05-18 08:41:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-sign-oca]: success
 [2024-05-18 08:41:50] INFO root fetch - main [MainThread]: Store serial: [23265371]
+[2024-05-18 08:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265371]
+[2024-05-18 08:43:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 08:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rsam-ew
+[2024-05-18 08:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mpservice
+[2024-05-18 08:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myxinoideiz
+[2024-05-18 08:43:59] WARNING root fetch - processPackages [myxinoideiz]: Skipping, unable to determine old version
+[2024-05-18 08:43:59] INFO root fetch - main [MainThread]: End processing [myxinoideiz] error
+[2024-05-18 08:43:59] INFO root fetch - processPackages [rsam-ew]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-18 08:43:59] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2024-05-18 08:43:59] INFO root fetch - processPackages [rsam-ew]: Downloading https://files.pythonhosted.org/packages/00/f8/61c9af0f045e12829552bd300e503194199f7cb47dda029506a213427b57/rsam_ew-1.1.0.tar.gz
+[2024-05-18 08:44:00] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2024-05-18 08:44:00] INFO root fetch - processPackages [rsam-ew]: Downloading https://files.pythonhosted.org/packages/e9/95/727825cfcff7e8e3c2552278f69e95ba49cef8a8cfc327616c9177485cd0/rsam_ew-1.2.0.tar.gz
+[2024-05-18 08:44:00] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2024-05-18 08:44:00] INFO root fetch - processPackages [rsam-ew]: executing diffoscope
+[2024-05-18 08:44:00] INFO root fetch - processPackages [rsam-ew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsam_ew-1.1.0.tar.gz tmp/rsam_ew-1.2.0.tar.gz --markdown 20240518/r/rsam-ew/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-18 08:44:00] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2024-05-18 08:44:00] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20240518/m/mpservice/0.9.9-0.9.9.post1/README.md --exclude *.pyd
+[2024-05-18 08:44:00] INFO root fetch - processPackages [rsam-ew]: Remove: archive file [/home/abi/fetcher/tmp/rsam_ew-1.1.0.tar.gz]
+[2024-05-18 08:44:00] INFO root fetch - processPackages [rsam-ew]: Remove: archive file [/home/abi/fetcher/tmp/rsam_ew-1.2.0.tar.gz]
+[2024-05-18 08:44:00] INFO root fetch - main [MainThread]: End processing [rsam-ew]: success
+[2024-05-18 08:44:00] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.tar.gz]
+[2024-05-18 08:44:00] INFO root fetch - processPackages [mpservice]: Remove: archive file [/home/abi/fetcher/tmp/mpservice-0.9.9.post1.tar.gz]
+[2024-05-18 08:44:00] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2024-05-18 08:44:00] INFO root fetch - main [MainThread]: Store serial: [23265410]
