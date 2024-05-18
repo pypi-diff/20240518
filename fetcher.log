@@ -12867,3 +12867,69 @@
 [2024-05-18 11:39:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
 [2024-05-18 11:39:02] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-18 11:39:02] INFO root fetch - main [MainThread]: Store serial: [23266691]
+[2024-05-18 11:41:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266691]
+[2024-05-18 11:41:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colabexts
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fnschool
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: way3
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vesselasid
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotframework-browser-translation-fi
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: manga-scrape
+[2024-05-18 11:41:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: BigEDA
+[2024-05-18 11:41:11] INFO root fetch - processPackages [way3]: New version: [0.0.27] Old Version: [0.0.25]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [fnschool]: New version: [20240518.115.13] Old Version: [20240517.37.59]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [vesselasid]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [colabexts]: New version: [0.12200000000000003] Old Version: [0.12100000000000002]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/2e/26/389db992891fcd4eae4c1f80061c243672ebec223c869c62f8cc990f279f/way3-0.0.25.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/35/fd/3e4356843454a3cd20a22270aa45e29bb15b26704f93d376aa6d6de7986e/fnschool-20240517.37.59.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [robotframework-browser-translation-fi]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [manga-scrape]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-05-18 11:41:11] INFO root fetch - processPackages [vesselasid]: Downloading https://files.pythonhosted.org/packages/a2/14/baf06cb7af9f5a80ebfeb8f960dbb13c70196f61bd5759c357fe5dacd0ea/vesselasid-1.0.8.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [colabexts]: Downloading https://files.pythonhosted.org/packages/df/81/696ff729bb3e852ea878a2187ed1fc87c2fa4fbe57383b34f7e4881ef069/colabexts-0.12100000000000002.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [manga-scrape]: Downloading https://files.pythonhosted.org/packages/bd/f8/0b1c4e019f16b186ed6cc5e5d90e416c4c610bdffb21fae5a0c787b18513/manga_scrape-4.8.0.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Downloading https://files.pythonhosted.org/packages/79/78/a9c6dc9ae1511cb2768d82f0260c8607550e548ad9f8d74adf07a6d42be1/robotframework_browser_translation_fi-0.5.2.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [vesselasid]: Downloading https://files.pythonhosted.org/packages/81/b5/ae62f72cdc101114a8434c7f5b8a6946677975c20649428b068f8f9f1afc/vesselasid-1.0.9.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [fnschool]: Downloading https://files.pythonhosted.org/packages/ad/46/22383a43ca802bef1c7b97a7590abad225c5e66435809ba84d00bee1551e/fnschool-20240518.115.13.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/93/0d/05c407dbfedb5936de239f22d1c23e08f01d291d5a1bc0fcabac1fc3ff35/way3-0.0.27.tar.gz
+[2024-05-18 11:41:11] INFO root fetch - processPackages [vesselasid]: executing diffoscope
+[2024-05-18 11:41:11] INFO root fetch - processPackages [vesselasid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselasid-1.0.8.tar.gz tmp/vesselasid-1.0.9.tar.gz --markdown 20240518/v/vesselasid/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 11:41:11] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 11:41:11] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 11:41:11] INFO root fetch - processPackages [way3]: executing diffoscope
+[2024-05-18 11:41:11] INFO root fetch - processPackages [way3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/way3-0.0.25.tar.gz tmp/way3-0.0.27.tar.gz --markdown 20240518/w/way3/0.0.25-0.0.27/README.md --exclude *.pyd
+[2024-05-18 11:41:12] INFO root fetch - processPackages [fnschool]: executing diffoscope
+[2024-05-18 11:41:12] INFO root fetch - processPackages [fnschool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fnschool-20240517.37.59.tar.gz tmp/fnschool-20240518.115.13.tar.gz --markdown 20240518/f/fnschool/20240517.37.59-20240518.115.13/README.md --exclude *.pyd
+[2024-05-18 11:41:12] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Downloading https://files.pythonhosted.org/packages/8b/04/eb157bd8523e25d8396ace9495e522363046c939706e260183074a2f38fa/robotframework_browser_translation_fi-0.6.0.tar.gz
+[2024-05-18 11:41:12] INFO root fetch - processPackages [colabexts]: Downloading https://files.pythonhosted.org/packages/00/3c/ed78ecf4a248c6b440cf971aea945331c2773092880b639dcd8bc02a50cf/colabexts-0.12200000000000003.tar.gz
+[2024-05-18 11:41:12] INFO root fetch - processPackages [manga-scrape]: Downloading https://files.pythonhosted.org/packages/2b/c5/ce06b355f4b6a9087524a466a76eb5a124e0fe06d2a3d0326e3693d1f160/manga_scrape-4.9.0.tar.gz
+[2024-05-18 11:41:12] INFO root fetch - processPackages [colabexts]: executing diffoscope
+[2024-05-18 11:41:12] INFO root fetch - processPackages [colabexts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colabexts-0.12100000000000002.tar.gz tmp/colabexts-0.12200000000000003.tar.gz --markdown 20240518/c/colabexts/0.12100000000000002-0.12200000000000003/README.md --exclude *.pyd
+[2024-05-18 11:41:12] INFO root fetch - processPackages [robotframework-browser-translation-fi]: executing diffoscope
+[2024-05-18 11:41:12] INFO root fetch - processPackages [robotframework-browser-translation-fi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_browser_translation_fi-0.5.2.tar.gz tmp/robotframework_browser_translation_fi-0.6.0.tar.gz --markdown 20240518/r/robotframework-browser-translation-fi/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-05-18 11:41:12] INFO root fetch - processPackages [manga-scrape]: executing diffoscope
+[2024-05-18 11:41:12] INFO root fetch - processPackages [manga-scrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manga_scrape-4.8.0.tar.gz tmp/manga_scrape-4.9.0.tar.gz --markdown 20240518/m/manga-scrape/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-05-18 11:41:12] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.25.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.27.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - main [MainThread]: End processing [way3]: success
+[2024-05-18 11:41:12] INFO root fetch - processPackages [vesselasid]: Remove: archive file [/home/abi/fetcher/tmp/vesselasid-1.0.8.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - processPackages [vesselasid]: Remove: archive file [/home/abi/fetcher/tmp/vesselasid-1.0.9.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - main [MainThread]: End processing [vesselasid]: success
+[2024-05-18 11:41:12] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 11:41:12] INFO root fetch - processPackages [colabexts]: Remove: archive file [/home/abi/fetcher/tmp/colabexts-0.12100000000000002.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - processPackages [colabexts]: Remove: archive file [/home/abi/fetcher/tmp/colabexts-0.12200000000000003.tar.gz]
+[2024-05-18 11:41:12] INFO root fetch - main [MainThread]: End processing [colabexts]: success
+[2024-05-18 11:41:13] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240517.37.59.tar.gz]
+[2024-05-18 11:41:13] INFO root fetch - processPackages [fnschool]: Remove: archive file [/home/abi/fetcher/tmp/fnschool-20240518.115.13.tar.gz]
+[2024-05-18 11:41:13] INFO root fetch - main [MainThread]: End processing [fnschool]: success
+[2024-05-18 11:41:13] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_browser_translation_fi-0.5.2.tar.gz]
+[2024-05-18 11:41:13] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_browser_translation_fi-0.6.0.tar.gz]
+[2024-05-18 11:41:13] INFO root fetch - main [MainThread]: End processing [robotframework-browser-translation-fi]: success
+[2024-05-18 11:41:13] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.8.0.tar.gz]
+[2024-05-18 11:41:13] INFO root fetch - processPackages [manga-scrape]: Remove: archive file [/home/abi/fetcher/tmp/manga_scrape-4.9.0.tar.gz]
+[2024-05-18 11:41:13] INFO root fetch - main [MainThread]: End processing [manga-scrape]: success
+[2024-05-18 11:41:13] INFO root fetch - main [MainThread]: Store serial: [23266711]
