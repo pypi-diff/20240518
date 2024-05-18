@@ -11223,3 +11223,9 @@
 [2024-05-18 09:16:46] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
 [2024-05-18 09:16:46] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2024-05-18 09:16:46] INFO root fetch - main [MainThread]: Store serial: [23265653]
+[2024-05-18 09:18:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265653]
+[2024-05-18 09:18:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 09:18:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transipy
+[2024-05-18 09:18:54] WARNING root fetch - processPackages [transipy]: Skipping, unable to determine old version
+[2024-05-18 09:18:54] INFO root fetch - main [MainThread]: End processing [transipy] error
+[2024-05-18 09:18:54] INFO root fetch - main [MainThread]: Store serial: [23265656]
