@@ -9611,3 +9611,24 @@
 [2024-05-18 07:02:24] INFO root fetch - processPackages [loadspinner]: Remove: archive file [/home/abi/fetcher/tmp/loadspinner-0.5.tar.gz]
 [2024-05-18 07:02:24] INFO root fetch - main [MainThread]: End processing [loadspinner]: success
 [2024-05-18 07:02:24] INFO root fetch - main [MainThread]: Store serial: [23264844]
+[2024-05-18 07:04:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264844]
+[2024-05-18 07:04:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 07:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devon-agent
+[2024-05-18 07:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bank-scrapers
+[2024-05-18 07:04:32] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-18 07:04:32] INFO root fetch - processPackages [devon-agent]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 07:04:32] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/ca/cf/8fc6efdfb51f9364dfe7b475864ca82f302ff35627b05c89cdc035141502/bank_scrapers-1.0.4.tar.gz
+[2024-05-18 07:04:32] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/e5/94/5a2e780b708e7a3038b1e84c95f895c64abce7345653f8eb7eb64f72559c/devon_agent-0.1.6.tar.gz
+[2024-05-18 07:04:32] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/11/ea/dd549101f84bd5c631ba47804a36c9c33f105e63b9737d84b49346e8bfe5/bank_scrapers-1.0.5.tar.gz
+[2024-05-18 07:04:33] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 07:04:33] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.4.tar.gz tmp/bank_scrapers-1.0.5.tar.gz --markdown 20240518/b/bank-scrapers/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-18 07:04:33] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/4b/b3/f4a5c5ff8019499c6f58939b1ce69e9501c4735d7b4fcb6ba9f9365cfe89/devon_agent-0.1.7.tar.gz
+[2024-05-18 07:04:33] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-18 07:04:33] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.6.tar.gz tmp/devon_agent-0.1.7.tar.gz --markdown 20240518/d/devon-agent/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 07:04:33] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.4.tar.gz]
+[2024-05-18 07:04:33] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.5.tar.gz]
+[2024-05-18 07:04:33] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 07:04:34] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.6.tar.gz]
+[2024-05-18 07:04:34] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.7.tar.gz]
+[2024-05-18 07:04:34] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-18 07:04:34] INFO root fetch - main [MainThread]: Store serial: [23264850]
