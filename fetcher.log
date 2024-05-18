@@ -9119,3 +9119,24 @@
 [2024-05-18 06:10:29] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-05-18 06:10:29] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-05-18 06:10:29] INFO root fetch - main [MainThread]: Store serial: [23264628]
+[2024-05-18 06:12:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264628]
+[2024-05-18 06:12:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: featureform-enterprise
+[2024-05-18 06:12:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-helpdesk-motive
+[2024-05-18 06:12:38] INFO root fetch - processPackages [featureform-enterprise]: New version: [0.13.9] Old Version: [0.13.8rc1]
+[2024-05-18 06:12:38] INFO root fetch - processPackages [featureform-enterprise]: Downloading https://files.pythonhosted.org/packages/43/8a/c03938ad0cd2893595e362dd5b194983490daa635f4356551848cb92943d/featureform_enterprise-0.13.8rc1.tar.gz
+[2024-05-18 06:12:38] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: New version: [14.0.1.0.4.dev7] Old Version: [14.0.1.0.4.dev6]
+[2024-05-18 06:12:38] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: Downloading https://files.pythonhosted.org/packages/a7/70/206d5ae8c0ff9dfc5c92a49f4d657ba06e9c72b76e84442d1af9217090e0/odoo14_addon_helpdesk_motive-14.0.1.0.4.dev6-py3-none-any.whl
+[2024-05-18 06:12:38] INFO root fetch - processPackages [featureform-enterprise]: Downloading https://files.pythonhosted.org/packages/39/bb/57d83cef3f3872f1518035317d856894f036fe954bac5b805677e753fe76/featureform_enterprise-0.13.9.tar.gz
+[2024-05-18 06:12:38] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: Downloading https://files.pythonhosted.org/packages/2b/5e/21b26845c748a3854c1e140b78e77cd16972d51ba065c5fb1e8ba81e3784/odoo14_addon_helpdesk_motive-14.0.1.0.4.dev7-py3-none-any.whl
+[2024-05-18 06:12:38] INFO root fetch - processPackages [featureform-enterprise]: executing diffoscope
+[2024-05-18 06:12:38] INFO root fetch - processPackages [featureform-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featureform_enterprise-0.13.8rc1.tar.gz tmp/featureform_enterprise-0.13.9.tar.gz --markdown 20240518/f/featureform-enterprise/0.13.8rc1-0.13.9/README.md --exclude *.pyd
+[2024-05-18 06:12:38] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: executing diffoscope
+[2024-05-18 06:12:38] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_motive-14.0.1.0.4.dev6-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_motive-14.0.1.0.4.dev7-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-helpdesk-motive/14.0.1.0.4.dev6-14.0.1.0.4.dev7/README.md --exclude *.pyd
+[2024-05-18 06:12:39] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_helpdesk_motive-14.0.1.0.4.dev6-py3-none-any.whl.zip]
+[2024-05-18 06:12:39] INFO root fetch - processPackages [odoo14-addon-helpdesk-motive]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_helpdesk_motive-14.0.1.0.4.dev7-py3-none-any.whl.zip]
+[2024-05-18 06:12:39] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-motive]: success
+[2024-05-18 06:12:40] INFO root fetch - processPackages [featureform-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/featureform_enterprise-0.13.8rc1.tar.gz]
+[2024-05-18 06:12:40] INFO root fetch - processPackages [featureform-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/featureform_enterprise-0.13.9.tar.gz]
+[2024-05-18 06:12:40] INFO root fetch - main [MainThread]: End processing [featureform-enterprise]: success
+[2024-05-18 06:12:40] INFO root fetch - main [MainThread]: Store serial: [23264633]
