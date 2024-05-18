@@ -7334,3 +7334,58 @@
 [2024-05-18 04:24:31] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-05-18 04:24:31] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-05-18 04:24:31] INFO root fetch - main [MainThread]: Store serial: [23263961]
+[2024-05-18 04:26:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263961]
+[2024-05-18 04:26:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inventoryz
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: karellen-llvm-clang
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: karellen-llvm-core
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iam-actions
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: karellen-llvm-toolchain-tools
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: turntable-cli
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: FirstGame
+[2024-05-18 04:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: naif-eop-high-prec
+[2024-05-18 04:26:41] INFO root fetch - processPackages [karellen-llvm-core]: New version: [18.1.5.0.post39] Old Version: [18.1.5.0.post37]
+[2024-05-18 04:26:41] WARNING root fetch - processPackages [FirstGame]: Skipping, unable to determine old version
+[2024-05-18 04:26:41] INFO root fetch - main [MainThread]: End processing [FirstGame] error
+[2024-05-18 04:26:41] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: New version: [18.1.5.0.post39] Old Version: [18.1.5.0.post37]
+[2024-05-18 04:26:41] INFO root fetch - processPackages [turntable-cli]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-18 04:26:41] INFO root fetch - processPackages [naif-eop-high-prec]: New version: [2024.5.17] Old Version: [2024.5.16]
+[2024-05-18 04:26:41] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240517] Old Version: [1.2.20240516]
+[2024-05-18 04:26:41] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/35/c1/840fe43e743c93a5a5f265169765281ccbb38a1ae5184f7b0de40b3240d4/karellen_llvm_toolchain_tools-18.1.5.0.post37-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 04:26:41] WARNING root fetch - processPackages [inventoryz]: Skipping, unable to determine old version
+[2024-05-18 04:26:41] INFO root fetch - main [MainThread]: End processing [inventoryz] error
+[2024-05-18 04:26:41] INFO root fetch - processPackages [karellen-llvm-clang]: New version: [18.1.5.0.post45] Old Version: [18.1.5.0.post39]
+[2024-05-18 04:26:41] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/7e/73/954b9ff0054199abad8d7ccaa691b9e4d3c02ca146d1e7b4f984f9b99578/naif_eop_high_prec-2024.5.16.tar.gz
+[2024-05-18 04:26:42] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/5f/6d/4a546b668e56ea561dde4acb6ed80e8d0a22ada69968c3bf51228204f414/iam_actions-1.2.20240516.tar.gz
+[2024-05-18 04:26:42] INFO root fetch - processPackages [turntable-cli]: Downloading https://files.pythonhosted.org/packages/8e/d0/2c7af892beba1267baaab67ca42e2b83ef14a9a74094c24f72007dee2b64/turntable_cli-0.3.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 04:26:42] INFO root fetch - processPackages [karellen-llvm-core]: Downloading https://files.pythonhosted.org/packages/ed/de/7391e52e4e05be8c3da7c33d1f127b5d9035288f87be931473c16d75e4ca/karellen_llvm_core-18.1.5.0.post37-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 04:26:42] WARNING root fetch - processPackages [karellen-llvm-core]: Skipping package: exceeds size limit 28600702>=10485760
+[2024-05-18 04:26:42] INFO root fetch - main [MainThread]: End processing [karellen-llvm-core] error
+[2024-05-18 04:26:42] INFO root fetch - processPackages [karellen-llvm-clang]: Downloading https://files.pythonhosted.org/packages/aa/79/4c6ff43a2ca67eefff5ef538d4fc9b991a7b9aa85d86900fbca5cca0b930/karellen_llvm_clang-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 04:26:42] WARNING root fetch - processPackages [karellen-llvm-clang]: Skipping package: exceeds size limit 78660285>=10485760
+[2024-05-18 04:26:42] INFO root fetch - main [MainThread]: End processing [karellen-llvm-clang] error
+[2024-05-18 04:26:42] INFO root fetch - processPackages [turntable-cli]: Downloading https://files.pythonhosted.org/packages/4f/d2/add7283bc454b01ba6cd81fcc37b8f1befbd180cc091c86fa9e7ceb2cc94/turntable_cli-0.3.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 04:26:42] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/14/89/832df376917352c1645a78f170b94c96d15e7b8ff284ed028c6b522dc44a/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl
+[2024-05-18 04:26:42] INFO root fetch - processPackages [turntable-cli]: executing diffoscope
+[2024-05-18 04:26:42] INFO root fetch - processPackages [turntable-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turntable_cli-0.3.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/turntable_cli-0.3.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240518/t/turntable-cli/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-18 04:26:42] INFO root fetch - processPackages [naif-eop-high-prec]: Downloading https://files.pythonhosted.org/packages/5f/b6/0cd0b83361a70dfaf2ef2919d7edc8471e4da512c6ad8fb5bff0400805c9/naif_eop_high_prec-2024.5.17.tar.gz
+[2024-05-18 04:26:42] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/e3/9f/eba458934acabf883af31caaae2b01818ff0cae78d66794d4cc65cdd0def/iam_actions-1.2.20240517.tar.gz
+[2024-05-18 04:26:42] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: executing diffoscope
+[2024-05-18 04:26:42] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karellen_llvm_toolchain_tools-18.1.5.0.post37-py3-none-manylinux2014_x86_64.whl.zip tmp/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl.zip --markdown 20240518/k/karellen-llvm-toolchain-tools/18.1.5.0.post37-18.1.5.0.post39/README.md --exclude *.pyd
+[2024-05-18 04:26:42] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-05-18 04:26:42] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240516.tar.gz tmp/iam_actions-1.2.20240517.tar.gz --markdown 20240518/i/iam-actions/1.2.20240516-1.2.20240517/README.md --exclude *.pyd
+[2024-05-18 04:26:43] INFO root fetch - processPackages [naif-eop-high-prec]: executing diffoscope
+[2024-05-18 04:26:43] INFO root fetch - processPackages [naif-eop-high-prec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naif_eop_high_prec-2024.5.16.tar.gz tmp/naif_eop_high_prec-2024.5.17.tar.gz --markdown 20240518/n/naif-eop-high-prec/2024.5.16-2024.5.17/README.md --exclude *.pyd
+[2024-05-18 04:26:46] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.16.tar.gz]
+[2024-05-18 04:26:46] INFO root fetch - processPackages [naif-eop-high-prec]: Remove: archive file [/home/abi/fetcher/tmp/naif_eop_high_prec-2024.5.17.tar.gz]
+[2024-05-18 04:26:46] INFO root fetch - main [MainThread]: End processing [naif-eop-high-prec]: success
+[2024-05-18 04:26:47] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240516.tar.gz]
+[2024-05-18 04:26:47] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240517.tar.gz]
+[2024-05-18 04:26:47] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-05-18 04:26:52] INFO root fetch - processPackages [turntable-cli]: Remove: archive file [/home/abi/fetcher/tmp/turntable_cli-0.3.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-18 04:26:52] INFO root fetch - processPackages [turntable-cli]: Remove: archive file [/home/abi/fetcher/tmp/turntable_cli-0.3.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-18 04:26:52] INFO root fetch - main [MainThread]: End processing [turntable-cli]: success
+[2024-05-18 04:27:11] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post37-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-05-18 04:27:11] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-05-18 04:27:11] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
+[2024-05-18 04:27:11] INFO root fetch - main [MainThread]: Store serial: [23264002]
