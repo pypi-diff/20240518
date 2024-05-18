@@ -20260,3 +20260,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:52:55] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.2.tar.gz]
 [2024-05-18 20:52:55] INFO root fetch - main [MainThread]: End processing [unconscious]: success
 [2024-05-18 20:52:55] INFO root fetch - main [MainThread]: Store serial: [23270319]
+[2024-05-18 20:54:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270319]
+[2024-05-18 20:55:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 20:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altstore-proxy
+[2024-05-18 20:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: albums-picker
+[2024-05-18 20:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyVHL
+[2024-05-18 20:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-connector-elasticsearch
+[2024-05-18 20:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastqwiper
+[2024-05-18 20:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: baosight
+[2024-05-18 20:55:04] INFO root fetch - processPackages [baosight]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 20:55:04] INFO root fetch - processPackages [fastqwiper]: New version: [2024.1.84] Old Version: [2024.1.83]
+[2024-05-18 20:55:04] INFO root fetch - processPackages [altstore-proxy]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-05-18 20:55:04] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: New version: [16.0.0.1.0] Old Version: [16.0.0.0.4.2]
+[2024-05-18 20:55:04] INFO root fetch - processPackages [pyVHL]: New version: [0.1.5.1] Old Version: [0.1.5]
+[2024-05-18 20:55:04] WARNING root fetch - processPackages [albums-picker]: Skipping, unable to determine old version
+[2024-05-18 20:55:04] INFO root fetch - main [MainThread]: End processing [albums-picker] error
+[2024-05-18 20:55:04] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/ff/30/87db235678cca97bdbff2e1b8fa605314848267983e46206fd69e0a4fedc/baosight-0.0.3.tar.gz
+[2024-05-18 20:55:04] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/a5/9e/996e4453d807a70cf0015157fef34bde5d37c699f1ddb458b33f7cdb0ddf/altstore_proxy-1.0.3.tar.gz
+[2024-05-18 20:55:04] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/b4/80/d88656fbd4e0cb230b9e227c92e173b54658691303d290b7e30760dd873e/fastqwiper-2024.1.83-py3-none-any.whl
+[2024-05-18 20:55:04] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: Downloading https://files.pythonhosted.org/packages/3a/c2/4596bf35442135a6292c0b15bf4d6ba85a1350930945714e87e693ef0de7/odoo_addon_connector_elasticsearch-16.0.0.0.4.2-py3-none-any.whl
+[2024-05-18 20:55:04] INFO root fetch - processPackages [pyVHL]: Downloading https://files.pythonhosted.org/packages/9d/0b/da4cb2786a17db1aef1968a246de38aba76004ea1d13b846af95c23938b5/pyvhl-0.1.5.tar.gz
+[2024-05-18 20:55:04] WARNING root fetch - processPackages [pyVHL]: Skipping package: exceeds size limit 11318720>=10485760
+[2024-05-18 20:55:04] INFO root fetch - main [MainThread]: End processing [pyVHL] error
+[2024-05-18 20:55:04] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/56/5f/9ba3bf430e9c2aa0478956b32a2885a55f99d70d079f241c4c59ca14a54b/baosight-0.0.4.tar.gz
+[2024-05-18 20:55:04] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/7c/f4/2e8968e5b00241e7ec13e28025cc3e339d198122fcedb19c90e27354383c/altstore_proxy-1.1.0.tar.gz
+[2024-05-18 20:55:04] INFO root fetch - processPackages [fastqwiper]: Downloading https://files.pythonhosted.org/packages/0d/9d/efe5d1fa56817573d5390c44b2b2e4d5f505f814f422a754862c618313d7/fastqwiper-2024.1.84-py3-none-any.whl
+[2024-05-18 20:55:05] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-18 20:55:05] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.3.tar.gz tmp/baosight-0.0.4.tar.gz --markdown 20240518/b/baosight/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 20:55:05] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-18 20:55:05] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.0.3.tar.gz tmp/altstore_proxy-1.1.0.tar.gz --markdown 20240518/a/altstore-proxy/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-05-18 20:55:05] INFO root fetch - processPackages [fastqwiper]: executing diffoscope
+[2024-05-18 20:55:05] INFO root fetch - processPackages [fastqwiper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastqwiper-2024.1.83-py3-none-any.whl.zip tmp/fastqwiper-2024.1.84-py3-none-any.whl.zip --markdown 20240518/f/fastqwiper/2024.1.83-2024.1.84/README.md --exclude *.pyd
+[2024-05-18 20:55:05] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: Downloading https://files.pythonhosted.org/packages/a0/57/d29bf8548dff99ef90203b01a3684e4469fb7634e7706754402ec57c4c51/odoo_addon_connector_elasticsearch-16.0.0.1.0-py3-none-any.whl
+[2024-05-18 20:55:05] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: executing diffoscope
+[2024-05-18 20:55:05] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_connector_elasticsearch-16.0.0.0.4.2-py3-none-any.whl.zip tmp/odoo_addon_connector_elasticsearch-16.0.0.1.0-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-connector-elasticsearch/16.0.0.0.4.2-16.0.0.1.0/README.md --exclude *.pyd
+[2024-05-18 20:55:05] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.0.3.tar.gz]
+[2024-05-18 20:55:05] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.1.0.tar.gz]
+[2024-05-18 20:55:05] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-18 20:55:05] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.3.tar.gz]
+[2024-05-18 20:55:05] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.4.tar.gz]
+[2024-05-18 20:55:05] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-18 20:55:05] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.83-py3-none-any.whl.zip]
+[2024-05-18 20:55:05] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.84-py3-none-any.whl.zip]
+[2024-05-18 20:55:05] INFO root fetch - main [MainThread]: End processing [fastqwiper]: success
+[2024-05-18 20:55:05] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_connector_elasticsearch-16.0.0.0.4.2-py3-none-any.whl.zip]
+[2024-05-18 20:55:05] INFO root fetch - processPackages [odoo-addon-connector-elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_connector_elasticsearch-16.0.0.1.0-py3-none-any.whl.zip]
+[2024-05-18 20:55:05] INFO root fetch - main [MainThread]: End processing [odoo-addon-connector-elasticsearch]: success
+[2024-05-18 20:55:05] INFO root fetch - main [MainThread]: Store serial: [23270339]
