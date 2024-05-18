@@ -18168,3 +18168,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:30:24] INFO root fetch - processPackages [mleko]: Remove: archive file [/home/abi/fetcher/tmp/mleko-4.1.0.tar.gz]
 [2024-05-18 18:30:24] INFO root fetch - main [MainThread]: End processing [mleko]: success
 [2024-05-18 18:30:24] INFO root fetch - main [MainThread]: Store serial: [23269243]
+[2024-05-18 18:32:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269243]
+[2024-05-18 18:32:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 18:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-loader-lib
+[2024-05-18 18:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aind-data-schema-models
+[2024-05-18 18:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dftrans
+[2024-05-18 18:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acupuncturez
+[2024-05-18 18:32:32] WARNING root fetch - processPackages [data-loader-lib]: Skipping, unable to determine old version
+[2024-05-18 18:32:32] INFO root fetch - main [MainThread]: End processing [data-loader-lib] error
+[2024-05-18 18:32:32] INFO root fetch - processPackages [aind-data-schema-models]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 18:32:33] INFO root fetch - processPackages [aind-data-schema-models]: Downloading https://files.pythonhosted.org/packages/fd/93/e232657605441180484ecc62850dcf682f4dd1700121cf7bdab7fde90677/aind_data_schema_models-0.1.3.tar.gz
+[2024-05-18 18:32:33] INFO root fetch - processPackages [dftrans]: New version: [2.0.2.8] Old Version: [2.0.2.7]
+[2024-05-18 18:32:33] WARNING root fetch - processPackages [acupuncturez]: Skipping, unable to determine old version
+[2024-05-18 18:32:33] INFO root fetch - main [MainThread]: End processing [acupuncturez] error
+[2024-05-18 18:32:33] INFO root fetch - processPackages [dftrans]: Downloading https://files.pythonhosted.org/packages/d9/a2/e8eca3600a5d1e652ad472993c311d6b45b79b61485d3344d80b4fa06f92/dftrans-2.0.2.7.tar.gz
+[2024-05-18 18:32:33] INFO root fetch - processPackages [aind-data-schema-models]: Downloading https://files.pythonhosted.org/packages/1f/36/7c057a126fcc4840d63df3fcbcf564b9baf2b5792aa83e0e1511245009ab/aind_data_schema_models-0.1.4.tar.gz
+[2024-05-18 18:32:33] INFO root fetch - processPackages [aind-data-schema-models]: executing diffoscope
+[2024-05-18 18:32:33] INFO root fetch - processPackages [aind-data-schema-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_data_schema_models-0.1.3.tar.gz tmp/aind_data_schema_models-0.1.4.tar.gz --markdown 20240518/a/aind-data-schema-models/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 18:32:33] INFO root fetch - processPackages [dftrans]: Downloading https://files.pythonhosted.org/packages/71/b0/8ea8c5329ff55673de7db1768210a2a454218802116b73a8f8910b2b9228/dftrans-2.0.2.8.tar.gz
+[2024-05-18 18:32:33] INFO root fetch - processPackages [dftrans]: executing diffoscope
+[2024-05-18 18:32:33] INFO root fetch - processPackages [dftrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dftrans-2.0.2.7.tar.gz tmp/dftrans-2.0.2.8.tar.gz --markdown 20240518/d/dftrans/2.0.2.7-2.0.2.8/README.md --exclude *.pyd
+[2024-05-18 18:32:34] INFO root fetch - processPackages [aind-data-schema-models]: Remove: archive file [/home/abi/fetcher/tmp/aind_data_schema_models-0.1.3.tar.gz]
+[2024-05-18 18:32:34] INFO root fetch - processPackages [aind-data-schema-models]: Remove: archive file [/home/abi/fetcher/tmp/aind_data_schema_models-0.1.4.tar.gz]
+[2024-05-18 18:32:34] INFO root fetch - main [MainThread]: End processing [aind-data-schema-models]: success
+[2024-05-18 18:32:34] INFO root fetch - processPackages [dftrans]: Remove: archive file [/home/abi/fetcher/tmp/dftrans-2.0.2.7.tar.gz]
+[2024-05-18 18:32:34] INFO root fetch - processPackages [dftrans]: Remove: archive file [/home/abi/fetcher/tmp/dftrans-2.0.2.8.tar.gz]
+[2024-05-18 18:32:34] INFO root fetch - main [MainThread]: End processing [dftrans]: success
+[2024-05-18 18:32:34] INFO root fetch - main [MainThread]: Store serial: [23269255]
