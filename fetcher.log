@@ -18798,3 +18798,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:19:09] WARNING root fetch - processPackages [buckhoundz]: Skipping, unable to determine old version
 [2024-05-18 19:19:09] INFO root fetch - main [MainThread]: End processing [buckhoundz] error
 [2024-05-18 19:19:09] INFO root fetch - main [MainThread]: Store serial: [23269571]
+[2024-05-18 19:21:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269571]
+[2024-05-18 19:21:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiconnectpy
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trengine
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyclassparser
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plotnik
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-custom-sidebar-test
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lute3-mandarin
+[2024-05-18 19:21:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-l10n-br-delivery
+[2024-05-18 19:21:18] WARNING root fetch - processPackages [lute3-mandarin]: Skipping, unable to determine old version
+[2024-05-18 19:21:18] INFO root fetch - main [MainThread]: End processing [lute3-mandarin] error
+[2024-05-18 19:21:18] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 19:21:18] INFO root fetch - processPackages [pyclassparser]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 19:21:18] INFO root fetch - processPackages [trengine]: New version: [1.3] Old Version: [1.2]
+[2024-05-18 19:21:18] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.5] Old Version: [2.1.1]
+[2024-05-18 19:21:18] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: New version: [14.0.2.0.2] Old Version: [14.0.2.0.1.dev1]
+[2024-05-18 19:21:18] WARNING root fetch - processPackages [plotnik]: Skipping, unable to determine old version
+[2024-05-18 19:21:18] INFO root fetch - main [MainThread]: End processing [plotnik] error
+[2024-05-18 19:21:18] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/e3/04/0569861a45a39d07f659a5deca24b1d20a077e6089fa49438c56a15cce5c/pyclassparser-0.1.tar.gz
+[2024-05-18 19:21:18] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Downloading https://files.pythonhosted.org/packages/cc/e6/8d4f59b6132179599ee5d91de765169c2751c297e1bd4a7ad016c728d7af/streamlit-custom-sidebar-test-0.0.8.tar.gz
+[2024-05-18 19:21:18] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/1e/d0/eff632385620f6c33aa2e42555eb82727ebe098b02b57d029517884fdde6/audiconnectpy-2.1.1.tar.gz
+[2024-05-18 19:21:18] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/85/76/4336a37e9bf4d5543b17da5b27cce5c7d6af803fbbe7c35abe667e982284/trengine-1.2.tar.gz
+[2024-05-18 19:21:18] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: Downloading https://files.pythonhosted.org/packages/18/1a/c5984426f291824ca05e16c57a31118055582afc80d7c8a234160ec3afbc/odoo14_addon_l10n_br_delivery-14.0.2.0.1.dev1-py3-none-any.whl
+[2024-05-18 19:21:19] INFO root fetch - processPackages [trengine]: Downloading https://files.pythonhosted.org/packages/5b/f0/c2b943617d5cc055c279de642a5b186ea1df27e0a82e60d1106674fcf64f/trengine-1.3.tar.gz
+[2024-05-18 19:21:19] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/ca/65/896f8c1949109770d407320a35ee66db3cf4c3282f12146ebf67288fab16/audiconnectpy-2.1.5.tar.gz
+[2024-05-18 19:21:19] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/b1/26/b03b1e7832cbab3f720e9bf67a72ed5315cdcbe7545de71396d2152e648e/pyclassparser-0.2.tar.gz
+[2024-05-18 19:21:19] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Downloading https://files.pythonhosted.org/packages/c5/64/f85ec0da55ad4dc310467708f0a8318497e138284aecaacfba3d552b4099/streamlit-custom-sidebar-test-0.0.9.tar.gz
+[2024-05-18 19:21:19] INFO root fetch - processPackages [trengine]: executing diffoscope
+[2024-05-18 19:21:19] INFO root fetch - processPackages [trengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trengine-1.2.tar.gz tmp/trengine-1.3.tar.gz --markdown 20240518/t/trengine/1.2-1.3/README.md --exclude *.pyd
+[2024-05-18 19:21:19] INFO root fetch - processPackages [pyclassparser]: executing diffoscope
+[2024-05-18 19:21:19] INFO root fetch - processPackages [pyclassparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclassparser-0.1.tar.gz tmp/pyclassparser-0.2.tar.gz --markdown 20240518/p/pyclassparser/0.1-0.2/README.md --exclude *.pyd
+[2024-05-18 19:21:19] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-18 19:21:19] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.1.1.tar.gz tmp/audiconnectpy-2.1.5.tar.gz --markdown 20240518/a/audiconnectpy/2.1.1-2.1.5/README.md --exclude *.pyd
+[2024-05-18 19:21:19] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: Downloading https://files.pythonhosted.org/packages/00/3b/4b149b4d3b44985cd578bdd33ca87bc2ba61fed67589e8f46531f9914714/odoo14_addon_l10n_br_delivery-14.0.2.0.2-py3-none-any.whl
+[2024-05-18 19:21:19] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: executing diffoscope
+[2024-05-18 19:21:19] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-custom-sidebar-test-0.0.8.tar.gz tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz --markdown 20240518/s/streamlit-custom-sidebar-test/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 19:21:19] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: executing diffoscope
+[2024-05-18 19:21:19] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_delivery-14.0.2.0.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_delivery-14.0.2.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-l10n-br-delivery/14.0.2.0.1.dev1-14.0.2.0.2/README.md --exclude *.pyd
+[2024-05-18 19:21:19] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.2.tar.gz]
+[2024-05-18 19:21:19] INFO root fetch - processPackages [trengine]: Remove: archive file [/home/abi/fetcher/tmp/trengine-1.3.tar.gz]
+[2024-05-18 19:21:19] INFO root fetch - main [MainThread]: End processing [trengine]: success
+[2024-05-18 19:21:20] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.1.tar.gz]
+[2024-05-18 19:21:20] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.2.tar.gz]
+[2024-05-18 19:21:20] INFO root fetch - main [MainThread]: End processing [pyclassparser]: success
+[2024-05-18 19:21:20] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.1.tar.gz]
+[2024-05-18 19:21:20] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.5.tar.gz]
+[2024-05-18 19:21:20] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-18 19:21:20] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_delivery-14.0.2.0.1.dev1-py3-none-any.whl.zip]
+[2024-05-18 19:21:20] INFO root fetch - processPackages [odoo14-addon-l10n-br-delivery]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_delivery-14.0.2.0.2-py3-none-any.whl.zip]
+[2024-05-18 19:21:20] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-delivery]: success
+[2024-05-18 19:21:30] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.8.tar.gz]
+[2024-05-18 19:21:30] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz]
+[2024-05-18 19:21:30] INFO root fetch - main [MainThread]: End processing [streamlit-custom-sidebar-test]: success
+[2024-05-18 19:21:30] INFO root fetch - main [MainThread]: Store serial: [23269593]
