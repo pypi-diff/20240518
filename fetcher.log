@@ -15637,3 +15637,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:32:35] INFO root fetch - processPackages [aind-data-schema]: Remove: archive file [/home/abi/fetcher/tmp/aind-data-schema-0.9.6.tar.gz]
 [2024-05-18 15:32:35] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
 [2024-05-18 15:32:35] INFO root fetch - main [MainThread]: Store serial: [23268089]
+[2024-05-18 15:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268089]
+[2024-05-18 15:34:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qualystbx
+[2024-05-18 15:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chelingasz
+[2024-05-18 15:34:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eurepoc
+[2024-05-18 15:34:44] INFO root fetch - processPackages [eurepoc]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 15:34:44] INFO root fetch - processPackages [qualystbx]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-18 15:34:44] WARNING root fetch - processPackages [chelingasz]: Skipping, unable to determine old version
+[2024-05-18 15:34:44] INFO root fetch - main [MainThread]: End processing [chelingasz] error
+[2024-05-18 15:34:44] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/09/58/e2f852b23b33958935f67b5be8d5081a9ed9ebca85339f27a3ac7715c82c/qualystbx-0.2.0.tar.gz
+[2024-05-18 15:34:45] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/fc/2e/31390979ada12b300e81fa2a6cd628799647a1a5cdbc8f58d494a53fa94e/eurepoc-0.1.0.tar.gz
+[2024-05-18 15:34:45] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/49/19/e232ea688cb8dc12f23bcbb960595a035804ee41c36636731834baab3f77/qualystbx-0.3.0.tar.gz
+[2024-05-18 15:34:45] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-18 15:34:45] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.2.0.tar.gz tmp/qualystbx-0.3.0.tar.gz --markdown 20240518/q/qualystbx/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 15:34:45] INFO root fetch - processPackages [eurepoc]: Downloading https://files.pythonhosted.org/packages/a0/84/1d40fe28d74d18cf65e4d2a7b74e00897ecd8974d8acedd497a0e75c11e9/eurepoc-0.1.1.tar.gz
+[2024-05-18 15:34:45] INFO root fetch - processPackages [eurepoc]: executing diffoscope
+[2024-05-18 15:34:45] INFO root fetch - processPackages [eurepoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eurepoc-0.1.0.tar.gz tmp/eurepoc-0.1.1.tar.gz --markdown 20240518/e/eurepoc/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 15:34:45] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.2.0.tar.gz]
+[2024-05-18 15:34:45] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.3.0.tar.gz]
+[2024-05-18 15:34:45] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-18 15:34:46] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.0.tar.gz]
+[2024-05-18 15:34:46] INFO root fetch - processPackages [eurepoc]: Remove: archive file [/home/abi/fetcher/tmp/eurepoc-0.1.1.tar.gz]
+[2024-05-18 15:34:46] INFO root fetch - main [MainThread]: End processing [eurepoc]: success
+[2024-05-18 15:34:46] INFO root fetch - main [MainThread]: Store serial: [23268099]
