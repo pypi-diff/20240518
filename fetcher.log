@@ -16075,3 +16075,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:01:01] INFO root fetch - processPackages [pygit2]: Remove: archive file [/home/abi/fetcher/tmp/pygit2-1.9.2.tar.gz]
 [2024-05-18 16:01:01] INFO root fetch - main [MainThread]: End processing [pygit2]: success
 [2024-05-18 16:01:01] INFO root fetch - main [MainThread]: Store serial: [23268267]
+[2024-05-18 16:03:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268267]
+[2024-05-18 16:03:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 16:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mrsegmentator
+[2024-05-18 16:03:10] INFO root fetch - processPackages [mrsegmentator]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-05-18 16:03:10] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/a5/3e/49af553b438654df2315b5ebc534de6f740dd05b6aea0a25c5aec22624af/mrsegmentator-1.0.5.tar.gz
+[2024-05-18 16:03:11] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/2c/10/4c8b7def25217e2efd28341f754846fc6335b0af834a8a7ce9caeab893ed/mrsegmentator-1.1.0-py3-none-any.whl
+[2024-05-18 16:03:11] INFO root fetch - processPackages [mrsegmentator]: executing diffoscope
+[2024-05-18 16:03:11] INFO root fetch - processPackages [mrsegmentator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrsegmentator-1.0.5.tar.gz tmp/mrsegmentator-1.1.0-py3-none-any.whl.zip --markdown 20240518/m/mrsegmentator/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-05-18 16:03:12] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.5.tar.gz]
+[2024-05-18 16:03:12] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.1.0-py3-none-any.whl.zip]
+[2024-05-18 16:03:12] INFO root fetch - main [MainThread]: End processing [mrsegmentator]: success
+[2024-05-18 16:03:12] INFO root fetch - main [MainThread]: Store serial: [23268268]
