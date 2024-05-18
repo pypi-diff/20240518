@@ -17411,3 +17411,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:39:57] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.3.0.tar.gz]
 [2024-05-18 17:39:57] INFO root fetch - main [MainThread]: End processing [pyprland]: success
 [2024-05-18 17:39:57] INFO root fetch - main [MainThread]: Store serial: [23268910]
+[2024-05-18 17:42:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268910]
+[2024-05-18 17:42:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyprland
+[2024-05-18 17:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alogamous
+[2024-05-18 17:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-05-18 17:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dextrinatez
+[2024-05-18 17:42:06] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-18 17:42:06] INFO root fetch - processPackages [pyprland]: New version: [2.3.0] Old Version: [2.2.9]
+[2024-05-18 17:42:06] WARNING root fetch - processPackages [alogamous]: Skipping, unable to determine old version
+[2024-05-18 17:42:06] INFO root fetch - main [MainThread]: End processing [alogamous] error
+[2024-05-18 17:42:06] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/87/0e/e92b91e64d79d55bb505ed84095b7e6cc59c5629dbf2c0b4a353c87de6b3/ctrip-app-ui-0.5.0.tar.gz
+[2024-05-18 17:42:06] WARNING root fetch - processPackages [dextrinatez]: Skipping, unable to determine old version
+[2024-05-18 17:42:06] INFO root fetch - main [MainThread]: End processing [dextrinatez] error
+[2024-05-18 17:42:06] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/95/54/b41c74cea0d530094950d0f33daa1e4b290d0fafa217c2a9c6605192e37e/pyprland-2.2.9.tar.gz
+[2024-05-18 17:42:07] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/c1/e4/a6d65b2823c1f0e1fec8a0dc0e77ab71b6b9852853667281867a48b48265/pyprland-2.3.0.tar.gz
+[2024-05-18 17:42:07] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/56/6d/06ddb33d016f65b99350b0f01439ddb125ddbd0a72b87ef6bfdcd7e28cf6/ctrip-app-ui-0.5.1.tar.gz
+[2024-05-18 17:42:07] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-05-18 17:42:07] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.9.tar.gz tmp/pyprland-2.3.0.tar.gz --markdown 20240518/p/pyprland/2.2.9-2.3.0/README.md --exclude *.pyd
+[2024-05-18 17:42:07] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-18 17:42:07] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.5.0.tar.gz tmp/ctrip-app-ui-0.5.1.tar.gz --markdown 20240518/c/ctrip-app-ui/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-18 17:42:07] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.0.tar.gz]
+[2024-05-18 17:42:07] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.1.tar.gz]
+[2024-05-18 17:42:07] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-18 17:42:07] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
+[2024-05-18 17:42:07] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.3.0.tar.gz]
+[2024-05-18 17:42:07] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-05-18 17:42:07] INFO root fetch - main [MainThread]: Store serial: [23268924]
