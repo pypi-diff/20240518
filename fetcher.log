@@ -16343,3 +16343,32 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: Remove: archive file [/home/abi/fetcher/tmp/oj_tools-0.0.7.tar.gz]
 [2024-05-18 16:22:50] INFO root fetch - main [MainThread]: End processing [oj-tools]: success
 [2024-05-18 16:22:50] INFO root fetch - main [MainThread]: Store serial: [23268387]
+[2024-05-18 16:24:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268387]
+[2024-05-18 16:24:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 16:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secfsdstools
+[2024-05-18 16:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: patronessshipz
+[2024-05-18 16:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-audit-trail
+[2024-05-18 16:24:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RNASQLite
+[2024-05-18 16:24:59] INFO root fetch - processPackages [RNASQLite]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 16:24:59] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/c8/83/fdc02319752212caabd2ba4bd3ee78e9246f9a75d275105fd6a9425e9699/rnasqlite-0.1.2.tar.gz
+[2024-05-18 16:25:00] WARNING root fetch - processPackages [patronessshipz]: Skipping, unable to determine old version
+[2024-05-18 16:25:00] INFO root fetch - main [MainThread]: End processing [patronessshipz] error
+[2024-05-18 16:25:00] INFO root fetch - processPackages [drf-audit-trail]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 16:25:00] INFO root fetch - processPackages [secfsdstools]: New version: [1.5.0] Old Version: [1.4.2]
+[2024-05-18 16:25:00] INFO root fetch - processPackages [secfsdstools]: Downloading https://files.pythonhosted.org/packages/88/3c/ae23771ad3b9a05d3b863ac3c1daba45448f54c522a9a914c078655c3604/secfsdstools-1.4.2.tar.gz
+[2024-05-18 16:25:00] INFO root fetch - processPackages [drf-audit-trail]: Downloading https://files.pythonhosted.org/packages/ae/e8/b6de15c649d547e9455d8974222425d03c51d1e326004efc5806fb2d5e97/drf_audit_trail-0.1.0.tar.gz
+[2024-05-18 16:25:00] WARNING root fetch - processPackages [secfsdstools]: Skipping package: exceeds size limit 66543412>=10485760
+[2024-05-18 16:25:00] INFO root fetch - main [MainThread]: End processing [secfsdstools] error
+[2024-05-18 16:25:00] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/68/98/10324fea0e1f7d3a7bea5a4ef4c1c30ebe986af7b3df728eb3f78b6ba8bd/rnasqlite-0.1.3.tar.gz
+[2024-05-18 16:25:00] INFO root fetch - processPackages [RNASQLite]: executing diffoscope
+[2024-05-18 16:25:00] INFO root fetch - processPackages [RNASQLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnasqlite-0.1.2.tar.gz tmp/rnasqlite-0.1.3.tar.gz --markdown 20240518/R/RNASQLite/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 16:25:00] INFO root fetch - processPackages [drf-audit-trail]: Downloading https://files.pythonhosted.org/packages/23/48/db7386c2ef4b4a51e30f5805c45fdcc9c9d3893510cd0c69cebc72640211/drf_audit_trail-0.1.1.tar.gz
+[2024-05-18 16:25:00] INFO root fetch - processPackages [drf-audit-trail]: executing diffoscope
+[2024-05-18 16:25:00] INFO root fetch - processPackages [drf-audit-trail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_audit_trail-0.1.0.tar.gz tmp/drf_audit_trail-0.1.1.tar.gz --markdown 20240518/d/drf-audit-trail/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 16:25:01] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.2.tar.gz]
+[2024-05-18 16:25:01] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.3.tar.gz]
+[2024-05-18 16:25:01] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
+[2024-05-18 16:25:01] INFO root fetch - processPackages [drf-audit-trail]: Remove: archive file [/home/abi/fetcher/tmp/drf_audit_trail-0.1.0.tar.gz]
+[2024-05-18 16:25:01] INFO root fetch - processPackages [drf-audit-trail]: Remove: archive file [/home/abi/fetcher/tmp/drf_audit_trail-0.1.1.tar.gz]
+[2024-05-18 16:25:01] INFO root fetch - main [MainThread]: End processing [drf-audit-trail]: success
+[2024-05-18 16:25:01] INFO root fetch - main [MainThread]: Store serial: [23268402]
