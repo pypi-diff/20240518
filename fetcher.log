@@ -2573,3 +2573,41 @@
 [2024-05-18 02:40:34] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 76882666>=10485760
 [2024-05-18 02:40:34] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
 [2024-05-18 02:40:34] INFO root fetch - main [MainThread]: Store serial: [23262346]
+[2024-05-18 02:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262346]
+[2024-05-18 02:42:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unpimpledz
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipyslides
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NearBeach
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Shellper
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: DreamCreator
+[2024-05-18 02:42:43] INFO root fetch - processPackages [NearBeach]: New version: [0.31.9] Old Version: [0.31.8]
+[2024-05-18 02:42:43] INFO root fetch - processPackages [Shellper]: New version: [0.3.1] Old Version: [0.3]
+[2024-05-18 02:42:43] INFO root fetch - processPackages [NearBeach]: Downloading https://files.pythonhosted.org/packages/d3/c9/4444a9584fae7ddaa87ff4efa7f16f8833a3827e50758749323b05d77edd/nearbeach-0.31.8.tar.gz
+[2024-05-18 02:42:43] WARNING root fetch - processPackages [unpimpledz]: Skipping, unable to determine old version
+[2024-05-18 02:42:43] INFO root fetch - main [MainThread]: End processing [unpimpledz] error
+[2024-05-18 02:42:43] INFO root fetch - processPackages [DreamCreator]: New version: [0.0.3] Old Version: [0.0.20]
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ipyslides]: New version: [3.8.8] Old Version: [3.8.7]
+[2024-05-18 02:42:43] WARNING root fetch - processPackages [NearBeach]: Skipping package: exceeds size limit 32530107>=10485760
+[2024-05-18 02:42:43] INFO root fetch - main [MainThread]: End processing [NearBeach] error
+[2024-05-18 02:42:43] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/1a/95/d059633487107229b298ae326f86307720219be917f2792cf0e2d27b019f/shellper-0.3.tar.gz
+[2024-05-18 02:42:43] INFO root fetch - processPackages [DreamCreator]: Downloading https://files.pythonhosted.org/packages/da/8a/86445c1ca7cedff7b81b448320237c05e05fa9c6b7aa7144b88272c8b384/DreamCreator-0.0.20.tar.gz
+[2024-05-18 02:42:43] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/37/d4/f7804a12472333735ed1d9f4f46d43b202ffba4a93798ddba6b13c6fd484/ipyslides-3.8.7.tar.gz
+[2024-05-18 02:42:43] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/56/d6/92ba8463382900212967c2f269d9731da28427549202b21d85de46e25b18/shellper-0.3.1.tar.gz
+[2024-05-18 02:42:44] INFO root fetch - processPackages [ipyslides]: Downloading https://files.pythonhosted.org/packages/43/4c/76a82e5cb3668c412cfaa512d04b86033be1b557adabc996ca799e77a39f/ipyslides-3.8.8.tar.gz
+[2024-05-18 02:42:44] INFO root fetch - processPackages [Shellper]: executing diffoscope
+[2024-05-18 02:42:44] INFO root fetch - processPackages [Shellper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellper-0.3.tar.gz tmp/shellper-0.3.1.tar.gz --markdown 20240518/S/Shellper/0.3-0.3.1/README.md --exclude *.pyd
+[2024-05-18 02:42:44] INFO root fetch - processPackages [DreamCreator]: Downloading https://files.pythonhosted.org/packages/ce/5b/787c1affed15428a245198f913e10c9c9549e15cba1ac2612165fbc490b9/DreamCreator-0.0.3.tar.gz
+[2024-05-18 02:42:44] INFO root fetch - processPackages [ipyslides]: executing diffoscope
+[2024-05-18 02:42:44] INFO root fetch - processPackages [ipyslides]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyslides-3.8.7.tar.gz tmp/ipyslides-3.8.8.tar.gz --markdown 20240518/i/ipyslides/3.8.7-3.8.8/README.md --exclude *.pyd
+[2024-05-18 02:42:44] INFO root fetch - processPackages [DreamCreator]: executing diffoscope
+[2024-05-18 02:42:44] INFO root fetch - processPackages [DreamCreator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DreamCreator-0.0.20.tar.gz tmp/DreamCreator-0.0.3.tar.gz --markdown 20240518/D/DreamCreator/0.0.20-0.0.3/README.md --exclude *.pyd
+[2024-05-18 02:42:44] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.tar.gz]
+[2024-05-18 02:42:44] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.1.tar.gz]
+[2024-05-18 02:42:44] INFO root fetch - main [MainThread]: End processing [Shellper]: success
+[2024-05-18 02:42:44] INFO root fetch - processPackages [DreamCreator]: Remove: archive file [/home/abi/fetcher/tmp/DreamCreator-0.0.20.tar.gz]
+[2024-05-18 02:42:44] INFO root fetch - processPackages [DreamCreator]: Remove: archive file [/home/abi/fetcher/tmp/DreamCreator-0.0.3.tar.gz]
+[2024-05-18 02:42:44] INFO root fetch - main [MainThread]: End processing [DreamCreator]: success
+[2024-05-18 02:42:45] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.7.tar.gz]
+[2024-05-18 02:42:45] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.8.tar.gz]
+[2024-05-18 02:42:45] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
+[2024-05-18 02:42:45] INFO root fetch - main [MainThread]: Store serial: [23262364]
