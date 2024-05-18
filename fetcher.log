@@ -17027,3 +17027,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:16:00] INFO root fetch - processPackages [mirascope]: Remove: archive file [/home/abi/fetcher/tmp/mirascope-0.9.1.tar.gz]
 [2024-05-18 17:16:00] INFO root fetch - main [MainThread]: End processing [mirascope]: success
 [2024-05-18 17:16:00] INFO root fetch - main [MainThread]: Store serial: [23268756]
+[2024-05-18 17:18:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268756]
+[2024-05-18 17:18:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extended-configparser
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: almo
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ok-script
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pop-sort
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-alpaca-api
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: async-bakalari-api
+[2024-05-18 17:18:09] INFO root fetch - processPackages [almo]: New version: [0.8.7a0] Old Version: [0.8.4]
+[2024-05-18 17:18:09] INFO root fetch - processPackages [pop-sort]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 17:18:09] INFO root fetch - processPackages [almo]: Downloading https://files.pythonhosted.org/packages/e4/07/7ef68ecfc9729019805bd0a3f52d799e5b811d0704ee6b481751c4593708/almo-0.8.4.tar.gz
+[2024-05-18 17:18:09] INFO root fetch - processPackages [pop-sort]: Downloading https://files.pythonhosted.org/packages/de/a5/ce2293900fdf4c1c9a9793c860eece6aeecff255668267a78d350c0e6e54/pop_sort-0.1-py3-none-any.whl
+[2024-05-18 17:18:09] INFO root fetch - processPackages [extended-configparser]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-18 17:18:09] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 17:18:09] INFO root fetch - processPackages [async-bakalari-api]: New version: [0.3] Old Version: [0.2]
+[2024-05-18 17:18:09] INFO root fetch - processPackages [py-alpaca-api]: New version: [0.4.4] Old Version: [0.4.0]
+[2024-05-18 17:18:10] INFO root fetch - processPackages [extended-configparser]: Downloading https://files.pythonhosted.org/packages/19/7a/7780d6293f7fa554f34a5a1977f501698c95e5f44e64fc3813fe8ce50599/extended_configparser-1.0.1.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [pop-sort]: Downloading https://files.pythonhosted.org/packages/98/97/a251eee952ae6e15b70518ac463cc0f5eb4deb5593159963654fe0ba7bb1/pop_sort-0.2.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/cc/2d/6fea6da3d43ab5573d7d23fc3a6b4ba98bbf62c1492f891bfdbc22b1b9f0/py_alpaca_api-0.4.0.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [async-bakalari-api]: Downloading https://files.pythonhosted.org/packages/92/60/a1d5aae8126f78400346e60d497a333d118c1a0322d98fd79a842fcb49da/async_bakalari_api-0.2.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [almo]: Downloading https://files.pythonhosted.org/packages/3f/08/13b1dfb3750f65757f6a990990425f24058bd4a389e40d053969e43c85a7/almo-0.8.7a0.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [pop-sort]: executing diffoscope
+[2024-05-18 17:18:10] INFO root fetch - processPackages [pop-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pop_sort-0.1-py3-none-any.whl.zip tmp/pop_sort-0.2.tar.gz --markdown 20240518/p/pop-sort/0.1-0.2/README.md --exclude *.pyd
+[2024-05-18 17:18:10] INFO root fetch - processPackages [almo]: executing diffoscope
+[2024-05-18 17:18:10] INFO root fetch - processPackages [almo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almo-0.8.4.tar.gz tmp/almo-0.8.7a0.tar.gz --markdown 20240518/a/almo/0.8.4-0.8.7a0/README.md --exclude *.pyd
+[2024-05-18 17:18:10] INFO root fetch - processPackages [extended-configparser]: Downloading https://files.pythonhosted.org/packages/de/2c/154d10fc851399e9433c408324f22211f83eca58b15d1ae356cb5181e78b/extended_configparser-1.1.0.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [py-alpaca-api]: Downloading https://files.pythonhosted.org/packages/7d/99/edc1728807fef4ef44090313ddb003e2170c6ddd4e92b76119500b2b0f3a/py_alpaca_api-0.4.4.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [async-bakalari-api]: Downloading https://files.pythonhosted.org/packages/4a/38/61edaa0a44fc585fd113bae410ecaed796ee4ecfeaf4e079b82d9bcabd12/async_bakalari_api-0.3.tar.gz
+[2024-05-18 17:18:10] INFO root fetch - processPackages [extended-configparser]: executing diffoscope
+[2024-05-18 17:18:10] INFO root fetch - processPackages [extended-configparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extended_configparser-1.0.1.tar.gz tmp/extended_configparser-1.1.0.tar.gz --markdown 20240518/e/extended-configparser/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-18 17:18:10] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-05-18 17:18:10] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240518/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:18:10] INFO root fetch - processPackages [py-alpaca-api]: executing diffoscope
+[2024-05-18 17:18:10] INFO root fetch - processPackages [py-alpaca-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_alpaca_api-0.4.0.tar.gz tmp/py_alpaca_api-0.4.4.tar.gz --markdown 20240518/p/py-alpaca-api/0.4.0-0.4.4/README.md --exclude *.pyd
+[2024-05-18 17:18:10] INFO root fetch - processPackages [async-bakalari-api]: executing diffoscope
+[2024-05-18 17:18:10] INFO root fetch - processPackages [async-bakalari-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_bakalari_api-0.2.tar.gz tmp/async_bakalari_api-0.3.tar.gz --markdown 20240518/a/async-bakalari-api/0.2-0.3/README.md --exclude *.pyd
+[2024-05-18 17:18:10] INFO root fetch - processPackages [almo]: Remove: archive file [/home/abi/fetcher/tmp/almo-0.8.4.tar.gz]
+[2024-05-18 17:18:10] INFO root fetch - processPackages [almo]: Remove: archive file [/home/abi/fetcher/tmp/almo-0.8.7a0.tar.gz]
+[2024-05-18 17:18:10] INFO root fetch - main [MainThread]: End processing [almo]: success
+[2024-05-18 17:18:11] INFO root fetch - processPackages [pop-sort]: Remove: archive file [/home/abi/fetcher/tmp/pop_sort-0.1-py3-none-any.whl.zip]
+[2024-05-18 17:18:11] INFO root fetch - processPackages [pop-sort]: Remove: archive file [/home/abi/fetcher/tmp/pop_sort-0.2.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - main [MainThread]: End processing [pop-sort]: success
+[2024-05-18 17:18:11] INFO root fetch - processPackages [extended-configparser]: Remove: archive file [/home/abi/fetcher/tmp/extended_configparser-1.0.1.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - processPackages [extended-configparser]: Remove: archive file [/home/abi/fetcher/tmp/extended_configparser-1.1.0.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - main [MainThread]: End processing [extended-configparser]: success
+[2024-05-18 17:18:11] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.4.0.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - processPackages [py-alpaca-api]: Remove: archive file [/home/abi/fetcher/tmp/py_alpaca_api-0.4.4.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - main [MainThread]: End processing [py-alpaca-api]: success
+[2024-05-18 17:18:11] INFO root fetch - processPackages [async-bakalari-api]: Remove: archive file [/home/abi/fetcher/tmp/async_bakalari_api-0.2.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - processPackages [async-bakalari-api]: Remove: archive file [/home/abi/fetcher/tmp/async_bakalari_api-0.3.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - main [MainThread]: End processing [async-bakalari-api]: success
+[2024-05-18 17:18:11] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-05-18 17:18:11] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-05-18 17:18:11] INFO root fetch - main [MainThread]: Store serial: [23268776]
