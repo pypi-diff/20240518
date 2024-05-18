@@ -22256,3 +22256,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:28:14] INFO root fetch - processPackages [tensortrax]: Remove: archive file [/home/abi/fetcher/tmp/tensortrax-0.9.0.tar.gz]
 [2024-05-18 23:28:14] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
 [2024-05-18 23:28:14] INFO root fetch - main [MainThread]: Store serial: [23271362]
+[2024-05-18 23:30:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271362]
+[2024-05-18 23:30:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 23:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-ddl-parser
+[2024-05-18 23:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coherent.build
+[2024-05-18 23:30:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prederivez
+[2024-05-18 23:30:24] INFO root fetch - processPackages [coherent.build]: New version: [0.8.0] Old Version: [0.7.0]
+[2024-05-18 23:30:24] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/90/1d/a3ebec08cd2a07f69be8570ed4b1dcfb06859eebc2fb838a2fb3c87408e9/coherent_build-0.7.0.tar.gz
+[2024-05-18 23:30:24] WARNING root fetch - processPackages [prederivez]: Skipping, unable to determine old version
+[2024-05-18 23:30:24] INFO root fetch - main [MainThread]: End processing [prederivez] error
+[2024-05-18 23:30:24] INFO root fetch - processPackages [simple-ddl-parser]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-18 23:30:25] INFO root fetch - processPackages [simple-ddl-parser]: Downloading https://files.pythonhosted.org/packages/83/a0/deab0c656c760200a3bbc4152779fa69c7a7c2858a5cf52468a6d3d881c6/simple_ddl_parser-1.4.0.tar.gz
+[2024-05-18 23:30:25] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/ac/0a/6980f57405b2f79d54cf7fc27d89fa6870e294b9d4777bdc0adebfb79364/coherent_build-0.8.0.tar.gz
+[2024-05-18 23:30:25] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-18 23:30:25] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.7.0.tar.gz tmp/coherent_build-0.8.0.tar.gz --markdown 20240518/c/coherent.build/0.7.0-0.8.0/README.md --exclude *.pyd
+[2024-05-18 23:30:25] INFO root fetch - processPackages [simple-ddl-parser]: Downloading https://files.pythonhosted.org/packages/2f/65/a0807d32912276a41a3069595230e41061f7936250cb5aab31dea62e3a8f/simple_ddl_parser-1.5.0.tar.gz
+[2024-05-18 23:30:25] INFO root fetch - processPackages [simple-ddl-parser]: executing diffoscope
+[2024-05-18 23:30:25] INFO root fetch - processPackages [simple-ddl-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_ddl_parser-1.4.0.tar.gz tmp/simple_ddl_parser-1.5.0.tar.gz --markdown 20240518/s/simple-ddl-parser/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-18 23:30:25] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.7.0.tar.gz]
+[2024-05-18 23:30:25] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.8.0.tar.gz]
+[2024-05-18 23:30:25] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-18 23:30:26] INFO root fetch - processPackages [simple-ddl-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple_ddl_parser-1.4.0.tar.gz]
+[2024-05-18 23:30:26] INFO root fetch - processPackages [simple-ddl-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple_ddl_parser-1.5.0.tar.gz]
+[2024-05-18 23:30:26] INFO root fetch - main [MainThread]: End processing [simple-ddl-parser]: success
+[2024-05-18 23:30:26] INFO root fetch - main [MainThread]: Store serial: [23271373]
