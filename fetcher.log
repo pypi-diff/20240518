@@ -21842,3 +21842,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:49:18] INFO root fetch - processPackages [WeatherPlug]: Remove: archive file [/home/abi/fetcher/tmp/weatherplug-1.0.1.tar.gz]
 [2024-05-18 22:49:18] INFO root fetch - main [MainThread]: End processing [WeatherPlug]: success
 [2024-05-18 22:49:18] INFO root fetch - main [MainThread]: Store serial: [23271154]
+[2024-05-18 22:51:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271154]
+[2024-05-18 22:51:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 22:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PlexAPI
+[2024-05-18 22:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kvalchemy
+[2024-05-18 22:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airbyte-source-iterable
+[2024-05-18 22:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: italian-ats-evaluator
+[2024-05-18 22:51:26] INFO root fetch - processPackages [kvalchemy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 22:51:26] INFO root fetch - processPackages [airbyte-source-iterable]: New version: [0.5.1.dev202405181927] Old Version: [0.5.1.dev202405172314]
+[2024-05-18 22:51:27] INFO root fetch - processPackages [italian-ats-evaluator]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 22:51:27] INFO root fetch - processPackages [PlexAPI]: New version: [4.9.2] Old Version: [4.9.1]
+[2024-05-18 22:51:27] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/61/d8/6f879c5adb6785132e602b29ffa4c9f86fe609ae8489114444bad0052229/kvalchemy-0.0.5.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/75/4c/e3bef983ac82ffff1d476f98b618a61874a5b392d0fedb1ab1ce91c4e565/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [italian-ats-evaluator]: Downloading https://files.pythonhosted.org/packages/aa/ff/9a9b4397ede80dde03d3dfe47bd2c1f3d3fd7ade8e934c98e1ad53ade106/italian_ats_evaluator-1.0.1.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [PlexAPI]: Downloading https://files.pythonhosted.org/packages/ec/1a/ecb08e76ca8000dd22e66eb9a08e5b91b12b217aa84fcf39c15568fecd4e/PlexAPI-4.9.1.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/18/e9/5ba29e40784324f96b48126a81efea4dc302355a658bafd646014f0d796e/kvalchemy-0.0.6.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [airbyte-source-iterable]: Downloading https://files.pythonhosted.org/packages/53/0b/d653744e9d96cccd98e772676f0635a741755cf02a1e16a48f9aa366860a/airbyte_source_iterable-0.5.1.dev202405181927.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-05-18 22:51:27] INFO root fetch - processPackages [italian-ats-evaluator]: Downloading https://files.pythonhosted.org/packages/f2/e2/a8e9920a9480ec448ab0e3cf00850154e969aa6eac2e4cab874b2cd01457/italian_ats_evaluator-1.0.2.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.0.5.tar.gz tmp/kvalchemy-0.0.6.tar.gz --markdown 20240518/k/kvalchemy/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 22:51:27] INFO root fetch - processPackages [PlexAPI]: Downloading https://files.pythonhosted.org/packages/0a/30/a3756e5b020ee54fcc0c8abb36bb4a8d917ecfae2755814e41c4717ecd01/PlexAPI-4.9.2.tar.gz
+[2024-05-18 22:51:27] INFO root fetch - processPackages [airbyte-source-iterable]: executing diffoscope
+[2024-05-18 22:51:27] INFO root fetch - processPackages [airbyte-source-iterable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz tmp/airbyte_source_iterable-0.5.1.dev202405181927.tar.gz --markdown 20240518/a/airbyte-source-iterable/0.5.1.dev202405172314-0.5.1.dev202405181927/README.md --exclude *.pyd
+[2024-05-18 22:51:27] INFO root fetch - processPackages [italian-ats-evaluator]: executing diffoscope
+[2024-05-18 22:51:27] INFO root fetch - processPackages [italian-ats-evaluator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/italian_ats_evaluator-1.0.1.tar.gz tmp/italian_ats_evaluator-1.0.2.tar.gz --markdown 20240518/i/italian-ats-evaluator/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 22:51:27] INFO root fetch - processPackages [PlexAPI]: executing diffoscope
+[2024-05-18 22:51:27] INFO root fetch - processPackages [PlexAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlexAPI-4.9.1.tar.gz tmp/PlexAPI-4.9.2.tar.gz --markdown 20240518/P/PlexAPI/4.9.1-4.9.2/README.md --exclude *.pyd
+[2024-05-18 22:51:28] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.5.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.6.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-05-18 22:51:28] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405172314.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - processPackages [airbyte-source-iterable]: Remove: archive file [/home/abi/fetcher/tmp/airbyte_source_iterable-0.5.1.dev202405181927.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - main [MainThread]: End processing [airbyte-source-iterable]: success
+[2024-05-18 22:51:28] INFO root fetch - processPackages [italian-ats-evaluator]: Remove: archive file [/home/abi/fetcher/tmp/italian_ats_evaluator-1.0.1.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - processPackages [italian-ats-evaluator]: Remove: archive file [/home/abi/fetcher/tmp/italian_ats_evaluator-1.0.2.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - main [MainThread]: End processing [italian-ats-evaluator]: success
+[2024-05-18 22:51:28] INFO root fetch - processPackages [PlexAPI]: Remove: archive file [/home/abi/fetcher/tmp/PlexAPI-4.9.1.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - processPackages [PlexAPI]: Remove: archive file [/home/abi/fetcher/tmp/PlexAPI-4.9.2.tar.gz]
+[2024-05-18 22:51:28] INFO root fetch - main [MainThread]: End processing [PlexAPI]: success
+[2024-05-18 22:51:28] INFO root fetch - main [MainThread]: Store serial: [23271166]
