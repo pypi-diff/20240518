@@ -16681,3 +16681,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:51:26] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 40330603>=10485760
 [2024-05-18 16:51:26] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
 [2024-05-18 16:51:26] INFO root fetch - main [MainThread]: Store serial: [23268590]
+[2024-05-18 16:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268590]
+[2024-05-18 16:53:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 16:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yuag
+[2024-05-18 16:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: isoxml-writer
+[2024-05-18 16:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openaiisrich
+[2024-05-18 16:53:36] INFO root fetch - processPackages [openaiisrich]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-18 16:53:36] INFO root fetch - processPackages [isoxml-writer]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 16:53:36] INFO root fetch - processPackages [openaiisrich]: Downloading https://files.pythonhosted.org/packages/64/dc/1698fe2ddf9db5d20147be5dcc77a000a461b3798fde86146be2e465b342/openaiisrich-0.3.0-py3-none-any.whl
+[2024-05-18 16:53:36] INFO root fetch - processPackages [yuag]: New version: [0.0.72] Old Version: [0.0.71]
+[2024-05-18 16:53:36] INFO root fetch - processPackages [isoxml-writer]: Downloading https://files.pythonhosted.org/packages/25/e1/9c5d04f0e92a86f802df2d41446d2eabcb5119a0728c6b0d28c6d7bd0419/isoxml_writer-0.0.1.tar.gz
+[2024-05-18 16:53:36] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/2a/a7/8727022b1727ace6f43768b39fb5784ef5f46744e283fb673e2181d5be1a/yuag-0.0.71.tar.gz
+[2024-05-18 16:53:36] INFO root fetch - processPackages [openaiisrich]: Downloading https://files.pythonhosted.org/packages/79/b5/469b4079d25fe95aa6535043e42de6ad2b94bf650d59fb50586d0dff4fa3/openaiisrich-0.4.0-py3-none-any.whl
+[2024-05-18 16:53:36] INFO root fetch - processPackages [isoxml-writer]: Downloading https://files.pythonhosted.org/packages/70/5d/bb9f7e5145b4c804196888da0cf4166adaf4617995f18c7c4a699bbb5ab7/isoxml_writer-0.0.2.tar.gz
+[2024-05-18 16:53:36] INFO root fetch - processPackages [openaiisrich]: executing diffoscope
+[2024-05-18 16:53:36] INFO root fetch - processPackages [openaiisrich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openaiisrich-0.3.0-py3-none-any.whl.zip tmp/openaiisrich-0.4.0-py3-none-any.whl.zip --markdown 20240518/o/openaiisrich/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-18 16:53:36] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/b7/68/efeb1709241a776133e0c217ae832a5e71777848223786abd0403e542685/yuag-0.0.72.tar.gz
+[2024-05-18 16:53:36] INFO root fetch - processPackages [isoxml-writer]: executing diffoscope
+[2024-05-18 16:53:36] INFO root fetch - processPackages [isoxml-writer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/isoxml_writer-0.0.1.tar.gz tmp/isoxml_writer-0.0.2.tar.gz --markdown 20240518/i/isoxml-writer/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 16:53:36] INFO root fetch - processPackages [yuag]: executing diffoscope
+[2024-05-18 16:53:36] INFO root fetch - processPackages [yuag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuag-0.0.71.tar.gz tmp/yuag-0.0.72.tar.gz --markdown 20240518/y/yuag/0.0.71-0.0.72/README.md --exclude *.pyd
+[2024-05-18 16:53:37] INFO root fetch - processPackages [openaiisrich]: Remove: archive file [/home/abi/fetcher/tmp/openaiisrich-0.3.0-py3-none-any.whl.zip]
+[2024-05-18 16:53:37] INFO root fetch - processPackages [openaiisrich]: Remove: archive file [/home/abi/fetcher/tmp/openaiisrich-0.4.0-py3-none-any.whl.zip]
+[2024-05-18 16:53:37] INFO root fetch - main [MainThread]: End processing [openaiisrich]: success
+[2024-05-18 16:53:37] INFO root fetch - processPackages [isoxml-writer]: Remove: archive file [/home/abi/fetcher/tmp/isoxml_writer-0.0.1.tar.gz]
+[2024-05-18 16:53:37] INFO root fetch - processPackages [isoxml-writer]: Remove: archive file [/home/abi/fetcher/tmp/isoxml_writer-0.0.2.tar.gz]
+[2024-05-18 16:53:37] INFO root fetch - main [MainThread]: End processing [isoxml-writer]: success
+[2024-05-18 16:53:37] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.71.tar.gz]
+[2024-05-18 16:53:37] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.72.tar.gz]
+[2024-05-18 16:53:37] INFO root fetch - main [MainThread]: End processing [yuag]: success
+[2024-05-18 16:53:37] INFO root fetch - main [MainThread]: Store serial: [23268602]
