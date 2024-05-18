@@ -14742,3 +14742,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:13:19] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.1.tar.gz]
 [2024-05-18 14:13:19] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
 [2024-05-18 14:13:19] INFO root fetch - main [MainThread]: Store serial: [23267546]
+[2024-05-18 14:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267546]
+[2024-05-18 14:15:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 14:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drremote
+[2024-05-18 14:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: livescore-api
+[2024-05-18 14:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: otonagai-dl
+[2024-05-18 14:15:28] INFO root fetch - processPackages [otonagai-dl]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 14:15:28] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/3a/a6/c049c7541dbd18fafef8edc18ef1e6fe559194052ad540537ca704f67d1a/otonagai_dl-1.0.0.tar.gz
+[2024-05-18 14:15:28] INFO root fetch - processPackages [livescore-api]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 14:15:28] INFO root fetch - processPackages [drremote]: New version: [0.1.0.6] Old Version: [0.1.0.5]
+[2024-05-18 14:15:28] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/67/c7/a77fba971ceb626b8c5212ae2f1afbc35b3c793f8f69f6fcfa879ba611fe/otonagai_dl-1.0.1.tar.gz
+[2024-05-18 14:15:28] INFO root fetch - processPackages [drremote]: Downloading https://files.pythonhosted.org/packages/a3/07/2741a75490aa65ee3c99f8079b2531233cd6cb722b625d2719a2120f94c1/drremote-0.1.0.5.tar.gz
+[2024-05-18 14:15:28] INFO root fetch - processPackages [livescore-api]: Downloading https://files.pythonhosted.org/packages/eb/de/80f9142eeb35016dcbe30de46ae50cdedd56623cc0e886d9e6e6269abc0d/livescore-api-0.0.4.tar.gz
+[2024-05-18 14:15:28] INFO root fetch - processPackages [otonagai-dl]: executing diffoscope
+[2024-05-18 14:15:28] INFO root fetch - processPackages [otonagai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otonagai_dl-1.0.0.tar.gz tmp/otonagai_dl-1.0.1.tar.gz --markdown 20240518/o/otonagai-dl/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 14:15:28] INFO root fetch - processPackages [drremote]: Downloading https://files.pythonhosted.org/packages/ac/28/b1316378ae08be8a5419a6685eb9de8f1243ac5b423bfd23c448dc2f2206/drremote-0.1.0.6.tar.gz
+[2024-05-18 14:15:28] INFO root fetch - processPackages [livescore-api]: Downloading https://files.pythonhosted.org/packages/ab/e4/41be072021113665e6a2c3e75d9000a3a11bd13994f56ba1b8d4a217f4bc/livescore-api-0.0.5.tar.gz
+[2024-05-18 14:15:28] INFO root fetch - processPackages [drremote]: executing diffoscope
+[2024-05-18 14:15:28] INFO root fetch - processPackages [drremote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drremote-0.1.0.5.tar.gz tmp/drremote-0.1.0.6.tar.gz --markdown 20240518/d/drremote/0.1.0.5-0.1.0.6/README.md --exclude *.pyd
+[2024-05-18 14:15:28] INFO root fetch - processPackages [livescore-api]: executing diffoscope
+[2024-05-18 14:15:28] INFO root fetch - processPackages [livescore-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livescore-api-0.0.4.tar.gz tmp/livescore-api-0.0.5.tar.gz --markdown 20240518/l/livescore-api/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 14:15:29] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.0.tar.gz]
+[2024-05-18 14:15:29] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.1.tar.gz]
+[2024-05-18 14:15:29] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
+[2024-05-18 14:15:29] INFO root fetch - processPackages [drremote]: Remove: archive file [/home/abi/fetcher/tmp/drremote-0.1.0.5.tar.gz]
+[2024-05-18 14:15:29] INFO root fetch - processPackages [drremote]: Remove: archive file [/home/abi/fetcher/tmp/drremote-0.1.0.6.tar.gz]
+[2024-05-18 14:15:29] INFO root fetch - main [MainThread]: End processing [drremote]: success
+[2024-05-18 14:15:29] INFO root fetch - processPackages [livescore-api]: Remove: archive file [/home/abi/fetcher/tmp/livescore-api-0.0.4.tar.gz]
+[2024-05-18 14:15:29] INFO root fetch - processPackages [livescore-api]: Remove: archive file [/home/abi/fetcher/tmp/livescore-api-0.0.5.tar.gz]
+[2024-05-18 14:15:29] INFO root fetch - main [MainThread]: End processing [livescore-api]: success
+[2024-05-18 14:15:29] INFO root fetch - main [MainThread]: Store serial: [23267554]
