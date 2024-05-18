@@ -15341,3 +15341,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:01:16] INFO root fetch - processPackages [AoE2ScenarioParser]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioParser-0.1.9.tar.gz]
 [2024-05-18 15:01:16] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioParser]: success
 [2024-05-18 15:01:16] INFO root fetch - main [MainThread]: Store serial: [23267883]
+[2024-05-18 15:03:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267883]
+[2024-05-18 15:03:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgarquery
+[2024-05-18 15:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deixisz
+[2024-05-18 15:03:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sarcharts
+[2024-05-18 15:03:26] INFO root fetch - processPackages [sarcharts]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 15:03:26] WARNING root fetch - processPackages [deixisz]: Skipping, unable to determine old version
+[2024-05-18 15:03:26] INFO root fetch - main [MainThread]: End processing [deixisz] error
+[2024-05-18 15:03:26] INFO root fetch - processPackages [edgarquery]: New version: [0.0.61] Old Version: [0.0.60]
+[2024-05-18 15:03:26] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/4b/5c/0f3fee9badc170feb95c60deb10582e28f51208829e9339730532c6b1cbf/sarcharts-0.2.2.tar.gz
+[2024-05-18 15:03:26] INFO root fetch - processPackages [edgarquery]: Downloading https://files.pythonhosted.org/packages/0b/68/0c0b3ca595febb4e3a2b5ff21e9230f8418a0b3038d644eabc6ea555df04/edgarquery-0.0.60.tar.gz
+[2024-05-18 15:03:26] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/6f/7b/28bbad9f431bd5f5d12bbe42e9a9a1f5d531dc17c179337bc6bb0111fc18/sarcharts-0.2.3.tar.gz
+[2024-05-18 15:03:26] INFO root fetch - processPackages [edgarquery]: Downloading https://files.pythonhosted.org/packages/98/d3/44835c2b0f4f1e461d536343aa6e27335c1f9669a441e215301f5230d3c7/edgarquery-0.0.61.tar.gz
+[2024-05-18 15:03:26] INFO root fetch - processPackages [edgarquery]: executing diffoscope
+[2024-05-18 15:03:26] INFO root fetch - processPackages [edgarquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgarquery-0.0.60.tar.gz tmp/edgarquery-0.0.61.tar.gz --markdown 20240518/e/edgarquery/0.0.60-0.0.61/README.md --exclude *.pyd
+[2024-05-18 15:03:27] INFO root fetch - processPackages [sarcharts]: executing diffoscope
+[2024-05-18 15:03:27] INFO root fetch - processPackages [sarcharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarcharts-0.2.2.tar.gz tmp/sarcharts-0.2.3.tar.gz --markdown 20240518/s/sarcharts/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 15:03:27] INFO root fetch - processPackages [edgarquery]: Remove: archive file [/home/abi/fetcher/tmp/edgarquery-0.0.60.tar.gz]
+[2024-05-18 15:03:27] INFO root fetch - processPackages [edgarquery]: Remove: archive file [/home/abi/fetcher/tmp/edgarquery-0.0.61.tar.gz]
+[2024-05-18 15:03:27] INFO root fetch - main [MainThread]: End processing [edgarquery]: success
+[2024-05-18 15:03:27] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.2.tar.gz]
+[2024-05-18 15:03:27] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.3.tar.gz]
+[2024-05-18 15:03:27] INFO root fetch - main [MainThread]: End processing [sarcharts]: success
+[2024-05-18 15:03:27] INFO root fetch - main [MainThread]: Store serial: [23267893]
