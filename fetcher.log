@@ -21264,3 +21264,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:58:36] INFO root fetch - processPackages [omuserver]: Remove: archive file [/home/abi/fetcher/tmp/omuserver-0.4.2.tar.gz]
 [2024-05-18 21:58:36] INFO root fetch - main [MainThread]: End processing [omuserver]: success
 [2024-05-18 21:58:36] INFO root fetch - main [MainThread]: Store serial: [23270780]
+[2024-05-18 22:00:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270780]
+[2024-05-18 22:00:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 22:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: my-table-db
+[2024-05-18 22:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-mqtt-framework
+[2024-05-18 22:00:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unconscious
+[2024-05-18 22:00:46] WARNING root fetch - processPackages [my-table-db]: Skipping, unable to determine old version
+[2024-05-18 22:00:46] INFO root fetch - main [MainThread]: End processing [my-table-db] error
+[2024-05-18 22:00:46] WARNING root fetch - processPackages [python-mqtt-framework]: Skipping, unable to determine old version
+[2024-05-18 22:00:46] INFO root fetch - main [MainThread]: End processing [python-mqtt-framework] error
+[2024-05-18 22:00:46] INFO root fetch - processPackages [unconscious]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 22:00:46] INFO root fetch - processPackages [unconscious]: Downloading https://files.pythonhosted.org/packages/5f/d6/7035a9fd4e82be59bf54101d6cae3a3eef1a2a096d0d43bd8be366c1efeb/unconscious-0.0.5.tar.gz
+[2024-05-18 22:00:47] INFO root fetch - processPackages [unconscious]: Downloading https://files.pythonhosted.org/packages/1b/68/490d68f8df6f98906122b5181ddb69946e23fc5f1269934d56084bfad7d5/unconscious-0.0.6.tar.gz
+[2024-05-18 22:00:47] INFO root fetch - processPackages [unconscious]: executing diffoscope
+[2024-05-18 22:00:47] INFO root fetch - processPackages [unconscious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unconscious-0.0.5.tar.gz tmp/unconscious-0.0.6.tar.gz --markdown 20240518/u/unconscious/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 22:00:47] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.5.tar.gz]
+[2024-05-18 22:00:47] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.6.tar.gz]
+[2024-05-18 22:00:47] INFO root fetch - main [MainThread]: End processing [unconscious]: success
+[2024-05-18 22:00:47] INFO root fetch - main [MainThread]: Store serial: [23270788]
