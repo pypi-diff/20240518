@@ -2799,3 +2799,42 @@
 [2024-05-18 02:58:23] INFO root fetch - processPackages [spectrum-image]: Remove: archive file [/home/abi/fetcher/tmp/spectrum_image-0.3.3.tar.gz]
 [2024-05-18 02:58:23] INFO root fetch - main [MainThread]: End processing [spectrum-image]: success
 [2024-05-18 02:58:23] INFO root fetch - main [MainThread]: Store serial: [23262442]
+[2024-05-18 03:00:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262442]
+[2024-05-18 03:00:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 03:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spandrel
+[2024-05-18 03:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-nets-core
+[2024-05-18 03:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ifcpatch
+[2024-05-18 03:00:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlglot
+[2024-05-18 03:00:32] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.96] Old Version: [0.1.95]
+[2024-05-18 03:00:32] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-18 03:00:32] INFO root fetch - processPackages [spandrel]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-18 03:00:32] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/38/6b/c59baa378d441f982d3e857d1e9924aebb096ff642b4dd01b499f97408bc/django_nets_core-0.1.95.tar.gz
+[2024-05-18 03:00:32] INFO root fetch - processPackages [ifcpatch]: New version: [0.0.240518] Old Version: [0.0.240507]
+[2024-05-18 03:00:32] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-18 03:00:33] INFO root fetch - processPackages [ifcpatch]: Downloading https://files.pythonhosted.org/packages/c7/24/9ab556568888ac85b0c57abcb3e48d6d1e0941d26215cb000cfbf13ce55b/ifcpatch-0.0.240507.tar.gz
+[2024-05-18 03:00:33] INFO root fetch - processPackages [spandrel]: Downloading https://files.pythonhosted.org/packages/2c/95/97d4a91ec9477ae5fe73dcd50ac1d809a12706995c23cbfe017c41095b04/spandrel-0.3.3-py3-none-any.whl
+[2024-05-18 03:00:33] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-18 03:00:33] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/9a/b8/72aa82f2e6fb897a6725cee2631f10b0027a2119a9d24cf72e75dbe88a0a/django_nets_core-0.1.96.tar.gz
+[2024-05-18 03:00:33] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-18 03:00:33] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240518/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-18 03:00:33] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-18 03:00:33] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.95.tar.gz tmp/django_nets_core-0.1.96.tar.gz --markdown 20240518/d/django-nets-core/0.1.95-0.1.96/README.md --exclude *.pyd
+[2024-05-18 03:00:33] INFO root fetch - processPackages [ifcpatch]: Downloading https://files.pythonhosted.org/packages/93/57/df3291c120f9cd1f4e884778e13f6ac4fce55770ef2b1c25abf7dd1b412c/ifcpatch-0.0.240518.tar.gz
+[2024-05-18 03:00:33] INFO root fetch - processPackages [spandrel]: Downloading https://files.pythonhosted.org/packages/1f/53/94dc6c19273be734247dab99494ed22d8ed188e7442c2ea28dbc9ae91dce/spandrel-0.3.4-py3-none-any.whl
+[2024-05-18 03:00:33] INFO root fetch - processPackages [ifcpatch]: executing diffoscope
+[2024-05-18 03:00:33] INFO root fetch - processPackages [ifcpatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ifcpatch-0.0.240507.tar.gz tmp/ifcpatch-0.0.240518.tar.gz --markdown 20240518/i/ifcpatch/0.0.240507-0.0.240518/README.md --exclude *.pyd
+[2024-05-18 03:00:33] INFO root fetch - processPackages [spandrel]: executing diffoscope
+[2024-05-18 03:00:33] INFO root fetch - processPackages [spandrel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spandrel-0.3.3-py3-none-any.whl.zip tmp/spandrel-0.3.4-py3-none-any.whl.zip --markdown 20240518/s/spandrel/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-18 03:00:34] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.95.tar.gz]
+[2024-05-18 03:00:34] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.96.tar.gz]
+[2024-05-18 03:00:34] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-18 03:00:34] INFO root fetch - processPackages [ifcpatch]: Remove: archive file [/home/abi/fetcher/tmp/ifcpatch-0.0.240507.tar.gz]
+[2024-05-18 03:00:34] INFO root fetch - processPackages [ifcpatch]: Remove: archive file [/home/abi/fetcher/tmp/ifcpatch-0.0.240518.tar.gz]
+[2024-05-18 03:00:34] INFO root fetch - main [MainThread]: End processing [ifcpatch]: success
+[2024-05-18 03:00:34] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-18 03:00:34] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-18 03:00:34] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-18 03:00:34] INFO root fetch - processPackages [spandrel]: Remove: archive file [/home/abi/fetcher/tmp/spandrel-0.3.3-py3-none-any.whl.zip]
+[2024-05-18 03:00:34] INFO root fetch - processPackages [spandrel]: Remove: archive file [/home/abi/fetcher/tmp/spandrel-0.3.4-py3-none-any.whl.zip]
+[2024-05-18 03:00:34] INFO root fetch - main [MainThread]: End processing [spandrel]: success
+[2024-05-18 03:00:34] INFO root fetch - main [MainThread]: Store serial: [23262452]
