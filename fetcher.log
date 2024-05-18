@@ -14808,3 +14808,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:17:39] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.3.tar.gz]
 [2024-05-18 14:17:39] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
 [2024-05-18 14:17:39] INFO root fetch - main [MainThread]: Store serial: [23267575]
+[2024-05-18 14:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267575]
+[2024-05-18 14:19:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grooveshop-django-api
+[2024-05-18 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: knowledge-graph-maker
+[2024-05-18 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: camptools
+[2024-05-18 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pynvjpeg2k
+[2024-05-18 14:19:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: traitgpt
+[2024-05-18 14:19:48] WARNING root fetch - processPackages [traitgpt]: Skipping, unable to determine old version
+[2024-05-18 14:19:48] INFO root fetch - main [MainThread]: End processing [traitgpt] error
+[2024-05-18 14:19:48] WARNING root fetch - processPackages [pynvjpeg2k]: Skipping, unable to determine old version
+[2024-05-18 14:19:48] INFO root fetch - main [MainThread]: End processing [pynvjpeg2k] error
+[2024-05-18 14:19:48] INFO root fetch - processPackages [camptools]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-18 14:19:48] WARNING root fetch - processPackages [knowledge-graph-maker]: Skipping, unable to determine old version
+[2024-05-18 14:19:48] INFO root fetch - main [MainThread]: End processing [knowledge-graph-maker] error
+[2024-05-18 14:19:48] INFO root fetch - processPackages [camptools]: Downloading https://files.pythonhosted.org/packages/8a/a3/d00616b1373b01a19144d87632251aafa5b78c53cd8da11525ba135a6875/camptools-0.9.2.tar.gz
+[2024-05-18 14:19:48] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-05-18 14:19:48] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-05-18 14:19:49] INFO root fetch - processPackages [camptools]: Downloading https://files.pythonhosted.org/packages/f9/72/d4d880c9f734e0d5f0baba78d439c1923ffa9b5a88cbf775f81fec309616/camptools-0.9.3.tar.gz
+[2024-05-18 14:19:49] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-05-18 14:19:49] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-05-18 14:19:49] INFO root fetch - processPackages [camptools]: executing diffoscope
+[2024-05-18 14:19:49] INFO root fetch - processPackages [camptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camptools-0.9.2.tar.gz tmp/camptools-0.9.3.tar.gz --markdown 20240518/c/camptools/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-18 14:19:49] INFO root fetch - processPackages [camptools]: Remove: archive file [/home/abi/fetcher/tmp/camptools-0.9.2.tar.gz]
+[2024-05-18 14:19:49] INFO root fetch - processPackages [camptools]: Remove: archive file [/home/abi/fetcher/tmp/camptools-0.9.3.tar.gz]
+[2024-05-18 14:19:49] INFO root fetch - main [MainThread]: End processing [camptools]: success
+[2024-05-18 14:19:49] INFO root fetch - main [MainThread]: Store serial: [23267593]
