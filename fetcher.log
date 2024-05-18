@@ -6782,3 +6782,33 @@
 [2024-05-18 03:34:41] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.170.1.tar.gz]
 [2024-05-18 03:34:41] INFO root fetch - main [MainThread]: End processing [abcli]: success
 [2024-05-18 03:34:41] INFO root fetch - main [MainThread]: Store serial: [23263747]
+[2024-05-18 03:36:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263747]
+[2024-05-18 03:36:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 03:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OZI
+[2024-05-18 03:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: homeassistant-stubs
+[2024-05-18 03:36:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastdev
+[2024-05-18 03:36:51] INFO root fetch - processPackages [fastdev]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 03:36:52] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2024.5.4] Old Version: [2024.5.3]
+[2024-05-18 03:36:52] INFO root fetch - processPackages [OZI]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-05-18 03:36:52] INFO root fetch - processPackages [fastdev]: Downloading https://files.pythonhosted.org/packages/25/cd/5a25adf29ad8724574e20d1bf9bf6f5edc9bb4d28f54e076fdcaf1e7bf80/fastdev-0.0.2.tar.gz
+[2024-05-18 03:36:52] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/7c/7b/8b9071acacd21f4302bf53118025e3641eb32ddea3e8ff02a51e3794306b/homeassistant_stubs-2024.5.3.tar.gz
+[2024-05-18 03:36:52] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/56/05/efe371f7bc5556c61fbb04daa3c8c791ae84f48dd036d716dca86c171604/OZI-1.7.3.tar.gz
+[2024-05-18 03:36:52] INFO root fetch - processPackages [fastdev]: Downloading https://files.pythonhosted.org/packages/bd/d8/51a267d7ec908d7f6a05f108b869371095cc0de5c582767a0ccb11947f29/fastdev-0.0.3.tar.gz
+[2024-05-18 03:36:52] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/fc/07/81dc4cebe2b820c03821dccfba3de45a4b6aeb2911a8a6430116837fe51b/OZI-1.7.4.tar.gz
+[2024-05-18 03:36:52] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/9a/a1/dcd39800ce817cbd4feb40e1ae88159cdfa5ac788501fc22d3e79a9f2e9f/homeassistant_stubs-2024.5.4.tar.gz
+[2024-05-18 03:36:52] INFO root fetch - processPackages [fastdev]: executing diffoscope
+[2024-05-18 03:36:52] INFO root fetch - processPackages [fastdev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastdev-0.0.2.tar.gz tmp/fastdev-0.0.3.tar.gz --markdown 20240518/f/fastdev/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 03:36:52] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-18 03:36:52] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.7.3.tar.gz tmp/OZI-1.7.4.tar.gz --markdown 20240518/O/OZI/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-05-18 03:36:52] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2024-05-18 03:36:52] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2024.5.3.tar.gz tmp/homeassistant_stubs-2024.5.4.tar.gz --markdown 20240518/h/homeassistant-stubs/2024.5.3-2024.5.4/README.md --exclude *.pyd
+[2024-05-18 03:36:53] INFO root fetch - processPackages [fastdev]: Remove: archive file [/home/abi/fetcher/tmp/fastdev-0.0.2.tar.gz]
+[2024-05-18 03:36:53] INFO root fetch - processPackages [fastdev]: Remove: archive file [/home/abi/fetcher/tmp/fastdev-0.0.3.tar.gz]
+[2024-05-18 03:36:53] INFO root fetch - main [MainThread]: End processing [fastdev]: success
+[2024-05-18 03:36:53] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.7.3.tar.gz]
+[2024-05-18 03:36:53] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.7.4.tar.gz]
+[2024-05-18 03:36:53] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-18 03:37:05] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.3.tar.gz]
+[2024-05-18 03:37:05] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.4.tar.gz]
+[2024-05-18 03:37:05] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2024-05-18 03:37:05] INFO root fetch - main [MainThread]: Store serial: [23263758]
