@@ -14834,3 +14834,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:19:49] INFO root fetch - processPackages [camptools]: Remove: archive file [/home/abi/fetcher/tmp/camptools-0.9.3.tar.gz]
 [2024-05-18 14:19:49] INFO root fetch - main [MainThread]: End processing [camptools]: success
 [2024-05-18 14:19:49] INFO root fetch - main [MainThread]: Store serial: [23267593]
+[2024-05-18 14:21:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267593]
+[2024-05-18 14:21:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 14:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydra-fsl
+[2024-05-18 14:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-18 14:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gogr-tools
+[2024-05-18 14:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydantic-pkgr
+[2024-05-18 14:21:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moulz
+[2024-05-18 14:21:58] WARNING root fetch - processPackages [pydantic-pkgr]: Skipping, unable to determine old version
+[2024-05-18 14:21:58] INFO root fetch - main [MainThread]: End processing [pydantic-pkgr] error
+[2024-05-18 14:21:58] INFO root fetch - processPackages [gogr-tools]: New version: [0.0.13] Old Version: [0.0.12]
+[2024-05-18 14:21:58] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 14:21:58] WARNING root fetch - processPackages [moulz]: Skipping, unable to determine old version
+[2024-05-18 14:21:58] INFO root fetch - main [MainThread]: End processing [moulz] error
+[2024-05-18 14:21:58] INFO root fetch - processPackages [pydra-fsl]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 14:21:58] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/92/9d/87ac8b9e50cfc3e5de8e6ee63e0a1e8a8bf0779fbaf19731ef9075b21e3e/gogr_tools-0.0.12.tar.gz
+[2024-05-18 14:21:58] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 14:21:58] INFO root fetch - processPackages [pydra-fsl]: Downloading https://files.pythonhosted.org/packages/bc/30/cb46016bd4704b8c7c02e240f5f4b9177a8c4404d92c329aadc03f01186b/pydra_fsl-0.1.0.tar.gz
+[2024-05-18 14:21:58] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 14:21:58] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 14:21:58] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 14:21:58] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/b9/3d/8433e6f1d4c72266d1636fabfacb977600947a80b672551cb18d8f01c7d3/gogr_tools-0.0.13.tar.gz
+[2024-05-18 14:21:59] INFO root fetch - processPackages [gogr-tools]: executing diffoscope
+[2024-05-18 14:21:59] INFO root fetch - processPackages [gogr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gogr_tools-0.0.12.tar.gz tmp/gogr_tools-0.0.13.tar.gz --markdown 20240518/g/gogr-tools/0.0.12-0.0.13/README.md --exclude *.pyd
+[2024-05-18 14:21:59] INFO root fetch - processPackages [pydra-fsl]: Downloading https://files.pythonhosted.org/packages/1f/27/36c0791b04a8b23bcc3a4ce925f9cff7e7a450791220ebe008ef47fa403e/pydra_fsl-0.1.1.tar.gz
+[2024-05-18 14:21:59] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 14:21:59] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 14:21:59] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 14:21:59] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.12.tar.gz]
+[2024-05-18 14:21:59] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.13.tar.gz]
+[2024-05-18 14:21:59] INFO root fetch - main [MainThread]: End processing [gogr-tools]: success
+[2024-05-18 14:21:59] INFO root fetch - processPackages [pydra-fsl]: executing diffoscope
+[2024-05-18 14:21:59] INFO root fetch - processPackages [pydra-fsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydra_fsl-0.1.0.tar.gz tmp/pydra_fsl-0.1.1.tar.gz --markdown 20240518/p/pydra-fsl/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 14:22:02] INFO root fetch - processPackages [pydra-fsl]: Remove: archive file [/home/abi/fetcher/tmp/pydra_fsl-0.1.0.tar.gz]
+[2024-05-18 14:22:02] INFO root fetch - processPackages [pydra-fsl]: Remove: archive file [/home/abi/fetcher/tmp/pydra_fsl-0.1.1.tar.gz]
+[2024-05-18 14:22:02] INFO root fetch - main [MainThread]: End processing [pydra-fsl]: success
+[2024-05-18 14:22:02] INFO root fetch - main [MainThread]: Store serial: [23267610]
