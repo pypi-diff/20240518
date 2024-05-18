@@ -9728,3 +9728,63 @@
 [2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.1.0.tar.gz]
 [2024-05-18 07:15:25] INFO root fetch - main [MainThread]: End processing [pybunch]: success
 [2024-05-18 07:15:25] INFO root fetch - main [MainThread]: Store serial: [23264884]
+[2024-05-18 07:17:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264884]
+[2024-05-18 07:17:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dyDNS
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-mrp-multi-level
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitonic
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audiotapez
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: model-explorer-onnx
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidpe-rift-pipe
+[2024-05-18 07:17:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addons-oca-manufacture
+[2024-05-18 07:17:34] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 07:17:34] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-05-18 07:17:34] WARNING root fetch - processPackages [audiotapez]: Skipping, unable to determine old version
+[2024-05-18 07:17:34] INFO root fetch - main [MainThread]: End processing [audiotapez] error
+[2024-05-18 07:17:34] INFO root fetch - processPackages [dyDNS]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 07:17:34] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/ff/c0/3c58d9666ea37fa22ac726e2183c383c6a194487fb7d291960b4a4e1e746/model_explorer_onnx-0.1.3.tar.gz
+[2024-05-18 07:17:34] INFO root fetch - processPackages [gitonic]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-18 07:17:34] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-05-18 07:17:34] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: New version: [17.0.1.0.1] Old Version: [17.0.1.0.0.2]
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: New version: [16.0.20240327.2] Old Version: [16.0.20240302.1]
+[2024-05-18 07:17:35] INFO root fetch - processPackages [dyDNS]: Downloading https://files.pythonhosted.org/packages/6d/4c/3b50ba64bb5b737b457ac06090086ef3cb8df72421a00b52f476d0a0154d/dyDNS-0.0.8.tar.gz
+[2024-05-18 07:17:35] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: Downloading https://files.pythonhosted.org/packages/8f/43/fc5ab4aa31586d45d00c1afb74bae98c5c26eee2caccf400e7bf9f8fc724/odoo_addon_mrp_multi_level-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Downloading https://files.pythonhosted.org/packages/34/0e/23faa46a864cd82cb6cfb55722b409ca7d2d4616516b8e888f1292548cc5/odoo_addons_oca_manufacture-16.0.20240302.1-py3-none-any.whl
+[2024-05-18 07:17:35] INFO root fetch - processPackages [gitonic]: Downloading https://files.pythonhosted.org/packages/02/ec/979d13268dd6d0548376a04c2baca4a928010c1acd775b79f8d065e80da2/gitonic-0.0.13.tar.gz
+[2024-05-18 07:17:35] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/55/b2/28653433bfcdc68a92e39c39ee90dc9a69f35d760baa642e6ce7158cb37b/model_explorer_onnx-0.1.4.tar.gz
+[2024-05-18 07:17:35] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-05-18 07:17:35] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240518/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-05-18 07:17:35] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-18 07:17:35] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.3.tar.gz tmp/model_explorer_onnx-0.1.4.tar.gz --markdown 20240518/m/model-explorer-onnx/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 07:17:35] INFO root fetch - processPackages [dyDNS]: Downloading https://files.pythonhosted.org/packages/08/80/e8051d83a1487244b09e9e87f947cfadeaceda02205607e4397b8690a469/dyDNS-0.0.9.tar.gz
+[2024-05-18 07:17:35] INFO root fetch - processPackages [dyDNS]: executing diffoscope
+[2024-05-18 07:17:35] INFO root fetch - processPackages [dyDNS]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyDNS-0.0.8.tar.gz tmp/dyDNS-0.0.9.tar.gz --markdown 20240518/d/dyDNS/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 07:17:35] INFO root fetch - processPackages [gitonic]: Downloading https://files.pythonhosted.org/packages/d7/c8/c7e8b3ec76faf16de7884498c53caec686045c055963315adda7bcb949af/gitonic-0.0.14.tar.gz
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: Downloading https://files.pythonhosted.org/packages/48/08/90e45e7f3add3370a7c930e27b71017d4be8fb8170898940167c48d8a9ba/odoo_addon_mrp_multi_level-17.0.1.0.1-py3-none-any.whl
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Downloading https://files.pythonhosted.org/packages/e4/15/ecef7f829fdebd308f6c4170d02e787ab5dcad88eea494b24c59121c206a/odoo_addons_oca_manufacture-16.0.20240327.2-py3-none-any.whl
+[2024-05-18 07:17:35] INFO root fetch - processPackages [gitonic]: executing diffoscope
+[2024-05-18 07:17:35] INFO root fetch - processPackages [gitonic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitonic-0.0.13.tar.gz tmp/gitonic-0.0.14.tar.gz --markdown 20240518/g/gitonic/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: executing diffoscope
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_manufacture-16.0.20240302.1-py3-none-any.whl.zip tmp/odoo_addons_oca_manufacture-16.0.20240327.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addons-oca-manufacture/16.0.20240302.1-16.0.20240327.2/README.md --exclude *.pyd
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: executing diffoscope
+[2024-05-18 07:17:35] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mrp_multi_level-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_mrp_multi_level-17.0.1.0.1-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-mrp-multi-level/17.0.1.0.0.2-17.0.1.0.1/README.md --exclude *.pyd
+[2024-05-18 07:17:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-05-18 07:17:36] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.3.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.4.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-18 07:17:36] INFO root fetch - processPackages [dyDNS]: Remove: archive file [/home/abi/fetcher/tmp/dyDNS-0.0.8.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - processPackages [dyDNS]: Remove: archive file [/home/abi/fetcher/tmp/dyDNS-0.0.9.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [dyDNS]: success
+[2024-05-18 07:17:36] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_manufacture-16.0.20240302.1-py3-none-any.whl.zip]
+[2024-05-18 07:17:36] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_manufacture-16.0.20240327.2-py3-none-any.whl.zip]
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-manufacture]: success
+[2024-05-18 07:17:36] INFO root fetch - processPackages [gitonic]: Remove: archive file [/home/abi/fetcher/tmp/gitonic-0.0.13.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - processPackages [gitonic]: Remove: archive file [/home/abi/fetcher/tmp/gitonic-0.0.14.tar.gz]
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [gitonic]: success
+[2024-05-18 07:17:36] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mrp_multi_level-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-18 07:17:36] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mrp_multi_level-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-mrp-multi-level]: success
+[2024-05-18 07:17:36] INFO root fetch - main [MainThread]: Store serial: [23264902]
