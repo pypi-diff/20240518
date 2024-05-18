@@ -13694,3 +13694,21 @@
 [2024-05-18 12:53:40] INFO root fetch - processPackages [backupp]: Remove: archive file [/home/abi/fetcher/tmp/backupp-0.0.9rc1-py2.py3-none-any.whl.zip]
 [2024-05-18 12:53:40] INFO root fetch - main [MainThread]: End processing [backupp]: success
 [2024-05-18 12:53:40] INFO root fetch - main [MainThread]: Store serial: [23267072]
+[2024-05-18 12:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267072]
+[2024-05-18 12:55:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redbaitedz
+[2024-05-18 12:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otpwidget
+[2024-05-18 12:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: promplate-recipes
+[2024-05-18 12:55:49] WARNING root fetch - processPackages [redbaitedz]: Skipping, unable to determine old version
+[2024-05-18 12:55:49] WARNING root fetch - processPackages [otpwidget]: Skipping, unable to determine old version
+[2024-05-18 12:55:49] INFO root fetch - main [MainThread]: End processing [redbaitedz] error
+[2024-05-18 12:55:49] INFO root fetch - main [MainThread]: End processing [otpwidget] error
+[2024-05-18 12:55:49] INFO root fetch - processPackages [promplate-recipes]: New version: [0.2.2.post1] Old Version: [0.2.2.1]
+[2024-05-18 12:55:49] INFO root fetch - processPackages [promplate-recipes]: Downloading https://files.pythonhosted.org/packages/d2/49/a11d9a67b01522681a59055b1e282bb3deacf3e92dc01eefea060d3406b4/promplate_recipes-0.2.2.1.tar.gz
+[2024-05-18 12:55:50] INFO root fetch - processPackages [promplate-recipes]: Downloading https://files.pythonhosted.org/packages/58/e9/2a8c477857dcc9ae81a560986da10d00d154e4e415a3f60177eb1ff19df9/promplate_recipes-0.2.2.post1.tar.gz
+[2024-05-18 12:55:50] INFO root fetch - processPackages [promplate-recipes]: executing diffoscope
+[2024-05-18 12:55:50] INFO root fetch - processPackages [promplate-recipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promplate_recipes-0.2.2.1.tar.gz tmp/promplate_recipes-0.2.2.post1.tar.gz --markdown 20240518/p/promplate-recipes/0.2.2.1-0.2.2.post1/README.md --exclude *.pyd
+[2024-05-18 12:55:50] INFO root fetch - processPackages [promplate-recipes]: Remove: archive file [/home/abi/fetcher/tmp/promplate_recipes-0.2.2.1.tar.gz]
+[2024-05-18 12:55:50] INFO root fetch - processPackages [promplate-recipes]: Remove: archive file [/home/abi/fetcher/tmp/promplate_recipes-0.2.2.post1.tar.gz]
+[2024-05-18 12:55:50] INFO root fetch - main [MainThread]: End processing [promplate-recipes]: success
+[2024-05-18 12:55:50] INFO root fetch - main [MainThread]: Store serial: [23267084]
