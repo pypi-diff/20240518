@@ -7389,3 +7389,27 @@
 [2024-05-18 04:27:11] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post39-py3-none-manylinux2014_x86_64.whl.zip]
 [2024-05-18 04:27:11] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
 [2024-05-18 04:27:11] INFO root fetch - main [MainThread]: Store serial: [23264002]
+[2024-05-18 04:29:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264002]
+[2024-05-18 04:29:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 04:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QT-PyQt-PySide-Custom-Widgets
+[2024-05-18 04:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unduncelikez
+[2024-05-18 04:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xplainable-client
+[2024-05-18 04:29:30] INFO root fetch - processPackages [xplainable-client]: New version: [1.2.4.post1] Old Version: [1.2.4]
+[2024-05-18 04:29:30] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/80/09/db1f94701e19018758525bca122015e880b4fba6d954762c48a588d2a2f9/xplainable-client-1.2.4.tar.gz
+[2024-05-18 04:29:30] WARNING root fetch - processPackages [unduncelikez]: Skipping, unable to determine old version
+[2024-05-18 04:29:30] INFO root fetch - main [MainThread]: End processing [unduncelikez] error
+[2024-05-18 04:29:30] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-18 04:29:30] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: Downloading https://files.pythonhosted.org/packages/21/1b/3a6711415f002d1b6c21a2ab747a537190695ec1ba39645e2c08f86cd7ba/qt_pyqt_pyside_custom_widgets-0.9.7.tar.gz
+[2024-05-18 04:29:30] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/ca/0c/d05ccd7555896b989b78cb20a9a7820e51313962ebaa0a8662d39c1e981a/xplainable-client-1.2.4.post1.tar.gz
+[2024-05-18 04:29:30] INFO root fetch - processPackages [xplainable-client]: executing diffoscope
+[2024-05-18 04:29:30] INFO root fetch - processPackages [xplainable-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplainable-client-1.2.4.tar.gz tmp/xplainable-client-1.2.4.post1.tar.gz --markdown 20240518/x/xplainable-client/1.2.4-1.2.4.post1/README.md --exclude *.pyd
+[2024-05-18 04:29:31] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: Downloading https://files.pythonhosted.org/packages/57/c7/7af19243ddb86315cb98fdc770c6c5f89a2f8230067b28a627bd9511ab25/qt_pyqt_pyside_custom_widgets-0.9.8.tar.gz
+[2024-05-18 04:29:31] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable-client-1.2.4.tar.gz]
+[2024-05-18 04:29:31] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable-client-1.2.4.post1.tar.gz]
+[2024-05-18 04:29:31] INFO root fetch - main [MainThread]: End processing [xplainable-client]: success
+[2024-05-18 04:29:31] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: executing diffoscope
+[2024-05-18 04:29:31] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qt_pyqt_pyside_custom_widgets-0.9.7.tar.gz tmp/qt_pyqt_pyside_custom_widgets-0.9.8.tar.gz --markdown 20240518/Q/QT-PyQt-PySide-Custom-Widgets/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-18 04:29:49] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/qt_pyqt_pyside_custom_widgets-0.9.7.tar.gz]
+[2024-05-18 04:29:49] INFO root fetch - processPackages [QT-PyQt-PySide-Custom-Widgets]: Remove: archive file [/home/abi/fetcher/tmp/qt_pyqt_pyside_custom_widgets-0.9.8.tar.gz]
+[2024-05-18 04:29:49] INFO root fetch - main [MainThread]: End processing [QT-PyQt-PySide-Custom-Widgets]: success
+[2024-05-18 04:29:49] INFO root fetch - main [MainThread]: Store serial: [23264011]
