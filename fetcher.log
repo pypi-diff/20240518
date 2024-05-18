@@ -7652,3 +7652,39 @@
 [2024-05-18 04:43:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
 [2024-05-18 04:43:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
 [2024-05-18 04:43:00] INFO root fetch - main [MainThread]: Store serial: [23264094]
+[2024-05-18 04:45:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264094]
+[2024-05-18 04:45:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 04:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltafi
+[2024-05-18 04:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agentdesk
+[2024-05-18 04:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rewirablez
+[2024-05-18 04:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: theme_park
+[2024-05-18 04:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-account-lock-date-update
+[2024-05-18 04:45:09] INFO root fetch - processPackages [agentdesk]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 04:45:09] WARNING root fetch - processPackages [rewirablez]: Skipping, unable to determine old version
+[2024-05-18 04:45:09] INFO root fetch - main [MainThread]: End processing [rewirablez] error
+[2024-05-18 04:45:09] WARNING root fetch - processPackages [theme_park]: Skipping, unable to determine old version
+[2024-05-18 04:45:09] INFO root fetch - main [MainThread]: End processing [theme_park] error
+[2024-05-18 04:45:09] INFO root fetch - processPackages [agentdesk]: Downloading https://files.pythonhosted.org/packages/cf/ca/cd5dfbf2d07fb86e168858977c8668fdff291aaf19cf93c8ae884b0959b1/agentdesk-0.2.8.tar.gz
+[2024-05-18 04:45:09] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: New version: [14.0.2.0.1.dev9] Old Version: [14.0.2.0.1.dev8]
+[2024-05-18 04:45:09] INFO root fetch - processPackages [deltafi]: New version: [2.0rc1716000130240] Old Version: [2.0rc1715691282958]
+[2024-05-18 04:45:10] INFO root fetch - processPackages [agentdesk]: Downloading https://files.pythonhosted.org/packages/24/26/ad035fd9f7aedb4d5a78e0198ca36d0599d9ed6d9f5cfeeb84e922907596/agentdesk-0.2.9.tar.gz
+[2024-05-18 04:45:10] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: Downloading https://files.pythonhosted.org/packages/04/03/b3bb398333429b7e531c8dbe2b8c24fb8671b2125a79a3f34ef406a4d78f/odoo14_addon_account_lock_date_update-14.0.2.0.1.dev8-py3-none-any.whl
+[2024-05-18 04:45:10] INFO root fetch - processPackages [deltafi]: Downloading https://files.pythonhosted.org/packages/37/25/155e118aafea2ec3eccffe57bb14ce8398e3d20e5474f5c9a5b7305af32a/deltafi-2.0rc1715691282958.tar.gz
+[2024-05-18 04:45:10] INFO root fetch - processPackages [agentdesk]: executing diffoscope
+[2024-05-18 04:45:10] INFO root fetch - processPackages [agentdesk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentdesk-0.2.8.tar.gz tmp/agentdesk-0.2.9.tar.gz --markdown 20240518/a/agentdesk/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 04:45:10] INFO root fetch - processPackages [deltafi]: Downloading https://files.pythonhosted.org/packages/4b/37/2ba91aba748e7495048c9e9253a7a830894bb207e7dec2f0fa7d8d9b0555/deltafi-2.0rc1716000130240.tar.gz
+[2024-05-18 04:45:10] INFO root fetch - processPackages [deltafi]: executing diffoscope
+[2024-05-18 04:45:10] INFO root fetch - processPackages [deltafi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltafi-2.0rc1715691282958.tar.gz tmp/deltafi-2.0rc1716000130240.tar.gz --markdown 20240518/d/deltafi/2.0rc1715691282958-2.0rc1716000130240/README.md --exclude *.pyd
+[2024-05-18 04:45:10] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: Downloading https://files.pythonhosted.org/packages/3a/b7/c65d3c31a6ee6555c69f0f06315b6d0054c2bfcdbee6bb101012b2e7415a/odoo14_addon_account_lock_date_update-14.0.2.0.1.dev9-py3-none-any.whl
+[2024-05-18 04:45:10] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: executing diffoscope
+[2024-05-18 04:45:10] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_lock_date_update-14.0.2.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_account_lock_date_update-14.0.2.0.1.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-account-lock-date-update/14.0.2.0.1.dev8-14.0.2.0.1.dev9/README.md --exclude *.pyd
+[2024-05-18 04:45:10] INFO root fetch - processPackages [agentdesk]: Remove: archive file [/home/abi/fetcher/tmp/agentdesk-0.2.8.tar.gz]
+[2024-05-18 04:45:10] INFO root fetch - processPackages [agentdesk]: Remove: archive file [/home/abi/fetcher/tmp/agentdesk-0.2.9.tar.gz]
+[2024-05-18 04:45:10] INFO root fetch - main [MainThread]: End processing [agentdesk]: success
+[2024-05-18 04:45:11] INFO root fetch - processPackages [deltafi]: Remove: archive file [/home/abi/fetcher/tmp/deltafi-2.0rc1715691282958.tar.gz]
+[2024-05-18 04:45:11] INFO root fetch - processPackages [deltafi]: Remove: archive file [/home/abi/fetcher/tmp/deltafi-2.0rc1716000130240.tar.gz]
+[2024-05-18 04:45:11] INFO root fetch - main [MainThread]: End processing [deltafi]: success
+[2024-05-18 04:45:11] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_lock_date_update-14.0.2.0.1.dev8-py3-none-any.whl.zip]
+[2024-05-18 04:45:11] INFO root fetch - processPackages [odoo14-addon-account-lock-date-update]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_lock_date_update-14.0.2.0.1.dev9-py3-none-any.whl.zip]
+[2024-05-18 04:45:11] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-lock-date-update]: success
+[2024-05-18 04:45:11] INFO root fetch - main [MainThread]: Store serial: [23264110]
