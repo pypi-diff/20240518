@@ -8162,3 +8162,60 @@
 [2024-05-18 05:05:04] INFO root fetch - processPackages [odoo-addon-automation-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_automation_oca-16.0.1.0.0.6-py3-none-any.whl.zip]
 [2024-05-18 05:05:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-automation-oca]: success
 [2024-05-18 05:05:04] INFO root fetch - main [MainThread]: Store serial: [23264277]
+[2024-05-18 05:07:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264277]
+[2024-05-18 05:07:13] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balsamic
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-payment-purchase
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-payment-purchase
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyWebman
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-payment-sale
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: blank-project
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-account-payment-purchase
+[2024-05-18 05:07:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-account-payment-sale
+[2024-05-18 05:07:13] WARNING root fetch - processPackages [pyWebman]: Skipping, unable to determine old version
+[2024-05-18 05:07:13] INFO root fetch - main [MainThread]: End processing [pyWebman] error
+[2024-05-18 05:07:13] INFO root fetch - processPackages [balsamic]: New version: [0.1.95] Old Version: [0.1.94]
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-18 05:07:13] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/80/5a/d9dd650deab6ef05ddfb59f1a68132ae56134f57e3bfcb214f62f337b663/balsamic-0.1.94.tar.gz
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: New version: [17.0.1.1.0.2] Old Version: [17.0.1.1.0.1]
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: New version: [17.0.1.1.0.2] Old Version: [17.0.1.1.0.1]
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: New version: [17.0.1.1.0.2] Old Version: [17.0.1.1.0.1]
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: Downloading https://files.pythonhosted.org/packages/81/08/a7d312885977f581532b3e0d1d252f2b514e43e30e127449d9dddf841b23/odoo_addon_account_payment_sale-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 05:07:13] WARNING root fetch - processPackages [blank-project]: Skipping, unable to determine old version
+[2024-05-18 05:07:13] INFO root fetch - main [MainThread]: End processing [blank-project] error
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: Downloading https://files.pythonhosted.org/packages/81/08/a7d312885977f581532b3e0d1d252f2b514e43e30e127449d9dddf841b23/odoo_addon_account_payment_sale-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Downloading https://files.pythonhosted.org/packages/7c/bc/5548ed2ac1291bb4cdd210f6869ac6a032e417cd1f3180ef69e243826527/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Downloading https://files.pythonhosted.org/packages/7c/bc/5548ed2ac1291bb4cdd210f6869ac6a032e417cd1f3180ef69e243826527/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Downloading https://files.pythonhosted.org/packages/7c/bc/5548ed2ac1291bb4cdd210f6869ac6a032e417cd1f3180ef69e243826527/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: Downloading https://files.pythonhosted.org/packages/17/ec/e37f7e7f68fa89d084e53eb46e765df8b709b226629fc7db24efceeeaf5e/odoo_addon_account_payment_sale-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 05:07:13] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: Downloading https://files.pythonhosted.org/packages/17/ec/e37f7e7f68fa89d084e53eb46e765df8b709b226629fc7db24efceeeaf5e/odoo_addon_account_payment_sale-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 05:07:14] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/ac/61/9b4ee7211bf686ba7f5e22e2623ae271844e39b31db87f2b918b9574ad4c/balsamic-0.1.95.tar.gz
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: executing diffoscope
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: executing diffoscope
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_sale-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_account_payment_sale-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-payment-sale/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_sale-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_account_payment_sale-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-payment-sale/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 05:07:14] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 05:07:14] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.94.tar.gz tmp/balsamic-0.1.95.tar.gz --markdown 20240518/b/balsamic/0.1.94-0.1.95/README.md --exclude *.pyd
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Downloading https://files.pythonhosted.org/packages/25/8a/5abf665f4d9de1531abc4c7209e78c75342eb88aa8dbc64a39be2b189b3c/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Downloading https://files.pythonhosted.org/packages/25/8a/5abf665f4d9de1531abc4c7209e78c75342eb88aa8dbc64a39be2b189b3c/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Downloading https://files.pythonhosted.org/packages/25/8a/5abf665f4d9de1531abc4c7209e78c75342eb88aa8dbc64a39be2b189b3c/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: executing diffoscope
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-payment-purchase/17.0.1.1.0.1-17.0.1.1.0.2/README.md --exclude *.pyd
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: executing diffoscope
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-payment-purchase/17.0.1.1.0.1-17.0.1.1.0.2/README.md --exclude *.pyd
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: executing diffoscope
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-payment-purchase/17.0.1.1.0.1-17.0.1.1.0.2/README.md --exclude *.pyd
+[2024-05-18 05:07:14] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.94.tar.gz]
+[2024-05-18 05:07:14] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.95.tar.gz]
+[2024-05-18 05:07:14] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_sale-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 05:07:14] INFO root fetch - processPackages [odoo-addon-account-payment-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_sale-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 05:07:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-sale]: success
+[2024-05-18 05:07:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-sale]: success
+[2024-05-18 05:07:15] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 05:07:15] INFO root fetch - processPackages [odoo-addon-account-payment-purchase]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_purchase-17.0.1.1.0.2-py3-none-any.whl.zip]
+[2024-05-18 05:07:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-purchase]: success
+[2024-05-18 05:07:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-purchase]: success
+[2024-05-18 05:07:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-purchase]: success
+[2024-05-18 05:07:15] INFO root fetch - main [MainThread]: Store serial: [23264298]
