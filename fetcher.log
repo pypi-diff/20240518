@@ -18571,3 +18571,43 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:01:01] INFO root fetch - processPackages [pytest-logikal]: Remove: archive file [/home/abi/fetcher/tmp/pytest_logikal-3.0.0.tar.gz]
 [2024-05-18 19:01:01] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
 [2024-05-18 19:01:01] INFO root fetch - main [MainThread]: Store serial: [23269468]
+[2024-05-18 19:03:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269468]
+[2024-05-18 19:03:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 19:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sh1106-framework
+[2024-05-18 19:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pure-cv
+[2024-05-18 19:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rstms-mailgun
+[2024-05-18 19:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pure-cv
+[2024-05-18 19:03:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: subtractorz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/a1/d6/b74bd499875e6643f4a97d72098432e12c0b957837f5163b1ebc266d6b71/pure_cv-0.1.8.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [sh1106-framework]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 19:03:11] WARNING root fetch - processPackages [subtractorz]: Skipping, unable to determine old version
+[2024-05-18 19:03:11] INFO root fetch - main [MainThread]: End processing [subtractorz] error
+[2024-05-18 19:03:11] INFO root fetch - processPackages [rstms-mailgun]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/a1/d6/b74bd499875e6643f4a97d72098432e12c0b957837f5163b1ebc266d6b71/pure_cv-0.1.8.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/05/1f/42a69fcafdcdddda1f19b187fdc4d1895eebefd62a93b5be218beccaac06/pure_cv-0.1.9.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/80/ff/425c9262db48044e7cfb75d7d9465897eea6de4afd70eba9a477cf91a3a1/sh1106-framework-0.0.1.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [rstms-mailgun]: Downloading https://files.pythonhosted.org/packages/30/cb/a5d5865f084a0bcb22c641e597203cb94a2a288975cd9baa57185c47fc10/rstms_mailgun-1.0.1.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/05/1f/42a69fcafdcdddda1f19b187fdc4d1895eebefd62a93b5be218beccaac06/pure_cv-0.1.9.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_cv-0.1.8.tar.gz tmp/pure_cv-0.1.9.tar.gz --markdown 20240518/p/pure-cv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-05-18 19:03:11] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_cv-0.1.8.tar.gz tmp/pure_cv-0.1.9.tar.gz --markdown 20240518/p/pure-cv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 19:03:11] INFO root fetch - processPackages [sh1106-framework]: Downloading https://files.pythonhosted.org/packages/45/7a/a4d5a19ec06f4e961291e84cf51c09654d02012a9a77066a2e1884a04e26/sh1106_framework-0.0.2.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [rstms-mailgun]: Downloading https://files.pythonhosted.org/packages/54/41/d26bf873eae3e9956a66195ee1e056c3b01dadf3ff2548c379506555fd52/rstms_mailgun-1.0.2.tar.gz
+[2024-05-18 19:03:11] INFO root fetch - processPackages [sh1106-framework]: executing diffoscope
+[2024-05-18 19:03:11] INFO root fetch - processPackages [sh1106-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sh1106-framework-0.0.1.tar.gz tmp/sh1106_framework-0.0.2.tar.gz --markdown 20240518/s/sh1106-framework/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 19:03:11] INFO root fetch - processPackages [rstms-mailgun]: executing diffoscope
+[2024-05-18 19:03:11] INFO root fetch - processPackages [rstms-mailgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rstms_mailgun-1.0.1.tar.gz tmp/rstms_mailgun-1.0.2.tar.gz --markdown 20240518/r/rstms-mailgun/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 19:03:12] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.8.tar.gz]
+[2024-05-18 19:03:12] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.9.tar.gz]
+[2024-05-18 19:03:12] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-05-18 19:03:12] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-05-18 19:03:12] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106-framework-0.0.1.tar.gz]
+[2024-05-18 19:03:12] INFO root fetch - processPackages [sh1106-framework]: Remove: archive file [/home/abi/fetcher/tmp/sh1106_framework-0.0.2.tar.gz]
+[2024-05-18 19:03:12] INFO root fetch - main [MainThread]: End processing [sh1106-framework]: success
+[2024-05-18 19:03:12] INFO root fetch - processPackages [rstms-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/rstms_mailgun-1.0.1.tar.gz]
+[2024-05-18 19:03:12] INFO root fetch - processPackages [rstms-mailgun]: Remove: archive file [/home/abi/fetcher/tmp/rstms_mailgun-1.0.2.tar.gz]
+[2024-05-18 19:03:12] INFO root fetch - main [MainThread]: End processing [rstms-mailgun]: success
+[2024-05-18 19:03:12] INFO root fetch - main [MainThread]: Store serial: [23269483]
