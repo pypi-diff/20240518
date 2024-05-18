@@ -17561,3 +17561,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:50:50] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.6.6.tar.gz]
 [2024-05-18 17:50:50] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
 [2024-05-18 17:50:50] INFO root fetch - main [MainThread]: Store serial: [23268969]
+[2024-05-18 17:52:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268969]
+[2024-05-18 17:52:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hypapantez
+[2024-05-18 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sapiopylib
+[2024-05-18 17:52:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automatic-code-review-commons
+[2024-05-18 17:52:59] INFO root fetch - processPackages [automatic-code-review-commons]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 17:52:59] INFO root fetch - processPackages [sapiopylib]: New version: [2024.5.7rc197] Old Version: [2024.5.7rc196]
+[2024-05-18 17:52:59] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/4c/1c/e9dfacf3de6421604293f1430f02b27537d91ae272fd6cb9c434f5c2e890/sapiopylib-2024.5.7rc196.tar.gz
+[2024-05-18 17:52:59] WARNING root fetch - processPackages [hypapantez]: Skipping, unable to determine old version
+[2024-05-18 17:52:59] INFO root fetch - main [MainThread]: End processing [hypapantez] error
+[2024-05-18 17:52:59] INFO root fetch - processPackages [automatic-code-review-commons]: Downloading https://files.pythonhosted.org/packages/d3/ff/2d57ebfb13e8eb9d97c2dbd4c3f9cd4392f96a14fac797e57b9e9151c31c/automatic-code-review-commons-1.0.0.tar.gz
+[2024-05-18 17:52:59] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/92/c8/f09b37dfd891960344707d28a95f88dbcf245edb008e226ee6476ee0a5a5/sapiopylib-2024.5.7rc197.tar.gz
+[2024-05-18 17:52:59] INFO root fetch - processPackages [automatic-code-review-commons]: Downloading https://files.pythonhosted.org/packages/d5/6a/a1a501e35f8c85ce60494015a3c5b9b8b0ce17b31bad73b418ed4028eacb/automatic-code-review-commons-1.0.1.tar.gz
+[2024-05-18 17:52:59] INFO root fetch - processPackages [sapiopylib]: executing diffoscope
+[2024-05-18 17:52:59] INFO root fetch - processPackages [sapiopylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopylib-2024.5.7rc196.tar.gz tmp/sapiopylib-2024.5.7rc197.tar.gz --markdown 20240518/s/sapiopylib/2024.5.7rc196-2024.5.7rc197/README.md --exclude *.pyd
+[2024-05-18 17:52:59] INFO root fetch - processPackages [automatic-code-review-commons]: executing diffoscope
+[2024-05-18 17:52:59] INFO root fetch - processPackages [automatic-code-review-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automatic-code-review-commons-1.0.0.tar.gz tmp/automatic-code-review-commons-1.0.1.tar.gz --markdown 20240518/a/automatic-code-review-commons/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 17:53:00] INFO root fetch - processPackages [automatic-code-review-commons]: Remove: archive file [/home/abi/fetcher/tmp/automatic-code-review-commons-1.0.0.tar.gz]
+[2024-05-18 17:53:00] INFO root fetch - processPackages [automatic-code-review-commons]: Remove: archive file [/home/abi/fetcher/tmp/automatic-code-review-commons-1.0.1.tar.gz]
+[2024-05-18 17:53:00] INFO root fetch - main [MainThread]: End processing [automatic-code-review-commons]: success
+[2024-05-18 17:53:00] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.7rc196.tar.gz]
+[2024-05-18 17:53:00] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.7rc197.tar.gz]
+[2024-05-18 17:53:00] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
+[2024-05-18 17:53:00] INFO root fetch - main [MainThread]: Store serial: [23268979]
