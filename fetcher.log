@@ -9468,3 +9468,36 @@
 [2024-05-18 06:45:06] WARNING root fetch - processPackages [footium-api]: Skipping, unable to determine old version
 [2024-05-18 06:45:06] INFO root fetch - main [MainThread]: End processing [footium-api] error
 [2024-05-18 06:45:06] INFO root fetch - main [MainThread]: Store serial: [23264774]
+[2024-05-18 06:47:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264774]
+[2024-05-18 06:47:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 06:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: goto-conversion
+[2024-05-18 06:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ibind
+[2024-05-18 06:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spider-python
+[2024-05-18 06:47:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chemurgicallyz
+[2024-05-18 06:47:16] INFO root fetch - processPackages [spider-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 06:47:16] WARNING root fetch - processPackages [chemurgicallyz]: Skipping, unable to determine old version
+[2024-05-18 06:47:16] INFO root fetch - main [MainThread]: End processing [chemurgicallyz] error
+[2024-05-18 06:47:16] INFO root fetch - processPackages [ibind]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 06:47:16] INFO root fetch - processPackages [goto-conversion]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-18 06:47:16] INFO root fetch - processPackages [spider-python]: Downloading https://files.pythonhosted.org/packages/c0/62/2acb1e4739798c7db884d3b23b8746d003aaf760d7a97a7afb460afd6263/spider-python-0.1.8.tar.gz
+[2024-05-18 06:47:16] INFO root fetch - processPackages [goto-conversion]: Downloading https://files.pythonhosted.org/packages/0e/37/230ed9eda29549333259e9f4a435bc7b74a789086da262f4f17f72021612/goto_conversion-0.3.0.tar.gz
+[2024-05-18 06:47:16] INFO root fetch - processPackages [ibind]: Downloading https://files.pythonhosted.org/packages/70/28/6101d84347a1529b0cf9a7c016eef39397b62001f803d4a6d7af7855302f/ibind-0.1.0.tar.gz
+[2024-05-18 06:47:17] INFO root fetch - processPackages [goto-conversion]: Downloading https://files.pythonhosted.org/packages/9c/a4/a19ff5e8f22368d3eadee2d7fb3b1f4db327711ffc51e6300ed6d1a369fd/goto_conversion-0.3.1.tar.gz
+[2024-05-18 06:47:17] INFO root fetch - processPackages [ibind]: Downloading https://files.pythonhosted.org/packages/70/c8/4ac48d1d6d9dedebcdb6bb6a65dfd8c81d5924b973bfdd3ed13997f9f045/ibind-0.1.1.tar.gz
+[2024-05-18 06:47:17] INFO root fetch - processPackages [spider-python]: Downloading https://files.pythonhosted.org/packages/f9/06/20c7dbf9c08147211dabbf15985a904ed993a798be09b41615911ef07762/spider-python-0.1.9.tar.gz
+[2024-05-18 06:47:17] INFO root fetch - processPackages [goto-conversion]: executing diffoscope
+[2024-05-18 06:47:17] INFO root fetch - processPackages [goto-conversion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/goto_conversion-0.3.0.tar.gz tmp/goto_conversion-0.3.1.tar.gz --markdown 20240518/g/goto-conversion/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-18 06:47:17] INFO root fetch - processPackages [ibind]: executing diffoscope
+[2024-05-18 06:47:17] INFO root fetch - processPackages [ibind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ibind-0.1.0.tar.gz tmp/ibind-0.1.1.tar.gz --markdown 20240518/i/ibind/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 06:47:17] INFO root fetch - processPackages [spider-python]: executing diffoscope
+[2024-05-18 06:47:17] INFO root fetch - processPackages [spider-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spider-python-0.1.8.tar.gz tmp/spider-python-0.1.9.tar.gz --markdown 20240518/s/spider-python/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 06:47:17] INFO root fetch - processPackages [goto-conversion]: Remove: archive file [/home/abi/fetcher/tmp/goto_conversion-0.3.0.tar.gz]
+[2024-05-18 06:47:17] INFO root fetch - processPackages [goto-conversion]: Remove: archive file [/home/abi/fetcher/tmp/goto_conversion-0.3.1.tar.gz]
+[2024-05-18 06:47:17] INFO root fetch - main [MainThread]: End processing [goto-conversion]: success
+[2024-05-18 06:47:18] INFO root fetch - processPackages [spider-python]: Remove: archive file [/home/abi/fetcher/tmp/spider-python-0.1.8.tar.gz]
+[2024-05-18 06:47:18] INFO root fetch - processPackages [spider-python]: Remove: archive file [/home/abi/fetcher/tmp/spider-python-0.1.9.tar.gz]
+[2024-05-18 06:47:18] INFO root fetch - main [MainThread]: End processing [spider-python]: success
+[2024-05-18 06:47:18] INFO root fetch - processPackages [ibind]: Remove: archive file [/home/abi/fetcher/tmp/ibind-0.1.0.tar.gz]
+[2024-05-18 06:47:18] INFO root fetch - processPackages [ibind]: Remove: archive file [/home/abi/fetcher/tmp/ibind-0.1.1.tar.gz]
+[2024-05-18 06:47:18] INFO root fetch - main [MainThread]: End processing [ibind]: success
+[2024-05-18 06:47:18] INFO root fetch - main [MainThread]: Store serial: [23264785]
