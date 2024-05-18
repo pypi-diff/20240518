@@ -10675,3 +10675,15 @@
 [2024-05-18 08:35:17] INFO root fetch - processPackages [pyedifice]: Remove: archive file [/home/abi/fetcher/tmp/pyedifice-0.5.6.tar.gz]
 [2024-05-18 08:35:17] INFO root fetch - main [MainThread]: End processing [pyedifice]: success
 [2024-05-18 08:35:17] INFO root fetch - main [MainThread]: Store serial: [23265329]
+[2024-05-18 08:37:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265329]
+[2024-05-18 08:37:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 08:37:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydflow
+[2024-05-18 08:37:27] INFO root fetch - processPackages [pydflow]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-05-18 08:37:27] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/8d/22/584c02b6b9a49c26a40cc22b7f10af25724fe70df5357e5a527c2c36729a/pydflow-1.8.8.tar.gz
+[2024-05-18 08:37:29] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/b8/ee/62435e12ce818ae5c15b7256f01e225eb1dd5e3d49e3bde8e913944b4caa/pydflow-1.8.9.tar.gz
+[2024-05-18 08:37:29] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2024-05-18 08:37:29] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.8.8.tar.gz tmp/pydflow-1.8.9.tar.gz --markdown 20240518/p/pydflow/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-05-18 08:37:30] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.8.tar.gz]
+[2024-05-18 08:37:30] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
+[2024-05-18 08:37:30] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2024-05-18 08:37:30] INFO root fetch - main [MainThread]: Store serial: [23265330]
