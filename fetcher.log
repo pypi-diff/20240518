@@ -10522,3 +10522,33 @@
 [2024-05-18 08:24:19] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl.zip]
 [2024-05-18 08:24:19] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-order-revision]: success
 [2024-05-18 08:24:19] INFO root fetch - main [MainThread]: Store serial: [23265263]
+[2024-05-18 08:26:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265263]
+[2024-05-18 08:26:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 08:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-calc24
+[2024-05-18 08:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RPICommLink
+[2024-05-18 08:26:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest_robotframework
+[2024-05-18 08:26:28] INFO root fetch - processPackages [RPICommLink]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-18 08:26:28] INFO root fetch - processPackages [nonebot-plugin-calc24]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 08:26:28] INFO root fetch - processPackages [pytest_robotframework]: New version: [4.1.4] Old Version: [4.1.3]
+[2024-05-18 08:26:28] INFO root fetch - processPackages [RPICommLink]: Downloading https://files.pythonhosted.org/packages/d0/0b/4425b0f4d803d6b4e45acc36fe4d8e3a8f85e548eb88d93c242215da490e/RPICommLink-1.1.3.tar.gz
+[2024-05-18 08:26:28] INFO root fetch - processPackages [nonebot-plugin-calc24]: Downloading https://files.pythonhosted.org/packages/e2/64/39c00b7f92d08336822c354b7b6cde3ea8c87a9f7488d8d82735271bf542/nonebot_plugin_calc24-0.2.2.tar.gz
+[2024-05-18 08:26:28] INFO root fetch - processPackages [pytest_robotframework]: Downloading https://files.pythonhosted.org/packages/72/5e/2867b8a83345ac04a15a44dac0261e4734e59c6b888f8620b02d76ceb9fb/pytest_robotframework-4.1.3.tar.gz
+[2024-05-18 08:26:28] INFO root fetch - processPackages [RPICommLink]: Downloading https://files.pythonhosted.org/packages/ff/9a/b855464d74ab1b99d55a0ffda0573218f46b555725d2cb11d3a5d48bc62f/rpicommlink-1.1.4.tar.gz
+[2024-05-18 08:26:28] INFO root fetch - processPackages [nonebot-plugin-calc24]: Downloading https://files.pythonhosted.org/packages/f1/1a/542ae341c870089a624bf14da41b132da5d271a1c8b395570033278b5d40/nonebot_plugin_calc24-0.2.3.tar.gz
+[2024-05-18 08:26:28] INFO root fetch - processPackages [pytest_robotframework]: Downloading https://files.pythonhosted.org/packages/16/0b/f44657b60af81b015de7bd209652dd14dfb637c1ac5c6f2576a7dfdbb8e0/pytest_robotframework-4.1.4.tar.gz
+[2024-05-18 08:26:28] INFO root fetch - processPackages [RPICommLink]: executing diffoscope
+[2024-05-18 08:26:28] INFO root fetch - processPackages [RPICommLink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RPICommLink-1.1.3.tar.gz tmp/rpicommlink-1.1.4.tar.gz --markdown 20240518/R/RPICommLink/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-18 08:26:28] INFO root fetch - processPackages [nonebot-plugin-calc24]: executing diffoscope
+[2024-05-18 08:26:28] INFO root fetch - processPackages [nonebot-plugin-calc24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_calc24-0.2.2.tar.gz tmp/nonebot_plugin_calc24-0.2.3.tar.gz --markdown 20240518/n/nonebot-plugin-calc24/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 08:26:28] INFO root fetch - processPackages [pytest_robotframework]: executing diffoscope
+[2024-05-18 08:26:28] INFO root fetch - processPackages [pytest_robotframework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_robotframework-4.1.3.tar.gz tmp/pytest_robotframework-4.1.4.tar.gz --markdown 20240518/p/pytest_robotframework/4.1.3-4.1.4/README.md --exclude *.pyd
+[2024-05-18 08:26:29] INFO root fetch - processPackages [RPICommLink]: Remove: archive file [/home/abi/fetcher/tmp/RPICommLink-1.1.3.tar.gz]
+[2024-05-18 08:26:29] INFO root fetch - processPackages [RPICommLink]: Remove: archive file [/home/abi/fetcher/tmp/rpicommlink-1.1.4.tar.gz]
+[2024-05-18 08:26:29] INFO root fetch - main [MainThread]: End processing [RPICommLink]: success
+[2024-05-18 08:26:29] INFO root fetch - processPackages [nonebot-plugin-calc24]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_calc24-0.2.2.tar.gz]
+[2024-05-18 08:26:29] INFO root fetch - processPackages [nonebot-plugin-calc24]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_calc24-0.2.3.tar.gz]
+[2024-05-18 08:26:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-calc24]: success
+[2024-05-18 08:26:29] INFO root fetch - processPackages [pytest_robotframework]: Remove: archive file [/home/abi/fetcher/tmp/pytest_robotframework-4.1.3.tar.gz]
+[2024-05-18 08:26:29] INFO root fetch - processPackages [pytest_robotframework]: Remove: archive file [/home/abi/fetcher/tmp/pytest_robotframework-4.1.4.tar.gz]
+[2024-05-18 08:26:29] INFO root fetch - main [MainThread]: End processing [pytest_robotframework]: success
+[2024-05-18 08:26:29] INFO root fetch - main [MainThread]: Store serial: [23265271]
