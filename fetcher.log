@@ -18140,3 +18140,31 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:28:13] INFO root fetch - processPackages [logfire]: Remove: archive file [/home/abi/fetcher/tmp/logfire-0.33.0.tar.gz]
 [2024-05-18 18:28:13] INFO root fetch - main [MainThread]: End processing [logfire]: success
 [2024-05-18 18:28:13] INFO root fetch - main [MainThread]: Store serial: [23269234]
+[2024-05-18 18:30:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269234]
+[2024-05-18 18:30:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 18:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mleko
+[2024-05-18 18:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twinlib
+[2024-05-18 18:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twinlib
+[2024-05-18 18:30:22] INFO root fetch - processPackages [twinlib]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 18:30:22] INFO root fetch - processPackages [twinlib]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 18:30:22] INFO root fetch - processPackages [mleko]: New version: [4.1.0] Old Version: [4.0.0]
+[2024-05-18 18:30:22] INFO root fetch - processPackages [twinlib]: Downloading https://files.pythonhosted.org/packages/76/e6/b24b5d3c6f2d2c3585e9de82abfae0e37e9e78a67d8b40ef6c992392895e/twinlib-0.1.6.tar.gz
+[2024-05-18 18:30:22] INFO root fetch - processPackages [twinlib]: Downloading https://files.pythonhosted.org/packages/76/e6/b24b5d3c6f2d2c3585e9de82abfae0e37e9e78a67d8b40ef6c992392895e/twinlib-0.1.6.tar.gz
+[2024-05-18 18:30:22] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/e3/ba/d980397caaff3dd92b45cc4a426125722dbbeb1678bdc865215d904bba1e/mleko-4.0.0.tar.gz
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: Downloading https://files.pythonhosted.org/packages/60/48/6cdc6500bf6fffacc6c66d22adfc5b14cb9779ac2f47d374bbedf975ec79/twinlib-0.1.7.tar.gz
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: Downloading https://files.pythonhosted.org/packages/60/48/6cdc6500bf6fffacc6c66d22adfc5b14cb9779ac2f47d374bbedf975ec79/twinlib-0.1.7.tar.gz
+[2024-05-18 18:30:23] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/8c/ba/2270bbcd0f928094e9015f2d3c68b298b54cf3acd2a194cd3d16daf46378/mleko-4.1.0.tar.gz
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: executing diffoscope
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: executing diffoscope
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twinlib-0.1.6.tar.gz tmp/twinlib-0.1.7.tar.gz --markdown 20240518/t/twinlib/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twinlib-0.1.6.tar.gz tmp/twinlib-0.1.7.tar.gz --markdown 20240518/t/twinlib/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 18:30:23] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2024-05-18 18:30:23] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-4.0.0.tar.gz tmp/mleko-4.1.0.tar.gz --markdown 20240518/m/mleko/4.0.0-4.1.0/README.md --exclude *.pyd
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: Remove: archive file [/home/abi/fetcher/tmp/twinlib-0.1.6.tar.gz]
+[2024-05-18 18:30:23] INFO root fetch - processPackages [twinlib]: Remove: archive file [/home/abi/fetcher/tmp/twinlib-0.1.7.tar.gz]
+[2024-05-18 18:30:23] INFO root fetch - main [MainThread]: End processing [twinlib]: success
+[2024-05-18 18:30:23] INFO root fetch - main [MainThread]: End processing [twinlib]: success
+[2024-05-18 18:30:24] INFO root fetch - processPackages [mleko]: Remove: archive file [/home/abi/fetcher/tmp/mleko-4.0.0.tar.gz]
+[2024-05-18 18:30:24] INFO root fetch - processPackages [mleko]: Remove: archive file [/home/abi/fetcher/tmp/mleko-4.1.0.tar.gz]
+[2024-05-18 18:30:24] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2024-05-18 18:30:24] INFO root fetch - main [MainThread]: Store serial: [23269243]
