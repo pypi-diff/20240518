@@ -14995,3 +14995,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:35:06] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.5.tar.gz]
 [2024-05-18 14:35:06] INFO root fetch - main [MainThread]: End processing [torchsense]: success
 [2024-05-18 14:35:06] INFO root fetch - main [MainThread]: Store serial: [23267671]
+[2024-05-18 14:37:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267671]
+[2024-05-18 14:37:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 14:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: traitgpt
+[2024-05-18 14:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dalpha
+[2024-05-18 14:37:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netez
+[2024-05-18 14:37:15] INFO root fetch - processPackages [traitgpt]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-18 14:37:15] WARNING root fetch - processPackages [netez]: Skipping, unable to determine old version
+[2024-05-18 14:37:15] INFO root fetch - main [MainThread]: End processing [netez] error
+[2024-05-18 14:37:15] INFO root fetch - processPackages [dalpha]: New version: [0.5.3rc0] Old Version: [0.5.2rc3]
+[2024-05-18 14:37:15] INFO root fetch - processPackages [traitgpt]: Downloading https://files.pythonhosted.org/packages/bf/af/60714589902519d2dd194c2a1cd609e3908ea609dbf6d2a9a6aeffb43fe3/traitgpt-0.0.6.tar.gz
+[2024-05-18 14:37:15] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/05/5c/c16e5c638bba198da087e246acb6442c25ed015945d1b191706beccf383c/dalpha-0.5.2rc3.tar.gz
+[2024-05-18 14:37:15] INFO root fetch - processPackages [traitgpt]: Downloading https://files.pythonhosted.org/packages/25/31/8d8d0cf7f0f0ced888d736b1e4e879e1611b13674d846982642c00ab8a5a/traitgpt-0.0.7.tar.gz
+[2024-05-18 14:37:15] INFO root fetch - processPackages [traitgpt]: executing diffoscope
+[2024-05-18 14:37:15] INFO root fetch - processPackages [traitgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traitgpt-0.0.6.tar.gz tmp/traitgpt-0.0.7.tar.gz --markdown 20240518/t/traitgpt/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-18 14:37:15] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/aa/80/b34e46c1d2990bfd257f305553c576eb100fbafacf8451a929d81a771ced/dalpha-0.5.3rc0.tar.gz
+[2024-05-18 14:37:16] INFO root fetch - processPackages [dalpha]: executing diffoscope
+[2024-05-18 14:37:16] INFO root fetch - processPackages [dalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalpha-0.5.2rc3.tar.gz tmp/dalpha-0.5.3rc0.tar.gz --markdown 20240518/d/dalpha/0.5.2rc3-0.5.3rc0/README.md --exclude *.pyd
+[2024-05-18 14:37:16] INFO root fetch - processPackages [traitgpt]: Remove: archive file [/home/abi/fetcher/tmp/traitgpt-0.0.6.tar.gz]
+[2024-05-18 14:37:16] INFO root fetch - processPackages [traitgpt]: Remove: archive file [/home/abi/fetcher/tmp/traitgpt-0.0.7.tar.gz]
+[2024-05-18 14:37:16] INFO root fetch - main [MainThread]: End processing [traitgpt]: success
+[2024-05-18 14:37:16] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.2rc3.tar.gz]
+[2024-05-18 14:37:16] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.3rc0.tar.gz]
+[2024-05-18 14:37:16] INFO root fetch - main [MainThread]: End processing [dalpha]: success
+[2024-05-18 14:37:16] INFO root fetch - main [MainThread]: Store serial: [23267681]
