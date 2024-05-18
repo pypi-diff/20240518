@@ -13661,3 +13661,21 @@
 [2024-05-18 12:49:20] INFO root fetch - processPackages [blueblack]: Remove: archive file [/home/abi/fetcher/tmp/blueblack-1.0.2.tar.gz]
 [2024-05-18 12:49:20] INFO root fetch - main [MainThread]: End processing [blueblack]: success
 [2024-05-18 12:49:20] INFO root fetch - main [MainThread]: Store serial: [23267052]
+[2024-05-18 12:51:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267052]
+[2024-05-18 12:51:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superepicz
+[2024-05-18 12:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onlymaze
+[2024-05-18 12:51:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openclimatedata
+[2024-05-18 12:51:29] WARNING root fetch - processPackages [onlymaze]: Skipping, unable to determine old version
+[2024-05-18 12:51:29] INFO root fetch - processPackages [openclimatedata]: New version: [0.9] Old Version: [0.8]
+[2024-05-18 12:51:29] INFO root fetch - main [MainThread]: End processing [onlymaze] error
+[2024-05-18 12:51:29] INFO root fetch - processPackages [openclimatedata]: Downloading https://files.pythonhosted.org/packages/a8/32/ed04455a721bb9faf7a86120fbaaa7223bbaa9a228126bdba076f49d16b1/openclimatedata-0.8.tar.gz
+[2024-05-18 12:51:29] WARNING root fetch - processPackages [superepicz]: Skipping, unable to determine old version
+[2024-05-18 12:51:29] INFO root fetch - main [MainThread]: End processing [superepicz] error
+[2024-05-18 12:51:29] INFO root fetch - processPackages [openclimatedata]: Downloading https://files.pythonhosted.org/packages/6e/2e/754d2351fe6051693cf51d38540aeac95e485a40509057b06dd00d361dc8/openclimatedata-0.9.tar.gz
+[2024-05-18 12:51:29] INFO root fetch - processPackages [openclimatedata]: executing diffoscope
+[2024-05-18 12:51:29] INFO root fetch - processPackages [openclimatedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openclimatedata-0.8.tar.gz tmp/openclimatedata-0.9.tar.gz --markdown 20240518/o/openclimatedata/0.8-0.9/README.md --exclude *.pyd
+[2024-05-18 12:51:30] INFO root fetch - processPackages [openclimatedata]: Remove: archive file [/home/abi/fetcher/tmp/openclimatedata-0.8.tar.gz]
+[2024-05-18 12:51:30] INFO root fetch - processPackages [openclimatedata]: Remove: archive file [/home/abi/fetcher/tmp/openclimatedata-0.9.tar.gz]
+[2024-05-18 12:51:30] INFO root fetch - main [MainThread]: End processing [openclimatedata]: success
+[2024-05-18 12:51:30] INFO root fetch - main [MainThread]: Store serial: [23267064]
