@@ -14676,3 +14676,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:06:47] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.0.tar.gz]
 [2024-05-18 14:06:47] INFO root fetch - main [MainThread]: End processing [semchunk]: success
 [2024-05-18 14:06:47] INFO root fetch - main [MainThread]: Store serial: [23267507]
+[2024-05-18 14:08:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267507]
+[2024-05-18 14:08:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 14:08:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torcheval-nightly
+[2024-05-18 14:08:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interpreters-pep-734
+[2024-05-18 14:08:56] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-18 14:08:56] INFO root fetch - processPackages [interpreters-pep-734]: New version: [0.1.0] Old Version: [0.0.1.1]
+[2024-05-18 14:08:56] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/98/c1/96a1c122528ea0121ecc29466d1a6b26c68b8a6036aae6bdb121ddcfdbff/torcheval_nightly-2024.5.8.tar.gz
+[2024-05-18 14:08:56] INFO root fetch - processPackages [interpreters-pep-734]: Downloading https://files.pythonhosted.org/packages/d2/b5/62101f4eea4f6b192c28c9bab637b89bac268044a6e54e84ab711358e9e3/interpreters_pep_734-0.0.1.1.tar.gz
+[2024-05-18 14:08:56] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/60/c3/da56bee236b598ba0c7ed2929a00a2cf4f41f79676194a22cd34a85b00eb/torcheval_nightly-2024.5.9.tar.gz
+[2024-05-18 14:08:57] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-05-18 14:08:57] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval_nightly-2024.5.8.tar.gz tmp/torcheval_nightly-2024.5.9.tar.gz --markdown 20240518/t/torcheval-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-18 14:08:57] INFO root fetch - processPackages [interpreters-pep-734]: Downloading https://files.pythonhosted.org/packages/3c/24/068a1c72a1bc03ebb0edc8f029f1c88f4dd721d477bdf96c5f1fdd615199/interpreters_pep_734-0.1.0.tar.gz
+[2024-05-18 14:08:57] INFO root fetch - processPackages [interpreters-pep-734]: executing diffoscope
+[2024-05-18 14:08:57] INFO root fetch - processPackages [interpreters-pep-734]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interpreters_pep_734-0.0.1.1.tar.gz tmp/interpreters_pep_734-0.1.0.tar.gz --markdown 20240518/i/interpreters-pep-734/0.0.1.1-0.1.0/README.md --exclude *.pyd
+[2024-05-18 14:08:57] INFO root fetch - processPackages [interpreters-pep-734]: Remove: archive file [/home/abi/fetcher/tmp/interpreters_pep_734-0.0.1.1.tar.gz]
+[2024-05-18 14:08:57] INFO root fetch - processPackages [interpreters-pep-734]: Remove: archive file [/home/abi/fetcher/tmp/interpreters_pep_734-0.1.0.tar.gz]
+[2024-05-18 14:08:57] INFO root fetch - main [MainThread]: End processing [interpreters-pep-734]: success
+[2024-05-18 14:08:57] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.8.tar.gz]
+[2024-05-18 14:08:57] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.9.tar.gz]
+[2024-05-18 14:08:57] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-05-18 14:08:57] INFO root fetch - main [MainThread]: Store serial: [23267516]
