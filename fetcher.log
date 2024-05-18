@@ -9930,3 +9930,9 @@
 [2024-05-18 07:30:38] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
 [2024-05-18 07:30:38] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2024-05-18 07:30:38] INFO root fetch - main [MainThread]: Store serial: [23264980]
+[2024-05-18 07:32:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264980]
+[2024-05-18 07:32:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 07:32:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pretransmittingz
+[2024-05-18 07:32:47] WARNING root fetch - processPackages [pretransmittingz]: Skipping, unable to determine old version
+[2024-05-18 07:32:47] INFO root fetch - main [MainThread]: End processing [pretransmittingz] error
+[2024-05-18 07:32:47] INFO root fetch - main [MainThread]: Store serial: [23264984]
