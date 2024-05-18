@@ -16476,3 +16476,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:35:51] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.3a7.tar.gz]
 [2024-05-18 16:35:51] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
 [2024-05-18 16:35:51] INFO root fetch - main [MainThread]: Store serial: [23268458]
+[2024-05-18 16:37:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268458]
+[2024-05-18 16:38:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 16:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anycrc
+[2024-05-18 16:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywxdump
+[2024-05-18 16:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bayesian-testing
+[2024-05-18 16:38:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: almo
+[2024-05-18 16:38:00] INFO root fetch - processPackages [almo]: New version: [0.8.4] Old Version: [0.1.0]
+[2024-05-18 16:38:00] INFO root fetch - processPackages [anycrc]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-18 16:38:00] INFO root fetch - processPackages [almo]: Downloading https://files.pythonhosted.org/packages/09/3d/144aa25ba2aaae165ed4f32c7ab05bc6a3bba4d35d0546a27d139d2fe6b0/almo-0.1.0.tar.gz
+[2024-05-18 16:38:00] INFO root fetch - processPackages [bayesian-testing]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-18 16:38:00] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/60/f8/4a5d0a737a44ac38ab795b18962368e889218c8e98cf97e5f8ca411d0bd3/anycrc-0.7.0.tar.gz
+[2024-05-18 16:38:00] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.6]
+[2024-05-18 16:38:00] INFO root fetch - processPackages [bayesian-testing]: Downloading https://files.pythonhosted.org/packages/72/5f/2c424f3a8e25d7904c8f0e7b8de130fdd87c4adc674ce5115248a3a061ed/bayesian_testing-0.6.1.tar.gz
+[2024-05-18 16:38:00] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/cb/78/6d75d5e0ed020d3f8e69339ff32d4be7f31fcca98e6208cff1ce6c179e86/pywxdump-3.0.6.tar.gz
+[2024-05-18 16:38:00] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/24/04/95adf7469a2a6b92e5837997581b107a1f558b4b89fa160c9d8dc1adb329/anycrc-0.7.1.tar.gz
+[2024-05-18 16:38:00] INFO root fetch - processPackages [almo]: Downloading https://files.pythonhosted.org/packages/e4/07/7ef68ecfc9729019805bd0a3f52d799e5b811d0704ee6b481751c4593708/almo-0.8.4.tar.gz
+[2024-05-18 16:38:01] INFO root fetch - processPackages [almo]: executing diffoscope
+[2024-05-18 16:38:01] INFO root fetch - processPackages [almo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almo-0.1.0.tar.gz tmp/almo-0.8.4.tar.gz --markdown 20240518/a/almo/0.1.0-0.8.4/README.md --exclude *.pyd
+[2024-05-18 16:38:01] INFO root fetch - processPackages [anycrc]: executing diffoscope
+[2024-05-18 16:38:01] INFO root fetch - processPackages [anycrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycrc-0.7.0.tar.gz tmp/anycrc-0.7.1.tar.gz --markdown 20240518/a/anycrc/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-18 16:38:01] INFO root fetch - processPackages [bayesian-testing]: Downloading https://files.pythonhosted.org/packages/0f/8d/e3bfc2b6d6cd2459b1592c0da7c729640754f9780f4e610ef0c10b3edfa2/bayesian_testing-0.6.2.tar.gz
+[2024-05-18 16:38:01] INFO root fetch - processPackages [bayesian-testing]: executing diffoscope
+[2024-05-18 16:38:01] INFO root fetch - processPackages [bayesian-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bayesian_testing-0.6.1.tar.gz tmp/bayesian_testing-0.6.2.tar.gz --markdown 20240518/b/bayesian-testing/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-18 16:38:01] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-05-18 16:38:01] INFO root fetch - processPackages [almo]: Remove: archive file [/home/abi/fetcher/tmp/almo-0.1.0.tar.gz]
+[2024-05-18 16:38:01] INFO root fetch - processPackages [almo]: Remove: archive file [/home/abi/fetcher/tmp/almo-0.8.4.tar.gz]
+[2024-05-18 16:38:01] INFO root fetch - main [MainThread]: End processing [almo]: success
+[2024-05-18 16:38:01] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-05-18 16:38:01] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.6.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240518/p/pywxdump/3.0.6-3.0.8/README.md --exclude *.pyd
+[2024-05-18 16:38:01] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.7.0.tar.gz]
+[2024-05-18 16:38:01] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.7.1.tar.gz]
+[2024-05-18 16:38:01] INFO root fetch - main [MainThread]: End processing [anycrc]: success
+[2024-05-18 16:38:01] INFO root fetch - processPackages [bayesian-testing]: Remove: archive file [/home/abi/fetcher/tmp/bayesian_testing-0.6.1.tar.gz]
+[2024-05-18 16:38:01] INFO root fetch - processPackages [bayesian-testing]: Remove: archive file [/home/abi/fetcher/tmp/bayesian_testing-0.6.2.tar.gz]
+[2024-05-18 16:38:01] INFO root fetch - main [MainThread]: End processing [bayesian-testing]: success
+[2024-05-18 16:38:17] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.6.tar.gz]
+[2024-05-18 16:38:17] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-05-18 16:38:17] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-05-18 16:38:17] INFO root fetch - main [MainThread]: Store serial: [23268515]
