@@ -9689,3 +9689,24 @@
 [2024-05-18 07:08:56] INFO root fetch - processPackages [pyCirclize]: Remove: archive file [/home/abi/fetcher/tmp/pycirclize-1.5.0.tar.gz]
 [2024-05-18 07:08:56] INFO root fetch - main [MainThread]: End processing [pyCirclize]: success
 [2024-05-18 07:08:56] INFO root fetch - main [MainThread]: Store serial: [23264872]
+[2024-05-18 07:11:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264872]
+[2024-05-18 07:11:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 07:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bank-scrapers
+[2024-05-18 07:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: whaox-wapi
+[2024-05-18 07:11:06] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-18 07:11:06] INFO root fetch - processPackages [whaox-wapi]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-18 07:11:06] INFO root fetch - processPackages [whaox-wapi]: Downloading https://files.pythonhosted.org/packages/40/01/6e0ed8fd7b147121d727504c36118b371254b81516a20f1ac4292f5d1d90/whaox-wapi-1.1.1.tar.gz
+[2024-05-18 07:11:06] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/11/ea/dd549101f84bd5c631ba47804a36c9c33f105e63b9737d84b49346e8bfe5/bank_scrapers-1.0.5.tar.gz
+[2024-05-18 07:11:06] INFO root fetch - processPackages [whaox-wapi]: Downloading https://files.pythonhosted.org/packages/26/e8/3a89a75a009d61ebada9a58b4526423c2e6e7447a7b118aa5d9f0b4d8640/whaox-wapi-1.1.2.tar.gz
+[2024-05-18 07:11:06] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/87/35/6bec536ac0d22db9c39af18bd331f227988c400be9b37988e15f0a50e901/bank_scrapers-1.0.6.tar.gz
+[2024-05-18 07:11:06] INFO root fetch - processPackages [whaox-wapi]: executing diffoscope
+[2024-05-18 07:11:06] INFO root fetch - processPackages [whaox-wapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whaox-wapi-1.1.1.tar.gz tmp/whaox-wapi-1.1.2.tar.gz --markdown 20240518/w/whaox-wapi/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-18 07:11:06] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 07:11:06] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.5.tar.gz tmp/bank_scrapers-1.0.6.tar.gz --markdown 20240518/b/bank-scrapers/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-18 07:11:07] INFO root fetch - processPackages [whaox-wapi]: Remove: archive file [/home/abi/fetcher/tmp/whaox-wapi-1.1.1.tar.gz]
+[2024-05-18 07:11:07] INFO root fetch - processPackages [whaox-wapi]: Remove: archive file [/home/abi/fetcher/tmp/whaox-wapi-1.1.2.tar.gz]
+[2024-05-18 07:11:07] INFO root fetch - main [MainThread]: End processing [whaox-wapi]: success
+[2024-05-18 07:11:07] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.5.tar.gz]
+[2024-05-18 07:11:07] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.6.tar.gz]
+[2024-05-18 07:11:07] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 07:11:07] INFO root fetch - main [MainThread]: Store serial: [23264877]
