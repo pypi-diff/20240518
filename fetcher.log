@@ -8045,3 +8045,54 @@
 [2024-05-18 04:58:31] INFO root fetch - processPackages [degirum]: Remove: archive file [/home/abi/fetcher/tmp/degirum-0.9.6-cp39-cp39-win_amd64.whl.zip]
 [2024-05-18 04:58:31] INFO root fetch - main [MainThread]: End processing [degirum]: success
 [2024-05-18 04:58:31] INFO root fetch - main [MainThread]: Store serial: [23264221]
+[2024-05-18 05:00:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264221]
+[2024-05-18 05:00:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 05:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: excoriatorz
+[2024-05-18 05:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-18 05:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-logs
+[2024-05-18 05:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vesselasid
+[2024-05-18 05:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-voucher-killer
+[2024-05-18 05:00:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-account-payment-widget-amount
+[2024-05-18 05:00:41] INFO root fetch - processPackages [balsamic]: New version: [0.1.93] Old Version: [0.1.92]
+[2024-05-18 05:00:41] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/3c/14/2de0c7368622db64be4994b9553c092d254b35704001b8dff869ce1b2a4d/balsamic-0.1.92.tar.gz
+[2024-05-18 05:00:41] INFO root fetch - processPackages [vesselasid]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 05:00:41] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: New version: [15.0.1.1.0.1] Old Version: [15.0.1.1.0]
+[2024-05-18 05:00:41] WARNING root fetch - processPackages [excoriatorz]: Skipping, unable to determine old version
+[2024-05-18 05:00:41] INFO root fetch - main [MainThread]: End processing [excoriatorz] error
+[2024-05-18 05:00:41] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2024-05-18 05:00:41] INFO root fetch - processPackages [mo-logs]: New version: [8.631.24139] Old Version: [8.628.24136]
+[2024-05-18 05:00:41] INFO root fetch - processPackages [vesselasid]: Downloading https://files.pythonhosted.org/packages/a2/14/baf06cb7af9f5a80ebfeb8f960dbb13c70196f61bd5759c357fe5dacd0ea/vesselasid-1.0.8.tar.gz
+[2024-05-18 05:00:41] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: Downloading https://files.pythonhosted.org/packages/a2/89/8fcd7b3457c69fbb1d3cc767409b5d94582a5c1157dbe197dbd1f4f93889/odoo_addon_account_voucher_killer-15.0.1.1.0-py3-none-any.whl
+[2024-05-18 05:00:41] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: Downloading https://files.pythonhosted.org/packages/66/10/cd7007ccf94dba18dfff68ef99b8d7e340d6354d365787c2e0ca5baa9650/odoo_addon_account_payment_widget_amount-16.0.1.0.0.3-py3-none-any.whl
+[2024-05-18 05:00:41] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/fa/ee/e865734e620ac21a5b48fb97a07feaeed4f458dfc4d9f382c094eb5d1e29/mo_logs-8.628.24136.tar.gz
+[2024-05-18 05:00:41] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/46/8c/44a9b0de455061c9cfc7ee17fd8eba3553f31c99a0174b25e1d7b8d62d23/balsamic-0.1.93.tar.gz
+[2024-05-18 05:00:42] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 05:00:42] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.92.tar.gz tmp/balsamic-0.1.93.tar.gz --markdown 20240518/b/balsamic/0.1.92-0.1.93/README.md --exclude *.pyd
+[2024-05-18 05:00:42] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/dc/ec/9e35ceceb48f37b10331c960e53122f6a4cdc2d1fc2a399ae8972c2b83b3/mo_logs-8.631.24139.tar.gz
+[2024-05-18 05:00:42] INFO root fetch - processPackages [vesselasid]: Downloading https://files.pythonhosted.org/packages/81/b5/ae62f72cdc101114a8434c7f5b8a6946677975c20649428b068f8f9f1afc/vesselasid-1.0.9.tar.gz
+[2024-05-18 05:00:42] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: Downloading https://files.pythonhosted.org/packages/51/e0/964f4c5ceb14fb50d6e9a4eccedfe4031a61208e3d542e434ad3efef12fe/odoo_addon_account_voucher_killer-15.0.1.1.0.1-py3-none-any.whl
+[2024-05-18 05:00:42] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: Downloading https://files.pythonhosted.org/packages/52/e7/7799d430a9fd4c68dd72fadb0dda81bf15c7d3c0ad3229a601ebd4b96c19/odoo_addon_account_payment_widget_amount-16.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 05:00:42] INFO root fetch - processPackages [vesselasid]: executing diffoscope
+[2024-05-18 05:00:42] INFO root fetch - processPackages [vesselasid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselasid-1.0.8.tar.gz tmp/vesselasid-1.0.9.tar.gz --markdown 20240518/v/vesselasid/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 05:00:42] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-05-18 05:00:42] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_logs-8.628.24136.tar.gz tmp/mo_logs-8.631.24139.tar.gz --markdown 20240518/m/mo-logs/8.628.24136-8.631.24139/README.md --exclude *.pyd
+[2024-05-18 05:00:42] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: executing diffoscope
+[2024-05-18 05:00:42] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_voucher_killer-15.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_account_voucher_killer-15.0.1.1.0.1-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-voucher-killer/15.0.1.1.0-15.0.1.1.0.1/README.md --exclude *.pyd
+[2024-05-18 05:00:42] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: executing diffoscope
+[2024-05-18 05:00:42] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_widget_amount-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_account_payment_widget_amount-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-payment-widget-amount/16.0.1.0.0.3-16.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-18 05:00:42] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.92.tar.gz]
+[2024-05-18 05:00:42] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.93.tar.gz]
+[2024-05-18 05:00:42] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 05:00:43] INFO root fetch - processPackages [vesselasid]: Remove: archive file [/home/abi/fetcher/tmp/vesselasid-1.0.8.tar.gz]
+[2024-05-18 05:00:43] INFO root fetch - processPackages [vesselasid]: Remove: archive file [/home/abi/fetcher/tmp/vesselasid-1.0.9.tar.gz]
+[2024-05-18 05:00:43] INFO root fetch - main [MainThread]: End processing [vesselasid]: success
+[2024-05-18 05:00:43] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.628.24136.tar.gz]
+[2024-05-18 05:00:43] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.631.24139.tar.gz]
+[2024-05-18 05:00:43] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-05-18 05:00:43] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_voucher_killer-15.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-18 05:00:43] INFO root fetch - processPackages [odoo-addon-account-voucher-killer]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_voucher_killer-15.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 05:00:43] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-voucher-killer]: success
+[2024-05-18 05:00:43] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_widget_amount-16.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-18 05:00:43] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_widget_amount-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 05:00:43] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-widget-amount]: success
+[2024-05-18 05:00:43] INFO root fetch - main [MainThread]: Store serial: [23264252]
