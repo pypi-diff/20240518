@@ -19738,3 +19738,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:14:50] INFO root fetch - processPackages [python-filewrap]: Remove: archive file [/home/abi/fetcher/tmp/python_filewrap-0.0.5.tar.gz]
 [2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [python-filewrap]: success
 [2024-05-18 20:14:50] INFO root fetch - main [MainThread]: Store serial: [23269990]
+[2024-05-18 20:16:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269990]
+[2024-05-18 20:17:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 20:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dyspathyz
+[2024-05-18 20:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-web-field-tooltip
+[2024-05-18 20:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-account-analytic-root
+[2024-05-18 20:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-web-widget-open-tab
+[2024-05-18 20:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-05-18 20:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: baosight
+[2024-05-18 20:17:00] WARNING root fetch - processPackages [odoo12-addon-account-analytic-root]: Skipping, unable to determine old version
+[2024-05-18 20:17:00] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-analytic-root] error
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: New version: [17.0.1.0.0.2] Old Version: [16.0.2.0.0.6]
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: New version: [16.0.1.1.0] Old Version: [16.0.1.0.0.5]
+[2024-05-18 20:17:00] WARNING root fetch - processPackages [dyspathyz]: Skipping, unable to determine old version
+[2024-05-18 20:17:00] INFO root fetch - main [MainThread]: End processing [dyspathyz] error
+[2024-05-18 20:17:00] WARNING root fetch - processPackages [baosight]: Skipping, unable to determine old version
+[2024-05-18 20:17:00] INFO root fetch - main [MainThread]: End processing [baosight] error
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: Downloading https://files.pythonhosted.org/packages/f0/b7/6f747571f00b1634a6202307df54af1128caeb41554d3ae6426c5966fb09/odoo_addon_web_widget_open_tab-16.0.2.0.0.6-py3-none-any.whl
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: Downloading https://files.pythonhosted.org/packages/92/db/552139e921ba6b9dcb4da93ddcf5c5ee8d4aa4b962aa09637b7ac2793e50/odoo_addon_web_field_tooltip-16.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: Downloading https://files.pythonhosted.org/packages/de/a6/a0de151634ee8c7d411b1b278367e4474bd6cc756112f58a6d90d2b90c9b/odoo_addon_web_field_tooltip-16.0.1.1.0-py3-none-any.whl
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: Downloading https://files.pythonhosted.org/packages/fd/57/560d242d3f6f1ce24e2fb0755be7fddcb6fb8a3c4214c332816606674431/odoo_addon_web_widget_open_tab-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: executing diffoscope
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_field_tooltip-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_web_field_tooltip-16.0.1.1.0-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-web-field-tooltip/16.0.1.0.0.5-16.0.1.1.0/README.md --exclude *.pyd
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: executing diffoscope
+[2024-05-18 20:17:00] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_widget_open_tab-16.0.2.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_web_widget_open_tab-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-web-widget-open-tab/16.0.2.0.0.6-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-18 20:17:01] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_field_tooltip-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 20:17:01] INFO root fetch - processPackages [odoo-addon-web-field-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_field_tooltip-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-18 20:17:01] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-field-tooltip]: success
+[2024-05-18 20:17:01] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_widget_open_tab-16.0.2.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 20:17:01] INFO root fetch - processPackages [odoo-addon-web-widget-open-tab]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_widget_open_tab-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-18 20:17:01] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-widget-open-tab]: success
+[2024-05-18 20:17:01] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-18 20:17:01] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-05-18 20:17:02] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-05-18 20:17:02] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-05-18 20:17:02] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240518/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-18 20:17:04] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-05-18 20:17:04] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-05-18 20:17:04] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-05-18 20:17:04] INFO root fetch - main [MainThread]: Store serial: [23270010]
