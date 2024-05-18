@@ -20866,3 +20866,53 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:38:39] INFO root fetch - processPackages [hal9]: Remove: archive file [/home/abi/fetcher/tmp/hal9-2.1.3.tar.gz]
 [2024-05-18 21:38:39] INFO root fetch - main [MainThread]: End processing [hal9]: success
 [2024-05-18 21:38:39] INFO root fetch - main [MainThread]: Store serial: [23270603]
+[2024-05-18 21:40:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270603]
+[2024-05-18 21:40:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 21:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEasyDbApi
+[2024-05-18 21:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seeact
+[2024-05-18 21:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itkwasm-mesh-io-wasi
+[2024-05-18 21:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: itkwasm-mesh-io-emscripten
+[2024-05-18 21:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: itkwasm-mesh-io
+[2024-05-18 21:40:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unconscious
+[2024-05-18 21:40:49] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 21:40:49] INFO root fetch - processPackages [unconscious]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 21:40:49] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/97/96/0ff28895d265248d4192dbbc0e16d95bfe3ab9a9e1bcd4d8a69e9ccb3ed5/pyeasydbapi-0.1.2.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [unconscious]: Downloading https://files.pythonhosted.org/packages/6d/0b/3be46a9302e1cb59de5e615ed97e391374346cfcb0420272a062b3ccfcf7/unconscious-0.0.3.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io-wasi]: New version: [1.2.0] Old Version: [1.0.0]
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: New version: [1.2.0] Old Version: [1.0.0]
+[2024-05-18 21:40:49] INFO root fetch - processPackages [seeact]: New version: [0.2.6] Old Version: [0.2.5.1]
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io]: New version: [1.2.0] Old Version: [1.0.0]
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io-wasi]: Downloading https://files.pythonhosted.org/packages/44/6a/9ce67c345a9ef9823527a93ca7aa0bb6e92cd3cfd07a65ceab5117ee5bad/itkwasm_mesh_io_wasi-1.0.0.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: Downloading https://files.pythonhosted.org/packages/f0/e5/5727718323c1d9c69d9bf7c1fd385149dabfd57329867d12f13d512722fa/itkwasm_mesh_io_emscripten-1.0.0.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/e0/bd/12bdadcf94ce181d1e6dff0e4b9825a7225870425d803f606e1eb13092df/pyeasydbapi-0.1.3.tar.gz
+[2024-05-18 21:40:49] ERROR root fetch - processPackages [unconscious]: Unable to fetch info: No such project/version 'unconscious' 0.0.4
+[2024-05-18 21:40:49] INFO root fetch - main [MainThread]: End processing [unconscious] error
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io]: Downloading https://files.pythonhosted.org/packages/c8/ed/b61bd1d30b08e1ec44def13b2e3ef2723587932d4a2aa9a588613d774233/itkwasm_mesh_io-1.0.0.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [seeact]: Downloading https://files.pythonhosted.org/packages/10/3b/b197944fc514bd347de4c62a778b82f1220558ed7ebd85f5d59435c9d92f/seeact-0.2.5.1.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:40:49] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.2.tar.gz tmp/pyeasydbapi-0.1.3.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: Downloading https://files.pythonhosted.org/packages/45/a8/1ad6ea86d4d7728a2354a38da8d71eab93371f1984894240d078baa9684f/itkwasm_mesh_io_emscripten-1.2.0.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [itkwasm-mesh-io]: Downloading https://files.pythonhosted.org/packages/4a/f0/fe53789822a3ee651cea45da7824629681d3886bfc9480e9207c1a0b305a/itkwasm_mesh_io-1.2.0.tar.gz
+[2024-05-18 21:40:49] INFO root fetch - processPackages [seeact]: Downloading https://files.pythonhosted.org/packages/b3/ff/d343392a950de53bf3e9172c9e5e98d89a9e8e71e0a0070b96e0f433e712/seeact-0.2.6.tar.gz
+[2024-05-18 21:40:50] INFO root fetch - processPackages [seeact]: executing diffoscope
+[2024-05-18 21:40:50] INFO root fetch - processPackages [seeact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeact-0.2.5.1.tar.gz tmp/seeact-0.2.6.tar.gz --markdown 20240518/s/seeact/0.2.5.1-0.2.6/README.md --exclude *.pyd
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io-wasi]: Downloading https://files.pythonhosted.org/packages/9c/f9/0e960d388782c8ba2487af3ec7300102f4b9b1b8c50aefb6970b8340064c/itkwasm_mesh_io_wasi-1.2.0.tar.gz
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: executing diffoscope
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_mesh_io_emscripten-1.0.0.tar.gz tmp/itkwasm_mesh_io_emscripten-1.2.0.tar.gz --markdown 20240518/i/itkwasm-mesh-io-emscripten/1.0.0-1.2.0/README.md --exclude *.pyd
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io]: executing diffoscope
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itkwasm_mesh_io-1.0.0.tar.gz tmp/itkwasm_mesh_io-1.2.0.tar.gz --markdown 20240518/i/itkwasm-mesh-io/1.0.0-1.2.0/README.md --exclude *.pyd
+[2024-05-18 21:40:50] WARNING root fetch - processPackages [itkwasm-mesh-io-wasi]: Skipping package: exceeds size limit 14426517>=10485760
+[2024-05-18 21:40:50] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-io-wasi] error
+[2024-05-18 21:40:50] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.2.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.3.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:40:50] INFO root fetch - processPackages [seeact]: Remove: archive file [/home/abi/fetcher/tmp/seeact-0.2.5.1.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - processPackages [seeact]: Remove: archive file [/home/abi/fetcher/tmp/seeact-0.2.6.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - main [MainThread]: End processing [seeact]: success
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_io_emscripten-1.0.0.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io-emscripten]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_io_emscripten-1.2.0.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-io-emscripten]: success
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_io-1.0.0.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - processPackages [itkwasm-mesh-io]: Remove: archive file [/home/abi/fetcher/tmp/itkwasm_mesh_io-1.2.0.tar.gz]
+[2024-05-18 21:40:50] INFO root fetch - main [MainThread]: End processing [itkwasm-mesh-io]: success
+[2024-05-18 21:40:50] INFO root fetch - main [MainThread]: Store serial: [23270625]
