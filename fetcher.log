@@ -11536,3 +11536,18 @@
 [2024-05-18 09:45:04] INFO root fetch - processPackages [gasparse]: Remove: archive file [/home/abi/fetcher/tmp/gasparse-0.0.5a0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-05-18 09:45:04] INFO root fetch - main [MainThread]: End processing [gasparse]: success
 [2024-05-18 09:45:04] INFO root fetch - main [MainThread]: Store serial: [23265798]
+[2024-05-18 09:47:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265798]
+[2024-05-18 09:47:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: holdoversz
+[2024-05-18 09:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: offlinesec-client
+[2024-05-18 09:47:13] WARNING root fetch - processPackages [holdoversz]: Skipping, unable to determine old version
+[2024-05-18 09:47:13] INFO root fetch - main [MainThread]: End processing [holdoversz] error
+[2024-05-18 09:47:13] INFO root fetch - processPackages [offlinesec-client]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-18 09:47:13] INFO root fetch - processPackages [offlinesec-client]: Downloading https://files.pythonhosted.org/packages/37/9c/876353531c0ddd919f25dfa6149e4318024ad9c4bcba9613781f0ef04e19/offlinesec_client-1.1.4.tar.gz
+[2024-05-18 09:47:13] INFO root fetch - processPackages [offlinesec-client]: Downloading https://files.pythonhosted.org/packages/71/4b/a6e98f43bd6efb0b8847336681db85006b64dec006a705de9ea3f7421df2/offlinesec_client-1.1.5.tar.gz
+[2024-05-18 09:47:13] INFO root fetch - processPackages [offlinesec-client]: executing diffoscope
+[2024-05-18 09:47:13] INFO root fetch - processPackages [offlinesec-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offlinesec_client-1.1.4.tar.gz tmp/offlinesec_client-1.1.5.tar.gz --markdown 20240518/o/offlinesec-client/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-18 09:47:14] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.4.tar.gz]
+[2024-05-18 09:47:14] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.5.tar.gz]
+[2024-05-18 09:47:14] INFO root fetch - main [MainThread]: End processing [offlinesec-client]: success
+[2024-05-18 09:47:14] INFO root fetch - main [MainThread]: Store serial: [23265834]
