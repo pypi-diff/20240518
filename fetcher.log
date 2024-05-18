@@ -20824,3 +20824,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:34:19] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-0.0.2.tar.gz]
 [2024-05-18 21:34:19] INFO root fetch - main [MainThread]: End processing [mercapy]: success
 [2024-05-18 21:34:19] INFO root fetch - main [MainThread]: Store serial: [23270576]
+[2024-05-18 21:36:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270576]
+[2024-05-18 21:36:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 21:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyircsdk
+[2024-05-18 21:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pne
+[2024-05-18 21:36:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyEasyDbApi
+[2024-05-18 21:36:28] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 21:36:28] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/c5/65/4674c6a960b32d62e23e565a7b63003c72f6c171f61f83270a290521e6f7/pyeasydbapi-0.1.1.tar.gz
+[2024-05-18 21:36:28] INFO root fetch - processPackages [pyircsdk]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-18 21:36:28] WARNING root fetch - processPackages [pne]: Skipping, unable to determine old version
+[2024-05-18 21:36:28] INFO root fetch - main [MainThread]: End processing [pne] error
+[2024-05-18 21:36:28] INFO root fetch - processPackages [pyircsdk]: Downloading https://files.pythonhosted.org/packages/b3/c5/d76a311af8d1f0b3c380907b91d5528503bbc63074d2129a6b5cbbf74840/pyircsdk-1.5.1.tar.gz
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/97/96/0ff28895d265248d4192dbbc0e16d95bfe3ab9a9e1bcd4d8a69e9ccb3ed5/pyeasydbapi-0.1.2.tar.gz
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.1.tar.gz tmp/pyeasydbapi-0.1.2.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyircsdk]: Downloading https://files.pythonhosted.org/packages/82/7c/ca23569885eb58839b2af77111d9598226f277837ee47b45517d77303a84/pyircsdk-1.5.2.tar.gz
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyircsdk]: executing diffoscope
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyircsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyircsdk-1.5.1.tar.gz tmp/pyircsdk-1.5.2.tar.gz --markdown 20240518/p/pyircsdk/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.1.tar.gz]
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.2.tar.gz]
+[2024-05-18 21:36:29] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyircsdk]: Remove: archive file [/home/abi/fetcher/tmp/pyircsdk-1.5.1.tar.gz]
+[2024-05-18 21:36:29] INFO root fetch - processPackages [pyircsdk]: Remove: archive file [/home/abi/fetcher/tmp/pyircsdk-1.5.2.tar.gz]
+[2024-05-18 21:36:29] INFO root fetch - main [MainThread]: End processing [pyircsdk]: success
+[2024-05-18 21:36:29] INFO root fetch - main [MainThread]: Store serial: [23270587]
