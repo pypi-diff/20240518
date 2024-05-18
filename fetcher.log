@@ -13176,3 +13176,29 @@
 [2024-05-18 12:09:24] WARNING root fetch - processPackages [dufterz]: Skipping, unable to determine old version
 [2024-05-18 12:09:24] INFO root fetch - main [MainThread]: End processing [dufterz] error
 [2024-05-18 12:09:24] INFO root fetch - main [MainThread]: Store serial: [23266826]
+[2024-05-18 12:11:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266826]
+[2024-05-18 12:11:32] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 12:13:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266826]
+[2024-05-18 12:13:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydra-ants
+[2024-05-18 12:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyslth
+[2024-05-18 12:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foretopz
+[2024-05-18 12:13:38] INFO root fetch - processPackages [pydra-ants]: New version: [0.1.0] Old Version: [0.0.5]
+[2024-05-18 12:13:38] INFO root fetch - processPackages [pyslth]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-18 12:13:38] WARNING root fetch - processPackages [foretopz]: Skipping, unable to determine old version
+[2024-05-18 12:13:38] INFO root fetch - main [MainThread]: End processing [foretopz] error
+[2024-05-18 12:13:38] INFO root fetch - processPackages [pydra-ants]: Downloading https://files.pythonhosted.org/packages/4a/de/5fe723c2330befe52128aa17b0bb9afced78d64280bd0987ec927b96c1e7/pydra_ants-0.0.5.tar.gz
+[2024-05-18 12:13:38] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/f0/7d/e4494dd60383268d734dff2b3abddb523a635d3bc5d957d4912da28f61cc/pyslth-0.3.3.tar.gz
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pydra-ants]: Downloading https://files.pythonhosted.org/packages/e6/d6/42653511dded5154a3ad89ab8d44973a2eb4541c5a8c4d37c698091fd829/pydra_ants-0.1.0.tar.gz
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pydra-ants]: executing diffoscope
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pydra-ants]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydra_ants-0.0.5.tar.gz tmp/pydra_ants-0.1.0.tar.gz --markdown 20240518/p/pydra-ants/0.0.5-0.1.0/README.md --exclude *.pyd
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pyslth]: Downloading https://files.pythonhosted.org/packages/8c/04/707fae2fc22bd420a200818613ce1efed8edba33df430301cfe06dc8feb2/pyslth-0.3.4.tar.gz
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pyslth]: executing diffoscope
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pyslth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyslth-0.3.3.tar.gz tmp/pyslth-0.3.4.tar.gz --markdown 20240518/p/pyslth/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pydra-ants]: Remove: archive file [/home/abi/fetcher/tmp/pydra_ants-0.0.5.tar.gz]
+[2024-05-18 12:13:39] INFO root fetch - processPackages [pydra-ants]: Remove: archive file [/home/abi/fetcher/tmp/pydra_ants-0.1.0.tar.gz]
+[2024-05-18 12:13:39] INFO root fetch - main [MainThread]: End processing [pydra-ants]: success
+[2024-05-18 12:13:41] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.3.tar.gz]
+[2024-05-18 12:13:41] INFO root fetch - processPackages [pyslth]: Remove: archive file [/home/abi/fetcher/tmp/pyslth-0.3.4.tar.gz]
+[2024-05-18 12:13:41] INFO root fetch - main [MainThread]: End processing [pyslth]: success
+[2024-05-18 12:13:41] INFO root fetch - main [MainThread]: Store serial: [23266831]
