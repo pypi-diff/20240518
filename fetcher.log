@@ -8120,3 +8120,45 @@
 [2024-05-18 05:02:53] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.631.24139.tar.gz]
 [2024-05-18 05:02:53] INFO root fetch - main [MainThread]: End processing [mo-times]: success
 [2024-05-18 05:02:53] INFO root fetch - main [MainThread]: Store serial: [23264262]
+[2024-05-18 05:04:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264262]
+[2024-05-18 05:05:02] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 05:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FirstGame
+[2024-05-18 05:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-testing
+[2024-05-18 05:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spilikinz
+[2024-05-18 05:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapy-impersonate
+[2024-05-18 05:05:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-automation-oca
+[2024-05-18 05:05:03] INFO root fetch - processPackages [FirstGame]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-18 05:05:03] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/7a/2b/d173f0a7a29b4f62655cd578b1623ca61184cb753eada7e961d36ae3a22c/FirstGame-1.0.3.tar.gz
+[2024-05-18 05:05:03] WARNING root fetch - processPackages [spilikinz]: Skipping, unable to determine old version
+[2024-05-18 05:05:03] INFO root fetch - processPackages [scrapy-impersonate]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-18 05:05:03] INFO root fetch - main [MainThread]: End processing [spilikinz] error
+[2024-05-18 05:05:03] INFO root fetch - processPackages [odoo-addon-automation-oca]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2024-05-18 05:05:03] INFO root fetch - processPackages [mo-testing]: New version: [8.631.24139] Old Version: [8.629.24136]
+[2024-05-18 05:05:03] INFO root fetch - processPackages [odoo-addon-automation-oca]: Downloading https://files.pythonhosted.org/packages/90/0a/fa1a80f64cf3d199d67c09796cc5e966b6a51ac46ff5efe607bfb27d0f7f/odoo_addon_automation_oca-16.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 05:05:03] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/1b/e9/7aaa3b1439701873986fea3d281fdea7a6e0e0d2f01ae7d95ef52c58e4e1/mo_testing-8.629.24136.tar.gz
+[2024-05-18 05:05:03] INFO root fetch - processPackages [scrapy-impersonate]: Downloading https://files.pythonhosted.org/packages/c6/a6/1411cf9f3577b50a61d44babff7105557d1d3f2890ae075b15690ee0681d/scrapy_impersonate-1.2.1.tar.gz
+[2024-05-18 05:05:03] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/14/b1/2bb7823cfc5269323c485d058c7fcfe731ed68f073f4f6331686ffe2e442/FirstGame-1.0.4.tar.gz
+[2024-05-18 05:05:03] INFO root fetch - processPackages [FirstGame]: executing diffoscope
+[2024-05-18 05:05:03] INFO root fetch - processPackages [FirstGame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FirstGame-1.0.3.tar.gz tmp/FirstGame-1.0.4.tar.gz --markdown 20240518/F/FirstGame/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-18 05:05:03] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/b4/43/b0c08cb301a3d2899518122e941749085163a35c8b9962cab542cb95c827/mo_testing-8.631.24139.tar.gz
+[2024-05-18 05:05:03] INFO root fetch - processPackages [odoo-addon-automation-oca]: Downloading https://files.pythonhosted.org/packages/77/89/060dff6e04f39dcce3d66c9ad7dbfb6c89c02107d151e9244081ddf6afad/odoo_addon_automation_oca-16.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 05:05:03] INFO root fetch - processPackages [scrapy-impersonate]: Downloading https://files.pythonhosted.org/packages/f4/46/c348dc7153e8ff763e90665eb03a4bed5685139ceb4a986c726dd803eaf2/scrapy_impersonate-1.2.2.tar.gz
+[2024-05-18 05:05:03] INFO root fetch - processPackages [mo-testing]: executing diffoscope
+[2024-05-18 05:05:03] INFO root fetch - processPackages [mo-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_testing-8.629.24136.tar.gz tmp/mo_testing-8.631.24139.tar.gz --markdown 20240518/m/mo-testing/8.629.24136-8.631.24139/README.md --exclude *.pyd
+[2024-05-18 05:05:03] INFO root fetch - processPackages [odoo-addon-automation-oca]: executing diffoscope
+[2024-05-18 05:05:03] INFO root fetch - processPackages [odoo-addon-automation-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_automation_oca-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_automation_oca-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-automation-oca/16.0.1.0.0.5-16.0.1.0.0.6/README.md --exclude *.pyd
+[2024-05-18 05:05:03] INFO root fetch - processPackages [scrapy-impersonate]: executing diffoscope
+[2024-05-18 05:05:03] INFO root fetch - processPackages [scrapy-impersonate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy_impersonate-1.2.1.tar.gz tmp/scrapy_impersonate-1.2.2.tar.gz --markdown 20240518/s/scrapy-impersonate/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-18 05:05:04] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.3.tar.gz]
+[2024-05-18 05:05:04] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.4.tar.gz]
+[2024-05-18 05:05:04] INFO root fetch - main [MainThread]: End processing [FirstGame]: success
+[2024-05-18 05:05:04] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.629.24136.tar.gz]
+[2024-05-18 05:05:04] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.631.24139.tar.gz]
+[2024-05-18 05:05:04] INFO root fetch - main [MainThread]: End processing [mo-testing]: success
+[2024-05-18 05:05:04] INFO root fetch - processPackages [scrapy-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_impersonate-1.2.1.tar.gz]
+[2024-05-18 05:05:04] INFO root fetch - processPackages [scrapy-impersonate]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_impersonate-1.2.2.tar.gz]
+[2024-05-18 05:05:04] INFO root fetch - main [MainThread]: End processing [scrapy-impersonate]: success
+[2024-05-18 05:05:04] INFO root fetch - processPackages [odoo-addon-automation-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_automation_oca-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 05:05:04] INFO root fetch - processPackages [odoo-addon-automation-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_automation_oca-16.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 05:05:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-automation-oca]: success
+[2024-05-18 05:05:04] INFO root fetch - main [MainThread]: Store serial: [23264277]
