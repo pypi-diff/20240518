@@ -22148,3 +22148,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:19:31] INFO root fetch - processPackages [euc2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/euc2mqtt-0.0.2.tar.gz]
 [2024-05-18 23:19:31] INFO root fetch - main [MainThread]: End processing [euc2mqtt]: success
 [2024-05-18 23:19:31] INFO root fetch - main [MainThread]: Store serial: [23271310]
+[2024-05-18 23:21:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271310]
+[2024-05-18 23:21:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 23:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pbf
+[2024-05-18 23:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shared-cache
+[2024-05-18 23:21:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gucken
+[2024-05-18 23:21:41] INFO root fetch - processPackages [gucken]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 23:21:41] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/1f/6d/56a7fd68f04fbbd9a1fdecdf2d55f6331a550fbbc590cfd8432516ff79a7/gucken-0.1.1.tar.gz
+[2024-05-18 23:21:41] WARNING root fetch - processPackages [pbf]: Skipping, unable to determine old version
+[2024-05-18 23:21:41] INFO root fetch - main [MainThread]: End processing [pbf] error
+[2024-05-18 23:21:41] INFO root fetch - processPackages [shared-cache]: New version: [1.0.1] Old Version: [0.0.1]
+[2024-05-18 23:21:41] INFO root fetch - processPackages [shared-cache]: Downloading https://files.pythonhosted.org/packages/b5/af/560f525e84965c2c02883e8b3186f0f150a8b06c2f97347b02a56d289472/shared_cache-0.0.1.tar.gz
+[2024-05-18 23:21:41] INFO root fetch - processPackages [gucken]: Downloading https://files.pythonhosted.org/packages/e8/1e/e1a54cea83fb432d4388e22eaaeafcae7534aae42370fb23dd9bfb163405/gucken-0.1.2.tar.gz
+[2024-05-18 23:21:41] INFO root fetch - processPackages [gucken]: executing diffoscope
+[2024-05-18 23:21:41] INFO root fetch - processPackages [gucken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gucken-0.1.1.tar.gz tmp/gucken-0.1.2.tar.gz --markdown 20240518/g/gucken/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 23:21:41] INFO root fetch - processPackages [shared-cache]: Downloading https://files.pythonhosted.org/packages/3d/d0/d449ad0eaa9f729c31bc0a1d6acee2e05f2d05dba0b9e042692b211b8e16/shared_cache-1.0.1.tar.gz
+[2024-05-18 23:21:41] INFO root fetch - processPackages [shared-cache]: executing diffoscope
+[2024-05-18 23:21:41] INFO root fetch - processPackages [shared-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_cache-0.0.1.tar.gz tmp/shared_cache-1.0.1.tar.gz --markdown 20240518/s/shared-cache/0.0.1-1.0.1/README.md --exclude *.pyd
+[2024-05-18 23:21:42] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.1.1.tar.gz]
+[2024-05-18 23:21:42] INFO root fetch - processPackages [gucken]: Remove: archive file [/home/abi/fetcher/tmp/gucken-0.1.2.tar.gz]
+[2024-05-18 23:21:42] INFO root fetch - main [MainThread]: End processing [gucken]: success
+[2024-05-18 23:21:42] INFO root fetch - processPackages [shared-cache]: Remove: archive file [/home/abi/fetcher/tmp/shared_cache-0.0.1.tar.gz]
+[2024-05-18 23:21:42] INFO root fetch - processPackages [shared-cache]: Remove: archive file [/home/abi/fetcher/tmp/shared_cache-1.0.1.tar.gz]
+[2024-05-18 23:21:42] INFO root fetch - main [MainThread]: End processing [shared-cache]: success
+[2024-05-18 23:21:42] INFO root fetch - main [MainThread]: Store serial: [23271322]
