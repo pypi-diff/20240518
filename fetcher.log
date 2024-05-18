@@ -9632,3 +9632,48 @@
 [2024-05-18 07:04:34] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.7.tar.gz]
 [2024-05-18 07:04:34] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
 [2024-05-18 07:04:34] INFO root fetch - main [MainThread]: Store serial: [23264850]
+[2024-05-18 07:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264850]
+[2024-05-18 07:06:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantplay
+[2024-05-18 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-openid-connect
+[2024-05-18 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2024-05-18 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytest-homeassistant-custom-component
+[2024-05-18 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whaox-wapi
+[2024-05-18 07:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: overbrimminglyz
+[2024-05-18 07:06:42] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.2.dev20240517] Old Version: [0.1.2.dev20240516]
+[2024-05-18 07:06:42] INFO root fetch - processPackages [quantplay]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-18 07:06:42] WARNING root fetch - processPackages [overbrimminglyz]: Skipping, unable to determine old version
+[2024-05-18 07:06:42] INFO root fetch - main [MainThread]: End processing [overbrimminglyz] error
+[2024-05-18 07:06:42] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/f7/f9/13547f98c9c68fadb0258313571d5414ef9cb0453d0a79f6df2880434d5f/rapid_pe-0.1.2.dev20240516.tar.gz
+[2024-05-18 07:06:42] INFO root fetch - processPackages [whaox-wapi]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-18 07:06:42] WARNING root fetch - processPackages [fastapi-openid-connect]: Skipping, unable to determine old version
+[2024-05-18 07:06:42] INFO root fetch - main [MainThread]: End processing [fastapi-openid-connect] error
+[2024-05-18 07:06:42] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-18 07:06:42] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/71/23/85a802491d69beb714dd8831f123c9440301eb94caca43392e50be63fff6/quantplay-1.5.8.tar.gz
+[2024-05-18 07:06:42] INFO root fetch - processPackages [whaox-wapi]: Downloading https://files.pythonhosted.org/packages/40/01/6e0ed8fd7b147121d727504c36118b371254b81516a20f1ac4292f5d1d90/whaox-wapi-1.1.1.tar.gz
+[2024-05-18 07:06:42] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2024-05-18 07:06:42] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/29/44/bc619a0a4e2ecba52ee7f6eac8f51f600a1d90bb67f88a28638d7d9f9c62/quantplay-1.5.9.tar.gz
+[2024-05-18 07:06:42] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/00/1b/4af0d460041e092a71d2ec2abcb905c1b7c14b734b2e84c6585cc6d609d4/rapid_pe-0.1.2.dev20240517.tar.gz
+[2024-05-18 07:06:43] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2024-05-18 07:06:43] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.5.8.tar.gz tmp/quantplay-1.5.9.tar.gz --markdown 20240518/q/quantplay/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-18 07:06:43] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2024-05-18 07:06:43] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.2.dev20240516.tar.gz tmp/rapid_pe-0.1.2.dev20240517.tar.gz --markdown 20240518/r/rapid-pe/0.1.2.dev20240516-0.1.2.dev20240517/README.md --exclude *.pyd
+[2024-05-18 07:06:43] INFO root fetch - processPackages [whaox-wapi]: Downloading https://files.pythonhosted.org/packages/26/e8/3a89a75a009d61ebada9a58b4526423c2e6e7447a7b118aa5d9f0b4d8640/whaox-wapi-1.1.2.tar.gz
+[2024-05-18 07:06:43] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2024-05-18 07:06:43] INFO root fetch - processPackages [whaox-wapi]: executing diffoscope
+[2024-05-18 07:06:43] INFO root fetch - processPackages [whaox-wapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whaox-wapi-1.1.1.tar.gz tmp/whaox-wapi-1.1.2.tar.gz --markdown 20240518/w/whaox-wapi/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-18 07:06:43] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2024-05-18 07:06:43] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20240518/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-18 07:06:43] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240516.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - processPackages [rapid-pe]: Remove: archive file [/home/abi/fetcher/tmp/rapid_pe-0.1.2.dev20240517.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2024-05-18 07:06:43] INFO root fetch - processPackages [whaox-wapi]: Remove: archive file [/home/abi/fetcher/tmp/whaox-wapi-1.1.1.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - processPackages [whaox-wapi]: Remove: archive file [/home/abi/fetcher/tmp/whaox-wapi-1.1.2.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - main [MainThread]: End processing [whaox-wapi]: success
+[2024-05-18 07:06:43] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2024-05-18 07:06:43] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.8.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.9.tar.gz]
+[2024-05-18 07:06:43] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2024-05-18 07:06:43] INFO root fetch - main [MainThread]: Store serial: [23264869]
