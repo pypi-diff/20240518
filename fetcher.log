@@ -11387,3 +11387,54 @@
 [2024-05-18 09:34:06] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.14.3-py3-none-any.whl.zip]
 [2024-05-18 09:34:06] INFO root fetch - main [MainThread]: End processing [asktable]: success
 [2024-05-18 09:34:06] INFO root fetch - main [MainThread]: Store serial: [23265728]
+[2024-05-18 09:36:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265728]
+[2024-05-18 09:36:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartrandom
+[2024-05-18 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zorch
+[2024-05-18 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nondelicatelyz
+[2024-05-18 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyventim
+[2024-05-18 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yambs
+[2024-05-18 09:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: muko
+[2024-05-18 09:36:15] INFO root fetch - processPackages [zorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 09:36:15] WARNING root fetch - processPackages [nondelicatelyz]: Skipping, unable to determine old version
+[2024-05-18 09:36:15] INFO root fetch - main [MainThread]: End processing [nondelicatelyz] error
+[2024-05-18 09:36:15] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/50/d5/20b0dac0ae23cf0da1ac26121361a57833e4c90c03953c298d882b7d835d/zorch-0.0.8.tar.gz
+[2024-05-18 09:36:15] INFO root fetch - processPackages [muko]: New version: [2.51] Old Version: [2.49]
+[2024-05-18 09:36:15] INFO root fetch - processPackages [pyventim]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 09:36:15] INFO root fetch - processPackages [smartrandom]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 09:36:15] INFO root fetch - processPackages [yambs]: New version: [3.0.2] Old Version: [3.0.1]
+[2024-05-18 09:36:15] INFO root fetch - processPackages [pyventim]: Downloading https://files.pythonhosted.org/packages/0a/fd/945a252323b949d83fc4542ac3dac0d6bcd4b1d3b976415d1e4b499e2bf2/pyventim-0.1.0.tar.gz
+[2024-05-18 09:36:15] INFO root fetch - processPackages [smartrandom]: Downloading https://files.pythonhosted.org/packages/70/ef/a19fe5e153b01a3be959d4f61ae8b4af492e6010ea5d4793857dcbddd4ec/smartrandom-0.1.0.tar.gz
+[2024-05-18 09:36:15] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/bf/a0/75fc2c4170d35fb1a7605723b68b9cd28d1d2e0cbd176afc077833e6d119/zorch-0.0.9.tar.gz
+[2024-05-18 09:36:15] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/63/88/7b8d5c4438ef5c83102870531e46ec55c527fe923d155674c9853f112e36/muko-2.49-py3-none-any.whl
+[2024-05-18 09:36:15] INFO root fetch - processPackages [yambs]: Downloading https://files.pythonhosted.org/packages/75/da/551e4a186882810b1805bf254db16ace3a6cef7ec7ba1f0e0864774112a0/yambs-3.0.1.tar.gz
+[2024-05-18 09:36:15] INFO root fetch - processPackages [zorch]: executing diffoscope
+[2024-05-18 09:36:15] INFO root fetch - processPackages [zorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zorch-0.0.8.tar.gz tmp/zorch-0.0.9.tar.gz --markdown 20240518/z/zorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 09:36:16] INFO root fetch - processPackages [pyventim]: Downloading https://files.pythonhosted.org/packages/28/a0/72672e0a570e7c5530a449b7c2b832e3a2854ae89f38cf42963d8a4a10ea/pyventim-0.1.1.tar.gz
+[2024-05-18 09:36:16] INFO root fetch - processPackages [smartrandom]: Downloading https://files.pythonhosted.org/packages/79/46/1be245643b9d6c120a65829cb2e9cf236af1120414984da70db1b1d85581/smartrandom-0.1.1.tar.gz
+[2024-05-18 09:36:16] INFO root fetch - processPackages [pyventim]: executing diffoscope
+[2024-05-18 09:36:16] INFO root fetch - processPackages [pyventim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyventim-0.1.0.tar.gz tmp/pyventim-0.1.1.tar.gz --markdown 20240518/p/pyventim/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 09:36:16] INFO root fetch - processPackages [smartrandom]: executing diffoscope
+[2024-05-18 09:36:16] INFO root fetch - processPackages [smartrandom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartrandom-0.1.0.tar.gz tmp/smartrandom-0.1.1.tar.gz --markdown 20240518/s/smartrandom/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 09:36:16] INFO root fetch - processPackages [yambs]: Downloading https://files.pythonhosted.org/packages/4e/45/49fc229502501202ae93710e6dee75f6054f4f0facf10489f72f241b69b6/yambs-3.0.2.tar.gz
+[2024-05-18 09:36:16] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/4f/34/94e482c11594b31611c9615d8b47858641b29f0aee69d54a34bf5315fdca/muko-2.51-py3-none-any.whl
+[2024-05-18 09:36:16] INFO root fetch - processPackages [yambs]: executing diffoscope
+[2024-05-18 09:36:16] INFO root fetch - processPackages [yambs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yambs-3.0.1.tar.gz tmp/yambs-3.0.2.tar.gz --markdown 20240518/y/yambs/3.0.1-3.0.2/README.md --exclude *.pyd
+[2024-05-18 09:36:16] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.8.tar.gz]
+[2024-05-18 09:36:16] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
+[2024-05-18 09:36:16] INFO root fetch - main [MainThread]: End processing [zorch]: success
+[2024-05-18 09:36:16] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-05-18 09:36:16] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.49-py3-none-any.whl.zip tmp/muko-2.51-py3-none-any.whl.zip --markdown 20240518/m/muko/2.49-2.51/README.md --exclude *.pyd
+[2024-05-18 09:36:16] INFO root fetch - processPackages [pyventim]: Remove: archive file [/home/abi/fetcher/tmp/pyventim-0.1.0.tar.gz]
+[2024-05-18 09:36:16] INFO root fetch - processPackages [pyventim]: Remove: archive file [/home/abi/fetcher/tmp/pyventim-0.1.1.tar.gz]
+[2024-05-18 09:36:16] INFO root fetch - main [MainThread]: End processing [pyventim]: success
+[2024-05-18 09:36:16] INFO root fetch - processPackages [smartrandom]: Remove: archive file [/home/abi/fetcher/tmp/smartrandom-0.1.0.tar.gz]
+[2024-05-18 09:36:16] INFO root fetch - processPackages [smartrandom]: Remove: archive file [/home/abi/fetcher/tmp/smartrandom-0.1.1.tar.gz]
+[2024-05-18 09:36:16] INFO root fetch - main [MainThread]: End processing [smartrandom]: success
+[2024-05-18 09:36:17] INFO root fetch - processPackages [yambs]: Remove: archive file [/home/abi/fetcher/tmp/yambs-3.0.1.tar.gz]
+[2024-05-18 09:36:17] INFO root fetch - processPackages [yambs]: Remove: archive file [/home/abi/fetcher/tmp/yambs-3.0.2.tar.gz]
+[2024-05-18 09:36:17] INFO root fetch - main [MainThread]: End processing [yambs]: success
+[2024-05-18 09:36:21] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.49-py3-none-any.whl.zip]
+[2024-05-18 09:36:21] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.51-py3-none-any.whl.zip]
+[2024-05-18 09:36:21] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-05-18 09:36:21] INFO root fetch - main [MainThread]: Store serial: [23265745]
