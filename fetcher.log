@@ -17483,3 +17483,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:44:18] INFO root fetch - processPackages [iop-python]: Remove: archive file [/home/abi/fetcher/tmp/iop_python-0.1.1.tar.gz]
 [2024-05-18 17:44:18] INFO root fetch - main [MainThread]: End processing [iop-python]: success
 [2024-05-18 17:44:18] INFO root fetch - main [MainThread]: Store serial: [23268941]
+[2024-05-18 17:46:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268941]
+[2024-05-18 17:46:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvidia-dali-nightly-cuda110
+[2024-05-18 17:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvidia-dali-tf-plugin-nightly-cuda110
+[2024-05-18 17:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: referrers
+[2024-05-18 17:46:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inhibitorsz
+[2024-05-18 17:46:28] INFO root fetch - processPackages [referrers]: New version: [0.5.4] Old Version: [0.5.2]
+[2024-05-18 17:46:28] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/50/90/14fffbf46a3805997e64bb3a798f85a133afd9f50ca8986dd5454c10a0b9/referrers-0.5.2.tar.gz
+[2024-05-18 17:46:28] WARNING root fetch - processPackages [inhibitorsz]: Skipping, unable to determine old version
+[2024-05-18 17:46:28] INFO root fetch - main [MainThread]: End processing [inhibitorsz] error
+[2024-05-18 17:46:28] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: New version: [1.39.0.dev20240516] Old Version: [1.38.0.dev20240507]
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: New version: [1.39.0.dev20240516] Old Version: [1.38.0.dev20240507]
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/95/bf/58fd4b364b1db28993819037acf99704d4fa25f882cab0c898a11a6ff055/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/76/70/52a044a9d5657e6ca899c1e1f0f387a16a40e07b8aba1544fdf355e368c3/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240507.tar.gz
+[2024-05-18 17:46:29] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/fc/8c/a288bf67f08435845de3fe13e4d62beae271b03f380241f2cdd9b3e57f91/referrers-0.5.4.tar.gz
+[2024-05-18 17:46:29] INFO root fetch - processPackages [referrers]: executing diffoscope
+[2024-05-18 17:46:29] INFO root fetch - processPackages [referrers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/referrers-0.5.2.tar.gz tmp/referrers-0.5.4.tar.gz --markdown 20240518/r/referrers/0.5.2-0.5.4/README.md --exclude *.pyd
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/4c/b8/b4c363a34d8e1074b505b14b33fc8980e4b4e77bd2f7f8acb3ca6601f072/nvidia_dali_nightly_cuda110-1.39.0.dev20240516.tar.gz
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/9e/1f/a885d94899d71a40c78fd20820be114038f5edb5fc7a9153c3e25d699b9f/nvidia_dali_tf_plugin_nightly_cuda110-1.39.0.dev20240516.tar.gz
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: executing diffoscope
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240507.tar.gz tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.39.0.dev20240516.tar.gz --markdown 20240518/n/nvidia-dali-tf-plugin-nightly-cuda110/1.38.0.dev20240507-1.39.0.dev20240516/README.md --exclude *.pyd
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: executing diffoscope
+[2024-05-18 17:46:29] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz tmp/nvidia_dali_nightly_cuda110-1.39.0.dev20240516.tar.gz --markdown 20240518/n/nvidia-dali-nightly-cuda110/1.38.0.dev20240507-1.39.0.dev20240516/README.md --exclude *.pyd
+[2024-05-18 17:46:30] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.2.tar.gz]
+[2024-05-18 17:46:30] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.4.tar.gz]
+[2024-05-18 17:46:30] INFO root fetch - main [MainThread]: End processing [referrers]: success
+[2024-05-18 17:46:30] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240507.tar.gz]
+[2024-05-18 17:46:30] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.39.0.dev20240516.tar.gz]
+[2024-05-18 17:46:30] INFO root fetch - main [MainThread]: End processing [nvidia-dali-tf-plugin-nightly-cuda110]: success
+[2024-05-18 17:46:30] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz]
+[2024-05-18 17:46:30] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.39.0.dev20240516.tar.gz]
+[2024-05-18 17:46:30] INFO root fetch - main [MainThread]: End processing [nvidia-dali-nightly-cuda110]: success
+[2024-05-18 17:46:30] INFO root fetch - main [MainThread]: Store serial: [23268952]
