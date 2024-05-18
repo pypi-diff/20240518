@@ -18439,3 +18439,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:54:27] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.9.tar.gz]
 [2024-05-18 18:54:27] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
 [2024-05-18 18:54:27] INFO root fetch - main [MainThread]: Store serial: [23269417]
+[2024-05-18 18:56:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269417]
+[2024-05-18 18:56:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 18:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncupbit
+[2024-05-18 18:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dsi-cocoa
+[2024-05-18 18:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fast-text-detection
+[2024-05-18 18:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fakeredis
+[2024-05-18 18:56:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rlgym-api
+[2024-05-18 18:56:37] WARNING root fetch - processPackages [fast-text-detection]: Skipping, unable to determine old version
+[2024-05-18 18:56:37] INFO root fetch - main [MainThread]: End processing [fast-text-detection] error
+[2024-05-18 18:56:37] INFO root fetch - processPackages [asyncupbit]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 18:56:37] INFO root fetch - processPackages [rlgym-api]: New version: [2.0.0rc0] Old Version: [2.0.0a1]
+[2024-05-18 18:56:37] INFO root fetch - processPackages [dsi-cocoa]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-18 18:56:37] INFO root fetch - processPackages [fakeredis]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-05-18 18:56:37] INFO root fetch - processPackages [dsi-cocoa]: Downloading https://files.pythonhosted.org/packages/5f/a5/68905cc6a7d54c434b702fbeb6755dd7e41a8b576eccdb7318e1867141f2/dsi_cocoa-0.5.0.tar.gz
+[2024-05-18 18:56:37] INFO root fetch - processPackages [asyncupbit]: Downloading https://files.pythonhosted.org/packages/0b/68/2b784ceaa29a2a9870f0231d0a511a63f0ae797ecb2288f3cc748e66d8fd/asyncupbit-0.1.0.tar.gz
+[2024-05-18 18:56:37] INFO root fetch - processPackages [rlgym-api]: Downloading https://files.pythonhosted.org/packages/cf/18/b991e90b8670bed5141480a54f8751586a320ca603c917da47a6b862e902/rlgym-api-2.0.0a1.tar.gz
+[2024-05-18 18:56:37] INFO root fetch - processPackages [fakeredis]: Downloading https://files.pythonhosted.org/packages/27/c5/a8bb6a94bad96b40a7e760bbbac99c73a6868017ab58c54a66bf62d6041d/fakeredis-2.9.1.tar.gz
+[2024-05-18 18:56:38] INFO root fetch - processPackages [dsi-cocoa]: Downloading https://files.pythonhosted.org/packages/7f/c8/a4cdc54d699c0b001d3b980bbcc122ddde5b70bc68c6e3006b70c23171d2/dsi_cocoa-0.5.1.tar.gz
+[2024-05-18 18:56:38] INFO root fetch - processPackages [asyncupbit]: Downloading https://files.pythonhosted.org/packages/5a/e7/1c1bfe3ff416a39d596e6c2e83ba332704f633d3e7f49940a1ecce7d1cd5/asyncupbit-0.1.1.tar.gz
+[2024-05-18 18:56:38] INFO root fetch - processPackages [rlgym-api]: Downloading https://files.pythonhosted.org/packages/75/bc/8f1de53198ff714f023ffdc6d99030a7b8d41d9ac45037041962805165cc/rlgym-api-2.0.0rc0.tar.gz
+[2024-05-18 18:56:38] INFO root fetch - processPackages [dsi-cocoa]: executing diffoscope
+[2024-05-18 18:56:38] INFO root fetch - processPackages [dsi-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsi_cocoa-0.5.0.tar.gz tmp/dsi_cocoa-0.5.1.tar.gz --markdown 20240518/d/dsi-cocoa/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-18 18:56:38] INFO root fetch - processPackages [asyncupbit]: executing diffoscope
+[2024-05-18 18:56:38] INFO root fetch - processPackages [asyncupbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncupbit-0.1.0.tar.gz tmp/asyncupbit-0.1.1.tar.gz --markdown 20240518/a/asyncupbit/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 18:56:38] INFO root fetch - processPackages [fakeredis]: Downloading https://files.pythonhosted.org/packages/c9/d0/063259876691b0c48dfa578a01777c92875d9f234e1ac49900f305c4a9aa/fakeredis-2.9.2.tar.gz
+[2024-05-18 18:56:38] INFO root fetch - processPackages [rlgym-api]: executing diffoscope
+[2024-05-18 18:56:38] INFO root fetch - processPackages [rlgym-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rlgym-api-2.0.0a1.tar.gz tmp/rlgym-api-2.0.0rc0.tar.gz --markdown 20240518/r/rlgym-api/2.0.0a1-2.0.0rc0/README.md --exclude *.pyd
+[2024-05-18 18:56:38] INFO root fetch - processPackages [fakeredis]: executing diffoscope
+[2024-05-18 18:56:38] INFO root fetch - processPackages [fakeredis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fakeredis-2.9.1.tar.gz tmp/fakeredis-2.9.2.tar.gz --markdown 20240518/f/fakeredis/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-05-18 18:56:38] INFO root fetch - processPackages [dsi-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/dsi_cocoa-0.5.0.tar.gz]
+[2024-05-18 18:56:38] INFO root fetch - processPackages [dsi-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/dsi_cocoa-0.5.1.tar.gz]
+[2024-05-18 18:56:38] INFO root fetch - main [MainThread]: End processing [dsi-cocoa]: success
+[2024-05-18 18:56:38] INFO root fetch - processPackages [asyncupbit]: Remove: archive file [/home/abi/fetcher/tmp/asyncupbit-0.1.0.tar.gz]
+[2024-05-18 18:56:38] INFO root fetch - processPackages [asyncupbit]: Remove: archive file [/home/abi/fetcher/tmp/asyncupbit-0.1.1.tar.gz]
+[2024-05-18 18:56:38] INFO root fetch - main [MainThread]: End processing [asyncupbit]: success
+[2024-05-18 18:56:39] INFO root fetch - processPackages [rlgym-api]: Remove: archive file [/home/abi/fetcher/tmp/rlgym-api-2.0.0a1.tar.gz]
+[2024-05-18 18:56:39] INFO root fetch - processPackages [rlgym-api]: Remove: archive file [/home/abi/fetcher/tmp/rlgym-api-2.0.0rc0.tar.gz]
+[2024-05-18 18:56:39] INFO root fetch - main [MainThread]: End processing [rlgym-api]: success
+[2024-05-18 18:56:39] INFO root fetch - processPackages [fakeredis]: Remove: archive file [/home/abi/fetcher/tmp/fakeredis-2.9.1.tar.gz]
+[2024-05-18 18:56:39] INFO root fetch - processPackages [fakeredis]: Remove: archive file [/home/abi/fetcher/tmp/fakeredis-2.9.2.tar.gz]
+[2024-05-18 18:56:39] INFO root fetch - main [MainThread]: End processing [fakeredis]: success
+[2024-05-18 18:56:39] INFO root fetch - main [MainThread]: Store serial: [23269433]
