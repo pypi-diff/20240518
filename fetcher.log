@@ -12596,3 +12596,24 @@
 [2024-05-18 11:18:54] INFO root fetch - processPackages [spyndex]: Remove: archive file [/home/abi/fetcher/tmp/spyndex-0.6.0.tar.gz]
 [2024-05-18 11:18:54] INFO root fetch - main [MainThread]: End processing [spyndex]: success
 [2024-05-18 11:18:54] INFO root fetch - main [MainThread]: Store serial: [23266578]
+[2024-05-18 11:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266578]
+[2024-05-18 11:21:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 11:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: harken-translation_readers
+[2024-05-18 11:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OZI
+[2024-05-18 11:21:03] INFO root fetch - processPackages [harken-translation_readers]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 11:21:03] INFO root fetch - processPackages [OZI]: New version: [1.8.0] Old Version: [1.7.4]
+[2024-05-18 11:21:03] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/fc/07/81dc4cebe2b820c03821dccfba3de45a4b6aeb2911a8a6430116837fe51b/OZI-1.7.4.tar.gz
+[2024-05-18 11:21:03] INFO root fetch - processPackages [harken-translation_readers]: Downloading https://files.pythonhosted.org/packages/38/d8/324731d36176314c4825071fc8db9126896a20fe6eb39f2d7b647b78adfb/harken_translation_readers-0.0.4.tar.gz
+[2024-05-18 11:21:03] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/60/71/d5e093ffde4d6ed16d55aa5d6ac302636a8f69b924ce1d90c35118b20956/OZI-1.8.0.tar.gz
+[2024-05-18 11:21:03] INFO root fetch - processPackages [harken-translation_readers]: Downloading https://files.pythonhosted.org/packages/37/69/69ea995d47b12a8c14e66884f24ad07679be0cece79e785ad613a9b8bb5d/harken_translation_readers-0.0.5.tar.gz
+[2024-05-18 11:21:04] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-18 11:21:04] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.7.4.tar.gz tmp/OZI-1.8.0.tar.gz --markdown 20240518/O/OZI/1.7.4-1.8.0/README.md --exclude *.pyd
+[2024-05-18 11:21:04] INFO root fetch - processPackages [harken-translation_readers]: executing diffoscope
+[2024-05-18 11:21:04] INFO root fetch - processPackages [harken-translation_readers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harken_translation_readers-0.0.4.tar.gz tmp/harken_translation_readers-0.0.5.tar.gz --markdown 20240518/h/harken-translation_readers/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 11:21:04] INFO root fetch - processPackages [harken-translation_readers]: Remove: archive file [/home/abi/fetcher/tmp/harken_translation_readers-0.0.4.tar.gz]
+[2024-05-18 11:21:04] INFO root fetch - processPackages [harken-translation_readers]: Remove: archive file [/home/abi/fetcher/tmp/harken_translation_readers-0.0.5.tar.gz]
+[2024-05-18 11:21:04] INFO root fetch - main [MainThread]: End processing [harken-translation_readers]: success
+[2024-05-18 11:21:05] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.7.4.tar.gz]
+[2024-05-18 11:21:05] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.8.0.tar.gz]
+[2024-05-18 11:21:05] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-18 11:21:05] INFO root fetch - main [MainThread]: Store serial: [23266586]
