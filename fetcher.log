@@ -12014,3 +12014,33 @@
 [2024-05-18 10:35:14] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.71.tar.gz]
 [2024-05-18 10:35:14] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-05-18 10:35:14] INFO root fetch - main [MainThread]: Store serial: [23266030]
+[2024-05-18 10:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266030]
+[2024-05-18 10:37:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 10:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OASIS-GUI
+[2024-05-18 10:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slushinessz
+[2024-05-18 10:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: battlemetrics
+[2024-05-18 10:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyromark
+[2024-05-18 10:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: youtube-video-analyzer
+[2024-05-18 10:37:24] INFO root fetch - processPackages [battlemetrics]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-18 10:37:24] WARNING root fetch - processPackages [youtube-video-analyzer]: Skipping, unable to determine old version
+[2024-05-18 10:37:24] INFO root fetch - main [MainThread]: End processing [youtube-video-analyzer] error
+[2024-05-18 10:37:24] INFO root fetch - processPackages [battlemetrics]: Downloading https://files.pythonhosted.org/packages/a9/73/c1920c678d7eb9cddd909fff9a983ee9d942b7d8f36faeb44e092e8780bb/battlemetrics-1.0.7.tar.gz
+[2024-05-18 10:37:24] WARNING root fetch - processPackages [slushinessz]: Skipping, unable to determine old version
+[2024-05-18 10:37:24] WARNING root fetch - processPackages [OASIS-GUI]: Skipping, unable to determine old version
+[2024-05-18 10:37:24] INFO root fetch - main [MainThread]: End processing [slushinessz] error
+[2024-05-18 10:37:24] INFO root fetch - main [MainThread]: End processing [OASIS-GUI] error
+[2024-05-18 10:37:24] INFO root fetch - processPackages [pyromark]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-18 10:37:24] INFO root fetch - processPackages [battlemetrics]: Downloading https://files.pythonhosted.org/packages/6c/af/268514bdf2e736f62f957ebfb474261c8231c15af26dd21c5d25efabf5eb/battlemetrics-1.0.8.tar.gz
+[2024-05-18 10:37:24] INFO root fetch - processPackages [pyromark]: Downloading https://files.pythonhosted.org/packages/a1/89/3b6e8dd24dad4ff06bf0872347bb98a7561d77dfb8286b448494f61f2c4c/pyromark-0.3.2.tar.gz
+[2024-05-18 10:37:24] INFO root fetch - processPackages [battlemetrics]: executing diffoscope
+[2024-05-18 10:37:24] INFO root fetch - processPackages [battlemetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battlemetrics-1.0.7.tar.gz tmp/battlemetrics-1.0.8.tar.gz --markdown 20240518/b/battlemetrics/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-18 10:37:24] INFO root fetch - processPackages [pyromark]: Downloading https://files.pythonhosted.org/packages/68/dd/41f1dbc46260f492f6b81831929be2adc4f0343968dfa9f8ad94844eadde/pyromark-0.4.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-05-18 10:37:25] INFO root fetch - processPackages [battlemetrics]: Remove: archive file [/home/abi/fetcher/tmp/battlemetrics-1.0.7.tar.gz]
+[2024-05-18 10:37:25] INFO root fetch - processPackages [battlemetrics]: Remove: archive file [/home/abi/fetcher/tmp/battlemetrics-1.0.8.tar.gz]
+[2024-05-18 10:37:25] INFO root fetch - main [MainThread]: End processing [battlemetrics]: success
+[2024-05-18 10:37:26] INFO root fetch - processPackages [pyromark]: executing diffoscope
+[2024-05-18 10:37:26] INFO root fetch - processPackages [pyromark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyromark-0.3.2.tar.gz tmp/pyromark-0.4.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240518/p/pyromark/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-18 10:37:26] INFO root fetch - processPackages [pyromark]: Remove: archive file [/home/abi/fetcher/tmp/pyromark-0.3.2.tar.gz]
+[2024-05-18 10:37:26] INFO root fetch - processPackages [pyromark]: Remove: archive file [/home/abi/fetcher/tmp/pyromark-0.4.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-05-18 10:37:26] INFO root fetch - main [MainThread]: End processing [pyromark]: success
+[2024-05-18 10:37:26] INFO root fetch - main [MainThread]: Store serial: [23266050]
