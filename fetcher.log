@@ -19340,3 +19340,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:48:47] WARNING root fetch - processPackages [odoo-addon-utm-source-multi-company]: Skipping, unable to determine old version
 [2024-05-18 19:48:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-utm-source-multi-company] error
 [2024-05-18 19:48:47] INFO root fetch - main [MainThread]: Store serial: [23269804]
+[2024-05-18 19:50:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269804]
+[2024-05-18 19:50:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 19:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: importer-local
+[2024-05-18 19:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ultralytics
+[2024-05-18 19:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: benzalz
+[2024-05-18 19:50:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: owocr
+[2024-05-18 19:50:56] INFO root fetch - processPackages [importer-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 19:50:56] INFO root fetch - processPackages [ultralytics]: New version: [8.2.9] Old Version: [8.2.8]
+[2024-05-18 19:50:56] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/3b/68/0b10215ac7859421c193cd0df3aab70a0aef2e2db5f22c14a5a2fd7bd732/importer-local-0.0.8.tar.gz
+[2024-05-18 19:50:56] INFO root fetch - processPackages [owocr]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-05-18 19:50:56] WARNING root fetch - processPackages [benzalz]: Skipping, unable to determine old version
+[2024-05-18 19:50:56] INFO root fetch - main [MainThread]: End processing [benzalz] error
+[2024-05-18 19:50:56] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/2d/1f/773ce923d52559a9246fe5b3e4d86c67714d941216658acdb23bf9d46212/ultralytics-8.2.8.tar.gz
+[2024-05-18 19:50:56] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/80/33/939765aa01c27931d172ea899fb7307071569b4fc595e6ec107018aabc97/importer-local-0.0.9.tar.gz
+[2024-05-18 19:50:56] INFO root fetch - processPackages [owocr]: Downloading https://files.pythonhosted.org/packages/df/46/618704520d5891a474d5800ceb88c257dda01ac55ce6f551850900d54213/owocr-1.7.3.tar.gz
+[2024-05-18 19:50:57] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2024-05-18 19:50:57] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.8.tar.gz tmp/importer-local-0.0.9.tar.gz --markdown 20240518/i/importer-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 19:50:57] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/17/6e/89a05ffed4bbaae94368f45323ff75db71965c94c1259457ef61dc551645/ultralytics-8.2.9.tar.gz
+[2024-05-18 19:50:57] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2024-05-18 19:50:57] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.2.8.tar.gz tmp/ultralytics-8.2.9.tar.gz --markdown 20240518/u/ultralytics/8.2.8-8.2.9/README.md --exclude *.pyd
+[2024-05-18 19:50:57] INFO root fetch - processPackages [owocr]: Downloading https://files.pythonhosted.org/packages/59/82/182c8172981717d4b85bb7124d0771f4e6c32f668c6243c51cb5d336a1c0/owocr-1.7.4.tar.gz
+[2024-05-18 19:50:57] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.8.tar.gz]
+[2024-05-18 19:50:57] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.9.tar.gz]
+[2024-05-18 19:50:57] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2024-05-18 19:50:57] INFO root fetch - processPackages [owocr]: executing diffoscope
+[2024-05-18 19:50:57] INFO root fetch - processPackages [owocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owocr-1.7.3.tar.gz tmp/owocr-1.7.4.tar.gz --markdown 20240518/o/owocr/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-05-18 19:50:58] INFO root fetch - processPackages [owocr]: Remove: archive file [/home/abi/fetcher/tmp/owocr-1.7.3.tar.gz]
+[2024-05-18 19:50:58] INFO root fetch - processPackages [owocr]: Remove: archive file [/home/abi/fetcher/tmp/owocr-1.7.4.tar.gz]
+[2024-05-18 19:50:58] INFO root fetch - main [MainThread]: End processing [owocr]: success
+[2024-05-18 19:50:58] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.8.tar.gz]
+[2024-05-18 19:50:58] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.9.tar.gz]
+[2024-05-18 19:50:58] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2024-05-18 19:50:58] INFO root fetch - main [MainThread]: Store serial: [23269818]
