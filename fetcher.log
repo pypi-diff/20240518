@@ -21928,3 +21928,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:57:53] INFO root fetch - processPackages [communex]: Remove: archive file [/home/abi/fetcher/tmp/communex-0.1.9.tar.gz]
 [2024-05-18 22:57:53] INFO root fetch - main [MainThread]: End processing [communex]: success
 [2024-05-18 22:57:53] INFO root fetch - main [MainThread]: Store serial: [23271200]
+[2024-05-18 22:59:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271200]
+[2024-05-18 23:00:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 23:00:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: educatedlyz
+[2024-05-18 23:00:02] WARNING root fetch - processPackages [educatedlyz]: Skipping, unable to determine old version
+[2024-05-18 23:00:02] INFO root fetch - main [MainThread]: End processing [educatedlyz] error
+[2024-05-18 23:00:02] INFO root fetch - main [MainThread]: Store serial: [23271204]
