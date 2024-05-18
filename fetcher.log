@@ -8219,3 +8219,39 @@
 [2024-05-18 05:07:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-purchase]: success
 [2024-05-18 05:07:15] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-purchase]: success
 [2024-05-18 05:07:15] INFO root fetch - main [MainThread]: Store serial: [23264298]
+[2024-05-18 05:09:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264298]
+[2024-05-18 05:09:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 05:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyasic
+[2024-05-18 05:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phenomenismz
+[2024-05-18 05:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FirstGame
+[2024-05-18 05:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wwbot
+[2024-05-18 05:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chromophile
+[2024-05-18 05:09:24] INFO root fetch - processPackages [pyasic]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-18 05:09:24] INFO root fetch - processPackages [pyasic]: Downloading https://files.pythonhosted.org/packages/8b/cb/6d4cd3f342cc1eda735f322c923e89b06fb809652bccc8f7ba41b10189f2/pyasic-0.9.3.tar.gz
+[2024-05-18 05:09:24] WARNING root fetch - processPackages [wwbot]: Skipping, unable to determine old version
+[2024-05-18 05:09:24] INFO root fetch - main [MainThread]: End processing [wwbot] error
+[2024-05-18 05:09:24] WARNING root fetch - processPackages [phenomenismz]: Skipping, unable to determine old version
+[2024-05-18 05:09:24] INFO root fetch - main [MainThread]: End processing [phenomenismz] error
+[2024-05-18 05:09:24] INFO root fetch - processPackages [FirstGame]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-18 05:09:24] INFO root fetch - processPackages [chromophile]: New version: [1.0.5] Old Version: [1.0.3]
+[2024-05-18 05:09:24] INFO root fetch - processPackages [pyasic]: Downloading https://files.pythonhosted.org/packages/70/30/6c8b77c23f901b5c8b406344a29a98220a0b5212116530bd177635c4430d/pyasic-0.9.4.tar.gz
+[2024-05-18 05:09:24] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/ae/88/5e3052870032b35daf55c8b98ec0d4a853dee3a6d777a2995ce87c52fcb2/FirstGame-1.0.5.tar.gz
+[2024-05-18 05:09:24] INFO root fetch - processPackages [chromophile]: Downloading https://files.pythonhosted.org/packages/8a/35/8f8ed73bc5589656fa0d6b716ea6762079a3b449392307a12ed884ee3285/chromophile-1.0.3.tar.gz
+[2024-05-18 05:09:24] INFO root fetch - processPackages [pyasic]: executing diffoscope
+[2024-05-18 05:09:24] INFO root fetch - processPackages [pyasic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyasic-0.9.3.tar.gz tmp/pyasic-0.9.4.tar.gz --markdown 20240518/p/pyasic/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-18 05:09:25] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/a4/2a/e04249da7990c930ce1754aef66d4843270039cda4af5d5af3d6e1f61d2f/FirstGame-1.0.6.tar.gz
+[2024-05-18 05:09:25] INFO root fetch - processPackages [FirstGame]: executing diffoscope
+[2024-05-18 05:09:25] INFO root fetch - processPackages [FirstGame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FirstGame-1.0.5.tar.gz tmp/FirstGame-1.0.6.tar.gz --markdown 20240518/F/FirstGame/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-18 05:09:25] INFO root fetch - processPackages [chromophile]: Downloading https://files.pythonhosted.org/packages/32/11/5948d48d79b966ff737ef1195ffe1571d31e9e658f3ecdc0b80ee17d5c63/chromophile-1.0.5.tar.gz
+[2024-05-18 05:09:25] INFO root fetch - processPackages [pyasic]: Remove: archive file [/home/abi/fetcher/tmp/pyasic-0.9.3.tar.gz]
+[2024-05-18 05:09:25] INFO root fetch - processPackages [pyasic]: Remove: archive file [/home/abi/fetcher/tmp/pyasic-0.9.4.tar.gz]
+[2024-05-18 05:09:25] INFO root fetch - main [MainThread]: End processing [pyasic]: success
+[2024-05-18 05:09:25] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.5.tar.gz]
+[2024-05-18 05:09:25] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.6.tar.gz]
+[2024-05-18 05:09:25] INFO root fetch - main [MainThread]: End processing [FirstGame]: success
+[2024-05-18 05:09:25] INFO root fetch - processPackages [chromophile]: executing diffoscope
+[2024-05-18 05:09:25] INFO root fetch - processPackages [chromophile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromophile-1.0.3.tar.gz tmp/chromophile-1.0.5.tar.gz --markdown 20240518/c/chromophile/1.0.3-1.0.5/README.md --exclude *.pyd
+[2024-05-18 05:09:26] INFO root fetch - processPackages [chromophile]: Remove: archive file [/home/abi/fetcher/tmp/chromophile-1.0.3.tar.gz]
+[2024-05-18 05:09:26] INFO root fetch - processPackages [chromophile]: Remove: archive file [/home/abi/fetcher/tmp/chromophile-1.0.5.tar.gz]
+[2024-05-18 05:09:26] INFO root fetch - main [MainThread]: End processing [chromophile]: success
+[2024-05-18 05:09:26] INFO root fetch - main [MainThread]: Store serial: [23264312]
