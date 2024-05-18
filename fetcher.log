@@ -12044,3 +12044,33 @@
 [2024-05-18 10:37:26] INFO root fetch - processPackages [pyromark]: Remove: archive file [/home/abi/fetcher/tmp/pyromark-0.4.0-pp38-pypy38_pp73-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-05-18 10:37:26] INFO root fetch - main [MainThread]: End processing [pyromark]: success
 [2024-05-18 10:37:26] INFO root fetch - main [MainThread]: Store serial: [23266050]
+[2024-05-18 10:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266050]
+[2024-05-18 10:39:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 10:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-video-analyzer
+[2024-05-18 10:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: battlemetrics
+[2024-05-18 10:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kuzu
+[2024-05-18 10:39:35] INFO root fetch - processPackages [battlemetrics]: New version: [1.0.8.1] Old Version: [1.0.8]
+[2024-05-18 10:39:35] INFO root fetch - processPackages [youtube-video-analyzer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 10:39:35] INFO root fetch - processPackages [kuzu]: New version: [0.4.3.dev3] Old Version: [0.4.3.dev2]
+[2024-05-18 10:39:36] INFO root fetch - processPackages [battlemetrics]: Downloading https://files.pythonhosted.org/packages/6c/af/268514bdf2e736f62f957ebfb474261c8231c15af26dd21c5d25efabf5eb/battlemetrics-1.0.8.tar.gz
+[2024-05-18 10:39:36] INFO root fetch - processPackages [youtube-video-analyzer]: Downloading https://files.pythonhosted.org/packages/ea/e5/d002596bb2dd2314573fd525d38636b442d9592d84209929b578e6bd2b3b/youtube_video_analyzer-0.1.0.tar.gz
+[2024-05-18 10:39:36] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/87/72/917ed2f544a5dd625b1cdfa19b3ab462cbf21ea916dcd2e8f0b060f6992c/kuzu-0.4.3.dev2.tar.gz
+[2024-05-18 10:39:36] INFO root fetch - processPackages [battlemetrics]: Downloading https://files.pythonhosted.org/packages/32/14/2ec07a7aaffe64781e0312fa54644588c1000aff733d7b89cf760d15e710/battlemetrics-1.0.8.1.tar.gz
+[2024-05-18 10:39:36] INFO root fetch - processPackages [youtube-video-analyzer]: Downloading https://files.pythonhosted.org/packages/95/2c/caf463d3b3733bf502aba688f8dfb58778d2ab608e0110acc223edeb3e85/youtube_video_analyzer-0.1.1.tar.gz
+[2024-05-18 10:39:36] INFO root fetch - processPackages [battlemetrics]: executing diffoscope
+[2024-05-18 10:39:36] INFO root fetch - processPackages [battlemetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battlemetrics-1.0.8.tar.gz tmp/battlemetrics-1.0.8.1.tar.gz --markdown 20240518/b/battlemetrics/1.0.8-1.0.8.1/README.md --exclude *.pyd
+[2024-05-18 10:39:36] INFO root fetch - processPackages [youtube-video-analyzer]: executing diffoscope
+[2024-05-18 10:39:36] INFO root fetch - processPackages [youtube-video-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_video_analyzer-0.1.0.tar.gz tmp/youtube_video_analyzer-0.1.1.tar.gz --markdown 20240518/y/youtube-video-analyzer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 10:39:36] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/fd/a5/f0c3b18f44a2009a8b36e3518a643167c36338fbf4d7452e36e10978870f/kuzu-0.4.3.dev3.tar.gz
+[2024-05-18 10:39:37] INFO root fetch - processPackages [battlemetrics]: Remove: archive file [/home/abi/fetcher/tmp/battlemetrics-1.0.8.tar.gz]
+[2024-05-18 10:39:37] INFO root fetch - processPackages [battlemetrics]: Remove: archive file [/home/abi/fetcher/tmp/battlemetrics-1.0.8.1.tar.gz]
+[2024-05-18 10:39:37] INFO root fetch - main [MainThread]: End processing [battlemetrics]: success
+[2024-05-18 10:39:37] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-05-18 10:39:37] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.3.dev2.tar.gz tmp/kuzu-0.4.3.dev3.tar.gz --markdown 20240518/k/kuzu/0.4.3.dev2-0.4.3.dev3/README.md --exclude *.pyd
+[2024-05-18 10:39:37] INFO root fetch - processPackages [youtube-video-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/youtube_video_analyzer-0.1.0.tar.gz]
+[2024-05-18 10:39:37] INFO root fetch - processPackages [youtube-video-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/youtube_video_analyzer-0.1.1.tar.gz]
+[2024-05-18 10:39:37] INFO root fetch - main [MainThread]: End processing [youtube-video-analyzer]: success
+[2024-05-18 10:39:43] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev2.tar.gz]
+[2024-05-18 10:39:43] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.3.dev3.tar.gz]
+[2024-05-18 10:39:43] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-05-18 10:39:43] INFO root fetch - main [MainThread]: Store serial: [23266158]
