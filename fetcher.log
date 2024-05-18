@@ -11339,3 +11339,30 @@
 [2024-05-18 09:29:45] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
 [2024-05-18 09:29:45] INFO root fetch - main [MainThread]: End processing [zorch]: success
 [2024-05-18 09:29:45] INFO root fetch - main [MainThread]: Store serial: [23265708]
+[2024-05-18 09:31:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265708]
+[2024-05-18 09:31:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aoudadz
+[2024-05-18 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zorch
+[2024-05-18 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crawler-user-agents
+[2024-05-18 09:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: linkwiz
+[2024-05-18 09:31:54] INFO root fetch - processPackages [linkwiz]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-18 09:31:54] INFO root fetch - processPackages [zorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 09:31:54] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/50/d5/20b0dac0ae23cf0da1ac26121361a57833e4c90c03953c298d882b7d835d/zorch-0.0.8.tar.gz
+[2024-05-18 09:31:54] WARNING root fetch - processPackages [crawler-user-agents]: Skipping, unable to determine old version
+[2024-05-18 09:31:54] INFO root fetch - main [MainThread]: End processing [crawler-user-agents] error
+[2024-05-18 09:31:54] WARNING root fetch - processPackages [aoudadz]: Skipping, unable to determine old version
+[2024-05-18 09:31:54] INFO root fetch - main [MainThread]: End processing [aoudadz] error
+[2024-05-18 09:31:54] INFO root fetch - processPackages [linkwiz]: Downloading https://files.pythonhosted.org/packages/de/5d/ffab4ab4545e79997d8454df7e3a3391a5675a2f2af8096242e39df8f801/linkwiz-0.2.5.tar.gz
+[2024-05-18 09:31:54] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/bf/a0/75fc2c4170d35fb1a7605723b68b9cd28d1d2e0cbd176afc077833e6d119/zorch-0.0.9.tar.gz
+[2024-05-18 09:31:54] INFO root fetch - processPackages [zorch]: executing diffoscope
+[2024-05-18 09:31:54] INFO root fetch - processPackages [zorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zorch-0.0.8.tar.gz tmp/zorch-0.0.9.tar.gz --markdown 20240518/z/zorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 09:31:54] INFO root fetch - processPackages [linkwiz]: Downloading https://files.pythonhosted.org/packages/1e/53/b5051badd678fed7ea4bddda2df289c57356d3110b5963ba61f3336568f9/linkwiz-0.2.6.tar.gz
+[2024-05-18 09:31:54] INFO root fetch - processPackages [linkwiz]: executing diffoscope
+[2024-05-18 09:31:54] INFO root fetch - processPackages [linkwiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkwiz-0.2.5.tar.gz tmp/linkwiz-0.2.6.tar.gz --markdown 20240518/l/linkwiz/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-18 09:31:55] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.8.tar.gz]
+[2024-05-18 09:31:55] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
+[2024-05-18 09:31:55] INFO root fetch - main [MainThread]: End processing [zorch]: success
+[2024-05-18 09:31:55] INFO root fetch - processPackages [linkwiz]: Remove: archive file [/home/abi/fetcher/tmp/linkwiz-0.2.5.tar.gz]
+[2024-05-18 09:31:55] INFO root fetch - processPackages [linkwiz]: Remove: archive file [/home/abi/fetcher/tmp/linkwiz-0.2.6.tar.gz]
+[2024-05-18 09:31:55] INFO root fetch - main [MainThread]: End processing [linkwiz]: success
+[2024-05-18 09:31:55] INFO root fetch - main [MainThread]: Store serial: [23265723]
