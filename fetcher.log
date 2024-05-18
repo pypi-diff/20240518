@@ -14338,3 +14338,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:40:33] INFO root fetch - processPackages [browserbase]: Remove: archive file [/home/abi/fetcher/tmp/browserbase-0.1.4.tar.gz]
 [2024-05-18 13:40:33] INFO root fetch - main [MainThread]: End processing [browserbase]: success
 [2024-05-18 13:40:33] INFO root fetch - main [MainThread]: Store serial: [23267357]
+[2024-05-18 13:42:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267357]
+[2024-05-18 13:42:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 13:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peruserz
+[2024-05-18 13:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyflagoras
+[2024-05-18 13:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyevaljs3
+[2024-05-18 13:42:42] WARNING root fetch - processPackages [pyflagoras]: Skipping, unable to determine old version
+[2024-05-18 13:42:42] INFO root fetch - main [MainThread]: End processing [pyflagoras] error
+[2024-05-18 13:42:42] INFO root fetch - processPackages [pyevaljs3]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 13:42:42] WARNING root fetch - processPackages [peruserz]: Skipping, unable to determine old version
+[2024-05-18 13:42:42] INFO root fetch - main [MainThread]: End processing [peruserz] error
+[2024-05-18 13:42:42] INFO root fetch - processPackages [pyevaljs3]: Downloading https://files.pythonhosted.org/packages/7a/ea/9b82d74a937d168cb991517073619d0d4127b1d4c533e9663a8f6874fbf9/pyevaljs3-0.1.1.tar.gz
+[2024-05-18 13:42:42] INFO root fetch - processPackages [pyevaljs3]: Downloading https://files.pythonhosted.org/packages/1f/83/fa0efef6e212152a9c097b5560faf787eb6628c7e5522938e88b3100cedd/pyevaljs3-0.1.2.tar.gz
+[2024-05-18 13:42:43] INFO root fetch - processPackages [pyevaljs3]: executing diffoscope
+[2024-05-18 13:42:43] INFO root fetch - processPackages [pyevaljs3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyevaljs3-0.1.1.tar.gz tmp/pyevaljs3-0.1.2.tar.gz --markdown 20240518/p/pyevaljs3/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 13:42:43] INFO root fetch - processPackages [pyevaljs3]: Remove: archive file [/home/abi/fetcher/tmp/pyevaljs3-0.1.1.tar.gz]
+[2024-05-18 13:42:43] INFO root fetch - processPackages [pyevaljs3]: Remove: archive file [/home/abi/fetcher/tmp/pyevaljs3-0.1.2.tar.gz]
+[2024-05-18 13:42:43] INFO root fetch - main [MainThread]: End processing [pyevaljs3]: success
+[2024-05-18 13:42:43] INFO root fetch - main [MainThread]: Store serial: [23267369]
