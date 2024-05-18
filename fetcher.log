@@ -10687,3 +10687,39 @@
 [2024-05-18 08:37:30] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
 [2024-05-18 08:37:30] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2024-05-18 08:37:30] INFO root fetch - main [MainThread]: Store serial: [23265330]
+[2024-05-18 08:39:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265330]
+[2024-05-18 08:39:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 08:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydflow
+[2024-05-18 08:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addons-oca-server-tools
+[2024-05-18 08:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spathefulz
+[2024-05-18 08:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: novnc
+[2024-05-18 08:39:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xss-shield
+[2024-05-18 08:39:38] INFO root fetch - processPackages [pydflow]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-05-18 08:39:38] WARNING root fetch - processPackages [spathefulz]: Skipping, unable to determine old version
+[2024-05-18 08:39:38] INFO root fetch - main [MainThread]: End processing [spathefulz] error
+[2024-05-18 08:39:38] INFO root fetch - processPackages [xss-shield]: New version: [1.0.0] Old Version: [0.1.2]
+[2024-05-18 08:39:38] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: New version: [14.0.20240517.0] Old Version: [14.0.20240404.0]
+[2024-05-18 08:39:38] WARNING root fetch - processPackages [novnc]: Skipping, unable to determine old version
+[2024-05-18 08:39:38] INFO root fetch - main [MainThread]: End processing [novnc] error
+[2024-05-18 08:39:38] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/8d/22/584c02b6b9a49c26a40cc22b7f10af25724fe70df5357e5a527c2c36729a/pydflow-1.8.8.tar.gz
+[2024-05-18 08:39:39] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: Downloading https://files.pythonhosted.org/packages/25/c6/49ad2b1fec6fa89dab401860942ef0dd013a02355ec295de7a614be38788/odoo14_addons_oca_server_tools-14.0.20240404.0-py3-none-any.whl
+[2024-05-18 08:39:39] INFO root fetch - processPackages [xss-shield]: Downloading https://files.pythonhosted.org/packages/de/16/97c936519bf1304b2384b9fc48787ff849dda267b2addc39394a35464252/xss_shield-0.1.2.tar.gz
+[2024-05-18 08:39:39] INFO root fetch - processPackages [pydflow]: Downloading https://files.pythonhosted.org/packages/b8/ee/62435e12ce818ae5c15b7256f01e225eb1dd5e3d49e3bde8e913944b4caa/pydflow-1.8.9.tar.gz
+[2024-05-18 08:39:39] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: Downloading https://files.pythonhosted.org/packages/a9/40/8c22242ac4eaf63bbb70eb6a5cd56d8e2afe6e6f34d3806d2f0d52daa055/odoo14_addons_oca_server_tools-14.0.20240517.0-py3-none-any.whl
+[2024-05-18 08:39:39] INFO root fetch - processPackages [xss-shield]: Downloading https://files.pythonhosted.org/packages/73/88/40006a0a3913c01ebf517636fe8223ee41913d3078a6d5cb9c8502c32a3a/xss_shield-1.0.0.tar.gz
+[2024-05-18 08:39:39] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2024-05-18 08:39:39] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.8.8.tar.gz tmp/pydflow-1.8.9.tar.gz --markdown 20240518/p/pydflow/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-05-18 08:39:39] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: executing diffoscope
+[2024-05-18 08:39:39] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_server_tools-14.0.20240404.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_server_tools-14.0.20240517.0-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addons-oca-server-tools/14.0.20240404.0-14.0.20240517.0/README.md --exclude *.pyd
+[2024-05-18 08:39:39] INFO root fetch - processPackages [xss-shield]: executing diffoscope
+[2024-05-18 08:39:39] INFO root fetch - processPackages [xss-shield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xss_shield-0.1.2.tar.gz tmp/xss_shield-1.0.0.tar.gz --markdown 20240518/x/xss-shield/0.1.2-1.0.0/README.md --exclude *.pyd
+[2024-05-18 08:39:39] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_server_tools-14.0.20240404.0-py3-none-any.whl.zip]
+[2024-05-18 08:39:39] INFO root fetch - processPackages [odoo14-addons-oca-server-tools]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_server_tools-14.0.20240517.0-py3-none-any.whl.zip]
+[2024-05-18 08:39:39] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-server-tools]: success
+[2024-05-18 08:39:40] INFO root fetch - processPackages [xss-shield]: Remove: archive file [/home/abi/fetcher/tmp/xss_shield-0.1.2.tar.gz]
+[2024-05-18 08:39:40] INFO root fetch - processPackages [xss-shield]: Remove: archive file [/home/abi/fetcher/tmp/xss_shield-1.0.0.tar.gz]
+[2024-05-18 08:39:40] INFO root fetch - main [MainThread]: End processing [xss-shield]: success
+[2024-05-18 08:39:40] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.8.tar.gz]
+[2024-05-18 08:39:40] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
+[2024-05-18 08:39:40] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2024-05-18 08:39:40] INFO root fetch - main [MainThread]: Store serial: [23265346]
