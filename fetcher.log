@@ -9202,3 +9202,9 @@
 [2024-05-18 06:19:12] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.8-py3-none-any.whl.zip]
 [2024-05-18 06:19:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-employee-phone-extension]: success
 [2024-05-18 06:19:12] INFO root fetch - main [MainThread]: Store serial: [23264677]
+[2024-05-18 06:21:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264677]
+[2024-05-18 06:21:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 06:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: platbandz
+[2024-05-18 06:21:21] WARNING root fetch - processPackages [platbandz]: Skipping, unable to determine old version
+[2024-05-18 06:21:21] INFO root fetch - main [MainThread]: End processing [platbandz] error
+[2024-05-18 06:21:21] INFO root fetch - main [MainThread]: Store serial: [23264681]
