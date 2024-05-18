@@ -2733,3 +2733,24 @@
 [2024-05-18 02:51:49] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-05-18 02:51:49] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-05-18 02:51:49] INFO root fetch - main [MainThread]: Store serial: [23262419]
+[2024-05-18 02:53:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262419]
+[2024-05-18 02:53:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 02:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toc-trade-pb-v2
+[2024-05-18 02:53:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycellmech
+[2024-05-18 02:53:59] INFO root fetch - processPackages [toc-trade-pb-v2]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 02:53:59] INFO root fetch - processPackages [pycellmech]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-18 02:53:59] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/ce/8d/9991dba0def25126be3c1987437308309f6918edf46c73197c875fdf8b21/pycellmech-2.1.1.tar.gz
+[2024-05-18 02:53:59] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/23/05/d0355117c6b8ca32f3274321df7bf41f1d921f174c66ef2892a8d975b4c9/toc_trade_pb_v2-0.1.0.tar.gz
+[2024-05-18 02:53:59] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/ef/15/45bf8b8c380622c6d01a37251bde523f71aa3566e84e4abda00b108d823a/pycellmech-2.1.2.tar.gz
+[2024-05-18 02:53:59] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/0d/f1/9d43c3e0074010006c712824dad2cfd460963841df63bcc99b0b0c3be3e4/toc_trade_pb_v2-0.1.1.tar.gz
+[2024-05-18 02:53:59] INFO root fetch - processPackages [pycellmech]: executing diffoscope
+[2024-05-18 02:53:59] INFO root fetch - processPackages [pycellmech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycellmech-2.1.1.tar.gz tmp/pycellmech-2.1.2.tar.gz --markdown 20240518/p/pycellmech/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-18 02:53:59] INFO root fetch - processPackages [toc-trade-pb-v2]: executing diffoscope
+[2024-05-18 02:53:59] INFO root fetch - processPackages [toc-trade-pb-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toc_trade_pb_v2-0.1.0.tar.gz tmp/toc_trade_pb_v2-0.1.1.tar.gz --markdown 20240518/t/toc-trade-pb-v2/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 02:54:00] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.1.tar.gz]
+[2024-05-18 02:54:00] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.2.tar.gz]
+[2024-05-18 02:54:00] INFO root fetch - main [MainThread]: End processing [pycellmech]: success
+[2024-05-18 02:54:00] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.0.tar.gz]
+[2024-05-18 02:54:00] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.1.tar.gz]
+[2024-05-18 02:54:00] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
+[2024-05-18 02:54:00] INFO root fetch - main [MainThread]: Store serial: [23262425]
