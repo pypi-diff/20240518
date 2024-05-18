@@ -17267,3 +17267,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:31:13] INFO root fetch - processPackages [pytest-md-report]: Remove: archive file [/home/abi/fetcher/tmp/pytest_md_report-0.6.2.tar.gz]
 [2024-05-18 17:31:13] INFO root fetch - main [MainThread]: End processing [pytest-md-report]: success
 [2024-05-18 17:31:13] INFO root fetch - main [MainThread]: Store serial: [23268852]
+[2024-05-18 17:33:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268852]
+[2024-05-18 17:33:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warp-python
+[2024-05-18 17:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: model-checker
+[2024-05-18 17:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pop-sort
+[2024-05-18 17:33:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Shellper
+[2024-05-18 17:33:22] INFO root fetch - processPackages [pop-sort]: New version: [1.0] Old Version: [0.2]
+[2024-05-18 17:33:22] INFO root fetch - processPackages [warp-python]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-18 17:33:22] INFO root fetch - processPackages [Shellper]: New version: [0.3.2.2] Old Version: [0.3.2.1]
+[2024-05-18 17:33:22] INFO root fetch - processPackages [model-checker]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-18 17:33:22] INFO root fetch - processPackages [pop-sort]: Downloading https://files.pythonhosted.org/packages/98/97/a251eee952ae6e15b70518ac463cc0f5eb4deb5593159963654fe0ba7bb1/pop_sort-0.2.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/e5/5e/51ccbba2a75decda8786a02aee1cb16d14a354bda936804e9de6858a1854/warp_python-1.2.6.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/3e/88/59f308260cd18c08939ffd2495671f220a505d857988ec768c20530799c2/shellper-0.3.2.1.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/24/a9/1a665c0ce562bd14385e9542bbe47ef445f370e2c6a005da375479cb6371/model_checker-0.3.2.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [pop-sort]: Downloading https://files.pythonhosted.org/packages/55/18/1abc1c570312ebcb026545161d1e50ffc17ec85a0f01a2a6a0b2a5f6969e/pop_sort-1.0.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/17/a9/5882fcdfceff362ce4ac6c7136e0e515818dd8437728af66498f219f15e6/warp_python-1.2.7.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/86/d9/93f174fc96463676cfe8dbb923622ac29314371bff7ae52e9281a2cebdf8/shellper-0.3.2.2.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/6a/da/19e7d7c4ad2b3252057066f7f23323759e5fcebf5f726b0a0c5d03a51a00/model_checker-0.3.3.tar.gz
+[2024-05-18 17:33:22] INFO root fetch - processPackages [pop-sort]: executing diffoscope
+[2024-05-18 17:33:22] INFO root fetch - processPackages [pop-sort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pop_sort-0.2.tar.gz tmp/pop_sort-1.0.tar.gz --markdown 20240518/p/pop-sort/0.2-1.0/README.md --exclude *.pyd
+[2024-05-18 17:33:22] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 17:33:22] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.6.tar.gz tmp/warp_python-1.2.7.tar.gz --markdown 20240518/w/warp-python/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-18 17:33:22] INFO root fetch - processPackages [Shellper]: executing diffoscope
+[2024-05-18 17:33:22] INFO root fetch - processPackages [Shellper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellper-0.3.2.1.tar.gz tmp/shellper-0.3.2.2.tar.gz --markdown 20240518/S/Shellper/0.3.2.1-0.3.2.2/README.md --exclude *.pyd
+[2024-05-18 17:33:22] INFO root fetch - processPackages [model-checker]: executing diffoscope
+[2024-05-18 17:33:22] INFO root fetch - processPackages [model-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_checker-0.3.2.tar.gz tmp/model_checker-0.3.3.tar.gz --markdown 20240518/m/model-checker/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-18 17:33:23] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.6.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.7.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 17:33:23] INFO root fetch - processPackages [pop-sort]: Remove: archive file [/home/abi/fetcher/tmp/pop_sort-0.2.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - processPackages [pop-sort]: Remove: archive file [/home/abi/fetcher/tmp/pop_sort-1.0.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - main [MainThread]: End processing [pop-sort]: success
+[2024-05-18 17:33:23] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.2.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.3.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - main [MainThread]: End processing [model-checker]: success
+[2024-05-18 17:33:23] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.1.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.2.tar.gz]
+[2024-05-18 17:33:23] INFO root fetch - main [MainThread]: End processing [Shellper]: success
+[2024-05-18 17:33:23] INFO root fetch - main [MainThread]: Store serial: [23268864]
