@@ -21303,3 +21303,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:02:58] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-3.2.1b1.tar.gz]
 [2024-05-18 22:02:58] INFO root fetch - main [MainThread]: End processing [datafog]: success
 [2024-05-18 22:02:58] INFO root fetch - main [MainThread]: Store serial: [23270801]
+[2024-05-18 22:05:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270801]
+[2024-05-18 22:05:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 22:05:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grasp_planning
+[2024-05-18 22:05:07] INFO root fetch - processPackages [grasp_planning]: New version: [0.5.7.2] Old Version: [0.5.7.1]
+[2024-05-18 22:05:07] INFO root fetch - processPackages [grasp_planning]: Downloading https://files.pythonhosted.org/packages/4d/13/e7805cefb589e0c357d76ca4deb8f4e9605e6e53818de65bc03e3893e384/grasp_planning-0.5.7.1.tar.gz
+[2024-05-18 22:05:07] INFO root fetch - processPackages [grasp_planning]: Downloading https://files.pythonhosted.org/packages/42/ee/e498058521fa6befa0e4c6d75291172ea1ead1eb218660d660a415cd00c4/grasp_planning-0.5.7.2.tar.gz
+[2024-05-18 22:05:08] INFO root fetch - processPackages [grasp_planning]: executing diffoscope
+[2024-05-18 22:05:08] INFO root fetch - processPackages [grasp_planning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grasp_planning-0.5.7.1.tar.gz tmp/grasp_planning-0.5.7.2.tar.gz --markdown 20240518/g/grasp_planning/0.5.7.1-0.5.7.2/README.md --exclude *.pyd
+[2024-05-18 22:05:08] INFO root fetch - processPackages [grasp_planning]: Remove: archive file [/home/abi/fetcher/tmp/grasp_planning-0.5.7.1.tar.gz]
+[2024-05-18 22:05:08] INFO root fetch - processPackages [grasp_planning]: Remove: archive file [/home/abi/fetcher/tmp/grasp_planning-0.5.7.2.tar.gz]
+[2024-05-18 22:05:08] INFO root fetch - main [MainThread]: End processing [grasp_planning]: success
+[2024-05-18 22:05:08] INFO root fetch - main [MainThread]: Store serial: [23270804]
