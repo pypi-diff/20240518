@@ -15179,3 +15179,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:48:11] INFO root fetch - processPackages [odoo-addon-resource-booking]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_resource_booking-16.0.1.1.0-py3-none-any.whl.zip]
 [2024-05-18 14:48:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-resource-booking]: success
 [2024-05-18 14:48:11] INFO root fetch - main [MainThread]: Store serial: [23267765]
+[2024-05-18 14:50:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267765]
+[2024-05-18 14:50:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 14:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Qrscanner-devin
+[2024-05-18 14:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-18 14:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swc-utils
+[2024-05-18 14:50:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydatagenerator
+[2024-05-18 14:50:22] WARNING root fetch - processPackages [Qrscanner-devin]: Skipping, unable to determine old version
+[2024-05-18 14:50:22] INFO root fetch - main [MainThread]: End processing [Qrscanner-devin] error
+[2024-05-18 14:50:22] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-05-18 14:50:22] INFO root fetch - processPackages [pydatagenerator]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-18 14:50:22] WARNING root fetch - processPackages [swc-utils]: Skipping, unable to determine old version
+[2024-05-18 14:50:22] INFO root fetch - main [MainThread]: End processing [swc-utils] error
+[2024-05-18 14:50:22] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/4e/cf/a938bc48c0856b7a686dd1580cc21ca7a87bfeed47fdb8ed05c8150aa6eb/nonebot_plugin_ranfurrypic-1.1.7.tar.gz
+[2024-05-18 14:50:22] INFO root fetch - processPackages [pydatagenerator]: Downloading https://files.pythonhosted.org/packages/36/3a/36f839c71f3d0a0cd3a156312d5865d52c861dad33abadad5ac8f7de43a0/pydatagenerator-0.0.0.tar.gz
+[2024-05-18 14:50:22] INFO root fetch - processPackages [pydatagenerator]: Downloading https://files.pythonhosted.org/packages/fa/90/b8e929a0f1b641cb119acb35b101b33b67dae553b00728f20dac3812fa2f/pydatagenerator-0.0.1.tar.gz
+[2024-05-18 14:50:22] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/26/42/69f95fa399c24431784fa6ecf89ff35be3ac46c6ca4ad357e5c6b0baa5c2/nonebot_plugin_ranfurrypic-1.1.8.tar.gz
+[2024-05-18 14:50:23] INFO root fetch - processPackages [pydatagenerator]: executing diffoscope
+[2024-05-18 14:50:23] INFO root fetch - processPackages [pydatagenerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydatagenerator-0.0.0.tar.gz tmp/pydatagenerator-0.0.1.tar.gz --markdown 20240518/p/pydatagenerator/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-18 14:50:23] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-18 14:50:23] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.1.7.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.8.tar.gz --markdown 20240518/n/nonebot-plugin-RanFurryPic/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-05-18 14:50:23] INFO root fetch - processPackages [pydatagenerator]: Remove: archive file [/home/abi/fetcher/tmp/pydatagenerator-0.0.0.tar.gz]
+[2024-05-18 14:50:23] INFO root fetch - processPackages [pydatagenerator]: Remove: archive file [/home/abi/fetcher/tmp/pydatagenerator-0.0.1.tar.gz]
+[2024-05-18 14:50:23] INFO root fetch - main [MainThread]: End processing [pydatagenerator]: success
+[2024-05-18 14:50:23] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.7.tar.gz]
+[2024-05-18 14:50:23] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.8.tar.gz]
+[2024-05-18 14:50:23] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-18 14:50:23] INFO root fetch - main [MainThread]: Store serial: [23267833]
