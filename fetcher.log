@@ -9909,3 +9909,12 @@
 [2024-05-18 07:26:17] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_multicompany-17.0.1.0.0.5-py3-none-any.whl.zip]
 [2024-05-18 07:26:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-multicompany]: success
 [2024-05-18 07:26:17] INFO root fetch - main [MainThread]: Store serial: [23264970]
+[2024-05-18 07:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264970]
+[2024-05-18 07:28:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 07:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gbrl
+[2024-05-18 07:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epistylarz
+[2024-05-18 07:28:27] WARNING root fetch - processPackages [gbrl]: Skipping, unable to determine old version
+[2024-05-18 07:28:27] INFO root fetch - main [MainThread]: End processing [gbrl] error
+[2024-05-18 07:28:27] WARNING root fetch - processPackages [epistylarz]: Skipping, unable to determine old version
+[2024-05-18 07:28:27] INFO root fetch - main [MainThread]: End processing [epistylarz] error
+[2024-05-18 07:28:27] INFO root fetch - main [MainThread]: Store serial: [23264977]
