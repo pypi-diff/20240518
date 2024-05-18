@@ -8541,3 +8541,24 @@
 [2024-05-18 05:26:53] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
 [2024-05-18 05:26:53] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
 [2024-05-18 05:26:53] INFO root fetch - main [MainThread]: Store serial: [23264394]
+[2024-05-18 05:28:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264394]
+[2024-05-18 05:29:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 05:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeinsight-sdk
+[2024-05-18 05:29:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FirstGame
+[2024-05-18 05:29:02] INFO root fetch - processPackages [FirstGame]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-18 05:29:02] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/a4/2a/e04249da7990c930ce1754aef66d4843270039cda4af5d5af3d6e1f61d2f/FirstGame-1.0.6.tar.gz
+[2024-05-18 05:29:02] INFO root fetch - processPackages [codeinsight-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 05:29:02] INFO root fetch - processPackages [codeinsight-sdk]: Downloading https://files.pythonhosted.org/packages/3d/99/5c83366aa18e65ac45339f989aad3b2dc0a7f0e0b81ed0c1c3975e804710/codeinsight_sdk-0.0.8.tar.gz
+[2024-05-18 05:29:02] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/5e/c1/b1caab6b46df71cdc2f5e0ec3c0e8ac335d5aabfb5fae91820a7dbbe90da/FirstGame-1.0.7.tar.gz
+[2024-05-18 05:29:02] INFO root fetch - processPackages [FirstGame]: executing diffoscope
+[2024-05-18 05:29:02] INFO root fetch - processPackages [FirstGame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FirstGame-1.0.6.tar.gz tmp/FirstGame-1.0.7.tar.gz --markdown 20240518/F/FirstGame/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-18 05:29:03] INFO root fetch - processPackages [codeinsight-sdk]: Downloading https://files.pythonhosted.org/packages/7e/a7/581c440aa2a4072a8b9c6bdd3589d36a1a4163ea0f825e30fae65d6a91b3/codeinsight_sdk-0.0.9.tar.gz
+[2024-05-18 05:29:03] INFO root fetch - processPackages [codeinsight-sdk]: executing diffoscope
+[2024-05-18 05:29:03] INFO root fetch - processPackages [codeinsight-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeinsight_sdk-0.0.8.tar.gz tmp/codeinsight_sdk-0.0.9.tar.gz --markdown 20240518/c/codeinsight-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 05:29:03] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.6.tar.gz]
+[2024-05-18 05:29:03] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.7.tar.gz]
+[2024-05-18 05:29:03] INFO root fetch - main [MainThread]: End processing [FirstGame]: success
+[2024-05-18 05:29:03] INFO root fetch - processPackages [codeinsight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codeinsight_sdk-0.0.8.tar.gz]
+[2024-05-18 05:29:03] INFO root fetch - processPackages [codeinsight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codeinsight_sdk-0.0.9.tar.gz]
+[2024-05-18 05:29:03] INFO root fetch - main [MainThread]: End processing [codeinsight-sdk]: success
+[2024-05-18 05:29:03] INFO root fetch - main [MainThread]: Store serial: [23264401]
