@@ -7289,3 +7289,48 @@
 [2024-05-18 04:19:22] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.1.post1.tar.gz]
 [2024-05-18 04:19:22] INFO root fetch - main [MainThread]: End processing [txm-sandbox]: success
 [2024-05-18 04:19:22] INFO root fetch - main [MainThread]: Store serial: [23263945]
+[2024-05-18 04:21:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263945]
+[2024-05-18 04:21:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 04:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kvalchemy
+[2024-05-18 04:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netron
+[2024-05-18 04:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RegScale-CLI
+[2024-05-18 04:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: types-setuptools
+[2024-05-18 04:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-networkx
+[2024-05-18 04:21:31] INFO root fetch - processPackages [netron]: New version: [7.6.7] Old Version: [7.6.6]
+[2024-05-18 04:21:31] INFO root fetch - processPackages [kvalchemy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 04:21:31] INFO root fetch - processPackages [types-setuptools]: New version: [69.5.0.20240513] Old Version: [69.5.0.20240423]
+[2024-05-18 04:21:31] INFO root fetch - processPackages [types-networkx]: New version: [3.2.1.20240518] Old Version: [3.2.1.20240425]
+[2024-05-18 04:21:31] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/5b/30/ec49afb7b1cefd5eff6847435ed9d1fddaec2d41904b998b278754cd4acc/kvalchemy-0.0.4.tar.gz
+[2024-05-18 04:21:31] INFO root fetch - processPackages [RegScale-CLI]: New version: [5.9.0] Old Version: [5.8.0]
+[2024-05-18 04:21:31] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-05-18 04:21:31] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.6-py3-none-any.whl.zip tmp/netron-7.6.7-py3-none-any.whl.zip --markdown 20240518/n/netron/7.6.6-7.6.7/README.md --exclude *.pyd
+[2024-05-18 04:21:31] INFO root fetch - processPackages [types-setuptools]: Downloading https://files.pythonhosted.org/packages/12/c7/10593c47ad543413eaf25bba1979a3c5a4bf3f42e505dd28869c618a764c/types-setuptools-69.5.0.20240423.tar.gz
+[2024-05-18 04:21:31] INFO root fetch - processPackages [types-networkx]: Downloading https://files.pythonhosted.org/packages/66/99/ac205cbfab80e3007d32727a0c95883d006ed4d54be8f1b3774e2e69f370/types-networkx-3.2.1.20240425.tar.gz
+[2024-05-18 04:21:31] INFO root fetch - processPackages [RegScale-CLI]: Downloading https://files.pythonhosted.org/packages/2b/3f/878438fa28f5ffd3c38125c73b4b234937896776bf6f52a64031c5602a30/RegScale_CLI-5.8.0-py3-none-any.whl
+[2024-05-18 04:21:31] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/61/d8/6f879c5adb6785132e602b29ffa4c9f86fe609ae8489114444bad0052229/kvalchemy-0.0.5.tar.gz
+[2024-05-18 04:21:32] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-05-18 04:21:32] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.0.4.tar.gz tmp/kvalchemy-0.0.5.tar.gz --markdown 20240518/k/kvalchemy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-setuptools]: Downloading https://files.pythonhosted.org/packages/2c/e4/cb3049f93874a0f81c7c384021074871c1729990e5c2a6117a619505bded/types-setuptools-69.5.0.20240513.tar.gz
+[2024-05-18 04:21:32] INFO root fetch - processPackages [RegScale-CLI]: Downloading https://files.pythonhosted.org/packages/81/07/778978d646b2a15a81f5db8b7ec76ce6f41543e491b67f82cc41051e8332/RegScale_CLI-5.9.0-py3-none-any.whl
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-networkx]: Downloading https://files.pythonhosted.org/packages/7e/ec/58ef194fa62cced8212b25926deff4ad1ab74760eaa2e923110bd9e054bf/types-networkx-3.2.1.20240518.tar.gz
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-setuptools]: executing diffoscope
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-setuptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-setuptools-69.5.0.20240423.tar.gz tmp/types-setuptools-69.5.0.20240513.tar.gz --markdown 20240518/t/types-setuptools/69.5.0.20240423-69.5.0.20240513/README.md --exclude *.pyd
+[2024-05-18 04:21:32] INFO root fetch - processPackages [RegScale-CLI]: executing diffoscope
+[2024-05-18 04:21:32] INFO root fetch - processPackages [RegScale-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RegScale_CLI-5.8.0-py3-none-any.whl.zip tmp/RegScale_CLI-5.9.0-py3-none-any.whl.zip --markdown 20240518/R/RegScale-CLI/5.8.0-5.9.0/README.md --exclude *.pyd
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-networkx]: executing diffoscope
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-networkx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-networkx-3.2.1.20240425.tar.gz tmp/types-networkx-3.2.1.20240518.tar.gz --markdown 20240518/t/types-networkx/3.2.1.20240425-3.2.1.20240518/README.md --exclude *.pyd
+[2024-05-18 04:21:32] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.4.tar.gz]
+[2024-05-18 04:21:32] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.5.tar.gz]
+[2024-05-18 04:21:32] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-setuptools]: Remove: archive file [/home/abi/fetcher/tmp/types-setuptools-69.5.0.20240423.tar.gz]
+[2024-05-18 04:21:32] INFO root fetch - processPackages [types-setuptools]: Remove: archive file [/home/abi/fetcher/tmp/types-setuptools-69.5.0.20240513.tar.gz]
+[2024-05-18 04:21:32] INFO root fetch - main [MainThread]: End processing [types-setuptools]: success
+[2024-05-18 04:21:33] INFO root fetch - processPackages [RegScale-CLI]: Remove: archive file [/home/abi/fetcher/tmp/RegScale_CLI-5.8.0-py3-none-any.whl.zip]
+[2024-05-18 04:21:33] INFO root fetch - processPackages [RegScale-CLI]: Remove: archive file [/home/abi/fetcher/tmp/RegScale_CLI-5.9.0-py3-none-any.whl.zip]
+[2024-05-18 04:21:33] INFO root fetch - main [MainThread]: End processing [RegScale-CLI]: success
+[2024-05-18 04:21:33] INFO root fetch - processPackages [types-networkx]: Remove: archive file [/home/abi/fetcher/tmp/types-networkx-3.2.1.20240425.tar.gz]
+[2024-05-18 04:21:33] INFO root fetch - processPackages [types-networkx]: Remove: archive file [/home/abi/fetcher/tmp/types-networkx-3.2.1.20240518.tar.gz]
+[2024-05-18 04:21:33] INFO root fetch - main [MainThread]: End processing [types-networkx]: success
+[2024-05-18 04:24:31] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-05-18 04:24:31] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-05-18 04:24:31] INFO root fetch - main [MainThread]: Store serial: [23263961]
