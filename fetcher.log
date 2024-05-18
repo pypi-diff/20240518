@@ -21934,3 +21934,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:00:02] WARNING root fetch - processPackages [educatedlyz]: Skipping, unable to determine old version
 [2024-05-18 23:00:02] INFO root fetch - main [MainThread]: End processing [educatedlyz] error
 [2024-05-18 23:00:02] INFO root fetch - main [MainThread]: Store serial: [23271204]
+[2024-05-18 23:02:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271204]
+[2024-05-18 23:02:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 23:02:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: braintrust-core
+[2024-05-18 23:02:11] INFO root fetch - processPackages [braintrust-core]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 23:02:11] INFO root fetch - processPackages [braintrust-core]: Downloading https://files.pythonhosted.org/packages/ff/37/978bc9c503a203400e89961c4fe3fad4d2d00ecc963406b52778333a4575/braintrust_core-0.0.8.tar.gz
+[2024-05-18 23:02:11] INFO root fetch - processPackages [braintrust-core]: Downloading https://files.pythonhosted.org/packages/6c/ff/62363cc1fd6c0160a7e4906e275dd0782bf057905883983e6bd53dd285e3/braintrust_core-0.0.9.tar.gz
+[2024-05-18 23:02:12] INFO root fetch - processPackages [braintrust-core]: executing diffoscope
+[2024-05-18 23:02:12] INFO root fetch - processPackages [braintrust-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/braintrust_core-0.0.8.tar.gz tmp/braintrust_core-0.0.9.tar.gz --markdown 20240518/b/braintrust-core/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 23:02:12] INFO root fetch - processPackages [braintrust-core]: Remove: archive file [/home/abi/fetcher/tmp/braintrust_core-0.0.8.tar.gz]
+[2024-05-18 23:02:12] INFO root fetch - processPackages [braintrust-core]: Remove: archive file [/home/abi/fetcher/tmp/braintrust_core-0.0.9.tar.gz]
+[2024-05-18 23:02:12] INFO root fetch - main [MainThread]: End processing [braintrust-core]: success
+[2024-05-18 23:02:12] INFO root fetch - main [MainThread]: Store serial: [23271207]
