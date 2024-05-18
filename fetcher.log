@@ -18195,3 +18195,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:32:34] INFO root fetch - processPackages [dftrans]: Remove: archive file [/home/abi/fetcher/tmp/dftrans-2.0.2.8.tar.gz]
 [2024-05-18 18:32:34] INFO root fetch - main [MainThread]: End processing [dftrans]: success
 [2024-05-18 18:32:34] INFO root fetch - main [MainThread]: Store serial: [23269255]
+[2024-05-18 18:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269255]
+[2024-05-18 18:34:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 18:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pure-cv
+[2024-05-18 18:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dftrans
+[2024-05-18 18:34:44] INFO root fetch - processPackages [dftrans]: New version: [2.0.2.8] Old Version: [2.0.2.7]
+[2024-05-18 18:34:44] INFO root fetch - processPackages [dftrans]: Downloading https://files.pythonhosted.org/packages/d9/a2/e8eca3600a5d1e652ad472993c311d6b45b79b61485d3344d80b4fa06f92/dftrans-2.0.2.7.tar.gz
+[2024-05-18 18:34:44] INFO root fetch - processPackages [pure-cv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 18:34:44] INFO root fetch - processPackages [dftrans]: Downloading https://files.pythonhosted.org/packages/71/b0/8ea8c5329ff55673de7db1768210a2a454218802116b73a8f8910b2b9228/dftrans-2.0.2.8.tar.gz
+[2024-05-18 18:34:44] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/a1/d6/b74bd499875e6643f4a97d72098432e12c0b957837f5163b1ebc266d6b71/pure_cv-0.1.8.tar.gz
+[2024-05-18 18:34:44] INFO root fetch - processPackages [dftrans]: executing diffoscope
+[2024-05-18 18:34:44] INFO root fetch - processPackages [dftrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dftrans-2.0.2.7.tar.gz tmp/dftrans-2.0.2.8.tar.gz --markdown 20240518/d/dftrans/2.0.2.7-2.0.2.8/README.md --exclude *.pyd
+[2024-05-18 18:34:44] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/05/1f/42a69fcafdcdddda1f19b187fdc4d1895eebefd62a93b5be218beccaac06/pure_cv-0.1.9.tar.gz
+[2024-05-18 18:34:44] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-05-18 18:34:44] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_cv-0.1.8.tar.gz tmp/pure_cv-0.1.9.tar.gz --markdown 20240518/p/pure-cv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 18:34:45] INFO root fetch - processPackages [dftrans]: Remove: archive file [/home/abi/fetcher/tmp/dftrans-2.0.2.7.tar.gz]
+[2024-05-18 18:34:45] INFO root fetch - processPackages [dftrans]: Remove: archive file [/home/abi/fetcher/tmp/dftrans-2.0.2.8.tar.gz]
+[2024-05-18 18:34:45] INFO root fetch - main [MainThread]: End processing [dftrans]: success
+[2024-05-18 18:34:45] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.8.tar.gz]
+[2024-05-18 18:34:45] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.9.tar.gz]
+[2024-05-18 18:34:45] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-05-18 18:34:45] INFO root fetch - main [MainThread]: Store serial: [23269261]
