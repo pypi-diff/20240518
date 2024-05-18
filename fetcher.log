@@ -15365,3 +15365,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:03:27] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.2.3.tar.gz]
 [2024-05-18 15:03:27] INFO root fetch - main [MainThread]: End processing [sarcharts]: success
 [2024-05-18 15:03:27] INFO root fetch - main [MainThread]: Store serial: [23267893]
+[2024-05-18 15:05:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267893]
+[2024-05-18 15:05:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:05:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: config-center
+[2024-05-18 15:05:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quart-auth
+[2024-05-18 15:05:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: disnake
+[2024-05-18 15:05:36] INFO root fetch - processPackages [config-center]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 15:05:36] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/57/e1/dd76887ecdc674872bf2a3df9d219eac5c545936245ce5dd788161294bc1/config_center-0.0.2.tar.gz
+[2024-05-18 15:05:36] INFO root fetch - processPackages [quart-auth]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-18 15:05:37] INFO root fetch - processPackages [disnake]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-05-18 15:05:37] INFO root fetch - processPackages [quart-auth]: Downloading https://files.pythonhosted.org/packages/41/b7/e961ec1281e1e14cc5ec9805c0ea9fa56d11ded94ed994f0a466dc5e1f91/quart_auth-0.9.0.tar.gz
+[2024-05-18 15:05:37] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/9e/6e/9f96888b0436cbd46a49cd86974106761b7ed814d32a50d9be0c2e5c871d/config_center-0.0.3.tar.gz
+[2024-05-18 15:05:37] INFO root fetch - processPackages [disnake]: Downloading https://files.pythonhosted.org/packages/cd/3b/65032beb5045784dcd211d1bdea69ff723d8c002841ffa0ba67f7b426fec/disnake-2.9.1.tar.gz
+[2024-05-18 15:05:37] INFO root fetch - processPackages [config-center]: executing diffoscope
+[2024-05-18 15:05:37] INFO root fetch - processPackages [config-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_center-0.0.2.tar.gz tmp/config_center-0.0.3.tar.gz --markdown 20240518/c/config-center/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 15:05:37] INFO root fetch - processPackages [quart-auth]: Downloading https://files.pythonhosted.org/packages/a8/4e/6cea3aad2f0abe0cd4be40a6039119f50f250d814fe96825b9a1e5b289f3/quart_auth-0.9.1.tar.gz
+[2024-05-18 15:05:37] INFO root fetch - processPackages [quart-auth]: executing diffoscope
+[2024-05-18 15:05:37] INFO root fetch - processPackages [quart-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quart_auth-0.9.0.tar.gz tmp/quart_auth-0.9.1.tar.gz --markdown 20240518/q/quart-auth/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-18 15:05:37] INFO root fetch - processPackages [disnake]: Downloading https://files.pythonhosted.org/packages/a8/49/b532abf27d7138883fd89e337a1fb47a3c40d2f2c4acb3444d4af6616c2c/disnake-2.9.2.tar.gz
+[2024-05-18 15:05:37] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.2.tar.gz]
+[2024-05-18 15:05:37] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.3.tar.gz]
+[2024-05-18 15:05:37] INFO root fetch - main [MainThread]: End processing [config-center]: success
+[2024-05-18 15:05:37] INFO root fetch - processPackages [disnake]: executing diffoscope
+[2024-05-18 15:05:37] INFO root fetch - processPackages [disnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disnake-2.9.1.tar.gz tmp/disnake-2.9.2.tar.gz --markdown 20240518/d/disnake/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-05-18 15:05:38] INFO root fetch - processPackages [quart-auth]: Remove: archive file [/home/abi/fetcher/tmp/quart_auth-0.9.0.tar.gz]
+[2024-05-18 15:05:38] INFO root fetch - processPackages [quart-auth]: Remove: archive file [/home/abi/fetcher/tmp/quart_auth-0.9.1.tar.gz]
+[2024-05-18 15:05:38] INFO root fetch - main [MainThread]: End processing [quart-auth]: success
+[2024-05-18 15:05:39] INFO root fetch - processPackages [disnake]: Remove: archive file [/home/abi/fetcher/tmp/disnake-2.9.1.tar.gz]
+[2024-05-18 15:05:39] INFO root fetch - processPackages [disnake]: Remove: archive file [/home/abi/fetcher/tmp/disnake-2.9.2.tar.gz]
+[2024-05-18 15:05:39] INFO root fetch - main [MainThread]: End processing [disnake]: success
+[2024-05-18 15:05:39] INFO root fetch - main [MainThread]: Store serial: [23267903]
