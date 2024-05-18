@@ -19444,3 +19444,84 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:59:35] INFO root fetch - processPackages [dynamodb-json]: Remove: archive file [/home/abi/fetcher/tmp/dynamodb_json-1.4.2.tar.gz]
 [2024-05-18 19:59:35] INFO root fetch - main [MainThread]: End processing [dynamodb-json]: success
 [2024-05-18 19:59:35] INFO root fetch - main [MainThread]: Store serial: [23269851]
+[2024-05-18 20:01:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269851]
+[2024-05-18 20:01:44] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soaperiesz
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-easy-static
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: npc-ephys
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bluezero
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-model-versioning
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo12-addon-web-view-calendar-column
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo12-addon-web-tree-image-tooltip
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: galaxy-language-server
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo12-addon-web-view-searchpanel
+[2024-05-18 20:01:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo12-addon-web-dashboard-tile
+[2024-05-18 20:01:45] INFO root fetch - processPackages [flet-easy-static]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: New version: [12.0.1.0.1.99.dev4] Old Version: [12.0.1.0.1.99.dev2]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [npc-ephys]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/28/84/83924d79bcde6f2ca91a187d5482ed639709fee2b3e96a3fff17dacaeb74/flet_easy_static-0.2.3.tar.gz
+[2024-05-18 20:01:45] WARNING root fetch - processPackages [soaperiesz]: Skipping, unable to determine old version
+[2024-05-18 20:01:45] INFO root fetch - main [MainThread]: End processing [soaperiesz] error
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: New version: [12.0.1.0.0.99.dev9] Old Version: [12.0.1.0.0.99.dev8]
+[2024-05-18 20:01:45] WARNING root fetch - processPackages [django-model-versioning]: Skipping, unable to determine old version
+[2024-05-18 20:01:45] INFO root fetch - main [MainThread]: End processing [django-model-versioning] error
+[2024-05-18 20:01:45] INFO root fetch - processPackages [galaxy-language-server]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: New version: [12.0.1.0.2.99.dev8] Old Version: [12.0.1.0.2.99.dev7]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [bluezero]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: New version: [12.0.2.0.0.99.dev4] Old Version: [12.0.2.0.0.99.dev3]
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: Downloading https://files.pythonhosted.org/packages/35/4c/b99a895ddcae75a62d733aeb19de88ae5c5941dc5ae5f044a285d3248c47/odoo12_addon_web_tree_image_tooltip-12.0.1.0.1.99.dev2-py3-none-any.whl
+[2024-05-18 20:01:45] INFO root fetch - processPackages [npc-ephys]: Downloading https://files.pythonhosted.org/packages/af/41/6c47743c11b08aa1c74ed747489c61fe78bf36e0e273677c6ef78407d57e/npc-ephys-0.1.8.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: Downloading https://files.pythonhosted.org/packages/67/d1/6d8912cc7848b5d8ebd1658799bdd2b2c959d94c7d7cb69b7108b36eae6f/odoo12_addon_web_view_calendar_column-12.0.1.0.0.99.dev8-py3-none-any.whl
+[2024-05-18 20:01:45] INFO root fetch - processPackages [galaxy-language-server]: Downloading https://files.pythonhosted.org/packages/86/e2/d8d46814736cf0db1b8a351802bf25410f9bf954558ac00ef91001c2666f/galaxy-language-server-0.8.0.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [bluezero]: Downloading https://files.pythonhosted.org/packages/67/e1/15fc417b9828d38aa8e09ba06df61d6889740fe45867510a781df9a8ba35/bluezero-0.8.0.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: Downloading https://files.pythonhosted.org/packages/9c/dd/551055baaceb2cb83b783c24c835fbedfa732c82a392f499a72136de5209/odoo12_addon_web_view_searchpanel-12.0.1.0.2.99.dev7-py3-none-any.whl
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: Downloading https://files.pythonhosted.org/packages/59/28/e2f59f9244aa345c963058aae68e9ccd7a6ea72e31605b72444aff41e4ee/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev3-py3-none-any.whl
+[2024-05-18 20:01:45] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/af/89/5b439a537bafd98609ebb08d1a5aa946fea057bd29d2007b0b2d924d8884/flet_easy_static-0.2.4.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: Downloading https://files.pythonhosted.org/packages/c9/e4/29b039aaec1e1c542d59cdc85554906199417b6b942eb9db283f6623b68c/odoo12_addon_web_tree_image_tooltip-12.0.1.0.1.99.dev4-py3-none-any.whl
+[2024-05-18 20:01:45] INFO root fetch - processPackages [flet-easy-static]: executing diffoscope
+[2024-05-18 20:01:45] INFO root fetch - processPackages [flet-easy-static]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_easy_static-0.2.3.tar.gz tmp/flet_easy_static-0.2.4.tar.gz --markdown 20240518/f/flet-easy-static/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-18 20:01:45] INFO root fetch - processPackages [bluezero]: Downloading https://files.pythonhosted.org/packages/7b/9c/bfb3e1f92dd39bf3de8fc483a102bfae763fbf156177b77ed96b8a38bbb1/bluezero-0.9.0.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [npc-ephys]: Downloading https://files.pythonhosted.org/packages/7d/07/9261f1ea349c7ff7d2b1932fec64071a0296c5fa69162c51a8c79032b7c0/npc-ephys-0.1.9.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [galaxy-language-server]: Downloading https://files.pythonhosted.org/packages/6a/d4/a66278ae26cf396060f0241f92caed8f0ea95d5b061b98745377bf2f78a5/galaxy-language-server-0.9.0.tar.gz
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: Downloading https://files.pythonhosted.org/packages/fc/c8/31f2ce4ed6f0180217dbf13602ed668e94000d5d36fe8375d0161d412ee8/odoo12_addon_web_view_calendar_column-12.0.1.0.0.99.dev9-py3-none-any.whl
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: executing diffoscope
+[2024-05-18 20:01:45] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_tree_image_tooltip-12.0.1.0.1.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_web_tree_image_tooltip-12.0.1.0.1.99.dev4-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-web-tree-image-tooltip/12.0.1.0.1.99.dev2-12.0.1.0.1.99.dev4/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: Downloading https://files.pythonhosted.org/packages/0b/85/7a08df077b17d69b27307ab519516bc020696df27cbce6c6630b768632a0/odoo12_addon_web_view_searchpanel-12.0.1.0.2.99.dev8-py3-none-any.whl
+[2024-05-18 20:01:46] INFO root fetch - processPackages [bluezero]: executing diffoscope
+[2024-05-18 20:01:46] INFO root fetch - processPackages [bluezero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluezero-0.8.0.tar.gz tmp/bluezero-0.9.0.tar.gz --markdown 20240518/b/bluezero/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [galaxy-language-server]: executing diffoscope
+[2024-05-18 20:01:46] INFO root fetch - processPackages [galaxy-language-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galaxy-language-server-0.8.0.tar.gz tmp/galaxy-language-server-0.9.0.tar.gz --markdown 20240518/g/galaxy-language-server/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: Downloading https://files.pythonhosted.org/packages/35/d6/6428e6f286d3e515b3a50ab07bac5fdb07192f68d0972a6e6c618356bcc3/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev4-py3-none-any.whl
+[2024-05-18 20:01:46] INFO root fetch - processPackages [npc-ephys]: executing diffoscope
+[2024-05-18 20:01:46] INFO root fetch - processPackages [npc-ephys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc-ephys-0.1.8.tar.gz tmp/npc-ephys-0.1.9.tar.gz --markdown 20240518/n/npc-ephys/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: executing diffoscope
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_view_calendar_column-12.0.1.0.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_web_view_calendar_column-12.0.1.0.0.99.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-web-view-calendar-column/12.0.1.0.0.99.dev8-12.0.1.0.0.99.dev9/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: executing diffoscope
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_view_searchpanel-12.0.1.0.2.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_web_view_searchpanel-12.0.1.0.2.99.dev8-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-web-view-searchpanel/12.0.1.0.2.99.dev7-12.0.1.0.2.99.dev8/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: executing diffoscope
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev4-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-web-dashboard-tile/12.0.2.0.0.99.dev3-12.0.2.0.0.99.dev4/README.md --exclude *.pyd
+[2024-05-18 20:01:46] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.3.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.4.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - main [MainThread]: End processing [flet-easy-static]: success
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_tree_image_tooltip-12.0.1.0.1.99.dev2-py3-none-any.whl.zip]
+[2024-05-18 20:01:46] INFO root fetch - processPackages [odoo12-addon-web-tree-image-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_tree_image_tooltip-12.0.1.0.1.99.dev4-py3-none-any.whl.zip]
+[2024-05-18 20:01:46] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-tree-image-tooltip]: success
+[2024-05-18 20:01:46] INFO root fetch - processPackages [bluezero]: Remove: archive file [/home/abi/fetcher/tmp/bluezero-0.8.0.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - processPackages [bluezero]: Remove: archive file [/home/abi/fetcher/tmp/bluezero-0.9.0.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - main [MainThread]: End processing [bluezero]: success
+[2024-05-18 20:01:46] INFO root fetch - processPackages [npc-ephys]: Remove: archive file [/home/abi/fetcher/tmp/npc-ephys-0.1.8.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - processPackages [npc-ephys]: Remove: archive file [/home/abi/fetcher/tmp/npc-ephys-0.1.9.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - main [MainThread]: End processing [npc-ephys]: success
+[2024-05-18 20:01:46] INFO root fetch - processPackages [galaxy-language-server]: Remove: archive file [/home/abi/fetcher/tmp/galaxy-language-server-0.8.0.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - processPackages [galaxy-language-server]: Remove: archive file [/home/abi/fetcher/tmp/galaxy-language-server-0.9.0.tar.gz]
+[2024-05-18 20:01:46] INFO root fetch - main [MainThread]: End processing [galaxy-language-server]: success
+[2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_view_searchpanel-12.0.1.0.2.99.dev7-py3-none-any.whl.zip]
+[2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-view-searchpanel]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_view_searchpanel-12.0.1.0.2.99.dev8-py3-none-any.whl.zip]
+[2024-05-18 20:01:47] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-view-searchpanel]: success
+[2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_view_calendar_column-12.0.1.0.0.99.dev8-py3-none-any.whl.zip]
+[2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-view-calendar-column]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_view_calendar_column-12.0.1.0.0.99.dev9-py3-none-any.whl.zip]
+[2024-05-18 20:01:47] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-view-calendar-column]: success
+[2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev3-py3-none-any.whl.zip]
+[2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev4-py3-none-any.whl.zip]
+[2024-05-18 20:01:47] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-dashboard-tile]: success
+[2024-05-18 20:01:47] INFO root fetch - main [MainThread]: Store serial: [23269880]
