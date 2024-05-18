@@ -11596,3 +11596,9 @@
 [2024-05-18 09:51:36] INFO root fetch - processPackages [vaers]: Remove: archive file [/home/abi/fetcher/tmp/vaers-0.0.4.tar.gz]
 [2024-05-18 09:51:36] INFO root fetch - main [MainThread]: End processing [vaers]: success
 [2024-05-18 09:51:36] INFO root fetch - main [MainThread]: Store serial: [23265849]
+[2024-05-18 09:53:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265849]
+[2024-05-18 09:53:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 09:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyenergi
+[2024-05-18 09:53:45] ERROR root fetch - processPackages [pyenergi]: Unable to get metadata: No such project 'pyenergi'
+[2024-05-18 09:53:45] INFO root fetch - main [MainThread]: End processing [pyenergi] error
+[2024-05-18 09:53:45] INFO root fetch - main [MainThread]: Store serial: [23265854]
