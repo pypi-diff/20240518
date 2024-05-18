@@ -12695,3 +12695,36 @@
 [2024-05-18 11:25:26] INFO root fetch - processPackages [nipype2pydra]: Remove: archive file [/home/abi/fetcher/tmp/nipype2pydra-0.4.2.tar.gz]
 [2024-05-18 11:25:26] INFO root fetch - main [MainThread]: End processing [nipype2pydra]: success
 [2024-05-18 11:25:26] INFO root fetch - main [MainThread]: Store serial: [23266618]
+[2024-05-18 11:27:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266618]
+[2024-05-18 11:27:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 11:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-18 11:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crawler-user-agents
+[2024-05-18 11:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faknow
+[2024-05-18 11:27:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thyratronz
+[2024-05-18 11:27:36] INFO root fetch - processPackages [crawler-user-agents]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-18 11:27:36] INFO root fetch - processPackages [mimllearning]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 11:27:36] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/19/2d/1e46cd19f20c2d8b9ae4284f543f727b3845f0467def01b24b6b81108d66/crawler_user_agents-0.3.0.tar.gz
+[2024-05-18 11:27:36] INFO root fetch - processPackages [faknow]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 11:27:36] WARNING root fetch - processPackages [thyratronz]: Skipping, unable to determine old version
+[2024-05-18 11:27:36] INFO root fetch - main [MainThread]: End processing [thyratronz] error
+[2024-05-18 11:27:36] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/01/19/bfbea72ad47ab5447ad6cb90652413489191201adb3c2e7a9013402809c5/mimllearning-0.4.8.tar.gz
+[2024-05-18 11:27:37] INFO root fetch - processPackages [faknow]: Downloading https://files.pythonhosted.org/packages/85/74/fd1e5653e20bfa8cd0ea9ab4e83e07817a9a349a4bfff8e322da2105a0e6/faknow-0.0.3.tar.gz
+[2024-05-18 11:27:37] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/e0/52/1938b092b959adb67896ede40c0acbb7c53c6bca5787e303f9d290dfeec3/crawler_user_agents-0.4.0.tar.gz
+[2024-05-18 11:27:37] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/84/bd/958d70b5217227bc933005c3bb746e70ea6d2a534843b2e0f6a0e93e2c98/mimllearning-0.4.9.tar.gz
+[2024-05-18 11:27:37] INFO root fetch - processPackages [crawler-user-agents]: executing diffoscope
+[2024-05-18 11:27:37] INFO root fetch - processPackages [crawler-user-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_user_agents-0.3.0.tar.gz tmp/crawler_user_agents-0.4.0.tar.gz --markdown 20240518/c/crawler-user-agents/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-18 11:27:37] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-18 11:27:37] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.8.tar.gz tmp/mimllearning-0.4.9.tar.gz --markdown 20240518/m/mimllearning/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 11:27:37] INFO root fetch - processPackages [faknow]: Downloading https://files.pythonhosted.org/packages/e4/d9/f94b85743c5b115f5b4a89db5ea388aed953e78af36a5f4b6b0b29e24f3e/faknow-0.0.4.tar.gz
+[2024-05-18 11:27:37] INFO root fetch - processPackages [faknow]: executing diffoscope
+[2024-05-18 11:27:37] INFO root fetch - processPackages [faknow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faknow-0.0.3.tar.gz tmp/faknow-0.0.4.tar.gz --markdown 20240518/f/faknow/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 11:27:37] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.3.0.tar.gz]
+[2024-05-18 11:27:37] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.4.0.tar.gz]
+[2024-05-18 11:27:37] INFO root fetch - main [MainThread]: End processing [crawler-user-agents]: success
+[2024-05-18 11:27:38] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.8.tar.gz]
+[2024-05-18 11:27:38] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
+[2024-05-18 11:27:38] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-18 11:27:38] INFO root fetch - processPackages [faknow]: Remove: archive file [/home/abi/fetcher/tmp/faknow-0.0.3.tar.gz]
+[2024-05-18 11:27:38] INFO root fetch - processPackages [faknow]: Remove: archive file [/home/abi/fetcher/tmp/faknow-0.0.4.tar.gz]
+[2024-05-18 11:27:38] INFO root fetch - main [MainThread]: End processing [faknow]: success
+[2024-05-18 11:27:38] INFO root fetch - main [MainThread]: Store serial: [23266629]
