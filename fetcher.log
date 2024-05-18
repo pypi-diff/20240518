@@ -10823,3 +10823,30 @@
 [2024-05-18 08:48:23] INFO root fetch - processPackages [example-python-package-with-rust-backend]: Remove: archive file [/home/abi/fetcher/tmp/example_python_package_with_rust_backend-1.1.7.tar.gz]
 [2024-05-18 08:48:23] INFO root fetch - main [MainThread]: End processing [example-python-package-with-rust-backend]: success
 [2024-05-18 08:48:23] INFO root fetch - main [MainThread]: Store serial: [23265476]
+[2024-05-18 08:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265476]
+[2024-05-18 08:50:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 08:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-threads
+[2024-05-18 08:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: needto
+[2024-05-18 08:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oviniaz
+[2024-05-18 08:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: WGSE-NG
+[2024-05-18 08:50:32] WARNING root fetch - processPackages [needto]: Skipping, unable to determine old version
+[2024-05-18 08:50:32] INFO root fetch - main [MainThread]: End processing [needto] error
+[2024-05-18 08:50:32] INFO root fetch - processPackages [WGSE-NG]: New version: [1.0.0a4] Old Version: [1.0.0a3]
+[2024-05-18 08:50:32] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/4b/c1/52ad52603503c1532082a8d275aec9a2efc001f72edf4d039cdda32bc612/wgse_ng-1.0.0a3.tar.gz
+[2024-05-18 08:50:32] WARNING root fetch - processPackages [oviniaz]: Skipping, unable to determine old version
+[2024-05-18 08:50:32] INFO root fetch - main [MainThread]: End processing [oviniaz] error
+[2024-05-18 08:50:32] INFO root fetch - processPackages [mo-threads]: New version: [6.634.24139] Old Version: [6.624.24125]
+[2024-05-18 08:50:32] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/03/e8/c1a48ed6893c99da9f0f9c99f19ce1faf7c8c18716f3518ea9ffbe2a6a8d/mo_threads-6.624.24125.tar.gz
+[2024-05-18 08:50:33] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/f2/e5/17b38af94f65f2288619abf02120d2dd3be6a4f29220193d17f62123c688/mo_threads-6.634.24139.tar.gz
+[2024-05-18 08:50:33] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/cb/61/f5deafd49dfb33ee4d3d1f3bc88210b5a7d0d4db1f529acf2e580ae13e38/wgse_ng-1.0.0a4.tar.gz
+[2024-05-18 08:50:33] INFO root fetch - processPackages [mo-threads]: executing diffoscope
+[2024-05-18 08:50:33] INFO root fetch - processPackages [mo-threads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_threads-6.624.24125.tar.gz tmp/mo_threads-6.634.24139.tar.gz --markdown 20240518/m/mo-threads/6.624.24125-6.634.24139/README.md --exclude *.pyd
+[2024-05-18 08:50:33] INFO root fetch - processPackages [WGSE-NG]: executing diffoscope
+[2024-05-18 08:50:33] INFO root fetch - processPackages [WGSE-NG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgse_ng-1.0.0a3.tar.gz tmp/wgse_ng-1.0.0a4.tar.gz --markdown 20240518/W/WGSE-NG/1.0.0a3-1.0.0a4/README.md --exclude *.pyd
+[2024-05-18 08:50:33] INFO root fetch - processPackages [mo-threads]: Remove: archive file [/home/abi/fetcher/tmp/mo_threads-6.624.24125.tar.gz]
+[2024-05-18 08:50:33] INFO root fetch - processPackages [mo-threads]: Remove: archive file [/home/abi/fetcher/tmp/mo_threads-6.634.24139.tar.gz]
+[2024-05-18 08:50:33] INFO root fetch - main [MainThread]: End processing [mo-threads]: success
+[2024-05-18 08:50:35] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a3.tar.gz]
+[2024-05-18 08:50:35] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a4.tar.gz]
+[2024-05-18 08:50:35] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
+[2024-05-18 08:50:35] INFO root fetch - main [MainThread]: Store serial: [23265516]
