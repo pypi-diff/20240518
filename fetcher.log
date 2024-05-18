@@ -6884,3 +6884,33 @@
 [2024-05-18 03:41:27] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240518.122.tar.gz]
 [2024-05-18 03:41:27] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
 [2024-05-18 03:41:27] INFO root fetch - main [MainThread]: Store serial: [23263803]
+[2024-05-18 03:43:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263803]
+[2024-05-18 03:43:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 03:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xplainable-client
+[2024-05-18 03:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abcli
+[2024-05-18 03:43:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bagbag
+[2024-05-18 03:43:37] INFO root fetch - processPackages [abcli]: New version: [8.172.1] Old Version: [8.170.1]
+[2024-05-18 03:43:37] INFO root fetch - processPackages [xplainable-client]: New version: [1.2.2.post1] Old Version: [1.2.2]
+[2024-05-18 03:43:37] INFO root fetch - processPackages [bagbag]: New version: [0.68.9] Old Version: [0.68.8]
+[2024-05-18 03:43:37] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/f1/1d/9e00db0aeb298b614361841618c5bf87be2e40e1366b525fa89f09cd40f3/abcli-8.170.1.tar.gz
+[2024-05-18 03:43:37] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/73/21/d6ee2cc987dbb47bffb760fa9c46b3cec112e207527a96b561ef7bf0b2be/xplainable_client-1.2.2.tar.gz
+[2024-05-18 03:43:37] INFO root fetch - processPackages [bagbag]: Downloading https://files.pythonhosted.org/packages/78/96/cec1b60756a800353138acafbcdaf59362f72a46b4a91cae324ae5b6118b/bagbag-0.68.8.tar.gz
+[2024-05-18 03:43:38] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/80/9a/b806c4a8f02bc053d2ae5797d36cee07d1873df6ea96a399a7391026953e/xplainable_client-1.2.2.post1.tar.gz
+[2024-05-18 03:43:38] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e6/74/3d0f0828618f4bb441fa9b9f461019897a1e03382825ea8db16e5346f77d/abcli-8.172.1.tar.gz
+[2024-05-18 03:43:38] INFO root fetch - processPackages [bagbag]: Downloading https://files.pythonhosted.org/packages/a7/ce/36d9c874c6e340bb1da40a8b9b41a914e0760f19171ede585a00fb45323d/bagbag-0.68.9.tar.gz
+[2024-05-18 03:43:38] INFO root fetch - processPackages [xplainable-client]: executing diffoscope
+[2024-05-18 03:43:38] INFO root fetch - processPackages [xplainable-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplainable_client-1.2.2.tar.gz tmp/xplainable_client-1.2.2.post1.tar.gz --markdown 20240518/x/xplainable-client/1.2.2-1.2.2.post1/README.md --exclude *.pyd
+[2024-05-18 03:43:38] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-18 03:43:38] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.170.1.tar.gz tmp/abcli-8.172.1.tar.gz --markdown 20240518/a/abcli/8.170.1-8.172.1/README.md --exclude *.pyd
+[2024-05-18 03:43:38] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2024-05-18 03:43:38] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.68.8.tar.gz tmp/bagbag-0.68.9.tar.gz --markdown 20240518/b/bagbag/0.68.8-0.68.9/README.md --exclude *.pyd
+[2024-05-18 03:43:39] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable_client-1.2.2.tar.gz]
+[2024-05-18 03:43:39] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable_client-1.2.2.post1.tar.gz]
+[2024-05-18 03:43:39] INFO root fetch - main [MainThread]: End processing [xplainable-client]: success
+[2024-05-18 03:43:39] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.170.1.tar.gz]
+[2024-05-18 03:43:39] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.172.1.tar.gz]
+[2024-05-18 03:43:39] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-18 03:43:39] INFO root fetch - processPackages [bagbag]: Remove: archive file [/home/abi/fetcher/tmp/bagbag-0.68.8.tar.gz]
+[2024-05-18 03:43:39] INFO root fetch - processPackages [bagbag]: Remove: archive file [/home/abi/fetcher/tmp/bagbag-0.68.9.tar.gz]
+[2024-05-18 03:43:39] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2024-05-18 03:43:39] INFO root fetch - main [MainThread]: Store serial: [23263812]
