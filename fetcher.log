@@ -13769,3 +13769,30 @@
 [2024-05-18 13:04:32] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.1.0.tar.gz]
 [2024-05-18 13:04:32] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
 [2024-05-18 13:04:32] INFO root fetch - main [MainThread]: Store serial: [23267107]
+[2024-05-18 13:06:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267107]
+[2024-05-18 13:06:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 13:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eavesdroppersz
+[2024-05-18 13:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altstore-proxy
+[2024-05-18 13:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartcitizen-connector
+[2024-05-18 13:06:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: piligraphs
+[2024-05-18 13:06:42] WARNING root fetch - processPackages [altstore-proxy]: Skipping, unable to determine old version
+[2024-05-18 13:06:42] INFO root fetch - main [MainThread]: End processing [altstore-proxy] error
+[2024-05-18 13:06:42] INFO root fetch - processPackages [smartcitizen-connector]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-18 13:06:42] INFO root fetch - processPackages [piligraphs]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 13:06:42] WARNING root fetch - processPackages [eavesdroppersz]: Skipping, unable to determine old version
+[2024-05-18 13:06:42] INFO root fetch - main [MainThread]: End processing [eavesdroppersz] error
+[2024-05-18 13:06:42] INFO root fetch - processPackages [smartcitizen-connector]: Downloading https://files.pythonhosted.org/packages/02/3e/6a16bd7d198e595e4e50d60394f82350746ea45d61c4ff1acbe680697659/smartcitizen_connector-1.0.5.tar.gz
+[2024-05-18 13:06:42] INFO root fetch - processPackages [piligraphs]: Downloading https://files.pythonhosted.org/packages/5b/24/60a029fcb6cca79af51bb191eef99cc019c0d92f82d50acb3dee90ea9835/piligraphs-0.0.4.tar.gz
+[2024-05-18 13:06:43] INFO root fetch - processPackages [smartcitizen-connector]: Downloading https://files.pythonhosted.org/packages/b9/30/ff3b1b32004a537dab0c1ac19e3fb354f73e3007baf4033cee5de88f90df/smartcitizen_connector-1.0.6.tar.gz
+[2024-05-18 13:06:43] INFO root fetch - processPackages [piligraphs]: Downloading https://files.pythonhosted.org/packages/d5/dd/e60c8208db23a81a53fa7573c905ce088a7d4b99959f2487cbd6648605d5/piligraphs-0.0.5.tar.gz
+[2024-05-18 13:06:43] INFO root fetch - processPackages [smartcitizen-connector]: executing diffoscope
+[2024-05-18 13:06:43] INFO root fetch - processPackages [smartcitizen-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartcitizen_connector-1.0.5.tar.gz tmp/smartcitizen_connector-1.0.6.tar.gz --markdown 20240518/s/smartcitizen-connector/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-18 13:06:43] INFO root fetch - processPackages [piligraphs]: executing diffoscope
+[2024-05-18 13:06:43] INFO root fetch - processPackages [piligraphs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piligraphs-0.0.4.tar.gz tmp/piligraphs-0.0.5.tar.gz --markdown 20240518/p/piligraphs/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 13:06:43] INFO root fetch - processPackages [piligraphs]: Remove: archive file [/home/abi/fetcher/tmp/piligraphs-0.0.4.tar.gz]
+[2024-05-18 13:06:43] INFO root fetch - processPackages [piligraphs]: Remove: archive file [/home/abi/fetcher/tmp/piligraphs-0.0.5.tar.gz]
+[2024-05-18 13:06:43] INFO root fetch - main [MainThread]: End processing [piligraphs]: success
+[2024-05-18 13:06:43] INFO root fetch - processPackages [smartcitizen-connector]: Remove: archive file [/home/abi/fetcher/tmp/smartcitizen_connector-1.0.5.tar.gz]
+[2024-05-18 13:06:43] INFO root fetch - processPackages [smartcitizen-connector]: Remove: archive file [/home/abi/fetcher/tmp/smartcitizen_connector-1.0.6.tar.gz]
+[2024-05-18 13:06:43] INFO root fetch - main [MainThread]: End processing [smartcitizen-connector]: success
+[2024-05-18 13:06:43] INFO root fetch - main [MainThread]: Store serial: [23267120]
