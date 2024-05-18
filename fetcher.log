@@ -11509,3 +11509,18 @@
 [2024-05-18 09:40:43] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.7.0.tar.gz]
 [2024-05-18 09:40:43] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
 [2024-05-18 09:40:43] INFO root fetch - main [MainThread]: Store serial: [23265787]
+[2024-05-18 09:42:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265787]
+[2024-05-18 09:42:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transipy
+[2024-05-18 09:42:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SACMES-PYTHON-PACKAGE
+[2024-05-18 09:42:52] INFO root fetch - processPackages [transipy]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 09:42:52] WARNING root fetch - processPackages [SACMES-PYTHON-PACKAGE]: Skipping, unable to determine old version
+[2024-05-18 09:42:52] INFO root fetch - main [MainThread]: End processing [SACMES-PYTHON-PACKAGE] error
+[2024-05-18 09:42:52] INFO root fetch - processPackages [transipy]: Downloading https://files.pythonhosted.org/packages/d7/a8/3dae584dfd59a43c9ffcf52f6060ff17249e185ed051b41650a379fbbb70/transipy-1.0.1.tar.gz
+[2024-05-18 09:42:52] INFO root fetch - processPackages [transipy]: Downloading https://files.pythonhosted.org/packages/99/18/7bba807713c840376a4153d77f9020d4359c4287569f312b5b261ec5b2f8/transipy-1.0.2.tar.gz
+[2024-05-18 09:42:53] INFO root fetch - processPackages [transipy]: executing diffoscope
+[2024-05-18 09:42:53] INFO root fetch - processPackages [transipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transipy-1.0.1.tar.gz tmp/transipy-1.0.2.tar.gz --markdown 20240518/t/transipy/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 09:42:53] INFO root fetch - processPackages [transipy]: Remove: archive file [/home/abi/fetcher/tmp/transipy-1.0.1.tar.gz]
+[2024-05-18 09:42:53] INFO root fetch - processPackages [transipy]: Remove: archive file [/home/abi/fetcher/tmp/transipy-1.0.2.tar.gz]
+[2024-05-18 09:42:53] INFO root fetch - main [MainThread]: End processing [transipy]: success
+[2024-05-18 09:42:53] INFO root fetch - main [MainThread]: Store serial: [23265793]
