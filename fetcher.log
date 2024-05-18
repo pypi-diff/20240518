@@ -14025,3 +14025,37 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:15:31] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-05-18 13:15:31] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-05-18 13:15:31] INFO root fetch - main [MainThread]: Store serial: [23267192]
+[2024-05-18 13:17:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267192]
+[2024-05-18 13:17:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 13:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sling-mac-arm64
+[2024-05-18 13:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: GOGR-Tools
+[2024-05-18 13:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fc-pruning
+[2024-05-18 13:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sling-windows-amd64
+[2024-05-18 13:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sling
+[2024-05-18 13:17:40] INFO root fetch - processPackages [fc-pruning]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 13:17:40] INFO root fetch - processPackages [sling]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-05-18 13:17:40] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/ef/65/1df4b1d753fb0d30cac409d59ff9b529a1e0e44cb7522c778fb9a7a09e92/fc_pruning-0.0.8.tar.gz
+[2024-05-18 13:17:40] WARNING root fetch - processPackages [GOGR-Tools]: Skipping, unable to determine old version
+[2024-05-18 13:17:40] INFO root fetch - main [MainThread]: End processing [GOGR-Tools] error
+[2024-05-18 13:17:40] INFO root fetch - processPackages [sling-mac-arm64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-05-18 13:17:40] INFO root fetch - processPackages [sling-windows-amd64]: New version: [1.2.9] Old Version: [1.2.6]
+[2024-05-18 13:17:40] INFO root fetch - processPackages [sling-mac-arm64]: Downloading https://files.pythonhosted.org/packages/f5/c2/3061b3d5dc75620197a6105ca121fb7160bbfdaf2cb04aa6fcbea4b5650c/sling-mac-arm64-1.2.6.tar.gz
+[2024-05-18 13:17:40] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/dc/cf/b28755154c93468dea6192908ed75101aa4ae5c85df475fe558f59e35258/fc_pruning-0.0.9.tar.gz
+[2024-05-18 13:17:40] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/ae/50/85e00fc5b753bff7bb982dbf47bf77fc4acefa6ae0d7d4482d3e21ad893c/sling-1.2.6.tar.gz
+[2024-05-18 13:17:41] INFO root fetch - processPackages [sling-windows-amd64]: Downloading https://files.pythonhosted.org/packages/9c/55/40f9660993d4146fff133ac1738ff86e19eb06267e36233286f83a759a7a/sling-windows-amd64-1.2.6.tar.gz
+[2024-05-18 13:17:41] INFO root fetch - processPackages [fc-pruning]: executing diffoscope
+[2024-05-18 13:17:41] INFO root fetch - processPackages [fc-pruning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fc_pruning-0.0.8.tar.gz tmp/fc_pruning-0.0.9.tar.gz --markdown 20240518/f/fc-pruning/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 13:17:41] WARNING root fetch - processPackages [sling-mac-arm64]: Skipping package: exceeds size limit 50518905>=10485760
+[2024-05-18 13:17:41] INFO root fetch - main [MainThread]: End processing [sling-mac-arm64] error
+[2024-05-18 13:17:41] WARNING root fetch - processPackages [sling-windows-amd64]: Skipping package: exceeds size limit 50033934>=10485760
+[2024-05-18 13:17:41] INFO root fetch - main [MainThread]: End processing [sling-windows-amd64] error
+[2024-05-18 13:17:41] INFO root fetch - processPackages [sling]: Downloading https://files.pythonhosted.org/packages/73/a8/e0eb5d8747714c8c5cb1d13d439a99d719bdfd480abd17fceff8e7d2adef/sling-1.2.9.tar.gz
+[2024-05-18 13:17:41] INFO root fetch - processPackages [sling]: executing diffoscope
+[2024-05-18 13:17:41] INFO root fetch - processPackages [sling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sling-1.2.6.tar.gz tmp/sling-1.2.9.tar.gz --markdown 20240518/s/sling/1.2.6-1.2.9/README.md --exclude *.pyd
+[2024-05-18 13:17:41] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.8.tar.gz]
+[2024-05-18 13:17:41] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.9.tar.gz]
+[2024-05-18 13:17:41] INFO root fetch - main [MainThread]: End processing [fc-pruning]: success
+[2024-05-18 13:17:42] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.6.tar.gz]
+[2024-05-18 13:17:42] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.9.tar.gz]
+[2024-05-18 13:17:42] INFO root fetch - main [MainThread]: End processing [sling]: success
+[2024-05-18 13:17:42] INFO root fetch - main [MainThread]: Store serial: [23267205]
