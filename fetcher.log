@@ -15036,3 +15036,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:39:27] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
 [2024-05-18 14:39:27] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2024-05-18 14:39:27] INFO root fetch - main [MainThread]: Store serial: [23267692]
+[2024-05-18 14:41:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267692]
+[2024-05-18 14:41:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 14:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylibyear
+[2024-05-18 14:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decorator-retry
+[2024-05-18 14:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gogr-tools
+[2024-05-18 14:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-llm
+[2024-05-18 14:41:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docugenr8
+[2024-05-18 14:41:36] INFO root fetch - processPackages [gogr-tools]: New version: [0.0.16] Old Version: [0.0.14]
+[2024-05-18 14:41:36] INFO root fetch - processPackages [pylibyear]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-18 14:41:36] INFO root fetch - processPackages [bigdl-llm]: New version: [2.5.0b20240517] Old Version: [2.5.0b20240516]
+[2024-05-18 14:41:36] INFO root fetch - processPackages [docugenr8]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 14:41:36] INFO root fetch - processPackages [pylibyear]: Downloading https://files.pythonhosted.org/packages/52/52/d82a883d5874b8804f38c06f148799f013ad71eb071f04ef6b6bf45151dc/pylibyear-0.3.2.tar.gz
+[2024-05-18 14:41:36] INFO root fetch - processPackages [decorator-retry]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 14:41:36] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/de/99/617f4ebb45d645df1cc75cf7b0844197e4b340a4ee7f02f4818218e22893/bigdl_llm-2.5.0b20240516-py3-none-win_amd64.whl
+[2024-05-18 14:41:36] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/03/39/11cf96c7ae6ecad44faf80de53faff153ab753d44f3f6cd7aa596f2dfdfc/gogr_tools-0.0.16.tar.gz
+[2024-05-18 14:41:36] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9b/01/1d7afde6078300322a758bab883a343aad43657961631bdf9eac9b892b06/docugenr8-0.0.8.tar.gz
+[2024-05-18 14:41:36] INFO root fetch - processPackages [pylibyear]: Downloading https://files.pythonhosted.org/packages/b7/62/4b366d5ba701a9f818415e93f4cd1bf0afe5bddb0c229a7c10abff419e45/pylibyear-0.3.3.tar.gz
+[2024-05-18 14:41:36] INFO root fetch - processPackages [decorator-retry]: Downloading https://files.pythonhosted.org/packages/dd/ce/e5f16fcf1cbb7f59a2434ef7f381fd608378bffea0637632b8bf10998901/decorator_retry-0.1.5.tar.gz
+[2024-05-18 14:41:36] INFO root fetch - processPackages [gogr-tools]: executing diffoscope
+[2024-05-18 14:41:36] INFO root fetch - processPackages [gogr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gogr_tools-0.0.14.tar.gz tmp/gogr_tools-0.0.16.tar.gz --markdown 20240518/g/gogr-tools/0.0.14-0.0.16/README.md --exclude *.pyd
+[2024-05-18 14:41:36] INFO root fetch - processPackages [pylibyear]: executing diffoscope
+[2024-05-18 14:41:36] INFO root fetch - processPackages [pylibyear]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylibyear-0.3.2.tar.gz tmp/pylibyear-0.3.3.tar.gz --markdown 20240518/p/pylibyear/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-18 14:41:37] INFO root fetch - processPackages [decorator-retry]: Downloading https://files.pythonhosted.org/packages/1a/a4/c520b78b5fe2247d54134dfe182412e2817d840cb118318160d4e0850012/decorator_retry-0.1.6.tar.gz
+[2024-05-18 14:41:37] INFO root fetch - processPackages [decorator-retry]: executing diffoscope
+[2024-05-18 14:41:37] INFO root fetch - processPackages [decorator-retry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decorator_retry-0.1.5.tar.gz tmp/decorator_retry-0.1.6.tar.gz --markdown 20240518/d/decorator-retry/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 14:41:37] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9a/a5/aa6030a12b43fe39bfa3f72277e6448f95801c71f37824996f2a765bef62/docugenr8-0.0.9.tar.gz
+[2024-05-18 14:41:37] INFO root fetch - processPackages [bigdl-llm]: Downloading https://files.pythonhosted.org/packages/bb/3a/18095df74cf6d95d90a99ccbfcc95142e00ee109549508cb6d9cc2864f4d/bigdl_llm-2.5.0b20240517-py3-none-win_amd64.whl
+[2024-05-18 14:41:37] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.14.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.16.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - main [MainThread]: End processing [gogr-tools]: success
+[2024-05-18 14:41:37] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-18 14:41:37] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.8.tar.gz tmp/docugenr8-0.0.9.tar.gz --markdown 20240518/d/docugenr8/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 14:41:37] INFO root fetch - processPackages [bigdl-llm]: executing diffoscope
+[2024-05-18 14:41:37] INFO root fetch - processPackages [bigdl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_llm-2.5.0b20240516-py3-none-win_amd64.whl.zip tmp/bigdl_llm-2.5.0b20240517-py3-none-win_amd64.whl.zip --markdown 20240518/b/bigdl-llm/2.5.0b20240516-2.5.0b20240517/README.md --exclude *.pyd
+[2024-05-18 14:41:37] INFO root fetch - processPackages [pylibyear]: Remove: archive file [/home/abi/fetcher/tmp/pylibyear-0.3.2.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - processPackages [pylibyear]: Remove: archive file [/home/abi/fetcher/tmp/pylibyear-0.3.3.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - main [MainThread]: End processing [pylibyear]: success
+[2024-05-18 14:41:37] INFO root fetch - processPackages [decorator-retry]: Remove: archive file [/home/abi/fetcher/tmp/decorator_retry-0.1.5.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - processPackages [decorator-retry]: Remove: archive file [/home/abi/fetcher/tmp/decorator_retry-0.1.6.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - main [MainThread]: End processing [decorator-retry]: success
+[2024-05-18 14:41:37] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.8.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.9.tar.gz]
+[2024-05-18 14:41:37] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-18 14:41:38] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240516-py3-none-win_amd64.whl.zip]
+[2024-05-18 14:41:38] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240517-py3-none-win_amd64.whl.zip]
+[2024-05-18 14:41:38] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
+[2024-05-18 14:41:38] INFO root fetch - main [MainThread]: Store serial: [23267709]
