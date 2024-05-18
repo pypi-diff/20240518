@@ -19876,3 +19876,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:24:25] INFO root fetch - processPackages [ayeaye-fossa]: Remove: archive file [/home/abi/fetcher/tmp/ayeaye-fossa-0.0.9.tar.gz]
 [2024-05-18 20:24:25] INFO root fetch - main [MainThread]: End processing [ayeaye-fossa]: success
 [2024-05-18 20:24:25] INFO root fetch - main [MainThread]: Store serial: [23270053]
+[2024-05-18 20:26:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270053]
+[2024-05-18 20:26:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 20:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GmailBox
+[2024-05-18 20:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codefly-cli
+[2024-05-18 20:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baosight
+[2024-05-18 20:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyclassparser
+[2024-05-18 20:26:36] INFO root fetch - processPackages [pyclassparser]: New version: [0.5] Old Version: [0.4]
+[2024-05-18 20:26:36] INFO root fetch - processPackages [baosight]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 20:26:36] INFO root fetch - processPackages [codefly-cli]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 20:26:36] INFO root fetch - processPackages [GmailBox]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 20:26:36] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/8d/9b/0081529549a2745ff7e86895f2493a5dbc5ad7f0204fb9c0a51cd510afd4/pyclassparser-0.4.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [codefly-cli]: Downloading https://files.pythonhosted.org/packages/c8/b5/75cbbe8fa37198d477eb94569fd53b22a81f6da78c0dbb32000e06fa45f6/codefly_cli-0.0.5.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/71/ef/72e93e2d1c7e47f83fb8fd112e84e77f033023049d9a69748ea197a2fe96/baosight-0.0.2.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [GmailBox]: Downloading https://files.pythonhosted.org/packages/d4/ac/8d6eda162d4e369e506c9edbce099b0638dd3bf102d70e122638cb54db14/gmailbox-0.0.8.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [codefly-cli]: Downloading https://files.pythonhosted.org/packages/85/7c/9cc5bdf5556e2fb05ed4ad75999276ab7e7feb130a05926bf8bec4e97d05/codefly_cli-0.0.6.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/34/b1/6c30f8aad08bb8defb9a590202af845fc541f571f6d8efa1997765d6aa96/pyclassparser-0.5.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [baosight]: Downloading https://files.pythonhosted.org/packages/ff/30/87db235678cca97bdbff2e1b8fa605314848267983e46206fd69e0a4fedc/baosight-0.0.3.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [pyclassparser]: executing diffoscope
+[2024-05-18 20:26:36] INFO root fetch - processPackages [pyclassparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclassparser-0.4.tar.gz tmp/pyclassparser-0.5.tar.gz --markdown 20240518/p/pyclassparser/0.4-0.5/README.md --exclude *.pyd
+[2024-05-18 20:26:36] INFO root fetch - processPackages [codefly-cli]: executing diffoscope
+[2024-05-18 20:26:36] INFO root fetch - processPackages [codefly-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefly_cli-0.0.5.tar.gz tmp/codefly_cli-0.0.6.tar.gz --markdown 20240518/c/codefly-cli/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 20:26:36] INFO root fetch - processPackages [baosight]: executing diffoscope
+[2024-05-18 20:26:36] INFO root fetch - processPackages [baosight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baosight-0.0.2.tar.gz tmp/baosight-0.0.3.tar.gz --markdown 20240518/b/baosight/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 20:26:36] INFO root fetch - processPackages [GmailBox]: Downloading https://files.pythonhosted.org/packages/20/0f/ca5fe45295a8ce699e143b40138f6726112a8544fdc5c5684765e2e77cf6/gmailbox-0.0.9.tar.gz
+[2024-05-18 20:26:36] INFO root fetch - processPackages [GmailBox]: executing diffoscope
+[2024-05-18 20:26:36] INFO root fetch - processPackages [GmailBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmailbox-0.0.8.tar.gz tmp/gmailbox-0.0.9.tar.gz --markdown 20240518/G/GmailBox/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 20:26:37] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.2.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - processPackages [baosight]: Remove: archive file [/home/abi/fetcher/tmp/baosight-0.0.3.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - main [MainThread]: End processing [baosight]: success
+[2024-05-18 20:26:37] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.4.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.5.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - main [MainThread]: End processing [pyclassparser]: success
+[2024-05-18 20:26:37] INFO root fetch - processPackages [GmailBox]: Remove: archive file [/home/abi/fetcher/tmp/gmailbox-0.0.8.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - processPackages [GmailBox]: Remove: archive file [/home/abi/fetcher/tmp/gmailbox-0.0.9.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - main [MainThread]: End processing [GmailBox]: success
+[2024-05-18 20:26:37] INFO root fetch - processPackages [codefly-cli]: Remove: archive file [/home/abi/fetcher/tmp/codefly_cli-0.0.5.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - processPackages [codefly-cli]: Remove: archive file [/home/abi/fetcher/tmp/codefly_cli-0.0.6.tar.gz]
+[2024-05-18 20:26:37] INFO root fetch - main [MainThread]: End processing [codefly-cli]: success
+[2024-05-18 20:26:37] INFO root fetch - main [MainThread]: Store serial: [23270065]
