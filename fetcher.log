@@ -14368,3 +14368,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:44:55] INFO root fetch - processPackages [sapx]: Remove: archive file [/home/abi/fetcher/tmp/sapx-0.2.9.tar.gz]
 [2024-05-18 13:44:55] INFO root fetch - main [MainThread]: End processing [sapx]: success
 [2024-05-18 13:44:55] INFO root fetch - main [MainThread]: Store serial: [23267372]
+[2024-05-18 13:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267372]
+[2024-05-18 13:47:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 13:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stable-diffusion-cpp-python
+[2024-05-18 13:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-transformation-library-paula
+[2024-05-18 13:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: storkishz
+[2024-05-18 13:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otonagai-dl
+[2024-05-18 13:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altstore-proxy
+[2024-05-18 13:47:03] WARNING root fetch - processPackages [altstore-proxy]: Skipping, unable to determine old version
+[2024-05-18 13:47:03] INFO root fetch - main [MainThread]: End processing [altstore-proxy] error
+[2024-05-18 13:47:03] WARNING root fetch - processPackages [storkishz]: Skipping, unable to determine old version
+[2024-05-18 13:47:03] INFO root fetch - main [MainThread]: End processing [storkishz] error
+[2024-05-18 13:47:03] INFO root fetch - processPackages [stable-diffusion-cpp-python]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 13:47:03] WARNING root fetch - processPackages [otonagai-dl]: Skipping, unable to determine old version
+[2024-05-18 13:47:03] INFO root fetch - main [MainThread]: End processing [otonagai-dl] error
+[2024-05-18 13:47:04] INFO root fetch - processPackages [data-transformation-library-paula]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 13:47:04] INFO root fetch - processPackages [data-transformation-library-paula]: Downloading https://files.pythonhosted.org/packages/9f/48/9f76389d49969fc71f4e02247ae0a75211afe5173b37a6cffd9890cbcce6/data_transformation_library_paula-0.1.2.tar.gz
+[2024-05-18 13:47:04] INFO root fetch - processPackages [stable-diffusion-cpp-python]: Downloading https://files.pythonhosted.org/packages/08/82/9d7bbeb312fb662a387e70321e044baba745e1a7909272bd4f6443ee314f/stable_diffusion_cpp_python-0.1.3.tar.gz
+[2024-05-18 13:47:04] WARNING root fetch - processPackages [stable-diffusion-cpp-python]: Skipping package: exceeds size limit 30404641>=10485760
+[2024-05-18 13:47:04] INFO root fetch - main [MainThread]: End processing [stable-diffusion-cpp-python] error
+[2024-05-18 13:47:04] INFO root fetch - processPackages [data-transformation-library-paula]: Downloading https://files.pythonhosted.org/packages/c6/a2/f946d387d1ee09bd766656b3b769fb5a2f9fa392efb54338f245f48d6e90/data_transformation_library_paula-0.1.3.tar.gz
+[2024-05-18 13:47:04] INFO root fetch - processPackages [data-transformation-library-paula]: executing diffoscope
+[2024-05-18 13:47:04] INFO root fetch - processPackages [data-transformation-library-paula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_transformation_library_paula-0.1.2.tar.gz tmp/data_transformation_library_paula-0.1.3.tar.gz --markdown 20240518/d/data-transformation-library-paula/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 13:47:05] INFO root fetch - processPackages [data-transformation-library-paula]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_library_paula-0.1.2.tar.gz]
+[2024-05-18 13:47:05] INFO root fetch - processPackages [data-transformation-library-paula]: Remove: archive file [/home/abi/fetcher/tmp/data_transformation_library_paula-0.1.3.tar.gz]
+[2024-05-18 13:47:05] INFO root fetch - main [MainThread]: End processing [data-transformation-library-paula]: success
+[2024-05-18 13:47:05] INFO root fetch - main [MainThread]: Store serial: [23267389]
