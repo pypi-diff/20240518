@@ -2641,3 +2641,39 @@
 [2024-05-18 02:45:03] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405170044.tar.gz]
 [2024-05-18 02:45:03] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-05-18 02:45:03] INFO root fetch - main [MainThread]: Store serial: [23262376]
+[2024-05-18 02:47:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262376]
+[2024-05-18 02:47:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ivycheck
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toc-trade-pb-v2
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edifiedz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-databrew-cicd
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modelbit
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ivycheck]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-18 02:47:12] INFO root fetch - processPackages [modelbit]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-18 02:47:12] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-18 02:47:12] WARNING root fetch - processPackages [edifiedz]: Skipping, unable to determine old version
+[2024-05-18 02:47:12] INFO root fetch - main [MainThread]: End processing [edifiedz] error
+[2024-05-18 02:47:12] WARNING root fetch - processPackages [toc-trade-pb-v2]: Skipping, unable to determine old version
+[2024-05-18 02:47:12] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2] error
+[2024-05-18 02:47:12] INFO root fetch - processPackages [modelbit]: Downloading https://files.pythonhosted.org/packages/c9/f0/ed4cc6d7e8a055435d41e58b6ff37b6189ac3cb52e6383b72c12aa4e605f/modelbit-0.9.6.tar.gz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ivycheck]: Downloading https://files.pythonhosted.org/packages/33/e2/974ff9d35eceefd771bb684c7818f40b6e2a666eb3a55781624aea21eb69/ivycheck-0.9.3.tar.gz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [modelbit]: Downloading https://files.pythonhosted.org/packages/55/0f/8d19e66368fbaa57d08deb9b9d12c445c2e2451e77490d39dfff1e70698a/modelbit-0.9.7.tar.gz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [modelbit]: executing diffoscope
+[2024-05-18 02:47:12] INFO root fetch - processPackages [modelbit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelbit-0.9.6.tar.gz tmp/modelbit-0.9.7.tar.gz --markdown 20240518/m/modelbit/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-18 02:47:12] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ivycheck]: Downloading https://files.pythonhosted.org/packages/b2/0f/046506012ab5b7424e50555e57a93db28cd28f09a21a31ea9d3bd6282d97/ivycheck-0.9.4.tar.gz
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ivycheck]: executing diffoscope
+[2024-05-18 02:47:12] INFO root fetch - processPackages [ivycheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ivycheck-0.9.3.tar.gz tmp/ivycheck-0.9.4.tar.gz --markdown 20240518/i/ivycheck/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-18 02:47:12] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-05-18 02:47:12] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240518/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-18 02:47:13] INFO root fetch - processPackages [ivycheck]: Remove: archive file [/home/abi/fetcher/tmp/ivycheck-0.9.3.tar.gz]
+[2024-05-18 02:47:13] INFO root fetch - processPackages [ivycheck]: Remove: archive file [/home/abi/fetcher/tmp/ivycheck-0.9.4.tar.gz]
+[2024-05-18 02:47:13] INFO root fetch - main [MainThread]: End processing [ivycheck]: success
+[2024-05-18 02:47:13] INFO root fetch - processPackages [modelbit]: Remove: archive file [/home/abi/fetcher/tmp/modelbit-0.9.6.tar.gz]
+[2024-05-18 02:47:13] INFO root fetch - processPackages [modelbit]: Remove: archive file [/home/abi/fetcher/tmp/modelbit-0.9.7.tar.gz]
+[2024-05-18 02:47:13] INFO root fetch - main [MainThread]: End processing [modelbit]: success
+[2024-05-18 02:47:13] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-05-18 02:47:13] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-05-18 02:47:13] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-05-18 02:47:13] INFO root fetch - main [MainThread]: Store serial: [23262397]
