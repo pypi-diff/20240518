@@ -19810,3 +19810,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:19:52] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
 [2024-05-18 20:19:52] INFO root fetch - main [MainThread]: End processing [rustberry]: success
 [2024-05-18 20:19:52] INFO root fetch - main [MainThread]: Store serial: [23270030]
+[2024-05-18 20:22:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270030]
+[2024-05-18 20:22:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 20:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qgate-sln-mlrun
+[2024-05-18 20:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baosight
+[2024-05-18 20:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: relatesz
+[2024-05-18 20:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tksheet
+[2024-05-18 20:22:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-asterisk-click2dial
+[2024-05-18 20:22:11] WARNING root fetch - processPackages [baosight]: Skipping, unable to determine old version
+[2024-05-18 20:22:11] INFO root fetch - main [MainThread]: End processing [baosight] error
+[2024-05-18 20:22:11] INFO root fetch - processPackages [qgate-sln-mlrun]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-18 20:22:11] WARNING root fetch - processPackages [relatesz]: Skipping, unable to determine old version
+[2024-05-18 20:22:11] INFO root fetch - main [MainThread]: End processing [relatesz] error
+[2024-05-18 20:22:11] INFO root fetch - processPackages [tksheet]: New version: [7.1.9] Old Version: [7.1.8]
+[2024-05-18 20:22:11] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.0.1]
+[2024-05-18 20:22:11] INFO root fetch - processPackages [qgate-sln-mlrun]: Downloading https://files.pythonhosted.org/packages/80/ae/ac9a79377a92748259f7d552adfdbaa3c0c81c0b29ccbe2bf87af530e45d/qgate_sln_mlrun-0.2.3-py3-none-any.whl
+[2024-05-18 20:22:11] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/e1/d1/7d3935e2e7fc9a270abf70eb8510edded54952637da5a1271cc5edb3a601/tksheet-7.1.8.tar.gz
+[2024-05-18 20:22:11] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/a1/7f/cb67012318bfc3731e7644afddc584edb8ba9ffc03e045e09b8abec8eca3/odoo_addon_asterisk_click2dial-16.0.1.0.0.1-py3-none-any.whl
+[2024-05-18 20:22:11] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Downloading https://files.pythonhosted.org/packages/07/bf/8a19ecf3b8637597775b95e7f3c82cff54eaf0f8cf496f2bf79f7171724e/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-18 20:22:11] INFO root fetch - processPackages [tksheet]: Downloading https://files.pythonhosted.org/packages/f4/a6/f9c8f89a179e91b61ba3303e6ee4f77b95609f549aca467017c71b943401/tksheet-7.1.9.tar.gz
+[2024-05-18 20:22:11] INFO root fetch - processPackages [qgate-sln-mlrun]: Downloading https://files.pythonhosted.org/packages/f3/8b/559f45f3b4f5a598004c07101b3f9abc597742d120d47e1c6b365daa6d4d/qgate_sln_mlrun-0.2.4-py3-none-any.whl
+[2024-05-18 20:22:11] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: executing diffoscope
+[2024-05-18 20:22:11] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_asterisk_click2dial-16.0.1.0.0.1-py3-none-any.whl.zip tmp/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-asterisk-click2dial/16.0.1.0.0.1-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-18 20:22:11] INFO root fetch - processPackages [qgate-sln-mlrun]: executing diffoscope
+[2024-05-18 20:22:11] INFO root fetch - processPackages [qgate-sln-mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_sln_mlrun-0.2.3-py3-none-any.whl.zip tmp/qgate_sln_mlrun-0.2.4-py3-none-any.whl.zip --markdown 20240518/q/qgate-sln-mlrun/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-18 20:22:11] INFO root fetch - processPackages [tksheet]: executing diffoscope
+[2024-05-18 20:22:11] INFO root fetch - processPackages [tksheet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tksheet-7.1.8.tar.gz tmp/tksheet-7.1.9.tar.gz --markdown 20240518/t/tksheet/7.1.8-7.1.9/README.md --exclude *.pyd
+[2024-05-18 20:22:12] INFO root fetch - processPackages [tksheet]: Remove: archive file [/home/abi/fetcher/tmp/tksheet-7.1.8.tar.gz]
+[2024-05-18 20:22:12] INFO root fetch - processPackages [tksheet]: Remove: archive file [/home/abi/fetcher/tmp/tksheet-7.1.9.tar.gz]
+[2024-05-18 20:22:12] INFO root fetch - main [MainThread]: End processing [tksheet]: success
+[2024-05-18 20:22:12] INFO root fetch - processPackages [qgate-sln-mlrun]: Remove: archive file [/home/abi/fetcher/tmp/qgate_sln_mlrun-0.2.3-py3-none-any.whl.zip]
+[2024-05-18 20:22:12] INFO root fetch - processPackages [qgate-sln-mlrun]: Remove: archive file [/home/abi/fetcher/tmp/qgate_sln_mlrun-0.2.4-py3-none-any.whl.zip]
+[2024-05-18 20:22:12] INFO root fetch - main [MainThread]: End processing [qgate-sln-mlrun]: success
+[2024-05-18 20:22:12] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_asterisk_click2dial-16.0.1.0.0.1-py3-none-any.whl.zip]
+[2024-05-18 20:22:12] INFO root fetch - processPackages [odoo-addon-asterisk-click2dial]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_asterisk_click2dial-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-18 20:22:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-asterisk-click2dial]: success
+[2024-05-18 20:22:12] INFO root fetch - main [MainThread]: Store serial: [23270045]
