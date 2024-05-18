@@ -21946,3 +21946,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:02:12] INFO root fetch - processPackages [braintrust-core]: Remove: archive file [/home/abi/fetcher/tmp/braintrust_core-0.0.9.tar.gz]
 [2024-05-18 23:02:12] INFO root fetch - main [MainThread]: End processing [braintrust-core]: success
 [2024-05-18 23:02:12] INFO root fetch - main [MainThread]: Store serial: [23271207]
+[2024-05-18 23:04:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271207]
+[2024-05-18 23:04:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 23:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keri
+[2024-05-18 23:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: braintrust
+[2024-05-18 23:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autoevals
+[2024-05-18 23:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-preprocessing-library
+[2024-05-18 23:04:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: catafalquez
+[2024-05-18 23:04:23] INFO root fetch - processPackages [autoevals]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 23:04:23] INFO root fetch - processPackages [braintrust]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-18 23:04:23] WARNING root fetch - processPackages [catafalquez]: Skipping, unable to determine old version
+[2024-05-18 23:04:23] INFO root fetch - main [MainThread]: End processing [catafalquez] error
+[2024-05-18 23:04:23] WARNING root fetch - processPackages [data-preprocessing-library]: Skipping, unable to determine old version
+[2024-05-18 23:04:23] INFO root fetch - main [MainThread]: End processing [data-preprocessing-library] error
+[2024-05-18 23:04:23] INFO root fetch - processPackages [keri]: New version: [1.2.0.dev3] Old Version: [1.2.0.dev2]
+[2024-05-18 23:04:23] INFO root fetch - processPackages [autoevals]: Downloading https://files.pythonhosted.org/packages/cc/d3/ca37d628641d63f5e930b91263c7a82e8b70b3925b0e900c849dae09e8bf/autoevals-0.0.8.tar.gz
+[2024-05-18 23:04:23] INFO root fetch - processPackages [braintrust]: Downloading https://files.pythonhosted.org/packages/de/c6/30b3eb7e4b1c5983c8ec7e822a7e696104c7a7f1790bed3ef80a987f4941/braintrust-0.0.98.tar.gz
+[2024-05-18 23:04:23] INFO root fetch - processPackages [keri]: Downloading https://files.pythonhosted.org/packages/5c/f9/e0e1520e408d4e285f65aec5740c34dfc5761fec96c60c5a33b87226b992/keri-1.2.0.dev2.tar.gz
+[2024-05-18 23:04:23] INFO root fetch - processPackages [braintrust]: Downloading https://files.pythonhosted.org/packages/bd/26/72df543bed4a12c9562f49bd7e81c0844d75e2a98f58941a7d24609cfb0a/braintrust-0.0.99.tar.gz
+[2024-05-18 23:04:23] INFO root fetch - processPackages [autoevals]: Downloading https://files.pythonhosted.org/packages/94/f4/5493a77764ae8b5abee4f82a39671adcea3888c0fcf9df4bab21893260b8/autoevals-0.0.9.tar.gz
+[2024-05-18 23:04:23] INFO root fetch - processPackages [keri]: Downloading https://files.pythonhosted.org/packages/47/48/8ff095b0c3de5a67aaf55dce5aa35df0fbd87b74e4a5d07072f76c0c3dd5/keri-1.2.0.dev3.tar.gz
+[2024-05-18 23:04:23] INFO root fetch - processPackages [braintrust]: executing diffoscope
+[2024-05-18 23:04:23] INFO root fetch - processPackages [braintrust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/braintrust-0.0.98.tar.gz tmp/braintrust-0.0.99.tar.gz --markdown 20240518/b/braintrust/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-18 23:04:23] INFO root fetch - processPackages [autoevals]: executing diffoscope
+[2024-05-18 23:04:23] INFO root fetch - processPackages [autoevals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoevals-0.0.8.tar.gz tmp/autoevals-0.0.9.tar.gz --markdown 20240518/a/autoevals/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 23:04:24] INFO root fetch - processPackages [keri]: executing diffoscope
+[2024-05-18 23:04:24] INFO root fetch - processPackages [keri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keri-1.2.0.dev2.tar.gz tmp/keri-1.2.0.dev3.tar.gz --markdown 20240518/k/keri/1.2.0.dev2-1.2.0.dev3/README.md --exclude *.pyd
+[2024-05-18 23:04:24] INFO root fetch - processPackages [braintrust]: Remove: archive file [/home/abi/fetcher/tmp/braintrust-0.0.98.tar.gz]
+[2024-05-18 23:04:24] INFO root fetch - processPackages [braintrust]: Remove: archive file [/home/abi/fetcher/tmp/braintrust-0.0.99.tar.gz]
+[2024-05-18 23:04:24] INFO root fetch - main [MainThread]: End processing [braintrust]: success
+[2024-05-18 23:04:24] INFO root fetch - processPackages [autoevals]: Remove: archive file [/home/abi/fetcher/tmp/autoevals-0.0.8.tar.gz]
+[2024-05-18 23:04:24] INFO root fetch - processPackages [autoevals]: Remove: archive file [/home/abi/fetcher/tmp/autoevals-0.0.9.tar.gz]
+[2024-05-18 23:04:24] INFO root fetch - main [MainThread]: End processing [autoevals]: success
+[2024-05-18 23:04:25] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.0.dev2.tar.gz]
+[2024-05-18 23:04:25] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.0.dev3.tar.gz]
+[2024-05-18 23:04:25] INFO root fetch - main [MainThread]: End processing [keri]: success
+[2024-05-18 23:04:25] INFO root fetch - main [MainThread]: Store serial: [23271224]
