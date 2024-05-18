@@ -20483,3 +20483,40 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:08:10] INFO root fetch - processPackages [fastapi-sso]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sso-0.9.1.tar.gz]
 [2024-05-18 21:08:10] INFO root fetch - main [MainThread]: End processing [fastapi-sso]: success
 [2024-05-18 21:08:10] INFO root fetch - main [MainThread]: Store serial: [23270426]
+[2024-05-18 21:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270426]
+[2024-05-18 21:10:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymonit
+[2024-05-18 21:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEasyDbApi
+[2024-05-18 21:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymonit
+[2024-05-18 21:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyunifiprotect
+[2024-05-18 21:10:19] INFO root fetch - processPackages [pymonit]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-18 21:10:19] INFO root fetch - processPackages [pymonit]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/f3/55/8f41c421292a47237d08c70ce24484085e1728d652b95e1c50f78857aaa3/pymonit-1.4.3.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/f3/55/8f41c421292a47237d08c70ce24484085e1728d652b95e1c50f78857aaa3/pymonit-1.4.3.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyunifiprotect]: New version: [6.0.0] Old Version: [5.2.0]
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/b3/a3/ddef5ceb678c5f1afe48cfd8efbb642474a332aa147e1fd5a60815f7d364/pyeasydbapi-0.0.5.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyunifiprotect]: Downloading https://files.pythonhosted.org/packages/61/b8/a0fd7ff57850b7985b8e82645aedff542fbeff4b53f77d2c0846a5b1294f/pyunifiprotect-5.2.0.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/ea/47/530b66f7732887c44d88a787d97990dabf479aae52e786d11c9e77a59508/pymonit-1.4.4.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/ea/47/530b66f7732887c44d88a787d97990dabf479aae52e786d11c9e77a59508/pymonit-1.4.4.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.4.3.tar.gz tmp/pymonit-1.4.4.tar.gz --markdown 20240518/p/pymonit/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.4.3.tar.gz tmp/pymonit-1.4.4.tar.gz --markdown 20240518/p/pymonit/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/cd/76/cda5f6b65e4819fbde0a3c78ae70885a2a4dd0ef336ed122ed5dbf855d85/pyeasydbapi-0.0.6.tar.gz
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.0.5.tar.gz tmp/pyeasydbapi-0.0.6.tar.gz --markdown 20240518/p/pyEasyDbApi/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 21:10:20] INFO root fetch - processPackages [pyunifiprotect]: Downloading https://files.pythonhosted.org/packages/3f/8e/eb5f89a8a515938e8d5e38f42a500e2ec6a2da706e8040df15de590d81eb/pyunifiprotect-6.0.0.tar.gz
+[2024-05-18 21:10:21] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.3.tar.gz]
+[2024-05-18 21:10:21] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.4.tar.gz]
+[2024-05-18 21:10:21] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-18 21:10:21] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-18 21:10:21] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.5.tar.gz]
+[2024-05-18 21:10:21] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.6.tar.gz]
+[2024-05-18 21:10:21] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:10:23] INFO root fetch - processPackages [pyunifiprotect]: executing diffoscope
+[2024-05-18 21:10:23] INFO root fetch - processPackages [pyunifiprotect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyunifiprotect-5.2.0.tar.gz tmp/pyunifiprotect-6.0.0.tar.gz --markdown 20240518/p/pyunifiprotect/5.2.0-6.0.0/README.md --exclude *.pyd
+[2024-05-18 21:10:24] INFO root fetch - processPackages [pyunifiprotect]: Remove: archive file [/home/abi/fetcher/tmp/pyunifiprotect-5.2.0.tar.gz]
+[2024-05-18 21:10:24] INFO root fetch - processPackages [pyunifiprotect]: Remove: archive file [/home/abi/fetcher/tmp/pyunifiprotect-6.0.0.tar.gz]
+[2024-05-18 21:10:24] INFO root fetch - main [MainThread]: End processing [pyunifiprotect]: success
+[2024-05-18 21:10:24] INFO root fetch - main [MainThread]: Store serial: [23270442]
