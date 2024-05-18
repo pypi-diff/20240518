@@ -14697,3 +14697,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:08:57] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.9.tar.gz]
 [2024-05-18 14:08:57] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
 [2024-05-18 14:08:57] INFO root fetch - main [MainThread]: Store serial: [23267516]
+[2024-05-18 14:11:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267516]
+[2024-05-18 14:11:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 14:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-sops-secrets
+[2024-05-18 14:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyphy2D
+[2024-05-18 14:11:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: semchunk
+[2024-05-18 14:11:06] INFO root fetch - processPackages [semchunk]: New version: [0.3.0] Old Version: [0.2.4]
+[2024-05-18 14:11:06] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.8.3] Old Version: [1.8.2]
+[2024-05-18 14:11:06] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/b1/54/3bb0f68b05369d962faed1b1c22b9f8b25fa8b2e471e31f482cab512e9e8/semchunk-0.2.4.tar.gz
+[2024-05-18 14:11:06] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/b6/ae/5d55b3ea2da5910a4e794cb945f8d268d39dc4e8793635bf3e0b0a91bc4e/cdk-sops-secrets-1.8.2.tar.gz
+[2024-05-18 14:11:07] WARNING root fetch - processPackages [pyphy2D]: Skipping, unable to determine old version
+[2024-05-18 14:11:07] INFO root fetch - main [MainThread]: End processing [pyphy2D] error
+[2024-05-18 14:11:07] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/66/c0/802af289d7384c1ee679166291a46ba74992787a0aae37123524b8086d80/semchunk-0.3.0.tar.gz
+[2024-05-18 14:11:07] INFO root fetch - processPackages [semchunk]: executing diffoscope
+[2024-05-18 14:11:07] INFO root fetch - processPackages [semchunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semchunk-0.2.4.tar.gz tmp/semchunk-0.3.0.tar.gz --markdown 20240518/s/semchunk/0.2.4-0.3.0/README.md --exclude *.pyd
+[2024-05-18 14:11:07] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/40/23/c2680885df87a0ab9a5b104cead0c716a4e4ecbb02a0361ace25e4e8b561/cdk-sops-secrets-1.8.3.tar.gz
+[2024-05-18 14:11:07] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.2.4.tar.gz]
+[2024-05-18 14:11:07] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.0.tar.gz]
+[2024-05-18 14:11:07] INFO root fetch - main [MainThread]: End processing [semchunk]: success
+[2024-05-18 14:11:08] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2024-05-18 14:11:08] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.8.2.tar.gz tmp/cdk-sops-secrets-1.8.3.tar.gz --markdown 20240518/c/cdk-sops-secrets/1.8.2-1.8.3/README.md --exclude *.pyd
+[2024-05-18 14:11:09] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.8.2.tar.gz]
+[2024-05-18 14:11:09] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.8.3.tar.gz]
+[2024-05-18 14:11:09] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2024-05-18 14:11:09] INFO root fetch - main [MainThread]: Store serial: [23267530]
