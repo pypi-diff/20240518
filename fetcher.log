@@ -14622,3 +14622,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:02:25] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.22.3.tar.gz]
 [2024-05-18 14:02:25] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
 [2024-05-18 14:02:25] INFO root fetch - main [MainThread]: Store serial: [23267477]
+[2024-05-18 14:04:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267477]
+[2024-05-18 14:04:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 14:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pykwl
+[2024-05-18 14:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onfon-sms-sender
+[2024-05-18 14:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gogr-tools
+[2024-05-18 14:04:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: traitgpt
+[2024-05-18 14:04:34] INFO root fetch - processPackages [gogr-tools]: New version: [0.0.12] Old Version: [0.0.11]
+[2024-05-18 14:04:34] WARNING root fetch - processPackages [traitgpt]: Skipping, unable to determine old version
+[2024-05-18 14:04:34] INFO root fetch - main [MainThread]: End processing [traitgpt] error
+[2024-05-18 14:04:34] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/a4/64/08b70d477c719b7c6884bae81392bd9b5d8e6eb56cd470e7f43363396160/gogr_tools-0.0.11.tar.gz
+[2024-05-18 14:04:34] WARNING root fetch - processPackages [onfon-sms-sender]: Skipping, unable to determine old version
+[2024-05-18 14:04:34] INFO root fetch - main [MainThread]: End processing [onfon-sms-sender] error
+[2024-05-18 14:04:34] INFO root fetch - processPackages [pykwl]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 14:04:34] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/fe/0d/54df9b3f876d3c7bc02b8863a3d36c544df1258cfed5d2fe0e8fd27e38c5/pykwl-0.0.8.tar.gz
+[2024-05-18 14:04:34] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/92/9d/87ac8b9e50cfc3e5de8e6ee63e0a1e8a8bf0779fbaf19731ef9075b21e3e/gogr_tools-0.0.12.tar.gz
+[2024-05-18 14:04:35] INFO root fetch - processPackages [gogr-tools]: executing diffoscope
+[2024-05-18 14:04:35] INFO root fetch - processPackages [gogr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gogr_tools-0.0.11.tar.gz tmp/gogr_tools-0.0.12.tar.gz --markdown 20240518/g/gogr-tools/0.0.11-0.0.12/README.md --exclude *.pyd
+[2024-05-18 14:04:35] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/af/8c/4103b3c2c1d782a7b72db67a054d581ce765d3887de52331b6ed5b7e36cd/pykwl-0.0.9.tar.gz
+[2024-05-18 14:04:35] INFO root fetch - processPackages [pykwl]: executing diffoscope
+[2024-05-18 14:04:35] INFO root fetch - processPackages [pykwl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykwl-0.0.8.tar.gz tmp/pykwl-0.0.9.tar.gz --markdown 20240518/p/pykwl/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 14:04:35] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.11.tar.gz]
+[2024-05-18 14:04:35] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.12.tar.gz]
+[2024-05-18 14:04:35] INFO root fetch - main [MainThread]: End processing [gogr-tools]: success
+[2024-05-18 14:04:35] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.8.tar.gz]
+[2024-05-18 14:04:35] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.9.tar.gz]
+[2024-05-18 14:04:35] INFO root fetch - main [MainThread]: End processing [pykwl]: success
+[2024-05-18 14:04:35] INFO root fetch - main [MainThread]: Store serial: [23267493]
