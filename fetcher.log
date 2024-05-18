@@ -20660,3 +20660,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:21:20] INFO root fetch - processPackages [TrackingNet]: Remove: archive file [/home/abi/fetcher/tmp/TrackingNet-0.0.8.tar.gz]
 [2024-05-18 21:21:20] INFO root fetch - main [MainThread]: End processing [TrackingNet]: success
 [2024-05-18 21:21:20] INFO root fetch - main [MainThread]: Store serial: [23270506]
+[2024-05-18 21:23:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270506]
+[2024-05-18 21:23:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-invoice-policy
+[2024-05-18 21:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: overlicentiousz
+[2024-05-18 21:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-common
+[2024-05-18 21:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oooenv
+[2024-05-18 21:23:29] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: New version: [17.0.1.0.0.2] Old Version: [16.0.2.0.0.1]
+[2024-05-18 21:23:29] WARNING root fetch - processPackages [overlicentiousz]: Skipping, unable to determine old version
+[2024-05-18 21:23:29] INFO root fetch - main [MainThread]: End processing [overlicentiousz] error
+[2024-05-18 21:23:29] INFO root fetch - processPackages [oooenv]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-18 21:23:29] INFO root fetch - processPackages [fastapi-common]: New version: [0.3.9.2] Old Version: [0.3.12.0]
+[2024-05-18 21:23:29] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Downloading https://files.pythonhosted.org/packages/5c/cb/a07220624da1b32449b47a05f7cb87b8afa7fc08c7c064f37b94f9940a46/odoo_addon_sale_invoice_policy-16.0.2.0.0.1-py3-none-any.whl
+[2024-05-18 21:23:30] INFO root fetch - processPackages [fastapi-common]: Downloading https://files.pythonhosted.org/packages/2d/73/34aa6b2ca651a91d7b9a8d310499e52561ca2d55b42ec82ea50ede824f81/fastapi-common-0.3.12.0.tar.gz
+[2024-05-18 21:23:30] INFO root fetch - processPackages [oooenv]: Downloading https://files.pythonhosted.org/packages/06/4c/209567c1500a8df23931fe5b4997398d9a86ab492d4bfff0102efc9dcfc3/oooenv-0.2.3.tar.gz
+[2024-05-18 21:23:30] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Downloading https://files.pythonhosted.org/packages/da/ba/eb788322b1e0484f7cd9f78655b8712f227af3801e913473f6656258530c/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-18 21:23:30] INFO root fetch - processPackages [fastapi-common]: Downloading https://files.pythonhosted.org/packages/08/5f/e0ca95d99ff27a275f86d7173d3bdc8caf611c266fe3b0610abc2e93ef0a/fastapi-common-0.3.9.2.tar.gz
+[2024-05-18 21:23:30] INFO root fetch - processPackages [oooenv]: Downloading https://files.pythonhosted.org/packages/10/ad/4c46a0792b6d55fe06d5c6d7dcae6484a5f3299fc109761b03a76f3c9072/oooenv-0.2.4.tar.gz
+[2024-05-18 21:23:30] INFO root fetch - processPackages [fastapi-common]: executing diffoscope
+[2024-05-18 21:23:30] INFO root fetch - processPackages [fastapi-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-common-0.3.12.0.tar.gz tmp/fastapi-common-0.3.9.2.tar.gz --markdown 20240518/f/fastapi-common/0.3.12.0-0.3.9.2/README.md --exclude *.pyd
+[2024-05-18 21:23:30] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: executing diffoscope
+[2024-05-18 21:23:30] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_invoice_policy-16.0.2.0.0.1-py3-none-any.whl.zip tmp/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-sale-invoice-policy/16.0.2.0.0.1-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-18 21:23:30] INFO root fetch - processPackages [oooenv]: executing diffoscope
+[2024-05-18 21:23:30] INFO root fetch - processPackages [oooenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oooenv-0.2.3.tar.gz tmp/oooenv-0.2.4.tar.gz --markdown 20240518/o/oooenv/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-18 21:23:31] INFO root fetch - processPackages [fastapi-common]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-common-0.3.12.0.tar.gz]
+[2024-05-18 21:23:31] INFO root fetch - processPackages [fastapi-common]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-common-0.3.9.2.tar.gz]
+[2024-05-18 21:23:31] INFO root fetch - processPackages [oooenv]: Remove: archive file [/home/abi/fetcher/tmp/oooenv-0.2.3.tar.gz]
+[2024-05-18 21:23:31] INFO root fetch - main [MainThread]: End processing [fastapi-common]: success
+[2024-05-18 21:23:31] INFO root fetch - processPackages [oooenv]: Remove: archive file [/home/abi/fetcher/tmp/oooenv-0.2.4.tar.gz]
+[2024-05-18 21:23:31] INFO root fetch - main [MainThread]: End processing [oooenv]: success
+[2024-05-18 21:23:31] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_invoice_policy-16.0.2.0.0.1-py3-none-any.whl.zip]
+[2024-05-18 21:23:31] INFO root fetch - processPackages [odoo-addon-sale-invoice-policy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_invoice_policy-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-18 21:23:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-invoice-policy]: success
+[2024-05-18 21:23:31] INFO root fetch - main [MainThread]: Store serial: [23270518]
