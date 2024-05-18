@@ -13643,3 +13643,21 @@
 [2024-05-18 12:47:08] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.4.0.tar.gz]
 [2024-05-18 12:47:08] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
 [2024-05-18 12:47:08] INFO root fetch - main [MainThread]: Store serial: [23267043]
+[2024-05-18 12:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267043]
+[2024-05-18 12:49:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyphyi
+[2024-05-18 12:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blueblack
+[2024-05-18 12:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: geom-archetypal
+[2024-05-18 12:49:19] WARNING root fetch - processPackages [geom-archetypal]: Skipping, unable to determine old version
+[2024-05-18 12:49:19] INFO root fetch - main [MainThread]: End processing [geom-archetypal] error
+[2024-05-18 12:49:19] WARNING root fetch - processPackages [pyphyi]: Skipping, unable to determine old version
+[2024-05-18 12:49:19] INFO root fetch - main [MainThread]: End processing [pyphyi] error
+[2024-05-18 12:49:19] INFO root fetch - processPackages [blueblack]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 12:49:19] INFO root fetch - processPackages [blueblack]: Downloading https://files.pythonhosted.org/packages/57/3b/04553babc72237662c436f098067d734af271af2b8158c88164e0169eaa4/blueblack-1.0.1.tar.gz
+[2024-05-18 12:49:19] INFO root fetch - processPackages [blueblack]: Downloading https://files.pythonhosted.org/packages/ca/9b/49b167d617fc3ae243327a1fbcca169ba6fd3e0a78cca20885fc91432628/blueblack-1.0.2.tar.gz
+[2024-05-18 12:49:19] INFO root fetch - processPackages [blueblack]: executing diffoscope
+[2024-05-18 12:49:19] INFO root fetch - processPackages [blueblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blueblack-1.0.1.tar.gz tmp/blueblack-1.0.2.tar.gz --markdown 20240518/b/blueblack/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 12:49:20] INFO root fetch - processPackages [blueblack]: Remove: archive file [/home/abi/fetcher/tmp/blueblack-1.0.1.tar.gz]
+[2024-05-18 12:49:20] INFO root fetch - processPackages [blueblack]: Remove: archive file [/home/abi/fetcher/tmp/blueblack-1.0.2.tar.gz]
+[2024-05-18 12:49:20] INFO root fetch - main [MainThread]: End processing [blueblack]: success
+[2024-05-18 12:49:20] INFO root fetch - main [MainThread]: Store serial: [23267052]
