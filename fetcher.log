@@ -8358,3 +8358,114 @@
 [2024-05-18 05:15:59] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-05-18 05:15:59] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-05-18 05:15:59] INFO root fetch - main [MainThread]: Store serial: [23264342]
+[2024-05-18 05:18:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264342]
+[2024-05-18 05:18:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-sale-commission
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo13-addon-sale-commission
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskara
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-sale-commission-geo-assign-product-domain
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-sale-commission
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-urlopen
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-commission
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-commission-formula
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo-addon-account-commission
+[2024-05-18 05:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cns
+[2024-05-18 05:18:08] INFO root fetch - processPackages [cns]: New version: [1.9.42] Old Version: [1.9.41]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: New version: [14.0.1.3.0] Old Version: [14.0.1.2.2.dev2]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [python-urlopen]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo12-addon-sale-commission]: New version: [12.0.3.3.3.99.dev3] Old Version: [12.0.3.3.3.99.dev2]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo-addon-commission]: New version: [17.0.1.1.0.2] Old Version: [17.0.1.1.0]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo-addon-account-commission]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [taskara]: New version: [0.1.8] Old Version: [0.1.79]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo-addon-commission-formula]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.3]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/e5/8c/76c3f1a3993d4c6c543eef602ec58eafa7bcc4b676834229781f42922b5c/odoo12_addon_sale_commission-12.0.3.3.3.99.dev2-py3-none-any.whl
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo14-addon-sale-commission]: New version: [14.0.1.8.1.dev6] Old Version: [14.0.1.8.1.dev5]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo13-addon-sale-commission]: New version: [13.0.1.8.1.dev9] Old Version: [13.0.1.8.1.dev8]
+[2024-05-18 05:18:08] INFO root fetch - processPackages [python-urlopen]: Downloading https://files.pythonhosted.org/packages/69/ed/bddc9e8f61c66eab5fdceec89606392ab409fac9c52a1470e486a0031fd6/python_urlopen-0.0.1.tar.gz
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo-addon-account-commission]: Downloading https://files.pythonhosted.org/packages/07/6a/120790022a0b33e90617629f4a6ab6a0ca2b9127c200bd7be5cab0ff0b91/odoo_addon_account_commission-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: Downloading https://files.pythonhosted.org/packages/a8/41/93f2f651af97384d27d738c5e578b00a9423b72d872c706ede6f4a45a798/odoo14_addon_sale_commission_geo_assign_product_domain-14.0.1.2.2.dev2-py3-none-any.whl
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/82/a8/9246a591a111ccc2e9852a7a8f7387ff1263c290ae84204dafd50e63c1ce/odoo_addon_commission-17.0.1.1.0-py3-none-any.whl
+[2024-05-18 05:18:08] INFO root fetch - processPackages [cns]: Downloading https://files.pythonhosted.org/packages/8c/95/5cda712dac27c5db01b11d7c6abfbd13fabd6a1ab79c52981aaad96c98c2/cns-1.9.41-py3-none-any.whl
+[2024-05-18 05:18:08] INFO root fetch - processPackages [odoo-addon-commission-formula]: Downloading https://files.pythonhosted.org/packages/9f/af/f8fe49931768efca3d75d93e6f7d67e6e044d8f138c8379a4914e9d50494/odoo_addon_commission_formula-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-18 05:18:08] INFO root fetch - processPackages [taskara]: Downloading https://files.pythonhosted.org/packages/e7/10/5ca29af4df81f926835c87d700c64b942bbb4f2f67be7786c32ffd82f548/taskara-0.1.79.tar.gz
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/ff/b8/70ef32df148ea0314bdd9bd9357c2717511bdf5d9b7d74762f3abe28be3e/odoo14_addon_sale_commission-14.0.1.8.1.dev5-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo13-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/42/63/af124af572288fc9b52cc50bf309008b0ae4cb4312f0f3b6d94cc20df777/odoo13_addon_sale_commission-13.0.1.8.1.dev8-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [python-urlopen]: Downloading https://files.pythonhosted.org/packages/5c/37/ad4c91bbfd26cdb52130b6776afbf4b13b4560fb05bb693381d80d70ed37/python_urlopen-0.0.1.1.tar.gz
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/2f/82/b5604a4dea1d4ee80f5e0364c49a3be4d2012a7397f5c1f3db3b8e6b6290/odoo12_addon_sale_commission-12.0.3.3.3.99.dev3-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: Downloading https://files.pythonhosted.org/packages/50/5b/7a78d332da5e9ecf6d1a5dfe0d522f323820c7d638ba62d9785b1e68f28e/odoo14_addon_sale_commission_geo_assign_product_domain-14.0.1.3.0-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [python-urlopen]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [python-urlopen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_urlopen-0.0.1.tar.gz tmp/python_urlopen-0.0.1.1.tar.gz --markdown 20240518/p/python-urlopen/0.0.1-0.0.1.1/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/f7/9d/6ad657330b3f926287b746bae87ef4b1fdfdb92312e378839abf23e1614c/odoo_addon_commission-17.0.1.1.0.2-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-account-commission]: Downloading https://files.pythonhosted.org/packages/02/c0/5a57dff68a7c471f3785c50ae79ce45722678cf6bf7d19b99f1197dc42a2/odoo_addon_account_commission-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo12-addon-sale-commission]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo12-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev3-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-sale-commission/12.0.3.3.3.99.dev2-12.0.3.3.3.99.dev3/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_commission_geo_assign_product_domain-14.0.1.2.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_sale_commission_geo_assign_product_domain-14.0.1.3.0-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-sale-commission-geo-assign-product-domain/14.0.1.2.2.dev2-14.0.1.3.0/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-commission]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_commission-17.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_commission-17.0.1.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-commission/17.0.1.1.0-17.0.1.1.0.2/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-account-commission]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-account-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_commission-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_commission-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-commission/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-commission-formula]: Downloading https://files.pythonhosted.org/packages/3b/b9/cf48fb64819fb208368751870b243e564f4ad104f34203ffd53fa09ecdf6/odoo_addon_commission_formula-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [taskara]: Downloading https://files.pythonhosted.org/packages/c0/4f/e9467a6dd755091e2fe2294b58569b289c5252fd70463791829fd99fbfd7/taskara-0.1.8.tar.gz
+[2024-05-18 05:18:09] INFO root fetch - processPackages [cns]: Downloading https://files.pythonhosted.org/packages/3f/e8/ce6fc3eb7b423ff82d3f0ce4d75a62ce373f49b60d07431f8dfbc86fc2d2/cns-1.9.42-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/7b/b9/121bf20a42d18bce7fced5c394c7ad8f26604ef278e76ab7ef48db71e607/odoo14_addon_sale_commission-14.0.1.8.1.dev6-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [taskara]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [taskara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskara-0.1.79.tar.gz tmp/taskara-0.1.8.tar.gz --markdown 20240518/t/taskara/0.1.79-0.1.8/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo13-addon-sale-commission]: Downloading https://files.pythonhosted.org/packages/94/7c/d7b233d3e0aa7cf28d8428217e2297ca0c3f2d996dd4cd4bd49eb76c37f0/odoo13_addon_sale_commission-13.0.1.8.1.dev9-py3-none-any.whl
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-commission-formula]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo-addon-commission-formula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_commission_formula-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_commission_formula-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-commission-formula/17.0.1.0.0.3-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo14-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_commission-14.0.1.8.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_sale_commission-14.0.1.8.1.dev6-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-sale-commission/14.0.1.8.1.dev5-14.0.1.8.1.dev6/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [cns]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [cns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cns-1.9.41-py3-none-any.whl.zip tmp/cns-1.9.42-py3-none-any.whl.zip --markdown 20240518/c/cns/1.9.41-1.9.42/README.md --exclude *.pyd
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo13-addon-sale-commission]: executing diffoscope
+[2024-05-18 05:18:09] INFO root fetch - processPackages [odoo13-addon-sale-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_sale_commission-13.0.1.8.1.dev8-py3-none-any.whl.zip tmp/odoo13_addon_sale_commission-13.0.1.8.1.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo13-addon-sale-commission/13.0.1.8.1.dev8-13.0.1.8.1.dev9/README.md --exclude *.pyd
+[2024-05-18 05:18:10] INFO root fetch - processPackages [python-urlopen]: Remove: archive file [/home/abi/fetcher/tmp/python_urlopen-0.0.1.tar.gz]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [python-urlopen]: Remove: archive file [/home/abi/fetcher/tmp/python_urlopen-0.0.1.1.tar.gz]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [python-urlopen]: Start processing: odoo-addon-commission
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [python-urlopen]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission]: New version: [17.0.1.1.0.4] Old Version: [17.0.1.1.0.2]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_commission_geo_assign_product_domain-14.0.1.2.2.dev2-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_commission_geo_assign_product_domain-14.0.1.3.0-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo14-addon-sale-commission-geo-assign-product-domain]: Start processing: hagworm
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-commission-geo-assign-product-domain]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/4e/98/e467ae0ad9f2002355e5214449f60b62dfc76775b8e38eac37f0275c0bc9/odoo_addon_commission-17.0.1.1.0.4-py3-none-any.whl
+[2024-05-18 05:18:10] INFO root fetch - processPackages [taskara]: Remove: archive file [/home/abi/fetcher/tmp/taskara-0.1.79.tar.gz]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [taskara]: Remove: archive file [/home/abi/fetcher/tmp/taskara-0.1.8.tar.gz]
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [taskara]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [hagworm]: New version: [5.9.9] Old Version: [5.9.8]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev2-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo12-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_sale_commission-12.0.3.3.3.99.dev3-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-commission]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission-17.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission-17.0.1.1.0.2-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-account-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_commission-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-commission]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-account-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_commission-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-commission]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission]: executing diffoscope
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_commission-17.0.1.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_commission-17.0.1.1.0.4-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-commission/17.0.1.1.0.2-17.0.1.1.0.4/README.md --exclude *.pyd
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission-formula]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission_formula-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo-addon-commission-formula]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission_formula-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-commission-formula]: success
+[2024-05-18 05:18:10] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/e0/1c/5dac91f7c38d49ccecfdc58d536db8299a6047d9ff58930a0d6013757ea4/hagworm-5.9.8.tar.gz
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo14-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_commission-14.0.1.8.1.dev5-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - processPackages [odoo14-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_commission-14.0.1.8.1.dev6-py3-none-any.whl.zip]
+[2024-05-18 05:18:10] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-commission]: success
+[2024-05-18 05:18:11] INFO root fetch - processPackages [odoo13-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_sale_commission-13.0.1.8.1.dev8-py3-none-any.whl.zip]
+[2024-05-18 05:18:11] INFO root fetch - processPackages [odoo13-addon-sale-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_sale_commission-13.0.1.8.1.dev9-py3-none-any.whl.zip]
+[2024-05-18 05:18:11] INFO root fetch - main [MainThread]: End processing [odoo13-addon-sale-commission]: success
+[2024-05-18 05:18:11] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.9.41-py3-none-any.whl.zip]
+[2024-05-18 05:18:11] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.9.42-py3-none-any.whl.zip]
+[2024-05-18 05:18:11] INFO root fetch - main [MainThread]: End processing [cns]: success
+[2024-05-18 05:18:11] ERROR root fetch - processPackages [odoo-addon-commission]: Diffoscope failed: time="2024-05-18T05:18:10+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+/srv/diffoscope/bin/diffoscope: tmp/odoo_addon_commission-17.0.1.1.0.2-py3-none-any.whl.zip: No such file or directory
+
+[2024-05-18 05:18:11] INFO root fetch - main [MainThread]: End processing [odoo-addon-commission] error
+[2024-05-18 05:18:11] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/2f/0d/16fd32d0754a2e5208aede68d6b772bc36ed5dcefe41035760e37a84fbbc/hagworm-5.9.9.tar.gz
+[2024-05-18 05:18:11] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2024-05-18 05:18:11] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.9.8.tar.gz tmp/hagworm-5.9.9.tar.gz --markdown 20240518/h/hagworm/5.9.8-5.9.9/README.md --exclude *.pyd
+[2024-05-18 05:18:11] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.8.tar.gz]
+[2024-05-18 05:18:11] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.9.tar.gz]
+[2024-05-18 05:18:11] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2024-05-18 05:18:11] INFO root fetch - main [MainThread]: Store serial: [23264368]
