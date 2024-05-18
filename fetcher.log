@@ -8096,3 +8096,27 @@
 [2024-05-18 05:00:43] INFO root fetch - processPackages [odoo-addon-account-payment-widget-amount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_widget_amount-16.0.1.0.0.4-py3-none-any.whl.zip]
 [2024-05-18 05:00:43] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-widget-amount]: success
 [2024-05-18 05:00:43] INFO root fetch - main [MainThread]: Store serial: [23264252]
+[2024-05-18 05:02:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264252]
+[2024-05-18 05:02:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 05:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trade-learn
+[2024-05-18 05:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-18 05:02:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-times
+[2024-05-18 05:02:52] INFO root fetch - processPackages [balsamic]: New version: [0.1.94] Old Version: [0.1.93]
+[2024-05-18 05:02:52] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/46/8c/44a9b0de455061c9cfc7ee17fd8eba3553f31c99a0174b25e1d7b8d62d23/balsamic-0.1.93.tar.gz
+[2024-05-18 05:02:52] WARNING root fetch - processPackages [trade-learn]: Skipping, unable to determine old version
+[2024-05-18 05:02:52] INFO root fetch - main [MainThread]: End processing [trade-learn] error
+[2024-05-18 05:02:52] INFO root fetch - processPackages [mo-times]: New version: [5.631.24139] Old Version: [5.629.24136]
+[2024-05-18 05:02:52] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/cb/9a/fae7d5b16a1245b37996a7dd6299975a54f75bc72a454ac76036a3ee00ef/mo_times-5.629.24136.tar.gz
+[2024-05-18 05:02:52] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/80/5a/d9dd650deab6ef05ddfb59f1a68132ae56134f57e3bfcb214f62f337b663/balsamic-0.1.94.tar.gz
+[2024-05-18 05:02:52] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 05:02:52] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.93.tar.gz tmp/balsamic-0.1.94.tar.gz --markdown 20240518/b/balsamic/0.1.93-0.1.94/README.md --exclude *.pyd
+[2024-05-18 05:02:52] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/4b/80/601f35ce54568ac0e7d28daad764c9b1f092b8e51d3a7cd3d30cdd6348ae/mo_times-5.631.24139.tar.gz
+[2024-05-18 05:02:52] INFO root fetch - processPackages [mo-times]: executing diffoscope
+[2024-05-18 05:02:52] INFO root fetch - processPackages [mo-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_times-5.629.24136.tar.gz tmp/mo_times-5.631.24139.tar.gz --markdown 20240518/m/mo-times/5.629.24136-5.631.24139/README.md --exclude *.pyd
+[2024-05-18 05:02:53] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.93.tar.gz]
+[2024-05-18 05:02:53] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.94.tar.gz]
+[2024-05-18 05:02:53] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 05:02:53] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.629.24136.tar.gz]
+[2024-05-18 05:02:53] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.631.24139.tar.gz]
+[2024-05-18 05:02:53] INFO root fetch - main [MainThread]: End processing [mo-times]: success
+[2024-05-18 05:02:53] INFO root fetch - main [MainThread]: Store serial: [23264262]
