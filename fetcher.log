@@ -10241,3 +10241,50 @@
 [2024-05-18 07:58:50] WARNING root fetch - processPackages [itineratedz]: Skipping, unable to determine old version
 [2024-05-18 07:58:50] INFO root fetch - main [MainThread]: End processing [itineratedz] error
 [2024-05-18 07:58:50] INFO root fetch - main [MainThread]: Store serial: [23265116]
+[2024-05-18 08:00:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265116]
+[2024-05-18 08:00:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 08:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: miniosl
+[2024-05-18 08:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-18 08:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmder
+[2024-05-18 08:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: WrenchCL
+[2024-05-18 08:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plumage
+[2024-05-18 08:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: org-ds-cdk.apigateway
+[2024-05-18 08:00:59] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1716010292] Old Version: [0.0.21a1716009809]
+[2024-05-18 08:00:59] INFO root fetch - processPackages [WrenchCL]: New version: [2.1.3] Old Version: [2.1.2]
+[2024-05-18 08:00:59] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/18/37/d3fe5f5cbc513f10bedc60794052160672708e5688e64b4f7f459411c765/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz
+[2024-05-18 08:00:59] INFO root fetch - processPackages [miniosl]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 08:00:59] WARNING root fetch - processPackages [org-ds-cdk.apigateway]: Skipping, unable to determine old version
+[2024-05-18 08:00:59] INFO root fetch - main [MainThread]: End processing [org-ds-cdk.apigateway] error
+[2024-05-18 08:00:59] INFO root fetch - processPackages [plumage]: New version: [4.0.0] Old Version: [3.1.0]
+[2024-05-18 08:00:59] INFO root fetch - processPackages [WrenchCL]: Downloading https://files.pythonhosted.org/packages/31/4f/23d384ebff8c5e90620aae8859429b820f7a64c7b4cf0f120bdaa2259489/WrenchCL-2.1.2.tar.gz
+[2024-05-18 08:00:59] INFO root fetch - processPackages [cmder]: New version: [5.0] Old Version: [4.0]
+[2024-05-18 08:00:59] INFO root fetch - processPackages [miniosl]: Downloading https://files.pythonhosted.org/packages/c5/2a/b95189fef0074a01461c871f9d0b33bdeaee851a9c678c6b429605768317/miniosl-0.1.0-cp310-cp310-manylinux_2_28_x86_64.whl
+[2024-05-18 08:00:59] INFO root fetch - processPackages [plumage]: Downloading https://files.pythonhosted.org/packages/d7/4d/8deca3be4c501a5dc04f1e82ea5f087ca901be6395d6ba4a1cb70cdf5690/plumage-3.1.0.tar.gz
+[2024-05-18 08:00:59] INFO root fetch - processPackages [cmder]: Downloading https://files.pythonhosted.org/packages/96/7f/b271977af22d4ef53acf5a705840cedb4df79bf76f10ae1788fd92171cab/cmder-4.0.tar.gz
+[2024-05-18 08:00:59] WARNING root fetch - processPackages [miniosl]: Skipping package: exceeds size limit 11917122>=10485760
+[2024-05-18 08:00:59] INFO root fetch - main [MainThread]: End processing [miniosl] error
+[2024-05-18 08:00:59] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/44/57/29a7062c0de371e6c2a6d15e3f50e6dfde01965c06f6da04e170eb79205d/pulumi_kubernetes_the_hard_way-0.0.21a1716010292.tar.gz
+[2024-05-18 08:01:00] INFO root fetch - processPackages [WrenchCL]: Downloading https://files.pythonhosted.org/packages/f0/6a/4504eff5b367dce489c0397489273a342e6d309cdb1dd9d563bc581b0d81/WrenchCL-2.1.3.tar.gz
+[2024-05-18 08:01:00] INFO root fetch - processPackages [WrenchCL]: executing diffoscope
+[2024-05-18 08:01:00] INFO root fetch - processPackages [WrenchCL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WrenchCL-2.1.2.tar.gz tmp/WrenchCL-2.1.3.tar.gz --markdown 20240518/W/WrenchCL/2.1.2-2.1.3/README.md --exclude *.pyd
+[2024-05-18 08:01:00] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-18 08:01:00] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716010292.tar.gz --markdown 20240518/p/pulumi-kubernetes-the-hard-way/0.0.21a1716009809-0.0.21a1716010292/README.md --exclude *.pyd
+[2024-05-18 08:01:00] INFO root fetch - processPackages [cmder]: Downloading https://files.pythonhosted.org/packages/15/0f/a9eae1b1175e45668630d3e2938858a6f99fba7ddede30f73fd82111a107/cmder-5.0.tar.gz
+[2024-05-18 08:01:00] INFO root fetch - processPackages [plumage]: Downloading https://files.pythonhosted.org/packages/9d/f8/96d08f28f3022d24728b248c84ea6a17dba90438512415a03ee28c0ad8e4/plumage-4.0.0.tar.gz
+[2024-05-18 08:01:00] INFO root fetch - processPackages [cmder]: executing diffoscope
+[2024-05-18 08:01:00] INFO root fetch - processPackages [cmder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmder-4.0.tar.gz tmp/cmder-5.0.tar.gz --markdown 20240518/c/cmder/4.0-5.0/README.md --exclude *.pyd
+[2024-05-18 08:01:00] INFO root fetch - processPackages [plumage]: executing diffoscope
+[2024-05-18 08:01:00] INFO root fetch - processPackages [plumage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plumage-3.1.0.tar.gz tmp/plumage-4.0.0.tar.gz --markdown 20240518/p/plumage/3.1.0-4.0.0/README.md --exclude *.pyd
+[2024-05-18 08:01:00] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716009809.tar.gz]
+[2024-05-18 08:01:00] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716010292.tar.gz]
+[2024-05-18 08:01:00] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-18 08:01:00] INFO root fetch - processPackages [WrenchCL]: Remove: archive file [/home/abi/fetcher/tmp/WrenchCL-2.1.2.tar.gz]
+[2024-05-18 08:01:00] INFO root fetch - processPackages [WrenchCL]: Remove: archive file [/home/abi/fetcher/tmp/WrenchCL-2.1.3.tar.gz]
+[2024-05-18 08:01:00] INFO root fetch - main [MainThread]: End processing [WrenchCL]: success
+[2024-05-18 08:01:01] INFO root fetch - processPackages [cmder]: Remove: archive file [/home/abi/fetcher/tmp/cmder-4.0.tar.gz]
+[2024-05-18 08:01:01] INFO root fetch - processPackages [cmder]: Remove: archive file [/home/abi/fetcher/tmp/cmder-5.0.tar.gz]
+[2024-05-18 08:01:01] INFO root fetch - main [MainThread]: End processing [cmder]: success
+[2024-05-18 08:01:01] INFO root fetch - processPackages [plumage]: Remove: archive file [/home/abi/fetcher/tmp/plumage-3.1.0.tar.gz]
+[2024-05-18 08:01:01] INFO root fetch - processPackages [plumage]: Remove: archive file [/home/abi/fetcher/tmp/plumage-4.0.0.tar.gz]
+[2024-05-18 08:01:01] INFO root fetch - main [MainThread]: End processing [plumage]: success
+[2024-05-18 08:01:01] INFO root fetch - main [MainThread]: Store serial: [23265135]
