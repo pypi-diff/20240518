@@ -9220,3 +9220,59 @@
 [2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: Remove: archive file [/home/abi/fetcher/tmp/uac-api-0.4.7.tar.gz]
 [2024-05-18 06:23:30] INFO root fetch - main [MainThread]: End processing [uac-api]: success
 [2024-05-18 06:23:30] INFO root fetch - main [MainThread]: Store serial: [23264684]
+[2024-05-18 06:25:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264684]
+[2024-05-18 06:25:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docmesh-agent
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-chikari-yinpa
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FirstGame
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trimesh
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: docmesh-server
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: githide
+[2024-05-18 06:25:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: docmake
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmake]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmesh-server]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 06:25:39] INFO root fetch - processPackages [FirstGame]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmesh-agent]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmake]: Downloading https://files.pythonhosted.org/packages/bf/8f/9c6b273e518769460f606dafb04826eae36eaa6bc28d818df66395ece744/docmake-0.1.3.tar.gz
+[2024-05-18 06:25:39] WARNING root fetch - processPackages [githide]: Skipping, unable to determine old version
+[2024-05-18 06:25:39] INFO root fetch - main [MainThread]: End processing [githide] error
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmesh-server]: Downloading https://files.pythonhosted.org/packages/4d/fc/bd97515e8f1310280580626090f983e5d36a1ac81a67e1651f0a7dbb349a/docmesh_server-0.0.3.tar.gz
+[2024-05-18 06:25:39] INFO root fetch - processPackages [trimesh]: New version: [4.4.0] Old Version: [4.3.2]
+[2024-05-18 06:25:39] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmesh-agent]: Downloading https://files.pythonhosted.org/packages/0a/c8/e5d65b578b20a4ff8e0ea57392bbb9c3cb24b9445cd426c981917e10e354/docmesh_agent-0.0.6.tar.gz
+[2024-05-18 06:25:39] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/f5/22/0065e3ab9bf7517a6857badd0346ff4f10316c4b341a0d447f2e559c588e/FirstGame-1.0.8.tar.gz
+[2024-05-18 06:25:39] WARNING root fetch - processPackages [FirstGame]: Skipping package: exceeds size limit 50005693>=10485760
+[2024-05-18 06:25:39] INFO root fetch - main [MainThread]: End processing [FirstGame] error
+[2024-05-18 06:25:39] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: Downloading https://files.pythonhosted.org/packages/b4/52/f6f6456ec6e048bc1938fc2d5b8296491ca9d1517f9097234c6547966fe6/nonebot_plugin_chikari_yinpa-1.4.2.tar.gz
+[2024-05-18 06:25:39] INFO root fetch - processPackages [docmake]: Downloading https://files.pythonhosted.org/packages/dd/d0/ef342daf31050143161fad086a9955d726f970596d0242be4caef8fdcb28/docmake-0.1.4.tar.gz
+[2024-05-18 06:25:39] INFO root fetch - processPackages [trimesh]: Downloading https://files.pythonhosted.org/packages/a7/c1/2afa2dd7bb40dd9ee4286af3938bd0c029e8cdfc729455d516637bd474a2/trimesh-4.3.2.tar.gz
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-agent]: Downloading https://files.pythonhosted.org/packages/13/db/bc6a5e64c67a29b948213c2ee62049af2b2c9712b035ae0895638a334026/docmesh_agent-0.0.7.tar.gz
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-server]: Downloading https://files.pythonhosted.org/packages/04/26/c66790a447560adc9825304681776a77cbd07e164415defcc83fad4e1b89/docmesh_server-0.0.4.tar.gz
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmake]: executing diffoscope
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docmake-0.1.3.tar.gz tmp/docmake-0.1.4.tar.gz --markdown 20240518/d/docmake/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-agent]: executing diffoscope
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docmesh_agent-0.0.6.tar.gz tmp/docmesh_agent-0.0.7.tar.gz --markdown 20240518/d/docmesh-agent/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-server]: executing diffoscope
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docmesh_server-0.0.3.tar.gz tmp/docmesh_server-0.0.4.tar.gz --markdown 20240518/d/docmesh-server/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 06:25:40] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: Downloading https://files.pythonhosted.org/packages/6b/72/ae46853cd188db184df6d2850ab12fdf576e79b5dccc203d23a705632417/nonebot_plugin_chikari_yinpa-1.4.3.tar.gz
+[2024-05-18 06:25:40] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: executing diffoscope
+[2024-05-18 06:25:40] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chikari_yinpa-1.4.2.tar.gz tmp/nonebot_plugin_chikari_yinpa-1.4.3.tar.gz --markdown 20240518/n/nonebot-plugin-chikari-yinpa/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-05-18 06:25:40] INFO root fetch - processPackages [trimesh]: Downloading https://files.pythonhosted.org/packages/55/0a/e6367966eb9929b40ee5953208196f292ff8b8e2641ef238b763399b6429/trimesh-4.4.0.tar.gz
+[2024-05-18 06:25:40] INFO root fetch - processPackages [trimesh]: executing diffoscope
+[2024-05-18 06:25:40] INFO root fetch - processPackages [trimesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trimesh-4.3.2.tar.gz tmp/trimesh-4.4.0.tar.gz --markdown 20240518/t/trimesh/4.3.2-4.4.0/README.md --exclude *.pyd
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmake]: Remove: archive file [/home/abi/fetcher/tmp/docmake-0.1.3.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmake]: Remove: archive file [/home/abi/fetcher/tmp/docmake-0.1.4.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - main [MainThread]: End processing [docmake]: success
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-agent]: Remove: archive file [/home/abi/fetcher/tmp/docmesh_agent-0.0.6.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-agent]: Remove: archive file [/home/abi/fetcher/tmp/docmesh_agent-0.0.7.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - main [MainThread]: End processing [docmesh-agent]: success
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-server]: Remove: archive file [/home/abi/fetcher/tmp/docmesh_server-0.0.3.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - processPackages [docmesh-server]: Remove: archive file [/home/abi/fetcher/tmp/docmesh_server-0.0.4.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - main [MainThread]: End processing [docmesh-server]: success
+[2024-05-18 06:25:40] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_yinpa-1.4.2.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - processPackages [nonebot-plugin-chikari-yinpa]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_yinpa-1.4.3.tar.gz]
+[2024-05-18 06:25:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chikari-yinpa]: success
+[2024-05-18 06:25:42] INFO root fetch - processPackages [trimesh]: Remove: archive file [/home/abi/fetcher/tmp/trimesh-4.3.2.tar.gz]
+[2024-05-18 06:25:42] INFO root fetch - processPackages [trimesh]: Remove: archive file [/home/abi/fetcher/tmp/trimesh-4.4.0.tar.gz]
+[2024-05-18 06:25:42] INFO root fetch - main [MainThread]: End processing [trimesh]: success
+[2024-05-18 06:25:42] INFO root fetch - main [MainThread]: Store serial: [23264708]
