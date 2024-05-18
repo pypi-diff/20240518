@@ -10020,3 +10020,49 @@
 [2024-05-18 07:39:18] INFO root fetch - processPackages [artifacts]: Remove: archive file [/home/abi/fetcher/tmp/artifacts-20240518.tar.gz]
 [2024-05-18 07:39:18] INFO root fetch - main [MainThread]: End processing [artifacts]: success
 [2024-05-18 07:39:18] INFO root fetch - main [MainThread]: Store serial: [23265022]
+[2024-05-18 07:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265022]
+[2024-05-18 07:41:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: faceext
+[2024-05-18 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo13-addon-payroll
+[2024-05-18 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-payroll
+[2024-05-18 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-payroll
+[2024-05-18 07:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-payroll
+[2024-05-18 07:41:28] INFO root fetch - processPackages [faceext]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo-addon-payroll]: New version: [17.0.1.0.0.7] Old Version: [17.0.1.0.0.6]
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo-addon-payroll]: New version: [17.0.1.0.0.7] Old Version: [17.0.1.0.0.6]
+[2024-05-18 07:41:28] INFO root fetch - processPackages [faceext]: Downloading https://files.pythonhosted.org/packages/9a/ee/e50633bd800b1a5a1ff9fafaa3237603950dccb5cb2cc9bf695b448b0e2f/faceext-0.0.2.tar.gz
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo13-addon-payroll]: New version: [13.0.1.0.3.dev9] Old Version: [13.0.1.0.3.dev8]
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo14-addon-payroll]: New version: [14.0.6.2.5.dev4] Old Version: [14.0.6.2.5.dev3]
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo-addon-payroll]: Downloading https://files.pythonhosted.org/packages/ce/3b/b19d1f3a4fd5b9dec3a516b86498b03e07c010d6e9a2c89da42608234d91/odoo_addon_payroll-17.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo-addon-payroll]: Downloading https://files.pythonhosted.org/packages/ce/3b/b19d1f3a4fd5b9dec3a516b86498b03e07c010d6e9a2c89da42608234d91/odoo_addon_payroll-17.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo13-addon-payroll]: Downloading https://files.pythonhosted.org/packages/14/e4/3e615711ee2ac2adc2c1d3500b71eba51816365f20f02de6f3546ddbe6e8/odoo13_addon_payroll-13.0.1.0.3.dev8-py3-none-any.whl
+[2024-05-18 07:41:28] INFO root fetch - processPackages [odoo14-addon-payroll]: Downloading https://files.pythonhosted.org/packages/7d/29/5346b70059a7012305175a17e0e94cef398f919323412d3ac718f84ea046/odoo14_addon_payroll-14.0.6.2.5.dev3-py3-none-any.whl
+[2024-05-18 07:41:28] INFO root fetch - processPackages [faceext]: Downloading https://files.pythonhosted.org/packages/18/f6/1170f8b9966cdc0a9573c7b21671da8b9445c54fde88b641728b4f6cfdf2/faceext-0.0.3.tar.gz
+[2024-05-18 07:41:29] INFO root fetch - processPackages [faceext]: executing diffoscope
+[2024-05-18 07:41:29] INFO root fetch - processPackages [faceext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceext-0.0.2.tar.gz tmp/faceext-0.0.3.tar.gz --markdown 20240518/f/faceext/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo-addon-payroll]: Downloading https://files.pythonhosted.org/packages/c5/a8/6942de982ca0c914831eaed2854b0160efecaffbcbed7dd4480231416646/odoo_addon_payroll-17.0.1.0.0.7-py3-none-any.whl
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo-addon-payroll]: Downloading https://files.pythonhosted.org/packages/c5/a8/6942de982ca0c914831eaed2854b0160efecaffbcbed7dd4480231416646/odoo_addon_payroll-17.0.1.0.0.7-py3-none-any.whl
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo13-addon-payroll]: Downloading https://files.pythonhosted.org/packages/79/66/9e277bd4be382347349287bb4804021cb342ca0e538fe72e35f5a2b1f5b6/odoo13_addon_payroll-13.0.1.0.3.dev9-py3-none-any.whl
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo-addon-payroll]: executing diffoscope
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo-addon-payroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_payroll-17.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_payroll-17.0.1.0.0.7-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-payroll/17.0.1.0.0.6-17.0.1.0.0.7/README.md --exclude *.pyd
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo14-addon-payroll]: Downloading https://files.pythonhosted.org/packages/5e/d1/dd60d20e13477a7810725ec8363227afd32eb1ba4f580106512e330ca14c/odoo14_addon_payroll-14.0.6.2.5.dev4-py3-none-any.whl
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo-addon-payroll]: executing diffoscope
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo-addon-payroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_payroll-17.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_payroll-17.0.1.0.0.7-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-payroll/17.0.1.0.0.6-17.0.1.0.0.7/README.md --exclude *.pyd
+[2024-05-18 07:41:29] INFO root fetch - processPackages [faceext]: Remove: archive file [/home/abi/fetcher/tmp/faceext-0.0.2.tar.gz]
+[2024-05-18 07:41:29] INFO root fetch - processPackages [faceext]: Remove: archive file [/home/abi/fetcher/tmp/faceext-0.0.3.tar.gz]
+[2024-05-18 07:41:29] INFO root fetch - main [MainThread]: End processing [faceext]: success
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo13-addon-payroll]: executing diffoscope
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo13-addon-payroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_payroll-13.0.1.0.3.dev8-py3-none-any.whl.zip tmp/odoo13_addon_payroll-13.0.1.0.3.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo13-addon-payroll/13.0.1.0.3.dev8-13.0.1.0.3.dev9/README.md --exclude *.pyd
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo14-addon-payroll]: executing diffoscope
+[2024-05-18 07:41:29] INFO root fetch - processPackages [odoo14-addon-payroll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_payroll-14.0.6.2.5.dev3-py3-none-any.whl.zip tmp/odoo14_addon_payroll-14.0.6.2.5.dev4-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-payroll/14.0.6.2.5.dev3-14.0.6.2.5.dev4/README.md --exclude *.pyd
+[2024-05-18 07:41:30] INFO root fetch - processPackages [odoo13-addon-payroll]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_payroll-13.0.1.0.3.dev8-py3-none-any.whl.zip]
+[2024-05-18 07:41:30] INFO root fetch - processPackages [odoo13-addon-payroll]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_payroll-13.0.1.0.3.dev9-py3-none-any.whl.zip]
+[2024-05-18 07:41:30] INFO root fetch - main [MainThread]: End processing [odoo13-addon-payroll]: success
+[2024-05-18 07:41:30] INFO root fetch - processPackages [odoo14-addon-payroll]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_payroll-14.0.6.2.5.dev3-py3-none-any.whl.zip]
+[2024-05-18 07:41:30] INFO root fetch - processPackages [odoo14-addon-payroll]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_payroll-14.0.6.2.5.dev4-py3-none-any.whl.zip]
+[2024-05-18 07:41:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-payroll]: success
+[2024-05-18 07:41:32] INFO root fetch - processPackages [odoo-addon-payroll]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_payroll-17.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 07:41:32] INFO root fetch - processPackages [odoo-addon-payroll]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_payroll-17.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-18 07:41:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-payroll]: success
+[2024-05-18 07:41:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-payroll]: success
+[2024-05-18 07:41:32] INFO root fetch - main [MainThread]: Store serial: [23265033]
