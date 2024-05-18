@@ -19394,3 +19394,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:53:09] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.1.0.4-py3-none-any.whl.zip]
 [2024-05-18 19:53:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-force-invoiced]: success
 [2024-05-18 19:53:09] INFO root fetch - main [MainThread]: Store serial: [23269831]
+[2024-05-18 19:55:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269831]
+[2024-05-18 19:55:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 19:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modelmerge
+[2024-05-18 19:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xlf-merge
+[2024-05-18 19:55:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jewellessz
+[2024-05-18 19:55:18] INFO root fetch - processPackages [modelmerge]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-18 19:55:18] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/b6/7c/39f56bbdd9db6d79407b328c3ceb0d4c03c8c8a5402c483894c54b6f0274/modelmerge-0.4.5.tar.gz
+[2024-05-18 19:55:18] INFO root fetch - processPackages [xlf-merge]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 19:55:18] WARNING root fetch - processPackages [jewellessz]: Skipping, unable to determine old version
+[2024-05-18 19:55:18] INFO root fetch - main [MainThread]: End processing [jewellessz] error
+[2024-05-18 19:55:18] INFO root fetch - processPackages [xlf-merge]: Downloading https://files.pythonhosted.org/packages/a4/95/d380de43230770af1db833b0a1d3b4ca1060ac99454c097d46c29877e37e/xlf-merge-0.1.5.tar.gz
+[2024-05-18 19:55:18] INFO root fetch - processPackages [modelmerge]: Downloading https://files.pythonhosted.org/packages/0c/13/9f794c12fe24b2d345728a6c3a4c3e84a850cbefa9b228d828aaa1a8dee6/modelmerge-0.4.6.tar.gz
+[2024-05-18 19:55:18] INFO root fetch - processPackages [modelmerge]: executing diffoscope
+[2024-05-18 19:55:18] INFO root fetch - processPackages [modelmerge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modelmerge-0.4.5.tar.gz tmp/modelmerge-0.4.6.tar.gz --markdown 20240518/m/modelmerge/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-18 19:55:19] INFO root fetch - processPackages [xlf-merge]: Downloading https://files.pythonhosted.org/packages/0c/49/73b7f379b9f5ec8de1541f633799cbf83f5179281252061bb8314c157a22/xlf-merge-0.1.6.tar.gz
+[2024-05-18 19:55:19] INFO root fetch - processPackages [xlf-merge]: executing diffoscope
+[2024-05-18 19:55:19] INFO root fetch - processPackages [xlf-merge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xlf-merge-0.1.5.tar.gz tmp/xlf-merge-0.1.6.tar.gz --markdown 20240518/x/xlf-merge/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 19:55:19] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.5.tar.gz]
+[2024-05-18 19:55:19] INFO root fetch - processPackages [modelmerge]: Remove: archive file [/home/abi/fetcher/tmp/modelmerge-0.4.6.tar.gz]
+[2024-05-18 19:55:19] INFO root fetch - main [MainThread]: End processing [modelmerge]: success
+[2024-05-18 19:55:20] INFO root fetch - processPackages [xlf-merge]: Remove: archive file [/home/abi/fetcher/tmp/xlf-merge-0.1.5.tar.gz]
+[2024-05-18 19:55:20] INFO root fetch - processPackages [xlf-merge]: Remove: archive file [/home/abi/fetcher/tmp/xlf-merge-0.1.6.tar.gz]
+[2024-05-18 19:55:20] INFO root fetch - main [MainThread]: End processing [xlf-merge]: success
+[2024-05-18 19:55:20] INFO root fetch - main [MainThread]: Store serial: [23269840]
