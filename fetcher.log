@@ -8276,3 +8276,31 @@
 [2024-05-18 05:11:37] INFO root fetch - processPackages [chromophile]: Remove: archive file [/home/abi/fetcher/tmp/chromophile-1.0.5.tar.gz]
 [2024-05-18 05:11:37] INFO root fetch - main [MainThread]: End processing [chromophile]: success
 [2024-05-18 05:11:37] INFO root fetch - main [MainThread]: Store serial: [23264318]
+[2024-05-18 05:13:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264318]
+[2024-05-18 05:13:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 05:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blockmango
+[2024-05-18 05:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-product-brand
+[2024-05-18 05:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-product-brand
+[2024-05-18 05:13:46] INFO root fetch - processPackages [blockmango]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-05-18 05:13:46] INFO root fetch - processPackages [blockmango]: Downloading https://files.pythonhosted.org/packages/ac/66/a33484c9be15c391755f9d00b681332ba3a5866194b15b601001a7c49122/blockmango-1.4.1.tar.gz
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: Downloading https://files.pythonhosted.org/packages/7c/f3/a48881e2a5f75fe4ffac79942daeed48cba6c93235e5bf487e46085b6009/odoo_addon_product_brand-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: Downloading https://files.pythonhosted.org/packages/7c/f3/a48881e2a5f75fe4ffac79942daeed48cba6c93235e5bf487e46085b6009/odoo_addon_product_brand-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 05:13:46] INFO root fetch - processPackages [blockmango]: Downloading https://files.pythonhosted.org/packages/71/49/e349ef222eac81d4b3f379dd3a7db8be7bcc251cbad8d3bc3f895187ba82/blockmango-1.4.2.tar.gz
+[2024-05-18 05:13:46] INFO root fetch - processPackages [blockmango]: executing diffoscope
+[2024-05-18 05:13:46] INFO root fetch - processPackages [blockmango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blockmango-1.4.1.tar.gz tmp/blockmango-1.4.2.tar.gz --markdown 20240518/b/blockmango/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: Downloading https://files.pythonhosted.org/packages/ec/91/d5cf05e5b5c75b49d29d9d736cc41e67967570999ec9e3292de7d906fe55/odoo_addon_product_brand-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: Downloading https://files.pythonhosted.org/packages/ec/91/d5cf05e5b5c75b49d29d9d736cc41e67967570999ec9e3292de7d906fe55/odoo_addon_product_brand-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: executing diffoscope
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_brand-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_product_brand-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-product-brand/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: executing diffoscope
+[2024-05-18 05:13:46] INFO root fetch - processPackages [odoo-addon-product-brand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_brand-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_product_brand-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-product-brand/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 05:13:47] INFO root fetch - processPackages [blockmango]: Remove: archive file [/home/abi/fetcher/tmp/blockmango-1.4.1.tar.gz]
+[2024-05-18 05:13:47] INFO root fetch - processPackages [blockmango]: Remove: archive file [/home/abi/fetcher/tmp/blockmango-1.4.2.tar.gz]
+[2024-05-18 05:13:47] INFO root fetch - main [MainThread]: End processing [blockmango]: success
+[2024-05-18 05:13:47] INFO root fetch - processPackages [odoo-addon-product-brand]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_brand-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 05:13:47] INFO root fetch - processPackages [odoo-addon-product-brand]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_brand-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 05:13:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-brand]: success
+[2024-05-18 05:13:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-brand]: success
+[2024-05-18 05:13:47] INFO root fetch - main [MainThread]: Store serial: [23264324]
