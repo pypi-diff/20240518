@@ -18852,3 +18852,90 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:21:30] INFO root fetch - processPackages [streamlit-custom-sidebar-test]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-custom-sidebar-test-0.0.9.tar.gz]
 [2024-05-18 19:21:30] INFO root fetch - main [MainThread]: End processing [streamlit-custom-sidebar-test]: success
 [2024-05-18 19:21:30] INFO root fetch - main [MainThread]: Store serial: [23269593]
+[2024-05-18 19:23:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269593]
+[2024-05-18 19:23:41] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-br-nfe
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-l10n-br-repair
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-l10n-br-contract
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: npc_lims
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pycolbertdb
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mountain-chicken
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: enhanceezqq
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: alibabacloud-dingtalk
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: transmission-rpc
+[2024-05-18 19:23:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vsrife
+[2024-05-18 19:23:41] INFO root fetch - processPackages [enhanceezqq]: New version: [1.0.2.5] Old Version: [1.0.2.3]
+[2024-05-18 19:23:41] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/3f/49/831fe3be9b5450373569d0e18a39e9327250159955ce42a2bfaa6cc1054d/enhanceezqq-1.0.2.3.tar.gz
+[2024-05-18 19:23:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: New version: [14.0.2.3.4.dev9] Old Version: [14.0.2.3.4.dev8]
+[2024-05-18 19:23:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: New version: [14.0.1.1.6.dev9] Old Version: [14.0.1.1.6.dev6]
+[2024-05-18 19:23:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: New version: [14.0.9.1.1.dev1] Old Version: [14.0.9.0.1]
+[2024-05-18 19:23:41] WARNING root fetch - processPackages [pycolbertdb]: Skipping, unable to determine old version
+[2024-05-18 19:23:41] INFO root fetch - main [MainThread]: End processing [pycolbertdb] error
+[2024-05-18 19:23:41] INFO root fetch - processPackages [mountain-chicken]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 19:23:41] INFO root fetch - processPackages [transmission-rpc]: New version: [7.0.6] Old Version: [7.0.5]
+[2024-05-18 19:23:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/e3/8c/24116b604c6bc22ce1e4e6d458ad5f4941cc363b81eabac01fe2ae3bcd9c/odoo14_addon_l10n_br_nfe-14.0.9.0.1-py3-none-any.whl
+[2024-05-18 19:23:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: Downloading https://files.pythonhosted.org/packages/68/25/85c9f069b4b3a32f056e64ae5dfa5ba406c3291e8e61014050017b0e8df4/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev6-py3-none-any.whl
+[2024-05-18 19:23:41] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/10/87/d5ed4a513073e118f69f280ea1df3e119c2878c08228f593e4a19470721a/enhanceezqq-1.0.2.5.tar.gz
+[2024-05-18 19:23:41] INFO root fetch - processPackages [npc_lims]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-18 19:23:41] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: Downloading https://files.pythonhosted.org/packages/93/84/a4a9de73e397124771ae8c84a8017e60514c2d8a57c2d0bd9d7abc23c02e/odoo14_addon_l10n_br_contract-14.0.2.3.4.dev8-py3-none-any.whl
+[2024-05-18 19:23:41] INFO root fetch - processPackages [mountain-chicken]: Downloading https://files.pythonhosted.org/packages/90/54/1fc481ad9173098240bf871820414855fc9eeddf31b1a47e036601113048/mountain_chicken-0.1.2.tar.gz
+[2024-05-18 19:23:41] INFO root fetch - processPackages [vsrife]: New version: [5.0.0] Old Version: [4.2.0]
+[2024-05-18 19:23:42] INFO root fetch - processPackages [transmission-rpc]: Downloading https://files.pythonhosted.org/packages/1f/46/8fe964511f748765a48292e842b9f826815d86f80dc2e1c4940394f1465a/transmission_rpc-7.0.5.tar.gz
+[2024-05-18 19:23:42] INFO root fetch - processPackages [enhanceezqq]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [enhanceezqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhanceezqq-1.0.2.3.tar.gz tmp/enhanceezqq-1.0.2.5.tar.gz --markdown 20240518/e/enhanceezqq/1.0.2.3-1.0.2.5/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/eb/a3/a72478dcef25d9b46c35b7730c5c9a426e07354369fb652045cc1befbe7e/npc_lims-0.1.98.tar.gz
+[2024-05-18 19:23:42] INFO root fetch - processPackages [vsrife]: Downloading https://files.pythonhosted.org/packages/8f/62/80ae9efec82fd9f93920e68685b345fe9643fad6bc0c98bc81461ab5cd16/vsrife-4.2.0-py3-none-any.whl
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/f8/ef/5b863388381c35c36cfea4e1f356dafa923aab127c4dfe81de1ea7bd0465/odoo14_addon_l10n_br_nfe-14.0.9.1.1.dev1-py3-none-any.whl
+[2024-05-18 19:23:42] INFO root fetch - processPackages [mountain-chicken]: Downloading https://files.pythonhosted.org/packages/59/79/ae5ea22920aa887c4f53210b207fdfcb57aa4021929c2f77cbdbd7c79fc2/mountain_chicken-0.1.3.tar.gz
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: Downloading https://files.pythonhosted.org/packages/93/7b/6d52c9d3bc682320355cfd7b07db77d0f1cdcf2aff186edfc5d6d86e83f7/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev9-py3-none-any.whl
+[2024-05-18 19:23:42] INFO root fetch - processPackages [transmission-rpc]: Downloading https://files.pythonhosted.org/packages/2f/80/1f95be66e9030123810d35e98b5078c2d2a765e2363c633626809dbd10fb/transmission_rpc-7.0.6.tar.gz
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: Downloading https://files.pythonhosted.org/packages/9b/6c/0ade2fdd7503fb398e16d861940f116d1e0f05c9148c1f8b5bf2bc9185ba/odoo14_addon_l10n_br_contract-14.0.2.3.4.dev9-py3-none-any.whl
+[2024-05-18 19:23:42] INFO root fetch - processPackages [mountain-chicken]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [mountain-chicken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mountain_chicken-0.1.2.tar.gz tmp/mountain_chicken-0.1.3.tar.gz --markdown 20240518/m/mountain-chicken/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe-14.0.9.0.1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe-14.0.9.1.1.dev1-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-l10n-br-nfe/14.0.9.0.1-14.0.9.1.1.dev1/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [transmission-rpc]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [transmission-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transmission_rpc-7.0.5.tar.gz tmp/transmission_rpc-7.0.6.tar.gz --markdown 20240518/t/transmission-rpc/7.0.5-7.0.6/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev6-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-l10n-br-repair/14.0.1.1.6.dev6-14.0.1.1.6.dev9/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [npc_lims]: Downloading https://files.pythonhosted.org/packages/20/8f/2a3ef0e71c09fd01ba3685a9f92c448766eab8a9e83f1e03e62e90091e0a/npc_lims-0.1.99.tar.gz
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_contract-14.0.2.3.4.dev8-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_contract-14.0.2.3.4.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-l10n-br-contract/14.0.2.3.4.dev8-14.0.2.3.4.dev9/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [vsrife]: Downloading https://files.pythonhosted.org/packages/85/99/9812f3bac86d87f324044208851a9a4d464d2127c77c0723f077ab98346c/vsrife-5.0.0-py3-none-any.whl
+[2024-05-18 19:23:42] INFO root fetch - processPackages [enhanceezqq]: Remove: archive file [/home/abi/fetcher/tmp/enhanceezqq-1.0.2.3.tar.gz]
+[2024-05-18 19:23:42] INFO root fetch - processPackages [enhanceezqq]: Remove: archive file [/home/abi/fetcher/tmp/enhanceezqq-1.0.2.5.tar.gz]
+[2024-05-18 19:23:42] INFO root fetch - main [MainThread]: End processing [enhanceezqq]: success
+[2024-05-18 19:23:42] INFO root fetch - processPackages [alibabacloud-dingtalk]: New version: [2.1.12] Old Version: [2.1.11]
+[2024-05-18 19:23:42] INFO root fetch - processPackages [vsrife]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [vsrife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vsrife-4.2.0-py3-none-any.whl.zip tmp/vsrife-5.0.0-py3-none-any.whl.zip --markdown 20240518/v/vsrife/4.2.0-5.0.0/README.md --exclude *.pyd
+[2024-05-18 19:23:42] INFO root fetch - processPackages [npc_lims]: executing diffoscope
+[2024-05-18 19:23:42] INFO root fetch - processPackages [npc_lims]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc_lims-0.1.98.tar.gz tmp/npc_lims-0.1.99.tar.gz --markdown 20240518/n/npc_lims/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-18 19:23:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/a8/56/6c7b3d2103cd47442909f9858037eb479ce0a8cc508aa5c3dfedec57c0d8/alibabacloud_dingtalk-2.1.11.tar.gz
+[2024-05-18 19:23:43] INFO root fetch - processPackages [mountain-chicken]: Remove: archive file [/home/abi/fetcher/tmp/mountain_chicken-0.1.2.tar.gz]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [mountain-chicken]: Remove: archive file [/home/abi/fetcher/tmp/mountain_chicken-0.1.3.tar.gz]
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [mountain-chicken]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [transmission-rpc]: Remove: archive file [/home/abi/fetcher/tmp/transmission_rpc-7.0.5.tar.gz]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [transmission-rpc]: Remove: archive file [/home/abi/fetcher/tmp/transmission_rpc-7.0.6.tar.gz]
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [transmission-rpc]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_contract-14.0.2.3.4.dev8-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_contract-14.0.2.3.4.dev9-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: Downloading https://files.pythonhosted.org/packages/6a/2b/e415273dd9956f0ebfe7b01b2227b0a20ca54c329f31cda4676c5857e410/alibabacloud_dingtalk-2.1.12.tar.gz
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-contract]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_nfe-14.0.9.0.1-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_nfe-14.0.9.1.1.dev1-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.98.tar.gz]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [npc_lims]: Remove: archive file [/home/abi/fetcher/tmp/npc_lims-0.1.99.tar.gz]
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [npc_lims]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [vsrife]: Remove: archive file [/home/abi/fetcher/tmp/vsrife-4.2.0-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [vsrife]: Remove: archive file [/home/abi/fetcher/tmp/vsrife-5.0.0-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [vsrife]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev6-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev9-py3-none-any.whl.zip]
+[2024-05-18 19:23:43] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-repair]: success
+[2024-05-18 19:23:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: executing diffoscope
+[2024-05-18 19:23:43] INFO root fetch - processPackages [alibabacloud-dingtalk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_dingtalk-2.1.11.tar.gz tmp/alibabacloud_dingtalk-2.1.12.tar.gz --markdown 20240518/a/alibabacloud-dingtalk/2.1.11-2.1.12/README.md --exclude *.pyd
+[2024-05-18 19:23:47] INFO root fetch - processPackages [alibabacloud-dingtalk]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dingtalk-2.1.11.tar.gz]
+[2024-05-18 19:23:47] INFO root fetch - processPackages [alibabacloud-dingtalk]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dingtalk-2.1.12.tar.gz]
+[2024-05-18 19:23:47] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
+[2024-05-18 19:23:47] INFO root fetch - main [MainThread]: Store serial: [23269627]
