@@ -8520,3 +8520,24 @@
 [2024-05-18 05:24:44] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz]
 [2024-05-18 05:24:44] INFO root fetch - main [MainThread]: End processing [hexdoc-hexdebug]: success
 [2024-05-18 05:24:44] INFO root fetch - main [MainThread]: Store serial: [23264388]
+[2024-05-18 05:26:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264388]
+[2024-05-18 05:26:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 05:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spaceone-inventory
+[2024-05-18 05:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: balsamic
+[2024-05-18 05:26:52] INFO root fetch - processPackages [balsamic]: New version: [0.1.96] Old Version: [0.1.95]
+[2024-05-18 05:26:52] INFO root fetch - processPackages [spaceone-inventory]: New version: [2.0.dev99] Old Version: [2.0.dev98]
+[2024-05-18 05:26:52] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/ac/61/9b4ee7211bf686ba7f5e22e2623ae271844e39b31db87f2b918b9574ad4c/balsamic-0.1.95.tar.gz
+[2024-05-18 05:26:52] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/2b/23/73e091142fbd007706604f94cc95718e79d9259d998aa9dd424fc7cc6f7f/spaceone-inventory-2.0.dev98.tar.gz
+[2024-05-18 05:26:52] INFO root fetch - processPackages [spaceone-inventory]: Downloading https://files.pythonhosted.org/packages/e7/30/f1229bb9f69283d6576804b473d6fe73ff3118fb5543c89d48b18f899ca2/spaceone-inventory-2.0.dev99.tar.gz
+[2024-05-18 05:26:52] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/49/d4/8b8c10d837c99f715971071a42cbf2e8be9b59020e8b359c31fad191cd9e/balsamic-0.1.96.tar.gz
+[2024-05-18 05:26:52] INFO root fetch - processPackages [spaceone-inventory]: executing diffoscope
+[2024-05-18 05:26:52] INFO root fetch - processPackages [spaceone-inventory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spaceone-inventory-2.0.dev98.tar.gz tmp/spaceone-inventory-2.0.dev99.tar.gz --markdown 20240518/s/spaceone-inventory/2.0.dev98-2.0.dev99/README.md --exclude *.pyd
+[2024-05-18 05:26:52] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 05:26:52] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.95.tar.gz tmp/balsamic-0.1.96.tar.gz --markdown 20240518/b/balsamic/0.1.95-0.1.96/README.md --exclude *.pyd
+[2024-05-18 05:26:53] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.95.tar.gz]
+[2024-05-18 05:26:53] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.96.tar.gz]
+[2024-05-18 05:26:53] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 05:26:53] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev98.tar.gz]
+[2024-05-18 05:26:53] INFO root fetch - processPackages [spaceone-inventory]: Remove: archive file [/home/abi/fetcher/tmp/spaceone-inventory-2.0.dev99.tar.gz]
+[2024-05-18 05:26:53] INFO root fetch - main [MainThread]: End processing [spaceone-inventory]: success
+[2024-05-18 05:26:53] INFO root fetch - main [MainThread]: Store serial: [23264394]
