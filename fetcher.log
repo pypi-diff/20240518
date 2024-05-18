@@ -7781,3 +7781,54 @@
 [2024-05-18 04:47:24] INFO root fetch - processPackages [odoo-addon-account-netting]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_netting-16.0.1.0.0.9-py3-none-any.whl.zip]
 [2024-05-18 04:47:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-netting]: success
 [2024-05-18 04:47:24] INFO root fetch - main [MainThread]: Store serial: [23264133]
+[2024-05-18 04:49:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264133]
+[2024-05-18 04:49:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 04:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-move-template
+[2024-05-18 04:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-move-fiscal-year
+[2024-05-18 04:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: surfkit
+[2024-05-18 04:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-invoice-constraint-chronology
+[2024-05-18 04:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: knellz
+[2024-05-18 04:49:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: balsamic
+[2024-05-18 04:49:34] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: New version: [16.0.1.0.0.6] Old Version: [16.0.1.0.0.5]
+[2024-05-18 04:49:34] INFO root fetch - processPackages [balsamic]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-template]: New version: [17.0.1.0.0.8] Old Version: [17.0.1.0.0.7]
+[2024-05-18 04:49:34] WARNING root fetch - processPackages [knellz]: Skipping, unable to determine old version
+[2024-05-18 04:49:34] INFO root fetch - main [MainThread]: End processing [knellz] error
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: New version: [16.0.1.1.0.9] Old Version: [16.0.1.1.0.8]
+[2024-05-18 04:49:34] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: Downloading https://files.pythonhosted.org/packages/c2/f5/433ace2316c3b09c9f8b48a35ec61ef3f832b67280886423ed241ab8c404/odoo_addon_account_move_fiscal_year-16.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 04:49:34] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/87/a2/9dc42ec55e98b0abcde9c58c0165b651c1955e266d29a6cb680ef06d13b8/balsamic-0.1.7.tar.gz
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-template]: Downloading https://files.pythonhosted.org/packages/32/aa/9e3d6e553db521bd1a5faaef746b541136a9136978e90db06be110ca40e8/odoo_addon_account_move_template-17.0.1.0.0.7-py3-none-any.whl
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: Downloading https://files.pythonhosted.org/packages/bf/c4/cc29f3f0a9af96c36d4fda3e13035d996218edfbb21519023c4638231c57/odoo_addon_account_invoice_constraint_chronology-16.0.1.1.0.8-py3-none-any.whl
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: Downloading https://files.pythonhosted.org/packages/17/ff/f5579e500e49c0c064487dfa7f404668cb609efb05c8764ca74c8f104dd1/odoo_addon_account_move_fiscal_year-16.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 04:49:34] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-18 04:49:34] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/f8/19/dec344e5ba43da2895ae29767590fdfae6a4f445429c75fd30a8f515a545/balsamic-0.1.8.tar.gz
+[2024-05-18 04:49:34] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: executing diffoscope
+[2024-05-18 04:49:34] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240518/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-18 04:49:34] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_fiscal_year-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_account_move_fiscal_year-16.0.1.0.0.6-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-move-fiscal-year/16.0.1.0.0.5-16.0.1.0.0.6/README.md --exclude *.pyd
+[2024-05-18 04:49:35] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 04:49:35] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.7.tar.gz tmp/balsamic-0.1.8.tar.gz --markdown 20240518/b/balsamic/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-move-template]: Downloading https://files.pythonhosted.org/packages/0a/b1/330b03cf3a0123be9fb88ed9b275621371f21b7dfee4abbb73f052cb15a7/odoo_addon_account_move_template-17.0.1.0.0.8-py3-none-any.whl
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: Downloading https://files.pythonhosted.org/packages/d8/9e/95895d2baab34da8ae10605fdfd9346ce26610e5759671996efc5237cf49/odoo_addon_account_invoice_constraint_chronology-16.0.1.1.0.9-py3-none-any.whl
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-move-template]: executing diffoscope
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-move-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_template-17.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_account_move_template-17.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-move-template/17.0.1.0.0.7-17.0.1.0.0.8/README.md --exclude *.pyd
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: executing diffoscope
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_constraint_chronology-16.0.1.1.0.8-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_constraint_chronology-16.0.1.1.0.9-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-invoice-constraint-chronology/16.0.1.1.0.8-16.0.1.1.0.9/README.md --exclude *.pyd
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_fiscal_year-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 04:49:35] INFO root fetch - processPackages [odoo-addon-account-move-fiscal-year]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_fiscal_year-16.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 04:49:35] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-fiscal-year]: success
+[2024-05-18 04:49:35] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-18 04:49:35] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-18 04:49:35] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-18 04:49:35] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.7.tar.gz]
+[2024-05-18 04:49:35] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.8.tar.gz]
+[2024-05-18 04:49:35] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 04:49:36] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_constraint_chronology-16.0.1.1.0.8-py3-none-any.whl.zip]
+[2024-05-18 04:49:36] INFO root fetch - processPackages [odoo-addon-account-invoice-constraint-chronology]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_constraint_chronology-16.0.1.1.0.9-py3-none-any.whl.zip]
+[2024-05-18 04:49:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-constraint-chronology]: success
+[2024-05-18 04:49:36] INFO root fetch - processPackages [odoo-addon-account-move-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_template-17.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-18 04:49:36] INFO root fetch - processPackages [odoo-addon-account-move-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_template-17.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-18 04:49:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-template]: success
+[2024-05-18 04:49:36] INFO root fetch - main [MainThread]: Store serial: [23264149]
