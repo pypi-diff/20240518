@@ -21315,3 +21315,55 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:05:08] INFO root fetch - processPackages [grasp_planning]: Remove: archive file [/home/abi/fetcher/tmp/grasp_planning-0.5.7.2.tar.gz]
 [2024-05-18 22:05:08] INFO root fetch - main [MainThread]: End processing [grasp_planning]: success
 [2024-05-18 22:05:08] INFO root fetch - main [MainThread]: Store serial: [23270804]
+[2024-05-18 22:07:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270804]
+[2024-05-18 22:07:18] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yoto-api
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: devon-agent
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django_bocor_ds
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: h5ui
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yiyangzhang0201
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: no-cyclic-imports
+[2024-05-18 22:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aim-ui
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yiyangzhang0201]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 22:07:19] INFO root fetch - processPackages [devon-agent]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 22:07:19] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-05-18 22:07:19] INFO root fetch - processPackages [h5ui]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 22:07:19] WARNING root fetch - processPackages [no-cyclic-imports]: Skipping, unable to determine old version
+[2024-05-18 22:07:19] INFO root fetch - main [MainThread]: End processing [no-cyclic-imports] error
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yiyangzhang0201]: Downloading https://files.pythonhosted.org/packages/97/d0/1fabf22584e7d1fb328820e48177684bc911111611a2ed8e387dd7a94b5d/yiyangzhang0201-0.1.3.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [django_bocor_ds]: New version: [2.3.0] Old Version: [2.2.1]
+[2024-05-18 22:07:19] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/e5/94/5a2e780b708e7a3038b1e84c95f895c64abce7345653f8eb7eb64f72559c/devon_agent-0.1.6.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-05-18 22:07:19] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-05-18 22:07:19] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-05-18 22:07:19] INFO root fetch - processPackages [h5ui]: Downloading https://files.pythonhosted.org/packages/59/0d/772a93dfcceea2bd7a4845ed2dd47fd0e3a940777180d452807255239e98/h5ui-0.1.8.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [django_bocor_ds]: Downloading https://files.pythonhosted.org/packages/19/22/cd9a1417e499d22b06477442086b732a21cc3eec354319ef32c5cb7efba2/django_bocor_ds-2.2.1.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/4b/b3/f4a5c5ff8019499c6f58939b1ce69e9501c4735d7b4fcb6ba9f9365cfe89/devon_agent-0.1.7.tar.gz
+[2024-05-18 22:07:19] WARNING root fetch - processPackages [h5ui]: Skipping package: exceeds size limit 16854110>=10485760
+[2024-05-18 22:07:19] INFO root fetch - main [MainThread]: End processing [h5ui] error
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yiyangzhang0201]: Downloading https://files.pythonhosted.org/packages/74/b4/0c1224718a48563b93cfa6b5dc70377caafa6fd2ce978ed52338f00ee1f8/yiyangzhang0201-0.1.4.tar.gz
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240518/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-18 22:07:19] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-18 22:07:19] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.6.tar.gz tmp/devon_agent-0.1.7.tar.gz --markdown 20240518/d/devon-agent/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yiyangzhang0201]: executing diffoscope
+[2024-05-18 22:07:19] INFO root fetch - processPackages [yiyangzhang0201]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yiyangzhang0201-0.1.3.tar.gz tmp/yiyangzhang0201-0.1.4.tar.gz --markdown 20240518/y/yiyangzhang0201/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 22:07:20] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-18 22:07:20] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-18 22:07:20] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-18 22:07:20] INFO root fetch - processPackages [django_bocor_ds]: Downloading https://files.pythonhosted.org/packages/34/ce/5782948fee1fab6bcc8ac3f212f31903345c6a7a4eb24fca7e8282109dc4/django_bocor_ds-2.3.0.tar.gz
+[2024-05-18 22:07:20] INFO root fetch - processPackages [yiyangzhang0201]: Remove: archive file [/home/abi/fetcher/tmp/yiyangzhang0201-0.1.3.tar.gz]
+[2024-05-18 22:07:20] INFO root fetch - processPackages [yiyangzhang0201]: Remove: archive file [/home/abi/fetcher/tmp/yiyangzhang0201-0.1.4.tar.gz]
+[2024-05-18 22:07:20] INFO root fetch - main [MainThread]: End processing [yiyangzhang0201]: success
+[2024-05-18 22:07:20] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.6.tar.gz]
+[2024-05-18 22:07:20] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.7.tar.gz]
+[2024-05-18 22:07:20] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-18 22:07:20] INFO root fetch - processPackages [django_bocor_ds]: executing diffoscope
+[2024-05-18 22:07:20] INFO root fetch - processPackages [django_bocor_ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_bocor_ds-2.2.1.tar.gz tmp/django_bocor_ds-2.3.0.tar.gz --markdown 20240518/d/django_bocor_ds/2.2.1-2.3.0/README.md --exclude *.pyd
+[2024-05-18 22:07:22] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.2.1.tar.gz]
+[2024-05-18 22:07:22] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.3.0.tar.gz]
+[2024-05-18 22:07:22] INFO root fetch - main [MainThread]: End processing [django_bocor_ds]: success
+[2024-05-18 22:07:22] INFO root fetch - main [MainThread]: Store serial: [23270826]
