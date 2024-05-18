@@ -20224,3 +20224,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:48:32] INFO root fetch - processPackages [odoo-addon-base-iso3166]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_iso3166-17.0.1.0.0.5-py3-none-any.whl.zip]
 [2024-05-18 20:48:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-iso3166]: success
 [2024-05-18 20:48:32] INFO root fetch - main [MainThread]: Store serial: [23270290]
+[2024-05-18 20:50:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270290]
+[2024-05-18 20:50:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 20:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-repo-client
+[2024-05-18 20:50:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mem0ai
+[2024-05-18 20:50:41] WARNING root fetch - processPackages [mem0ai]: Skipping, unable to determine old version
+[2024-05-18 20:50:41] INFO root fetch - main [MainThread]: End processing [mem0ai] error
+[2024-05-18 20:50:41] INFO root fetch - processPackages [data-repo-client]: New version: [2.66.0] Old Version: [2.65.0]
+[2024-05-18 20:50:41] INFO root fetch - processPackages [data-repo-client]: Downloading https://files.pythonhosted.org/packages/ad/52/f9056c34a44a2fcb1065b61d955bc3934b619b21d56e1fdb2a1cd132679d/data-repo-client-2.65.0.tar.gz
+[2024-05-18 20:50:42] INFO root fetch - processPackages [data-repo-client]: Downloading https://files.pythonhosted.org/packages/26/ef/fa37ef9dbfb3c759b1fce913e76e1f6cd9e796e21b0db34a7e272c4c58d9/data-repo-client-2.66.0.tar.gz
+[2024-05-18 20:50:42] INFO root fetch - processPackages [data-repo-client]: executing diffoscope
+[2024-05-18 20:50:42] INFO root fetch - processPackages [data-repo-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-repo-client-2.65.0.tar.gz tmp/data-repo-client-2.66.0.tar.gz --markdown 20240518/d/data-repo-client/2.65.0-2.66.0/README.md --exclude *.pyd
+[2024-05-18 20:50:43] INFO root fetch - processPackages [data-repo-client]: Remove: archive file [/home/abi/fetcher/tmp/data-repo-client-2.65.0.tar.gz]
+[2024-05-18 20:50:43] INFO root fetch - processPackages [data-repo-client]: Remove: archive file [/home/abi/fetcher/tmp/data-repo-client-2.66.0.tar.gz]
+[2024-05-18 20:50:43] INFO root fetch - main [MainThread]: End processing [data-repo-client]: success
+[2024-05-18 20:50:43] INFO root fetch - main [MainThread]: Store serial: [23270299]
