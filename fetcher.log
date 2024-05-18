@@ -18550,3 +18550,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:58:50] INFO root fetch - processPackages [rlgym-rocket-league]: Remove: archive file [/home/abi/fetcher/tmp/rlgym-rocket-league-2.0.0rc0.tar.gz]
 [2024-05-18 18:58:50] INFO root fetch - main [MainThread]: End processing [rlgym-rocket-league]: success
 [2024-05-18 18:58:50] INFO root fetch - main [MainThread]: Store serial: [23269462]
+[2024-05-18 19:00:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269462]
+[2024-05-18 19:01:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 19:01:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: email-draft-generator
+[2024-05-18 19:01:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-logikal
+[2024-05-18 19:01:00] INFO root fetch - processPackages [email-draft-generator]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 19:01:00] INFO root fetch - processPackages [email-draft-generator]: Downloading https://files.pythonhosted.org/packages/2b/50/592201bba1e2d6e98b1d93ffd75d725652c53ba795b47a9d5241d0f2e363/email_draft_generator-0.0.2.tar.gz
+[2024-05-18 19:01:00] INFO root fetch - processPackages [pytest-logikal]: New version: [3.0.0] Old Version: [2.0.4]
+[2024-05-18 19:01:00] INFO root fetch - processPackages [pytest-logikal]: Downloading https://files.pythonhosted.org/packages/f6/22/887d9404268eea46f5af5219e62a6c1545ff63c030bca4d5703b2272536d/pytest-logikal-2.0.4.tar.gz
+[2024-05-18 19:01:00] INFO root fetch - processPackages [email-draft-generator]: Downloading https://files.pythonhosted.org/packages/56/1b/df399037a133705ef645661ee048a52344959ba24be28fb61d634043d107/email_draft_generator-0.0.3.tar.gz
+[2024-05-18 19:01:00] INFO root fetch - processPackages [email-draft-generator]: executing diffoscope
+[2024-05-18 19:01:00] INFO root fetch - processPackages [email-draft-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/email_draft_generator-0.0.2.tar.gz tmp/email_draft_generator-0.0.3.tar.gz --markdown 20240518/e/email-draft-generator/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 19:01:01] INFO root fetch - processPackages [pytest-logikal]: Downloading https://files.pythonhosted.org/packages/e9/b3/e9e20398039da0de06a1f8cae53f90cfd62c5fb93ec51caec08bdff6aef5/pytest_logikal-3.0.0.tar.gz
+[2024-05-18 19:01:01] INFO root fetch - processPackages [pytest-logikal]: executing diffoscope
+[2024-05-18 19:01:01] INFO root fetch - processPackages [pytest-logikal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-logikal-2.0.4.tar.gz tmp/pytest_logikal-3.0.0.tar.gz --markdown 20240518/p/pytest-logikal/2.0.4-3.0.0/README.md --exclude *.pyd
+[2024-05-18 19:01:01] INFO root fetch - processPackages [email-draft-generator]: Remove: archive file [/home/abi/fetcher/tmp/email_draft_generator-0.0.2.tar.gz]
+[2024-05-18 19:01:01] INFO root fetch - processPackages [email-draft-generator]: Remove: archive file [/home/abi/fetcher/tmp/email_draft_generator-0.0.3.tar.gz]
+[2024-05-18 19:01:01] INFO root fetch - main [MainThread]: End processing [email-draft-generator]: success
+[2024-05-18 19:01:01] INFO root fetch - processPackages [pytest-logikal]: Remove: archive file [/home/abi/fetcher/tmp/pytest-logikal-2.0.4.tar.gz]
+[2024-05-18 19:01:01] INFO root fetch - processPackages [pytest-logikal]: Remove: archive file [/home/abi/fetcher/tmp/pytest_logikal-3.0.0.tar.gz]
+[2024-05-18 19:01:01] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
+[2024-05-18 19:01:01] INFO root fetch - main [MainThread]: Store serial: [23269468]
