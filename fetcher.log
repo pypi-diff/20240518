@@ -17354,3 +17354,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:35:35] INFO root fetch - processPackages [pyspatialml]: Remove: archive file [/home/abi/fetcher/tmp/pyspatialml-0.22.0.tar.gz]
 [2024-05-18 17:35:35] INFO root fetch - main [MainThread]: End processing [pyspatialml]: success
 [2024-05-18 17:35:35] INFO root fetch - main [MainThread]: Store serial: [23268880]
+[2024-05-18 17:37:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268880]
+[2024-05-18 17:37:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 17:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: archispermz
+[2024-05-18 17:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: warp-python
+[2024-05-18 17:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gitoptim
+[2024-05-18 17:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adafruit-circuitpython-requests
+[2024-05-18 17:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gwas2vcf
+[2024-05-18 17:37:44] INFO root fetch - processPackages [warp-python]: New version: [1.2.8] Old Version: [1.2.7]
+[2024-05-18 17:37:44] WARNING root fetch - processPackages [gwas2vcf]: Skipping, unable to determine old version
+[2024-05-18 17:37:44] INFO root fetch - main [MainThread]: End processing [gwas2vcf] error
+[2024-05-18 17:37:44] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:37:44] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/17/a9/5882fcdfceff362ce4ac6c7136e0e515818dd8437728af66498f219f15e6/warp_python-1.2.7.tar.gz
+[2024-05-18 17:37:44] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:37:44] INFO root fetch - processPackages [adafruit-circuitpython-requests]: New version: [4.0.0] Old Version: [3.2.9]
+[2024-05-18 17:37:44] WARNING root fetch - processPackages [archispermz]: Skipping, unable to determine old version
+[2024-05-18 17:37:44] INFO root fetch - main [MainThread]: End processing [archispermz] error
+[2024-05-18 17:37:44] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:37:44] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/99/ae/ffed28b063d36c2b0424d882c832e6793624db8c4ab6ea978f0d8985be4a/adafruit_circuitpython_requests-3.2.9.tar.gz
+[2024-05-18 17:37:44] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-18 17:37:45] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:37:45] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:37:45] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 17:37:45] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.7.tar.gz tmp/warp_python-1.2.8.tar.gz --markdown 20240518/w/warp-python/1.2.7-1.2.8/README.md --exclude *.pyd
+[2024-05-18 17:37:45] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Downloading https://files.pythonhosted.org/packages/d4/99/ef8250a90548cd905ed5a76659d4584ae3312007a2ed08f34e18d2f6a5eb/adafruit_circuitpython_requests-4.0.0.tar.gz
+[2024-05-18 17:37:45] INFO root fetch - processPackages [adafruit-circuitpython-requests]: executing diffoscope
+[2024-05-18 17:37:45] INFO root fetch - processPackages [adafruit-circuitpython-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit_circuitpython_requests-3.2.9.tar.gz tmp/adafruit_circuitpython_requests-4.0.0.tar.gz --markdown 20240518/a/adafruit-circuitpython-requests/3.2.9-4.0.0/README.md --exclude *.pyd
+[2024-05-18 17:37:45] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:37:45] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:37:45] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:37:45] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.7.tar.gz]
+[2024-05-18 17:37:45] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-18 17:37:45] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 17:37:46] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_requests-3.2.9.tar.gz]
+[2024-05-18 17:37:46] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_requests-4.0.0.tar.gz]
+[2024-05-18 17:37:46] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-requests]: success
+[2024-05-18 17:37:46] INFO root fetch - main [MainThread]: Store serial: [23268897]
