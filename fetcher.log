@@ -9590,3 +9590,24 @@
 [2024-05-18 07:00:13] INFO root fetch - processPackages [lightbt]: Remove: archive file [/home/abi/fetcher/tmp/lightbt-0.2.1.tar.gz]
 [2024-05-18 07:00:13] INFO root fetch - main [MainThread]: End processing [lightbt]: success
 [2024-05-18 07:00:13] INFO root fetch - main [MainThread]: Store serial: [23264819]
+[2024-05-18 07:02:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264819]
+[2024-05-18 07:02:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 07:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opendp
+[2024-05-18 07:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loadspinner
+[2024-05-18 07:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shoreberryz
+[2024-05-18 07:02:22] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240516001]
+[2024-05-18 07:02:23] WARNING root fetch - processPackages [shoreberryz]: Skipping, unable to determine old version
+[2024-05-18 07:02:23] INFO root fetch - main [MainThread]: End processing [shoreberryz] error
+[2024-05-18 07:02:23] INFO root fetch - processPackages [loadspinner]: New version: [0.5] Old Version: [0.4]
+[2024-05-18 07:02:23] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/8e/ef/7ce9923d85477196ef133603d9a4837ed097684f0266764fbc2a5b7fc7e8/opendp-0.9.2a20240516001.tar.gz
+[2024-05-18 07:02:23] INFO root fetch - processPackages [loadspinner]: Downloading https://files.pythonhosted.org/packages/cc/46/4e927029dca75ea115eb990c86008c4b71dc2e38f73fcd8d7d8e9195accb/loadspinner-0.4.tar.gz
+[2024-05-18 07:02:23] INFO root fetch - processPackages [loadspinner]: Downloading https://files.pythonhosted.org/packages/ec/9b/856cdc400984c094a508ea8933d04b58dd1f9ad2998e533065122edb3ea4/loadspinner-0.5.tar.gz
+[2024-05-18 07:02:23] INFO root fetch - processPackages [loadspinner]: executing diffoscope
+[2024-05-18 07:02:23] INFO root fetch - processPackages [loadspinner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loadspinner-0.4.tar.gz tmp/loadspinner-0.5.tar.gz --markdown 20240518/l/loadspinner/0.4-0.5/README.md --exclude *.pyd
+[2024-05-18 07:02:23] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/85/6c/b343f02569a02102fd61d7a89f66fb699dbdbf7903119928f4cc3ce8516d/opendp-0.9.2b20240207001-py3-none-any.whl
+[2024-05-18 07:02:23] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36048210>=10485760
+[2024-05-18 07:02:23] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-05-18 07:02:24] INFO root fetch - processPackages [loadspinner]: Remove: archive file [/home/abi/fetcher/tmp/loadspinner-0.4.tar.gz]
+[2024-05-18 07:02:24] INFO root fetch - processPackages [loadspinner]: Remove: archive file [/home/abi/fetcher/tmp/loadspinner-0.5.tar.gz]
+[2024-05-18 07:02:24] INFO root fetch - main [MainThread]: End processing [loadspinner]: success
+[2024-05-18 07:02:24] INFO root fetch - main [MainThread]: Store serial: [23264844]
