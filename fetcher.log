@@ -2754,3 +2754,27 @@
 [2024-05-18 02:54:00] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.1.tar.gz]
 [2024-05-18 02:54:00] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
 [2024-05-18 02:54:00] INFO root fetch - main [MainThread]: Store serial: [23262425]
+[2024-05-18 02:56:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262425]
+[2024-05-18 02:56:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 02:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tdrpa.tdcore
+[2024-05-18 02:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2024-05-18 02:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: garishz
+[2024-05-18 02:56:09] INFO root fetch - processPackages [tdrpa.tdcore]: New version: [1.1.31] Old Version: [1.1.30]
+[2024-05-18 02:56:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-18 02:56:09] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/98/4f/09a661607a406a4c75bca86e48a5dddeda9744a2493f9862ee7c639638a5/tdrpa.tdcore-1.1.30-py39-none-win_amd64.whl
+[2024-05-18 02:56:09] WARNING root fetch - processPackages [garishz]: Skipping, unable to determine old version
+[2024-05-18 02:56:09] INFO root fetch - main [MainThread]: End processing [garishz] error
+[2024-05-18 02:56:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-05-18 02:56:09] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/1f/ec/f5e65aacd89f24dd6ba6699de01a38db7448f6c3b86b8d4649230c4a88f9/tdrpa.tdcore-1.1.31-py39-none-win_amd64.whl
+[2024-05-18 02:56:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-05-18 02:56:09] INFO root fetch - processPackages [tdrpa.tdcore]: executing diffoscope
+[2024-05-18 02:56:09] INFO root fetch - processPackages [tdrpa.tdcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdcore-1.1.30-py39-none-win_amd64.whl.zip tmp/tdrpa.tdcore-1.1.31-py39-none-win_amd64.whl.zip --markdown 20240518/t/tdrpa.tdcore/1.1.30-1.1.31/README.md --exclude *.pyd
+[2024-05-18 02:56:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-05-18 02:56:09] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240518/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-18 02:56:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-05-18 02:56:10] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-05-18 02:56:10] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-05-18 02:56:12] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.30-py39-none-win_amd64.whl.zip]
+[2024-05-18 02:56:12] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.31-py39-none-win_amd64.whl.zip]
+[2024-05-18 02:56:12] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
+[2024-05-18 02:56:12] INFO root fetch - main [MainThread]: Store serial: [23262437]
