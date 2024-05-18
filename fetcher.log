@@ -7226,3 +7226,33 @@
 [2024-05-18 04:15:00] INFO root fetch - processPackages [email-draft-generator]: Remove: archive file [/home/abi/fetcher/tmp/email_draft_generator-0.0.2.tar.gz]
 [2024-05-18 04:15:00] INFO root fetch - main [MainThread]: End processing [email-draft-generator]: success
 [2024-05-18 04:15:00] INFO root fetch - main [MainThread]: Store serial: [23263923]
+[2024-05-18 04:17:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263923]
+[2024-05-18 04:17:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 04:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bhalaho
+[2024-05-18 04:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kvalchemy
+[2024-05-18 04:17:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toc-trade-pb-v2
+[2024-05-18 04:17:10] INFO root fetch - processPackages [bhalaho]: New version: [0.5] Old Version: [0.4]
+[2024-05-18 04:17:10] INFO root fetch - processPackages [toc-trade-pb-v2]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 04:17:10] INFO root fetch - processPackages [kvalchemy]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 04:17:10] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/82/55/cb7263e7c45842476acbf42843d1ff7d2ce8bd3348e34cb4f307b3565089/toc_trade_pb_v2-0.1.2.tar.gz
+[2024-05-18 04:17:10] INFO root fetch - processPackages [bhalaho]: Downloading https://files.pythonhosted.org/packages/0d/f3/9a00f0dc48fd398cd7d13d3a30c93b0350829e0de85a01e733472e31cbc9/bhalaho-0.4.tar.gz
+[2024-05-18 04:17:10] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/a7/54/060820a48aa611bbb96dafc14123947c20aa18f3bb91d387a64b76a7c3aa/kvalchemy-0.0.3.tar.gz
+[2024-05-18 04:17:11] INFO root fetch - processPackages [bhalaho]: Downloading https://files.pythonhosted.org/packages/4b/85/352ece4489b825e19c1cd2bedbbaa17a74a58f0b7a1dbaf1e1f327f10f8f/bhalaho-0.5.tar.gz
+[2024-05-18 04:17:11] INFO root fetch - processPackages [kvalchemy]: Downloading https://files.pythonhosted.org/packages/5b/30/ec49afb7b1cefd5eff6847435ed9d1fddaec2d41904b998b278754cd4acc/kvalchemy-0.0.4.tar.gz
+[2024-05-18 04:17:11] INFO root fetch - processPackages [bhalaho]: executing diffoscope
+[2024-05-18 04:17:11] INFO root fetch - processPackages [bhalaho]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhalaho-0.4.tar.gz tmp/bhalaho-0.5.tar.gz --markdown 20240518/b/bhalaho/0.4-0.5/README.md --exclude *.pyd
+[2024-05-18 04:17:11] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/b1/ad/a9b229dac5bc75e1fffcba3f4fd0b774a1c495f47243bd357e13a87eb008/toc_trade_pb_v2-0.1.3.tar.gz
+[2024-05-18 04:17:11] INFO root fetch - processPackages [kvalchemy]: executing diffoscope
+[2024-05-18 04:17:11] INFO root fetch - processPackages [kvalchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvalchemy-0.0.3.tar.gz tmp/kvalchemy-0.0.4.tar.gz --markdown 20240518/k/kvalchemy/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 04:17:11] INFO root fetch - processPackages [toc-trade-pb-v2]: executing diffoscope
+[2024-05-18 04:17:11] INFO root fetch - processPackages [toc-trade-pb-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toc_trade_pb_v2-0.1.2.tar.gz tmp/toc_trade_pb_v2-0.1.3.tar.gz --markdown 20240518/t/toc-trade-pb-v2/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 04:17:11] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.3.tar.gz]
+[2024-05-18 04:17:11] INFO root fetch - processPackages [kvalchemy]: Remove: archive file [/home/abi/fetcher/tmp/kvalchemy-0.0.4.tar.gz]
+[2024-05-18 04:17:11] INFO root fetch - main [MainThread]: End processing [kvalchemy]: success
+[2024-05-18 04:17:11] INFO root fetch - processPackages [bhalaho]: Remove: archive file [/home/abi/fetcher/tmp/bhalaho-0.4.tar.gz]
+[2024-05-18 04:17:11] INFO root fetch - processPackages [bhalaho]: Remove: archive file [/home/abi/fetcher/tmp/bhalaho-0.5.tar.gz]
+[2024-05-18 04:17:11] INFO root fetch - main [MainThread]: End processing [bhalaho]: success
+[2024-05-18 04:17:12] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.2.tar.gz]
+[2024-05-18 04:17:12] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.3.tar.gz]
+[2024-05-18 04:17:12] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
+[2024-05-18 04:17:12] INFO root fetch - main [MainThread]: Store serial: [23263930]
