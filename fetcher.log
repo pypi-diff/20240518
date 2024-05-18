@@ -18939,3 +18939,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:23:47] INFO root fetch - processPackages [alibabacloud-dingtalk]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_dingtalk-2.1.12.tar.gz]
 [2024-05-18 19:23:47] INFO root fetch - main [MainThread]: End processing [alibabacloud-dingtalk]: success
 [2024-05-18 19:23:47] INFO root fetch - main [MainThread]: Store serial: [23269627]
+[2024-05-18 19:25:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269627]
+[2024-05-18 19:25:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 19:25:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matutinez
+[2024-05-18 19:25:57] WARNING root fetch - processPackages [matutinez]: Skipping, unable to determine old version
+[2024-05-18 19:25:57] INFO root fetch - main [MainThread]: End processing [matutinez] error
+[2024-05-18 19:25:57] INFO root fetch - main [MainThread]: Store serial: [23269640]
