@@ -14891,3 +14891,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:24:15] INFO root fetch - processPackages [trueseeing]: Remove: archive file [/home/abi/fetcher/tmp/trueseeing-2.2.4.tar.gz]
 [2024-05-18 14:24:15] INFO root fetch - main [MainThread]: End processing [trueseeing]: success
 [2024-05-18 14:24:15] INFO root fetch - main [MainThread]: Store serial: [23267616]
+[2024-05-18 14:26:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267616]
+[2024-05-18 14:26:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 14:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dicom-utils
+[2024-05-18 14:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iinfer
+[2024-05-18 14:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gogr-tools
+[2024-05-18 14:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ddeutil-model
+[2024-05-18 14:26:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphinx-orange-book-theme
+[2024-05-18 14:26:24] INFO root fetch - processPackages [gogr-tools]: New version: [0.0.14] Old Version: [0.0.13]
+[2024-05-18 14:26:24] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/b9/3d/8433e6f1d4c72266d1636fabfacb977600947a80b672551cb18d8f01c7d3/gogr_tools-0.0.13.tar.gz
+[2024-05-18 14:26:24] WARNING root fetch - processPackages [dicom-utils]: Skipping, unable to determine old version
+[2024-05-18 14:26:24] INFO root fetch - main [MainThread]: End processing [dicom-utils] error
+[2024-05-18 14:26:24] INFO root fetch - processPackages [sphinx-orange-book-theme]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 14:26:24] INFO root fetch - processPackages [ddeutil-model]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 14:26:24] INFO root fetch - processPackages [iinfer]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-18 14:26:24] INFO root fetch - processPackages [ddeutil-model]: Downloading https://files.pythonhosted.org/packages/94/d2/fdcf06231ea8d6586ab9bd69328b01614c0cca79f9469f278e131c828da6/ddeutil_model-0.0.2.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [sphinx-orange-book-theme]: Downloading https://files.pythonhosted.org/packages/bb/24/c6c68f4bc3042f8a3346166071d710d939f31866f6a93de13aa5fd8820cd/sphinx_orange_book_theme-0.8.0.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [iinfer]: Downloading https://files.pythonhosted.org/packages/35/60/b6642d652d18e9b906c97a20cb0a40053c1c37d4b1f3968d8510fb6c0052/iinfer-0.7.3.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/6f/fb/1dc0ff32db386f1a8e6a98a664ad26b05cd5cfc909b6bdb1fa50800c5b75/gogr_tools-0.0.14.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [gogr-tools]: executing diffoscope
+[2024-05-18 14:26:24] INFO root fetch - processPackages [gogr-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gogr_tools-0.0.13.tar.gz tmp/gogr_tools-0.0.14.tar.gz --markdown 20240518/g/gogr-tools/0.0.13-0.0.14/README.md --exclude *.pyd
+[2024-05-18 14:26:24] INFO root fetch - processPackages [ddeutil-model]: Downloading https://files.pythonhosted.org/packages/3b/9b/941b18b47514844585208802fa9d2458afb5790da19d86c599a6f451f47b/ddeutil_model-0.0.3.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [sphinx-orange-book-theme]: Downloading https://files.pythonhosted.org/packages/73/4f/e5802a07a5cc06aabf412d841ff858fdedbf50438085d166513b3e3b07fe/sphinx_orange_book_theme-0.9.0.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [iinfer]: Downloading https://files.pythonhosted.org/packages/0c/cf/f554709f1ba125e60ee505b55cd4d4e02e091bba0b7903d1e8214e165c0f/iinfer-0.7.4.tar.gz
+[2024-05-18 14:26:24] INFO root fetch - processPackages [iinfer]: executing diffoscope
+[2024-05-18 14:26:24] INFO root fetch - processPackages [ddeutil-model]: executing diffoscope
+[2024-05-18 14:26:24] INFO root fetch - processPackages [ddeutil-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ddeutil_model-0.0.2.tar.gz tmp/ddeutil_model-0.0.3.tar.gz --markdown 20240518/d/ddeutil-model/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 14:26:24] INFO root fetch - processPackages [iinfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iinfer-0.7.3.tar.gz tmp/iinfer-0.7.4.tar.gz --markdown 20240518/i/iinfer/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-18 14:26:24] INFO root fetch - processPackages [sphinx-orange-book-theme]: executing diffoscope
+[2024-05-18 14:26:24] INFO root fetch - processPackages [sphinx-orange-book-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_orange_book_theme-0.8.0.tar.gz tmp/sphinx_orange_book_theme-0.9.0.tar.gz --markdown 20240518/s/sphinx-orange-book-theme/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 14:26:25] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.13.tar.gz]
+[2024-05-18 14:26:25] INFO root fetch - processPackages [gogr-tools]: Remove: archive file [/home/abi/fetcher/tmp/gogr_tools-0.0.14.tar.gz]
+[2024-05-18 14:26:25] INFO root fetch - main [MainThread]: End processing [gogr-tools]: success
+[2024-05-18 14:26:25] INFO root fetch - processPackages [sphinx-orange-book-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_orange_book_theme-0.8.0.tar.gz]
+[2024-05-18 14:26:25] INFO root fetch - processPackages [sphinx-orange-book-theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_orange_book_theme-0.9.0.tar.gz]
+[2024-05-18 14:26:25] INFO root fetch - main [MainThread]: End processing [sphinx-orange-book-theme]: success
+[2024-05-18 14:26:25] INFO root fetch - processPackages [ddeutil-model]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil_model-0.0.2.tar.gz]
+[2024-05-18 14:26:25] INFO root fetch - processPackages [ddeutil-model]: Remove: archive file [/home/abi/fetcher/tmp/ddeutil_model-0.0.3.tar.gz]
+[2024-05-18 14:26:25] INFO root fetch - main [MainThread]: End processing [ddeutil-model]: success
+[2024-05-18 14:26:26] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.7.3.tar.gz]
+[2024-05-18 14:26:26] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.7.4.tar.gz]
+[2024-05-18 14:26:26] INFO root fetch - main [MainThread]: End processing [iinfer]: success
+[2024-05-18 14:26:26] INFO root fetch - main [MainThread]: Store serial: [23267637]
