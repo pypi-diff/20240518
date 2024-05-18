@@ -9891,3 +9891,21 @@
 [2024-05-18 07:24:08] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.5.0.tar.gz]
 [2024-05-18 07:24:08] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
 [2024-05-18 07:24:08] INFO root fetch - main [MainThread]: Store serial: [23264960]
+[2024-05-18 07:26:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264960]
+[2024-05-18 07:26:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: footium-api
+[2024-05-18 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p7-package
+[2024-05-18 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-mail-multicompany
+[2024-05-18 07:26:16] WARNING root fetch - processPackages [footium-api]: Skipping, unable to determine old version
+[2024-05-18 07:26:16] INFO root fetch - main [MainThread]: End processing [footium-api] error
+[2024-05-18 07:26:16] WARNING root fetch - processPackages [p7-package]: Skipping, unable to determine old version
+[2024-05-18 07:26:16] INFO root fetch - main [MainThread]: End processing [p7-package] error
+[2024-05-18 07:26:16] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-18 07:26:16] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Downloading https://files.pythonhosted.org/packages/00/37/b5c72199d6d090f26f20e1f8dde6384c5b93a3ba62c2ba7fab7da04661e3/odoo_addon_mail_multicompany-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 07:26:17] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Downloading https://files.pythonhosted.org/packages/67/d5/a904976370ec9b753624ac4fe653e04cf547e8c89706d18e6f7f85cc05fc/odoo_addon_mail_multicompany-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 07:26:17] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: executing diffoscope
+[2024-05-18 07:26:17] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_multicompany-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_mail_multicompany-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-mail-multicompany/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 07:26:17] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_multicompany-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 07:26:17] INFO root fetch - processPackages [odoo-addon-mail-multicompany]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_multicompany-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 07:26:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-multicompany]: success
+[2024-05-18 07:26:17] INFO root fetch - main [MainThread]: Store serial: [23264970]
