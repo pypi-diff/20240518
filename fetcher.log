@@ -18266,3 +18266,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:39:07] INFO root fetch - processPackages [iop-python]: Remove: archive file [/home/abi/fetcher/tmp/iop_python-0.1.1.tar.gz]
 [2024-05-18 18:39:07] INFO root fetch - main [MainThread]: End processing [iop-python]: success
 [2024-05-18 18:39:07] INFO root fetch - main [MainThread]: Store serial: [23269287]
+[2024-05-18 18:41:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269287]
+[2024-05-18 18:41:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 18:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coderedcms
+[2024-05-18 18:41:16] INFO root fetch - processPackages [coderedcms]: New version: [3.0.4] Old Version: [3.0.3]
+[2024-05-18 18:41:16] INFO root fetch - processPackages [coderedcms]: Downloading https://files.pythonhosted.org/packages/54/fa/40a6f089be566d17bc5e7c43afcda303dceebcdd420294a4da582b4bc1fc/coderedcms-3.0.3.tar.gz
+[2024-05-18 18:41:17] INFO root fetch - processPackages [coderedcms]: Downloading https://files.pythonhosted.org/packages/e9/61/6f0a00d768b6190369629343a56cf2c423f6211d94348dd2faf7dc6b6c06/coderedcms-3.0.4.tar.gz
+[2024-05-18 18:41:21] INFO root fetch - processPackages [coderedcms]: executing diffoscope
+[2024-05-18 18:41:21] INFO root fetch - processPackages [coderedcms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coderedcms-3.0.3.tar.gz tmp/coderedcms-3.0.4.tar.gz --markdown 20240518/c/coderedcms/3.0.3-3.0.4/README.md --exclude *.pyd
+[2024-05-18 18:41:23] INFO root fetch - processPackages [coderedcms]: Remove: archive file [/home/abi/fetcher/tmp/coderedcms-3.0.3.tar.gz]
+[2024-05-18 18:41:23] INFO root fetch - processPackages [coderedcms]: Remove: archive file [/home/abi/fetcher/tmp/coderedcms-3.0.4.tar.gz]
+[2024-05-18 18:41:23] INFO root fetch - main [MainThread]: End processing [coderedcms]: success
+[2024-05-18 18:41:23] INFO root fetch - main [MainThread]: Store serial: [23269291]
