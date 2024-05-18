@@ -11706,3 +11706,30 @@
 [2024-05-18 10:06:41] INFO root fetch - processPackages [effect-form-validators]: Remove: archive file [/home/abi/fetcher/tmp/effect-form-validators-0.1.9.tar.gz]
 [2024-05-18 10:06:41] INFO root fetch - main [MainThread]: End processing [effect-form-validators]: success
 [2024-05-18 10:06:41] INFO root fetch - main [MainThread]: Store serial: [23265892]
+[2024-05-18 10:08:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265892]
+[2024-05-18 10:08:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 10:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novnc
+[2024-05-18 10:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2024-05-18 10:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gytmdl
+[2024-05-18 10:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-cli-tool
+[2024-05-18 10:08:50] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240517] Old Version: [0.4.5.dev20240516]
+[2024-05-18 10:08:50] INFO root fetch - processPackages [gytmdl]: New version: [2.0] Old Version: [1.7.1]
+[2024-05-18 10:08:50] WARNING root fetch - processPackages [novnc]: Skipping, unable to determine old version
+[2024-05-18 10:08:50] INFO root fetch - main [MainThread]: End processing [novnc] error
+[2024-05-18 10:08:50] WARNING root fetch - processPackages [my-cli-tool]: Skipping, unable to determine old version
+[2024-05-18 10:08:50] INFO root fetch - main [MainThread]: End processing [my-cli-tool] error
+[2024-05-18 10:08:50] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/71/d3/e11d6881536636a46258543d53444d5f10e66d72ec59dc9988fc88850e6c/pyglove-0.4.5.dev20240516.tar.gz
+[2024-05-18 10:08:50] INFO root fetch - processPackages [gytmdl]: Downloading https://files.pythonhosted.org/packages/37/ff/c75c4c5c844ac7024721ae9d0adfc98375a747dcec101fe8ea8deb43d25b/gytmdl-1.7.1.tar.gz
+[2024-05-18 10:08:50] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/4c/fd/cd47881922aeb4e8a800d51af670a62b8f8fa9a6946ea444986a38c19e37/pyglove-0.4.5.dev20240517.tar.gz
+[2024-05-18 10:08:50] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-18 10:08:50] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240516.tar.gz tmp/pyglove-0.4.5.dev20240517.tar.gz --markdown 20240518/p/pyglove/0.4.5.dev20240516-0.4.5.dev20240517/README.md --exclude *.pyd
+[2024-05-18 10:08:50] INFO root fetch - processPackages [gytmdl]: Downloading https://files.pythonhosted.org/packages/db/21/26e48ebf1675a8747d1128d8e42b43ebd9c2f8f3c35d397fb407f3afe305/gytmdl-2.0.tar.gz
+[2024-05-18 10:08:51] INFO root fetch - processPackages [gytmdl]: executing diffoscope
+[2024-05-18 10:08:51] INFO root fetch - processPackages [gytmdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gytmdl-1.7.1.tar.gz tmp/gytmdl-2.0.tar.gz --markdown 20240518/g/gytmdl/1.7.1-2.0/README.md --exclude *.pyd
+[2024-05-18 10:08:51] INFO root fetch - processPackages [gytmdl]: Remove: archive file [/home/abi/fetcher/tmp/gytmdl-1.7.1.tar.gz]
+[2024-05-18 10:08:51] INFO root fetch - processPackages [gytmdl]: Remove: archive file [/home/abi/fetcher/tmp/gytmdl-2.0.tar.gz]
+[2024-05-18 10:08:51] INFO root fetch - main [MainThread]: End processing [gytmdl]: success
+[2024-05-18 10:08:52] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240516.tar.gz]
+[2024-05-18 10:08:52] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240517.tar.gz]
+[2024-05-18 10:08:52] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-18 10:08:52] INFO root fetch - main [MainThread]: Store serial: [23265905]
