@@ -22394,3 +22394,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:39:06] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.4.tar.gz]
 [2024-05-18 23:39:06] INFO root fetch - main [MainThread]: End processing [g4f]: success
 [2024-05-18 23:39:06] INFO root fetch - main [MainThread]: Store serial: [23271414]
+[2024-05-18 23:41:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271414]
+[2024-05-18 23:41:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 23:41:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpacesz
+[2024-05-18 23:41:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frida
+[2024-05-18 23:41:15] WARNING root fetch - processPackages [outpacesz]: Skipping, unable to determine old version
+[2024-05-18 23:41:15] INFO root fetch - main [MainThread]: End processing [outpacesz] error
+[2024-05-18 23:41:16] INFO root fetch - processPackages [frida]: New version: [9.1.9] Old Version: [9.1.8]
+[2024-05-18 23:41:16] INFO root fetch - processPackages [frida]: Downloading https://files.pythonhosted.org/packages/e1/97/852b702cd6e05f35c59113a5448910759461d10d5cb843b2b8b8fbb6d671/frida-9.1.8.tar.gz
+[2024-05-18 23:41:17] INFO root fetch - processPackages [frida]: Downloading https://files.pythonhosted.org/packages/4e/ca/ee40ef1d5013300a77152ff0687caedc3b5ea1f786bf3e0b778de5fc0b8a/frida-9.1.9.tar.gz
+[2024-05-18 23:41:17] INFO root fetch - processPackages [frida]: executing diffoscope
+[2024-05-18 23:41:17] INFO root fetch - processPackages [frida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frida-9.1.8.tar.gz tmp/frida-9.1.9.tar.gz --markdown 20240518/f/frida/9.1.8-9.1.9/README.md --exclude *.pyd
+[2024-05-18 23:41:17] INFO root fetch - processPackages [frida]: Remove: archive file [/home/abi/fetcher/tmp/frida-9.1.8.tar.gz]
+[2024-05-18 23:41:17] INFO root fetch - processPackages [frida]: Remove: archive file [/home/abi/fetcher/tmp/frida-9.1.9.tar.gz]
+[2024-05-18 23:41:17] INFO root fetch - main [MainThread]: End processing [frida]: success
+[2024-05-18 23:41:17] INFO root fetch - main [MainThread]: Store serial: [23271433]
