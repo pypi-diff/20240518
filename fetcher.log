@@ -2281,3 +2281,45 @@
 [2024-05-18 02:22:39] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.6.0-py3-none-any.whl.zip]
 [2024-05-18 02:22:39] INFO root fetch - main [MainThread]: End processing [mesop]: success
 [2024-05-18 02:22:39] INFO root fetch - main [MainThread]: Store serial: [23262223]
+[2024-05-18 02:24:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262223]
+[2024-05-18 02:24:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 02:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aurora-globaldatabase
+[2024-05-18 02:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ptosesz
+[2024-05-18 02:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abacusai
+[2024-05-18 02:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-certbot-dns-route53
+[2024-05-18 02:24:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: internationaltouch-oauth2client
+[2024-05-18 02:24:54] INFO root fetch - processPackages [abacusai]: New version: [1.3.0] Old Version: [1.2.9]
+[2024-05-18 02:24:54] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-18 02:24:54] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-05-18 02:24:54] WARNING root fetch - processPackages [ptosesz]: Skipping, unable to determine old version
+[2024-05-18 02:24:54] INFO root fetch - main [MainThread]: End processing [ptosesz] error
+[2024-05-18 02:24:54] INFO root fetch - processPackages [internationaltouch-oauth2client]: New version: [4.1.6] Old Version: [4.1.5]
+[2024-05-18 02:24:54] INFO root fetch - processPackages [abacusai]: Downloading https://files.pythonhosted.org/packages/18/49/869097bd4b49780a01924b2f46d43beb69344ff7b54a3023bdefb69c0f90/abacusai-1.2.9.tar.gz
+[2024-05-18 02:24:54] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-18 02:24:54] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-05-18 02:24:55] INFO root fetch - processPackages [internationaltouch-oauth2client]: Downloading https://files.pythonhosted.org/packages/aa/11/c29eeca1fe595990aee1dc1ee252f2f317e2736b4ac5b0b30d1fbd43c2b1/internationaltouch_oauth2client-4.1.5.tar.gz
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240518/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240518/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-05-18 02:24:55] INFO root fetch - processPackages [internationaltouch-oauth2client]: Downloading https://files.pythonhosted.org/packages/2c/eb/32529dc12d36b33ba14073eeafc7907e7e5d39036525a7559553f1572387/internationaltouch_oauth2client-4.1.6-py2.py3-none-any.whl
+[2024-05-18 02:24:55] INFO root fetch - processPackages [abacusai]: Downloading https://files.pythonhosted.org/packages/8b/71/975597a0b218a28819a69ed267c17d68473d6f8aaba60b0d3675849db8cc/abacusai-1.3.0.tar.gz
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-18 02:24:55] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-18 02:24:55] INFO root fetch - processPackages [abacusai]: executing diffoscope
+[2024-05-18 02:24:55] INFO root fetch - processPackages [abacusai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abacusai-1.2.9.tar.gz tmp/abacusai-1.3.0.tar.gz --markdown 20240518/a/abacusai/1.2.9-1.3.0/README.md --exclude *.pyd
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-05-18 02:24:55] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-05-18 02:24:55] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-05-18 02:24:56] INFO root fetch - processPackages [internationaltouch-oauth2client]: executing diffoscope
+[2024-05-18 02:24:56] INFO root fetch - processPackages [internationaltouch-oauth2client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internationaltouch_oauth2client-4.1.5.tar.gz tmp/internationaltouch_oauth2client-4.1.6-py2.py3-none-any.whl.zip --markdown 20240518/i/internationaltouch-oauth2client/4.1.5-4.1.6/README.md --exclude *.pyd
+[2024-05-18 02:24:56] INFO root fetch - processPackages [internationaltouch-oauth2client]: Remove: archive file [/home/abi/fetcher/tmp/internationaltouch_oauth2client-4.1.5.tar.gz]
+[2024-05-18 02:24:56] INFO root fetch - processPackages [internationaltouch-oauth2client]: Remove: archive file [/home/abi/fetcher/tmp/internationaltouch_oauth2client-4.1.6-py2.py3-none-any.whl.zip]
+[2024-05-18 02:24:56] INFO root fetch - main [MainThread]: End processing [internationaltouch-oauth2client]: success
+[2024-05-18 02:25:15] INFO root fetch - processPackages [abacusai]: Remove: archive file [/home/abi/fetcher/tmp/abacusai-1.2.9.tar.gz]
+[2024-05-18 02:25:15] INFO root fetch - processPackages [abacusai]: Remove: archive file [/home/abi/fetcher/tmp/abacusai-1.3.0.tar.gz]
+[2024-05-18 02:25:15] INFO root fetch - main [MainThread]: End processing [abacusai]: success
+[2024-05-18 02:25:15] INFO root fetch - main [MainThread]: Store serial: [23262236]
