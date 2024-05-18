@@ -17779,3 +17779,60 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:06:10] INFO root fetch - processPackages [azcp-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/azcp_wrapper-0.0.7.tar.gz]
 [2024-05-18 18:06:10] INFO root fetch - main [MainThread]: End processing [azcp-wrapper]: success
 [2024-05-18 18:06:10] INFO root fetch - main [MainThread]: Store serial: [23269053]
+[2024-05-18 18:08:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269053]
+[2024-05-18 18:08:18] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atooms-pp
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agent-bdi
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mdtopptx
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: syllablingz
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sdkfabric-discord
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wxauto
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: adafruit-circuitpython-logging
+[2024-05-18 18:08:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dtw-python
+[2024-05-18 18:08:19] WARNING root fetch - processPackages [mdtopptx]: Skipping, unable to determine old version
+[2024-05-18 18:08:19] INFO root fetch - main [MainThread]: End processing [mdtopptx] error
+[2024-05-18 18:08:19] INFO root fetch - processPackages [atooms-pp]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-05-18 18:08:19] WARNING root fetch - processPackages [syllablingz]: Skipping, unable to determine old version
+[2024-05-18 18:08:19] INFO root fetch - main [MainThread]: End processing [syllablingz] error
+[2024-05-18 18:08:19] INFO root fetch - processPackages [wxauto]: New version: [3.9.8.15.8] Old Version: [3.9.8.15.7]
+[2024-05-18 18:08:19] INFO root fetch - processPackages [adafruit-circuitpython-logging]: New version: [5.3.0] Old Version: [5.2.5]
+[2024-05-18 18:08:19] INFO root fetch - processPackages [agent-bdi]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-05-18 18:08:19] WARNING root fetch - processPackages [sdkfabric-discord]: Skipping, unable to determine old version
+[2024-05-18 18:08:19] INFO root fetch - main [MainThread]: End processing [sdkfabric-discord] error
+[2024-05-18 18:08:19] INFO root fetch - processPackages [dtw-python]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-05-18 18:08:19] INFO root fetch - processPackages [atooms-pp]: Downloading https://files.pythonhosted.org/packages/de/df/85b13c3134e426dd2f848bf30bcf83fe14ec72a728f35a2310bd564f4063/atooms_pp-4.0.0.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [wxauto]: Downloading https://files.pythonhosted.org/packages/91/c2/554fb3920df33cc2fa814b47fe1dede62ad2f0e83f760dca52d89c12778b/wxauto-3.9.8.15.7.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [agent-bdi]: Downloading https://files.pythonhosted.org/packages/e0/e9/62e2c602b41c2ec2225c7c60a94fe2318b7d38022e0d364626ac168b40d3/agent-bdi-2.4.3.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [adafruit-circuitpython-logging]: Downloading https://files.pythonhosted.org/packages/1f/25/ef6e8e25cca7a87d3d19b423dcea82618b0cb315164040c4bdf3b37ea586/adafruit-circuitpython-logging-5.2.5.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [dtw-python]: Downloading https://files.pythonhosted.org/packages/72/64/204784d1583c6e888ef032fad735c7cff47d993d4b1c52fa541cccb97757/dtw-python-1.4.2.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [agent-bdi]: Downloading https://files.pythonhosted.org/packages/72/54/1cd709b37e766e829dcaee7c708f4c2d3f60312a9c1fec6c443d00b7c143/agent-bdi-2.4.4.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [wxauto]: Downloading https://files.pythonhosted.org/packages/86/6d/7a172ec047eaa7221731928f5b9ea8111d5a2bb941657dbca4004706694c/wxauto-3.9.8.15.8.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [agent-bdi]: executing diffoscope
+[2024-05-18 18:08:19] INFO root fetch - processPackages [agent-bdi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agent-bdi-2.4.3.tar.gz tmp/agent-bdi-2.4.4.tar.gz --markdown 20240518/a/agent-bdi/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-05-18 18:08:19] INFO root fetch - processPackages [adafruit-circuitpython-logging]: Downloading https://files.pythonhosted.org/packages/48/7d/674f88fa8f8bbfd9d289f533df76cc29af1557c5494e8b1594afd1687fda/adafruit_circuitpython_logging-5.3.0.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [atooms-pp]: Downloading https://files.pythonhosted.org/packages/c8/a2/ba4ebe607cf12a639cb07a678db7b6ae187a84bcf6c36d7aaafe8d23c158/atooms_pp-4.0.1.tar.gz
+[2024-05-18 18:08:19] INFO root fetch - processPackages [wxauto]: executing diffoscope
+[2024-05-18 18:08:19] INFO root fetch - processPackages [wxauto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wxauto-3.9.8.15.7.tar.gz tmp/wxauto-3.9.8.15.8.tar.gz --markdown 20240518/w/wxauto/3.9.8.15.7-3.9.8.15.8/README.md --exclude *.pyd
+[2024-05-18 18:08:20] INFO root fetch - processPackages [dtw-python]: Downloading https://files.pythonhosted.org/packages/c2/4b/fc0b26a480b2726686681c6ac37b1e28f8e85b081b088161436cd8db10d0/dtw_python-1.4.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 18:08:20] INFO root fetch - processPackages [atooms-pp]: executing diffoscope
+[2024-05-18 18:08:20] INFO root fetch - processPackages [atooms-pp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atooms_pp-4.0.0.tar.gz tmp/atooms_pp-4.0.1.tar.gz --markdown 20240518/a/atooms-pp/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-05-18 18:08:20] INFO root fetch - processPackages [adafruit-circuitpython-logging]: executing diffoscope
+[2024-05-18 18:08:20] INFO root fetch - processPackages [adafruit-circuitpython-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-logging-5.2.5.tar.gz tmp/adafruit_circuitpython_logging-5.3.0.tar.gz --markdown 20240518/a/adafruit-circuitpython-logging/5.2.5-5.3.0/README.md --exclude *.pyd
+[2024-05-18 18:08:20] INFO root fetch - processPackages [wxauto]: Remove: archive file [/home/abi/fetcher/tmp/wxauto-3.9.8.15.7.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - processPackages [wxauto]: Remove: archive file [/home/abi/fetcher/tmp/wxauto-3.9.8.15.8.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - main [MainThread]: End processing [wxauto]: success
+[2024-05-18 18:08:20] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.3.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - processPackages [agent-bdi]: Remove: archive file [/home/abi/fetcher/tmp/agent-bdi-2.4.4.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - main [MainThread]: End processing [agent-bdi]: success
+[2024-05-18 18:08:20] INFO root fetch - processPackages [adafruit-circuitpython-logging]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-logging-5.2.5.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - processPackages [adafruit-circuitpython-logging]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_logging-5.3.0.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-logging]: success
+[2024-05-18 18:08:20] INFO root fetch - processPackages [atooms-pp]: Remove: archive file [/home/abi/fetcher/tmp/atooms_pp-4.0.0.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - processPackages [atooms-pp]: Remove: archive file [/home/abi/fetcher/tmp/atooms_pp-4.0.1.tar.gz]
+[2024-05-18 18:08:20] INFO root fetch - main [MainThread]: End processing [atooms-pp]: success
+[2024-05-18 18:08:21] INFO root fetch - processPackages [dtw-python]: executing diffoscope
+[2024-05-18 18:08:21] INFO root fetch - processPackages [dtw-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtw-python-1.4.2.tar.gz tmp/dtw_python-1.4.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240518/d/dtw-python/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-05-18 18:08:21] INFO root fetch - processPackages [dtw-python]: Remove: archive file [/home/abi/fetcher/tmp/dtw-python-1.4.2.tar.gz]
+[2024-05-18 18:08:21] INFO root fetch - processPackages [dtw-python]: Remove: archive file [/home/abi/fetcher/tmp/dtw_python-1.4.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-18 18:08:21] INFO root fetch - main [MainThread]: End processing [dtw-python]: success
+[2024-05-18 18:08:21] INFO root fetch - main [MainThread]: Store serial: [23269084]
