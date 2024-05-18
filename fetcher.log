@@ -10591,3 +10591,24 @@
 [2024-05-18 08:28:42] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a3.tar.gz]
 [2024-05-18 08:28:42] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
 [2024-05-18 08:28:42] INFO root fetch - main [MainThread]: Store serial: [23265293]
+[2024-05-18 08:30:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265293]
+[2024-05-18 08:30:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bank-scrapers
+[2024-05-18 08:30:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-base-user-role
+[2024-05-18 08:30:51] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-05-18 08:30:51] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/43/60/a208649420d99a3a21dde92227859506e2ea2f35450343752cc4d776415d/bank_scrapers-1.0.7.tar.gz
+[2024-05-18 08:30:51] INFO root fetch - processPackages [odoo14-addon-base-user-role]: New version: [14.0.2.5.4.dev7] Old Version: [14.0.2.5.4.dev6]
+[2024-05-18 08:30:52] INFO root fetch - processPackages [odoo14-addon-base-user-role]: Downloading https://files.pythonhosted.org/packages/38/8e/c26f4e26558656e62dbcde9daea45ced413a944b6ec7f9fc3b641991f458/odoo14_addon_base_user_role-14.0.2.5.4.dev6-py3-none-any.whl
+[2024-05-18 08:30:52] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/13/b0/1f956c44e81b935506ae8660d8aaaa4a975dba8db964492a98a3131961cc/bank_scrapers-1.0.8.tar.gz
+[2024-05-18 08:30:52] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 08:30:52] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.7.tar.gz tmp/bank_scrapers-1.0.8.tar.gz --markdown 20240518/b/bank-scrapers/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-05-18 08:30:52] INFO root fetch - processPackages [odoo14-addon-base-user-role]: Downloading https://files.pythonhosted.org/packages/c3/02/ba6e05aeb0ed09939fa20e428eb520b7f82d92609ad1a5ea317250f5752c/odoo14_addon_base_user_role-14.0.2.5.4.dev7-py3-none-any.whl
+[2024-05-18 08:30:52] INFO root fetch - processPackages [odoo14-addon-base-user-role]: executing diffoscope
+[2024-05-18 08:30:52] INFO root fetch - processPackages [odoo14-addon-base-user-role]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_user_role-14.0.2.5.4.dev6-py3-none-any.whl.zip tmp/odoo14_addon_base_user_role-14.0.2.5.4.dev7-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-base-user-role/14.0.2.5.4.dev6-14.0.2.5.4.dev7/README.md --exclude *.pyd
+[2024-05-18 08:30:52] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.7.tar.gz]
+[2024-05-18 08:30:52] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.8.tar.gz]
+[2024-05-18 08:30:52] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 08:30:53] INFO root fetch - processPackages [odoo14-addon-base-user-role]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_user_role-14.0.2.5.4.dev6-py3-none-any.whl.zip]
+[2024-05-18 08:30:53] INFO root fetch - processPackages [odoo14-addon-base-user-role]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_user_role-14.0.2.5.4.dev7-py3-none-any.whl.zip]
+[2024-05-18 08:30:53] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-user-role]: success
+[2024-05-18 08:30:53] INFO root fetch - main [MainThread]: Store serial: [23265298]
