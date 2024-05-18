@@ -15897,3 +15897,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:45:48] INFO root fetch - processPackages [sop-deutils]: Remove: archive file [/home/abi/fetcher/tmp/sop_deutils-0.9.9.tar.gz]
 [2024-05-18 15:45:48] INFO root fetch - main [MainThread]: End processing [sop-deutils]: success
 [2024-05-18 15:45:48] INFO root fetch - main [MainThread]: Store serial: [23268171]
+[2024-05-18 15:47:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268171]
+[2024-05-18 15:47:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbhydra
+[2024-05-18 15:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asknews
+[2024-05-18 15:47:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autobean-format
+[2024-05-18 15:47:58] INFO root fetch - processPackages [dbhydra]: New version: [2.2.5] Old Version: [2.2.3]
+[2024-05-18 15:47:58] INFO root fetch - processPackages [dbhydra]: Downloading https://files.pythonhosted.org/packages/26/7f/27f8444c6a8fc3180879a4ab73f8883597d96e80c035d97ef00261d563c1/dbhydra-2.2.3.tar.gz
+[2024-05-18 15:47:58] INFO root fetch - processPackages [asknews]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-18 15:47:58] INFO root fetch - processPackages [autobean-format]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 15:47:58] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/63/b2/96cd4417c435cfd185b1e4cbe709a65da55a46462b776616f039a38b19f6/asknews-0.6.2-py3-none-any.whl
+[2024-05-18 15:47:58] INFO root fetch - processPackages [autobean-format]: Downloading https://files.pythonhosted.org/packages/86/be/0d584f09c59adf5448c7bc8ab29ac64d088c3358a1120c4f95e642f26174/autobean-format-0.1.5.tar.gz
+[2024-05-18 15:47:58] INFO root fetch - processPackages [dbhydra]: Downloading https://files.pythonhosted.org/packages/4a/8c/485d1ef6ea0e9485c13907b14d081bfdea6f56d9c689148e468c57f6c132/dbhydra-2.2.5.tar.gz
+[2024-05-18 15:47:58] INFO root fetch - processPackages [dbhydra]: executing diffoscope
+[2024-05-18 15:47:58] INFO root fetch - processPackages [dbhydra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbhydra-2.2.3.tar.gz tmp/dbhydra-2.2.5.tar.gz --markdown 20240518/d/dbhydra/2.2.3-2.2.5/README.md --exclude *.pyd
+[2024-05-18 15:47:59] INFO root fetch - processPackages [autobean-format]: Downloading https://files.pythonhosted.org/packages/b8/55/7f6a66c25acffb2b3b3be064790afc2b654bcf9ab7fe54a28d741328b4a9/autobean-format-0.1.6.tar.gz
+[2024-05-18 15:47:59] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/89/37/c1ab6ee0e39eeefe79deb23c167d856426441acf416d26c80435dfbe3281/asknews-0.6.3-py3-none-any.whl
+[2024-05-18 15:47:59] INFO root fetch - processPackages [asknews]: executing diffoscope
+[2024-05-18 15:47:59] INFO root fetch - processPackages [asknews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asknews-0.6.2-py3-none-any.whl.zip tmp/asknews-0.6.3-py3-none-any.whl.zip --markdown 20240518/a/asknews/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-18 15:47:59] INFO root fetch - processPackages [autobean-format]: executing diffoscope
+[2024-05-18 15:47:59] INFO root fetch - processPackages [autobean-format]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autobean-format-0.1.5.tar.gz tmp/autobean-format-0.1.6.tar.gz --markdown 20240518/a/autobean-format/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 15:47:59] INFO root fetch - processPackages [dbhydra]: Remove: archive file [/home/abi/fetcher/tmp/dbhydra-2.2.3.tar.gz]
+[2024-05-18 15:47:59] INFO root fetch - processPackages [dbhydra]: Remove: archive file [/home/abi/fetcher/tmp/dbhydra-2.2.5.tar.gz]
+[2024-05-18 15:47:59] INFO root fetch - main [MainThread]: End processing [dbhydra]: success
+[2024-05-18 15:47:59] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.2-py3-none-any.whl.zip]
+[2024-05-18 15:47:59] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.3-py3-none-any.whl.zip]
+[2024-05-18 15:47:59] INFO root fetch - main [MainThread]: End processing [asknews]: success
+[2024-05-18 15:47:59] INFO root fetch - processPackages [autobean-format]: Remove: archive file [/home/abi/fetcher/tmp/autobean-format-0.1.5.tar.gz]
+[2024-05-18 15:47:59] INFO root fetch - processPackages [autobean-format]: Remove: archive file [/home/abi/fetcher/tmp/autobean-format-0.1.6.tar.gz]
+[2024-05-18 15:47:59] INFO root fetch - main [MainThread]: End processing [autobean-format]: success
+[2024-05-18 15:47:59] INFO root fetch - main [MainThread]: Store serial: [23268179]
