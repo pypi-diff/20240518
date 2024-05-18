@@ -7188,3 +7188,29 @@
 [2024-05-18 04:08:35] INFO root fetch - processPackages [cocnc]: Remove: archive file [/home/abi/fetcher/tmp/cocnc-0.1.8.tar.gz]
 [2024-05-18 04:08:35] INFO root fetch - main [MainThread]: End processing [cocnc]: success
 [2024-05-18 04:08:35] INFO root fetch - main [MainThread]: Store serial: [23263911]
+[2024-05-18 04:10:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263911]
+[2024-05-18 04:10:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 04:12:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263911]
+[2024-05-18 04:12:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 04:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zonevu
+[2024-05-18 04:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wheke
+[2024-05-18 04:12:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: orthotoluicz
+[2024-05-18 04:12:49] INFO root fetch - processPackages [wheke]: New version: [0.1.0] Old Version: [0.0.1a9]
+[2024-05-18 04:12:49] INFO root fetch - processPackages [wheke]: Downloading https://files.pythonhosted.org/packages/db/e0/2c69b1fae7f2f9e19f717d36d17319908a8a631fad91e89d6e9cada41b9f/wheke-0.0.1a9.tar.gz
+[2024-05-18 04:12:49] INFO root fetch - processPackages [zonevu]: New version: [1.1.25] Old Version: [1.1.24]
+[2024-05-18 04:12:49] WARNING root fetch - processPackages [orthotoluicz]: Skipping, unable to determine old version
+[2024-05-18 04:12:49] INFO root fetch - main [MainThread]: End processing [orthotoluicz] error
+[2024-05-18 04:12:49] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/1e/ac/37decfc954c7c1327104c5c441f37450fa454ebfd265e1aeb01c95c055f7/zonevu-1.1.24-py3-none-any.whl
+[2024-05-18 04:12:49] INFO root fetch - processPackages [wheke]: Downloading https://files.pythonhosted.org/packages/41/45/61bce6e7ca1f2158000649b287cec081828dbf6349eb8af1d8aa951ead17/wheke-0.1.0.tar.gz
+[2024-05-18 04:12:49] INFO root fetch - processPackages [wheke]: executing diffoscope
+[2024-05-18 04:12:49] INFO root fetch - processPackages [wheke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheke-0.0.1a9.tar.gz tmp/wheke-0.1.0.tar.gz --markdown 20240518/w/wheke/0.0.1a9-0.1.0/README.md --exclude *.pyd
+[2024-05-18 04:12:50] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/c0/67/4c0d0170da90cd447fcf8693a95a6752f51a533d85eedbb6d708995424e8/zonevu-1.1.25-py3-none-any.whl
+[2024-05-18 04:12:50] INFO root fetch - processPackages [zonevu]: executing diffoscope
+[2024-05-18 04:12:50] INFO root fetch - processPackages [zonevu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonevu-1.1.24-py3-none-any.whl.zip tmp/zonevu-1.1.25-py3-none-any.whl.zip --markdown 20240518/z/zonevu/1.1.24-1.1.25/README.md --exclude *.pyd
+[2024-05-18 04:12:50] INFO root fetch - processPackages [wheke]: Remove: archive file [/home/abi/fetcher/tmp/wheke-0.0.1a9.tar.gz]
+[2024-05-18 04:12:50] INFO root fetch - processPackages [wheke]: Remove: archive file [/home/abi/fetcher/tmp/wheke-0.1.0.tar.gz]
+[2024-05-18 04:12:50] INFO root fetch - main [MainThread]: End processing [wheke]: success
+[2024-05-18 04:12:51] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.24-py3-none-any.whl.zip]
+[2024-05-18 04:12:51] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.25-py3-none-any.whl.zip]
+[2024-05-18 04:12:51] INFO root fetch - main [MainThread]: End processing [zonevu]: success
+[2024-05-18 04:12:51] INFO root fetch - main [MainThread]: Store serial: [23263920]
