@@ -10966,3 +10966,30 @@
 [2024-05-18 08:59:15] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
 [2024-05-18 08:59:15] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
 [2024-05-18 08:59:15] INFO root fetch - main [MainThread]: Store serial: [23265554]
+[2024-05-18 09:01:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265554]
+[2024-05-18 09:01:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 09:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hydrologistz
+[2024-05-18 09:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdapi-py
+[2024-05-18 09:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchlure
+[2024-05-18 09:01:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostcli
+[2024-05-18 09:01:24] INFO root fetch - processPackages [torchlure]: New version: [0.2405.9] Old Version: [0.2405.8]
+[2024-05-18 09:01:24] WARNING root fetch - processPackages [gdapi-py]: Skipping, unable to determine old version
+[2024-05-18 09:01:24] INFO root fetch - main [MainThread]: End processing [gdapi-py] error
+[2024-05-18 09:01:24] INFO root fetch - processPackages [torchlure]: Downloading https://files.pythonhosted.org/packages/6b/bd/5c01822218b31e5f06617a604408e705618024d5eaa4c1ed27ba9f1d3cbe/torchlure-0.2405.8.tar.gz
+[2024-05-18 09:01:24] WARNING root fetch - processPackages [hydrologistz]: Skipping, unable to determine old version
+[2024-05-18 09:01:24] INFO root fetch - main [MainThread]: End processing [hydrologistz] error
+[2024-05-18 09:01:24] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 09:01:25] INFO root fetch - processPackages [torchlure]: Downloading https://files.pythonhosted.org/packages/2e/bd/9d08ec703de646b0eab2bcbb117bc2c5879361cbd622ae8503c3366206fe/torchlure-0.2405.9.tar.gz
+[2024-05-18 09:01:25] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-05-18 09:01:25] INFO root fetch - processPackages [torchlure]: executing diffoscope
+[2024-05-18 09:01:25] INFO root fetch - processPackages [torchlure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlure-0.2405.8.tar.gz tmp/torchlure-0.2405.9.tar.gz --markdown 20240518/t/torchlure/0.2405.8-0.2405.9/README.md --exclude *.pyd
+[2024-05-18 09:01:25] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-05-18 09:01:25] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-05-18 09:01:25] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240518/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 09:01:25] INFO root fetch - processPackages [torchlure]: Remove: archive file [/home/abi/fetcher/tmp/torchlure-0.2405.8.tar.gz]
+[2024-05-18 09:01:25] INFO root fetch - processPackages [torchlure]: Remove: archive file [/home/abi/fetcher/tmp/torchlure-0.2405.9.tar.gz]
+[2024-05-18 09:01:25] INFO root fetch - main [MainThread]: End processing [torchlure]: success
+[2024-05-18 09:01:26] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-05-18 09:01:26] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-05-18 09:01:26] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-05-18 09:01:26] INFO root fetch - main [MainThread]: Store serial: [23265571]
