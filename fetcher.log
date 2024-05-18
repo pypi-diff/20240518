@@ -7832,3 +7832,24 @@
 [2024-05-18 04:49:36] INFO root fetch - processPackages [odoo-addon-account-move-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_template-17.0.1.0.0.8-py3-none-any.whl.zip]
 [2024-05-18 04:49:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-template]: success
 [2024-05-18 04:49:36] INFO root fetch - main [MainThread]: Store serial: [23264149]
+[2024-05-18 04:51:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264149]
+[2024-05-18 04:51:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 04:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balsamic
+[2024-05-18 04:51:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudpy-org
+[2024-05-18 04:51:44] INFO root fetch - processPackages [balsamic]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 04:51:44] INFO root fetch - processPackages [cloudpy-org]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-05-18 04:51:45] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/f8/19/dec344e5ba43da2895ae29767590fdfae6a4f445429c75fd30a8f515a545/balsamic-0.1.8.tar.gz
+[2024-05-18 04:51:45] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/e0/69/03ccc8849cc47eaae0b7b4b874e72ad3b779a0d241e0e2ddd8e16af40601/cloudpy_org-1.5.4.tar.gz
+[2024-05-18 04:51:45] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/fd/3c/b8264dc1cedeeded80fee43a7de5ee187f0389a989de20875d5d86333a7b/balsamic-0.1.9.tar.gz
+[2024-05-18 04:51:45] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/cc/05/faa9baaff1f173f0ff67eb41e7889d77ade2d4d50b0a13923cf939f3211b/cloudpy_org-1.5.5.tar.gz
+[2024-05-18 04:51:45] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 04:51:45] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.8.tar.gz tmp/balsamic-0.1.9.tar.gz --markdown 20240518/b/balsamic/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 04:51:45] INFO root fetch - processPackages [cloudpy-org]: executing diffoscope
+[2024-05-18 04:51:45] INFO root fetch - processPackages [cloudpy-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpy_org-1.5.4.tar.gz tmp/cloudpy_org-1.5.5.tar.gz --markdown 20240518/c/cloudpy-org/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-05-18 04:51:46] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.8.tar.gz]
+[2024-05-18 04:51:46] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.9.tar.gz]
+[2024-05-18 04:51:46] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 04:51:46] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.5.4.tar.gz]
+[2024-05-18 04:51:46] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.5.5.tar.gz]
+[2024-05-18 04:51:46] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
+[2024-05-18 04:51:46] INFO root fetch - main [MainThread]: Store serial: [23264158]
