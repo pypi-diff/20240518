@@ -16875,3 +16875,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:04:29] INFO root fetch - processPackages [autonav]: Remove: archive file [/home/abi/fetcher/tmp/autonav-1.0.3.tar.gz]
 [2024-05-18 17:04:29] INFO root fetch - main [MainThread]: End processing [autonav]: success
 [2024-05-18 17:04:29] INFO root fetch - main [MainThread]: Store serial: [23268675]
+[2024-05-18 17:06:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268675]
+[2024-05-18 17:06:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plutopdfkit
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pbat
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: juicez
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-web-widget-one2many-product-picker
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rustberry
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: email-draft-generator
+[2024-05-18 17:06:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sourmash-plugin-betterplot
+[2024-05-18 17:06:38] INFO root fetch - processPackages [email-draft-generator]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 17:06:38] INFO root fetch - processPackages [sourmash-plugin-betterplot]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 17:06:38] WARNING root fetch - processPackages [plutopdfkit]: Skipping, unable to determine old version
+[2024-05-18 17:06:38] INFO root fetch - main [MainThread]: End processing [plutopdfkit] error
+[2024-05-18 17:06:38] INFO root fetch - processPackages [pbat]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 17:06:38] INFO root fetch - processPackages [rustberry]: New version: [0.0.9] Old Version: [0.0.10]
+[2024-05-18 17:06:38] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: New version: [12.0.3.0.1] Old Version: [12.0.3.0.0.99.dev5]
+[2024-05-18 17:06:38] INFO root fetch - processPackages [email-draft-generator]: Downloading https://files.pythonhosted.org/packages/8a/4b/3222c8b26ecb0a10c247cd22ef3c0674fa17f8d0550c5bd5af39ad956e5b/email_draft_generator-0.0.1.tar.gz
+[2024-05-18 17:06:38] WARNING root fetch - processPackages [juicez]: Skipping, unable to determine old version
+[2024-05-18 17:06:38] INFO root fetch - main [MainThread]: End processing [juicez] error
+[2024-05-18 17:06:38] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/c8/e4/f45cc0ae7219f5d96394ce2bb191f6658962afa98b5e6796c67344f00b0d/rustberry-0.0.10-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 17:06:38] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Downloading https://files.pythonhosted.org/packages/2d/e1/b3953f01a841503076ffdf17f71e5a859cbc96517090eea760b8afdf83e7/sourmash_plugin_betterplot-0.1.tar.gz
+[2024-05-18 17:06:38] INFO root fetch - processPackages [pbat]: Downloading https://files.pythonhosted.org/packages/f9/e3/e70fe7b4de80007dffd9e3e26ba1bf06d9fff0325a69f89c4a04454b5995/pbat-0.0.8-py3-none-any.whl
+[2024-05-18 17:06:38] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Downloading https://files.pythonhosted.org/packages/bc/a4/49eafd9219cf0e4cd901badac74ae1f0ef790f04e497cd670ecd22d2d57d/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.0.99.dev5-py3-none-any.whl
+[2024-05-18 17:06:38] INFO root fetch - processPackages [email-draft-generator]: Downloading https://files.pythonhosted.org/packages/2b/50/592201bba1e2d6e98b1d93ffd75d725652c53ba795b47a9d5241d0f2e363/email_draft_generator-0.0.2.tar.gz
+[2024-05-18 17:06:39] INFO root fetch - processPackages [email-draft-generator]: executing diffoscope
+[2024-05-18 17:06:39] INFO root fetch - processPackages [email-draft-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/email_draft_generator-0.0.1.tar.gz tmp/email_draft_generator-0.0.2.tar.gz --markdown 20240518/e/email-draft-generator/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 17:06:39] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Downloading https://files.pythonhosted.org/packages/27/24/85d90af8247ccf9c835d2bd9a17263b8c6201eb80a056a52803ef34c4c66/sourmash_plugin_betterplot-0.2.tar.gz
+[2024-05-18 17:06:39] INFO root fetch - processPackages [pbat]: Downloading https://files.pythonhosted.org/packages/b3/ac/3268b01637d72bb56af238a29176fdd3f1f06c22e898c715a871b30538a2/pbat-0.0.9-py3-none-any.whl
+[2024-05-18 17:06:39] INFO root fetch - processPackages [sourmash-plugin-betterplot]: executing diffoscope
+[2024-05-18 17:06:39] INFO root fetch - processPackages [sourmash-plugin-betterplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourmash_plugin_betterplot-0.1.tar.gz tmp/sourmash_plugin_betterplot-0.2.tar.gz --markdown 20240518/s/sourmash-plugin-betterplot/0.1-0.2/README.md --exclude *.pyd
+[2024-05-18 17:06:39] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/a6/56/1f0ec5be80288e33920ec3da3dbd110ee9baede31e753231cecd3bc10d69/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 17:06:39] INFO root fetch - processPackages [pbat]: executing diffoscope
+[2024-05-18 17:06:39] INFO root fetch - processPackages [pbat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbat-0.0.8-py3-none-any.whl.zip tmp/pbat-0.0.9-py3-none-any.whl.zip --markdown 20240518/p/pbat/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:06:39] INFO root fetch - processPackages [email-draft-generator]: Remove: archive file [/home/abi/fetcher/tmp/email_draft_generator-0.0.1.tar.gz]
+[2024-05-18 17:06:39] INFO root fetch - processPackages [email-draft-generator]: Remove: archive file [/home/abi/fetcher/tmp/email_draft_generator-0.0.2.tar.gz]
+[2024-05-18 17:06:39] INFO root fetch - main [MainThread]: End processing [email-draft-generator]: success
+[2024-05-18 17:06:39] INFO root fetch - processPackages [rustberry]: executing diffoscope
+[2024-05-18 17:06:39] INFO root fetch - processPackages [rustberry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustberry-0.0.10-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip --markdown 20240518/r/rustberry/0.0.10-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:06:39] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Remove: archive file [/home/abi/fetcher/tmp/sourmash_plugin_betterplot-0.1.tar.gz]
+[2024-05-18 17:06:39] INFO root fetch - processPackages [sourmash-plugin-betterplot]: Remove: archive file [/home/abi/fetcher/tmp/sourmash_plugin_betterplot-0.2.tar.gz]
+[2024-05-18 17:06:39] INFO root fetch - main [MainThread]: End processing [sourmash-plugin-betterplot]: success
+[2024-05-18 17:06:40] INFO root fetch - processPackages [pbat]: Remove: archive file [/home/abi/fetcher/tmp/pbat-0.0.8-py3-none-any.whl.zip]
+[2024-05-18 17:06:40] INFO root fetch - processPackages [pbat]: Remove: archive file [/home/abi/fetcher/tmp/pbat-0.0.9-py3-none-any.whl.zip]
+[2024-05-18 17:06:40] INFO root fetch - main [MainThread]: End processing [pbat]: success
+[2024-05-18 17:06:40] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Downloading https://files.pythonhosted.org/packages/00/b0/708adb306f082b321181ac6c165eb3c66f34afc211dd9dff7448acf5b60f/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl
+[2024-05-18 17:06:40] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: executing diffoscope
+[2024-05-18 17:06:40] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.0.99.dev5-py3-none-any.whl.zip tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-web-widget-one2many-product-picker/12.0.3.0.0.99.dev5-12.0.3.0.1/README.md --exclude *.pyd
+[2024-05-18 17:06:41] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.0.99.dev5-py3-none-any.whl.zip]
+[2024-05-18 17:06:41] INFO root fetch - processPackages [odoo12-addon-web-widget-one2many-product-picker]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_one2many_product_picker-12.0.3.0.1-py3-none-any.whl.zip]
+[2024-05-18 17:06:41] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-widget-one2many-product-picker]: success
+[2024-05-18 17:07:16] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.10-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 17:07:16] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 17:07:16] INFO root fetch - main [MainThread]: End processing [rustberry]: success
+[2024-05-18 17:07:16] INFO root fetch - main [MainThread]: Store serial: [23268704]
