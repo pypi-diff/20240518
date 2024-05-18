@@ -12230,3 +12230,12 @@
 [2024-05-18 10:50:37] INFO root fetch - processPackages [sproject]: Remove: archive file [/home/abi/fetcher/tmp/sproject-0.0.4.tar.gz]
 [2024-05-18 10:50:37] INFO root fetch - main [MainThread]: End processing [sproject]: success
 [2024-05-18 10:50:37] INFO root fetch - main [MainThread]: Store serial: [23266292]
+[2024-05-18 10:52:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266292]
+[2024-05-18 10:52:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 10:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeystonez
+[2024-05-18 10:52:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: markrunner-server
+[2024-05-18 10:52:47] WARNING root fetch - processPackages [markrunner-server]: Skipping, unable to determine old version
+[2024-05-18 10:52:47] WARNING root fetch - processPackages [honeystonez]: Skipping, unable to determine old version
+[2024-05-18 10:52:47] INFO root fetch - main [MainThread]: End processing [markrunner-server] error
+[2024-05-18 10:52:47] INFO root fetch - main [MainThread]: End processing [honeystonez] error
+[2024-05-18 10:52:47] INFO root fetch - main [MainThread]: Store serial: [23266301]
