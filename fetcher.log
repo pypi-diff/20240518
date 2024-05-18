@@ -9716,3 +9716,15 @@
 [2024-05-18 07:13:16] WARNING root fetch - processPackages [scufflerz]: Skipping, unable to determine old version
 [2024-05-18 07:13:16] INFO root fetch - main [MainThread]: End processing [scufflerz] error
 [2024-05-18 07:13:16] INFO root fetch - main [MainThread]: Store serial: [23264881]
+[2024-05-18 07:15:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264881]
+[2024-05-18 07:15:24] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 07:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybunch
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: Downloading https://files.pythonhosted.org/packages/f2/5d/c7ff16c5a81312e4d3c036afbe76b917bd7afad965ca06e3279374dca049/pybunch-1.0.9.tar.gz
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: Downloading https://files.pythonhosted.org/packages/86/39/49bb6c6424d51fba086fd773b87c666796096d444c3021529cb699057b6b/pybunch-1.1.0.tar.gz
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: executing diffoscope
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybunch-1.0.9.tar.gz tmp/pybunch-1.1.0.tar.gz --markdown 20240518/p/pybunch/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.0.9.tar.gz]
+[2024-05-18 07:15:25] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.1.0.tar.gz]
+[2024-05-18 07:15:25] INFO root fetch - main [MainThread]: End processing [pybunch]: success
+[2024-05-18 07:15:25] INFO root fetch - main [MainThread]: Store serial: [23264884]
