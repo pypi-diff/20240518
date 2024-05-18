@@ -19220,3 +19220,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:39:52] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240518.1.tar.gz]
 [2024-05-18 19:39:52] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-05-18 19:39:52] INFO root fetch - main [MainThread]: Store serial: [23269756]
+[2024-05-18 19:41:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269756]
+[2024-05-18 19:42:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 19:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TINTOlib
+[2024-05-18 19:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygmtsar
+[2024-05-18 19:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Maslib
+[2024-05-18 19:42:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-edi-storage-oca
+[2024-05-18 19:42:03] WARNING root fetch - processPackages [Maslib]: Skipping, unable to determine old version
+[2024-05-18 19:42:03] INFO root fetch - main [MainThread]: End processing [Maslib] error
+[2024-05-18 19:42:03] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: New version: [16.0.1.1.2] Old Version: [16.0.1.1.1.1]
+[2024-05-18 19:42:03] INFO root fetch - processPackages [pygmtsar]: New version: [2024.4.17.post6] Old Version: [2024.4.17.post5]
+[2024-05-18 19:42:03] INFO root fetch - processPackages [TINTOlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 19:42:03] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: Downloading https://files.pythonhosted.org/packages/b2/ee/6eeedbdb9efc61715f571136142ce54773a1c1390e89be481dd1fdeb00b5/odoo_addon_edi_storage_oca-16.0.1.1.1.1-py3-none-any.whl
+[2024-05-18 19:42:03] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/51/1f/e8f96749bec27825b0330909419ffabb809a8ae31d42dac7c06327c672ad/pygmtsar-2024.4.17.post5.tar.gz
+[2024-05-18 19:42:03] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/88/66/5ff78a7354d96c5cb6040119eab2be915cdf9e9570f5bf18b1c2dba81c64/tintolib-0.0.8.tar.gz
+[2024-05-18 19:42:03] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: Downloading https://files.pythonhosted.org/packages/78/a0/caa02fce173ed6d58203b6573675f81cde29b48d617a3e0d9c4beff1e42d/odoo_addon_edi_storage_oca-16.0.1.1.2-py3-none-any.whl
+[2024-05-18 19:42:03] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/36/9c/13fc01ae2eee19361162092bfa73e9e004856aee3ef268e53fa6e1999f8e/pygmtsar-2024.4.17.post6.tar.gz
+[2024-05-18 19:42:04] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: executing diffoscope
+[2024-05-18 19:42:04] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_edi_storage_oca-16.0.1.1.1.1-py3-none-any.whl.zip tmp/odoo_addon_edi_storage_oca-16.0.1.1.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-edi-storage-oca/16.0.1.1.1.1-16.0.1.1.2/README.md --exclude *.pyd
+[2024-05-18 19:42:04] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/c4/27/a91d5cfaf102a55a2a1c9d05c61fa9b4e7a94ef94ddb79a837edafdb6324/tintolib-0.0.9.tar.gz
+[2024-05-18 19:42:04] INFO root fetch - processPackages [pygmtsar]: executing diffoscope
+[2024-05-18 19:42:04] INFO root fetch - processPackages [pygmtsar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmtsar-2024.4.17.post5.tar.gz tmp/pygmtsar-2024.4.17.post6.tar.gz --markdown 20240518/p/pygmtsar/2024.4.17.post5-2024.4.17.post6/README.md --exclude *.pyd
+[2024-05-18 19:42:04] INFO root fetch - processPackages [TINTOlib]: executing diffoscope
+[2024-05-18 19:42:04] INFO root fetch - processPackages [TINTOlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tintolib-0.0.8.tar.gz tmp/tintolib-0.0.9.tar.gz --markdown 20240518/T/TINTOlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 19:42:04] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_edi_storage_oca-16.0.1.1.1.1-py3-none-any.whl.zip]
+[2024-05-18 19:42:04] INFO root fetch - processPackages [odoo-addon-edi-storage-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_edi_storage_oca-16.0.1.1.2-py3-none-any.whl.zip]
+[2024-05-18 19:42:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-edi-storage-oca]: success
+[2024-05-18 19:42:04] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.4.17.post5.tar.gz]
+[2024-05-18 19:42:04] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.4.17.post6.tar.gz]
+[2024-05-18 19:42:04] INFO root fetch - main [MainThread]: End processing [pygmtsar]: success
+[2024-05-18 19:42:13] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.8.tar.gz]
+[2024-05-18 19:42:13] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
+[2024-05-18 19:42:13] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
+[2024-05-18 19:42:13] INFO root fetch - main [MainThread]: Store serial: [23269766]
