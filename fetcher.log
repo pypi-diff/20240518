@@ -8815,3 +8815,29 @@
 [2024-05-18 05:50:44] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-05-18 05:50:44] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-05-18 05:50:44] INFO root fetch - main [MainThread]: Store serial: [23264503]
+[2024-05-18 05:52:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264503]
+[2024-05-18 05:52:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 05:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: surfkit
+[2024-05-18 05:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cns
+[2024-05-18 05:52:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FirstGame
+[2024-05-18 05:52:53] INFO root fetch - processPackages [FirstGame]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 05:52:53] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-18 05:52:53] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/f5/22/0065e3ab9bf7517a6857badd0346ff4f10316c4b341a0d447f2e559c588e/FirstGame-1.0.8.tar.gz
+[2024-05-18 05:52:53] INFO root fetch - processPackages [cns]: New version: [1.9.44] Old Version: [1.9.43]
+[2024-05-18 05:52:53] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-18 05:52:53] WARNING root fetch - processPackages [FirstGame]: Skipping package: exceeds size limit 50005693>=10485760
+[2024-05-18 05:52:53] INFO root fetch - main [MainThread]: End processing [FirstGame] error
+[2024-05-18 05:52:53] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-18 05:52:53] INFO root fetch - processPackages [cns]: Downloading https://files.pythonhosted.org/packages/59/1a/b3be32ed4f5ef4c30e2d31d985f8a9f79f4fdf8897c55736b6b250044978/cns-1.9.43-py3-none-any.whl
+[2024-05-18 05:52:53] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-18 05:52:53] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240518/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-18 05:52:53] INFO root fetch - processPackages [cns]: Downloading https://files.pythonhosted.org/packages/3d/3b/0053f520d5ca3fc12e485126379a7d26443cf19476cbb2a1080e393c2703/cns-1.9.44-py3-none-any.whl
+[2024-05-18 05:52:54] INFO root fetch - processPackages [cns]: executing diffoscope
+[2024-05-18 05:52:54] INFO root fetch - processPackages [cns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cns-1.9.43-py3-none-any.whl.zip tmp/cns-1.9.44-py3-none-any.whl.zip --markdown 20240518/c/cns/1.9.43-1.9.44/README.md --exclude *.pyd
+[2024-05-18 05:52:54] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-18 05:52:54] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-18 05:52:54] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-18 05:52:54] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.9.43-py3-none-any.whl.zip]
+[2024-05-18 05:52:54] INFO root fetch - processPackages [cns]: Remove: archive file [/home/abi/fetcher/tmp/cns-1.9.44-py3-none-any.whl.zip]
+[2024-05-18 05:52:54] INFO root fetch - main [MainThread]: End processing [cns]: success
+[2024-05-18 05:52:54] INFO root fetch - main [MainThread]: Store serial: [23264511]
