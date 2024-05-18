@@ -19525,3 +19525,47 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:01:47] INFO root fetch - processPackages [odoo12-addon-web-dashboard-tile]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_dashboard_tile-12.0.2.0.0.99.dev4-py3-none-any.whl.zip]
 [2024-05-18 20:01:47] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-dashboard-tile]: success
 [2024-05-18 20:01:47] INFO root fetch - main [MainThread]: Store serial: [23269880]
+[2024-05-18 20:03:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269880]
+[2024-05-18 20:03:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codefly-sdk
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ikctl
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sbapp
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wheke-auth
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyhasura
+[2024-05-18 20:03:56] INFO root fetch - processPackages [codefly-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 20:03:56] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ikctl]: New version: [0.2.14] Old Version: [0.2.12]
+[2024-05-18 20:03:56] INFO root fetch - processPackages [wheke-auth]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2024-05-18 20:03:56] INFO root fetch - processPackages [sbapp]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-05-18 20:03:56] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-05-18 20:03:56] INFO root fetch - processPackages [codefly-sdk]: Downloading https://files.pythonhosted.org/packages/d4/9e/20275acefb6235e97d4d366511900d6a5efe46eac73b4f2e695e663d7a8d/codefly_sdk-0.0.8.tar.gz
+[2024-05-18 20:03:56] INFO root fetch - processPackages [ikctl]: Downloading https://files.pythonhosted.org/packages/e7/35/3798811bd19c1ca7fa86d5d19030de5e1a3bb2f3f61b6b4665017eb81d26/ikctl-0.2.12.tar.gz
+[2024-05-18 20:03:57] INFO root fetch - processPackages [codefly-sdk]: Downloading https://files.pythonhosted.org/packages/c4/ff/1ff9eaa91de9207a7b791f46eda51160915435817eda5eacc4eae231a8c1/codefly_sdk-0.0.9.tar.gz
+[2024-05-18 20:03:57] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-05-18 20:03:57] INFO root fetch - processPackages [wheke-auth]: Downloading https://files.pythonhosted.org/packages/38/b7/dadb9ad066b705478147022f6ea03d5ab5430e3a6383268ed3677726bda8/wheke_auth-0.0.1a1.tar.gz
+[2024-05-18 20:03:57] INFO root fetch - processPackages [sbapp]: Downloading https://files.pythonhosted.org/packages/52/90/0d77ef54a971e0c2897c5fb3bef692b6edea56bbe77e1fe4df3d7b83a017/sbapp-0.8.4.tar.gz
+[2024-05-18 20:03:57] WARNING root fetch - processPackages [sbapp]: Skipping package: exceeds size limit 34784235>=10485760
+[2024-05-18 20:03:57] INFO root fetch - main [MainThread]: End processing [sbapp] error
+[2024-05-18 20:03:57] INFO root fetch - processPackages [codefly-sdk]: executing diffoscope
+[2024-05-18 20:03:57] INFO root fetch - processPackages [codefly-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefly_sdk-0.0.8.tar.gz tmp/codefly_sdk-0.0.9.tar.gz --markdown 20240518/c/codefly-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 20:03:57] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-05-18 20:03:57] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240518/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 20:03:57] INFO root fetch - processPackages [ikctl]: Downloading https://files.pythonhosted.org/packages/8a/4a/9685a4cbf1a2f03f3cdeb1f1ee50ac258d903629666be6391553ea7288b3/ikctl-0.2.14.tar.gz
+[2024-05-18 20:03:57] INFO root fetch - processPackages [wheke-auth]: Downloading https://files.pythonhosted.org/packages/47/9c/f9cfd1fd3f8cd58ae6d90ddaf2ba82ba9f15ef311edf4e27af1b20c91f44/wheke_auth-0.0.1a2.tar.gz
+[2024-05-18 20:03:57] INFO root fetch - processPackages [ikctl]: executing diffoscope
+[2024-05-18 20:03:57] INFO root fetch - processPackages [ikctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikctl-0.2.12.tar.gz tmp/ikctl-0.2.14.tar.gz --markdown 20240518/i/ikctl/0.2.12-0.2.14/README.md --exclude *.pyd
+[2024-05-18 20:03:57] INFO root fetch - processPackages [wheke-auth]: executing diffoscope
+[2024-05-18 20:03:57] INFO root fetch - processPackages [wheke-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wheke_auth-0.0.1a1.tar.gz tmp/wheke_auth-0.0.1a2.tar.gz --markdown 20240518/w/wheke-auth/0.0.1a1-0.0.1a2/README.md --exclude *.pyd
+[2024-05-18 20:03:57] INFO root fetch - processPackages [codefly-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codefly_sdk-0.0.8.tar.gz]
+[2024-05-18 20:03:57] INFO root fetch - processPackages [codefly-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codefly_sdk-0.0.9.tar.gz]
+[2024-05-18 20:03:57] INFO root fetch - main [MainThread]: End processing [codefly-sdk]: success
+[2024-05-18 20:03:57] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-05-18 20:03:57] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-05-18 20:03:57] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-05-18 20:03:58] INFO root fetch - processPackages [ikctl]: Remove: archive file [/home/abi/fetcher/tmp/ikctl-0.2.12.tar.gz]
+[2024-05-18 20:03:58] INFO root fetch - processPackages [ikctl]: Remove: archive file [/home/abi/fetcher/tmp/ikctl-0.2.14.tar.gz]
+[2024-05-18 20:03:58] INFO root fetch - main [MainThread]: End processing [ikctl]: success
+[2024-05-18 20:03:58] INFO root fetch - processPackages [wheke-auth]: Remove: archive file [/home/abi/fetcher/tmp/wheke_auth-0.0.1a1.tar.gz]
+[2024-05-18 20:03:58] INFO root fetch - processPackages [wheke-auth]: Remove: archive file [/home/abi/fetcher/tmp/wheke_auth-0.0.1a2.tar.gz]
+[2024-05-18 20:03:58] INFO root fetch - main [MainThread]: End processing [wheke-auth]: success
+[2024-05-18 20:03:58] INFO root fetch - main [MainThread]: Store serial: [23269893]
