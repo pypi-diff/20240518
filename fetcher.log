@@ -19100,3 +19100,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:32:31] INFO root fetch - processPackages [uav-collision-avoidance]: Remove: archive file [/home/abi/fetcher/tmp/uav_collision_avoidance-0.8.4-py3-none-any.whl.zip]
 [2024-05-18 19:32:31] INFO root fetch - main [MainThread]: End processing [uav-collision-avoidance]: success
 [2024-05-18 19:32:31] INFO root fetch - main [MainThread]: Store serial: [23269703]
+[2024-05-18 19:34:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269703]
+[2024-05-18 19:34:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 19:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rustberry
+[2024-05-18 19:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycolbertdb
+[2024-05-18 19:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cheapoz
+[2024-05-18 19:34:40] WARNING root fetch - processPackages [pycolbertdb]: Skipping, unable to determine old version
+[2024-05-18 19:34:40] INFO root fetch - main [MainThread]: End processing [pycolbertdb] error
+[2024-05-18 19:34:40] INFO root fetch - processPackages [rustberry]: New version: [0.0.9] Old Version: [0.0.11]
+[2024-05-18 19:34:40] WARNING root fetch - processPackages [cheapoz]: Skipping, unable to determine old version
+[2024-05-18 19:34:40] INFO root fetch - main [MainThread]: End processing [cheapoz] error
+[2024-05-18 19:34:41] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/2e/43/6e155881aa274552be83b404d76a4c425f6ad99f893ea5d3a654f72aa186/rustberry-0.0.11-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 19:34:41] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/a6/56/1f0ec5be80288e33920ec3da3dbd110ee9baede31e753231cecd3bc10d69/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 19:34:41] INFO root fetch - processPackages [rustberry]: executing diffoscope
+[2024-05-18 19:34:41] INFO root fetch - processPackages [rustberry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustberry-0.0.11-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip --markdown 20240518/r/rustberry/0.0.11-0.0.9/README.md --exclude *.pyd
+[2024-05-18 19:35:18] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.11-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 19:35:18] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 19:35:18] INFO root fetch - main [MainThread]: End processing [rustberry]: success
+[2024-05-18 19:35:18] INFO root fetch - main [MainThread]: Store serial: [23269720]
