@@ -7256,3 +7256,36 @@
 [2024-05-18 04:17:12] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.3.tar.gz]
 [2024-05-18 04:17:12] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
 [2024-05-18 04:17:12] INFO root fetch - main [MainThread]: Store serial: [23263930]
+[2024-05-18 04:19:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263930]
+[2024-05-18 04:19:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 04:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toc-trade-pb-v2
+[2024-05-18 04:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prostatelcosisz
+[2024-05-18 04:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: txm-sandbox
+[2024-05-18 04:19:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llmail
+[2024-05-18 04:19:20] INFO root fetch - processPackages [toc-trade-pb-v2]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 04:19:21] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/b1/ad/a9b229dac5bc75e1fffcba3f4fd0b774a1c495f47243bd357e13a87eb008/toc_trade_pb_v2-0.1.3.tar.gz
+[2024-05-18 04:19:21] INFO root fetch - processPackages [llmail]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-18 04:19:21] WARNING root fetch - processPackages [prostatelcosisz]: Skipping, unable to determine old version
+[2024-05-18 04:19:21] INFO root fetch - main [MainThread]: End processing [prostatelcosisz] error
+[2024-05-18 04:19:21] INFO root fetch - processPackages [txm-sandbox]: New version: [0.3.1.post1] Old Version: [0.3.1]
+[2024-05-18 04:19:21] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/56/54/1d721d2d6f69955e324905acba5b93e09bf58ffb95faa72969d82c763bdd/llmail-0.2.3.tar.gz
+[2024-05-18 04:19:21] INFO root fetch - processPackages [txm-sandbox]: Downloading https://files.pythonhosted.org/packages/39/86/abac6a5427cbebbc9c26c77c09eccb7c728f11caca8f89a8815a0a67b887/txm_sandbox-0.3.1.tar.gz
+[2024-05-18 04:19:21] INFO root fetch - processPackages [toc-trade-pb-v2]: Downloading https://files.pythonhosted.org/packages/71/65/faf4f4d1b3a3a653e72ba8d23d8dc9a1a4d708af91e15132014f39c2342c/toc_trade_pb_v2-0.1.4.tar.gz
+[2024-05-18 04:19:21] INFO root fetch - processPackages [toc-trade-pb-v2]: executing diffoscope
+[2024-05-18 04:19:21] INFO root fetch - processPackages [toc-trade-pb-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toc_trade_pb_v2-0.1.3.tar.gz tmp/toc_trade_pb_v2-0.1.4.tar.gz --markdown 20240518/t/toc-trade-pb-v2/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 04:19:21] INFO root fetch - processPackages [llmail]: Downloading https://files.pythonhosted.org/packages/1f/56/8741375e13fe90a40a10498f17418ff4a38cede323860829a77b9f674fb7/llmail-0.2.4.tar.gz
+[2024-05-18 04:19:21] INFO root fetch - processPackages [txm-sandbox]: Downloading https://files.pythonhosted.org/packages/29/51/ccd8507fdd2d2e6ce755934a19700efc6ab01835dd44f7e2334a182887bc/txm_sandbox-0.3.1.post1.tar.gz
+[2024-05-18 04:19:21] INFO root fetch - processPackages [llmail]: executing diffoscope
+[2024-05-18 04:19:21] INFO root fetch - processPackages [llmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmail-0.2.3.tar.gz tmp/llmail-0.2.4.tar.gz --markdown 20240518/l/llmail/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-18 04:19:21] INFO root fetch - processPackages [txm-sandbox]: executing diffoscope
+[2024-05-18 04:19:21] INFO root fetch - processPackages [txm-sandbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txm_sandbox-0.3.1.tar.gz tmp/txm_sandbox-0.3.1.post1.tar.gz --markdown 20240518/t/txm-sandbox/0.3.1-0.3.1.post1/README.md --exclude *.pyd
+[2024-05-18 04:19:22] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.3.tar.gz]
+[2024-05-18 04:19:22] INFO root fetch - processPackages [llmail]: Remove: archive file [/home/abi/fetcher/tmp/llmail-0.2.4.tar.gz]
+[2024-05-18 04:19:22] INFO root fetch - main [MainThread]: End processing [llmail]: success
+[2024-05-18 04:19:22] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.3.tar.gz]
+[2024-05-18 04:19:22] INFO root fetch - processPackages [toc-trade-pb-v2]: Remove: archive file [/home/abi/fetcher/tmp/toc_trade_pb_v2-0.1.4.tar.gz]
+[2024-05-18 04:19:22] INFO root fetch - main [MainThread]: End processing [toc-trade-pb-v2]: success
+[2024-05-18 04:19:22] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.1.tar.gz]
+[2024-05-18 04:19:22] INFO root fetch - processPackages [txm-sandbox]: Remove: archive file [/home/abi/fetcher/tmp/txm_sandbox-0.3.1.post1.tar.gz]
+[2024-05-18 04:19:22] INFO root fetch - main [MainThread]: End processing [txm-sandbox]: success
+[2024-05-18 04:19:22] INFO root fetch - main [MainThread]: Store serial: [23263945]
