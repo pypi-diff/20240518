@@ -15607,3 +15607,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:30:22] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.2.0.tar.gz]
 [2024-05-18 15:30:22] INFO root fetch - main [MainThread]: End processing [func-bk]: success
 [2024-05-18 15:30:22] INFO root fetch - main [MainThread]: Store serial: [23268022]
+[2024-05-18 15:32:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268022]
+[2024-05-18 15:32:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-viterbi
+[2024-05-18 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aind-data-schema
+[2024-05-18 15:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ldplayer-tools
+[2024-05-18 15:32:32] INFO root fetch - processPackages [ldplayer-tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 15:32:32] INFO root fetch - processPackages [fast-viterbi]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-05-18 15:32:33] INFO root fetch - processPackages [ldplayer-tools]: Downloading https://files.pythonhosted.org/packages/6e/6a/60ccd6fb978484b4e21640b62caa92b262e756746dde042129160a88a2ff/ldplayer-tools-0.0.2.tar.gz
+[2024-05-18 15:32:33] INFO root fetch - processPackages [fast-viterbi]: Downloading https://files.pythonhosted.org/packages/4d/6b/d7e4182fe1cca79513bd4068073f12a18f6eba174625017059e2d5b7bcef/fast_viterbi-0.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 15:32:33] INFO root fetch - processPackages [fast-viterbi]: Downloading https://files.pythonhosted.org/packages/33/01/842f2b02d0eea05c8650af5b075e6ac881f93ca5251520f835584507452d/fast_viterbi-0.1.0.tar.gz
+[2024-05-18 15:32:33] INFO root fetch - processPackages [ldplayer-tools]: Downloading https://files.pythonhosted.org/packages/cc/2e/d570740a7aa8a1c6c00a142309e233b2f04f3a8cbf73c870bb49805d019c/ldplayer-tools-0.0.3.tar.gz
+[2024-05-18 15:32:33] INFO root fetch - processPackages [ldplayer-tools]: executing diffoscope
+[2024-05-18 15:32:33] INFO root fetch - processPackages [ldplayer-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldplayer-tools-0.0.2.tar.gz tmp/ldplayer-tools-0.0.3.tar.gz --markdown 20240518/l/ldplayer-tools/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 15:32:33] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-18 15:32:33] INFO root fetch - processPackages [fast-viterbi]: executing diffoscope
+[2024-05-18 15:32:33] INFO root fetch - processPackages [fast-viterbi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_viterbi-0.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/fast_viterbi-0.1.0.tar.gz --markdown 20240518/f/fast-viterbi/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-05-18 15:32:34] INFO root fetch - processPackages [aind-data-schema]: Downloading https://files.pythonhosted.org/packages/f0/3d/4b855ccf3f1b8204c6d84b119d9c98b856c1659bfafe8aa893009a0e4d63/aind-data-schema-0.9.5.tar.gz
+[2024-05-18 15:32:34] INFO root fetch - processPackages [ldplayer-tools]: Remove: archive file [/home/abi/fetcher/tmp/ldplayer-tools-0.0.2.tar.gz]
+[2024-05-18 15:32:34] INFO root fetch - processPackages [ldplayer-tools]: Remove: archive file [/home/abi/fetcher/tmp/ldplayer-tools-0.0.3.tar.gz]
+[2024-05-18 15:32:34] INFO root fetch - main [MainThread]: End processing [ldplayer-tools]: success
+[2024-05-18 15:32:34] INFO root fetch - processPackages [fast-viterbi]: Remove: archive file [/home/abi/fetcher/tmp/fast_viterbi-0.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-18 15:32:34] INFO root fetch - processPackages [fast-viterbi]: Remove: archive file [/home/abi/fetcher/tmp/fast_viterbi-0.1.0.tar.gz]
+[2024-05-18 15:32:34] INFO root fetch - main [MainThread]: End processing [fast-viterbi]: success
+[2024-05-18 15:32:34] INFO root fetch - processPackages [aind-data-schema]: Downloading https://files.pythonhosted.org/packages/42/51/6b230e8ca198de797130787e0cd5036fc8d11696d1c43a8c8c07152176e8/aind-data-schema-0.9.6.tar.gz
+[2024-05-18 15:32:34] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2024-05-18 15:32:34] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20240518/a/aind-data-schema/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-18 15:32:35] INFO root fetch - processPackages [aind-data-schema]: Remove: archive file [/home/abi/fetcher/tmp/aind-data-schema-0.9.5.tar.gz]
+[2024-05-18 15:32:35] INFO root fetch - processPackages [aind-data-schema]: Remove: archive file [/home/abi/fetcher/tmp/aind-data-schema-0.9.6.tar.gz]
+[2024-05-18 15:32:35] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2024-05-18 15:32:35] INFO root fetch - main [MainThread]: Store serial: [23268089]
