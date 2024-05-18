@@ -22113,3 +22113,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:15:15] INFO root fetch - processPackages [tree-sitter]: Remove: archive file [/home/abi/fetcher/tmp/tree_sitter-0.22.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-18 23:15:15] INFO root fetch - main [MainThread]: End processing [tree-sitter]: success
 [2024-05-18 23:15:15] INFO root fetch - main [MainThread]: Store serial: [23271284]
+[2024-05-18 23:17:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271284]
+[2024-05-18 23:17:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 23:19:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271297]
+[2024-05-18 23:19:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 23:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltachat-rpc-client
+[2024-05-18 23:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: euc2mqtt
+[2024-05-18 23:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BigEDA
+[2024-05-18 23:19:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epistolizedz
+[2024-05-18 23:19:29] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 23:19:29] INFO root fetch - processPackages [deltachat-rpc-client]: New version: [1.139.1] Old Version: [1.139.0]
+[2024-05-18 23:19:29] INFO root fetch - processPackages [euc2mqtt]: New version: [0.0.2] Old Version: [0.0.0]
+[2024-05-18 23:19:29] WARNING root fetch - processPackages [epistolizedz]: Skipping, unable to determine old version
+[2024-05-18 23:19:29] INFO root fetch - main [MainThread]: End processing [epistolizedz] error
+[2024-05-18 23:19:30] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 23:19:30] INFO root fetch - processPackages [deltachat-rpc-client]: Downloading https://files.pythonhosted.org/packages/9d/5e/2fa79643e3db6846a90f854d0d70d1c3d1b2f5199187a17a66ed57eb2a39/deltachat_rpc_client-1.139.0.tar.gz
+[2024-05-18 23:19:30] INFO root fetch - processPackages [euc2mqtt]: Downloading https://files.pythonhosted.org/packages/70/77/8126abcfadf8485f696beeefbfba2e6207c25c600c0ec75fca04e6aef986/euc2mqtt-0.0.0.tar.gz
+[2024-05-18 23:19:30] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 23:19:30] INFO root fetch - processPackages [deltachat-rpc-client]: Downloading https://files.pythonhosted.org/packages/84/f1/7a7bf1d0cc904c462d641d3079c700a6e8c99ab60a8086a342f3e52f8baf/deltachat_rpc_client-1.139.1.tar.gz
+[2024-05-18 23:19:30] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 23:19:30] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 23:19:30] INFO root fetch - processPackages [deltachat-rpc-client]: executing diffoscope
+[2024-05-18 23:19:30] INFO root fetch - processPackages [deltachat-rpc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat_rpc_client-1.139.0.tar.gz tmp/deltachat_rpc_client-1.139.1.tar.gz --markdown 20240518/d/deltachat-rpc-client/1.139.0-1.139.1/README.md --exclude *.pyd
+[2024-05-18 23:19:30] INFO root fetch - processPackages [euc2mqtt]: Downloading https://files.pythonhosted.org/packages/23/dd/023cc1398b791cb7bf46210008999f625a5e2499ba98e9690a3638faac01/euc2mqtt-0.0.2.tar.gz
+[2024-05-18 23:19:30] INFO root fetch - processPackages [euc2mqtt]: executing diffoscope
+[2024-05-18 23:19:30] INFO root fetch - processPackages [euc2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/euc2mqtt-0.0.0.tar.gz tmp/euc2mqtt-0.0.2.tar.gz --markdown 20240518/e/euc2mqtt/0.0.0-0.0.2/README.md --exclude *.pyd
+[2024-05-18 23:19:31] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 23:19:31] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 23:19:31] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 23:19:31] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.139.0.tar.gz]
+[2024-05-18 23:19:31] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.139.1.tar.gz]
+[2024-05-18 23:19:31] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-client]: success
+[2024-05-18 23:19:31] INFO root fetch - processPackages [euc2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/euc2mqtt-0.0.0.tar.gz]
+[2024-05-18 23:19:31] INFO root fetch - processPackages [euc2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/euc2mqtt-0.0.2.tar.gz]
+[2024-05-18 23:19:31] INFO root fetch - main [MainThread]: End processing [euc2mqtt]: success
+[2024-05-18 23:19:31] INFO root fetch - main [MainThread]: Store serial: [23271310]
