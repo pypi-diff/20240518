@@ -8912,3 +8912,18 @@
 [2024-05-18 05:59:33] INFO root fetch - processPackages [cdktf-cdktf-provider-opentelekomcloud]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-opentelekomcloud-9.0.3.tar.gz]
 [2024-05-18 05:59:33] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-opentelekomcloud]: success
 [2024-05-18 05:59:33] INFO root fetch - main [MainThread]: Store serial: [23264535]
+[2024-05-18 06:01:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264535]
+[2024-05-18 06:01:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overmitigatedz
+[2024-05-18 06:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xiaogpt
+[2024-05-18 06:01:43] INFO root fetch - processPackages [xiaogpt]: New version: [2.80] Old Version: [2.71]
+[2024-05-18 06:01:43] WARNING root fetch - processPackages [overmitigatedz]: Skipping, unable to determine old version
+[2024-05-18 06:01:43] INFO root fetch - main [MainThread]: End processing [overmitigatedz] error
+[2024-05-18 06:01:43] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/9a/c4/dfc4b41fd6f98f112f52f5da2484c11dd0849be1160e0facd7ae15e33344/xiaogpt-2.71.tar.gz
+[2024-05-18 06:01:43] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/b2/48/0c46baabf6b75fe84c25bc1c4f600466c7e757f16f2cf666b0c9a4c6d336/xiaogpt-2.80.tar.gz
+[2024-05-18 06:01:43] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2024-05-18 06:01:43] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-2.71.tar.gz tmp/xiaogpt-2.80.tar.gz --markdown 20240518/x/xiaogpt/2.71-2.80/README.md --exclude *.pyd
+[2024-05-18 06:01:44] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.71.tar.gz]
+[2024-05-18 06:01:44] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.80.tar.gz]
+[2024-05-18 06:01:44] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2024-05-18 06:01:44] INFO root fetch - main [MainThread]: Store serial: [23264542]
