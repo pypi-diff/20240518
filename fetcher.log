@@ -13364,3 +13364,36 @@
 [2024-05-18 12:24:32] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.9.tar.gz]
 [2024-05-18 12:24:32] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
 [2024-05-18 12:24:32] INFO root fetch - main [MainThread]: Store serial: [23266900]
+[2024-05-18 12:26:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266900]
+[2024-05-18 12:26:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MT5LinuxEnhanced
+[2024-05-18 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-18 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydra-freesurfer
+[2024-05-18 12:26:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sindapi
+[2024-05-18 12:26:41] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 12:26:41] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 12:26:41] WARNING root fetch - processPackages [MT5LinuxEnhanced]: Skipping, unable to determine old version
+[2024-05-18 12:26:41] INFO root fetch - main [MainThread]: End processing [MT5LinuxEnhanced] error
+[2024-05-18 12:26:41] INFO root fetch - processPackages [sindapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 12:26:41] INFO root fetch - processPackages [pydra-freesurfer]: New version: [0.1.1] Old Version: [0.0.9]
+[2024-05-18 12:26:42] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/a3/64/9be9eae342d536ab1b036d4a2f1c1e5f96a0572ca5355387627d208ab1d1/sindapi-0.0.8.tar.gz
+[2024-05-18 12:26:42] INFO root fetch - processPackages [pydra-freesurfer]: Downloading https://files.pythonhosted.org/packages/34/05/6365059e281d8dcb90c290585c4dd702ec21af206ff8c24a679e21fbaf92/pydra_freesurfer-0.0.9.tar.gz
+[2024-05-18 12:26:42] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 12:26:42] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 12:26:42] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 12:26:42] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/7d/a7/a389d78c747399fa425e39d89ba9fa6d384de97b624ca2e380160a06716f/sindapi-0.0.9.tar.gz
+[2024-05-18 12:26:42] INFO root fetch - processPackages [pydra-freesurfer]: Downloading https://files.pythonhosted.org/packages/80/77/3dfe3b1b805a47d812533b698e9c06b3f696687e667c82499bcadecd0acc/pydra_freesurfer-0.1.1.tar.gz
+[2024-05-18 12:26:42] INFO root fetch - processPackages [sindapi]: executing diffoscope
+[2024-05-18 12:26:42] INFO root fetch - processPackages [sindapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sindapi-0.0.8.tar.gz tmp/sindapi-0.0.9.tar.gz --markdown 20240518/s/sindapi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 12:26:42] INFO root fetch - processPackages [pydra-freesurfer]: executing diffoscope
+[2024-05-18 12:26:42] INFO root fetch - processPackages [pydra-freesurfer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydra_freesurfer-0.0.9.tar.gz tmp/pydra_freesurfer-0.1.1.tar.gz --markdown 20240518/p/pydra-freesurfer/0.0.9-0.1.1/README.md --exclude *.pyd
+[2024-05-18 12:26:42] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 12:26:42] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 12:26:42] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 12:26:43] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.8.tar.gz]
+[2024-05-18 12:26:43] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.9.tar.gz]
+[2024-05-18 12:26:43] INFO root fetch - main [MainThread]: End processing [sindapi]: success
+[2024-05-18 12:26:43] INFO root fetch - processPackages [pydra-freesurfer]: Remove: archive file [/home/abi/fetcher/tmp/pydra_freesurfer-0.0.9.tar.gz]
+[2024-05-18 12:26:43] INFO root fetch - processPackages [pydra-freesurfer]: Remove: archive file [/home/abi/fetcher/tmp/pydra_freesurfer-0.1.1.tar.gz]
+[2024-05-18 12:26:43] INFO root fetch - main [MainThread]: End processing [pydra-freesurfer]: success
+[2024-05-18 12:26:43] INFO root fetch - main [MainThread]: Store serial: [23266917]
