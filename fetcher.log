@@ -16842,3 +16842,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:02:19] INFO root fetch - processPackages [chemfusekit]: Remove: archive file [/home/abi/fetcher/tmp/chemfusekit-1.1.0b1-py3-none-any.whl.zip]
 [2024-05-18 17:02:19] INFO root fetch - main [MainThread]: End processing [chemfusekit]: success
 [2024-05-18 17:02:19] INFO root fetch - main [MainThread]: Store serial: [23268659]
+[2024-05-18 17:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268659]
+[2024-05-18 17:04:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chemfusekit
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autonav
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ollama-data-tools
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctrip-app-ui
+[2024-05-18 17:04:28] INFO root fetch - processPackages [chemfusekit]: New version: [1.1.0b1] Old Version: [1.0.0]
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-05-18 17:04:28] INFO root fetch - processPackages [chemfusekit]: Downloading https://files.pythonhosted.org/packages/33/72/bae212ac4f4e48256bd026a2d67d66df1098cc8d8314b30ea03d05bac7cb/chemfusekit-1.0.0.tar.gz
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/44/1e/ad5851f6c1342d29507895bd6799c287cb33fe3901be8b51b26b6bf8f6e1/ctrip-app-ui-0.4.9.tar.gz
+[2024-05-18 17:04:28] INFO root fetch - processPackages [autonav]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-18 17:04:28] WARNING root fetch - processPackages [ollama-data-tools]: Skipping, unable to determine old version
+[2024-05-18 17:04:28] INFO root fetch - main [MainThread]: End processing [ollama-data-tools] error
+[2024-05-18 17:04:28] INFO root fetch - processPackages [autonav]: Downloading https://files.pythonhosted.org/packages/cd/97/bd723d247ba67b646b5334f24f3332952a513b96ba2aa940201281a01c3b/autonav-1.0.2.tar.gz
+[2024-05-18 17:04:28] INFO root fetch - processPackages [chemfusekit]: Downloading https://files.pythonhosted.org/packages/d5/14/1983eab0b1a1794a4e58793a864436f37b3e30f911116ef81d10f708cf71/chemfusekit-1.1.0b1-py3-none-any.whl
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/87/0e/e92b91e64d79d55bb505ed84095b7e6cc59c5629dbf2c0b4a353c87de6b3/ctrip-app-ui-0.5.0.tar.gz
+[2024-05-18 17:04:28] INFO root fetch - processPackages [chemfusekit]: executing diffoscope
+[2024-05-18 17:04:28] INFO root fetch - processPackages [chemfusekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemfusekit-1.0.0.tar.gz tmp/chemfusekit-1.1.0b1-py3-none-any.whl.zip --markdown 20240518/c/chemfusekit/1.0.0-1.1.0b1/README.md --exclude *.pyd
+[2024-05-18 17:04:28] INFO root fetch - processPackages [autonav]: Downloading https://files.pythonhosted.org/packages/9d/6e/1aa10c77b217b04c9faf4dce93fd531aab0413ee43730ef6f2fccc0b816f/autonav-1.0.3.tar.gz
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-18 17:04:28] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.4.9.tar.gz tmp/ctrip-app-ui-0.5.0.tar.gz --markdown 20240518/c/ctrip-app-ui/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-05-18 17:04:28] INFO root fetch - processPackages [autonav]: executing diffoscope
+[2024-05-18 17:04:28] INFO root fetch - processPackages [autonav]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonav-1.0.2.tar.gz tmp/autonav-1.0.3.tar.gz --markdown 20240518/a/autonav/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-18 17:04:29] INFO root fetch - processPackages [chemfusekit]: Remove: archive file [/home/abi/fetcher/tmp/chemfusekit-1.0.0.tar.gz]
+[2024-05-18 17:04:29] INFO root fetch - processPackages [chemfusekit]: Remove: archive file [/home/abi/fetcher/tmp/chemfusekit-1.1.0b1-py3-none-any.whl.zip]
+[2024-05-18 17:04:29] INFO root fetch - main [MainThread]: End processing [chemfusekit]: success
+[2024-05-18 17:04:29] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.4.9.tar.gz]
+[2024-05-18 17:04:29] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.5.0.tar.gz]
+[2024-05-18 17:04:29] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-18 17:04:29] INFO root fetch - processPackages [autonav]: Remove: archive file [/home/abi/fetcher/tmp/autonav-1.0.2.tar.gz]
+[2024-05-18 17:04:29] INFO root fetch - processPackages [autonav]: Remove: archive file [/home/abi/fetcher/tmp/autonav-1.0.3.tar.gz]
+[2024-05-18 17:04:29] INFO root fetch - main [MainThread]: End processing [autonav]: success
+[2024-05-18 17:04:29] INFO root fetch - main [MainThread]: Store serial: [23268675]
