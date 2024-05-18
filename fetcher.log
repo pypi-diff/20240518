@@ -17836,3 +17836,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:08:21] INFO root fetch - processPackages [dtw-python]: Remove: archive file [/home/abi/fetcher/tmp/dtw_python-1.4.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-18 18:08:21] INFO root fetch - main [MainThread]: End processing [dtw-python]: success
 [2024-05-18 18:08:21] INFO root fetch - main [MainThread]: Store serial: [23269084]
+[2024-05-18 18:10:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269084]
+[2024-05-18 18:10:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 18:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-web-theme-classic
+[2024-05-18 18:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-index-embeddings-nvidia
+[2024-05-18 18:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-engineio
+[2024-05-18 18:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: htag
+[2024-05-18 18:10:32] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 18:10:32] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: Downloading https://files.pythonhosted.org/packages/91/21/c530caf0379bb10521924c2626b9bb8de328b6d46b7850c90f2f27662122/llama_index_embeddings_nvidia-0.1.1.tar.gz
+[2024-05-18 18:10:32] INFO root fetch - processPackages [python-engineio]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-05-18 18:10:32] INFO root fetch - processPackages [htag]: New version: [0.91.1] Old Version: [0.91.0]
+[2024-05-18 18:10:32] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: New version: [17.0.1.0.0.5] Old Version: [16.0.1.0.2.5]
+[2024-05-18 18:10:32] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: Downloading https://files.pythonhosted.org/packages/88/93/9d10bb596f1de60783b2c0286a983ae87364e1266e4a51812d005ab3d760/llama_index_embeddings_nvidia-0.1.2.tar.gz
+[2024-05-18 18:10:32] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: Downloading https://files.pythonhosted.org/packages/1f/ad/d0de126993cb4a8d4d98d091a8af2ffba1d09aed6f3bab1580dffc5f2719/odoo_addon_web_theme_classic-16.0.1.0.2.5-py3-none-any.whl
+[2024-05-18 18:10:32] INFO root fetch - processPackages [python-engineio]: Downloading https://files.pythonhosted.org/packages/be/1b/13caab8337dc0cec96c65226a0fbaa2d1c6ec4ad0fb4faf02b1f2fdc150a/python-engineio-4.9.0.tar.gz
+[2024-05-18 18:10:32] INFO root fetch - processPackages [htag]: Downloading https://files.pythonhosted.org/packages/69/30/41edaf3730cedd18d12e7b18a435b664bbcd7af0932f2eb1d9c568bd851d/htag-0.91.0.tar.gz
+[2024-05-18 18:10:32] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: executing diffoscope
+[2024-05-18 18:10:32] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_embeddings_nvidia-0.1.1.tar.gz tmp/llama_index_embeddings_nvidia-0.1.2.tar.gz --markdown 20240518/l/llama-index-embeddings-nvidia/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 18:10:32] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: Downloading https://files.pythonhosted.org/packages/3e/91/f93fd206f1875e053c7039a6611c8f78b11e0f297cc8e3a1da41d840bb5d/odoo_addon_web_theme_classic-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 18:10:32] INFO root fetch - processPackages [python-engineio]: Downloading https://files.pythonhosted.org/packages/50/01/94faf505820f1fb94133a456dad87a76df589f6999de563229a342e412fa/python_engineio-4.9.1.tar.gz
+[2024-05-18 18:10:33] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: executing diffoscope
+[2024-05-18 18:10:33] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_web_theme_classic-16.0.1.0.2.5-py3-none-any.whl.zip tmp/odoo_addon_web_theme_classic-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-web-theme-classic/16.0.1.0.2.5-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 18:10:33] INFO root fetch - processPackages [htag]: Downloading https://files.pythonhosted.org/packages/54/32/acda25f04edeeea3eee048861986da83c5b857103448388398f4da37d65d/htag-0.91.1.tar.gz
+[2024-05-18 18:10:33] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_embeddings_nvidia-0.1.1.tar.gz]
+[2024-05-18 18:10:33] INFO root fetch - processPackages [llama-index-embeddings-nvidia]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_embeddings_nvidia-0.1.2.tar.gz]
+[2024-05-18 18:10:33] INFO root fetch - processPackages [python-engineio]: executing diffoscope
+[2024-05-18 18:10:33] INFO root fetch - processPackages [python-engineio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-engineio-4.9.0.tar.gz tmp/python_engineio-4.9.1.tar.gz --markdown 20240518/p/python-engineio/4.9.0-4.9.1/README.md --exclude *.pyd
+[2024-05-18 18:10:33] INFO root fetch - main [MainThread]: End processing [llama-index-embeddings-nvidia]: success
+[2024-05-18 18:10:33] INFO root fetch - processPackages [htag]: executing diffoscope
+[2024-05-18 18:10:33] INFO root fetch - processPackages [htag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htag-0.91.0.tar.gz tmp/htag-0.91.1.tar.gz --markdown 20240518/h/htag/0.91.0-0.91.1/README.md --exclude *.pyd
+[2024-05-18 18:10:33] INFO root fetch - processPackages [htag]: Remove: archive file [/home/abi/fetcher/tmp/htag-0.91.0.tar.gz]
+[2024-05-18 18:10:33] INFO root fetch - processPackages [htag]: Remove: archive file [/home/abi/fetcher/tmp/htag-0.91.1.tar.gz]
+[2024-05-18 18:10:33] INFO root fetch - main [MainThread]: End processing [htag]: success
+[2024-05-18 18:10:33] INFO root fetch - processPackages [python-engineio]: Remove: archive file [/home/abi/fetcher/tmp/python-engineio-4.9.0.tar.gz]
+[2024-05-18 18:10:33] INFO root fetch - processPackages [python-engineio]: Remove: archive file [/home/abi/fetcher/tmp/python_engineio-4.9.1.tar.gz]
+[2024-05-18 18:10:33] INFO root fetch - main [MainThread]: End processing [python-engineio]: success
+[2024-05-18 18:10:34] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_theme_classic-16.0.1.0.2.5-py3-none-any.whl.zip]
+[2024-05-18 18:10:34] INFO root fetch - processPackages [odoo-addon-web-theme-classic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_theme_classic-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 18:10:34] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-theme-classic]: success
+[2024-05-18 18:10:34] INFO root fetch - main [MainThread]: Store serial: [23269114]
