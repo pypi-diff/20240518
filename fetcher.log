@@ -15460,3 +15460,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:14:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.18-cp38-cp38-manylinux2014_x86_64.whl.zip]
 [2024-05-18 15:14:57] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-05-18 15:14:57] INFO root fetch - main [MainThread]: Store serial: [23267936]
+[2024-05-18 15:17:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267936]
+[2024-05-18 15:17:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 15:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-micro
+[2024-05-18 15:17:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: carbon-registry-indexer
+[2024-05-18 15:17:13] INFO root fetch - processPackages [tflite-micro]: New version: [0.dev20240516154032] Old Version: [0.dev20240515143020]
+[2024-05-18 15:17:13] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/1d/3a/61b1258431c0fefe7a35ce8fbc7e20b4d306f6be515296f7ef6f50f33998/tflite_micro-0.dev20240515143020-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-05-18 15:17:13] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 15:17:14] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/6a/ea/27f744d6e0e724c6e0575edb2c67737c6a70147e7ebcd97674a2959d66dd/carbon-registry-indexer-0.1.8.tar.gz
+[2024-05-18 15:17:14] INFO root fetch - processPackages [tflite-micro]: Downloading https://files.pythonhosted.org/packages/45/27/b0cd6063e162e3e32eece8f4953751323c003cc067c323cfbe5ead84875c/tflite_micro-0.dev20240516154032-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-05-18 15:17:14] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/e5/cd/1e1e95e6852f521936093508bcf7bbf278df34c6892a3bcd86aa33caf947/carbon-registry-indexer-0.1.9.tar.gz
+[2024-05-18 15:17:14] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-05-18 15:17:14] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.8.tar.gz tmp/carbon-registry-indexer-0.1.9.tar.gz --markdown 20240518/c/carbon-registry-indexer/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 15:17:14] INFO root fetch - processPackages [tflite-micro]: executing diffoscope
+[2024-05-18 15:17:14] INFO root fetch - processPackages [tflite-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_micro-0.dev20240515143020-cp311-cp311-manylinux_2_28_x86_64.whl.zip tmp/tflite_micro-0.dev20240516154032-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240518/t/tflite-micro/0.dev20240515143020-0.dev20240516154032/README.md --exclude *.pyd
+[2024-05-18 15:17:15] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.8.tar.gz]
+[2024-05-18 15:17:15] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.9.tar.gz]
+[2024-05-18 15:17:15] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-05-18 15:17:15] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240515143020-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-05-18 15:17:15] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240516154032-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-05-18 15:17:15] INFO root fetch - main [MainThread]: End processing [tflite-micro]: success
+[2024-05-18 15:17:15] INFO root fetch - main [MainThread]: Store serial: [23267945]
