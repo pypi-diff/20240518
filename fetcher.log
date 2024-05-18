@@ -21129,3 +21129,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:54:12] INFO root fetch - processPackages [botasaurus-driver]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_driver-4.0.9.tar.gz]
 [2024-05-18 21:54:12] INFO root fetch - main [MainThread]: End processing [botasaurus-driver]: success
 [2024-05-18 21:54:12] INFO root fetch - main [MainThread]: Store serial: [23270717]
+[2024-05-18 21:56:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270717]
+[2024-05-18 21:56:22] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltachat-rpc-client
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nokey
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: msgpackr-python
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: omu
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: omu-chat
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fast-text-detect
+[2024-05-18 21:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: monzo-utils
+[2024-05-18 21:56:22] WARNING root fetch - processPackages [fast-text-detect]: Skipping, unable to determine old version
+[2024-05-18 21:56:22] INFO root fetch - main [MainThread]: End processing [fast-text-detect] error
+[2024-05-18 21:56:22] INFO root fetch - processPackages [omu]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-18 21:56:22] INFO root fetch - processPackages [monzo-utils]: New version: [0.0.98] Old Version: [0.0.97]
+[2024-05-18 21:56:22] WARNING root fetch - processPackages [msgpackr-python]: Skipping, unable to determine old version
+[2024-05-18 21:56:22] INFO root fetch - main [MainThread]: End processing [msgpackr-python] error
+[2024-05-18 21:56:22] INFO root fetch - processPackages [deltachat-rpc-client]: New version: [1.139.0] Old Version: [1.138.5]
+[2024-05-18 21:56:22] INFO root fetch - processPackages [nokey]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-18 21:56:22] WARNING root fetch - processPackages [omu-chat]: Skipping, unable to determine old version
+[2024-05-18 21:56:22] INFO root fetch - main [MainThread]: End processing [omu-chat] error
+[2024-05-18 21:56:22] INFO root fetch - processPackages [omu]: Downloading https://files.pythonhosted.org/packages/90/b8/e80117a8fb2261bbc1a2ec866db7bad8bae01ef6f998c5565dbdff7c4973/omu-0.3.2.tar.gz
+[2024-05-18 21:56:22] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/5c/81/9070c78a492e29c2fd3c8b26bab519be632b5a1f2022d80445266d94b2b7/monzo_utils-0.0.97-py3-none-any.whl
+[2024-05-18 21:56:22] INFO root fetch - processPackages [deltachat-rpc-client]: Downloading https://files.pythonhosted.org/packages/a4/e1/dbd0f437f75988418cbca4d8e2ea58d346fec4925c109ad7359b1db4d3b6/deltachat_rpc_client-1.138.5.tar.gz
+[2024-05-18 21:56:22] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/ee/48/3cbc96a4a8af02810f4df7b6c0cfce1b57f957e748b1fd127310bac54d62/nokey-0.5.0.tar.gz
+[2024-05-18 21:56:22] INFO root fetch - processPackages [omu]: Downloading https://files.pythonhosted.org/packages/3c/c5/46eb2e4b46bb58da7990c343696c310b77f971edd4e5baa6921918d0a9a7/omu-0.4.0-py3-none-any.whl
+[2024-05-18 21:56:23] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/d2/bc/8d1114b5c418532778b823f3b30a596dc6c594662c33b5578929c4872c88/monzo_utils-0.0.98-py3-none-any.whl
+[2024-05-18 21:56:23] INFO root fetch - processPackages [omu]: executing diffoscope
+[2024-05-18 21:56:23] INFO root fetch - processPackages [omu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omu-0.3.2.tar.gz tmp/omu-0.4.0-py3-none-any.whl.zip --markdown 20240518/o/omu/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-18 21:56:23] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-05-18 21:56:23] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.97-py3-none-any.whl.zip tmp/monzo_utils-0.0.98-py3-none-any.whl.zip --markdown 20240518/m/monzo-utils/0.0.97-0.0.98/README.md --exclude *.pyd
+[2024-05-18 21:56:23] INFO root fetch - processPackages [deltachat-rpc-client]: Downloading https://files.pythonhosted.org/packages/9d/5e/2fa79643e3db6846a90f854d0d70d1c3d1b2f5199187a17a66ed57eb2a39/deltachat_rpc_client-1.139.0.tar.gz
+[2024-05-18 21:56:23] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/57/de/bb51297e9fa8382d4836aa15503aa2c864893c730c0df091a3da83ee7495/nokey-0.6.0.tar.gz
+[2024-05-18 21:56:23] INFO root fetch - processPackages [deltachat-rpc-client]: executing diffoscope
+[2024-05-18 21:56:23] INFO root fetch - processPackages [deltachat-rpc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat_rpc_client-1.138.5.tar.gz tmp/deltachat_rpc_client-1.139.0.tar.gz --markdown 20240518/d/deltachat-rpc-client/1.138.5-1.139.0/README.md --exclude *.pyd
+[2024-05-18 21:56:23] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-05-18 21:56:23] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.5.0.tar.gz tmp/nokey-0.6.0.tar.gz --markdown 20240518/n/nokey/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-18 21:56:23] INFO root fetch - processPackages [omu]: Remove: archive file [/home/abi/fetcher/tmp/omu-0.3.2.tar.gz]
+[2024-05-18 21:56:23] INFO root fetch - processPackages [omu]: Remove: archive file [/home/abi/fetcher/tmp/omu-0.4.0-py3-none-any.whl.zip]
+[2024-05-18 21:56:23] INFO root fetch - main [MainThread]: End processing [omu]: success
+[2024-05-18 21:56:23] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.97-py3-none-any.whl.zip]
+[2024-05-18 21:56:23] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.98-py3-none-any.whl.zip]
+[2024-05-18 21:56:23] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-05-18 21:56:24] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.138.5.tar.gz]
+[2024-05-18 21:56:24] INFO root fetch - processPackages [deltachat-rpc-client]: Remove: archive file [/home/abi/fetcher/tmp/deltachat_rpc_client-1.139.0.tar.gz]
+[2024-05-18 21:56:24] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-client]: success
+[2024-05-18 21:56:24] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.5.0.tar.gz]
+[2024-05-18 21:56:24] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.6.0.tar.gz]
+[2024-05-18 21:56:24] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-05-18 21:56:24] INFO root fetch - main [MainThread]: Store serial: [23270740]
