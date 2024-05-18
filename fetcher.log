@@ -22448,3 +22448,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:47:48] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.0.tar.gz]
 [2024-05-18 23:47:48] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
 [2024-05-18 23:47:48] INFO root fetch - main [MainThread]: Store serial: [23271456]
+[2024-05-18 23:49:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271456]
+[2024-05-18 23:49:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-consul2-hh
+[2024-05-18 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mercapy
+[2024-05-18 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deltachat-rpc-server
+[2024-05-18 23:49:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uneschewablyz
+[2024-05-18 23:49:57] INFO root fetch - processPackages [mercapy]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 23:49:57] INFO root fetch - processPackages [deltachat-rpc-server]: New version: [1.139.1] Old Version: [1.139.0]
+[2024-05-18 23:49:57] WARNING root fetch - processPackages [python-consul2-hh]: Skipping, unable to determine old version
+[2024-05-18 23:49:57] INFO root fetch - main [MainThread]: End processing [python-consul2-hh] error
+[2024-05-18 23:49:57] INFO root fetch - processPackages [mercapy]: Downloading https://files.pythonhosted.org/packages/72/92/302b21ff07bfb7fb2603ccfffe4bae148141627a3aca82fa2854279d8efb/mercapy-0.0.1.tar.gz
+[2024-05-18 23:49:57] INFO root fetch - processPackages [deltachat-rpc-server]: Downloading https://files.pythonhosted.org/packages/07/24/e5644793fd4276e216b87aeb793e54a8260b262a8937d86da17a96df484c/deltachat-rpc-server-1.139.0.tar.gz
+[2024-05-18 23:49:57] WARNING root fetch - processPackages [uneschewablyz]: Skipping, unable to determine old version
+[2024-05-18 23:49:57] INFO root fetch - main [MainThread]: End processing [uneschewablyz] error
+[2024-05-18 23:49:58] INFO root fetch - processPackages [mercapy]: Downloading https://files.pythonhosted.org/packages/91/90/114ccd4b83d8b1b52068fa4520290b3f80d418de772c8c74ed59946e53d9/mercapy-0.0.2.tar.gz
+[2024-05-18 23:49:58] INFO root fetch - processPackages [mercapy]: executing diffoscope
+[2024-05-18 23:49:58] INFO root fetch - processPackages [mercapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mercapy-0.0.1.tar.gz tmp/mercapy-0.0.2.tar.gz --markdown 20240518/m/mercapy/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 23:49:58] INFO root fetch - processPackages [deltachat-rpc-server]: Downloading https://files.pythonhosted.org/packages/69/a3/5194b074de4d89d2e032f0ef57312d53b32c8472cfae557123190e388ef9/deltachat-rpc-server-1.139.1.tar.gz
+[2024-05-18 23:49:58] INFO root fetch - processPackages [deltachat-rpc-server]: executing diffoscope
+[2024-05-18 23:49:58] INFO root fetch - processPackages [deltachat-rpc-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat-rpc-server-1.139.0.tar.gz tmp/deltachat-rpc-server-1.139.1.tar.gz --markdown 20240518/d/deltachat-rpc-server/1.139.0-1.139.1/README.md --exclude *.pyd
+[2024-05-18 23:49:58] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-0.0.1.tar.gz]
+[2024-05-18 23:49:58] INFO root fetch - processPackages [mercapy]: Remove: archive file [/home/abi/fetcher/tmp/mercapy-0.0.2.tar.gz]
+[2024-05-18 23:49:58] INFO root fetch - main [MainThread]: End processing [mercapy]: success
+[2024-05-18 23:49:58] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.0.tar.gz]
+[2024-05-18 23:49:58] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.1.tar.gz]
+[2024-05-18 23:49:58] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
+[2024-05-18 23:49:58] INFO root fetch - main [MainThread]: Store serial: [23271470]
