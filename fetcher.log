@@ -10723,3 +10723,32 @@
 [2024-05-18 08:39:40] INFO root fetch - processPackages [pydflow]: Remove: archive file [/home/abi/fetcher/tmp/pydflow-1.8.9.tar.gz]
 [2024-05-18 08:39:40] INFO root fetch - main [MainThread]: End processing [pydflow]: success
 [2024-05-18 08:39:40] INFO root fetch - main [MainThread]: Store serial: [23265346]
+[2024-05-18 08:41:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265346]
+[2024-05-18 08:41:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 08:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duckdb
+[2024-05-18 08:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-maintenance-sign-oca
+[2024-05-18 08:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-sign-oca
+[2024-05-18 08:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-sign
+[2024-05-18 08:41:48] INFO root fetch - processPackages [odoo-addon-sign-oca]: New version: [16.0.2.0.0] Old Version: [16.0.1.1.0.4]
+[2024-05-18 08:41:48] WARNING root fetch - processPackages [odoo-addon-maintenance-sign-oca]: Skipping, unable to determine old version
+[2024-05-18 08:41:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-maintenance-sign-oca] error
+[2024-05-18 08:41:48] INFO root fetch - processPackages [odoo-addon-sign-oca]: Downloading https://files.pythonhosted.org/packages/4c/bd/8f793dcfd7ad049a690c6f2875b9f4eea07675e4af173c1311c21be00dfc/odoo_addon_sign_oca-16.0.1.1.0.4-py3-none-any.whl
+[2024-05-18 08:41:48] INFO root fetch - processPackages [odoo-addons-oca-sign]: New version: [16.0.20231115.0] Old Version: [15.0.20240517.0]
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addons-oca-sign]: Downloading https://files.pythonhosted.org/packages/8c/30/1627d54d00c3b8951c3b2306754bca3499e78876217516888cd5654d1a80/odoo_addons_oca_sign-15.0.20240517.0-py3-none-any.whl
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addon-sign-oca]: Downloading https://files.pythonhosted.org/packages/77/75/27442480829f697a78028a8a53db359944e4bb54bc8227a7a18a141473fb/odoo_addon_sign_oca-16.0.2.0.0-py3-none-any.whl
+[2024-05-18 08:41:49] INFO root fetch - processPackages [duckdb]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addon-sign-oca]: executing diffoscope
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addon-sign-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sign_oca-16.0.1.1.0.4-py3-none-any.whl.zip tmp/odoo_addon_sign_oca-16.0.2.0.0-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-sign-oca/16.0.1.1.0.4-16.0.2.0.0/README.md --exclude *.pyd
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addons-oca-sign]: Downloading https://files.pythonhosted.org/packages/29/b6/a13461f7f6eb181abf7b0bac96e4dead448234f68f08001aa32dcdddf96f/odoo_addons_oca_sign-16.0.20231115.0-py3-none-any.whl
+[2024-05-18 08:41:49] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/83/36/ea553454969fa7f356555da1ffcf31acc82172548be77278159002d34514/duckdb-0.9.1.tar.gz
+[2024-05-18 08:41:49] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 10640161>=10485760
+[2024-05-18 08:41:49] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addons-oca-sign]: executing diffoscope
+[2024-05-18 08:41:49] INFO root fetch - processPackages [odoo-addons-oca-sign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sign-15.0.20240517.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sign-16.0.20231115.0-py3-none-any.whl.zip --markdown 20240518/o/odoo-addons-oca-sign/15.0.20240517.0-16.0.20231115.0/README.md --exclude *.pyd
+[2024-05-18 08:41:50] INFO root fetch - processPackages [odoo-addons-oca-sign]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_sign-15.0.20240517.0-py3-none-any.whl.zip]
+[2024-05-18 08:41:50] INFO root fetch - processPackages [odoo-addons-oca-sign]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_sign-16.0.20231115.0-py3-none-any.whl.zip]
+[2024-05-18 08:41:50] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sign]: success
+[2024-05-18 08:41:50] INFO root fetch - processPackages [odoo-addon-sign-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sign_oca-16.0.1.1.0.4-py3-none-any.whl.zip]
+[2024-05-18 08:41:50] INFO root fetch - processPackages [odoo-addon-sign-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sign_oca-16.0.2.0.0-py3-none-any.whl.zip]
+[2024-05-18 08:41:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-sign-oca]: success
+[2024-05-18 08:41:50] INFO root fetch - main [MainThread]: Store serial: [23265371]
