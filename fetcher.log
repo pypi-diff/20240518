@@ -2502,3 +2502,36 @@
 [2024-05-18 02:31:53] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
 [2024-05-18 02:31:53] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-05-18 02:31:53] INFO root fetch - main [MainThread]: Store serial: [23262319]
+[2024-05-18 02:33:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262319]
+[2024-05-18 02:34:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-nets-core
+[2024-05-18 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: empower-functions
+[2024-05-18 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neurosym
+[2024-05-18 02:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: STAR-outliers
+[2024-05-18 02:34:02] INFO root fetch - processPackages [STAR-outliers]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 02:34:02] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.95] Old Version: [0.1.94]
+[2024-05-18 02:34:02] WARNING root fetch - processPackages [empower-functions]: Skipping, unable to determine old version
+[2024-05-18 02:34:02] INFO root fetch - main [MainThread]: End processing [empower-functions] error
+[2024-05-18 02:34:02] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/64/da/cbe9fe4ea0f2dcf7526f7fcdb300fdc485cd0bb8abfb88a5b1985274c26b/django_nets_core-0.1.94.tar.gz
+[2024-05-18 02:34:02] INFO root fetch - processPackages [STAR-outliers]: Downloading https://files.pythonhosted.org/packages/6c/84/73ec09e76d28468cbb20c64b8cda5f9fe1dd109266993c590d550edc5d2c/STAR_outliers-0.1.8.tar.gz
+[2024-05-18 02:34:02] INFO root fetch - processPackages [neurosym]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 02:34:03] INFO root fetch - processPackages [STAR-outliers]: Downloading https://files.pythonhosted.org/packages/75/1e/db4af784f9a5593f34c33f74c3627dbc80e9bc7615984d96734803b32a2d/STAR_outliers-0.1.9.tar.gz
+[2024-05-18 02:34:03] INFO root fetch - processPackages [neurosym]: Downloading https://files.pythonhosted.org/packages/66/87/42efcd2dada44045cddbcc64177bfa822d2cd1915ad9f075c81d65cdd137/neurosym-0.0.8.tar.gz
+[2024-05-18 02:34:03] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/38/6b/c59baa378d441f982d3e857d1e9924aebb096ff642b4dd01b499f97408bc/django_nets_core-0.1.95.tar.gz
+[2024-05-18 02:34:03] INFO root fetch - processPackages [STAR-outliers]: executing diffoscope
+[2024-05-18 02:34:03] INFO root fetch - processPackages [STAR-outliers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STAR_outliers-0.1.8.tar.gz tmp/STAR_outliers-0.1.9.tar.gz --markdown 20240518/S/STAR-outliers/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 02:34:03] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-18 02:34:03] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.94.tar.gz tmp/django_nets_core-0.1.95.tar.gz --markdown 20240518/d/django-nets-core/0.1.94-0.1.95/README.md --exclude *.pyd
+[2024-05-18 02:34:03] INFO root fetch - processPackages [neurosym]: Downloading https://files.pythonhosted.org/packages/b3/d9/0fd09f28366b6afe07c9b07022c327cfcb05f4c54ad12dc10fcb86d94884/neurosym-0.0.9.tar.gz
+[2024-05-18 02:34:03] INFO root fetch - processPackages [neurosym]: executing diffoscope
+[2024-05-18 02:34:03] INFO root fetch - processPackages [neurosym]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurosym-0.0.8.tar.gz tmp/neurosym-0.0.9.tar.gz --markdown 20240518/n/neurosym/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 02:34:03] INFO root fetch - processPackages [STAR-outliers]: Remove: archive file [/home/abi/fetcher/tmp/STAR_outliers-0.1.8.tar.gz]
+[2024-05-18 02:34:03] INFO root fetch - processPackages [STAR-outliers]: Remove: archive file [/home/abi/fetcher/tmp/STAR_outliers-0.1.9.tar.gz]
+[2024-05-18 02:34:03] INFO root fetch - main [MainThread]: End processing [STAR-outliers]: success
+[2024-05-18 02:34:04] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.94.tar.gz]
+[2024-05-18 02:34:04] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.95.tar.gz]
+[2024-05-18 02:34:04] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-18 02:34:04] INFO root fetch - processPackages [neurosym]: Remove: archive file [/home/abi/fetcher/tmp/neurosym-0.0.8.tar.gz]
+[2024-05-18 02:34:04] INFO root fetch - processPackages [neurosym]: Remove: archive file [/home/abi/fetcher/tmp/neurosym-0.0.9.tar.gz]
+[2024-05-18 02:34:04] INFO root fetch - main [MainThread]: End processing [neurosym]: success
+[2024-05-18 02:34:04] INFO root fetch - main [MainThread]: Store serial: [23262328]
