@@ -18945,3 +18945,74 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:25:57] WARNING root fetch - processPackages [matutinez]: Skipping, unable to determine old version
 [2024-05-18 19:25:57] INFO root fetch - main [MainThread]: End processing [matutinez] error
 [2024-05-18 19:25:57] INFO root fetch - main [MainThread]: Store serial: [23269640]
+[2024-05-18 19:28:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269640]
+[2024-05-18 19:28:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiconnectpy
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pnu-libgh
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly-tpu
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gogotable
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: frida-tools
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: langspace
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flet-easy-static
+[2024-05-18 19:28:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: crazy-thursday
+[2024-05-18 19:28:06] INFO root fetch - processPackages [frida-tools]: New version: [9.2.5] Old Version: [9.2.4]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [langspace]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.5] Old Version: [2.1.1]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [flet-easy-static]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/1e/d0/eff632385620f6c33aa2e42555eb82727ebe098b02b57d029517884fdde6/audiconnectpy-2.1.1.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [gogotable]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [pnu-libgh]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [frida-tools]: Downloading https://files.pythonhosted.org/packages/23/a5/de53e1703514a1b4e21489c6b9ecf7804bcc024254a2520ff855187789e1/frida-tools-9.2.4.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240518] Old Version: [2.17.0.dev20240517]
+[2024-05-18 19:28:06] INFO root fetch - processPackages [langspace]: Downloading https://files.pythonhosted.org/packages/b7/16/42b0bee9c5b333285f13dcdfb6763de22d3c0d7d30787907b58a364c7015/langspace-0.1.2.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/82/e0/2702a53099a0a7796fb0782c7b3ec087b0a676ccab15c33c18dd1075e2b3/flet_easy_static-0.2.1.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [pnu-libgh]: Downloading https://files.pythonhosted.org/packages/5d/4c/dc22919bc245be262e19d6ee5293016509a9f71068e74630a0968829ae06/pnu_libgh-0.9.0.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [gogotable]: Downloading https://files.pythonhosted.org/packages/d2/ed/166c0e07b6cce690ae5473cf2371abd00f3d18fd1752691b98dcb7cea07b/gogotable-0.1.1.tar.gz
+[2024-05-18 19:28:06] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/ca/65/896f8c1949109770d407320a35ee66db3cf4c3282f12146ebf67288fab16/audiconnectpy-2.1.5.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/06/1a/e179e01b01665d2193c37c83e06ae0fb0fc1b28e7af09407da3c01ab1f51/tf_nightly_tpu-2.17.0.dev20240517-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 19:28:07] INFO root fetch - processPackages [frida-tools]: Downloading https://files.pythonhosted.org/packages/d8/c0/4d00f9e85b499bed8857971040e9a5b9e6f1a995fb3569d25984eaf5294c/frida-tools-9.2.5.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.1.1.tar.gz tmp/audiconnectpy-2.1.5.tar.gz --markdown 20240518/a/audiconnectpy/2.1.1-2.1.5/README.md --exclude *.pyd
+[2024-05-18 19:28:07] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240518/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-18 19:28:07] INFO root fetch - processPackages [frida-tools]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [frida-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frida-tools-9.2.4.tar.gz tmp/frida-tools-9.2.5.tar.gz --markdown 20240518/f/frida-tools/9.2.4-9.2.5/README.md --exclude *.pyd
+[2024-05-18 19:28:07] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 224218234>=10485760
+[2024-05-18 19:28:07] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-05-18 19:28:07] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/29/63/343460e7a3cb4b3f01c2fc891c2ec2e370be02ce623daeabdd675ccaa005/flet_easy_static-0.2.2.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [langspace]: Downloading https://files.pythonhosted.org/packages/4e/d4/eb8a19bd41f9ea33ea62919514e6782421cb36f4044d0a2561a666792889/langspace-0.1.3.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [pnu-libgh]: Downloading https://files.pythonhosted.org/packages/19/dd/4785286aa6f13db9c21ea0b948d401ae8c3bdda7117a1baee9c607c5ee73/pnu_libgh-0.9.1.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [gogotable]: Downloading https://files.pythonhosted.org/packages/82/d4/d752692d8e8d1e55c5d735d34422b47db6dde4de5b230f805359f563bce1/gogotable-0.1.2.tar.gz
+[2024-05-18 19:28:07] INFO root fetch - processPackages [flet-easy-static]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [flet-easy-static]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_easy_static-0.2.1.tar.gz tmp/flet_easy_static-0.2.2.tar.gz --markdown 20240518/f/flet-easy-static/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-18 19:28:07] INFO root fetch - processPackages [langspace]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [langspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langspace-0.1.2.tar.gz tmp/langspace-0.1.3.tar.gz --markdown 20240518/l/langspace/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 19:28:07] INFO root fetch - processPackages [pnu-libgh]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [pnu-libgh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pnu_libgh-0.9.0.tar.gz tmp/pnu_libgh-0.9.1.tar.gz --markdown 20240518/p/pnu-libgh/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-18 19:28:07] INFO root fetch - processPackages [gogotable]: executing diffoscope
+[2024-05-18 19:28:07] INFO root fetch - processPackages [gogotable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gogotable-0.1.1.tar.gz tmp/gogotable-0.1.2.tar.gz --markdown 20240518/g/gogotable/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 19:28:07] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-18 19:28:07] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-18 19:28:07] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-18 19:28:07] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.1.tar.gz]
+[2024-05-18 19:28:07] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.5.tar.gz]
+[2024-05-18 19:28:07] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-18 19:28:07] INFO root fetch - processPackages [frida-tools]: Remove: archive file [/home/abi/fetcher/tmp/frida-tools-9.2.4.tar.gz]
+[2024-05-18 19:28:07] INFO root fetch - processPackages [frida-tools]: Remove: archive file [/home/abi/fetcher/tmp/frida-tools-9.2.5.tar.gz]
+[2024-05-18 19:28:07] INFO root fetch - main [MainThread]: End processing [frida-tools]: success
+[2024-05-18 19:28:08] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.1.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.2.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - main [MainThread]: End processing [flet-easy-static]: success
+[2024-05-18 19:28:08] INFO root fetch - processPackages [langspace]: Remove: archive file [/home/abi/fetcher/tmp/langspace-0.1.2.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - processPackages [langspace]: Remove: archive file [/home/abi/fetcher/tmp/langspace-0.1.3.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - main [MainThread]: End processing [langspace]: success
+[2024-05-18 19:28:08] INFO root fetch - processPackages [pnu-libgh]: Remove: archive file [/home/abi/fetcher/tmp/pnu_libgh-0.9.0.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - processPackages [pnu-libgh]: Remove: archive file [/home/abi/fetcher/tmp/pnu_libgh-0.9.1.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - main [MainThread]: End processing [pnu-libgh]: success
+[2024-05-18 19:28:08] INFO root fetch - processPackages [gogotable]: Remove: archive file [/home/abi/fetcher/tmp/gogotable-0.1.1.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - processPackages [gogotable]: Remove: archive file [/home/abi/fetcher/tmp/gogotable-0.1.2.tar.gz]
+[2024-05-18 19:28:08] INFO root fetch - main [MainThread]: End processing [gogotable]: success
+[2024-05-18 19:28:08] INFO root fetch - main [MainThread]: Store serial: [23269670]
