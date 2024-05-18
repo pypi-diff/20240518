@@ -10552,3 +10552,42 @@
 [2024-05-18 08:26:29] INFO root fetch - processPackages [pytest_robotframework]: Remove: archive file [/home/abi/fetcher/tmp/pytest_robotframework-4.1.4.tar.gz]
 [2024-05-18 08:26:29] INFO root fetch - main [MainThread]: End processing [pytest_robotframework]: success
 [2024-05-18 08:26:29] INFO root fetch - main [MainThread]: Store serial: [23265271]
+[2024-05-18 08:28:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265271]
+[2024-05-18 08:28:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 08:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-users-ldap-groups
+[2024-05-18 08:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsrm
+[2024-05-18 08:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: org-ds-cdk
+[2024-05-18 08:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: WGSE-NG
+[2024-05-18 08:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ungagz
+[2024-05-18 08:28:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: needto
+[2024-05-18 08:28:40] INFO root fetch - processPackages [jsrm]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 08:28:40] INFO root fetch - processPackages [WGSE-NG]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2024-05-18 08:28:40] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev8]
+[2024-05-18 08:28:40] WARNING root fetch - processPackages [ungagz]: Skipping, unable to determine old version
+[2024-05-18 08:28:40] INFO root fetch - main [MainThread]: End processing [ungagz] error
+[2024-05-18 08:28:40] WARNING root fetch - processPackages [org-ds-cdk]: Skipping, unable to determine old version
+[2024-05-18 08:28:40] INFO root fetch - main [MainThread]: End processing [org-ds-cdk] error
+[2024-05-18 08:28:40] WARNING root fetch - processPackages [needto]: Skipping, unable to determine old version
+[2024-05-18 08:28:40] INFO root fetch - main [MainThread]: End processing [needto] error
+[2024-05-18 08:28:40] INFO root fetch - processPackages [jsrm]: Downloading https://files.pythonhosted.org/packages/6f/91/bdfe7a93ba5f3274411be6d4c963f643c918b28e0296348c5bb7efd92db4/jsrm-0.0.7.tar.gz
+[2024-05-18 08:28:40] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/f8/b6/ea5ee5ce374e4b9086b496d64ebacf1b3b6f2485152acc9f3024d3b5d24a/wgse_ng-1.0.0a2.tar.gz
+[2024-05-18 08:28:40] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: Downloading https://files.pythonhosted.org/packages/ad/f6/cebef7fcf4ff3a0a3ea156c2ecd50d58b7d564836bf523fdf82f7d2cfe64/odoo14_addon_users_ldap_groups-14.0.1.0.1.dev8-py3-none-any.whl
+[2024-05-18 08:28:40] INFO root fetch - processPackages [jsrm]: Downloading https://files.pythonhosted.org/packages/2d/18/956afcb5242d5aa2755846b4cda4a6c288342236dcc8f3efe1a3a7dd6e24/jsrm-0.0.8.tar.gz
+[2024-05-18 08:28:40] INFO root fetch - processPackages [WGSE-NG]: Downloading https://files.pythonhosted.org/packages/4b/c1/52ad52603503c1532082a8d275aec9a2efc001f72edf4d039cdda32bc612/wgse_ng-1.0.0a3.tar.gz
+[2024-05-18 08:28:40] INFO root fetch - processPackages [jsrm]: executing diffoscope
+[2024-05-18 08:28:40] INFO root fetch - processPackages [jsrm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsrm-0.0.7.tar.gz tmp/jsrm-0.0.8.tar.gz --markdown 20240518/j/jsrm/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 08:28:40] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: Downloading https://files.pythonhosted.org/packages/79/9a/4dc0e169fdba9ae7bb3bab9ebfd8ced4bff4a5aebcaa0f9388a652e85603/odoo14_addon_users_ldap_groups-14.0.1.0.1.dev9-py3-none-any.whl
+[2024-05-18 08:28:40] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: executing diffoscope
+[2024-05-18 08:28:40] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_users_ldap_groups-14.0.1.0.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_users_ldap_groups-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-users-ldap-groups/14.0.1.0.1.dev8-14.0.1.0.1.dev9/README.md --exclude *.pyd
+[2024-05-18 08:28:40] INFO root fetch - processPackages [WGSE-NG]: executing diffoscope
+[2024-05-18 08:28:40] INFO root fetch - processPackages [WGSE-NG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgse_ng-1.0.0a2.tar.gz tmp/wgse_ng-1.0.0a3.tar.gz --markdown 20240518/W/WGSE-NG/1.0.0a2-1.0.0a3/README.md --exclude *.pyd
+[2024-05-18 08:28:41] INFO root fetch - processPackages [jsrm]: Remove: archive file [/home/abi/fetcher/tmp/jsrm-0.0.7.tar.gz]
+[2024-05-18 08:28:41] INFO root fetch - processPackages [jsrm]: Remove: archive file [/home/abi/fetcher/tmp/jsrm-0.0.8.tar.gz]
+[2024-05-18 08:28:41] INFO root fetch - main [MainThread]: End processing [jsrm]: success
+[2024-05-18 08:28:41] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_users_ldap_groups-14.0.1.0.1.dev8-py3-none-any.whl.zip]
+[2024-05-18 08:28:41] INFO root fetch - processPackages [odoo14-addon-users-ldap-groups]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_users_ldap_groups-14.0.1.0.1.dev9-py3-none-any.whl.zip]
+[2024-05-18 08:28:41] INFO root fetch - main [MainThread]: End processing [odoo14-addon-users-ldap-groups]: success
+[2024-05-18 08:28:42] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a2.tar.gz]
+[2024-05-18 08:28:42] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a3.tar.gz]
+[2024-05-18 08:28:42] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
+[2024-05-18 08:28:42] INFO root fetch - main [MainThread]: Store serial: [23265293]
