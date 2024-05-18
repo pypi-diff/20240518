@@ -10850,3 +10850,77 @@
 [2024-05-18 08:50:35] INFO root fetch - processPackages [WGSE-NG]: Remove: archive file [/home/abi/fetcher/tmp/wgse_ng-1.0.0a4.tar.gz]
 [2024-05-18 08:50:35] INFO root fetch - main [MainThread]: End processing [WGSE-NG]: success
 [2024-05-18 08:50:35] INFO root fetch - main [MainThread]: Store serial: [23265516]
+[2024-05-18 08:52:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265516]
+[2024-05-18 08:52:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 08:54:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265517]
+[2024-05-18 08:54:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchlure
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpostkit
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mteb
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Pseudovisium
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: novnc
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-stock-request
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: halticaz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-stock-cycle-count
+[2024-05-18 08:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: odoo14-addon-stock-archive-constraint
+[2024-05-18 08:54:50] INFO root fetch - processPackages [torchlure]: New version: [0.2405.9] Old Version: [0.2405.8]
+[2024-05-18 08:54:50] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-18 08:54:50] WARNING root fetch - processPackages [novnc]: Skipping, unable to determine old version
+[2024-05-18 08:54:50] INFO root fetch - main [MainThread]: End processing [novnc] error
+[2024-05-18 08:54:50] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-18 08:54:50] INFO root fetch - processPackages [torchlure]: Downloading https://files.pythonhosted.org/packages/6b/bd/5c01822218b31e5f06617a604408e705618024d5eaa4c1ed27ba9f1d3cbe/torchlure-0.2405.8.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: New version: [14.0.1.0.1.dev9] Old Version: [14.0.1.0.1.dev7]
+[2024-05-18 08:54:50] INFO root fetch - processPackages [odoo14-addon-stock-request]: New version: [14.0.1.7.4.dev5] Old Version: [14.0.1.7.4.dev4]
+[2024-05-18 08:54:50] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: New version: [15.0.1.0.0.6] Old Version: [15.0.1.0.0.5]
+[2024-05-18 08:54:50] WARNING root fetch - processPackages [halticaz]: Skipping, unable to determine old version
+[2024-05-18 08:54:50] INFO root fetch - processPackages [Pseudovisium]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 08:54:50] INFO root fetch - main [MainThread]: End processing [halticaz] error
+[2024-05-18 08:54:50] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [torchlure]: Downloading https://files.pythonhosted.org/packages/2e/bd/9d08ec703de646b0eab2bcbb117bc2c5879361cbd622ae8503c3366206fe/torchlure-0.2405.9.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/ec/02/4f0ff6ebfecb2857195a25c3ca342a7a1af99e21acd71f8a0f89061491f0/Pseudovisium-0.0.8.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [odoo14-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/5b/08/f13f3513f0afc887872e36f0851c2949841d22b52256922c90ccfd8f2202/odoo14_addon_stock_request-14.0.1.7.4.dev4-py3-none-any.whl
+[2024-05-18 08:54:50] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: Downloading https://files.pythonhosted.org/packages/e7/76/f1dd4f18bafcbddd1413363f4d653fb2fabd9b9c100a9d884ed631cea16e/odoo14_addon_stock_archive_constraint-14.0.1.0.1.dev7-py3-none-any.whl
+[2024-05-18 08:54:50] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/bf/c8/eee34e97925c09566bac73b6db48d6ba9579447d7e762f60d933981febd9/odoo_addon_stock_cycle_count-15.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 08:54:50] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-05-18 08:54:50] INFO root fetch - processPackages [torchlure]: executing diffoscope
+[2024-05-18 08:54:50] INFO root fetch - processPackages [torchlure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlure-0.2405.8.tar.gz tmp/torchlure-0.2405.9.tar.gz --markdown 20240518/t/torchlure/0.2405.8-0.2405.9/README.md --exclude *.pyd
+[2024-05-18 08:54:50] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-18 08:54:50] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240518/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-18 08:54:51] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-18 08:54:51] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240518/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-18 08:54:51] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/6a/7f/032756880a4d5dbead5465d90e6d9ef1046690f858021036f62dfcda246a/Pseudovisium-0.0.9.tar.gz
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/e0/0b/67a957747092b617f39ddfefcf83d3d95056ea0cba6ddafac49faeab11c5/odoo14_addon_stock_request-14.0.1.7.4.dev5-py3-none-any.whl
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: Downloading https://files.pythonhosted.org/packages/88/f4/116bb2d10cd6d5b3a4f815b420fc1224c7cb42441de774eebac9298333c5/odoo14_addon_stock_archive_constraint-14.0.1.0.1.dev9-py3-none-any.whl
+[2024-05-18 08:54:51] INFO root fetch - processPackages [Pseudovisium]: executing diffoscope
+[2024-05-18 08:54:51] INFO root fetch - processPackages [Pseudovisium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pseudovisium-0.0.8.tar.gz tmp/Pseudovisium-0.0.9.tar.gz --markdown 20240518/P/Pseudovisium/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: Downloading https://files.pythonhosted.org/packages/bd/b3/418786d94047c468765c9dfb1fa54025984381201c73c8034a00ac77791b/odoo_addon_stock_cycle_count-15.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-request]: executing diffoscope
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_request-14.0.1.7.4.dev4-py3-none-any.whl.zip tmp/odoo14_addon_stock_request-14.0.1.7.4.dev5-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-stock-request/14.0.1.7.4.dev4-14.0.1.7.4.dev5/README.md --exclude *.pyd
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: executing diffoscope
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_archive_constraint-14.0.1.0.1.dev7-py3-none-any.whl.zip tmp/odoo14_addon_stock_archive_constraint-14.0.1.0.1.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-stock-archive-constraint/14.0.1.0.1.dev7-14.0.1.0.1.dev9/README.md --exclude *.pyd
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: executing diffoscope
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_cycle_count-15.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_stock_cycle_count-15.0.1.0.0.6-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-stock-cycle-count/15.0.1.0.0.5-15.0.1.0.0.6/README.md --exclude *.pyd
+[2024-05-18 08:54:51] INFO root fetch - processPackages [torchlure]: Remove: archive file [/home/abi/fetcher/tmp/torchlure-0.2405.8.tar.gz]
+[2024-05-18 08:54:51] INFO root fetch - processPackages [torchlure]: Remove: archive file [/home/abi/fetcher/tmp/torchlure-0.2405.9.tar.gz]
+[2024-05-18 08:54:51] INFO root fetch - main [MainThread]: End processing [torchlure]: success
+[2024-05-18 08:54:51] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-18 08:54:51] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-18 08:54:51] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-18 08:54:51] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.8.tar.gz]
+[2024-05-18 08:54:51] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.9.tar.gz]
+[2024-05-18 08:54:51] INFO root fetch - main [MainThread]: End processing [Pseudovisium]: success
+[2024-05-18 08:54:51] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_stock_archive_constraint-14.0.1.0.1.dev7-py3-none-any.whl.zip]
+[2024-05-18 08:54:52] INFO root fetch - processPackages [odoo14-addon-stock-archive-constraint]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_stock_archive_constraint-14.0.1.0.1.dev9-py3-none-any.whl.zip]
+[2024-05-18 08:54:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-archive-constraint]: success
+[2024-05-18 08:54:52] INFO root fetch - processPackages [odoo14-addon-stock-request]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_stock_request-14.0.1.7.4.dev4-py3-none-any.whl.zip]
+[2024-05-18 08:54:52] INFO root fetch - processPackages [odoo14-addon-stock-request]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_stock_request-14.0.1.7.4.dev5-py3-none-any.whl.zip]
+[2024-05-18 08:54:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-request]: success
+[2024-05-18 08:54:52] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_cycle_count-15.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 08:54:52] INFO root fetch - processPackages [odoo-addon-stock-cycle-count]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_cycle_count-15.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 08:54:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-cycle-count]: success
+[2024-05-18 08:54:53] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-05-18 08:54:53] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-05-18 08:54:53] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-18 08:54:53] INFO root fetch - main [MainThread]: Store serial: [23265544]
