@@ -10612,3 +10612,36 @@
 [2024-05-18 08:30:53] INFO root fetch - processPackages [odoo14-addon-base-user-role]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_user_role-14.0.2.5.4.dev7-py3-none-any.whl.zip]
 [2024-05-18 08:30:53] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-user-role]: success
 [2024-05-18 08:30:53] INFO root fetch - main [MainThread]: Store serial: [23265298]
+[2024-05-18 08:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265298]
+[2024-05-18 08:33:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 08:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almgroad
+[2024-05-18 08:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: origametry
+[2024-05-18 08:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: github-repo-files-parser
+[2024-05-18 08:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-orangejuice
+[2024-05-18 08:33:02] INFO root fetch - processPackages [almgroad]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 08:33:02] WARNING root fetch - processPackages [github-repo-files-parser]: Skipping, unable to determine old version
+[2024-05-18 08:33:02] INFO root fetch - main [MainThread]: End processing [github-repo-files-parser] error
+[2024-05-18 08:33:02] INFO root fetch - processPackages [almgroad]: Downloading https://files.pythonhosted.org/packages/f3/f9/0c14334e59d74fc4e483269016297002a93e6940ae2f7c4f0ec0ad02f2ca/almgroad-0.1.1-py3-none-any.whl
+[2024-05-18 08:33:02] INFO root fetch - processPackages [origametry]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 08:33:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-18 08:33:02] INFO root fetch - processPackages [origametry]: Downloading https://files.pythonhosted.org/packages/1f/80/277d48f79553c7dcf267b9574c0510f5d9054ce3bce634f4d676efc80dd7/origametry-0.0.2.tar.gz
+[2024-05-18 08:33:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/c8/38/90a39a14d7ba6d9112789021b6ef87aaf81e04767b4778d7406cbb277c9f/nonebot-plugin-orangejuice-0.9.0.tar.gz
+[2024-05-18 08:33:02] INFO root fetch - processPackages [almgroad]: Downloading https://files.pythonhosted.org/packages/2c/f6/6d06d771fba465c55fd80a1ab368ad05918f985ecebd77953e0d7c257b69/almgroad-0.1.2-py3-none-any.whl
+[2024-05-18 08:33:02] INFO root fetch - processPackages [almgroad]: executing diffoscope
+[2024-05-18 08:33:02] INFO root fetch - processPackages [almgroad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almgroad-0.1.1-py3-none-any.whl.zip tmp/almgroad-0.1.2-py3-none-any.whl.zip --markdown 20240518/a/almgroad/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 08:33:02] INFO root fetch - processPackages [origametry]: Downloading https://files.pythonhosted.org/packages/0a/5e/cfdc68f2e1daf2d5d276efdb3b8bd749537383d708e636200527d601a293/origametry-0.0.3.tar.gz
+[2024-05-18 08:33:02] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Downloading https://files.pythonhosted.org/packages/7f/1d/3890a6434dd566ebff9d0e7fa7f151a8384e4bf47b0a22874773180f8977/nonebot-plugin-orangejuice-0.9.1.tar.gz
+[2024-05-18 08:33:02] INFO root fetch - processPackages [origametry]: executing diffoscope
+[2024-05-18 08:33:02] INFO root fetch - processPackages [origametry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/origametry-0.0.2.tar.gz tmp/origametry-0.0.3.tar.gz --markdown 20240518/o/origametry/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 08:33:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: executing diffoscope
+[2024-05-18 08:33:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz --markdown 20240518/n/nonebot-plugin-orangejuice/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-18 08:33:03] INFO root fetch - processPackages [almgroad]: Remove: archive file [/home/abi/fetcher/tmp/almgroad-0.1.1-py3-none-any.whl.zip]
+[2024-05-18 08:33:03] INFO root fetch - processPackages [almgroad]: Remove: archive file [/home/abi/fetcher/tmp/almgroad-0.1.2-py3-none-any.whl.zip]
+[2024-05-18 08:33:03] INFO root fetch - main [MainThread]: End processing [almgroad]: success
+[2024-05-18 08:33:03] INFO root fetch - processPackages [origametry]: Remove: archive file [/home/abi/fetcher/tmp/origametry-0.0.2.tar.gz]
+[2024-05-18 08:33:03] INFO root fetch - processPackages [origametry]: Remove: archive file [/home/abi/fetcher/tmp/origametry-0.0.3.tar.gz]
+[2024-05-18 08:33:03] INFO root fetch - main [MainThread]: End processing [origametry]: success
+[2024-05-18 08:33:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.0.tar.gz]
+[2024-05-18 08:33:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
+[2024-05-18 08:33:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
+[2024-05-18 08:33:03] INFO root fetch - main [MainThread]: Store serial: [23265310]
