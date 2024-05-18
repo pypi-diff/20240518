@@ -11310,3 +11310,32 @@
 [2024-05-18 09:27:35] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
 [2024-05-18 09:27:35] INFO root fetch - main [MainThread]: End processing [zfx]: success
 [2024-05-18 09:27:35] INFO root fetch - main [MainThread]: Store serial: [23265697]
+[2024-05-18 09:29:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265697]
+[2024-05-18 09:29:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 09:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmdapi-python
+[2024-05-18 09:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tweeterpy
+[2024-05-18 09:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zorch
+[2024-05-18 09:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Zope
+[2024-05-18 09:29:44] WARNING root fetch - processPackages [gmdapi-python]: Skipping, unable to determine old version
+[2024-05-18 09:29:44] INFO root fetch - main [MainThread]: End processing [gmdapi-python] error
+[2024-05-18 09:29:44] INFO root fetch - processPackages [zorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 09:29:44] INFO root fetch - processPackages [tweeterpy]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-05-18 09:29:44] INFO root fetch - processPackages [Zope]: New version: [5.9] Old Version: [5.8.6]
+[2024-05-18 09:29:44] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/50/d5/20b0dac0ae23cf0da1ac26121361a57833e4c90c03953c298d882b7d835d/zorch-0.0.8.tar.gz
+[2024-05-18 09:29:44] INFO root fetch - processPackages [tweeterpy]: Downloading https://files.pythonhosted.org/packages/75/50/2bc5f10d97874c3bdf6573e253cb47c957fbd8b8ab7c6b5614c2be12b6f3/tweeterpy-1.0.9.tar.gz
+[2024-05-18 09:29:44] INFO root fetch - processPackages [Zope]: Downloading https://files.pythonhosted.org/packages/b1/15/78b89eeb7105cdf2146cd58055a82bd094bfb5ffc968c518b69f8e98fa68/Zope-5.8.6.tar.gz
+[2024-05-18 09:29:44] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/bf/a0/75fc2c4170d35fb1a7605723b68b9cd28d1d2e0cbd176afc077833e6d119/zorch-0.0.9.tar.gz
+[2024-05-18 09:29:44] INFO root fetch - processPackages [tweeterpy]: Downloading https://files.pythonhosted.org/packages/b9/01/b5b1e86b73a56f3d6364209a7b2faca53aa809843a7a9e3a875edfa95a2b/tweeterpy-1.1.0.tar.gz
+[2024-05-18 09:29:44] INFO root fetch - processPackages [zorch]: executing diffoscope
+[2024-05-18 09:29:44] INFO root fetch - processPackages [zorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zorch-0.0.8.tar.gz tmp/zorch-0.0.9.tar.gz --markdown 20240518/z/zorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 09:29:44] INFO root fetch - processPackages [tweeterpy]: executing diffoscope
+[2024-05-18 09:29:44] INFO root fetch - processPackages [tweeterpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweeterpy-1.0.9.tar.gz tmp/tweeterpy-1.1.0.tar.gz --markdown 20240518/t/tweeterpy/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-05-18 09:29:44] WARNING root fetch - processPackages [Zope]: Skipping package: exceeds size limit 12490801>=10485760
+[2024-05-18 09:29:44] INFO root fetch - main [MainThread]: End processing [Zope] error
+[2024-05-18 09:29:45] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.0.9.tar.gz]
+[2024-05-18 09:29:45] INFO root fetch - processPackages [tweeterpy]: Remove: archive file [/home/abi/fetcher/tmp/tweeterpy-1.1.0.tar.gz]
+[2024-05-18 09:29:45] INFO root fetch - main [MainThread]: End processing [tweeterpy]: success
+[2024-05-18 09:29:45] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.8.tar.gz]
+[2024-05-18 09:29:45] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
+[2024-05-18 09:29:45] INFO root fetch - main [MainThread]: End processing [zorch]: success
+[2024-05-18 09:29:45] INFO root fetch - main [MainThread]: Store serial: [23265708]
