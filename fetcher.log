@@ -21051,3 +21051,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:49:51] INFO root fetch - processPackages [jesse]: Remove: archive file [/home/abi/fetcher/tmp/jesse-0.9.2.tar.gz]
 [2024-05-18 21:49:51] INFO root fetch - main [MainThread]: End processing [jesse]: success
 [2024-05-18 21:49:51] INFO root fetch - main [MainThread]: Store serial: [23270683]
+[2024-05-18 21:51:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270683]
+[2024-05-18 21:51:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 21:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: app-store-server-library-python-async
+[2024-05-18 21:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hexdoc-hexdebug
+[2024-05-18 21:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyEasyDbApi
+[2024-05-18 21:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: openai-schema
+[2024-05-18 21:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openapi-python-client
+[2024-05-18 21:51:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flexidata
+[2024-05-18 21:51:59] INFO root fetch - processPackages [hexdoc-hexdebug]: New version: [0.1.0.1.20.1.1.0.dev0] Old Version: [0.1.0.1.20.1.1.0]
+[2024-05-18 21:51:59] WARNING root fetch - processPackages [app-store-server-library-python-async]: Skipping, unable to determine old version
+[2024-05-18 21:51:59] INFO root fetch - main [MainThread]: End processing [app-store-server-library-python-async] error
+[2024-05-18 21:51:59] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 21:52:00] INFO root fetch - processPackages [hexdoc-hexdebug]: Downloading https://files.pythonhosted.org/packages/09/aa/c83b6dc45e0ce629e4cbac6fdee4cc4b0d275246ee201ffb4bb5b8dfadf2/hexdoc_hexdebug-0.1.0.1.20.1.1.0.tar.gz
+[2024-05-18 21:52:00] WARNING root fetch - processPackages [openai-schema]: Skipping, unable to determine old version
+[2024-05-18 21:52:00] INFO root fetch - main [MainThread]: End processing [openai-schema] error
+[2024-05-18 21:52:00] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/2b/a1/f9e77ec9767cdf13dd483b122d67ccc0d0926773a78df63454d464ee4abf/pyeasydbapi-0.1.7.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [openapi-python-client]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-18 21:52:00] INFO root fetch - processPackages [flexidata]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 21:52:00] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/6d/81/a16696f6f341ef2b9872d69c8b9c5016abb1bc93edd4ba73c66adf26c1c3/openapi-python-client-0.9.1.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [hexdoc-hexdebug]: Downloading https://files.pythonhosted.org/packages/bc/4e/fb1456ab69251aec661a1777c9af87d31e589a2abd618ef6343332f92d60/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [flexidata]: Downloading https://files.pythonhosted.org/packages/62/d4/808f9965eb3c52a99bbfdae7dd1a999a78f6159bd234907ec92fae48501b/flexidata-0.0.1.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [hexdoc-hexdebug]: executing diffoscope
+[2024-05-18 21:52:00] INFO root fetch - processPackages [hexdoc-hexdebug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.tar.gz tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz --markdown 20240518/h/hexdoc-hexdebug/0.1.0.1.20.1.1.0-0.1.0.1.20.1.1.0.dev0/README.md --exclude *.pyd
+[2024-05-18 21:52:00] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/39/ab/fa8ef609511886a3db65c2bce16a7d131e070400896aeeedeed7ff7ec723/pyeasydbapi-0.1.8.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:52:00] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.7.tar.gz tmp/pyeasydbapi-0.1.8.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 21:52:00] INFO root fetch - processPackages [flexidata]: Downloading https://files.pythonhosted.org/packages/91/b1/9bdd70ee4ba45b3f880773838e3b7e57a7c860a88e3fde58ad3ba739e9bb/flexidata-0.0.2.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [openapi-python-client]: Downloading https://files.pythonhosted.org/packages/4a/de/95e3c3a2a0b3b1e23b0a640e8c7751a17201bd319a98e3a1ab72cc101d34/openapi-python-client-0.9.2.tar.gz
+[2024-05-18 21:52:00] INFO root fetch - processPackages [flexidata]: executing diffoscope
+[2024-05-18 21:52:00] INFO root fetch - processPackages [flexidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexidata-0.0.1.tar.gz tmp/flexidata-0.0.2.tar.gz --markdown 20240518/f/flexidata/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 21:52:00] INFO root fetch - processPackages [openapi-python-client]: executing diffoscope
+[2024-05-18 21:52:00] INFO root fetch - processPackages [openapi-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openapi-python-client-0.9.1.tar.gz tmp/openapi-python-client-0.9.2.tar.gz --markdown 20240518/o/openapi-python-client/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-18 21:52:00] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.tar.gz]
+[2024-05-18 21:52:00] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz]
+[2024-05-18 21:52:00] INFO root fetch - main [MainThread]: End processing [hexdoc-hexdebug]: success
+[2024-05-18 21:52:01] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.7.tar.gz]
+[2024-05-18 21:52:01] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.8.tar.gz]
+[2024-05-18 21:52:01] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:52:01] INFO root fetch - processPackages [flexidata]: Remove: archive file [/home/abi/fetcher/tmp/flexidata-0.0.1.tar.gz]
+[2024-05-18 21:52:01] INFO root fetch - processPackages [flexidata]: Remove: archive file [/home/abi/fetcher/tmp/flexidata-0.0.2.tar.gz]
+[2024-05-18 21:52:01] INFO root fetch - main [MainThread]: End processing [flexidata]: success
+[2024-05-18 21:52:01] INFO root fetch - processPackages [openapi-python-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi-python-client-0.9.1.tar.gz]
+[2024-05-18 21:52:01] INFO root fetch - processPackages [openapi-python-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi-python-client-0.9.2.tar.gz]
+[2024-05-18 21:52:01] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
+[2024-05-18 21:52:01] INFO root fetch - main [MainThread]: Store serial: [23270704]
