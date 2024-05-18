@@ -19070,3 +19070,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:30:19] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.0.tar.gz]
 [2024-05-18 19:30:19] INFO root fetch - main [MainThread]: End processing [pymonit]: success
 [2024-05-18 19:30:19] INFO root fetch - main [MainThread]: Store serial: [23269695]
+[2024-05-18 19:32:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269695]
+[2024-05-18 19:32:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 19:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nice-gui-utils
+[2024-05-18 19:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mintlemon-turkish-nlp
+[2024-05-18 19:32:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uav-collision-avoidance
+[2024-05-18 19:32:29] INFO root fetch - processPackages [mintlemon-turkish-nlp]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-18 19:32:29] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/24/1c/c154b94fcbe709ea8a2d01a901a9b97485114061bdc233ef933e1d945dc4/mintlemon-turkish-nlp-0.2.7.tar.gz
+[2024-05-18 19:32:29] INFO root fetch - processPackages [nice-gui-utils]: New version: [0.3.1.dev9] Old Version: [0.3.1.dev8]
+[2024-05-18 19:32:29] INFO root fetch - processPackages [uav-collision-avoidance]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-18 19:32:29] INFO root fetch - processPackages [nice-gui-utils]: Downloading https://files.pythonhosted.org/packages/35/13/a9b5fa0d423865a040ff3688ed614edeaba98788a4d0b0ff45667d96e4ec/nice_gui_utils-0.3.1.dev8.tar.gz
+[2024-05-18 19:32:29] INFO root fetch - processPackages [uav-collision-avoidance]: Downloading https://files.pythonhosted.org/packages/a8/b6/f201d1c9eba84d8f7725cc366346c844992877bac41019bd8783f2b365b5/uav_collision_avoidance-0.8.3-py3-none-any.whl
+[2024-05-18 19:32:29] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/22/d6/260b3abe3291108136f14253e9a7b71a71fc2d870f9dd160aebb6e243083/mintlemon-turkish-nlp-0.2.8.tar.gz
+[2024-05-18 19:32:30] INFO root fetch - processPackages [mintlemon-turkish-nlp]: executing diffoscope
+[2024-05-18 19:32:30] INFO root fetch - processPackages [mintlemon-turkish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mintlemon-turkish-nlp-0.2.7.tar.gz tmp/mintlemon-turkish-nlp-0.2.8.tar.gz --markdown 20240518/m/mintlemon-turkish-nlp/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-18 19:32:30] INFO root fetch - processPackages [nice-gui-utils]: Downloading https://files.pythonhosted.org/packages/87/8f/2c161be5499b7f5a4fff4c9813a7aa0cfe7bf2df328921a9a13c5f19c5c4/nice_gui_utils-0.3.1.dev9.tar.gz
+[2024-05-18 19:32:30] INFO root fetch - processPackages [uav-collision-avoidance]: Downloading https://files.pythonhosted.org/packages/26/16/042ec394d4a9d0e8a2e2975509b5241df97518691e753e1e9b72de190d0d/uav_collision_avoidance-0.8.4-py3-none-any.whl
+[2024-05-18 19:32:30] INFO root fetch - processPackages [nice-gui-utils]: executing diffoscope
+[2024-05-18 19:32:30] INFO root fetch - processPackages [nice-gui-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nice_gui_utils-0.3.1.dev8.tar.gz tmp/nice_gui_utils-0.3.1.dev9.tar.gz --markdown 20240518/n/nice-gui-utils/0.3.1.dev8-0.3.1.dev9/README.md --exclude *.pyd
+[2024-05-18 19:32:30] INFO root fetch - processPackages [uav-collision-avoidance]: executing diffoscope
+[2024-05-18 19:32:30] INFO root fetch - processPackages [uav-collision-avoidance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uav_collision_avoidance-0.8.3-py3-none-any.whl.zip tmp/uav_collision_avoidance-0.8.4-py3-none-any.whl.zip --markdown 20240518/u/uav-collision-avoidance/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-18 19:32:30] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.7.tar.gz]
+[2024-05-18 19:32:30] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.8.tar.gz]
+[2024-05-18 19:32:30] INFO root fetch - main [MainThread]: End processing [mintlemon-turkish-nlp]: success
+[2024-05-18 19:32:30] INFO root fetch - processPackages [nice-gui-utils]: Remove: archive file [/home/abi/fetcher/tmp/nice_gui_utils-0.3.1.dev8.tar.gz]
+[2024-05-18 19:32:30] INFO root fetch - processPackages [nice-gui-utils]: Remove: archive file [/home/abi/fetcher/tmp/nice_gui_utils-0.3.1.dev9.tar.gz]
+[2024-05-18 19:32:30] INFO root fetch - main [MainThread]: End processing [nice-gui-utils]: success
+[2024-05-18 19:32:31] INFO root fetch - processPackages [uav-collision-avoidance]: Remove: archive file [/home/abi/fetcher/tmp/uav_collision_avoidance-0.8.3-py3-none-any.whl.zip]
+[2024-05-18 19:32:31] INFO root fetch - processPackages [uav-collision-avoidance]: Remove: archive file [/home/abi/fetcher/tmp/uav_collision_avoidance-0.8.4-py3-none-any.whl.zip]
+[2024-05-18 19:32:31] INFO root fetch - main [MainThread]: End processing [uav-collision-avoidance]: success
+[2024-05-18 19:32:31] INFO root fetch - main [MainThread]: Store serial: [23269703]
