@@ -15511,3 +15511,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:21:36] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.9.tar.gz]
 [2024-05-18 15:21:36] INFO root fetch - main [MainThread]: End processing [experiment-helpers]: success
 [2024-05-18 15:21:36] INFO root fetch - main [MainThread]: Store serial: [23267966]
+[2024-05-18 15:23:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267966]
+[2024-05-18 15:23:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 15:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydglab-ws
+[2024-05-18 15:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rest-solace
+[2024-05-18 15:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aind-data-schema-models
+[2024-05-18 15:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anteposthumousz
+[2024-05-18 15:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clean-alchemy
+[2024-05-18 15:23:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: novelWriter
+[2024-05-18 15:23:44] INFO root fetch - processPackages [rest-solace]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-05-18 15:23:44] INFO root fetch - processPackages [pydglab-ws]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-05-18 15:23:44] INFO root fetch - processPackages [clean-alchemy]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 15:23:44] WARNING root fetch - processPackages [anteposthumousz]: Skipping, unable to determine old version
+[2024-05-18 15:23:44] INFO root fetch - main [MainThread]: End processing [anteposthumousz] error
+[2024-05-18 15:23:44] INFO root fetch - processPackages [aind-data-schema-models]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 15:23:45] INFO root fetch - processPackages [novelWriter]: New version: [2.4rc1] Old Version: [2.4b1]
+[2024-05-18 15:23:45] INFO root fetch - processPackages [rest-solace]: Downloading https://files.pythonhosted.org/packages/3d/50/13c38cae4ea9e31268643b802ca8c56ec842edc0ac458bb3971bc9513b48/rest_solace-0.0.2.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [pydglab-ws]: Downloading https://files.pythonhosted.org/packages/53/09/838654d114f72be784845b5a869dbaddc3fbcd4218853c61e3eca5d2e716/pydglab_ws-0.1.0.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/45/d7/67334b53dc50fc1c6cef77f3b39c930d624b69d96c528eb0510a44d82ae7/clean-alchemy-0.1.6.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [aind-data-schema-models]: Downloading https://files.pythonhosted.org/packages/fd/93/e232657605441180484ecc62850dcf682f4dd1700121cf7bdab7fde90677/aind_data_schema_models-0.1.3.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [novelWriter]: Downloading https://files.pythonhosted.org/packages/ab/af/0a82d54961e984a1c566617e20da37b84e6a9f6a54ad19be522375fa27b2/novelWriter-2.4b1.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [pydglab-ws]: Downloading https://files.pythonhosted.org/packages/e0/d1/4e1f7b292c534bb9a0d3c59ab2de9969ca4d39dae08b93df75910fbd6e74/pydglab_ws-1.0.0.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [rest-solace]: Downloading https://files.pythonhosted.org/packages/dc/07/ca86d9af8a853d941b06a1be0764281fafc2c17a5238fdf87c24b41145ed/rest_solace-0.1.0.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [aind-data-schema-models]: Downloading https://files.pythonhosted.org/packages/1f/36/7c057a126fcc4840d63df3fcbcf564b9baf2b5792aa83e0e1511245009ab/aind_data_schema_models-0.1.4.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [pydglab-ws]: executing diffoscope
+[2024-05-18 15:23:45] INFO root fetch - processPackages [pydglab-ws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydglab_ws-0.1.0.tar.gz tmp/pydglab_ws-1.0.0.tar.gz --markdown 20240518/p/pydglab-ws/0.1.0-1.0.0/README.md --exclude *.pyd
+[2024-05-18 15:23:45] INFO root fetch - processPackages [rest-solace]: executing diffoscope
+[2024-05-18 15:23:45] INFO root fetch - processPackages [rest-solace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_solace-0.0.2.tar.gz tmp/rest_solace-0.1.0.tar.gz --markdown 20240518/r/rest-solace/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-05-18 15:23:45] INFO root fetch - processPackages [aind-data-schema-models]: executing diffoscope
+[2024-05-18 15:23:45] INFO root fetch - processPackages [aind-data-schema-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_data_schema_models-0.1.3.tar.gz tmp/aind_data_schema_models-0.1.4.tar.gz --markdown 20240518/a/aind-data-schema-models/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 15:23:45] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/f0/75/000df5087b6f7e5023c16856661239ae394a4ed477fc922d7121a68be1f6/clean-alchemy-0.1.7.tar.gz
+[2024-05-18 15:23:45] INFO root fetch - processPackages [clean-alchemy]: executing diffoscope
+[2024-05-18 15:23:45] INFO root fetch - processPackages [clean-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean-alchemy-0.1.6.tar.gz tmp/clean-alchemy-0.1.7.tar.gz --markdown 20240518/c/clean-alchemy/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 15:23:46] INFO root fetch - processPackages [novelWriter]: Downloading https://files.pythonhosted.org/packages/e6/0b/c3f12c4f384eb527e53ef4e12e1c3a2a10405ba7b70b29dc8a343232e412/novelWriter-2.4rc1.tar.gz
+[2024-05-18 15:23:46] INFO root fetch - processPackages [pydglab-ws]: Remove: archive file [/home/abi/fetcher/tmp/pydglab_ws-0.1.0.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - processPackages [pydglab-ws]: Remove: archive file [/home/abi/fetcher/tmp/pydglab_ws-1.0.0.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - main [MainThread]: End processing [pydglab-ws]: success
+[2024-05-18 15:23:46] INFO root fetch - processPackages [rest-solace]: Remove: archive file [/home/abi/fetcher/tmp/rest_solace-0.0.2.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - processPackages [rest-solace]: Remove: archive file [/home/abi/fetcher/tmp/rest_solace-0.1.0.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - main [MainThread]: End processing [rest-solace]: success
+[2024-05-18 15:23:46] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.6.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.7.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - main [MainThread]: End processing [clean-alchemy]: success
+[2024-05-18 15:23:46] INFO root fetch - processPackages [aind-data-schema-models]: Remove: archive file [/home/abi/fetcher/tmp/aind_data_schema_models-0.1.3.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - processPackages [aind-data-schema-models]: Remove: archive file [/home/abi/fetcher/tmp/aind_data_schema_models-0.1.4.tar.gz]
+[2024-05-18 15:23:46] INFO root fetch - main [MainThread]: End processing [aind-data-schema-models]: success
+[2024-05-18 15:23:48] INFO root fetch - processPackages [novelWriter]: executing diffoscope
+[2024-05-18 15:23:48] INFO root fetch - processPackages [novelWriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelWriter-2.4b1.tar.gz tmp/novelWriter-2.4rc1.tar.gz --markdown 20240518/n/novelWriter/2.4b1-2.4rc1/README.md --exclude *.pyd
+[2024-05-18 15:23:52] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4b1.tar.gz]
+[2024-05-18 15:23:52] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4rc1.tar.gz]
+[2024-05-18 15:23:52] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
+[2024-05-18 15:23:52] INFO root fetch - main [MainThread]: Store serial: [23268001]
