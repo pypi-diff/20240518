@@ -20622,3 +20622,41 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:19:09] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.5.0.tar.gz]
 [2024-05-18 21:19:09] INFO root fetch - main [MainThread]: End processing [wild-code]: success
 [2024-05-18 21:19:09] INFO root fetch - main [MainThread]: Store serial: [23270489]
+[2024-05-18 21:21:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270489]
+[2024-05-18 21:21:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 21:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: annonition
+[2024-05-18 21:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEasyDbApi
+[2024-05-18 21:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-tax-one-vat-purchase
+[2024-05-18 21:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BigEDA
+[2024-05-18 21:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TrackingNet
+[2024-05-18 21:21:19] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 21:21:19] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-18 21:21:19] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 21:21:19] WARNING root fetch - processPackages [odoo-addon-account-tax-one-vat-purchase]: Skipping, unable to determine old version
+[2024-05-18 21:21:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-tax-one-vat-purchase] error
+[2024-05-18 21:21:19] INFO root fetch - processPackages [TrackingNet]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 21:21:19] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/cd/76/cda5f6b65e4819fbde0a3c78ae70885a2a4dd0ef336ed122ed5dbf855d85/pyeasydbapi-0.0.6.tar.gz
+[2024-05-18 21:21:19] INFO root fetch - processPackages [annonition]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 21:21:19] INFO root fetch - processPackages [annonition]: Downloading https://files.pythonhosted.org/packages/34/0c/da318d00815798c924b8ecafaf73114f5af9f82c678b721109bfbd5cb616/annonition-0.0.7.tar.gz
+[2024-05-18 21:21:19] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 21:21:19] INFO root fetch - processPackages [TrackingNet]: Downloading https://files.pythonhosted.org/packages/2d/d9/0e297c868464365c0c14188d9ae34dffb0d0b252bd425b64859cc0d7c65f/TrackingNet-0.0.7.tar.gz
+[2024-05-18 21:21:19] ERROR root fetch - processPackages [pyEasyDbApi]: Unable to fetch info: No such project/version 'pyEasyDbApi' 0.0.7
+[2024-05-18 21:21:19] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi] error
+[2024-05-18 21:21:19] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 21:21:19] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 21:21:19] INFO root fetch - processPackages [annonition]: Downloading https://files.pythonhosted.org/packages/1c/ef/25fce48b5e5b6b14b63cb11d399bc10312510e6bccfb5c764487f7c22fbf/annonition-0.0.8.tar.gz
+[2024-05-18 21:21:20] INFO root fetch - processPackages [TrackingNet]: Downloading https://files.pythonhosted.org/packages/54/50/cdeda2dd9a2193933d9c54b7a1df633fae4d6db4730e60c70e6eedb021b7/TrackingNet-0.0.8.tar.gz
+[2024-05-18 21:21:20] INFO root fetch - processPackages [annonition]: executing diffoscope
+[2024-05-18 21:21:20] INFO root fetch - processPackages [annonition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annonition-0.0.7.tar.gz tmp/annonition-0.0.8.tar.gz --markdown 20240518/a/annonition/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 21:21:20] INFO root fetch - processPackages [TrackingNet]: executing diffoscope
+[2024-05-18 21:21:20] INFO root fetch - processPackages [TrackingNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TrackingNet-0.0.7.tar.gz tmp/TrackingNet-0.0.8.tar.gz --markdown 20240518/T/TrackingNet/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 21:21:20] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 21:21:20] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 21:21:20] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 21:21:20] INFO root fetch - processPackages [annonition]: Remove: archive file [/home/abi/fetcher/tmp/annonition-0.0.7.tar.gz]
+[2024-05-18 21:21:20] INFO root fetch - processPackages [annonition]: Remove: archive file [/home/abi/fetcher/tmp/annonition-0.0.8.tar.gz]
+[2024-05-18 21:21:20] INFO root fetch - main [MainThread]: End processing [annonition]: success
+[2024-05-18 21:21:20] INFO root fetch - processPackages [TrackingNet]: Remove: archive file [/home/abi/fetcher/tmp/TrackingNet-0.0.7.tar.gz]
+[2024-05-18 21:21:20] INFO root fetch - processPackages [TrackingNet]: Remove: archive file [/home/abi/fetcher/tmp/TrackingNet-0.0.8.tar.gz]
+[2024-05-18 21:21:20] INFO root fetch - main [MainThread]: End processing [TrackingNet]: success
+[2024-05-18 21:21:20] INFO root fetch - main [MainThread]: Store serial: [23270506]
