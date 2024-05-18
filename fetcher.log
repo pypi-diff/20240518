@@ -9185,3 +9185,20 @@
 [2024-05-18 06:17:02] WARNING root fetch - processPackages [transformedz]: Skipping, unable to determine old version
 [2024-05-18 06:17:02] INFO root fetch - main [MainThread]: End processing [transformedz] error
 [2024-05-18 06:17:02] INFO root fetch - main [MainThread]: Store serial: [23264672]
+[2024-05-18 06:19:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264672]
+[2024-05-18 06:19:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-hr-employee-phone-extension
+[2024-05-18 06:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FirstGame
+[2024-05-18 06:19:11] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.5]
+[2024-05-18 06:19:11] INFO root fetch - processPackages [FirstGame]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 06:19:11] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: Downloading https://files.pythonhosted.org/packages/93/a6/5b5c02640ef187c99f80ea29bcfeb690572a2dce513cd53639176345e797/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 06:19:11] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/f5/22/0065e3ab9bf7517a6857badd0346ff4f10316c4b341a0d447f2e559c588e/FirstGame-1.0.8.tar.gz
+[2024-05-18 06:19:11] WARNING root fetch - processPackages [FirstGame]: Skipping package: exceeds size limit 50005693>=10485760
+[2024-05-18 06:19:11] INFO root fetch - main [MainThread]: End processing [FirstGame] error
+[2024-05-18 06:19:11] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: Downloading https://files.pythonhosted.org/packages/78/58/ae5933469f54b0f482d6cbfa8943d58824f1b944c2be5b938ebe2e51b0ab/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-18 06:19:11] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: executing diffoscope
+[2024-05-18 06:19:11] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-hr-employee-phone-extension/16.0.1.0.0.5-16.0.1.0.0.8/README.md --exclude *.pyd
+[2024-05-18 06:19:12] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 06:19:12] INFO root fetch - processPackages [odoo-addon-hr-employee-phone-extension]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_hr_employee_phone_extension-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-18 06:19:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-employee-phone-extension]: success
+[2024-05-18 06:19:12] INFO root fetch - main [MainThread]: Store serial: [23264677]
