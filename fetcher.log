@@ -11176,3 +11176,50 @@
 [2024-05-18 09:14:34] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
 [2024-05-18 09:14:34] INFO root fetch - main [MainThread]: End processing [zorch]: success
 [2024-05-18 09:14:34] INFO root fetch - main [MainThread]: Store serial: [23265636]
+[2024-05-18 09:16:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265636]
+[2024-05-18 09:16:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: valentinez
+[2024-05-18 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zorch
+[2024-05-18 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uk_bin_collection
+[2024-05-18 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-hub-nightly
+[2024-05-18 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spu
+[2024-05-18 09:16:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bin-package-manager
+[2024-05-18 09:16:44] INFO root fetch - processPackages [zorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 09:16:44] INFO root fetch - processPackages [uk_bin_collection]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 09:16:44] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/50/d5/20b0dac0ae23cf0da1ac26121361a57833e4c90c03953c298d882b7d835d/zorch-0.0.8.tar.gz
+[2024-05-18 09:16:44] WARNING root fetch - processPackages [valentinez]: Skipping, unable to determine old version
+[2024-05-18 09:16:44] INFO root fetch - main [MainThread]: End processing [valentinez] error
+[2024-05-18 09:16:44] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/f6/3c/e25a4eb0a28d67a6748fdb9acd0380565c1585a1ff833d282a9d2acc90a1/uk_bin_collection-0.8.0.tar.gz
+[2024-05-18 09:16:44] INFO root fetch - processPackages [spu]: New version: [0.9.1.dev20240518] Old Version: [0.9.1.dev20240513]
+[2024-05-18 09:16:44] INFO root fetch - processPackages [bin-package-manager]: New version: [2.2.8] Old Version: [2.2.7]
+[2024-05-18 09:16:44] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-05-18 09:16:44] INFO root fetch - processPackages [zorch]: Downloading https://files.pythonhosted.org/packages/bf/a0/75fc2c4170d35fb1a7605723b68b9cd28d1d2e0cbd176afc077833e6d119/zorch-0.0.9.tar.gz
+[2024-05-18 09:16:44] INFO root fetch - processPackages [uk_bin_collection]: Downloading https://files.pythonhosted.org/packages/55/0e/a2cb2057f203540273a20c67ef245d13d61a542934302f0475c939494a96/uk_bin_collection-0.9.0.tar.gz
+[2024-05-18 09:16:44] INFO root fetch - processPackages [spu]: Downloading https://files.pythonhosted.org/packages/13/55/ea6984ca4b024a2c088260ef9900a0ee90ec09d83dc61669725af245a62e/spu-0.9.1.dev20240513-cp310-cp310-manylinux_2_28_aarch64.whl
+[2024-05-18 09:16:44] INFO root fetch - processPackages [bin-package-manager]: Downloading https://files.pythonhosted.org/packages/83/4e/a4f63d3e4ac97871c0934f42eed904482aebdfba07e803ca18bcacacdf40/bin_package_manager-2.2.7.tar.gz
+[2024-05-18 09:16:44] WARNING root fetch - processPackages [spu]: Skipping package: exceeds size limit 36669169>=10485760
+[2024-05-18 09:16:44] INFO root fetch - main [MainThread]: End processing [spu] error
+[2024-05-18 09:16:44] INFO root fetch - processPackages [zorch]: executing diffoscope
+[2024-05-18 09:16:44] INFO root fetch - processPackages [zorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zorch-0.0.8.tar.gz tmp/zorch-0.0.9.tar.gz --markdown 20240518/z/zorch/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 09:16:44] INFO root fetch - processPackages [uk_bin_collection]: executing diffoscope
+[2024-05-18 09:16:44] INFO root fetch - processPackages [uk_bin_collection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uk_bin_collection-0.8.0.tar.gz tmp/uk_bin_collection-0.9.0.tar.gz --markdown 20240518/u/uk_bin_collection/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 09:16:44] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-05-18 09:16:45] INFO root fetch - processPackages [bin-package-manager]: Downloading https://files.pythonhosted.org/packages/3d/b3/049024d147cf2f77c9ec64a8c970d8e87f040f01a23cf8afb0529728efa4/bin_package_manager-2.2.8.tar.gz
+[2024-05-18 09:16:45] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-05-18 09:16:45] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.8.tar.gz]
+[2024-05-18 09:16:45] INFO root fetch - processPackages [zorch]: Remove: archive file [/home/abi/fetcher/tmp/zorch-0.0.9.tar.gz]
+[2024-05-18 09:16:45] INFO root fetch - main [MainThread]: End processing [zorch]: success
+[2024-05-18 09:16:45] INFO root fetch - processPackages [bin-package-manager]: executing diffoscope
+[2024-05-18 09:16:45] INFO root fetch - processPackages [bin-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bin_package_manager-2.2.7.tar.gz tmp/bin_package_manager-2.2.8.tar.gz --markdown 20240518/b/bin-package-manager/2.2.7-2.2.8/README.md --exclude *.pyd
+[2024-05-18 09:16:45] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-05-18 09:16:45] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240518/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-05-18 09:16:45] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.8.0.tar.gz]
+[2024-05-18 09:16:45] INFO root fetch - processPackages [uk_bin_collection]: Remove: archive file [/home/abi/fetcher/tmp/uk_bin_collection-0.9.0.tar.gz]
+[2024-05-18 09:16:45] INFO root fetch - main [MainThread]: End processing [uk_bin_collection]: success
+[2024-05-18 09:16:45] INFO root fetch - processPackages [bin-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/bin_package_manager-2.2.7.tar.gz]
+[2024-05-18 09:16:45] INFO root fetch - processPackages [bin-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/bin_package_manager-2.2.8.tar.gz]
+[2024-05-18 09:16:45] INFO root fetch - main [MainThread]: End processing [bin-package-manager]: success
+[2024-05-18 09:16:46] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-05-18 09:16:46] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-05-18 09:16:46] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-05-18 09:16:46] INFO root fetch - main [MainThread]: Store serial: [23265653]
