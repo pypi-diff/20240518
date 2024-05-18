@@ -18746,3 +18746,34 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:12:38] INFO root fetch - processPackages [remodels]: Remove: archive file [/home/abi/fetcher/tmp/remodels-1.0.0.tar.gz]
 [2024-05-18 19:12:38] INFO root fetch - main [MainThread]: End processing [remodels]: success
 [2024-05-18 19:12:38] INFO root fetch - main [MainThread]: Store serial: [23269543]
+[2024-05-18 19:14:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269543]
+[2024-05-18 19:14:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 19:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mintlemon-turkish-nlp
+[2024-05-18 19:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-18 19:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: registrantz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-05-18 19:14:47] INFO root fetch - processPackages [mintlemon-turkish-nlp]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-18 19:14:47] WARNING root fetch - processPackages [registrantz]: Skipping, unable to determine old version
+[2024-05-18 19:14:47] INFO root fetch - main [MainThread]: End processing [registrantz] error
+[2024-05-18 19:14:47] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/cc/97/90d2641a705d69a0ab4f3423220ab8291a3bbedb85b3d3ed59d0a395883d/mintlemon-turkish-nlp-0.2.6.tar.gz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/24/1c/c154b94fcbe709ea8a2d01a901a9b97485114061bdc233ef933e1d945dc4/mintlemon-turkish-nlp-0.2.7.tar.gz
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240518/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-18 19:14:47] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240518/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-18 19:14:47] INFO root fetch - processPackages [mintlemon-turkish-nlp]: executing diffoscope
+[2024-05-18 19:14:47] INFO root fetch - processPackages [mintlemon-turkish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mintlemon-turkish-nlp-0.2.6.tar.gz tmp/mintlemon-turkish-nlp-0.2.7.tar.gz --markdown 20240518/m/mintlemon-turkish-nlp/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-18 19:14:48] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-18 19:14:48] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-18 19:14:48] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-18 19:14:48] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-18 19:14:48] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.6.tar.gz]
+[2024-05-18 19:14:48] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.7.tar.gz]
+[2024-05-18 19:14:48] INFO root fetch - main [MainThread]: End processing [mintlemon-turkish-nlp]: success
+[2024-05-18 19:14:48] INFO root fetch - main [MainThread]: Store serial: [23269555]
