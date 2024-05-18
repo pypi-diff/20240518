@@ -6949,3 +6949,51 @@
 [2024-05-18 03:47:54] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.175.1.tar.gz]
 [2024-05-18 03:47:54] INFO root fetch - main [MainThread]: End processing [abcli]: success
 [2024-05-18 03:47:54] INFO root fetch - main [MainThread]: Store serial: [23263825]
+[2024-05-18 03:49:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263825]
+[2024-05-18 03:50:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 03:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lptlib
+[2024-05-18 03:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autilsy
+[2024-05-18 03:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superblocks-agent
+[2024-05-18 03:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xplainable-client
+[2024-05-18 03:50:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: heliumcli
+[2024-05-18 03:50:03] INFO root fetch - processPackages [heliumcli]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-05-18 03:50:03] INFO root fetch - processPackages [xplainable-client]: New version: [1.2.4] Old Version: [1.2.2.post1]
+[2024-05-18 03:50:03] INFO root fetch - processPackages [heliumcli]: Downloading https://files.pythonhosted.org/packages/ca/5d/539d15851aa22419e9462bda1d11d575d4bd2b00db92ec105066ae25caa7/heliumcli-1.6.8.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [autilsy]: New version: [0.1.3.2] Old Version: [0.1.3.1]
+[2024-05-18 03:50:03] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/80/9a/b806c4a8f02bc053d2ae5797d36cee07d1873df6ea96a399a7391026953e/xplainable_client-1.2.2.post1.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [lptlib]: New version: [0.0.1a9] Old Version: [0.0.1a8]
+[2024-05-18 03:50:03] INFO root fetch - processPackages [superblocks-agent]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 03:50:03] INFO root fetch - processPackages [heliumcli]: Downloading https://files.pythonhosted.org/packages/4a/29/675e3edaf5f29ff50c79ff73478d031fd3e909dbb85cbf6ce44cf99fd15b/heliumcli-1.6.9.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [autilsy]: Downloading https://files.pythonhosted.org/packages/be/fc/e4c64dc9c1646dc55e819dc693268d047ac4ccb2f11b38ff4953f31e17e1/autilsy-0.1.3.1.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [superblocks-agent]: Downloading https://files.pythonhosted.org/packages/de/de/9079a94bf326d54228f49ed0e69fdef8ca15879fc721baaae0a807ac625b/superblocks-agent-0.0.2.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [lptlib]: Downloading https://files.pythonhosted.org/packages/10/61/dcc53729e66c7bd15db61eae2d32ad120d7415ffdc2bbe411e08ecb68e12/lptlib-0.0.1a8.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/80/09/db1f94701e19018758525bca122015e880b4fba6d954762c48a588d2a2f9/xplainable-client-1.2.4.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [heliumcli]: executing diffoscope
+[2024-05-18 03:50:03] INFO root fetch - processPackages [heliumcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heliumcli-1.6.8.tar.gz tmp/heliumcli-1.6.9.tar.gz --markdown 20240518/h/heliumcli/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-05-18 03:50:03] INFO root fetch - processPackages [xplainable-client]: executing diffoscope
+[2024-05-18 03:50:03] INFO root fetch - processPackages [xplainable-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplainable_client-1.2.2.post1.tar.gz tmp/xplainable-client-1.2.4.tar.gz --markdown 20240518/x/xplainable-client/1.2.2.post1-1.2.4/README.md --exclude *.pyd
+[2024-05-18 03:50:03] INFO root fetch - processPackages [superblocks-agent]: Downloading https://files.pythonhosted.org/packages/f9/25/4b9c8e3eded078524eb15c3a1c267541eefd40471c6c47387bd3abc7e5ad/superblocks-agent-0.0.3.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [lptlib]: Downloading https://files.pythonhosted.org/packages/22/cf/0e9e64b7dd2a1cd9feb30be5681b58953e55c4df4308f13cb14fa309d0e6/lptlib-0.0.1a9.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [autilsy]: Downloading https://files.pythonhosted.org/packages/03/62/c9ad3500daaa75a51e65f904f96acd56bb068fcaa4147b2349eccef75bf8/autilsy-0.1.3.2.tar.gz
+[2024-05-18 03:50:03] INFO root fetch - processPackages [superblocks-agent]: executing diffoscope
+[2024-05-18 03:50:03] INFO root fetch - processPackages [superblocks-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superblocks-agent-0.0.2.tar.gz tmp/superblocks-agent-0.0.3.tar.gz --markdown 20240518/s/superblocks-agent/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 03:50:04] INFO root fetch - processPackages [lptlib]: executing diffoscope
+[2024-05-18 03:50:04] INFO root fetch - processPackages [lptlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lptlib-0.0.1a8.tar.gz tmp/lptlib-0.0.1a9.tar.gz --markdown 20240518/l/lptlib/0.0.1a8-0.0.1a9/README.md --exclude *.pyd
+[2024-05-18 03:50:04] INFO root fetch - processPackages [autilsy]: executing diffoscope
+[2024-05-18 03:50:04] INFO root fetch - processPackages [autilsy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autilsy-0.1.3.1.tar.gz tmp/autilsy-0.1.3.2.tar.gz --markdown 20240518/a/autilsy/0.1.3.1-0.1.3.2/README.md --exclude *.pyd
+[2024-05-18 03:50:04] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable_client-1.2.2.post1.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable-client-1.2.4.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - main [MainThread]: End processing [xplainable-client]: success
+[2024-05-18 03:50:04] INFO root fetch - processPackages [heliumcli]: Remove: archive file [/home/abi/fetcher/tmp/heliumcli-1.6.8.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - processPackages [heliumcli]: Remove: archive file [/home/abi/fetcher/tmp/heliumcli-1.6.9.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - main [MainThread]: End processing [heliumcli]: success
+[2024-05-18 03:50:04] INFO root fetch - processPackages [superblocks-agent]: Remove: archive file [/home/abi/fetcher/tmp/superblocks-agent-0.0.2.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - processPackages [superblocks-agent]: Remove: archive file [/home/abi/fetcher/tmp/superblocks-agent-0.0.3.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - main [MainThread]: End processing [superblocks-agent]: success
+[2024-05-18 03:50:04] INFO root fetch - processPackages [lptlib]: Remove: archive file [/home/abi/fetcher/tmp/lptlib-0.0.1a8.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - processPackages [lptlib]: Remove: archive file [/home/abi/fetcher/tmp/lptlib-0.0.1a9.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - main [MainThread]: End processing [lptlib]: success
+[2024-05-18 03:50:04] INFO root fetch - processPackages [autilsy]: Remove: archive file [/home/abi/fetcher/tmp/autilsy-0.1.3.1.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - processPackages [autilsy]: Remove: archive file [/home/abi/fetcher/tmp/autilsy-0.1.3.2.tar.gz]
+[2024-05-18 03:50:04] INFO root fetch - main [MainThread]: End processing [autilsy]: success
+[2024-05-18 03:50:04] INFO root fetch - main [MainThread]: Store serial: [23263840]
