@@ -21021,3 +21021,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:47:39] INFO root fetch - processPackages [dyntastic]: Remove: archive file [/home/abi/fetcher/tmp/dyntastic-0.9.0.tar.gz]
 [2024-05-18 21:47:39] INFO root fetch - main [MainThread]: End processing [dyntastic]: success
 [2024-05-18 21:47:39] INFO root fetch - main [MainThread]: Store serial: [23270673]
+[2024-05-18 21:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270673]
+[2024-05-18 21:49:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 21:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEasyDbApi
+[2024-05-18 21:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jesse
+[2024-05-18 21:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rustplus
+[2024-05-18 21:49:48] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 21:49:48] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/87/f7/bf9b2279828ce59e10a975d9f786b463d3f61c5d294ae203b0b636963e78/pyeasydbapi-0.1.6.tar.gz
+[2024-05-18 21:49:48] INFO root fetch - processPackages [rustplus]: New version: [5.6.9] Old Version: [5.6.8]
+[2024-05-18 21:49:49] INFO root fetch - processPackages [rustplus]: Downloading https://files.pythonhosted.org/packages/a6/c7/5b15e1a33254ede43ea9942843352b60d9059dd743a78e2884728dd69db0/rustplus-5.6.8.tar.gz
+[2024-05-18 21:49:49] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/2b/a1/f9e77ec9767cdf13dd483b122d67ccc0d0926773a78df63454d464ee4abf/pyeasydbapi-0.1.7.tar.gz
+[2024-05-18 21:49:49] INFO root fetch - processPackages [jesse]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-18 21:49:49] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:49:49] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.6.tar.gz tmp/pyeasydbapi-0.1.7.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 21:49:49] INFO root fetch - processPackages [jesse]: Downloading https://files.pythonhosted.org/packages/3d/42/48c74d04f47eb581a344bec1702569264a10dc46e09154fe195faff3a76a/jesse-0.9.1.tar.gz
+[2024-05-18 21:49:49] INFO root fetch - processPackages [rustplus]: Downloading https://files.pythonhosted.org/packages/89/04/f1067632a53b4bb171039a8bad90d522a22b903e7fa99ce43210d7c03a22/rustplus-5.6.9.tar.gz
+[2024-05-18 21:49:49] INFO root fetch - processPackages [rustplus]: executing diffoscope
+[2024-05-18 21:49:49] INFO root fetch - processPackages [rustplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustplus-5.6.8.tar.gz tmp/rustplus-5.6.9.tar.gz --markdown 20240518/r/rustplus/5.6.8-5.6.9/README.md --exclude *.pyd
+[2024-05-18 21:49:49] INFO root fetch - processPackages [jesse]: Downloading https://files.pythonhosted.org/packages/02/58/150ec6c6c6a68ba45091a842e60d38f186d225d3a737941000cf39902f00/jesse-0.9.2.tar.gz
+[2024-05-18 21:49:49] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.6.tar.gz]
+[2024-05-18 21:49:49] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.7.tar.gz]
+[2024-05-18 21:49:49] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:49:49] INFO root fetch - processPackages [jesse]: executing diffoscope
+[2024-05-18 21:49:49] INFO root fetch - processPackages [jesse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jesse-0.9.1.tar.gz tmp/jesse-0.9.2.tar.gz --markdown 20240518/j/jesse/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-18 21:49:50] INFO root fetch - processPackages [rustplus]: Remove: archive file [/home/abi/fetcher/tmp/rustplus-5.6.8.tar.gz]
+[2024-05-18 21:49:50] INFO root fetch - processPackages [rustplus]: Remove: archive file [/home/abi/fetcher/tmp/rustplus-5.6.9.tar.gz]
+[2024-05-18 21:49:50] INFO root fetch - main [MainThread]: End processing [rustplus]: success
+[2024-05-18 21:49:51] INFO root fetch - processPackages [jesse]: Remove: archive file [/home/abi/fetcher/tmp/jesse-0.9.1.tar.gz]
+[2024-05-18 21:49:51] INFO root fetch - processPackages [jesse]: Remove: archive file [/home/abi/fetcher/tmp/jesse-0.9.2.tar.gz]
+[2024-05-18 21:49:51] INFO root fetch - main [MainThread]: End processing [jesse]: success
+[2024-05-18 21:49:51] INFO root fetch - main [MainThread]: Store serial: [23270683]
