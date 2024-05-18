@@ -20146,3 +20146,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:41:58] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl.zip]
 [2024-05-18 20:41:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-quoted-reply]: success
 [2024-05-18 20:41:58] INFO root fetch - main [MainThread]: Store serial: [23270246]
+[2024-05-18 20:44:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270246]
+[2024-05-18 20:44:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ooo-dev-tools
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: corso
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NTTS
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-playground
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clean-alchemy
+[2024-05-18 20:44:07] WARNING root fetch - processPackages [NTTS]: Skipping, unable to determine old version
+[2024-05-18 20:44:07] INFO root fetch - main [MainThread]: End processing [NTTS] error
+[2024-05-18 20:44:07] INFO root fetch - processPackages [clean-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 20:44:07] WARNING root fetch - processPackages [ai-playground]: Skipping, unable to determine old version
+[2024-05-18 20:44:07] INFO root fetch - main [MainThread]: End processing [ai-playground] error
+[2024-05-18 20:44:07] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/36/b4/aec2776de97d42c68ad39f356e228953adce45501a820c6c5dfdb773e20a/clean-alchemy-0.1.8.tar.gz
+[2024-05-18 20:44:07] WARNING root fetch - processPackages [corso]: Skipping, unable to determine old version
+[2024-05-18 20:44:07] INFO root fetch - main [MainThread]: End processing [corso] error
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ooo-dev-tools]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-05-18 20:44:07] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/5b/e4/60134ac4287e46e229febe044f53137cf8baa2858710c19174580ad9c18c/clean-alchemy-0.1.9.tar.gz
+[2024-05-18 20:44:07] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/41/44/3184c5212ea19d64e5dcf92dc1f7e0c08bda64a5787bdf62a49038d1b40a/ooo_dev_tools-0.9.7.tar.gz
+[2024-05-18 20:44:07] INFO root fetch - processPackages [clean-alchemy]: executing diffoscope
+[2024-05-18 20:44:07] INFO root fetch - processPackages [clean-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean-alchemy-0.1.8.tar.gz tmp/clean-alchemy-0.1.9.tar.gz --markdown 20240518/c/clean-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 20:44:08] INFO root fetch - processPackages [ooo-dev-tools]: Downloading https://files.pythonhosted.org/packages/20/e8/b38a2ad24f414b81985e10c35e1192cb22350ca6b0dc68f0104509e3c0bf/ooo_dev_tools-0.9.8.tar.gz
+[2024-05-18 20:44:08] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.8.tar.gz]
+[2024-05-18 20:44:08] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.9.tar.gz]
+[2024-05-18 20:44:08] INFO root fetch - main [MainThread]: End processing [clean-alchemy]: success
+[2024-05-18 20:44:08] INFO root fetch - processPackages [ooo-dev-tools]: executing diffoscope
+[2024-05-18 20:44:08] INFO root fetch - processPackages [ooo-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooo_dev_tools-0.9.7.tar.gz tmp/ooo_dev_tools-0.9.8.tar.gz --markdown 20240518/o/ooo-dev-tools/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-05-18 20:44:11] INFO root fetch - processPackages [ooo-dev-tools]: Remove: archive file [/home/abi/fetcher/tmp/ooo_dev_tools-0.9.7.tar.gz]
+[2024-05-18 20:44:11] INFO root fetch - processPackages [ooo-dev-tools]: Remove: archive file [/home/abi/fetcher/tmp/ooo_dev_tools-0.9.8.tar.gz]
+[2024-05-18 20:44:11] INFO root fetch - main [MainThread]: End processing [ooo-dev-tools]: success
+[2024-05-18 20:44:11] INFO root fetch - main [MainThread]: Store serial: [23270262]
