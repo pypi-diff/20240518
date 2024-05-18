@@ -14933,3 +14933,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:26:26] INFO root fetch - processPackages [iinfer]: Remove: archive file [/home/abi/fetcher/tmp/iinfer-0.7.4.tar.gz]
 [2024-05-18 14:26:26] INFO root fetch - main [MainThread]: End processing [iinfer]: success
 [2024-05-18 14:26:26] INFO root fetch - main [MainThread]: Store serial: [23267637]
+[2024-05-18 14:28:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267637]
+[2024-05-18 14:28:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 14:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: portendingz
+[2024-05-18 14:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eventum-app
+[2024-05-18 14:28:35] WARNING root fetch - processPackages [eventum-app]: Skipping, unable to determine old version
+[2024-05-18 14:28:35] INFO root fetch - main [MainThread]: End processing [eventum-app] error
+[2024-05-18 14:28:35] WARNING root fetch - processPackages [portendingz]: Skipping, unable to determine old version
+[2024-05-18 14:28:35] INFO root fetch - main [MainThread]: End processing [portendingz] error
+[2024-05-18 14:28:35] INFO root fetch - main [MainThread]: Store serial: [23267646]
