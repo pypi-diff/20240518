@@ -18240,3 +18240,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:36:57] INFO root fetch - processPackages [fastqwiper]: Remove: archive file [/home/abi/fetcher/tmp/fastqwiper-2024.1.83-py3-none-any.whl.zip]
 [2024-05-18 18:36:57] INFO root fetch - main [MainThread]: End processing [fastqwiper]: success
 [2024-05-18 18:36:57] INFO root fetch - main [MainThread]: Store serial: [23269270]
+[2024-05-18 18:39:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269270]
+[2024-05-18 18:39:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 18:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asyncupbit
+[2024-05-18 18:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shriekproofz
+[2024-05-18 18:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PartialLabelMonitor
+[2024-05-18 18:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tse-motion
+[2024-05-18 18:39:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iop-python
+[2024-05-18 18:39:06] INFO root fetch - processPackages [iop-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 18:39:06] INFO root fetch - processPackages [iop-python]: Downloading https://files.pythonhosted.org/packages/0a/3e/d0b3c85fecd9fd86950d34b1c48b7f04f84cc77b72e3e479747b87f2507c/iop_python-0.1.0.tar.gz
+[2024-05-18 18:39:06] WARNING root fetch - processPackages [asyncupbit]: Skipping, unable to determine old version
+[2024-05-18 18:39:06] INFO root fetch - main [MainThread]: End processing [asyncupbit] error
+[2024-05-18 18:39:06] INFO root fetch - processPackages [tse-motion]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-18 18:39:06] WARNING root fetch - processPackages [shriekproofz]: Skipping, unable to determine old version
+[2024-05-18 18:39:06] INFO root fetch - main [MainThread]: End processing [shriekproofz] error
+[2024-05-18 18:39:06] WARNING root fetch - processPackages [PartialLabelMonitor]: Skipping, unable to determine old version
+[2024-05-18 18:39:06] INFO root fetch - main [MainThread]: End processing [PartialLabelMonitor] error
+[2024-05-18 18:39:06] INFO root fetch - processPackages [tse-motion]: Downloading https://files.pythonhosted.org/packages/88/f8/2aae485a773207247c4ca01d253dec8d9c337899d243a4043d04086c2722/tse_motion-0.2.4.tar.gz
+[2024-05-18 18:39:06] WARNING root fetch - processPackages [tse-motion]: Skipping package: exceeds size limit 26164822>=10485760
+[2024-05-18 18:39:06] INFO root fetch - main [MainThread]: End processing [tse-motion] error
+[2024-05-18 18:39:06] INFO root fetch - processPackages [iop-python]: Downloading https://files.pythonhosted.org/packages/3a/f7/e50358a5ae95d97fd9f28971bcbe6f5a505e38b91a4e6b1a64ce68a6fc08/iop_python-0.1.1.tar.gz
+[2024-05-18 18:39:06] INFO root fetch - processPackages [iop-python]: executing diffoscope
+[2024-05-18 18:39:06] INFO root fetch - processPackages [iop-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iop_python-0.1.0.tar.gz tmp/iop_python-0.1.1.tar.gz --markdown 20240518/i/iop-python/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 18:39:07] INFO root fetch - processPackages [iop-python]: Remove: archive file [/home/abi/fetcher/tmp/iop_python-0.1.0.tar.gz]
+[2024-05-18 18:39:07] INFO root fetch - processPackages [iop-python]: Remove: archive file [/home/abi/fetcher/tmp/iop_python-0.1.1.tar.gz]
+[2024-05-18 18:39:07] INFO root fetch - main [MainThread]: End processing [iop-python]: success
+[2024-05-18 18:39:07] INFO root fetch - main [MainThread]: Store serial: [23269287]
