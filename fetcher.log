@@ -10388,3 +10388,27 @@
 [2024-05-18 08:11:54] INFO root fetch - processPackages [autochat]: Remove: archive file [/home/abi/fetcher/tmp/autochat-0.1.9.tar.gz]
 [2024-05-18 08:11:54] INFO root fetch - main [MainThread]: End processing [autochat]: success
 [2024-05-18 08:11:54] INFO root fetch - main [MainThread]: Store serial: [23265183]
+[2024-05-18 08:13:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265183]
+[2024-05-18 08:14:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 08:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-rma
+[2024-05-18 08:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PayNexus
+[2024-05-18 08:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unprimitivenessz
+[2024-05-18 08:14:04] INFO root fetch - processPackages [PayNexus]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 08:14:04] WARNING root fetch - processPackages [unprimitivenessz]: Skipping, unable to determine old version
+[2024-05-18 08:14:04] INFO root fetch - main [MainThread]: End processing [unprimitivenessz] error
+[2024-05-18 08:14:04] INFO root fetch - processPackages [odoo-addon-rma]: New version: [17.0.1.1.0.1] Old Version: [17.0.1.1.0]
+[2024-05-18 08:14:05] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/2b/ac/64e1e7b79a74d11da3de6087c802ab533dea8aeb7e60eb6481495b23b14c/paynexus-0.1.0.tar.gz
+[2024-05-18 08:14:05] INFO root fetch - processPackages [odoo-addon-rma]: Downloading https://files.pythonhosted.org/packages/81/f4/06d61119dd248ccb9955fd37394ce0f5936d5f37c4a078d6aa3b5f4af0fe/odoo_addon_rma-17.0.1.1.0-py3-none-any.whl
+[2024-05-18 08:14:05] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/38/7c/a0ca78132b1f81bedcc6c637ce80de4bfd75780b96542dceb9e92562d79a/PayNexus-0.2.0-py3-none-any.whl
+[2024-05-18 08:14:05] INFO root fetch - processPackages [PayNexus]: executing diffoscope
+[2024-05-18 08:14:05] INFO root fetch - processPackages [PayNexus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paynexus-0.1.0.tar.gz tmp/PayNexus-0.2.0-py3-none-any.whl.zip --markdown 20240518/P/PayNexus/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 08:14:05] INFO root fetch - processPackages [odoo-addon-rma]: Downloading https://files.pythonhosted.org/packages/4d/49/3f29ed6dc28f8bbca58505843b82302b17b4b6682f55aa17e00ec22e4bda/odoo_addon_rma-17.0.1.1.0.1-py3-none-any.whl
+[2024-05-18 08:14:05] INFO root fetch - processPackages [odoo-addon-rma]: executing diffoscope
+[2024-05-18 08:14:05] INFO root fetch - processPackages [odoo-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_rma-17.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_rma-17.0.1.1.0.1-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-rma/17.0.1.1.0-17.0.1.1.0.1/README.md --exclude *.pyd
+[2024-05-18 08:14:05] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/paynexus-0.1.0.tar.gz]
+[2024-05-18 08:14:05] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/PayNexus-0.2.0-py3-none-any.whl.zip]
+[2024-05-18 08:14:05] INFO root fetch - main [MainThread]: End processing [PayNexus]: success
+[2024-05-18 08:14:06] INFO root fetch - processPackages [odoo-addon-rma]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_rma-17.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-18 08:14:06] INFO root fetch - processPackages [odoo-addon-rma]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_rma-17.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 08:14:06] INFO root fetch - main [MainThread]: End processing [odoo-addon-rma]: success
+[2024-05-18 08:14:06] INFO root fetch - main [MainThread]: Store serial: [23265191]
