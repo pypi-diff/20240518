@@ -22481,3 +22481,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:52:07] WARNING root fetch - processPackages [uneschewablyz]: Skipping, unable to determine old version
 [2024-05-18 23:52:07] INFO root fetch - main [MainThread]: End processing [uneschewablyz] error
 [2024-05-18 23:52:07] INFO root fetch - main [MainThread]: Store serial: [23271478]
+[2024-05-18 23:54:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271478]
+[2024-05-18 23:54:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 23:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: p3g
+[2024-05-18 23:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QRClipboard
+[2024-05-18 23:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioshelly
+[2024-05-18 23:54:16] WARNING root fetch - processPackages [QRClipboard]: Skipping, unable to determine old version
+[2024-05-18 23:54:16] INFO root fetch - main [MainThread]: End processing [QRClipboard] error
+[2024-05-18 23:54:16] INFO root fetch - processPackages [p3g]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-18 23:54:16] INFO root fetch - processPackages [aioshelly]: New version: [9.0.0] Old Version: [8.2.0]
+[2024-05-18 23:54:17] INFO root fetch - processPackages [p3g]: Downloading https://files.pythonhosted.org/packages/df/8f/97c5f75c2078b875e2085fd90bf307df5cf434a2a4c440d871c68d70d739/p3g-1.3.0.tar.gz
+[2024-05-18 23:54:17] INFO root fetch - processPackages [aioshelly]: Downloading https://files.pythonhosted.org/packages/1f/28/99f2427e5793f1854b54504587348cece202f68e202fff62010ea0abdfc9/aioshelly-8.2.0.tar.gz
+[2024-05-18 23:54:17] INFO root fetch - processPackages [aioshelly]: Downloading https://files.pythonhosted.org/packages/7d/48/ab03b01504724e163b3ef1f1ec73a7eba69888d2248fb4819f59c4171dd9/aioshelly-9.0.0.tar.gz
+[2024-05-18 23:54:17] INFO root fetch - processPackages [p3g]: Downloading https://files.pythonhosted.org/packages/08/ad/7742d43acfdf87a0ed19baecaa9da5062d63b75a0c06492f9b1022aa250a/p3g-1.3.1.tar.gz
+[2024-05-18 23:54:17] INFO root fetch - processPackages [p3g]: executing diffoscope
+[2024-05-18 23:54:17] INFO root fetch - processPackages [p3g]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p3g-1.3.0.tar.gz tmp/p3g-1.3.1.tar.gz --markdown 20240518/p/p3g/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-18 23:54:17] INFO root fetch - processPackages [aioshelly]: executing diffoscope
+[2024-05-18 23:54:17] INFO root fetch - processPackages [aioshelly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioshelly-8.2.0.tar.gz tmp/aioshelly-9.0.0.tar.gz --markdown 20240518/a/aioshelly/8.2.0-9.0.0/README.md --exclude *.pyd
+[2024-05-18 23:54:18] INFO root fetch - processPackages [p3g]: Remove: archive file [/home/abi/fetcher/tmp/p3g-1.3.0.tar.gz]
+[2024-05-18 23:54:18] INFO root fetch - processPackages [p3g]: Remove: archive file [/home/abi/fetcher/tmp/p3g-1.3.1.tar.gz]
+[2024-05-18 23:54:18] INFO root fetch - main [MainThread]: End processing [p3g]: success
+[2024-05-18 23:54:18] INFO root fetch - processPackages [aioshelly]: Remove: archive file [/home/abi/fetcher/tmp/aioshelly-8.2.0.tar.gz]
+[2024-05-18 23:54:18] INFO root fetch - processPackages [aioshelly]: Remove: archive file [/home/abi/fetcher/tmp/aioshelly-9.0.0.tar.gz]
+[2024-05-18 23:54:18] INFO root fetch - main [MainThread]: End processing [aioshelly]: success
+[2024-05-18 23:54:18] INFO root fetch - main [MainThread]: Store serial: [23271487]
