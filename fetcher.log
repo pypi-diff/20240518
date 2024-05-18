@@ -17390,3 +17390,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:37:46] INFO root fetch - processPackages [adafruit-circuitpython-requests]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_requests-4.0.0.tar.gz]
 [2024-05-18 17:37:46] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-requests]: success
 [2024-05-18 17:37:46] INFO root fetch - main [MainThread]: Store serial: [23268897]
+[2024-05-18 17:39:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268897]
+[2024-05-18 17:39:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:39:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: comment-extractor-devin
+[2024-05-18 17:39:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinyagent
+[2024-05-18 17:39:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: audio-analysis-lib
+[2024-05-18 17:39:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyprland
+[2024-05-18 17:39:55] WARNING root fetch - processPackages [comment-extractor-devin]: Skipping, unable to determine old version
+[2024-05-18 17:39:55] WARNING root fetch - processPackages [audio-analysis-lib]: Skipping, unable to determine old version
+[2024-05-18 17:39:55] INFO root fetch - main [MainThread]: End processing [comment-extractor-devin] error
+[2024-05-18 17:39:55] INFO root fetch - main [MainThread]: End processing [audio-analysis-lib] error
+[2024-05-18 17:39:55] WARNING root fetch - processPackages [tinyagent]: Skipping, unable to determine old version
+[2024-05-18 17:39:55] INFO root fetch - main [MainThread]: End processing [tinyagent] error
+[2024-05-18 17:39:55] INFO root fetch - processPackages [pyprland]: New version: [2.3.0] Old Version: [2.2.9]
+[2024-05-18 17:39:55] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/95/54/b41c74cea0d530094950d0f33daa1e4b290d0fafa217c2a9c6605192e37e/pyprland-2.2.9.tar.gz
+[2024-05-18 17:39:56] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/c1/e4/a6d65b2823c1f0e1fec8a0dc0e77ab71b6b9852853667281867a48b48265/pyprland-2.3.0.tar.gz
+[2024-05-18 17:39:56] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-05-18 17:39:56] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.9.tar.gz tmp/pyprland-2.3.0.tar.gz --markdown 20240518/p/pyprland/2.2.9-2.3.0/README.md --exclude *.pyd
+[2024-05-18 17:39:57] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
+[2024-05-18 17:39:57] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.3.0.tar.gz]
+[2024-05-18 17:39:57] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-05-18 17:39:57] INFO root fetch - main [MainThread]: Store serial: [23268910]
