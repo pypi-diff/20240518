@@ -20985,3 +20985,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:45:28] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.5.tar.gz]
 [2024-05-18 21:45:28] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
 [2024-05-18 21:45:28] INFO root fetch - main [MainThread]: Store serial: [23270656]
+[2024-05-18 21:47:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270656]
+[2024-05-18 21:47:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 21:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-order-restrict-cancel-existing-invoice
+[2024-05-18 21:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omu
+[2024-05-18 21:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dyntastic
+[2024-05-18 21:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protovertebralz
+[2024-05-18 21:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyEasyDbApi
+[2024-05-18 21:47:38] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 21:47:38] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/ee/29/fbd23e131abd8250278dcbda9096cd86fe2b9bf5da0f444da70c5dbb6976/pyeasydbapi-0.1.5.tar.gz
+[2024-05-18 21:47:38] INFO root fetch - processPackages [omu]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-18 21:47:38] WARNING root fetch - processPackages [odoo-addon-sale-order-restrict-cancel-existing-invoice]: Skipping, unable to determine old version
+[2024-05-18 21:47:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-restrict-cancel-existing-invoice] error
+[2024-05-18 21:47:38] INFO root fetch - processPackages [dyntastic]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-05-18 21:47:38] WARNING root fetch - processPackages [protovertebralz]: Skipping, unable to determine old version
+[2024-05-18 21:47:38] INFO root fetch - main [MainThread]: End processing [protovertebralz] error
+[2024-05-18 21:47:38] INFO root fetch - processPackages [omu]: Downloading https://files.pythonhosted.org/packages/90/b8/e80117a8fb2261bbc1a2ec866db7bad8bae01ef6f998c5565dbdff7c4973/omu-0.3.2.tar.gz
+[2024-05-18 21:47:38] INFO root fetch - processPackages [dyntastic]: Downloading https://files.pythonhosted.org/packages/17/08/c38b5962ea8fe93768ab888ddc6254f56e7a77a32feda84db12412084c36/dyntastic-0.8.2.tar.gz
+[2024-05-18 21:47:38] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/87/f7/bf9b2279828ce59e10a975d9f786b463d3f61c5d294ae203b0b636963e78/pyeasydbapi-0.1.6.tar.gz
+[2024-05-18 21:47:38] INFO root fetch - processPackages [omu]: Downloading https://files.pythonhosted.org/packages/3c/c5/46eb2e4b46bb58da7990c343696c310b77f971edd4e5baa6921918d0a9a7/omu-0.4.0-py3-none-any.whl
+[2024-05-18 21:47:38] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:47:38] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.5.tar.gz tmp/pyeasydbapi-0.1.6.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 21:47:38] INFO root fetch - processPackages [dyntastic]: Downloading https://files.pythonhosted.org/packages/de/18/b3f04108390a952e5e44acf14b61fa808748e53305e0c0a32525474fef6e/dyntastic-0.9.0.tar.gz
+[2024-05-18 21:47:38] INFO root fetch - processPackages [omu]: executing diffoscope
+[2024-05-18 21:47:38] INFO root fetch - processPackages [omu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omu-0.3.2.tar.gz tmp/omu-0.4.0-py3-none-any.whl.zip --markdown 20240518/o/omu/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-18 21:47:39] INFO root fetch - processPackages [dyntastic]: executing diffoscope
+[2024-05-18 21:47:39] INFO root fetch - processPackages [dyntastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyntastic-0.8.2.tar.gz tmp/dyntastic-0.9.0.tar.gz --markdown 20240518/d/dyntastic/0.8.2-0.9.0/README.md --exclude *.pyd
+[2024-05-18 21:47:39] INFO root fetch - processPackages [omu]: Remove: archive file [/home/abi/fetcher/tmp/omu-0.3.2.tar.gz]
+[2024-05-18 21:47:39] INFO root fetch - processPackages [omu]: Remove: archive file [/home/abi/fetcher/tmp/omu-0.4.0-py3-none-any.whl.zip]
+[2024-05-18 21:47:39] INFO root fetch - main [MainThread]: End processing [omu]: success
+[2024-05-18 21:47:39] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.5.tar.gz]
+[2024-05-18 21:47:39] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.6.tar.gz]
+[2024-05-18 21:47:39] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:47:39] INFO root fetch - processPackages [dyntastic]: Remove: archive file [/home/abi/fetcher/tmp/dyntastic-0.8.2.tar.gz]
+[2024-05-18 21:47:39] INFO root fetch - processPackages [dyntastic]: Remove: archive file [/home/abi/fetcher/tmp/dyntastic-0.9.0.tar.gz]
+[2024-05-18 21:47:39] INFO root fetch - main [MainThread]: End processing [dyntastic]: success
+[2024-05-18 21:47:39] INFO root fetch - main [MainThread]: Store serial: [23270673]
