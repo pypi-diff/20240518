@@ -7102,3 +7102,36 @@
 [2024-05-18 03:57:48] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.8.1.tar.gz]
 [2024-05-18 03:57:48] INFO root fetch - main [MainThread]: End processing [tulona]: success
 [2024-05-18 03:57:48] INFO root fetch - main [MainThread]: Store serial: [23263879]
+[2024-05-18 03:59:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263879]
+[2024-05-18 03:59:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 03:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: media-management-scripts
+[2024-05-18 03:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superblocks-agent
+[2024-05-18 03:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plum-project
+[2024-05-18 03:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zettel-org
+[2024-05-18 03:59:57] INFO root fetch - processPackages [superblocks-agent]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 03:59:57] WARNING root fetch - processPackages [plum-project]: Skipping, unable to determine old version
+[2024-05-18 03:59:57] INFO root fetch - main [MainThread]: End processing [plum-project] error
+[2024-05-18 03:59:57] INFO root fetch - processPackages [superblocks-agent]: Downloading https://files.pythonhosted.org/packages/de/de/9079a94bf326d54228f49ed0e69fdef8ca15879fc721baaae0a807ac625b/superblocks-agent-0.0.2.tar.gz
+[2024-05-18 03:59:57] INFO root fetch - processPackages [media-management-scripts]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-18 03:59:57] INFO root fetch - processPackages [zettel-org]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-18 03:59:57] INFO root fetch - processPackages [superblocks-agent]: Downloading https://files.pythonhosted.org/packages/f9/25/4b9c8e3eded078524eb15c3a1c267541eefd40471c6c47387bd3abc7e5ad/superblocks-agent-0.0.3.tar.gz
+[2024-05-18 03:59:57] INFO root fetch - processPackages [media-management-scripts]: Downloading https://files.pythonhosted.org/packages/ef/33/d5e58613371428a898822054cb377073baed55ee4231f886296c96604e53/media-management-scripts-0.5.2.tar.gz
+[2024-05-18 03:59:57] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/27/1b/73647e02cdca712b9195ee05b82b8bc363621e3658bf3dcfa3f390106a7f/zettel_org-0.7.2.tar.gz
+[2024-05-18 03:59:57] INFO root fetch - processPackages [superblocks-agent]: executing diffoscope
+[2024-05-18 03:59:57] INFO root fetch - processPackages [superblocks-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superblocks-agent-0.0.2.tar.gz tmp/superblocks-agent-0.0.3.tar.gz --markdown 20240518/s/superblocks-agent/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 03:59:58] INFO root fetch - processPackages [zettel-org]: Downloading https://files.pythonhosted.org/packages/6d/5f/315cd9dba5bd254b3a51ecafc12fbcfd4160f6abcbf8729b5a08def4a1bc/zettel_org-0.7.3.tar.gz
+[2024-05-18 03:59:58] INFO root fetch - processPackages [media-management-scripts]: Downloading https://files.pythonhosted.org/packages/a3/84/84ac8ce0c09f5316ee7055853dcea04ba0af7785eb2e6dd965716fdde0be/media_management_scripts-0.5.3.tar.gz
+[2024-05-18 03:59:58] INFO root fetch - processPackages [media-management-scripts]: executing diffoscope
+[2024-05-18 03:59:58] INFO root fetch - processPackages [media-management-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media-management-scripts-0.5.2.tar.gz tmp/media_management_scripts-0.5.3.tar.gz --markdown 20240518/m/media-management-scripts/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-18 03:59:58] INFO root fetch - processPackages [zettel-org]: executing diffoscope
+[2024-05-18 03:59:58] INFO root fetch - processPackages [zettel-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zettel_org-0.7.2.tar.gz tmp/zettel_org-0.7.3.tar.gz --markdown 20240518/z/zettel-org/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-18 03:59:58] INFO root fetch - processPackages [superblocks-agent]: Remove: archive file [/home/abi/fetcher/tmp/superblocks-agent-0.0.2.tar.gz]
+[2024-05-18 03:59:58] INFO root fetch - processPackages [superblocks-agent]: Remove: archive file [/home/abi/fetcher/tmp/superblocks-agent-0.0.3.tar.gz]
+[2024-05-18 03:59:58] INFO root fetch - main [MainThread]: End processing [superblocks-agent]: success
+[2024-05-18 03:59:59] INFO root fetch - processPackages [media-management-scripts]: Remove: archive file [/home/abi/fetcher/tmp/media-management-scripts-0.5.2.tar.gz]
+[2024-05-18 03:59:59] INFO root fetch - processPackages [media-management-scripts]: Remove: archive file [/home/abi/fetcher/tmp/media_management_scripts-0.5.3.tar.gz]
+[2024-05-18 03:59:59] INFO root fetch - main [MainThread]: End processing [media-management-scripts]: success
+[2024-05-18 03:59:59] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.2.tar.gz]
+[2024-05-18 03:59:59] INFO root fetch - processPackages [zettel-org]: Remove: archive file [/home/abi/fetcher/tmp/zettel_org-0.7.3.tar.gz]
+[2024-05-18 03:59:59] INFO root fetch - main [MainThread]: End processing [zettel-org]: success
+[2024-05-18 03:59:59] INFO root fetch - main [MainThread]: Store serial: [23263891]
