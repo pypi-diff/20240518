@@ -14240,3 +14240,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:34:00] INFO root fetch - processPackages [cheatshh]: Remove: archive file [/home/abi/fetcher/tmp/cheatshh-1.0.4.tar.gz]
 [2024-05-18 13:34:00] INFO root fetch - main [MainThread]: End processing [cheatshh]: success
 [2024-05-18 13:34:00] INFO root fetch - main [MainThread]: Store serial: [23267325]
+[2024-05-18 13:36:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267325]
+[2024-05-18 13:36:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 13:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SparkleLogging
+[2024-05-18 13:36:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gartenz
+[2024-05-18 13:36:10] WARNING root fetch - processPackages [gartenz]: Skipping, unable to determine old version
+[2024-05-18 13:36:10] INFO root fetch - main [MainThread]: End processing [gartenz] error
+[2024-05-18 13:36:10] INFO root fetch - processPackages [SparkleLogging]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 13:36:10] INFO root fetch - processPackages [SparkleLogging]: Downloading https://files.pythonhosted.org/packages/24/e7/479fb333a2ba7e0bb9fdf548617bd17fa98e3439b5eef2f75b7034f8e680/SparkleLogging-1.0.8.tar.gz
+[2024-05-18 13:36:10] INFO root fetch - processPackages [SparkleLogging]: Downloading https://files.pythonhosted.org/packages/44/8a/945cd589ad88fd81af1e95001fe71b21daf7e114126f0b777642290d14c2/SparkleLogging-1.0.9.tar.gz
+[2024-05-18 13:36:10] INFO root fetch - processPackages [SparkleLogging]: executing diffoscope
+[2024-05-18 13:36:10] INFO root fetch - processPackages [SparkleLogging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SparkleLogging-1.0.8.tar.gz tmp/SparkleLogging-1.0.9.tar.gz --markdown 20240518/S/SparkleLogging/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 13:36:11] INFO root fetch - processPackages [SparkleLogging]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-1.0.8.tar.gz]
+[2024-05-18 13:36:11] INFO root fetch - processPackages [SparkleLogging]: Remove: archive file [/home/abi/fetcher/tmp/SparkleLogging-1.0.9.tar.gz]
+[2024-05-18 13:36:11] INFO root fetch - main [MainThread]: End processing [SparkleLogging]: success
+[2024-05-18 13:36:11] INFO root fetch - main [MainThread]: Store serial: [23267332]
