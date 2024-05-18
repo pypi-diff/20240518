@@ -15496,3 +15496,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:19:25] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.6.tar.gz]
 [2024-05-18 15:19:25] INFO root fetch - main [MainThread]: End processing [torchsense]: success
 [2024-05-18 15:19:25] INFO root fetch - main [MainThread]: Store serial: [23267953]
+[2024-05-18 15:21:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267953]
+[2024-05-18 15:21:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 15:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: experiment-helpers
+[2024-05-18 15:21:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mannrs
+[2024-05-18 15:21:35] INFO root fetch - processPackages [experiment-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 15:21:35] WARNING root fetch - processPackages [mannrs]: Skipping, unable to determine old version
+[2024-05-18 15:21:35] INFO root fetch - main [MainThread]: End processing [mannrs] error
+[2024-05-18 15:21:35] INFO root fetch - processPackages [experiment-helpers]: Downloading https://files.pythonhosted.org/packages/d8/b8/4d2059d553d489beb944d46490e92a1c756a53a2151fe5a13ac31f8c7e2d/experiment_helpers-0.0.8.tar.gz
+[2024-05-18 15:21:35] INFO root fetch - processPackages [experiment-helpers]: Downloading https://files.pythonhosted.org/packages/91/85/d55140197c7fbdcf545e299dfef55310447c595a8fc02678c5384bed232b/experiment_helpers-0.0.9.tar.gz
+[2024-05-18 15:21:35] INFO root fetch - processPackages [experiment-helpers]: executing diffoscope
+[2024-05-18 15:21:35] INFO root fetch - processPackages [experiment-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experiment_helpers-0.0.8.tar.gz tmp/experiment_helpers-0.0.9.tar.gz --markdown 20240518/e/experiment-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 15:21:36] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.8.tar.gz]
+[2024-05-18 15:21:36] INFO root fetch - processPackages [experiment-helpers]: Remove: archive file [/home/abi/fetcher/tmp/experiment_helpers-0.0.9.tar.gz]
+[2024-05-18 15:21:36] INFO root fetch - main [MainThread]: End processing [experiment-helpers]: success
+[2024-05-18 15:21:36] INFO root fetch - main [MainThread]: Store serial: [23267966]
