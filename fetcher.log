@@ -17746,3 +17746,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:01:48] INFO root fetch - processPackages [klldFN]: Remove: archive file [/home/abi/fetcher/tmp/klldFN-2.0.0b1.tar.gz]
 [2024-05-18 18:01:48] INFO root fetch - main [MainThread]: End processing [klldFN]: success
 [2024-05-18 18:01:48] INFO root fetch - main [MainThread]: Store serial: [23269040]
+[2024-05-18 18:03:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269040]
+[2024-05-18 18:03:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 18:03:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: packaging-demo-avr
+[2024-05-18 18:03:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: create-fastapi-project
+[2024-05-18 18:03:58] INFO root fetch - processPackages [packaging-demo-avr]: New version: [0.0.7] Old Version: [0.0.4]
+[2024-05-18 18:03:58] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/54/03/6d6e4eaf086d0e7a55a3b6cd136d1c65ae8c9d284b4ca4f2b46a7b763f01/packaging_demo_avr-0.0.4.tar.gz
+[2024-05-18 18:03:58] INFO root fetch - processPackages [create-fastapi-project]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-18 18:03:58] INFO root fetch - processPackages [create-fastapi-project]: Downloading https://files.pythonhosted.org/packages/60/d7/7fad5c496f9be203f4159a02c8e4fc052b35abb1174a3c274fff579cb728/create_fastapi_project-0.2.4.tar.gz
+[2024-05-18 18:03:58] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/40/c1/56b9c50b04d274fbbba43839c6f949aaa253322bd708325a00d850e75ac6/packaging_demo_avr-0.0.7.tar.gz
+[2024-05-18 18:03:58] INFO root fetch - processPackages [packaging-demo-avr]: executing diffoscope
+[2024-05-18 18:03:58] INFO root fetch - processPackages [packaging-demo-avr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaging_demo_avr-0.0.4.tar.gz tmp/packaging_demo_avr-0.0.7.tar.gz --markdown 20240518/p/packaging-demo-avr/0.0.4-0.0.7/README.md --exclude *.pyd
+[2024-05-18 18:03:58] INFO root fetch - processPackages [create-fastapi-project]: Downloading https://files.pythonhosted.org/packages/80/c0/60bb5c33c040dafabcf9778d4a5e2de83fb8e6b7cf6fffc631d9b5f6f7f5/create_fastapi_project-0.2.5.tar.gz
+[2024-05-18 18:03:59] INFO root fetch - processPackages [create-fastapi-project]: executing diffoscope
+[2024-05-18 18:03:59] INFO root fetch - processPackages [create-fastapi-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create_fastapi_project-0.2.4.tar.gz tmp/create_fastapi_project-0.2.5.tar.gz --markdown 20240518/c/create-fastapi-project/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-18 18:03:59] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.4.tar.gz]
+[2024-05-18 18:03:59] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.7.tar.gz]
+[2024-05-18 18:03:59] INFO root fetch - main [MainThread]: End processing [packaging-demo-avr]: success
+[2024-05-18 18:03:59] INFO root fetch - processPackages [create-fastapi-project]: Remove: archive file [/home/abi/fetcher/tmp/create_fastapi_project-0.2.4.tar.gz]
+[2024-05-18 18:03:59] INFO root fetch - processPackages [create-fastapi-project]: Remove: archive file [/home/abi/fetcher/tmp/create_fastapi_project-0.2.5.tar.gz]
+[2024-05-18 18:03:59] INFO root fetch - main [MainThread]: End processing [create-fastapi-project]: success
+[2024-05-18 18:03:59] INFO root fetch - main [MainThread]: Store serial: [23269050]
