@@ -18777,3 +18777,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:14:48] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.7.tar.gz]
 [2024-05-18 19:14:48] INFO root fetch - main [MainThread]: End processing [mintlemon-turkish-nlp]: success
 [2024-05-18 19:14:48] INFO root fetch - main [MainThread]: Store serial: [23269555]
+[2024-05-18 19:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269555]
+[2024-05-18 19:16:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 19:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nomadnet
+[2024-05-18 19:16:57] INFO root fetch - processPackages [nomadnet]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 19:16:58] INFO root fetch - processPackages [nomadnet]: Downloading https://files.pythonhosted.org/packages/40/b2/2f2e351c81f4b6f94d59ccee4ba06db93c4972a8cee961f28bb3b024b9e0/nomadnet-0.4.8.tar.gz
+[2024-05-18 19:16:58] INFO root fetch - processPackages [nomadnet]: Downloading https://files.pythonhosted.org/packages/4c/1f/52e2cb9510108583a74ff8b46c77650ce4e14b811759f93f82e2b3583e6b/nomadnet-0.4.9.tar.gz
+[2024-05-18 19:16:58] INFO root fetch - processPackages [nomadnet]: executing diffoscope
+[2024-05-18 19:16:58] INFO root fetch - processPackages [nomadnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nomadnet-0.4.8.tar.gz tmp/nomadnet-0.4.9.tar.gz --markdown 20240518/n/nomadnet/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 19:16:59] INFO root fetch - processPackages [nomadnet]: Remove: archive file [/home/abi/fetcher/tmp/nomadnet-0.4.8.tar.gz]
+[2024-05-18 19:16:59] INFO root fetch - processPackages [nomadnet]: Remove: archive file [/home/abi/fetcher/tmp/nomadnet-0.4.9.tar.gz]
+[2024-05-18 19:16:59] INFO root fetch - main [MainThread]: End processing [nomadnet]: success
+[2024-05-18 19:16:59] INFO root fetch - main [MainThread]: Store serial: [23269562]
