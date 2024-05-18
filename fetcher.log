@@ -16087,3 +16087,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:03:12] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.1.0-py3-none-any.whl.zip]
 [2024-05-18 16:03:12] INFO root fetch - main [MainThread]: End processing [mrsegmentator]: success
 [2024-05-18 16:03:12] INFO root fetch - main [MainThread]: Store serial: [23268268]
+[2024-05-18 16:05:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268268]
+[2024-05-18 16:05:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 16:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mrsegmentator
+[2024-05-18 16:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: humiriaz
+[2024-05-18 16:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nvidia-dali-nightly-cuda120
+[2024-05-18 16:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: clean-alchemy
+[2024-05-18 16:05:21] INFO root fetch - processPackages [clean-alchemy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 16:05:21] INFO root fetch - processPackages [mrsegmentator]: New version: [1.1.0] Old Version: [1.0.5]
+[2024-05-18 16:05:21] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/36/b4/aec2776de97d42c68ad39f356e228953adce45501a820c6c5dfdb773e20a/clean-alchemy-0.1.8.tar.gz
+[2024-05-18 16:05:21] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/a5/3e/49af553b438654df2315b5ebc534de6f740dd05b6aea0a25c5aec22624af/mrsegmentator-1.0.5.tar.gz
+[2024-05-18 16:05:21] WARNING root fetch - processPackages [humiriaz]: Skipping, unable to determine old version
+[2024-05-18 16:05:21] INFO root fetch - main [MainThread]: End processing [humiriaz] error
+[2024-05-18 16:05:21] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: New version: [1.39.0.dev20240517] Old Version: [1.38.0.dev20240507]
+[2024-05-18 16:05:21] INFO root fetch - processPackages [mrsegmentator]: Downloading https://files.pythonhosted.org/packages/2c/10/4c8b7def25217e2efd28341f754846fc6335b0af834a8a7ce9caeab893ed/mrsegmentator-1.1.0-py3-none-any.whl
+[2024-05-18 16:05:21] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: Downloading https://files.pythonhosted.org/packages/56/93/9cc89962df922bb1de70fd26ccaef97c4872f8b8c905a3785cdf0f88ed97/nvidia_dali_nightly_cuda120-1.38.0.dev20240507.tar.gz
+[2024-05-18 16:05:21] INFO root fetch - processPackages [clean-alchemy]: Downloading https://files.pythonhosted.org/packages/5b/e4/60134ac4287e46e229febe044f53137cf8baa2858710c19174580ad9c18c/clean-alchemy-0.1.9.tar.gz
+[2024-05-18 16:05:21] INFO root fetch - processPackages [mrsegmentator]: executing diffoscope
+[2024-05-18 16:05:21] INFO root fetch - processPackages [mrsegmentator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrsegmentator-1.0.5.tar.gz tmp/mrsegmentator-1.1.0-py3-none-any.whl.zip --markdown 20240518/m/mrsegmentator/1.0.5-1.1.0/README.md --exclude *.pyd
+[2024-05-18 16:05:21] INFO root fetch - processPackages [clean-alchemy]: executing diffoscope
+[2024-05-18 16:05:21] INFO root fetch - processPackages [clean-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean-alchemy-0.1.8.tar.gz tmp/clean-alchemy-0.1.9.tar.gz --markdown 20240518/c/clean-alchemy/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 16:05:21] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: Downloading https://files.pythonhosted.org/packages/85/44/e8300d13adb05dbb738f97f6b1acde151aebc3cb0aa84745e82d0c12152f/nvidia_dali_nightly_cuda120-1.39.0.dev20240517.tar.gz
+[2024-05-18 16:05:21] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: executing diffoscope
+[2024-05-18 16:05:21] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_nightly_cuda120-1.38.0.dev20240507.tar.gz tmp/nvidia_dali_nightly_cuda120-1.39.0.dev20240517.tar.gz --markdown 20240518/n/nvidia-dali-nightly-cuda120/1.38.0.dev20240507-1.39.0.dev20240517/README.md --exclude *.pyd
+[2024-05-18 16:05:22] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.0.5.tar.gz]
+[2024-05-18 16:05:22] INFO root fetch - processPackages [mrsegmentator]: Remove: archive file [/home/abi/fetcher/tmp/mrsegmentator-1.1.0-py3-none-any.whl.zip]
+[2024-05-18 16:05:22] INFO root fetch - main [MainThread]: End processing [mrsegmentator]: success
+[2024-05-18 16:05:22] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.8.tar.gz]
+[2024-05-18 16:05:22] INFO root fetch - processPackages [clean-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/clean-alchemy-0.1.9.tar.gz]
+[2024-05-18 16:05:22] INFO root fetch - main [MainThread]: End processing [clean-alchemy]: success
+[2024-05-18 16:05:22] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda120-1.38.0.dev20240507.tar.gz]
+[2024-05-18 16:05:22] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda120-1.39.0.dev20240517.tar.gz]
+[2024-05-18 16:05:22] INFO root fetch - main [MainThread]: End processing [nvidia-dali-nightly-cuda120]: success
+[2024-05-18 16:05:22] INFO root fetch - main [MainThread]: Store serial: [23268281]
