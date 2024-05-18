@@ -12394,3 +12394,36 @@
 [2024-05-18 11:05:45] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240517.tar.gz]
 [2024-05-18 11:05:45] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2024-05-18 11:05:45] INFO root fetch - main [MainThread]: Store serial: [23266368]
+[2024-05-18 11:07:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266368]
+[2024-05-18 11:07:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 11:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon
+[2024-05-18 11:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-minify-html-plugin
+[2024-05-18 11:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BigEDA
+[2024-05-18 11:07:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: preobtrudingpreobtrusionz
+[2024-05-18 11:07:54] INFO root fetch - processPackages [BigEDA]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 11:07:54] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240517] Old Version: [1.1.1b20240516]
+[2024-05-18 11:07:54] WARNING root fetch - processPackages [preobtrudingpreobtrusionz]: Skipping, unable to determine old version
+[2024-05-18 11:07:54] INFO root fetch - main [MainThread]: End processing [preobtrudingpreobtrusionz] error
+[2024-05-18 11:07:54] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/4f/7d/e1f976a4514e88f4e525c3bfed74dce853ead5cb3a4915d4b0cf9cec1098/bigeda-0.0.7.tar.gz
+[2024-05-18 11:07:54] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/33/8f/47eb1cf9322e0520f49dc10234003bae747af221789db8cabace67910358/autogluon-1.1.1b20240516.tar.gz
+[2024-05-18 11:07:54] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-18 11:07:54] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 11:07:54] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/37/92/5bcd3b873bde9c3b4cbadb89f42a33f56d5c6244f488d9dcb01e5b31244a/autogluon-1.1.1b20240517.tar.gz
+[2024-05-18 11:07:55] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 11:07:55] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.7.tar.gz tmp/bigeda-0.0.8.tar.gz --markdown 20240518/B/BigEDA/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 11:07:55] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: Downloading https://files.pythonhosted.org/packages/59/dc/87094bad2e3306667db0d3797cfe295e4fb549c33c7d4347e5310d5c8b67/mkdocs_minify_html_plugin-0.2.1.tar.gz
+[2024-05-18 11:07:55] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-05-18 11:07:55] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240516.tar.gz tmp/autogluon-1.1.1b20240517.tar.gz --markdown 20240518/a/autogluon/1.1.1b20240516-1.1.1b20240517/README.md --exclude *.pyd
+[2024-05-18 11:07:55] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: Downloading https://files.pythonhosted.org/packages/ba/ce/fcccbd31968767503f0f06076e937552538bd428a718701e9c0ed4c344ce/mkdocs_minify_html_plugin-0.2.2-pp39-pypy39_pp73-musllinux_1_2_i686.whl
+[2024-05-18 11:07:55] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240516.tar.gz]
+[2024-05-18 11:07:55] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240517.tar.gz]
+[2024-05-18 11:07:55] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-05-18 11:07:55] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.7.tar.gz]
+[2024-05-18 11:07:55] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 11:07:55] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 11:07:58] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: executing diffoscope
+[2024-05-18 11:07:58] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_minify_html_plugin-0.2.1.tar.gz tmp/mkdocs_minify_html_plugin-0.2.2-pp39-pypy39_pp73-musllinux_1_2_i686.whl.zip --markdown 20240518/m/mkdocs-minify-html-plugin/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-18 11:07:59] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_minify_html_plugin-0.2.1.tar.gz]
+[2024-05-18 11:07:59] INFO root fetch - processPackages [mkdocs-minify-html-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_minify_html_plugin-0.2.2-pp39-pypy39_pp73-musllinux_1_2_i686.whl.zip]
+[2024-05-18 11:07:59] INFO root fetch - main [MainThread]: End processing [mkdocs-minify-html-plugin]: success
+[2024-05-18 11:07:59] INFO root fetch - main [MainThread]: Store serial: [23266457]
