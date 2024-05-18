@@ -17528,3 +17528,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:48:40] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.3.tar.gz]
 [2024-05-18 17:48:40] INFO root fetch - main [MainThread]: End processing [Shellper]: success
 [2024-05-18 17:48:40] INFO root fetch - main [MainThread]: Store serial: [23268955]
+[2024-05-18 17:50:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268955]
+[2024-05-18 17:50:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mass-composition
+[2024-05-18 17:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitoptim
+[2024-05-18 17:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: packaging-demo-avr
+[2024-05-18 17:50:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: project-ppchem-tools-kit
+[2024-05-18 17:50:48] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:50:48] INFO root fetch - processPackages [packaging-demo-avr]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 17:50:48] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:50:48] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/61/5f/24e49e56dfbe58f0f5ccbdda1d6f29de6534849ef8280788572b4eecdc94/packaging_demo_avr-0.0.3.tar.gz
+[2024-05-18 17:50:48] INFO root fetch - processPackages [mass-composition]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-05-18 17:50:48] WARNING root fetch - processPackages [project-ppchem-tools-kit]: Skipping, unable to determine old version
+[2024-05-18 17:50:48] INFO root fetch - main [MainThread]: End processing [project-ppchem-tools-kit] error
+[2024-05-18 17:50:49] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/eb/bc/4b4aaf6537cf458f75cd2dcc74fc0e9065a8080671c5b0bb02c522e1c07d/mass_composition-0.6.5.tar.gz
+[2024-05-18 17:50:49] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:50:49] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:50:49] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:50:49] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/54/03/6d6e4eaf086d0e7a55a3b6cd136d1c65ae8c9d284b4ca4f2b46a7b763f01/packaging_demo_avr-0.0.4.tar.gz
+[2024-05-18 17:50:49] INFO root fetch - processPackages [packaging-demo-avr]: executing diffoscope
+[2024-05-18 17:50:49] INFO root fetch - processPackages [packaging-demo-avr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaging_demo_avr-0.0.3.tar.gz tmp/packaging_demo_avr-0.0.4.tar.gz --markdown 20240518/p/packaging-demo-avr/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 17:50:49] INFO root fetch - processPackages [mass-composition]: Downloading https://files.pythonhosted.org/packages/40/93/1f7868b5680c5d45c95e16291667f955344e4854ed1b6d76a8404e6a14a3/mass_composition-0.6.6.tar.gz
+[2024-05-18 17:50:49] INFO root fetch - processPackages [mass-composition]: executing diffoscope
+[2024-05-18 17:50:49] INFO root fetch - processPackages [mass-composition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mass_composition-0.6.5.tar.gz tmp/mass_composition-0.6.6.tar.gz --markdown 20240518/m/mass-composition/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-05-18 17:50:49] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:50:49] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:50:49] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:50:49] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.3.tar.gz]
+[2024-05-18 17:50:49] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.4.tar.gz]
+[2024-05-18 17:50:49] INFO root fetch - main [MainThread]: End processing [packaging-demo-avr]: success
+[2024-05-18 17:50:50] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.6.5.tar.gz]
+[2024-05-18 17:50:50] INFO root fetch - processPackages [mass-composition]: Remove: archive file [/home/abi/fetcher/tmp/mass_composition-0.6.6.tar.gz]
+[2024-05-18 17:50:50] INFO root fetch - main [MainThread]: End processing [mass-composition]: success
+[2024-05-18 17:50:50] INFO root fetch - main [MainThread]: Store serial: [23268969]
