@@ -11870,3 +11870,42 @@
 [2024-05-18 10:24:01] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz]
 [2024-05-18 10:24:01] INFO root fetch - main [MainThread]: End processing [contact-person-profile-csv-imp-local]: success
 [2024-05-18 10:24:01] INFO root fetch - main [MainThread]: Store serial: [23265967]
+[2024-05-18 10:26:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265967]
+[2024-05-18 10:26:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: viking-log-keeper
+[2024-05-18 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my-cli-tool
+[2024-05-18 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-cli-tool
+[2024-05-18 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zfx
+[2024-05-18 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pathvalidate-cli
+[2024-05-18 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: swanknessz
+[2024-05-18 10:26:10] WARNING root fetch - processPackages [my-cli-tool]: Skipping, unable to determine old version
+[2024-05-18 10:26:10] INFO root fetch - main [MainThread]: End processing [my-cli-tool] error
+[2024-05-18 10:26:10] INFO root fetch - processPackages [zfx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 10:26:10] WARNING root fetch - processPackages [my-cli-tool]: Skipping, unable to determine old version
+[2024-05-18 10:26:10] INFO root fetch - main [MainThread]: End processing [my-cli-tool] error
+[2024-05-18 10:26:10] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/59/eb/f257e3407edfa0e36bd6d262b25e02023066e104ba26d20cee83a63198f0/zfx-1.0.8.tar.gz
+[2024-05-18 10:26:10] INFO root fetch - processPackages [viking-log-keeper]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-18 10:26:10] WARNING root fetch - processPackages [swanknessz]: Skipping, unable to determine old version
+[2024-05-18 10:26:10] INFO root fetch - main [MainThread]: End processing [swanknessz] error
+[2024-05-18 10:26:10] INFO root fetch - processPackages [pathvalidate-cli]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 10:26:10] INFO root fetch - processPackages [viking-log-keeper]: Downloading https://files.pythonhosted.org/packages/0c/41/ced645b46a11707b72aebb5e63a239a19f4f3f967d640cb0409d6d6cd80f/viking_log_keeper-1.0.0.tar.gz
+[2024-05-18 10:26:10] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/79/72/81e8c9f95e9effa80a25b20d494a3c3b21ed5cbbd53440c562d52fe8fe8a/zfx-1.0.9.tar.gz
+[2024-05-18 10:26:10] INFO root fetch - processPackages [pathvalidate-cli]: Downloading https://files.pythonhosted.org/packages/9e/ca/2802c4b9a7375164921a7ca6d12922994d91ec0c5cf0cd4880b32768a27a/pathvalidate-cli-0.0.1.tar.gz
+[2024-05-18 10:26:11] INFO root fetch - processPackages [zfx]: executing diffoscope
+[2024-05-18 10:26:11] INFO root fetch - processPackages [zfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfx-1.0.8.tar.gz tmp/zfx-1.0.9.tar.gz --markdown 20240518/z/zfx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 10:26:11] INFO root fetch - processPackages [viking-log-keeper]: Downloading https://files.pythonhosted.org/packages/b5/a1/b6a1f01ef7437d2db3843f3ba8f9d76a9afbf3808d471fb581ecb682c642/viking_log_keeper-1.1.0.tar.gz
+[2024-05-18 10:26:11] INFO root fetch - processPackages [pathvalidate-cli]: Downloading https://files.pythonhosted.org/packages/e7/0d/49346ceefb66ab9bb30163c4a59f88d5c8df3eb8b82bb4f45bd1d5c62c67/pathvalidate_cli-0.0.2.tar.gz
+[2024-05-18 10:26:11] INFO root fetch - processPackages [viking-log-keeper]: executing diffoscope
+[2024-05-18 10:26:11] INFO root fetch - processPackages [viking-log-keeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/viking_log_keeper-1.0.0.tar.gz tmp/viking_log_keeper-1.1.0.tar.gz --markdown 20240518/v/viking-log-keeper/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-18 10:26:11] INFO root fetch - processPackages [pathvalidate-cli]: executing diffoscope
+[2024-05-18 10:26:11] INFO root fetch - processPackages [pathvalidate-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pathvalidate-cli-0.0.1.tar.gz tmp/pathvalidate_cli-0.0.2.tar.gz --markdown 20240518/p/pathvalidate-cli/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 10:26:11] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.8.tar.gz]
+[2024-05-18 10:26:11] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
+[2024-05-18 10:26:11] INFO root fetch - main [MainThread]: End processing [zfx]: success
+[2024-05-18 10:26:11] INFO root fetch - processPackages [viking-log-keeper]: Remove: archive file [/home/abi/fetcher/tmp/viking_log_keeper-1.0.0.tar.gz]
+[2024-05-18 10:26:11] INFO root fetch - processPackages [viking-log-keeper]: Remove: archive file [/home/abi/fetcher/tmp/viking_log_keeper-1.1.0.tar.gz]
+[2024-05-18 10:26:11] INFO root fetch - main [MainThread]: End processing [viking-log-keeper]: success
+[2024-05-18 10:26:11] INFO root fetch - processPackages [pathvalidate-cli]: Remove: archive file [/home/abi/fetcher/tmp/pathvalidate-cli-0.0.1.tar.gz]
+[2024-05-18 10:26:11] INFO root fetch - processPackages [pathvalidate-cli]: Remove: archive file [/home/abi/fetcher/tmp/pathvalidate_cli-0.0.2.tar.gz]
+[2024-05-18 10:26:11] INFO root fetch - main [MainThread]: End processing [pathvalidate-cli]: success
+[2024-05-18 10:26:11] INFO root fetch - main [MainThread]: Store serial: [23265982]
