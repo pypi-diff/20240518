@@ -19636,3 +19636,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:08:20] INFO root fetch - processPackages [torrey]: Remove: archive file [/home/abi/fetcher/tmp/torrey-3.2.2.dev20240518180734.tar.gz]
 [2024-05-18 20:08:20] INFO root fetch - main [MainThread]: End processing [torrey]: success
 [2024-05-18 20:08:20] INFO root fetch - main [MainThread]: Store serial: [23269929]
+[2024-05-18 20:10:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269929]
+[2024-05-18 20:10:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhasura
+[2024-05-18 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arikaim
+[2024-05-18 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: denouementsz
+[2024-05-18 20:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ventures
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 20:10:29] WARNING root fetch - processPackages [ventures]: Skipping, unable to determine old version
+[2024-05-18 20:10:29] INFO root fetch - main [MainThread]: End processing [ventures] error
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-05-18 20:10:29] WARNING root fetch - processPackages [denouementsz]: Skipping, unable to determine old version
+[2024-05-18 20:10:29] INFO root fetch - main [MainThread]: End processing [denouementsz] error
+[2024-05-18 20:10:29] INFO root fetch - processPackages [arikaim]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-05-18 20:10:29] INFO root fetch - processPackages [arikaim]: Downloading https://files.pythonhosted.org/packages/2d/d9/3714c20e5bb2123390720359fcb7d67e0e1404a1a9a0a7db2fb6140afe2c/arikaim-0.5.8.tar.gz
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240518/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 20:10:29] INFO root fetch - processPackages [arikaim]: Downloading https://files.pythonhosted.org/packages/a8/ba/a768fd65c5203c8c8ae73dd32e468a4229d5a3b0ebe8b4b14a8d187a533c/arikaim-0.5.9.tar.gz
+[2024-05-18 20:10:29] INFO root fetch - processPackages [arikaim]: executing diffoscope
+[2024-05-18 20:10:29] INFO root fetch - processPackages [arikaim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arikaim-0.5.8.tar.gz tmp/arikaim-0.5.9.tar.gz --markdown 20240518/a/arikaim/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-05-18 20:10:29] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-05-18 20:10:29] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-05-18 20:10:30] INFO root fetch - processPackages [arikaim]: Remove: archive file [/home/abi/fetcher/tmp/arikaim-0.5.8.tar.gz]
+[2024-05-18 20:10:30] INFO root fetch - processPackages [arikaim]: Remove: archive file [/home/abi/fetcher/tmp/arikaim-0.5.9.tar.gz]
+[2024-05-18 20:10:30] INFO root fetch - main [MainThread]: End processing [arikaim]: success
+[2024-05-18 20:10:30] INFO root fetch - main [MainThread]: Store serial: [23269944]
