@@ -20592,3 +20592,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:16:58] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.2.tar.gz]
 [2024-05-18 21:16:58] INFO root fetch - main [MainThread]: End processing [unconscious]: success
 [2024-05-18 21:16:58] INFO root fetch - main [MainThread]: Store serial: [23270475]
+[2024-05-18 21:19:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270475]
+[2024-05-18 21:19:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyunifiprotect
+[2024-05-18 21:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-httpd-data-collector
+[2024-05-18 21:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: albums-picker
+[2024-05-18 21:19:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wild-code
+[2024-05-18 21:19:07] WARNING root fetch - processPackages [albums-picker]: Skipping, unable to determine old version
+[2024-05-18 21:19:07] INFO root fetch - main [MainThread]: End processing [albums-picker] error
+[2024-05-18 21:19:07] INFO root fetch - processPackages [pyunifiprotect]: New version: [6.0.0] Old Version: [5.2.0]
+[2024-05-18 21:19:07] INFO root fetch - processPackages [pyunifiprotect]: Downloading https://files.pythonhosted.org/packages/61/b8/a0fd7ff57850b7985b8e82645aedff542fbeff4b53f77d2c0846a5b1294f/pyunifiprotect-5.2.0.tar.gz
+[2024-05-18 21:19:07] INFO root fetch - processPackages [wild-code]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-05-18 21:19:07] INFO root fetch - processPackages [async-httpd-data-collector]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 21:19:07] INFO root fetch - processPackages [async-httpd-data-collector]: Downloading https://files.pythonhosted.org/packages/3c/84/37283a6a03000c6cefaf7792464af5a887b9f301e7a143192a4ae372ceed/async_httpd_data_collector-0.1.tar.gz
+[2024-05-18 21:19:07] INFO root fetch - processPackages [pyunifiprotect]: Downloading https://files.pythonhosted.org/packages/3f/8e/eb5f89a8a515938e8d5e38f42a500e2ec6a2da706e8040df15de590d81eb/pyunifiprotect-6.0.0.tar.gz
+[2024-05-18 21:19:07] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/e4/37/5b657d06d0a328dd9299edaa1257418dd7a3398bcbdea9e6491fa16bd24a/wild_code-0.4.5.tar.gz
+[2024-05-18 21:19:07] INFO root fetch - processPackages [pyunifiprotect]: executing diffoscope
+[2024-05-18 21:19:07] INFO root fetch - processPackages [pyunifiprotect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyunifiprotect-5.2.0.tar.gz tmp/pyunifiprotect-6.0.0.tar.gz --markdown 20240518/p/pyunifiprotect/5.2.0-6.0.0/README.md --exclude *.pyd
+[2024-05-18 21:19:08] INFO root fetch - processPackages [async-httpd-data-collector]: Downloading https://files.pythonhosted.org/packages/3e/f2/01e96d9946873e71a77e99a9dd119a8b373a305ff9d8a9ee9f42507d1aca/async_httpd_data_collector-0.2.tar.gz
+[2024-05-18 21:19:08] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/38/aa/d729d3061fa6aba52a1bc379859942a776c8cefcce4cb7bb76b28ddd8677/wild_code-0.5.0.tar.gz
+[2024-05-18 21:19:08] WARNING root fetch - processPackages [async-httpd-data-collector]: Skipping package: exceeds size limit 23244841>=10485760
+[2024-05-18 21:19:08] INFO root fetch - main [MainThread]: End processing [async-httpd-data-collector] error
+[2024-05-18 21:19:08] INFO root fetch - processPackages [wild-code]: executing diffoscope
+[2024-05-18 21:19:08] INFO root fetch - processPackages [wild-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wild_code-0.4.5.tar.gz tmp/wild_code-0.5.0.tar.gz --markdown 20240518/w/wild-code/0.4.5-0.5.0/README.md --exclude *.pyd
+[2024-05-18 21:19:08] INFO root fetch - processPackages [pyunifiprotect]: Remove: archive file [/home/abi/fetcher/tmp/pyunifiprotect-5.2.0.tar.gz]
+[2024-05-18 21:19:08] INFO root fetch - processPackages [pyunifiprotect]: Remove: archive file [/home/abi/fetcher/tmp/pyunifiprotect-6.0.0.tar.gz]
+[2024-05-18 21:19:08] INFO root fetch - main [MainThread]: End processing [pyunifiprotect]: success
+[2024-05-18 21:19:09] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.4.5.tar.gz]
+[2024-05-18 21:19:09] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.5.0.tar.gz]
+[2024-05-18 21:19:09] INFO root fetch - main [MainThread]: End processing [wild-code]: success
+[2024-05-18 21:19:09] INFO root fetch - main [MainThread]: Store serial: [23270489]
