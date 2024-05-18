@@ -15395,3 +15395,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:05:39] INFO root fetch - processPackages [disnake]: Remove: archive file [/home/abi/fetcher/tmp/disnake-2.9.2.tar.gz]
 [2024-05-18 15:05:39] INFO root fetch - main [MainThread]: End processing [disnake]: success
 [2024-05-18 15:05:39] INFO root fetch - main [MainThread]: Store serial: [23267903]
+[2024-05-18 15:07:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267903]
+[2024-05-18 15:07:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 15:07:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: larundaz
+[2024-05-18 15:07:48] WARNING root fetch - processPackages [larundaz]: Skipping, unable to determine old version
+[2024-05-18 15:07:48] INFO root fetch - main [MainThread]: End processing [larundaz] error
+[2024-05-18 15:07:48] INFO root fetch - main [MainThread]: Store serial: [23267910]
