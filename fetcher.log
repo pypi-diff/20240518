@@ -16634,3 +16634,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:47:03] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-1.0.0.tar.gz]
 [2024-05-18 16:47:03] INFO root fetch - main [MainThread]: End processing [pygenomeviz]: success
 [2024-05-18 16:47:03] INFO root fetch - main [MainThread]: Store serial: [23268564]
+[2024-05-18 16:49:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268564]
+[2024-05-18 16:49:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 16:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygenomeviz
+[2024-05-18 16:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haybox-py
+[2024-05-18 16:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: warp-python
+[2024-05-18 16:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-web-ir-actions-act-view-reload
+[2024-05-18 16:49:12] INFO root fetch - processPackages [warp-python]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-18 16:49:12] INFO root fetch - processPackages [pygenomeviz]: New version: [1.0.0] Old Version: [0.4.4]
+[2024-05-18 16:49:12] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/d3/ad/86de577ce1de5d8b32b7847ebb076171c7b79b84244ccb8571328baaab31/warp_python-1.2.2.tar.gz
+[2024-05-18 16:49:12] WARNING root fetch - processPackages [haybox-py]: Skipping, unable to determine old version
+[2024-05-18 16:49:12] INFO root fetch - main [MainThread]: End processing [haybox-py] error
+[2024-05-18 16:49:12] INFO root fetch - processPackages [pygenomeviz]: Downloading https://files.pythonhosted.org/packages/9a/ce/66d7c953ae4e04cd4e5965ef624188f8c16d562aeb54285298dbb1f6ee56/pygenomeviz-0.4.4.tar.gz
+[2024-05-18 16:49:13] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: New version: [12.0.1.0.2] Old Version: [12.0.1.0.1.99.dev2]
+[2024-05-18 16:49:13] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: Downloading https://files.pythonhosted.org/packages/f7/cf/72ac51529127b80424a506773cc673727d7d1cfd402f5c29ce4b28fe5240/odoo12_addon_web_ir_actions_act_view_reload-12.0.1.0.1.99.dev2-py3-none-any.whl
+[2024-05-18 16:49:13] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/d0/c6/668e40e74942fcce41c218eb4bf9f1443bd141cf3b881fa6743de21b3128/warp_python-1.2.3.tar.gz
+[2024-05-18 16:49:13] INFO root fetch - processPackages [pygenomeviz]: Downloading https://files.pythonhosted.org/packages/4c/df/e3c18df787ed12e9691d2978f31f53fdfc2f7bd44edabe280e0e24a4f664/pygenomeviz-1.0.0.tar.gz
+[2024-05-18 16:49:13] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 16:49:13] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.2.tar.gz tmp/warp_python-1.2.3.tar.gz --markdown 20240518/w/warp-python/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-18 16:49:13] INFO root fetch - processPackages [pygenomeviz]: executing diffoscope
+[2024-05-18 16:49:13] INFO root fetch - processPackages [pygenomeviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygenomeviz-0.4.4.tar.gz tmp/pygenomeviz-1.0.0.tar.gz --markdown 20240518/p/pygenomeviz/0.4.4-1.0.0/README.md --exclude *.pyd
+[2024-05-18 16:49:13] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: Downloading https://files.pythonhosted.org/packages/16/50/daed7ae8117bb519c188070b6aa0eb03223e56cf58ead0a366b41dc76998/odoo12_addon_web_ir_actions_act_view_reload-12.0.1.0.2-py3-none-any.whl
+[2024-05-18 16:49:13] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: executing diffoscope
+[2024-05-18 16:49:13] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_ir_actions_act_view_reload-12.0.1.0.1.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_web_ir_actions_act_view_reload-12.0.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-web-ir-actions-act-view-reload/12.0.1.0.1.99.dev2-12.0.1.0.2/README.md --exclude *.pyd
+[2024-05-18 16:49:13] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.2.tar.gz]
+[2024-05-18 16:49:13] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.3.tar.gz]
+[2024-05-18 16:49:13] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 16:49:14] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_ir_actions_act_view_reload-12.0.1.0.1.99.dev2-py3-none-any.whl.zip]
+[2024-05-18 16:49:14] INFO root fetch - processPackages [odoo12-addon-web-ir-actions-act-view-reload]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_ir_actions_act_view_reload-12.0.1.0.2-py3-none-any.whl.zip]
+[2024-05-18 16:49:14] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-ir-actions-act-view-reload]: success
+[2024-05-18 16:49:17] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-0.4.4.tar.gz]
+[2024-05-18 16:49:17] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-1.0.0.tar.gz]
+[2024-05-18 16:49:17] INFO root fetch - main [MainThread]: End processing [pygenomeviz]: success
+[2024-05-18 16:49:17] INFO root fetch - main [MainThread]: Store serial: [23268578]
