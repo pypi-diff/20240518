@@ -18641,3 +18641,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:05:24] INFO root fetch - processPackages [rns]: Remove: archive file [/home/abi/fetcher/tmp/rns-0.7.5.tar.gz]
 [2024-05-18 19:05:24] INFO root fetch - main [MainThread]: End processing [rns]: success
 [2024-05-18 19:05:24] INFO root fetch - main [MainThread]: Store serial: [23269494]
+[2024-05-18 19:07:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269494]
+[2024-05-18 19:07:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mintlemon-turkish-nlp
+[2024-05-18 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-processing-dev
+[2024-05-18 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tumblr-backup
+[2024-05-18 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: duplicity
+[2024-05-18 19:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rustberry
+[2024-05-18 19:07:33] INFO root fetch - processPackages [rustberry]: New version: [0.0.9] Old Version: [0.0.10]
+[2024-05-18 19:07:33] INFO root fetch - processPackages [mintlemon-turkish-nlp]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-18 19:07:33] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/12/55/b1ee242e9d8a9e5640df612fa90c014c1bda6b9d54aa718bcf6911f23270/mintlemon-turkish-nlp-0.2.5.tar.gz
+[2024-05-18 19:07:33] INFO root fetch - processPackages [tumblr-backup]: New version: [1.0.3] Old Version: [1.0.2.post1]
+[2024-05-18 19:07:33] INFO root fetch - processPackages [duplicity]: New version: [2.2.4rc2] Old Version: [2.2.4rc1]
+[2024-05-18 19:07:33] WARNING root fetch - processPackages [image-processing-dev]: Skipping, unable to determine old version
+[2024-05-18 19:07:33] INFO root fetch - main [MainThread]: End processing [image-processing-dev] error
+[2024-05-18 19:07:33] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/c8/e4/f45cc0ae7219f5d96394ce2bb191f6658962afa98b5e6796c67344f00b0d/rustberry-0.0.10-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 19:07:33] INFO root fetch - processPackages [tumblr-backup]: Downloading https://files.pythonhosted.org/packages/27/cc/91d15382676bb0cb53966645b01285df427f0699006dd88c99aa06809f54/tumblr-backup-1.0.2.post1.tar.gz
+[2024-05-18 19:07:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/cc/97/90d2641a705d69a0ab4f3423220ab8291a3bbedb85b3d3ed59d0a395883d/mintlemon-turkish-nlp-0.2.6.tar.gz
+[2024-05-18 19:07:34] INFO root fetch - processPackages [duplicity]: Downloading https://files.pythonhosted.org/packages/af/1d/137a3b600cd806e122bb1fc1ef5024ba9413445012ac89e75200f2820758/duplicity-2.2.4rc1.tar.gz
+[2024-05-18 19:07:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: executing diffoscope
+[2024-05-18 19:07:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mintlemon-turkish-nlp-0.2.5.tar.gz tmp/mintlemon-turkish-nlp-0.2.6.tar.gz --markdown 20240518/m/mintlemon-turkish-nlp/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-18 19:07:34] INFO root fetch - processPackages [rustberry]: Downloading https://files.pythonhosted.org/packages/a6/56/1f0ec5be80288e33920ec3da3dbd110ee9baede31e753231cecd3bc10d69/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-05-18 19:07:34] INFO root fetch - processPackages [tumblr-backup]: Downloading https://files.pythonhosted.org/packages/85/3c/ef55f283417488c7fdf2ff187f112ec59a25788fec7cfe35fd0bbb3db1be/tumblr_backup-1.0.3.tar.gz
+[2024-05-18 19:07:34] INFO root fetch - processPackages [duplicity]: Downloading https://files.pythonhosted.org/packages/81/6d/3e46c4d04f3bdc0b3a974cc3f7a57a4c9b2c11ae2652b9f48d585783929a/duplicity-2.2.4rc2.tar.gz
+[2024-05-18 19:07:34] INFO root fetch - processPackages [rustberry]: executing diffoscope
+[2024-05-18 19:07:34] INFO root fetch - processPackages [rustberry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustberry-0.0.10-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip --markdown 20240518/r/rustberry/0.0.10-0.0.9/README.md --exclude *.pyd
+[2024-05-18 19:07:34] INFO root fetch - processPackages [tumblr-backup]: executing diffoscope
+[2024-05-18 19:07:34] INFO root fetch - processPackages [tumblr-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tumblr-backup-1.0.2.post1.tar.gz tmp/tumblr_backup-1.0.3.tar.gz --markdown 20240518/t/tumblr-backup/1.0.2.post1-1.0.3/README.md --exclude *.pyd
+[2024-05-18 19:07:34] INFO root fetch - processPackages [duplicity]: executing diffoscope
+[2024-05-18 19:07:34] INFO root fetch - processPackages [duplicity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duplicity-2.2.4rc1.tar.gz tmp/duplicity-2.2.4rc2.tar.gz --markdown 20240518/d/duplicity/2.2.4rc1-2.2.4rc2/README.md --exclude *.pyd
+[2024-05-18 19:07:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.5.tar.gz]
+[2024-05-18 19:07:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.6.tar.gz]
+[2024-05-18 19:07:34] INFO root fetch - main [MainThread]: End processing [mintlemon-turkish-nlp]: success
+[2024-05-18 19:07:35] INFO root fetch - processPackages [tumblr-backup]: Remove: archive file [/home/abi/fetcher/tmp/tumblr-backup-1.0.2.post1.tar.gz]
+[2024-05-18 19:07:35] INFO root fetch - processPackages [tumblr-backup]: Remove: archive file [/home/abi/fetcher/tmp/tumblr_backup-1.0.3.tar.gz]
+[2024-05-18 19:07:35] INFO root fetch - main [MainThread]: End processing [tumblr-backup]: success
+[2024-05-18 19:07:36] INFO root fetch - processPackages [duplicity]: Remove: archive file [/home/abi/fetcher/tmp/duplicity-2.2.4rc1.tar.gz]
+[2024-05-18 19:07:36] INFO root fetch - processPackages [duplicity]: Remove: archive file [/home/abi/fetcher/tmp/duplicity-2.2.4rc2.tar.gz]
+[2024-05-18 19:07:36] INFO root fetch - main [MainThread]: End processing [duplicity]: success
+[2024-05-18 19:08:11] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.10-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 19:08:11] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-05-18 19:08:11] INFO root fetch - main [MainThread]: End processing [rustberry]: success
+[2024-05-18 19:08:11] INFO root fetch - main [MainThread]: Store serial: [23269517]
