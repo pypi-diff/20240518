@@ -19569,3 +19569,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:03:58] INFO root fetch - processPackages [wheke-auth]: Remove: archive file [/home/abi/fetcher/tmp/wheke_auth-0.0.1a2.tar.gz]
 [2024-05-18 20:03:58] INFO root fetch - main [MainThread]: End processing [wheke-auth]: success
 [2024-05-18 20:03:58] INFO root fetch - main [MainThread]: Store serial: [23269893]
+[2024-05-18 20:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269893]
+[2024-05-18 20:06:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 20:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhasura
+[2024-05-18 20:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proteolysisz
+[2024-05-18 20:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reclocks
+[2024-05-18 20:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codefly-cli
+[2024-05-18 20:06:07] WARNING root fetch - processPackages [reclocks]: Skipping, unable to determine old version
+[2024-05-18 20:06:07] INFO root fetch - main [MainThread]: End processing [reclocks] error
+[2024-05-18 20:06:07] INFO root fetch - processPackages [pyhasura]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 20:06:07] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/95/74/b4ed4bf242f56b3aed70cb52554c8acf938206faa9687d37ee0841c221a5/pyhasura-1.0.8.tar.gz
+[2024-05-18 20:06:07] WARNING root fetch - processPackages [proteolysisz]: Skipping, unable to determine old version
+[2024-05-18 20:06:07] INFO root fetch - main [MainThread]: End processing [proteolysisz] error
+[2024-05-18 20:06:07] INFO root fetch - processPackages [codefly-cli]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 20:06:07] INFO root fetch - processPackages [pyhasura]: Downloading https://files.pythonhosted.org/packages/eb/3e/ee576591a7c4ea777ff94996eb0197f5034bade0047be6fcac2596d26e84/pyhasura-1.0.9.tar.gz
+[2024-05-18 20:06:07] INFO root fetch - processPackages [codefly-cli]: Downloading https://files.pythonhosted.org/packages/c6/9b/cdf5df98d638b039c97ce0dabf92dfb2c13d6cd879651c98b964d8efcec3/codefly_cli-0.0.4.tar.gz
+[2024-05-18 20:06:07] INFO root fetch - processPackages [pyhasura]: executing diffoscope
+[2024-05-18 20:06:07] INFO root fetch - processPackages [pyhasura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhasura-1.0.8.tar.gz tmp/pyhasura-1.0.9.tar.gz --markdown 20240518/p/pyhasura/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 20:06:08] INFO root fetch - processPackages [codefly-cli]: Downloading https://files.pythonhosted.org/packages/c8/b5/75cbbe8fa37198d477eb94569fd53b22a81f6da78c0dbb32000e06fa45f6/codefly_cli-0.0.5.tar.gz
+[2024-05-18 20:06:08] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.8.tar.gz]
+[2024-05-18 20:06:08] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
+[2024-05-18 20:06:08] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
+[2024-05-18 20:06:08] INFO root fetch - processPackages [codefly-cli]: executing diffoscope
+[2024-05-18 20:06:08] INFO root fetch - processPackages [codefly-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefly_cli-0.0.4.tar.gz tmp/codefly_cli-0.0.5.tar.gz --markdown 20240518/c/codefly-cli/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 20:06:09] INFO root fetch - processPackages [codefly-cli]: Remove: archive file [/home/abi/fetcher/tmp/codefly_cli-0.0.4.tar.gz]
+[2024-05-18 20:06:09] INFO root fetch - processPackages [codefly-cli]: Remove: archive file [/home/abi/fetcher/tmp/codefly_cli-0.0.5.tar.gz]
+[2024-05-18 20:06:09] INFO root fetch - main [MainThread]: End processing [codefly-cli]: success
+[2024-05-18 20:06:09] INFO root fetch - main [MainThread]: Store serial: [23269905]
