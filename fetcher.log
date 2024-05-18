@@ -20577,3 +20577,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:14:46] INFO root fetch - processPackages [lytools]: Remove: archive file [/home/abi/fetcher/tmp/lytools-0.0.99.tar.gz]
 [2024-05-18 21:14:46] INFO root fetch - main [MainThread]: End processing [lytools]: success
 [2024-05-18 21:14:46] INFO root fetch - main [MainThread]: Store serial: [23270466]
+[2024-05-18 21:16:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270466]
+[2024-05-18 21:16:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 21:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: selfwardz
+[2024-05-18 21:16:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unconscious
+[2024-05-18 21:16:57] INFO root fetch - processPackages [unconscious]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 21:16:57] INFO root fetch - processPackages [unconscious]: Downloading https://files.pythonhosted.org/packages/65/af/2f752154fab5c78e60db0aabec1af9ec2a852d1dfa856a4edfe58e2ac0d3/unconscious-0.0.1.tar.gz
+[2024-05-18 21:16:57] WARNING root fetch - processPackages [selfwardz]: Skipping, unable to determine old version
+[2024-05-18 21:16:57] INFO root fetch - main [MainThread]: End processing [selfwardz] error
+[2024-05-18 21:16:57] INFO root fetch - processPackages [unconscious]: Downloading https://files.pythonhosted.org/packages/bb/cb/57d6b501084579d5ede55fc00da266edcfe18d9adea820eb201ca59644d3/unconscious-0.0.2.tar.gz
+[2024-05-18 21:16:57] INFO root fetch - processPackages [unconscious]: executing diffoscope
+[2024-05-18 21:16:57] INFO root fetch - processPackages [unconscious]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unconscious-0.0.1.tar.gz tmp/unconscious-0.0.2.tar.gz --markdown 20240518/u/unconscious/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 21:16:58] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.1.tar.gz]
+[2024-05-18 21:16:58] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.2.tar.gz]
+[2024-05-18 21:16:58] INFO root fetch - main [MainThread]: End processing [unconscious]: success
+[2024-05-18 21:16:58] INFO root fetch - main [MainThread]: Store serial: [23270475]
