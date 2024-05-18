@@ -22172,3 +22172,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:21:42] INFO root fetch - processPackages [shared-cache]: Remove: archive file [/home/abi/fetcher/tmp/shared_cache-1.0.1.tar.gz]
 [2024-05-18 23:21:42] INFO root fetch - main [MainThread]: End processing [shared-cache]: success
 [2024-05-18 23:21:42] INFO root fetch - main [MainThread]: Store serial: [23271322]
+[2024-05-18 23:23:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271322]
+[2024-05-18 23:23:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 23:23:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: utia-mint
+[2024-05-18 23:23:51] WARNING root fetch - processPackages [utia-mint]: Skipping, unable to determine old version
+[2024-05-18 23:23:51] INFO root fetch - main [MainThread]: End processing [utia-mint] error
+[2024-05-18 23:23:51] INFO root fetch - main [MainThread]: Store serial: [23271327]
