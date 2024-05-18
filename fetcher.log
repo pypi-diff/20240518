@@ -2009,3 +2009,45 @@
 [2024-05-18 02:08:56] INFO root fetch - processPackages [heliumcli]: Remove: archive file [/home/abi/fetcher/tmp/heliumcli-1.6.9.tar.gz]
 [2024-05-18 02:08:56] INFO root fetch - main [MainThread]: End processing [heliumcli]: success
 [2024-05-18 02:08:56] INFO root fetch - main [MainThread]: Store serial: [23262101]
+[2024-05-18 02:11:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262101]
+[2024-05-18 02:11:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocnc
+[2024-05-18 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: enslavesz
+[2024-05-18 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mqtt_logger
+[2024-05-18 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cnb-tools
+[2024-05-18 02:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mct-quantizers-nightly
+[2024-05-18 02:11:04] INFO root fetch - processPackages [cocnc]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240517.post1114] Old Version: [1.5.0.20240516.post1045]
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mqtt_logger]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cocnc]: Downloading https://files.pythonhosted.org/packages/1e/84/89b6e4697268f67899b7c3cabfd7a6d8b40ba8f1bdbb8dbf78662cfa3e2e/cocnc-0.1.5.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cnb-tools]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-18 02:11:05] WARNING root fetch - processPackages [enslavesz]: Skipping, unable to determine old version
+[2024-05-18 02:11:05] INFO root fetch - main [MainThread]: End processing [enslavesz] error
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/78/df/6b96e3a81994a4981cb3a509244384fdd671e03bc7661010e856bd3895be/mct-quantizers-nightly-1.5.0.20240516.post1045.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mqtt_logger]: Downloading https://files.pythonhosted.org/packages/06/02/a696ce08cf17b0404b67150aba1a76e495b0d2a4dddb6202ac9aa001749d/mqtt_logger-0.3.5.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cnb-tools]: Downloading https://files.pythonhosted.org/packages/eb/e1/c86c30a87f769a7a6a560df2de4f61beecdd6c0e725ec533db2bf1213588/cnb_tools-0.2.0.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cocnc]: Downloading https://files.pythonhosted.org/packages/2a/21/d554e57553804f65bd846d34ff4eab3ea8525461e343f0de75b76c609481/cocnc-0.1.6.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/59/4f/bf48e72cd11ee760bb454b198b22299ce3cfbcfcb4951e9749d0157f8049/mct-quantizers-nightly-1.5.0.20240517.post1114.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cnb-tools]: Downloading https://files.pythonhosted.org/packages/80/44/494c886062da9f08ad842ad943df94356776e6ef7d86e69c249f54bbae54/cnb_tools-0.3.0.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cocnc]: executing diffoscope
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cocnc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocnc-0.1.5.tar.gz tmp/cocnc-0.1.6.tar.gz --markdown 20240518/c/cocnc/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240516.post1045.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240517.post1114.tar.gz --markdown 20240518/m/mct-quantizers-nightly/1.5.0.20240516.post1045-1.5.0.20240517.post1114/README.md --exclude *.pyd
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mqtt_logger]: Downloading https://files.pythonhosted.org/packages/3b/dc/9fb8e513fdd303aac1e8124e63eec69beb9c243e5c906c94636fe1bf3de4/mqtt_logger-0.3.6.tar.gz
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cnb-tools]: executing diffoscope
+[2024-05-18 02:11:05] INFO root fetch - processPackages [cnb-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnb_tools-0.2.0.tar.gz tmp/cnb_tools-0.3.0.tar.gz --markdown 20240518/c/cnb-tools/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mqtt_logger]: executing diffoscope
+[2024-05-18 02:11:05] INFO root fetch - processPackages [mqtt_logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mqtt_logger-0.3.5.tar.gz tmp/mqtt_logger-0.3.6.tar.gz --markdown 20240518/m/mqtt_logger/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-18 02:11:06] INFO root fetch - processPackages [cnb-tools]: Remove: archive file [/home/abi/fetcher/tmp/cnb_tools-0.2.0.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - processPackages [cnb-tools]: Remove: archive file [/home/abi/fetcher/tmp/cnb_tools-0.3.0.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - main [MainThread]: End processing [cnb-tools]: success
+[2024-05-18 02:11:06] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240516.post1045.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240517.post1114.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-05-18 02:11:06] INFO root fetch - processPackages [mqtt_logger]: Remove: archive file [/home/abi/fetcher/tmp/mqtt_logger-0.3.5.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - processPackages [mqtt_logger]: Remove: archive file [/home/abi/fetcher/tmp/mqtt_logger-0.3.6.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - main [MainThread]: End processing [mqtt_logger]: success
+[2024-05-18 02:11:06] INFO root fetch - processPackages [cocnc]: Remove: archive file [/home/abi/fetcher/tmp/cocnc-0.1.5.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - processPackages [cocnc]: Remove: archive file [/home/abi/fetcher/tmp/cocnc-0.1.6.tar.gz]
+[2024-05-18 02:11:06] INFO root fetch - main [MainThread]: End processing [cocnc]: success
+[2024-05-18 02:11:06] INFO root fetch - main [MainThread]: Store serial: [23262118]
