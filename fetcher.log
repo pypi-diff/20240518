@@ -21686,3 +21686,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:34:01] WARNING root fetch - processPackages [racialityz]: Skipping, unable to determine old version
 [2024-05-18 22:34:01] INFO root fetch - main [MainThread]: End processing [racialityz] error
 [2024-05-18 22:34:01] INFO root fetch - main [MainThread]: Store serial: [23271071]
+[2024-05-18 22:36:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271071]
+[2024-05-18 22:36:10] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 22:38:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271072]
+[2024-05-18 22:38:15] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 22:38:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: madokami
+[2024-05-18 22:38:15] WARNING root fetch - processPackages [madokami]: Skipping, unable to determine old version
+[2024-05-18 22:38:15] INFO root fetch - main [MainThread]: End processing [madokami] error
+[2024-05-18 22:38:15] INFO root fetch - main [MainThread]: Store serial: [23271079]
