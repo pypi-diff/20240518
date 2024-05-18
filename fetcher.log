@@ -9951,3 +9951,27 @@
 [2024-05-18 07:34:57] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240516-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
 [2024-05-18 07:34:57] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2024-05-18 07:34:57] INFO root fetch - main [MainThread]: Store serial: [23264996]
+[2024-05-18 07:37:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264996]
+[2024-05-18 07:37:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 07:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elastiknn-client
+[2024-05-18 07:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchvision-abi
+[2024-05-18 07:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-18 07:37:06] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1716005968] Old Version: [0.0.21a1715996922]
+[2024-05-18 07:37:06] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/74/53/792e076a5e585d395f7f17dbb4bf6c02d57eb774a21d1209c90da5f05c32/pulumi_kubernetes_the_hard_way-0.0.21a1715996922.tar.gz
+[2024-05-18 07:37:06] WARNING root fetch - processPackages [torchvision-abi]: Skipping, unable to determine old version
+[2024-05-18 07:37:06] INFO root fetch - main [MainThread]: End processing [torchvision-abi] error
+[2024-05-18 07:37:06] INFO root fetch - processPackages [elastiknn-client]: New version: [8.9.2.0] Old Version: [8.9.1.0]
+[2024-05-18 07:37:06] INFO root fetch - processPackages [elastiknn-client]: Downloading https://files.pythonhosted.org/packages/07/58/b078f6f7425546649bc88e9c0b71bc2f74eab671252b76b70158d7b9ad61/elastiknn-client-8.9.1.0.tar.gz
+[2024-05-18 07:37:06] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/87/f9/33655751ac4859cd492a599c1a3af8f32565e0d1c12e7467c9e92cd79632/pulumi_kubernetes_the_hard_way-0.0.21a1716005968.tar.gz
+[2024-05-18 07:37:07] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-18 07:37:07] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715996922.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716005968.tar.gz --markdown 20240518/p/pulumi-kubernetes-the-hard-way/0.0.21a1715996922-0.0.21a1716005968/README.md --exclude *.pyd
+[2024-05-18 07:37:07] INFO root fetch - processPackages [elastiknn-client]: Downloading https://files.pythonhosted.org/packages/5c/d8/eabf03a721fd05fdd0083c97883a9b926566f2926bde44b1e263e64d9da4/elastiknn-client-8.9.2.0.tar.gz
+[2024-05-18 07:37:07] INFO root fetch - processPackages [elastiknn-client]: executing diffoscope
+[2024-05-18 07:37:07] INFO root fetch - processPackages [elastiknn-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elastiknn-client-8.9.1.0.tar.gz tmp/elastiknn-client-8.9.2.0.tar.gz --markdown 20240518/e/elastiknn-client/8.9.1.0-8.9.2.0/README.md --exclude *.pyd
+[2024-05-18 07:37:07] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715996922.tar.gz]
+[2024-05-18 07:37:07] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716005968.tar.gz]
+[2024-05-18 07:37:07] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-18 07:37:07] INFO root fetch - processPackages [elastiknn-client]: Remove: archive file [/home/abi/fetcher/tmp/elastiknn-client-8.9.1.0.tar.gz]
+[2024-05-18 07:37:07] INFO root fetch - processPackages [elastiknn-client]: Remove: archive file [/home/abi/fetcher/tmp/elastiknn-client-8.9.2.0.tar.gz]
+[2024-05-18 07:37:07] INFO root fetch - main [MainThread]: End processing [elastiknn-client]: success
+[2024-05-18 07:37:07] INFO root fetch - main [MainThread]: Store serial: [23265006]
