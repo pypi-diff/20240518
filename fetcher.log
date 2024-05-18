@@ -8496,3 +8496,27 @@
 [2024-05-18 05:22:33] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024051703.tar.gz]
 [2024-05-18 05:22:33] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-05-18 05:22:33] INFO root fetch - main [MainThread]: Store serial: [23264378]
+[2024-05-18 05:24:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264378]
+[2024-05-18 05:24:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 05:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hexdoc-hexdebug
+[2024-05-18 05:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywiegandpi
+[2024-05-18 05:24:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: proangiospermicz
+[2024-05-18 05:24:42] INFO root fetch - processPackages [hexdoc-hexdebug]: New version: [0.1.0.1.20.1.1.0.dev0] Old Version: [0.1.0.1.20.1.1.0]
+[2024-05-18 05:24:42] INFO root fetch - processPackages [pywiegandpi]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 05:24:42] WARNING root fetch - processPackages [proangiospermicz]: Skipping, unable to determine old version
+[2024-05-18 05:24:42] INFO root fetch - main [MainThread]: End processing [proangiospermicz] error
+[2024-05-18 05:24:43] INFO root fetch - processPackages [hexdoc-hexdebug]: Downloading https://files.pythonhosted.org/packages/09/aa/c83b6dc45e0ce629e4cbac6fdee4cc4b0d275246ee201ffb4bb5b8dfadf2/hexdoc_hexdebug-0.1.0.1.20.1.1.0.tar.gz
+[2024-05-18 05:24:43] INFO root fetch - processPackages [pywiegandpi]: Downloading https://files.pythonhosted.org/packages/3b/07/3a04d0298cff4c4792716b494f2c400557967ed66dd17387dd74ea885cd0/pywiegandpi-1.0.0.tar.gz
+[2024-05-18 05:24:43] INFO root fetch - processPackages [pywiegandpi]: Downloading https://files.pythonhosted.org/packages/8d/9b/7783664e6e7c077b438632be9d22eda0e7ab0e6ac6e7793a0152c0ab9101/pywiegandpi-1.0.1.tar.gz
+[2024-05-18 05:24:43] INFO root fetch - processPackages [hexdoc-hexdebug]: Downloading https://files.pythonhosted.org/packages/bc/4e/fb1456ab69251aec661a1777c9af87d31e589a2abd618ef6343332f92d60/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz
+[2024-05-18 05:24:43] INFO root fetch - processPackages [pywiegandpi]: executing diffoscope
+[2024-05-18 05:24:43] INFO root fetch - processPackages [pywiegandpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywiegandpi-1.0.0.tar.gz tmp/pywiegandpi-1.0.1.tar.gz --markdown 20240518/p/pywiegandpi/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 05:24:43] INFO root fetch - processPackages [hexdoc-hexdebug]: executing diffoscope
+[2024-05-18 05:24:43] INFO root fetch - processPackages [hexdoc-hexdebug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.tar.gz tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz --markdown 20240518/h/hexdoc-hexdebug/0.1.0.1.20.1.1.0-0.1.0.1.20.1.1.0.dev0/README.md --exclude *.pyd
+[2024-05-18 05:24:44] INFO root fetch - processPackages [pywiegandpi]: Remove: archive file [/home/abi/fetcher/tmp/pywiegandpi-1.0.0.tar.gz]
+[2024-05-18 05:24:44] INFO root fetch - processPackages [pywiegandpi]: Remove: archive file [/home/abi/fetcher/tmp/pywiegandpi-1.0.1.tar.gz]
+[2024-05-18 05:24:44] INFO root fetch - main [MainThread]: End processing [pywiegandpi]: success
+[2024-05-18 05:24:44] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.tar.gz]
+[2024-05-18 05:24:44] INFO root fetch - processPackages [hexdoc-hexdebug]: Remove: archive file [/home/abi/fetcher/tmp/hexdoc_hexdebug-0.1.0.1.20.1.1.0.dev0.tar.gz]
+[2024-05-18 05:24:44] INFO root fetch - main [MainThread]: End processing [hexdoc-hexdebug]: success
+[2024-05-18 05:24:44] INFO root fetch - main [MainThread]: Store serial: [23264388]
