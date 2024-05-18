@@ -11551,3 +11551,24 @@
 [2024-05-18 09:47:14] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.5.tar.gz]
 [2024-05-18 09:47:14] INFO root fetch - main [MainThread]: End processing [offlinesec-client]: success
 [2024-05-18 09:47:14] INFO root fetch - main [MainThread]: Store serial: [23265834]
+[2024-05-18 09:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265834]
+[2024-05-18 09:49:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zfx
+[2024-05-18 09:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: smartpasslib
+[2024-05-18 09:49:23] INFO root fetch - processPackages [zfx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 09:49:24] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/59/eb/f257e3407edfa0e36bd6d262b25e02023066e104ba26d20cee83a63198f0/zfx-1.0.8.tar.gz
+[2024-05-18 09:49:24] INFO root fetch - processPackages [smartpasslib]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-18 09:49:24] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/79/72/81e8c9f95e9effa80a25b20d494a3c3b21ed5cbbd53440c562d52fe8fe8a/zfx-1.0.9.tar.gz
+[2024-05-18 09:49:24] INFO root fetch - processPackages [smartpasslib]: Downloading https://files.pythonhosted.org/packages/5a/92/e2da01978f87fe671d6317f80dee2a3e4e232bde75560b606458d481afd9/smartpasslib-0.4.0.tar.gz
+[2024-05-18 09:49:24] INFO root fetch - processPackages [zfx]: executing diffoscope
+[2024-05-18 09:49:24] INFO root fetch - processPackages [zfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfx-1.0.8.tar.gz tmp/zfx-1.0.9.tar.gz --markdown 20240518/z/zfx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 09:49:24] INFO root fetch - processPackages [smartpasslib]: Downloading https://files.pythonhosted.org/packages/3d/c7/7c27b3573f78858a1e99467928fc7d2243aeba7eb041359da056ab44f0c2/smartpasslib-0.4.1.tar.gz
+[2024-05-18 09:49:24] INFO root fetch - processPackages [smartpasslib]: executing diffoscope
+[2024-05-18 09:49:24] INFO root fetch - processPackages [smartpasslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartpasslib-0.4.0.tar.gz tmp/smartpasslib-0.4.1.tar.gz --markdown 20240518/s/smartpasslib/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-18 09:49:24] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.8.tar.gz]
+[2024-05-18 09:49:24] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
+[2024-05-18 09:49:24] INFO root fetch - main [MainThread]: End processing [zfx]: success
+[2024-05-18 09:49:25] INFO root fetch - processPackages [smartpasslib]: Remove: archive file [/home/abi/fetcher/tmp/smartpasslib-0.4.0.tar.gz]
+[2024-05-18 09:49:25] INFO root fetch - processPackages [smartpasslib]: Remove: archive file [/home/abi/fetcher/tmp/smartpasslib-0.4.1.tar.gz]
+[2024-05-18 09:49:25] INFO root fetch - main [MainThread]: End processing [smartpasslib]: success
+[2024-05-18 09:49:25] INFO root fetch - main [MainThread]: Store serial: [23265839]
