@@ -16431,3 +16431,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:33:40] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
 [2024-05-18 16:33:40] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
 [2024-05-18 16:33:40] INFO root fetch - main [MainThread]: Store serial: [23268435]
+[2024-05-18 16:35:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268435]
+[2024-05-18 16:35:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 16:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warp-python
+[2024-05-18 16:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fighting-sound
+[2024-05-18 16:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: periaptsz
+[2024-05-18 16:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: knowledge-graph-maker
+[2024-05-18 16:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clusterfun
+[2024-05-18 16:35:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: anycrc
+[2024-05-18 16:35:49] INFO root fetch - processPackages [warp-python]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-18 16:35:49] WARNING root fetch - processPackages [fighting-sound]: Skipping, unable to determine old version
+[2024-05-18 16:35:49] INFO root fetch - main [MainThread]: End processing [fighting-sound] error
+[2024-05-18 16:35:49] INFO root fetch - processPackages [clusterfun]: New version: [0.3.3a7] Old Version: [0.3.1a7]
+[2024-05-18 16:35:49] INFO root fetch - processPackages [knowledge-graph-maker]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 16:35:49] WARNING root fetch - processPackages [periaptsz]: Skipping, unable to determine old version
+[2024-05-18 16:35:49] INFO root fetch - main [MainThread]: End processing [periaptsz] error
+[2024-05-18 16:35:49] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/d6/4e/4597becfd9e08812f1ee1baa897c73af23dcb00a0b4d7a58b56ba6dc56b8/warp_python-1.1.1.tar.gz
+[2024-05-18 16:35:49] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/af/db/1035be0f4c2000187ba9bd06c48c24d0ab49d25e516e77b248be27374ee5/knowledge_graph_maker-0.1.1.tar.gz
+[2024-05-18 16:35:49] INFO root fetch - processPackages [anycrc]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-18 16:35:49] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/8c/0e/3c3d432a3e013834a21b6f8bd05f6ed45bb63051f0fff1e7996762666744/clusterfun-0.3.1a7.tar.gz
+[2024-05-18 16:35:49] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/1a/3b/e69020a2dad4525e2a45c25497e05017ecf9909be1365716c57b06c40467/warp_python-1.1.2.tar.gz
+[2024-05-18 16:35:49] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/39/a3/59156b257464930588eb9e8a33c3cf0637fc493f79aa25612baef929aabe/knowledge_graph_maker-0.1.2.tar.gz
+[2024-05-18 16:35:49] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/60/f8/4a5d0a737a44ac38ab795b18962368e889218c8e98cf97e5f8ca411d0bd3/anycrc-0.7.0.tar.gz
+[2024-05-18 16:35:49] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 16:35:49] INFO root fetch - processPackages [knowledge-graph-maker]: executing diffoscope
+[2024-05-18 16:35:49] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.1.1.tar.gz tmp/warp_python-1.1.2.tar.gz --markdown 20240518/w/warp-python/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-18 16:35:49] INFO root fetch - processPackages [knowledge-graph-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge_graph_maker-0.1.1.tar.gz tmp/knowledge_graph_maker-0.1.2.tar.gz --markdown 20240518/k/knowledge-graph-maker/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 16:35:50] INFO root fetch - processPackages [clusterfun]: Downloading https://files.pythonhosted.org/packages/b8/98/716cc1e2a17611ab8acc9c4ee37ce277a7f4c94119ff697af2e38b17acca/clusterfun-0.3.3a7.tar.gz
+[2024-05-18 16:35:50] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/4e/a2/e4031ac8d4267a3886d46fb14aa71b35159f5823078175666573d6999550/anycrc-0.7.1-cp310-cp310-macosx_11_0_arm64.whl
+[2024-05-18 16:35:50] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.1.1.tar.gz]
+[2024-05-18 16:35:50] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.1.2.tar.gz]
+[2024-05-18 16:35:50] INFO root fetch - main [MainThread]: End processing [knowledge-graph-maker]: success
+[2024-05-18 16:35:50] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.1.1.tar.gz]
+[2024-05-18 16:35:50] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.1.2.tar.gz]
+[2024-05-18 16:35:50] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 16:35:50] INFO root fetch - processPackages [anycrc]: executing diffoscope
+[2024-05-18 16:35:50] INFO root fetch - processPackages [anycrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycrc-0.7.0.tar.gz tmp/anycrc-0.7.1-cp310-cp310-macosx_11_0_arm64.whl.zip --markdown 20240518/a/anycrc/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-18 16:35:50] INFO root fetch - processPackages [clusterfun]: executing diffoscope
+[2024-05-18 16:35:50] INFO root fetch - processPackages [clusterfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clusterfun-0.3.1a7.tar.gz tmp/clusterfun-0.3.3a7.tar.gz --markdown 20240518/c/clusterfun/0.3.1a7-0.3.3a7/README.md --exclude *.pyd
+[2024-05-18 16:35:50] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.7.0.tar.gz]
+[2024-05-18 16:35:50] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.7.1-cp310-cp310-macosx_11_0_arm64.whl.zip]
+[2024-05-18 16:35:50] INFO root fetch - main [MainThread]: End processing [anycrc]: success
+[2024-05-18 16:35:51] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.1a7.tar.gz]
+[2024-05-18 16:35:51] INFO root fetch - processPackages [clusterfun]: Remove: archive file [/home/abi/fetcher/tmp/clusterfun-0.3.3a7.tar.gz]
+[2024-05-18 16:35:51] INFO root fetch - main [MainThread]: End processing [clusterfun]: success
+[2024-05-18 16:35:51] INFO root fetch - main [MainThread]: Store serial: [23268458]
