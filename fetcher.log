@@ -10211,3 +10211,27 @@
 [2024-05-18 07:54:30] INFO root fetch - processPackages [poocr]: Remove: archive file [/home/abi/fetcher/tmp/poocr-0.1.9.tar.gz]
 [2024-05-18 07:54:30] INFO root fetch - main [MainThread]: End processing [poocr]: success
 [2024-05-18 07:54:30] INFO root fetch - main [MainThread]: Store serial: [23265099]
+[2024-05-18 07:56:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265099]
+[2024-05-18 07:56:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 07:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xplainable-client
+[2024-05-18 07:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dscdk.apigateway
+[2024-05-18 07:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: runtimepy
+[2024-05-18 07:56:39] INFO root fetch - processPackages [xplainable-client]: New version: [1.2.4.post3] Old Version: [1.2.4.post2]
+[2024-05-18 07:56:39] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/17/65/1b3340976e9e7b290793fbf24bd3216ffaa7d72747c3e6092ca291c20098/xplainable_client-1.2.4.post2.tar.gz
+[2024-05-18 07:56:39] WARNING root fetch - processPackages [dscdk.apigateway]: Skipping, unable to determine old version
+[2024-05-18 07:56:39] INFO root fetch - main [MainThread]: End processing [dscdk.apigateway] error
+[2024-05-18 07:56:39] INFO root fetch - processPackages [runtimepy]: New version: [4.4.6] Old Version: [4.4.5]
+[2024-05-18 07:56:39] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/70/47/c74a6cd56248d935d9065023497e8be6663d8e6f7ea945af081e6c663a56/runtimepy-4.4.5.tar.gz
+[2024-05-18 07:56:39] INFO root fetch - processPackages [xplainable-client]: Downloading https://files.pythonhosted.org/packages/08/61/481812ba202acdcc36950e8c5f2f1d652f989ef49d7b2528c836d5e01bd5/xplainable_client-1.2.4.post3.tar.gz
+[2024-05-18 07:56:39] INFO root fetch - processPackages [xplainable-client]: executing diffoscope
+[2024-05-18 07:56:39] INFO root fetch - processPackages [xplainable-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xplainable_client-1.2.4.post2.tar.gz tmp/xplainable_client-1.2.4.post3.tar.gz --markdown 20240518/x/xplainable-client/1.2.4.post2-1.2.4.post3/README.md --exclude *.pyd
+[2024-05-18 07:56:39] INFO root fetch - processPackages [runtimepy]: Downloading https://files.pythonhosted.org/packages/64/cc/9a62baf839cd0d94dfa50d559246b0c945d6f662f9c7f72d9d5d3dbdc1b5/runtimepy-4.4.6.tar.gz
+[2024-05-18 07:56:39] INFO root fetch - processPackages [runtimepy]: executing diffoscope
+[2024-05-18 07:56:39] INFO root fetch - processPackages [runtimepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtimepy-4.4.5.tar.gz tmp/runtimepy-4.4.6.tar.gz --markdown 20240518/r/runtimepy/4.4.5-4.4.6/README.md --exclude *.pyd
+[2024-05-18 07:56:40] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable_client-1.2.4.post2.tar.gz]
+[2024-05-18 07:56:40] INFO root fetch - processPackages [xplainable-client]: Remove: archive file [/home/abi/fetcher/tmp/xplainable_client-1.2.4.post3.tar.gz]
+[2024-05-18 07:56:40] INFO root fetch - main [MainThread]: End processing [xplainable-client]: success
+[2024-05-18 07:56:41] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.4.5.tar.gz]
+[2024-05-18 07:56:41] INFO root fetch - processPackages [runtimepy]: Remove: archive file [/home/abi/fetcher/tmp/runtimepy-4.4.6.tar.gz]
+[2024-05-18 07:56:41] INFO root fetch - main [MainThread]: End processing [runtimepy]: success
+[2024-05-18 07:56:41] INFO root fetch - main [MainThread]: Store serial: [23265111]
