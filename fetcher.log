@@ -14535,3 +14535,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:55:51] INFO root fetch - processPackages [pkgcheck]: Remove: archive file [/home/abi/fetcher/tmp/pkgcheck-0.9.7.tar.gz]
 [2024-05-18 13:55:51] INFO root fetch - main [MainThread]: End processing [pkgcheck]: success
 [2024-05-18 13:55:51] INFO root fetch - main [MainThread]: Store serial: [23267443]
+[2024-05-18 13:57:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267443]
+[2024-05-18 13:58:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 13:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: laemodipodaz
+[2024-05-18 13:58:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sixtracktools
+[2024-05-18 13:58:00] WARNING root fetch - processPackages [laemodipodaz]: Skipping, unable to determine old version
+[2024-05-18 13:58:00] INFO root fetch - main [MainThread]: End processing [laemodipodaz] error
+[2024-05-18 13:58:00] INFO root fetch - processPackages [sixtracktools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 13:58:00] INFO root fetch - processPackages [sixtracktools]: Downloading https://files.pythonhosted.org/packages/88/1b/f257e1b72ec0ba0b4573b4b12baf2b32beade2393b7ff3ad555230550c92/sixtracktools-0.0.8.tar.gz
+[2024-05-18 13:58:01] INFO root fetch - processPackages [sixtracktools]: Downloading https://files.pythonhosted.org/packages/0c/6c/eb9e50eea041aef51d888cb87148fad6991930c4ffbd148255c19d7d9559/sixtracktools-0.0.9.tar.gz
+[2024-05-18 13:58:01] INFO root fetch - processPackages [sixtracktools]: executing diffoscope
+[2024-05-18 13:58:01] INFO root fetch - processPackages [sixtracktools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sixtracktools-0.0.8.tar.gz tmp/sixtracktools-0.0.9.tar.gz --markdown 20240518/s/sixtracktools/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 13:58:01] INFO root fetch - processPackages [sixtracktools]: Remove: archive file [/home/abi/fetcher/tmp/sixtracktools-0.0.8.tar.gz]
+[2024-05-18 13:58:01] INFO root fetch - processPackages [sixtracktools]: Remove: archive file [/home/abi/fetcher/tmp/sixtracktools-0.0.9.tar.gz]
+[2024-05-18 13:58:01] INFO root fetch - main [MainThread]: End processing [sixtracktools]: success
+[2024-05-18 13:58:01] INFO root fetch - main [MainThread]: Store serial: [23267452]
