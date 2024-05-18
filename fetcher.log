@@ -20104,3 +20104,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:39:47] INFO root fetch - processPackages [bismuthsdk]: Remove: archive file [/home/abi/fetcher/tmp/bismuthsdk-0.1.9.tar.gz]
 [2024-05-18 20:39:47] INFO root fetch - main [MainThread]: End processing [bismuthsdk]: success
 [2024-05-18 20:39:47] INFO root fetch - main [MainThread]: Store serial: [23270224]
+[2024-05-18 20:41:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270224]
+[2024-05-18 20:41:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-mail-quoted-reply
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NTTS
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: music-brainz-api-micro
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: handlebars
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chippyz
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-base-tier-validation-report
+[2024-05-18 20:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: audio-analysis-lib
+[2024-05-18 20:41:57] INFO root fetch - processPackages [music-brainz-api-micro]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 20:41:57] WARNING root fetch - processPackages [audio-analysis-lib]: Skipping, unable to determine old version
+[2024-05-18 20:41:57] INFO root fetch - main [MainThread]: End processing [audio-analysis-lib] error
+[2024-05-18 20:41:57] INFO root fetch - processPackages [music-brainz-api-micro]: Downloading https://files.pythonhosted.org/packages/d2/b1/93acc182ce23962148fd6ae84be0f73115385f056efb6d7670878b00321b/music_brainz_api_micro-0.1.5.tar.gz
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: New version: [16.0.1.0.2] Old Version: [16.0.1.0.1]
+[2024-05-18 20:41:57] WARNING root fetch - processPackages [NTTS]: Skipping, unable to determine old version
+[2024-05-18 20:41:57] INFO root fetch - main [MainThread]: End processing [NTTS] error
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: New version: [16.0.1.0.1.2] Old Version: [15.0.1.0.1.3]
+[2024-05-18 20:41:57] WARNING root fetch - processPackages [handlebars]: Skipping, unable to determine old version
+[2024-05-18 20:41:57] INFO root fetch - main [MainThread]: End processing [handlebars] error
+[2024-05-18 20:41:57] WARNING root fetch - processPackages [chippyz]: Skipping, unable to determine old version
+[2024-05-18 20:41:57] INFO root fetch - main [MainThread]: End processing [chippyz] error
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Downloading https://files.pythonhosted.org/packages/1d/90/b11311ef6ef7f0c49182ef64a299fda912dd346d5b3478af10b5a5132bda/odoo_addon_mail_quoted_reply-16.0.1.0.1-py3-none-any.whl
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: Downloading https://files.pythonhosted.org/packages/9e/82/e58f9fb55b3747bc8f43b8aaa54ebcad9e5ec5cd87741e1451974c4b4c78/odoo_addon_base_tier_validation_report-15.0.1.0.1.3-py3-none-any.whl
+[2024-05-18 20:41:57] INFO root fetch - processPackages [music-brainz-api-micro]: Downloading https://files.pythonhosted.org/packages/9e/0c/474db4a350c380b8eb3ea0793c0d41d82ebe20d6329a677d4e9abddf1ccd/music_brainz_api_micro-0.1.6.tar.gz
+[2024-05-18 20:41:57] INFO root fetch - processPackages [music-brainz-api-micro]: executing diffoscope
+[2024-05-18 20:41:57] INFO root fetch - processPackages [music-brainz-api-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music_brainz_api_micro-0.1.5.tar.gz tmp/music_brainz_api_micro-0.1.6.tar.gz --markdown 20240518/m/music-brainz-api-micro/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: Downloading https://files.pythonhosted.org/packages/ac/d4/2e7ac3949d26bf2300a1bd7bc03afd28b5c1400bfd336d25369dabb0bfd7/odoo_addon_base_tier_validation_report-16.0.1.0.1.2-py3-none-any.whl
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Downloading https://files.pythonhosted.org/packages/ff/55/8fdb4575dc353af7f5b787858b8b73e645a21e4515b1e4e0abbe7e3c3261/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: executing diffoscope
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_tier_validation_report-15.0.1.0.1.3-py3-none-any.whl.zip tmp/odoo_addon_base_tier_validation_report-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-base-tier-validation-report/15.0.1.0.1.3-16.0.1.0.1.2/README.md --exclude *.pyd
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: executing diffoscope
+[2024-05-18 20:41:57] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_mail_quoted_reply-16.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-mail-quoted-reply/16.0.1.0.1-16.0.1.0.2/README.md --exclude *.pyd
+[2024-05-18 20:41:58] INFO root fetch - processPackages [music-brainz-api-micro]: Remove: archive file [/home/abi/fetcher/tmp/music_brainz_api_micro-0.1.5.tar.gz]
+[2024-05-18 20:41:58] INFO root fetch - processPackages [music-brainz-api-micro]: Remove: archive file [/home/abi/fetcher/tmp/music_brainz_api_micro-0.1.6.tar.gz]
+[2024-05-18 20:41:58] INFO root fetch - main [MainThread]: End processing [music-brainz-api-micro]: success
+[2024-05-18 20:41:58] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation_report-15.0.1.0.1.3-py3-none-any.whl.zip]
+[2024-05-18 20:41:58] INFO root fetch - processPackages [odoo-addon-base-tier-validation-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_tier_validation_report-16.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-05-18 20:41:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-tier-validation-report]: success
+[2024-05-18 20:41:58] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_quoted_reply-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 20:41:58] INFO root fetch - processPackages [odoo-addon-mail-quoted-reply]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mail_quoted_reply-16.0.1.0.2-py3-none-any.whl.zip]
+[2024-05-18 20:41:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-mail-quoted-reply]: success
+[2024-05-18 20:41:58] INFO root fetch - main [MainThread]: Store serial: [23270246]
