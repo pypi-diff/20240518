@@ -10306,3 +10306,40 @@
 [2024-05-18 08:03:11] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.6.tar.gz]
 [2024-05-18 08:03:11] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
 [2024-05-18 08:03:11] INFO root fetch - main [MainThread]: Store serial: [23265147]
+[2024-05-18 08:05:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265147]
+[2024-05-18 08:05:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 08:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-queue-job
+[2024-05-18 08:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logtools-vrb
+[2024-05-18 08:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: logtools-vrb
+[2024-05-18 08:05:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quantplay
+[2024-05-18 08:05:21] INFO root fetch - processPackages [quantplay]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-18 08:05:21] INFO root fetch - processPackages [logtools-vrb]: New version: [0.8.0] Old Version: [0.0.1]
+[2024-05-18 08:05:21] INFO root fetch - processPackages [logtools-vrb]: New version: [0.8.0] Old Version: [0.0.1]
+[2024-05-18 08:05:21] INFO root fetch - processPackages [odoo14-addon-queue-job]: New version: [14.0.3.5.5.dev8] Old Version: [14.0.3.5.5.dev7]
+[2024-05-18 08:05:21] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/71/23/85a802491d69beb714dd8831f123c9440301eb94caca43392e50be63fff6/quantplay-1.5.8.tar.gz
+[2024-05-18 08:05:21] INFO root fetch - processPackages [logtools-vrb]: Downloading https://files.pythonhosted.org/packages/16/23/2eaf22f4784caa464a6f415b6384ca1a4580f37f631269748b4c99d49911/logtools_vrb-0.0.1.tar.gz
+[2024-05-18 08:05:21] INFO root fetch - processPackages [logtools-vrb]: Downloading https://files.pythonhosted.org/packages/16/23/2eaf22f4784caa464a6f415b6384ca1a4580f37f631269748b4c99d49911/logtools_vrb-0.0.1.tar.gz
+[2024-05-18 08:05:21] INFO root fetch - processPackages [odoo14-addon-queue-job]: Downloading https://files.pythonhosted.org/packages/13/06/ccb1789f936720fb9abfbfc3866a2dc24555d9156be3db84537b85c5be19/odoo14_addon_queue_job-14.0.3.5.5.dev7-py3-none-any.whl
+[2024-05-18 08:05:21] INFO root fetch - processPackages [quantplay]: Downloading https://files.pythonhosted.org/packages/29/44/bc619a0a4e2ecba52ee7f6eac8f51f600a1d90bb67f88a28638d7d9f9c62/quantplay-1.5.9.tar.gz
+[2024-05-18 08:05:22] INFO root fetch - processPackages [quantplay]: executing diffoscope
+[2024-05-18 08:05:22] INFO root fetch - processPackages [quantplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantplay-1.5.8.tar.gz tmp/quantplay-1.5.9.tar.gz --markdown 20240518/q/quantplay/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: Downloading https://files.pythonhosted.org/packages/c1/c6/1e0ad645c43f9db241d5d2f7b161db377f082fd0680500df952e39f0e66f/logtools_vrb-0.8.0.tar.gz
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: Downloading https://files.pythonhosted.org/packages/c1/c6/1e0ad645c43f9db241d5d2f7b161db377f082fd0680500df952e39f0e66f/logtools_vrb-0.8.0.tar.gz
+[2024-05-18 08:05:22] INFO root fetch - processPackages [odoo14-addon-queue-job]: Downloading https://files.pythonhosted.org/packages/8a/f7/e471497d682fee8ff51b8687848c863d06ca2c2f564226247248f12bf1b0/odoo14_addon_queue_job-14.0.3.5.5.dev8-py3-none-any.whl
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: executing diffoscope
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: executing diffoscope
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logtools_vrb-0.0.1.tar.gz tmp/logtools_vrb-0.8.0.tar.gz --markdown 20240518/l/logtools-vrb/0.0.1-0.8.0/README.md --exclude *.pyd
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logtools_vrb-0.0.1.tar.gz tmp/logtools_vrb-0.8.0.tar.gz --markdown 20240518/l/logtools-vrb/0.0.1-0.8.0/README.md --exclude *.pyd
+[2024-05-18 08:05:22] INFO root fetch - processPackages [odoo14-addon-queue-job]: executing diffoscope
+[2024-05-18 08:05:22] INFO root fetch - processPackages [odoo14-addon-queue-job]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_queue_job-14.0.3.5.5.dev7-py3-none-any.whl.zip tmp/odoo14_addon_queue_job-14.0.3.5.5.dev8-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-queue-job/14.0.3.5.5.dev7-14.0.3.5.5.dev8/README.md --exclude *.pyd
+[2024-05-18 08:05:22] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.8.tar.gz]
+[2024-05-18 08:05:22] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.9.tar.gz]
+[2024-05-18 08:05:22] INFO root fetch - main [MainThread]: End processing [quantplay]: success
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: Remove: archive file [/home/abi/fetcher/tmp/logtools_vrb-0.0.1.tar.gz]
+[2024-05-18 08:05:22] INFO root fetch - processPackages [logtools-vrb]: Remove: archive file [/home/abi/fetcher/tmp/logtools_vrb-0.8.0.tar.gz]
+[2024-05-18 08:05:22] INFO root fetch - main [MainThread]: End processing [logtools-vrb]: success
+[2024-05-18 08:05:22] INFO root fetch - main [MainThread]: End processing [logtools-vrb]: success
+[2024-05-18 08:05:23] INFO root fetch - processPackages [odoo14-addon-queue-job]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_queue_job-14.0.3.5.5.dev7-py3-none-any.whl.zip]
+[2024-05-18 08:05:23] INFO root fetch - processPackages [odoo14-addon-queue-job]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_queue_job-14.0.3.5.5.dev8-py3-none-any.whl.zip]
+[2024-05-18 08:05:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-queue-job]: success
+[2024-05-18 08:05:23] INFO root fetch - main [MainThread]: Store serial: [23265160]
