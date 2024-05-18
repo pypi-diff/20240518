@@ -17516,3 +17516,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:46:30] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.39.0.dev20240516.tar.gz]
 [2024-05-18 17:46:30] INFO root fetch - main [MainThread]: End processing [nvidia-dali-nightly-cuda110]: success
 [2024-05-18 17:46:30] INFO root fetch - main [MainThread]: Store serial: [23268952]
+[2024-05-18 17:48:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268952]
+[2024-05-18 17:48:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 17:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Shellper
+[2024-05-18 17:48:38] INFO root fetch - processPackages [Shellper]: New version: [0.3.2.3] Old Version: [0.3.2.2]
+[2024-05-18 17:48:38] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/86/d9/93f174fc96463676cfe8dbb923622ac29314371bff7ae52e9281a2cebdf8/shellper-0.3.2.2.tar.gz
+[2024-05-18 17:48:39] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/b3/35/20fd118c47684236c30992888963cb1ac49570176be063877303aa64baed/shellper-0.3.2.3.tar.gz
+[2024-05-18 17:48:39] INFO root fetch - processPackages [Shellper]: executing diffoscope
+[2024-05-18 17:48:39] INFO root fetch - processPackages [Shellper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellper-0.3.2.2.tar.gz tmp/shellper-0.3.2.3.tar.gz --markdown 20240518/S/Shellper/0.3.2.2-0.3.2.3/README.md --exclude *.pyd
+[2024-05-18 17:48:40] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.2.tar.gz]
+[2024-05-18 17:48:40] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.3.tar.gz]
+[2024-05-18 17:48:40] INFO root fetch - main [MainThread]: End processing [Shellper]: success
+[2024-05-18 17:48:40] INFO root fetch - main [MainThread]: Store serial: [23268955]
