@@ -15986,3 +15986,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:54:27] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
 [2024-05-18 15:54:27] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-05-18 15:54:27] INFO root fetch - main [MainThread]: Store serial: [23268220]
+[2024-05-18 15:56:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268220]
+[2024-05-18 15:56:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RNASQLite
+[2024-05-18 15:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gehomesdk
+[2024-05-18 15:56:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cherrygpt
+[2024-05-18 15:56:36] WARNING root fetch - processPackages [RNASQLite]: Skipping, unable to determine old version
+[2024-05-18 15:56:36] INFO root fetch - main [MainThread]: End processing [RNASQLite] error
+[2024-05-18 15:56:36] WARNING root fetch - processPackages [cherrygpt]: Skipping, unable to determine old version
+[2024-05-18 15:56:36] INFO root fetch - main [MainThread]: End processing [cherrygpt] error
+[2024-05-18 15:56:36] INFO root fetch - processPackages [gehomesdk]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-18 15:56:37] INFO root fetch - processPackages [gehomesdk]: Downloading https://files.pythonhosted.org/packages/78/e5/65dceafdeed2a83f4b797c95f5b80947cac4ec3190896167f2cd247dc1a0/gehomesdk-0.5.8.tar.gz
+[2024-05-18 15:56:37] INFO root fetch - processPackages [gehomesdk]: Downloading https://files.pythonhosted.org/packages/5d/14/ca1060e76076aab267e2a6e7dccae7575d443a3075ccc7203d8704e52b3a/gehomesdk-0.5.9.tar.gz
+[2024-05-18 15:56:37] INFO root fetch - processPackages [gehomesdk]: executing diffoscope
+[2024-05-18 15:56:37] INFO root fetch - processPackages [gehomesdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gehomesdk-0.5.8.tar.gz tmp/gehomesdk-0.5.9.tar.gz --markdown 20240518/g/gehomesdk/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-18 15:56:38] INFO root fetch - processPackages [gehomesdk]: Remove: archive file [/home/abi/fetcher/tmp/gehomesdk-0.5.8.tar.gz]
+[2024-05-18 15:56:38] INFO root fetch - processPackages [gehomesdk]: Remove: archive file [/home/abi/fetcher/tmp/gehomesdk-0.5.9.tar.gz]
+[2024-05-18 15:56:38] INFO root fetch - main [MainThread]: End processing [gehomesdk]: success
+[2024-05-18 15:56:38] INFO root fetch - main [MainThread]: Store serial: [23268232]
