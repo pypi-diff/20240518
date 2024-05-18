@@ -11960,3 +11960,27 @@
 [2024-05-18 10:30:34] INFO root fetch - processPackages [openagents-node-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openagents_node_sdk-0.3.5.tar.gz]
 [2024-05-18 10:30:34] INFO root fetch - main [MainThread]: End processing [openagents-node-sdk]: success
 [2024-05-18 10:30:34] INFO root fetch - main [MainThread]: Store serial: [23266005]
+[2024-05-18 10:32:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266005]
+[2024-05-18 10:32:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 10:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geotaxesz
+[2024-05-18 10:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sts-lib
+[2024-05-18 10:32:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-cli-tool
+[2024-05-18 10:32:43] INFO root fetch - processPackages [my-cli-tool]: New version: [0.3] Old Version: [0.2]
+[2024-05-18 10:32:43] WARNING root fetch - processPackages [geotaxesz]: Skipping, unable to determine old version
+[2024-05-18 10:32:43] INFO root fetch - main [MainThread]: End processing [geotaxesz] error
+[2024-05-18 10:32:43] INFO root fetch - processPackages [sts-lib]: New version: [0.32.0] Old Version: [0.31.2]
+[2024-05-18 10:32:43] INFO root fetch - processPackages [my-cli-tool]: Downloading https://files.pythonhosted.org/packages/62/73/b666b024db4f782ddca85d07f2557c01845b1498d32b24e9d9e52ca6e55b/my_cli_tool-0.2.tar.gz
+[2024-05-18 10:32:43] INFO root fetch - processPackages [sts-lib]: Downloading https://files.pythonhosted.org/packages/67/68/8cc33d2f433c6c4943753746a88d254524ce687ffa621bbb437b5be32389/sts_lib-0.31.2.tar.gz
+[2024-05-18 10:32:43] INFO root fetch - processPackages [my-cli-tool]: Downloading https://files.pythonhosted.org/packages/1a/aa/47c90eb7ecdffa25e3523c8e6a7468f3891e63b432d8442c0f433289cb40/my_cli_tool-0.3.tar.gz
+[2024-05-18 10:32:43] INFO root fetch - processPackages [sts-lib]: Downloading https://files.pythonhosted.org/packages/10/89/652bfeadec63f42a519c9af15d240ed4f8ec967174cfca8c39c92ebbee91/sts_lib-0.32.0.tar.gz
+[2024-05-18 10:32:43] INFO root fetch - processPackages [my-cli-tool]: executing diffoscope
+[2024-05-18 10:32:43] INFO root fetch - processPackages [my-cli-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_cli_tool-0.2.tar.gz tmp/my_cli_tool-0.3.tar.gz --markdown 20240518/m/my-cli-tool/0.2-0.3/README.md --exclude *.pyd
+[2024-05-18 10:32:44] INFO root fetch - processPackages [sts-lib]: executing diffoscope
+[2024-05-18 10:32:44] INFO root fetch - processPackages [sts-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sts_lib-0.31.2.tar.gz tmp/sts_lib-0.32.0.tar.gz --markdown 20240518/s/sts-lib/0.31.2-0.32.0/README.md --exclude *.pyd
+[2024-05-18 10:32:44] INFO root fetch - processPackages [my-cli-tool]: Remove: archive file [/home/abi/fetcher/tmp/my_cli_tool-0.2.tar.gz]
+[2024-05-18 10:32:44] INFO root fetch - processPackages [my-cli-tool]: Remove: archive file [/home/abi/fetcher/tmp/my_cli_tool-0.3.tar.gz]
+[2024-05-18 10:32:44] INFO root fetch - main [MainThread]: End processing [my-cli-tool]: success
+[2024-05-18 10:32:44] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.31.2.tar.gz]
+[2024-05-18 10:32:44] INFO root fetch - processPackages [sts-lib]: Remove: archive file [/home/abi/fetcher/tmp/sts_lib-0.32.0.tar.gz]
+[2024-05-18 10:32:44] INFO root fetch - main [MainThread]: End processing [sts-lib]: success
+[2024-05-18 10:32:44] INFO root fetch - main [MainThread]: Store serial: [23266016]
