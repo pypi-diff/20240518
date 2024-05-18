@@ -1850,3 +1850,33 @@
 [2024-05-18 02:00:13] INFO root fetch - processPackages [elfobs]: Remove: archive file [/home/abi/fetcher/tmp/elfobs-0.1.3.tar.gz]
 [2024-05-18 02:00:13] INFO root fetch - main [MainThread]: End processing [elfobs]: success
 [2024-05-18 02:00:13] INFO root fetch - main [MainThread]: Store serial: [23262037]
+[2024-05-18 02:02:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262037]
+[2024-05-18 02:02:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 02:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moesifapi
+[2024-05-18 02:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datafog
+[2024-05-18 02:02:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celery-debug
+[2024-05-18 02:02:23] INFO root fetch - processPackages [celery-debug]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 02:02:23] INFO root fetch - processPackages [moesifapi]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-05-18 02:02:23] INFO root fetch - processPackages [moesifapi]: Downloading https://files.pythonhosted.org/packages/1b/16/d1e679c703c24e75e0ee21b6821456b664436fead14e9037102ed9168850/moesifapi-1.4.6.tar.gz
+[2024-05-18 02:02:23] INFO root fetch - processPackages [datafog]: New version: [3.2.1b1] Old Version: [3.2.0b9]
+[2024-05-18 02:02:23] INFO root fetch - processPackages [celery-debug]: Downloading https://files.pythonhosted.org/packages/84/7a/23853b4e6debd89507b07b24838c06a8cceb0493f1294a3ea14a6ff49faf/celery-debug-0.1.0.tar.gz
+[2024-05-18 02:02:23] INFO root fetch - processPackages [datafog]: Downloading https://files.pythonhosted.org/packages/0b/72/4fd52108a28c8691cc83e7f5f41afc81a1e4f991e8dc1175672350b662d7/datafog-3.2.0b9.tar.gz
+[2024-05-18 02:02:23] INFO root fetch - processPackages [moesifapi]: Downloading https://files.pythonhosted.org/packages/aa/55/2e2e6f48b467d652037a1c412cacc97e7e715cf52e77e21533f984f4e800/moesifapi-1.4.7.tar.gz
+[2024-05-18 02:02:24] INFO root fetch - processPackages [celery-debug]: Downloading https://files.pythonhosted.org/packages/a2/06/2587e9973202bb58c91a67aae42cee7c3dfbbd00781c6f36707f83e92656/celery-debug-0.1.1.tar.gz
+[2024-05-18 02:02:24] INFO root fetch - processPackages [moesifapi]: executing diffoscope
+[2024-05-18 02:02:24] INFO root fetch - processPackages [moesifapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moesifapi-1.4.6.tar.gz tmp/moesifapi-1.4.7.tar.gz --markdown 20240518/m/moesifapi/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-05-18 02:02:24] INFO root fetch - processPackages [datafog]: Downloading https://files.pythonhosted.org/packages/5c/54/3bbe9bc2b70c6263319d94700c33bc1779652a380bf314a93708d98f74c4/datafog-3.2.1b1.tar.gz
+[2024-05-18 02:02:24] INFO root fetch - processPackages [celery-debug]: executing diffoscope
+[2024-05-18 02:02:24] INFO root fetch - processPackages [celery-debug]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celery-debug-0.1.0.tar.gz tmp/celery-debug-0.1.1.tar.gz --markdown 20240518/c/celery-debug/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 02:02:24] INFO root fetch - processPackages [datafog]: executing diffoscope
+[2024-05-18 02:02:24] INFO root fetch - processPackages [datafog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafog-3.2.0b9.tar.gz tmp/datafog-3.2.1b1.tar.gz --markdown 20240518/d/datafog/3.2.0b9-3.2.1b1/README.md --exclude *.pyd
+[2024-05-18 02:02:24] INFO root fetch - processPackages [celery-debug]: Remove: archive file [/home/abi/fetcher/tmp/celery-debug-0.1.0.tar.gz]
+[2024-05-18 02:02:24] INFO root fetch - processPackages [celery-debug]: Remove: archive file [/home/abi/fetcher/tmp/celery-debug-0.1.1.tar.gz]
+[2024-05-18 02:02:24] INFO root fetch - main [MainThread]: End processing [celery-debug]: success
+[2024-05-18 02:02:24] INFO root fetch - processPackages [moesifapi]: Remove: archive file [/home/abi/fetcher/tmp/moesifapi-1.4.6.tar.gz]
+[2024-05-18 02:02:24] INFO root fetch - processPackages [moesifapi]: Remove: archive file [/home/abi/fetcher/tmp/moesifapi-1.4.7.tar.gz]
+[2024-05-18 02:02:24] INFO root fetch - main [MainThread]: End processing [moesifapi]: success
+[2024-05-18 02:02:24] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-3.2.0b9.tar.gz]
+[2024-05-18 02:02:24] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-3.2.1b1.tar.gz]
+[2024-05-18 02:02:24] INFO root fetch - main [MainThread]: End processing [datafog]: success
+[2024-05-18 02:02:24] INFO root fetch - main [MainThread]: Store serial: [23262047]
