@@ -18725,3 +18725,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:10:27] INFO root fetch - processPackages [rnspure]: Remove: archive file [/home/abi/fetcher/tmp/rnspure-0.7.5.tar.gz]
 [2024-05-18 19:10:27] INFO root fetch - main [MainThread]: End processing [rnspure]: success
 [2024-05-18 19:10:27] INFO root fetch - main [MainThread]: Store serial: [23269536]
+[2024-05-18 19:12:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269536]
+[2024-05-18 19:12:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: remodels
+[2024-05-18 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: warp-python
+[2024-05-18 19:12:36] INFO root fetch - processPackages [warp-python]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-18 19:12:36] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-18 19:12:36] INFO root fetch - processPackages [remodels]: New version: [1.0.0] Old Version: [0.2.0]
+[2024-05-18 19:12:37] INFO root fetch - processPackages [remodels]: Downloading https://files.pythonhosted.org/packages/7e/2f/39b54e3b30a63ea2294473c3f73587297b8b61416bc667438f737bde4f2a/remodels-0.2.0.tar.gz
+[2024-05-18 19:12:37] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/79/d6/9261521110c41c899ba586c14f59cda7d7020f83001a463cf90aa12040b9/warp_python-1.2.9.tar.gz
+[2024-05-18 19:12:37] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 19:12:37] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.8.tar.gz tmp/warp_python-1.2.9.tar.gz --markdown 20240518/w/warp-python/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-18 19:12:37] INFO root fetch - processPackages [remodels]: Downloading https://files.pythonhosted.org/packages/95/23/b35468a2d68d6ec4057dee1d11add11047e5a50d85cc5f8b6c08d9150085/remodels-1.0.0.tar.gz
+[2024-05-18 19:12:37] INFO root fetch - processPackages [remodels]: executing diffoscope
+[2024-05-18 19:12:37] INFO root fetch - processPackages [remodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/remodels-0.2.0.tar.gz tmp/remodels-1.0.0.tar.gz --markdown 20240518/r/remodels/0.2.0-1.0.0/README.md --exclude *.pyd
+[2024-05-18 19:12:37] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-18 19:12:37] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
+[2024-05-18 19:12:37] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 19:12:38] INFO root fetch - processPackages [remodels]: Remove: archive file [/home/abi/fetcher/tmp/remodels-0.2.0.tar.gz]
+[2024-05-18 19:12:38] INFO root fetch - processPackages [remodels]: Remove: archive file [/home/abi/fetcher/tmp/remodels-1.0.0.tar.gz]
+[2024-05-18 19:12:38] INFO root fetch - main [MainThread]: End processing [remodels]: success
+[2024-05-18 19:12:38] INFO root fetch - main [MainThread]: Store serial: [23269543]
