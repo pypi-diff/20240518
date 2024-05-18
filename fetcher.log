@@ -6854,3 +6854,33 @@
 [2024-05-18 03:39:16] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-05-18 03:39:16] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-05-18 03:39:16] INFO root fetch - main [MainThread]: Store serial: [23263794]
+[2024-05-18 03:41:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263794]
+[2024-05-18 03:41:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 03:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-05-18 03:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PKDevTools
+[2024-05-18 03:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Shellper
+[2024-05-18 03:41:26] INFO root fetch - processPackages [Shellper]: New version: [0.3.1] Old Version: [0.3]
+[2024-05-18 03:41:26] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.246] Old Version: [0.1.245]
+[2024-05-18 03:41:26] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240518.122] Old Version: [0.13.20240518.121]
+[2024-05-18 03:41:26] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/1a/95/d059633487107229b298ae326f86307720219be917f2792cf0e2d27b019f/shellper-0.3.tar.gz
+[2024-05-18 03:41:26] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/af/d1/815b0b0e555bfb34cda82a51f214a07a2ac82439c094068b7572628a0d30/ansar_connect-0.1.245.tar.gz
+[2024-05-18 03:41:26] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/84/c6/5727344fca93ec8f390be0359c58c6fb941d433fa17b97ce1458ba91470d/PKDevTools-0.13.20240518.121.tar.gz
+[2024-05-18 03:41:27] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/56/d6/92ba8463382900212967c2f269d9731da28427549202b21d85de46e25b18/shellper-0.3.1.tar.gz
+[2024-05-18 03:41:27] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/55/c8/acdc0105bf2cf3bbc5bdd8233aaf046d17467b3d24f2b0dd2cac2b208726/ansar_connect-0.1.246.tar.gz
+[2024-05-18 03:41:27] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/71/3a/a88f2af44c115cb1a30fe659ebd57b50c577a323b2806114ef1e12a3d1cb/PKDevTools-0.13.20240518.122.tar.gz
+[2024-05-18 03:41:27] INFO root fetch - processPackages [Shellper]: executing diffoscope
+[2024-05-18 03:41:27] INFO root fetch - processPackages [Shellper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellper-0.3.tar.gz tmp/shellper-0.3.1.tar.gz --markdown 20240518/S/Shellper/0.3-0.3.1/README.md --exclude *.pyd
+[2024-05-18 03:41:27] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-05-18 03:41:27] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar_connect-0.1.245.tar.gz tmp/ansar_connect-0.1.246.tar.gz --markdown 20240518/a/ansar-connect/0.1.245-0.1.246/README.md --exclude *.pyd
+[2024-05-18 03:41:27] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-18 03:41:27] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240518.121.tar.gz tmp/PKDevTools-0.13.20240518.122.tar.gz --markdown 20240518/P/PKDevTools/0.13.20240518.121-0.13.20240518.122/README.md --exclude *.pyd
+[2024-05-18 03:41:27] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.tar.gz]
+[2024-05-18 03:41:27] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.1.tar.gz]
+[2024-05-18 03:41:27] INFO root fetch - main [MainThread]: End processing [Shellper]: success
+[2024-05-18 03:41:27] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.245.tar.gz]
+[2024-05-18 03:41:27] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar_connect-0.1.246.tar.gz]
+[2024-05-18 03:41:27] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-05-18 03:41:27] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240518.121.tar.gz]
+[2024-05-18 03:41:27] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240518.122.tar.gz]
+[2024-05-18 03:41:27] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-18 03:41:27] INFO root fetch - main [MainThread]: Store serial: [23263803]
