@@ -20958,3 +20958,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:43:17] INFO root fetch - processPackages [django-cms]: Remove: archive file [/home/abi/fetcher/tmp/django_cms-4.1.1.tar.gz]
 [2024-05-18 21:43:17] INFO root fetch - main [MainThread]: End processing [django-cms]: success
 [2024-05-18 21:43:17] INFO root fetch - main [MainThread]: Store serial: [23270641]
+[2024-05-18 21:45:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270641]
+[2024-05-18 21:45:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-mqtt-framework
+[2024-05-18 21:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEasyDbApi
+[2024-05-18 21:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: app-store-server-library-python-async
+[2024-05-18 21:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otonagai-dl
+[2024-05-18 21:45:27] INFO root fetch - processPackages [otonagai-dl]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-18 21:45:27] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-18 21:45:27] WARNING root fetch - processPackages [app-store-server-library-python-async]: Skipping, unable to determine old version
+[2024-05-18 21:45:27] INFO root fetch - main [MainThread]: End processing [app-store-server-library-python-async] error
+[2024-05-18 21:45:27] WARNING root fetch - processPackages [python-mqtt-framework]: Skipping, unable to determine old version
+[2024-05-18 21:45:27] INFO root fetch - main [MainThread]: End processing [python-mqtt-framework] error
+[2024-05-18 21:45:27] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/70/28/eddca3e9272a88766c0ec345dfc9536bcb1d20629e1514eab7e55c63e686/pyeasydbapi-0.1.4.tar.gz
+[2024-05-18 21:45:27] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/9c/ce/0c6cc005ec8e87d45376b352419076e568566b7c23e53c407aac647fffa3/otonagai_dl-1.0.2.tar.gz
+[2024-05-18 21:45:28] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/23/8f/854e037b2d586945917129e0aa5f7eec01d0597f8fb1ea8d3d2a2a7f70d3/otonagai_dl-1.0.3.tar.gz
+[2024-05-18 21:45:28] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/ee/29/fbd23e131abd8250278dcbda9096cd86fe2b9bf5da0f444da70c5dbb6976/pyeasydbapi-0.1.5.tar.gz
+[2024-05-18 21:45:28] INFO root fetch - processPackages [otonagai-dl]: executing diffoscope
+[2024-05-18 21:45:28] INFO root fetch - processPackages [otonagai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otonagai_dl-1.0.2.tar.gz tmp/otonagai_dl-1.0.3.tar.gz --markdown 20240518/o/otonagai-dl/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-18 21:45:28] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:45:28] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.4.tar.gz tmp/pyeasydbapi-0.1.5.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-18 21:45:28] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.2.tar.gz]
+[2024-05-18 21:45:28] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.3.tar.gz]
+[2024-05-18 21:45:28] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
+[2024-05-18 21:45:28] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.4.tar.gz]
+[2024-05-18 21:45:28] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.5.tar.gz]
+[2024-05-18 21:45:28] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:45:28] INFO root fetch - main [MainThread]: Store serial: [23270656]
