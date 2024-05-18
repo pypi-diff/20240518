@@ -10945,3 +10945,24 @@
 [2024-05-18 08:57:05] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.8.tar.gz]
 [2024-05-18 08:57:05] INFO root fetch - main [MainThread]: End processing [AllFilesReader]: success
 [2024-05-18 08:57:05] INFO root fetch - main [MainThread]: Store serial: [23265549]
+[2024-05-18 08:59:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265549]
+[2024-05-18 08:59:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostkit
+[2024-05-18 08:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pseudovisium
+[2024-05-18 08:59:13] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-18 08:59:13] INFO root fetch - processPackages [Pseudovisium]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 08:59:14] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-18 08:59:14] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/ec/02/4f0ff6ebfecb2857195a25c3ca342a7a1af99e21acd71f8a0f89061491f0/Pseudovisium-0.0.8.tar.gz
+[2024-05-18 08:59:14] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-18 08:59:14] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/6a/7f/032756880a4d5dbead5465d90e6d9ef1046690f858021036f62dfcda246a/Pseudovisium-0.0.9.tar.gz
+[2024-05-18 08:59:14] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-18 08:59:14] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240518/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-18 08:59:14] INFO root fetch - processPackages [Pseudovisium]: executing diffoscope
+[2024-05-18 08:59:14] INFO root fetch - processPackages [Pseudovisium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pseudovisium-0.0.8.tar.gz tmp/Pseudovisium-0.0.9.tar.gz --markdown 20240518/P/Pseudovisium/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 08:59:15] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.8.tar.gz]
+[2024-05-18 08:59:15] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.9.tar.gz]
+[2024-05-18 08:59:15] INFO root fetch - main [MainThread]: End processing [Pseudovisium]: success
+[2024-05-18 08:59:15] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-18 08:59:15] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-18 08:59:15] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-18 08:59:15] INFO root fetch - main [MainThread]: Store serial: [23265554]
