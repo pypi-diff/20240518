@@ -2425,3 +2425,80 @@
 [2024-05-18 02:29:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
 [2024-05-18 02:29:42] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
 [2024-05-18 02:29:42] INFO root fetch - main [MainThread]: Store serial: [23262275]
+[2024-05-18 02:31:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262275]
+[2024-05-18 02:31:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azureml-acft-accelerator
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: azureml-acft-contrib-hf-nlp
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tinyrl
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: landusemix
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bicornuousz
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aeppl-nightly
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pycellmech
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ifcopenshell
+[2024-05-18 02:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PKNSETools
+[2024-05-18 02:31:51] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 02:31:51] INFO root fetch - processPackages [PKNSETools]: New version: [0.1.20240517.110] Old Version: [0.1.20240517.109]
+[2024-05-18 02:31:51] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240517] Old Version: [0.1.5.dev20240516]
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-accelerator]: New version: [47.0.0] Old Version: [0.0.9]
+[2024-05-18 02:31:51] INFO root fetch - processPackages [landusemix]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: New version: [47.0.0] Old Version: [0.0.9]
+[2024-05-18 02:31:51] INFO root fetch - processPackages [tinyrl]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-18 02:31:51] WARNING root fetch - processPackages [bicornuousz]: Skipping, unable to determine old version
+[2024-05-18 02:31:51] INFO root fetch - processPackages [ifcopenshell]: New version: [0.7.0.240518] Old Version: [0.7.0.240423]
+[2024-05-18 02:31:51] WARNING root fetch - processPackages [pycellmech]: Skipping, unable to determine old version
+[2024-05-18 02:31:51] INFO root fetch - main [MainThread]: End processing [bicornuousz] error
+[2024-05-18 02:31:51] INFO root fetch - main [MainThread]: End processing [pycellmech] error
+[2024-05-18 02:31:51] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/b9/d7/ab1a0cd93f6a66571f89c370955aff58ca5eed7902ccc96bd41eaf9f0b52/PKNSETools-0.1.20240517.109.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/27/5e/af4374aa84d39e6e12cbfcd3384b9689a9ccd323cce0cd6b685d901a345b/aeppl_nightly-0.1.5.dev20240516.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: Downloading https://files.pythonhosted.org/packages/3f/53/207e2ef0fc5d44967253be36d79a263cd47893128e4f9c253c01c386828a/azureml_acft_contrib_hf_nlp-0.0.9-py3-none-any.whl
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-accelerator]: Downloading https://files.pythonhosted.org/packages/f4/a3/15bfb45471496789ba0291a4458055542302f2b954414120e64af247a54d/azureml_acft_accelerator-0.0.9-py3-none-any.whl
+[2024-05-18 02:31:51] INFO root fetch - processPackages [landusemix]: Downloading https://files.pythonhosted.org/packages/ed/9d/ac96e77bbb7b25fedbb18bf8ff7bb2d748ea83116ce18bc41f16bfd2e9ea/landusemix-0.0.2.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [tinyrl]: Downloading https://files.pythonhosted.org/packages/4e/6a/b88d0acf6af9d9639823f558a34c494807986e3c79aee22d684aec7ece43/tinyrl-0.4.2.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [ifcopenshell]: Downloading https://files.pythonhosted.org/packages/32/4d/ef265657e6073eb073a7daf3c4a3dd715b8c37d43a570c43769c9ebf78bb/ifcopenshell-0.7.0.240423-py39-none-win_amd64.whl
+[2024-05-18 02:31:51] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/14/1f/d6a911109404212127b67f380d50dbfb7f8003f061a3bc2a9616abf258ac/PKNSETools-0.1.20240517.110.tar.gz
+[2024-05-18 02:31:51] WARNING root fetch - processPackages [ifcopenshell]: Skipping package: exceeds size limit 25134580>=10485760
+[2024-05-18 02:31:51] INFO root fetch - main [MainThread]: End processing [ifcopenshell] error
+[2024-05-18 02:31:51] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/d2/b7/4d4824b887c10df7950d96823e51ff63fdcc48fb6fc9694d7b0f443ef080/aeppl_nightly-0.1.5.dev20240517.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [PKNSETools]: executing diffoscope
+[2024-05-18 02:31:51] INFO root fetch - processPackages [PKNSETools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKNSETools-0.1.20240517.109.tar.gz tmp/PKNSETools-0.1.20240517.110.tar.gz --markdown 20240518/P/PKNSETools/0.1.20240517.109-0.1.20240517.110/README.md --exclude *.pyd
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: Downloading https://files.pythonhosted.org/packages/c7/5d/167b02b9d1427690af58a019ae4e722715160443310a5d19f6b9afb7a8c1/azureml_acft_contrib_hf_nlp-47.0.0-py3-none-any.whl
+[2024-05-18 02:31:51] INFO root fetch - processPackages [landusemix]: Downloading https://files.pythonhosted.org/packages/24/8a/e6416b9cfe37cf7a25c77e5b8817fbf1ed155fd32737e872e4a7187196e7/landusemix-0.0.3.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-accelerator]: Downloading https://files.pythonhosted.org/packages/7c/cb/ca1ef55f8e320a2415f4d8c480d6bde576b4957788f265db8c35e144f97a/azureml_acft_accelerator-47.0.0-py3-none-any.whl
+[2024-05-18 02:31:51] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-18 02:31:51] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240516.tar.gz tmp/aeppl_nightly-0.1.5.dev20240517.tar.gz --markdown 20240518/a/aeppl-nightly/0.1.5.dev20240516-0.1.5.dev20240517/README.md --exclude *.pyd
+[2024-05-18 02:31:51] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [tinyrl]: Downloading https://files.pythonhosted.org/packages/2b/81/794b3f5fef25e6600829d5854fa051d5c73da302fac5806e7678fd31d903/tinyrl-0.4.3.tar.gz
+[2024-05-18 02:31:51] INFO root fetch - processPackages [landusemix]: executing diffoscope
+[2024-05-18 02:31:51] INFO root fetch - processPackages [landusemix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landusemix-0.0.2.tar.gz tmp/landusemix-0.0.3.tar.gz --markdown 20240518/l/landusemix/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-accelerator]: executing diffoscope
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-accelerator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_acft_accelerator-0.0.9-py3-none-any.whl.zip tmp/azureml_acft_accelerator-47.0.0-py3-none-any.whl.zip --markdown 20240518/a/azureml-acft-accelerator/0.0.9-47.0.0/README.md --exclude *.pyd
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: executing diffoscope
+[2024-05-18 02:31:51] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azureml_acft_contrib_hf_nlp-0.0.9-py3-none-any.whl.zip tmp/azureml_acft_contrib_hf_nlp-47.0.0-py3-none-any.whl.zip --markdown 20240518/a/azureml-acft-contrib-hf-nlp/0.0.9-47.0.0/README.md --exclude *.pyd
+[2024-05-18 02:31:51] INFO root fetch - processPackages [tinyrl]: executing diffoscope
+[2024-05-18 02:31:51] INFO root fetch - processPackages [tinyrl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyrl-0.4.2.tar.gz tmp/tinyrl-0.4.3.tar.gz --markdown 20240518/t/tinyrl/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-18 02:31:52] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-18 02:31:52] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240518/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 02:31:52] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240517.109.tar.gz]
+[2024-05-18 02:31:52] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240517.110.tar.gz]
+[2024-05-18 02:31:52] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
+[2024-05-18 02:31:52] INFO root fetch - processPackages [landusemix]: Remove: archive file [/home/abi/fetcher/tmp/landusemix-0.0.2.tar.gz]
+[2024-05-18 02:31:52] INFO root fetch - processPackages [landusemix]: Remove: archive file [/home/abi/fetcher/tmp/landusemix-0.0.3.tar.gz]
+[2024-05-18 02:31:52] INFO root fetch - main [MainThread]: End processing [landusemix]: success
+[2024-05-18 02:31:52] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240516.tar.gz]
+[2024-05-18 02:31:52] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240517.tar.gz]
+[2024-05-18 02:31:52] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-18 02:31:52] INFO root fetch - processPackages [azureml-acft-accelerator]: Remove: archive file [/home/abi/fetcher/tmp/azureml_acft_accelerator-0.0.9-py3-none-any.whl.zip]
+[2024-05-18 02:31:52] INFO root fetch - processPackages [azureml-acft-accelerator]: Remove: archive file [/home/abi/fetcher/tmp/azureml_acft_accelerator-47.0.0-py3-none-any.whl.zip]
+[2024-05-18 02:31:52] INFO root fetch - main [MainThread]: End processing [azureml-acft-accelerator]: success
+[2024-05-18 02:31:53] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: Remove: archive file [/home/abi/fetcher/tmp/azureml_acft_contrib_hf_nlp-0.0.9-py3-none-any.whl.zip]
+[2024-05-18 02:31:53] INFO root fetch - processPackages [azureml-acft-contrib-hf-nlp]: Remove: archive file [/home/abi/fetcher/tmp/azureml_acft_contrib_hf_nlp-47.0.0-py3-none-any.whl.zip]
+[2024-05-18 02:31:53] INFO root fetch - main [MainThread]: End processing [azureml-acft-contrib-hf-nlp]: success
+[2024-05-18 02:31:53] INFO root fetch - processPackages [tinyrl]: Remove: archive file [/home/abi/fetcher/tmp/tinyrl-0.4.2.tar.gz]
+[2024-05-18 02:31:53] INFO root fetch - processPackages [tinyrl]: Remove: archive file [/home/abi/fetcher/tmp/tinyrl-0.4.3.tar.gz]
+[2024-05-18 02:31:53] INFO root fetch - main [MainThread]: End processing [tinyrl]: success
+[2024-05-18 02:31:53] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-18 02:31:53] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-18 02:31:53] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-18 02:31:53] INFO root fetch - main [MainThread]: Store serial: [23262319]
