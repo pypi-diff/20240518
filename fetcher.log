@@ -16592,3 +16592,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:44:47] INFO root fetch - processPackages [pyhasura]: Remove: archive file [/home/abi/fetcher/tmp/pyhasura-1.0.9.tar.gz]
 [2024-05-18 16:44:47] INFO root fetch - main [MainThread]: End processing [pyhasura]: success
 [2024-05-18 16:44:47] INFO root fetch - main [MainThread]: Store serial: [23268552]
+[2024-05-18 16:46:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268552]
+[2024-05-18 16:46:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 16:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: riksmalz
+[2024-05-18 16:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: psgr
+[2024-05-18 16:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo11-addon-web-widget-color
+[2024-05-18 16:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spindrift
+[2024-05-18 16:46:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygenomeviz
+[2024-05-18 16:46:56] INFO root fetch - processPackages [psgr]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-18 16:46:56] INFO root fetch - processPackages [spindrift]: New version: [4.5] Old Version: [4.4]
+[2024-05-18 16:46:56] WARNING root fetch - processPackages [riksmalz]: Skipping, unable to determine old version
+[2024-05-18 16:46:56] INFO root fetch - main [MainThread]: End processing [riksmalz] error
+[2024-05-18 16:46:56] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: New version: [11.0.1.0.2] Old Version: [11.0.1.0.1]
+[2024-05-18 16:46:56] INFO root fetch - processPackages [psgr]: Downloading https://files.pythonhosted.org/packages/a9/aa/a88529d19fa82dd876c17eb93e2f4c3c74452d2c8e976b066189dcf67281/psgr-0.1.3.tar.gz
+[2024-05-18 16:46:56] INFO root fetch - processPackages [spindrift]: Downloading https://files.pythonhosted.org/packages/06/72/5c147d773e374b3b317fa150db9d1ca8954d304b0e9b0fd8e06f6bae6ca3/spindrift-4.4-py3-none-any.whl
+[2024-05-18 16:46:56] INFO root fetch - processPackages [pygenomeviz]: New version: [1.0.0] Old Version: [0.4.4]
+[2024-05-18 16:46:56] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: Downloading https://files.pythonhosted.org/packages/21/82/2eb1eb217564ca866b677354683a8946edebb6c845857e9798171f470098/odoo11_addon_web_widget_color-11.0.1.0.1-py2.py3-none-any.whl
+[2024-05-18 16:46:56] INFO root fetch - processPackages [spindrift]: Downloading https://files.pythonhosted.org/packages/7f/00/1993b39a175ed3f63beeab00782087204dc942270311159b0c71a23d14b7/spindrift-4.5-py3-none-any.whl
+[2024-05-18 16:46:56] INFO root fetch - processPackages [pygenomeviz]: Downloading https://files.pythonhosted.org/packages/9a/ce/66d7c953ae4e04cd4e5965ef624188f8c16d562aeb54285298dbb1f6ee56/pygenomeviz-0.4.4.tar.gz
+[2024-05-18 16:46:56] INFO root fetch - processPackages [psgr]: Downloading https://files.pythonhosted.org/packages/b6/79/5d6f123cf7df155bc2fe9c44d85d32dea8970e333b86ab89669c7172fdda/psgr-0.2.0.tar.gz
+[2024-05-18 16:46:56] INFO root fetch - processPackages [spindrift]: executing diffoscope
+[2024-05-18 16:46:56] INFO root fetch - processPackages [spindrift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spindrift-4.4-py3-none-any.whl.zip tmp/spindrift-4.5-py3-none-any.whl.zip --markdown 20240518/s/spindrift/4.4-4.5/README.md --exclude *.pyd
+[2024-05-18 16:46:56] INFO root fetch - processPackages [psgr]: executing diffoscope
+[2024-05-18 16:46:56] INFO root fetch - processPackages [psgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgr-0.1.3.tar.gz tmp/psgr-0.2.0.tar.gz --markdown 20240518/p/psgr/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-18 16:46:56] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: Downloading https://files.pythonhosted.org/packages/2c/c0/688e59e17904f84cce051ee1bb8ab42758b81a394b17b2a7d88b0d195dbe/odoo11_addon_web_widget_color-11.0.1.0.2-py2.py3-none-any.whl
+[2024-05-18 16:46:57] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: executing diffoscope
+[2024-05-18 16:46:57] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_web_widget_color-11.0.1.0.1-py2.py3-none-any.whl.zip tmp/odoo11_addon_web_widget_color-11.0.1.0.2-py2.py3-none-any.whl.zip --markdown 20240518/o/odoo11-addon-web-widget-color/11.0.1.0.1-11.0.1.0.2/README.md --exclude *.pyd
+[2024-05-18 16:46:57] INFO root fetch - processPackages [spindrift]: Remove: archive file [/home/abi/fetcher/tmp/spindrift-4.4-py3-none-any.whl.zip]
+[2024-05-18 16:46:57] INFO root fetch - processPackages [spindrift]: Remove: archive file [/home/abi/fetcher/tmp/spindrift-4.5-py3-none-any.whl.zip]
+[2024-05-18 16:46:57] INFO root fetch - main [MainThread]: End processing [spindrift]: success
+[2024-05-18 16:46:57] INFO root fetch - processPackages [psgr]: Remove: archive file [/home/abi/fetcher/tmp/psgr-0.1.3.tar.gz]
+[2024-05-18 16:46:57] INFO root fetch - processPackages [psgr]: Remove: archive file [/home/abi/fetcher/tmp/psgr-0.2.0.tar.gz]
+[2024-05-18 16:46:57] INFO root fetch - main [MainThread]: End processing [psgr]: success
+[2024-05-18 16:46:57] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: Remove: archive file [/home/abi/fetcher/tmp/odoo11_addon_web_widget_color-11.0.1.0.1-py2.py3-none-any.whl.zip]
+[2024-05-18 16:46:57] INFO root fetch - processPackages [odoo11-addon-web-widget-color]: Remove: archive file [/home/abi/fetcher/tmp/odoo11_addon_web_widget_color-11.0.1.0.2-py2.py3-none-any.whl.zip]
+[2024-05-18 16:46:57] INFO root fetch - main [MainThread]: End processing [odoo11-addon-web-widget-color]: success
+[2024-05-18 16:46:58] INFO root fetch - processPackages [pygenomeviz]: Downloading https://files.pythonhosted.org/packages/4c/df/e3c18df787ed12e9691d2978f31f53fdfc2f7bd44edabe280e0e24a4f664/pygenomeviz-1.0.0.tar.gz
+[2024-05-18 16:46:59] INFO root fetch - processPackages [pygenomeviz]: executing diffoscope
+[2024-05-18 16:46:59] INFO root fetch - processPackages [pygenomeviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygenomeviz-0.4.4.tar.gz tmp/pygenomeviz-1.0.0.tar.gz --markdown 20240518/p/pygenomeviz/0.4.4-1.0.0/README.md --exclude *.pyd
+[2024-05-18 16:47:03] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-0.4.4.tar.gz]
+[2024-05-18 16:47:03] INFO root fetch - processPackages [pygenomeviz]: Remove: archive file [/home/abi/fetcher/tmp/pygenomeviz-1.0.0.tar.gz]
+[2024-05-18 16:47:03] INFO root fetch - main [MainThread]: End processing [pygenomeviz]: success
+[2024-05-18 16:47:03] INFO root fetch - main [MainThread]: Store serial: [23268564]
