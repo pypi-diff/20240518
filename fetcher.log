@@ -21729,3 +21729,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:40:27] INFO root fetch - processPackages [gqlitedb]: Remove: archive file [/home/abi/fetcher/tmp/gqlitedb-1.1.0.tar.gz]
 [2024-05-18 22:40:27] INFO root fetch - main [MainThread]: End processing [gqlitedb]: success
 [2024-05-18 22:40:27] INFO root fetch - main [MainThread]: Store serial: [23271101]
+[2024-05-18 22:42:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271101]
+[2024-05-18 22:42:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devon-agent
+[2024-05-18 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nuon
+[2024-05-18 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: madokami
+[2024-05-18 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jsz
+[2024-05-18 22:42:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: italian-ats-evaluator
+[2024-05-18 22:42:36] INFO root fetch - processPackages [devon-agent]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 22:42:36] WARNING root fetch - processPackages [madokami]: Skipping, unable to determine old version
+[2024-05-18 22:42:36] INFO root fetch - main [MainThread]: End processing [madokami] error
+[2024-05-18 22:42:36] INFO root fetch - processPackages [nuon]: New version: [0.19.99] Old Version: [0.19.98]
+[2024-05-18 22:42:36] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/4b/b3/f4a5c5ff8019499c6f58939b1ce69e9501c4735d7b4fcb6ba9f9365cfe89/devon_agent-0.1.7.tar.gz
+[2024-05-18 22:42:36] INFO root fetch - processPackages [jsz]: New version: [2024.5.19] Old Version: [2024.5.13]
+[2024-05-18 22:42:36] WARNING root fetch - processPackages [italian-ats-evaluator]: Skipping, unable to determine old version
+[2024-05-18 22:42:36] INFO root fetch - main [MainThread]: End processing [italian-ats-evaluator] error
+[2024-05-18 22:42:36] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/8d/82/73a4a9564f53819f1d2ce0052786b8fbaac8797092a6e5b9ad8368807e5a/nuon-0.19.98.tar.gz
+[2024-05-18 22:42:36] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/2e/32/73fde17d65f51538c324ffecb418e1d8709cd44e594ad86a351bb39fa67f/nuon-0.19.99.tar.gz
+[2024-05-18 22:42:37] INFO root fetch - processPackages [jsz]: Downloading https://files.pythonhosted.org/packages/37/6d/c943c03aa57357d15eadf90974d4d1750efaa8c50e9d7139714aa3e8d204/jsz-2024.5.13.tar.gz
+[2024-05-18 22:42:37] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/76/50/d2416bb5d15a52cd223c51667daca7b1c6357223499de4566735e9b1c243/devon_agent-0.1.8.tar.gz
+[2024-05-18 22:42:37] INFO root fetch - processPackages [nuon]: executing diffoscope
+[2024-05-18 22:42:37] INFO root fetch - processPackages [nuon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuon-0.19.98.tar.gz tmp/nuon-0.19.99.tar.gz --markdown 20240518/n/nuon/0.19.98-0.19.99/README.md --exclude *.pyd
+[2024-05-18 22:42:37] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-18 22:42:37] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.7.tar.gz tmp/devon_agent-0.1.8.tar.gz --markdown 20240518/d/devon-agent/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 22:42:37] INFO root fetch - processPackages [jsz]: Downloading https://files.pythonhosted.org/packages/3f/a6/09439cb976d577ceb5eafce16488e99110d3ccc05824f5f58b83d467c39e/jsz-2024.5.19.tar.gz
+[2024-05-18 22:42:37] INFO root fetch - processPackages [jsz]: executing diffoscope
+[2024-05-18 22:42:37] INFO root fetch - processPackages [jsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsz-2024.5.13.tar.gz tmp/jsz-2024.5.19.tar.gz --markdown 20240518/j/jsz/2024.5.13-2024.5.19/README.md --exclude *.pyd
+[2024-05-18 22:42:37] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.7.tar.gz]
+[2024-05-18 22:42:37] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.8.tar.gz]
+[2024-05-18 22:42:37] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-18 22:42:37] INFO root fetch - processPackages [jsz]: Remove: archive file [/home/abi/fetcher/tmp/jsz-2024.5.13.tar.gz]
+[2024-05-18 22:42:37] INFO root fetch - processPackages [jsz]: Remove: archive file [/home/abi/fetcher/tmp/jsz-2024.5.19.tar.gz]
+[2024-05-18 22:42:37] INFO root fetch - main [MainThread]: End processing [jsz]: success
+[2024-05-18 22:42:39] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.98.tar.gz]
+[2024-05-18 22:42:39] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
+[2024-05-18 22:42:39] INFO root fetch - main [MainThread]: End processing [nuon]: success
+[2024-05-18 22:42:39] INFO root fetch - main [MainThread]: Store serial: [23271122]
