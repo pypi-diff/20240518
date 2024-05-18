@@ -18278,3 +18278,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:41:23] INFO root fetch - processPackages [coderedcms]: Remove: archive file [/home/abi/fetcher/tmp/coderedcms-3.0.4.tar.gz]
 [2024-05-18 18:41:23] INFO root fetch - main [MainThread]: End processing [coderedcms]: success
 [2024-05-18 18:41:23] INFO root fetch - main [MainThread]: Store serial: [23269291]
+[2024-05-18 18:43:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269291]
+[2024-05-18 18:43:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 18:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-explorer-onnx
+[2024-05-18 18:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dtw-python
+[2024-05-18 18:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: creolitez
+[2024-05-18 18:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enhanceezqq
+[2024-05-18 18:43:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mintlemon-turkish-nlp
+[2024-05-18 18:43:33] INFO root fetch - processPackages [enhanceezqq]: New version: [1.0.2.5] Old Version: [1.0.2.3]
+[2024-05-18 18:43:33] INFO root fetch - processPackages [mintlemon-turkish-nlp]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-18 18:43:33] INFO root fetch - processPackages [dtw-python]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-18 18:43:33] WARNING root fetch - processPackages [creolitez]: Skipping, unable to determine old version
+[2024-05-18 18:43:33] INFO root fetch - main [MainThread]: End processing [creolitez] error
+[2024-05-18 18:43:33] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-18 18:43:33] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/12/55/b1ee242e9d8a9e5640df612fa90c014c1bda6b9d54aa718bcf6911f23270/mintlemon-turkish-nlp-0.2.5.tar.gz
+[2024-05-18 18:43:33] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/2f/1c/b4f6fb8929991d4a100a4e3113fbac97441a9d044be6a2426db93a73c624/model_explorer_onnx-0.1.6.tar.gz
+[2024-05-18 18:43:33] INFO root fetch - processPackages [dtw-python]: Downloading https://files.pythonhosted.org/packages/9a/23/149e75cdfcb2aa9aef5d042b41b8749dc3fbff72f5177ec2dea5f43778e4/dtw_python-1.4.3.tar.gz
+[2024-05-18 18:43:33] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/3f/49/831fe3be9b5450373569d0e18a39e9327250159955ce42a2bfaa6cc1054d/enhanceezqq-1.0.2.3.tar.gz
+[2024-05-18 18:43:33] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Downloading https://files.pythonhosted.org/packages/cc/97/90d2641a705d69a0ab4f3423220ab8291a3bbedb85b3d3ed59d0a395883d/mintlemon-turkish-nlp-0.2.6.tar.gz
+[2024-05-18 18:43:33] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/a9/01/d182f5f056bf8d0fbf3f250c46e7bfc5df27cf684263064647d83896cbc1/model_explorer_onnx-0.1.7.tar.gz
+[2024-05-18 18:43:33] INFO root fetch - processPackages [dtw-python]: Downloading https://files.pythonhosted.org/packages/98/47/842d7d17892a3a0eadf8a6443d365bfd04d72a1fbe6f24806ec114f3df69/dtw_python-1.4.4.tar.gz
+[2024-05-18 18:43:34] INFO root fetch - processPackages [enhanceezqq]: Downloading https://files.pythonhosted.org/packages/10/87/d5ed4a513073e118f69f280ea1df3e119c2878c08228f593e4a19470721a/enhanceezqq-1.0.2.5.tar.gz
+[2024-05-18 18:43:34] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-18 18:43:34] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.6.tar.gz tmp/model_explorer_onnx-0.1.7.tar.gz --markdown 20240518/m/model-explorer-onnx/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-18 18:43:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: executing diffoscope
+[2024-05-18 18:43:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mintlemon-turkish-nlp-0.2.5.tar.gz tmp/mintlemon-turkish-nlp-0.2.6.tar.gz --markdown 20240518/m/mintlemon-turkish-nlp/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-18 18:43:34] INFO root fetch - processPackages [enhanceezqq]: executing diffoscope
+[2024-05-18 18:43:34] INFO root fetch - processPackages [enhanceezqq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhanceezqq-1.0.2.3.tar.gz tmp/enhanceezqq-1.0.2.5.tar.gz --markdown 20240518/e/enhanceezqq/1.0.2.3-1.0.2.5/README.md --exclude *.pyd
+[2024-05-18 18:43:34] INFO root fetch - processPackages [dtw-python]: executing diffoscope
+[2024-05-18 18:43:34] INFO root fetch - processPackages [dtw-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtw_python-1.4.3.tar.gz tmp/dtw_python-1.4.4.tar.gz --markdown 20240518/d/dtw-python/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-18 18:43:34] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.6.tar.gz]
+[2024-05-18 18:43:34] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.7.tar.gz]
+[2024-05-18 18:43:34] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-18 18:43:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.5.tar.gz]
+[2024-05-18 18:43:34] INFO root fetch - processPackages [mintlemon-turkish-nlp]: Remove: archive file [/home/abi/fetcher/tmp/mintlemon-turkish-nlp-0.2.6.tar.gz]
+[2024-05-18 18:43:34] INFO root fetch - main [MainThread]: End processing [mintlemon-turkish-nlp]: success
+[2024-05-18 18:43:34] INFO root fetch - processPackages [enhanceezqq]: Remove: archive file [/home/abi/fetcher/tmp/enhanceezqq-1.0.2.3.tar.gz]
+[2024-05-18 18:43:34] INFO root fetch - processPackages [enhanceezqq]: Remove: archive file [/home/abi/fetcher/tmp/enhanceezqq-1.0.2.5.tar.gz]
+[2024-05-18 18:43:34] INFO root fetch - main [MainThread]: End processing [enhanceezqq]: success
+[2024-05-18 18:43:35] INFO root fetch - processPackages [dtw-python]: Remove: archive file [/home/abi/fetcher/tmp/dtw_python-1.4.3.tar.gz]
+[2024-05-18 18:43:35] INFO root fetch - processPackages [dtw-python]: Remove: archive file [/home/abi/fetcher/tmp/dtw_python-1.4.4.tar.gz]
+[2024-05-18 18:43:35] INFO root fetch - main [MainThread]: End processing [dtw-python]: success
+[2024-05-18 18:43:35] INFO root fetch - main [MainThread]: Store serial: [23269328]
