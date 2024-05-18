@@ -19160,3 +19160,63 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:37:38] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.8.tar.gz]
 [2024-05-18 19:37:38] INFO root fetch - main [MainThread]: End processing [kappamodules]: success
 [2024-05-18 19:37:38] INFO root fetch - main [MainThread]: Store serial: [23269736]
+[2024-05-18 19:39:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269736]
+[2024-05-18 19:39:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etm-dgraham
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mojo-errors
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymonit
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-appointment
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-mrp-unbuild-subcontracting
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py4web
+[2024-05-18 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bescribblez
+[2024-05-18 19:39:47] INFO root fetch - processPackages [pymonit]: New version: [1.4.0] Old Version: [1.3.21]
+[2024-05-18 19:39:47] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/2a/6f/4b1f1f826169bcdbf2e48eaaecdf1d99f4ae9af17bbf418aae02747106a0/pymonit-1.3.21.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [etm-dgraham]: New version: [6.2.5] Old Version: [6.2.4]
+[2024-05-18 19:39:47] WARNING root fetch - processPackages [bescribblez]: Skipping, unable to determine old version
+[2024-05-18 19:39:47] INFO root fetch - processPackages [mojo-errors]: New version: [1.3.8] Old Version: [1.3.7]
+[2024-05-18 19:39:47] INFO root fetch - main [MainThread]: End processing [bescribblez] error
+[2024-05-18 19:39:47] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: New version: [14.0.1.0.1.dev7] Old Version: [14.0.1.0.1.dev5]
+[2024-05-18 19:39:47] INFO root fetch - processPackages [django-appointment]: New version: [3.5.0] Old Version: [3.4.1]
+[2024-05-18 19:39:47] INFO root fetch - processPackages [py4web]: New version: [1.20240518.1] Old Version: [1.20240509.1]
+[2024-05-18 19:39:47] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/c1/d1/6de847eab87581d6f8be98043952bf2fb136900b3489d1914e93e7cccee3/pymonit-1.4.0.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: Downloading https://files.pythonhosted.org/packages/18/3c/231dbd0755c4922fe6b0a844277e1e5caa74951a6ce2e05601b130806c95/odoo14_addon_mrp_unbuild_subcontracting-14.0.1.0.1.dev5-py3-none-any.whl
+[2024-05-18 19:39:47] INFO root fetch - processPackages [mojo-errors]: Downloading https://files.pythonhosted.org/packages/27/62/f448aa9f0a243f1b7f1eadf7154ba4f22872f93c2f0bb68c8695ef4bfb7f/mojo_errors-1.3.7.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [django-appointment]: Downloading https://files.pythonhosted.org/packages/fe/0d/a637ae974ef664a5ab1b851afb48b1dede90cb6bdccb7c7effbfdab51ca9/django-appointment-3.4.1.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/37/ac/ce82bb9662bc1a3134afec41988a93d6e101081276ab396a6d789d5d851c/py4web-1.20240509.1.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-18 19:39:47] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.3.21.tar.gz tmp/pymonit-1.4.0.tar.gz --markdown 20240518/p/pymonit/1.3.21-1.4.0/README.md --exclude *.pyd
+[2024-05-18 19:39:47] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/12/54/d4ca1a6579b0ce71727cc7d0b3c788fa86c3b8387468b4319acb02232638/etm-dgraham-6.2.4.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [mojo-errors]: Downloading https://files.pythonhosted.org/packages/de/16/3318a459f35095939adf77d32f189ae3c18baec0d46753012ad1945716f4/mojo_errors-1.3.8.tar.gz
+[2024-05-18 19:39:47] INFO root fetch - processPackages [django-appointment]: Downloading https://files.pythonhosted.org/packages/f4/61/7680c866202cc1baa711793c3c9ce4e84a43396af32fba559cdac996cb11/django_appointment-3.5.0.tar.gz
+[2024-05-18 19:39:48] INFO root fetch - processPackages [mojo-errors]: executing diffoscope
+[2024-05-18 19:39:48] INFO root fetch - processPackages [mojo-errors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_errors-1.3.7.tar.gz tmp/mojo_errors-1.3.8.tar.gz --markdown 20240518/m/mojo-errors/1.3.7-1.3.8/README.md --exclude *.pyd
+[2024-05-18 19:39:48] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: Downloading https://files.pythonhosted.org/packages/29/10/f69dd39167ac3bd4083797e8964f772478d682167c65fb93aceff17d8f7c/odoo14_addon_mrp_unbuild_subcontracting-14.0.1.0.1.dev7-py3-none-any.whl
+[2024-05-18 19:39:48] INFO root fetch - processPackages [etm-dgraham]: Downloading https://files.pythonhosted.org/packages/51/25/faf548e6af336c3861ec9a94e66c1fa03b709053c23ea3613cc3fae1f1ee/etm-dgraham-6.2.5.tar.gz
+[2024-05-18 19:39:48] INFO root fetch - processPackages [django-appointment]: executing diffoscope
+[2024-05-18 19:39:48] INFO root fetch - processPackages [django-appointment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-appointment-3.4.1.tar.gz tmp/django_appointment-3.5.0.tar.gz --markdown 20240518/d/django-appointment/3.4.1-3.5.0/README.md --exclude *.pyd
+[2024-05-18 19:39:48] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.3.21.tar.gz]
+[2024-05-18 19:39:48] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.0.tar.gz]
+[2024-05-18 19:39:48] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-18 19:39:48] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: executing diffoscope
+[2024-05-18 19:39:48] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mrp_unbuild_subcontracting-14.0.1.0.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_mrp_unbuild_subcontracting-14.0.1.0.1.dev7-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-mrp-unbuild-subcontracting/14.0.1.0.1.dev5-14.0.1.0.1.dev7/README.md --exclude *.pyd
+[2024-05-18 19:39:48] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2024-05-18 19:39:48] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-6.2.4.tar.gz tmp/etm-dgraham-6.2.5.tar.gz --markdown 20240518/e/etm-dgraham/6.2.4-6.2.5/README.md --exclude *.pyd
+[2024-05-18 19:39:48] INFO root fetch - processPackages [mojo-errors]: Remove: archive file [/home/abi/fetcher/tmp/mojo_errors-1.3.7.tar.gz]
+[2024-05-18 19:39:48] INFO root fetch - processPackages [mojo-errors]: Remove: archive file [/home/abi/fetcher/tmp/mojo_errors-1.3.8.tar.gz]
+[2024-05-18 19:39:48] INFO root fetch - main [MainThread]: End processing [mojo-errors]: success
+[2024-05-18 19:39:48] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_mrp_unbuild_subcontracting-14.0.1.0.1.dev5-py3-none-any.whl.zip]
+[2024-05-18 19:39:48] INFO root fetch - processPackages [odoo14-addon-mrp-unbuild-subcontracting]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_mrp_unbuild_subcontracting-14.0.1.0.1.dev7-py3-none-any.whl.zip]
+[2024-05-18 19:39:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mrp-unbuild-subcontracting]: success
+[2024-05-18 19:39:48] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/f0/66/17185838ab1f8280bcc85f41c58367d92323105d529a02d67d38fa9ae9f5/py4web-1.20240518.1.tar.gz
+[2024-05-18 19:39:49] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-05-18 19:39:49] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240509.1.tar.gz tmp/py4web-1.20240518.1.tar.gz --markdown 20240518/p/py4web/1.20240509.1-1.20240518.1/README.md --exclude *.pyd
+[2024-05-18 19:39:49] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.2.4.tar.gz]
+[2024-05-18 19:39:49] INFO root fetch - processPackages [etm-dgraham]: Remove: archive file [/home/abi/fetcher/tmp/etm-dgraham-6.2.5.tar.gz]
+[2024-05-18 19:39:49] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2024-05-18 19:39:49] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django-appointment-3.4.1.tar.gz]
+[2024-05-18 19:39:49] INFO root fetch - processPackages [django-appointment]: Remove: archive file [/home/abi/fetcher/tmp/django_appointment-3.5.0.tar.gz]
+[2024-05-18 19:39:49] INFO root fetch - main [MainThread]: End processing [django-appointment]: success
+[2024-05-18 19:39:52] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240509.1.tar.gz]
+[2024-05-18 19:39:52] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240518.1.tar.gz]
+[2024-05-18 19:39:52] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-05-18 19:39:52] INFO root fetch - main [MainThread]: Store serial: [23269756]
