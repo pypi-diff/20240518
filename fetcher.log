@@ -13136,3 +13136,25 @@
 [2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.3.0.tar.gz]
 [2024-05-18 12:02:54] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
 [2024-05-18 12:02:54] INFO root fetch - main [MainThread]: Store serial: [23266804]
+[2024-05-18 12:04:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266804]
+[2024-05-18 12:05:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dowsabelz
+[2024-05-18 12:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synapse-prometheus-exporter
+[2024-05-18 12:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: synapse-prometheus-exporter
+[2024-05-18 12:05:03] INFO root fetch - processPackages [synapse-prometheus-exporter]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 12:05:03] WARNING root fetch - processPackages [dowsabelz]: Skipping, unable to determine old version
+[2024-05-18 12:05:03] INFO root fetch - main [MainThread]: End processing [dowsabelz] error
+[2024-05-18 12:05:03] INFO root fetch - processPackages [synapse-prometheus-exporter]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/57/64/3fc26f320a540d52d4f26c1b304b83d6179eec8ed275f161d33c818a36ac/synapse_prometheus_exporter-0.0.1.tar.gz
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/57/64/3fc26f320a540d52d4f26c1b304b83d6179eec8ed275f161d33c818a36ac/synapse_prometheus_exporter-0.0.1.tar.gz
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/b1/99/7df77789f13cfb20f65006b7fa11b2605a78f8b267111c7bf1602d5f35be/synapse_prometheus_exporter-0.0.2.tar.gz
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/b1/99/7df77789f13cfb20f65006b7fa11b2605a78f8b267111c7bf1602d5f35be/synapse_prometheus_exporter-0.0.2.tar.gz
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: executing diffoscope
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapse_prometheus_exporter-0.0.1.tar.gz tmp/synapse_prometheus_exporter-0.0.2.tar.gz --markdown 20240518/s/synapse-prometheus-exporter/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: executing diffoscope
+[2024-05-18 12:05:04] INFO root fetch - processPackages [synapse-prometheus-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapse_prometheus_exporter-0.0.1.tar.gz tmp/synapse_prometheus_exporter-0.0.2.tar.gz --markdown 20240518/s/synapse-prometheus-exporter/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 12:05:05] INFO root fetch - processPackages [synapse-prometheus-exporter]: Remove: archive file [/home/abi/fetcher/tmp/synapse_prometheus_exporter-0.0.1.tar.gz]
+[2024-05-18 12:05:05] INFO root fetch - processPackages [synapse-prometheus-exporter]: Remove: archive file [/home/abi/fetcher/tmp/synapse_prometheus_exporter-0.0.2.tar.gz]
+[2024-05-18 12:05:05] INFO root fetch - main [MainThread]: End processing [synapse-prometheus-exporter]: success
+[2024-05-18 12:05:05] INFO root fetch - main [MainThread]: End processing [synapse-prometheus-exporter]: success
+[2024-05-18 12:05:05] INFO root fetch - main [MainThread]: Store serial: [23266817]
