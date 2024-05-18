@@ -21694,3 +21694,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:38:15] WARNING root fetch - processPackages [madokami]: Skipping, unable to determine old version
 [2024-05-18 22:38:15] INFO root fetch - main [MainThread]: End processing [madokami] error
 [2024-05-18 22:38:15] INFO root fetch - main [MainThread]: Store serial: [23271079]
+[2024-05-18 22:40:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271079]
+[2024-05-18 22:40:25] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 22:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: noninsistenciesz
+[2024-05-18 22:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gphotos-sync
+[2024-05-18 22:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: foctopus
+[2024-05-18 22:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: my-road
+[2024-05-18 22:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gqlitedb
+[2024-05-18 22:40:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: WeatherPlug
+[2024-05-18 22:40:26] WARNING root fetch - processPackages [WeatherPlug]: Skipping, unable to determine old version
+[2024-05-18 22:40:26] INFO root fetch - main [MainThread]: End processing [WeatherPlug] error
+[2024-05-18 22:40:26] WARNING root fetch - processPackages [foctopus]: Skipping, unable to determine old version
+[2024-05-18 22:40:26] INFO root fetch - main [MainThread]: End processing [foctopus] error
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gphotos-sync]: New version: [3.2.2] Old Version: [3.2.1]
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gqlitedb]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-18 22:40:26] INFO root fetch - processPackages [my-road]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 22:40:26] WARNING root fetch - processPackages [noninsistenciesz]: Skipping, unable to determine old version
+[2024-05-18 22:40:26] INFO root fetch - main [MainThread]: End processing [noninsistenciesz] error
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gqlitedb]: Downloading https://files.pythonhosted.org/packages/7b/f5/bc9b354dd4edec6023f71fbc12845e75a0d0d1ab1c0064da61e993fe7073/gqlitedb-1.0.0.tar.gz
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gphotos-sync]: Downloading https://files.pythonhosted.org/packages/f2/67/3d5ffb2c6f0ce87cb5cac1d270f0d2d970122b83efb19424eb02d0f5c4ca/gphotos-sync-3.2.1.tar.gz
+[2024-05-18 22:40:26] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/98/1d/6341f4077573fb70b946a8e4018f42d1fea246a6aced3f3549fa01c71a06/my_road-1.0.0.tar.gz
+[2024-05-18 22:40:26] WARNING root fetch - processPackages [gphotos-sync]: Skipping package: exceeds size limit 12584893>=10485760
+[2024-05-18 22:40:26] INFO root fetch - main [MainThread]: End processing [gphotos-sync] error
+[2024-05-18 22:40:26] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/8a/73/e66efcc1e9f5e5567ce6bfec4c53dfbd3997d7d1e1c045bdbbbba9e628e1/my_road-1.0.1.tar.gz
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gqlitedb]: Downloading https://files.pythonhosted.org/packages/be/f7/50ae0108175018bfc5f3d7d90b22c977eac590b3fa9fb7bce9fc5a1aaa74/gqlitedb-1.1.0.tar.gz
+[2024-05-18 22:40:26] INFO root fetch - processPackages [my-road]: executing diffoscope
+[2024-05-18 22:40:26] INFO root fetch - processPackages [my-road]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_road-1.0.0.tar.gz tmp/my_road-1.0.1.tar.gz --markdown 20240518/m/my-road/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gqlitedb]: executing diffoscope
+[2024-05-18 22:40:26] INFO root fetch - processPackages [gqlitedb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gqlitedb-1.0.0.tar.gz tmp/gqlitedb-1.1.0.tar.gz --markdown 20240518/g/gqlitedb/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-18 22:40:27] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-1.0.0.tar.gz]
+[2024-05-18 22:40:27] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-1.0.1.tar.gz]
+[2024-05-18 22:40:27] INFO root fetch - main [MainThread]: End processing [my-road]: success
+[2024-05-18 22:40:27] INFO root fetch - processPackages [gqlitedb]: Remove: archive file [/home/abi/fetcher/tmp/gqlitedb-1.0.0.tar.gz]
+[2024-05-18 22:40:27] INFO root fetch - processPackages [gqlitedb]: Remove: archive file [/home/abi/fetcher/tmp/gqlitedb-1.1.0.tar.gz]
+[2024-05-18 22:40:27] INFO root fetch - main [MainThread]: End processing [gqlitedb]: success
+[2024-05-18 22:40:27] INFO root fetch - main [MainThread]: Store serial: [23271101]
