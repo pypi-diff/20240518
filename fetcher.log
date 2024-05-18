@@ -12200,3 +12200,33 @@
 [2024-05-18 10:48:27] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.6.tar.gz]
 [2024-05-18 10:48:27] INFO root fetch - main [MainThread]: End processing [pyluba]: success
 [2024-05-18 10:48:27] INFO root fetch - main [MainThread]: Store serial: [23266274]
+[2024-05-18 10:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266274]
+[2024-05-18 10:50:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 10:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-video-analyzer
+[2024-05-18 10:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ten-drops
+[2024-05-18 10:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PelerGUI
+[2024-05-18 10:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sproject
+[2024-05-18 10:50:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: opticalpy
+[2024-05-18 10:50:36] WARNING root fetch - processPackages [ten-drops]: Skipping, unable to determine old version
+[2024-05-18 10:50:36] INFO root fetch - main [MainThread]: End processing [ten-drops] error
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: Downloading https://files.pythonhosted.org/packages/ea/e5/d002596bb2dd2314573fd525d38636b442d9592d84209929b578e6bd2b3b/youtube_video_analyzer-0.1.0.tar.gz
+[2024-05-18 10:50:36] WARNING root fetch - processPackages [opticalpy]: Skipping, unable to determine old version
+[2024-05-18 10:50:36] INFO root fetch - main [MainThread]: End processing [opticalpy] error
+[2024-05-18 10:50:36] INFO root fetch - processPackages [sproject]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 10:50:36] WARNING root fetch - processPackages [PelerGUI]: Skipping, unable to determine old version
+[2024-05-18 10:50:36] INFO root fetch - main [MainThread]: End processing [PelerGUI] error
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: Downloading https://files.pythonhosted.org/packages/95/2c/caf463d3b3733bf502aba688f8dfb58778d2ab608e0110acc223edeb3e85/youtube_video_analyzer-0.1.1.tar.gz
+[2024-05-18 10:50:36] INFO root fetch - processPackages [sproject]: Downloading https://files.pythonhosted.org/packages/d7/6d/267d20a0c5907a3e7463c24cf60a67fb408be0e07b75b168a106486adb17/sproject-0.0.3.tar.gz
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: executing diffoscope
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_video_analyzer-0.1.0.tar.gz tmp/youtube_video_analyzer-0.1.1.tar.gz --markdown 20240518/y/youtube-video-analyzer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 10:50:36] INFO root fetch - processPackages [sproject]: Downloading https://files.pythonhosted.org/packages/40/9b/bcac7683466cf2fc4110565ca0238c8a7bec3d8349f744546a79bf0858d6/sproject-0.0.4.tar.gz
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/youtube_video_analyzer-0.1.0.tar.gz]
+[2024-05-18 10:50:36] INFO root fetch - processPackages [youtube-video-analyzer]: Remove: archive file [/home/abi/fetcher/tmp/youtube_video_analyzer-0.1.1.tar.gz]
+[2024-05-18 10:50:36] INFO root fetch - main [MainThread]: End processing [youtube-video-analyzer]: success
+[2024-05-18 10:50:36] INFO root fetch - processPackages [sproject]: executing diffoscope
+[2024-05-18 10:50:36] INFO root fetch - processPackages [sproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sproject-0.0.3.tar.gz tmp/sproject-0.0.4.tar.gz --markdown 20240518/s/sproject/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 10:50:37] INFO root fetch - processPackages [sproject]: Remove: archive file [/home/abi/fetcher/tmp/sproject-0.0.3.tar.gz]
+[2024-05-18 10:50:37] INFO root fetch - processPackages [sproject]: Remove: archive file [/home/abi/fetcher/tmp/sproject-0.0.4.tar.gz]
+[2024-05-18 10:50:37] INFO root fetch - main [MainThread]: End processing [sproject]: success
+[2024-05-18 10:50:37] INFO root fetch - main [MainThread]: Store serial: [23266292]
