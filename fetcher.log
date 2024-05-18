@@ -22232,3 +22232,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:26:03] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.99.tar.gz]
 [2024-05-18 23:26:03] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
 [2024-05-18 23:26:03] INFO root fetch - main [MainThread]: Store serial: [23271351]
+[2024-05-18 23:28:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271351]
+[2024-05-18 23:28:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 23:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensortrax
+[2024-05-18 23:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-18 23:28:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: table2string
+[2024-05-18 23:28:13] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 23:28:13] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 23:28:13] WARNING root fetch - processPackages [table2string]: Skipping, unable to determine old version
+[2024-05-18 23:28:13] INFO root fetch - main [MainThread]: End processing [table2string] error
+[2024-05-18 23:28:13] INFO root fetch - processPackages [tensortrax]: New version: [0.9.0] Old Version: [0.8.5]
+[2024-05-18 23:28:13] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 23:28:13] INFO root fetch - processPackages [tensortrax]: Downloading https://files.pythonhosted.org/packages/89/90/35a2c54ede65e72fe80b04f638e7a8151b0671dbd4e55318c2de29784a04/tensortrax-0.8.5.tar.gz
+[2024-05-18 23:28:13] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 23:28:13] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 23:28:13] INFO root fetch - processPackages [tensortrax]: Downloading https://files.pythonhosted.org/packages/d5/ee/5781c8a0fd8be11b0a4fef0fa32c022b900698e16870bf834671c45e36c3/tensortrax-0.9.0.tar.gz
+[2024-05-18 23:28:14] INFO root fetch - processPackages [tensortrax]: executing diffoscope
+[2024-05-18 23:28:14] INFO root fetch - processPackages [tensortrax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensortrax-0.8.5.tar.gz tmp/tensortrax-0.9.0.tar.gz --markdown 20240518/t/tensortrax/0.8.5-0.9.0/README.md --exclude *.pyd
+[2024-05-18 23:28:14] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 23:28:14] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 23:28:14] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 23:28:14] INFO root fetch - processPackages [tensortrax]: Remove: archive file [/home/abi/fetcher/tmp/tensortrax-0.8.5.tar.gz]
+[2024-05-18 23:28:14] INFO root fetch - processPackages [tensortrax]: Remove: archive file [/home/abi/fetcher/tmp/tensortrax-0.9.0.tar.gz]
+[2024-05-18 23:28:14] INFO root fetch - main [MainThread]: End processing [tensortrax]: success
+[2024-05-18 23:28:14] INFO root fetch - main [MainThread]: Store serial: [23271362]
