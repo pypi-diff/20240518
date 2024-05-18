@@ -12820,3 +12820,50 @@
 [2024-05-18 11:36:51] INFO root fetch - processPackages [bcitoolbox]: Remove: archive file [/home/abi/fetcher/tmp/bcitoolbox-0.1.0.1.tar.gz]
 [2024-05-18 11:36:51] INFO root fetch - main [MainThread]: End processing [bcitoolbox]: success
 [2024-05-18 11:36:51] INFO root fetch - main [MainThread]: Store serial: [23266670]
+[2024-05-18 11:38:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266670]
+[2024-05-18 11:39:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 11:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmware
+[2024-05-18 11:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: way3
+[2024-05-18 11:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: st-login-form
+[2024-05-18 11:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-18 11:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-adapter-tailchat
+[2024-05-18 11:39:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: archaeostomaz
+[2024-05-18 11:39:00] INFO root fetch - processPackages [way3]: New version: [0.0.25] Old Version: [0.0.24]
+[2024-05-18 11:39:00] INFO root fetch - processPackages [llmware]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 11:39:00] INFO root fetch - processPackages [mimllearning]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 11:39:01] WARNING root fetch - processPackages [archaeostomaz]: Skipping, unable to determine old version
+[2024-05-18 11:39:01] INFO root fetch - main [MainThread]: End processing [archaeostomaz] error
+[2024-05-18 11:39:01] INFO root fetch - processPackages [st-login-form]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-05-18 11:39:01] INFO root fetch - processPackages [nonebot-adapter-tailchat]: New version: [0.1.0b9] Old Version: [0.1.0b8]
+[2024-05-18 11:39:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/01/19/bfbea72ad47ab5447ad6cb90652413489191201adb3c2e7a9013402809c5/mimllearning-0.4.8.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/db/95/912cc15fb0737cf545edea99afa1ac15a12ab56e8d126425588d5fe62ae8/way3-0.0.24.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [llmware]: Downloading https://files.pythonhosted.org/packages/4d/21/4672a53b26db92deb1117cea11feaaa74f3279ed29198c6a7f77ff2c8ca2/llmware-0.2.8-py3-none-any.whl
+[2024-05-18 11:39:01] INFO root fetch - processPackages [st-login-form]: Downloading https://files.pythonhosted.org/packages/20/c0/910cfbd19021c3a7a142b9df41ad65e9fbab5760ec593419e0bd3853192c/st_login_form-0.2.3.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [nonebot-adapter-tailchat]: Downloading https://files.pythonhosted.org/packages/83/e8/e2bd0c40d08f792b94a5bb887f5f3607c17b4d01d95e0ae53618951cef52/nonebot_adapter_tailchat-0.1.0b8.tar.gz
+[2024-05-18 11:39:01] WARNING root fetch - processPackages [llmware]: Skipping package: exceeds size limit 39931855>=10485760
+[2024-05-18 11:39:01] INFO root fetch - main [MainThread]: End processing [llmware] error
+[2024-05-18 11:39:01] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/2e/26/389db992891fcd4eae4c1f80061c243672ebec223c869c62f8cc990f279f/way3-0.0.25.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/84/bd/958d70b5217227bc933005c3bb746e70ea6d2a534843b2e0f6a0e93e2c98/mimllearning-0.4.9.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [nonebot-adapter-tailchat]: Downloading https://files.pythonhosted.org/packages/93/24/5edf0769015767593caefc10fc6948499e514523b52486199a59c685b9c3/nonebot_adapter_tailchat-0.1.0b9.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [st-login-form]: Downloading https://files.pythonhosted.org/packages/b9/10/10e65d6eb7669a49609272a8c55df5b9bcd3670d6f1201d21f5a562bdc52/st-login-form-0.3.0.tar.gz
+[2024-05-18 11:39:01] INFO root fetch - processPackages [way3]: executing diffoscope
+[2024-05-18 11:39:01] INFO root fetch - processPackages [way3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/way3-0.0.24.tar.gz tmp/way3-0.0.25.tar.gz --markdown 20240518/w/way3/0.0.24-0.0.25/README.md --exclude *.pyd
+[2024-05-18 11:39:01] INFO root fetch - processPackages [nonebot-adapter-tailchat]: executing diffoscope
+[2024-05-18 11:39:01] INFO root fetch - processPackages [nonebot-adapter-tailchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_tailchat-0.1.0b8.tar.gz tmp/nonebot_adapter_tailchat-0.1.0b9.tar.gz --markdown 20240518/n/nonebot-adapter-tailchat/0.1.0b8-0.1.0b9/README.md --exclude *.pyd
+[2024-05-18 11:39:01] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-18 11:39:01] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.8.tar.gz tmp/mimllearning-0.4.9.tar.gz --markdown 20240518/m/mimllearning/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 11:39:01] INFO root fetch - processPackages [st-login-form]: executing diffoscope
+[2024-05-18 11:39:01] INFO root fetch - processPackages [st-login-form]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_login_form-0.2.3.tar.gz tmp/st-login-form-0.3.0.tar.gz --markdown 20240518/s/st-login-form/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-05-18 11:39:02] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.24.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.25.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - main [MainThread]: End processing [way3]: success
+[2024-05-18 11:39:02] INFO root fetch - processPackages [nonebot-adapter-tailchat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_tailchat-0.1.0b8.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - processPackages [nonebot-adapter-tailchat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_tailchat-0.1.0b9.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-tailchat]: success
+[2024-05-18 11:39:02] INFO root fetch - processPackages [st-login-form]: Remove: archive file [/home/abi/fetcher/tmp/st_login_form-0.2.3.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - processPackages [st-login-form]: Remove: archive file [/home/abi/fetcher/tmp/st-login-form-0.3.0.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - main [MainThread]: End processing [st-login-form]: success
+[2024-05-18 11:39:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.8.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
+[2024-05-18 11:39:02] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-18 11:39:02] INFO root fetch - main [MainThread]: Store serial: [23266691]
