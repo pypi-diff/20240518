@@ -20538,3 +20538,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:12:36] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_fixed_discount-17.0.1.0.1-py3-none-any.whl.zip]
 [2024-05-18 21:12:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-fixed-discount]: success
 [2024-05-18 21:12:36] INFO root fetch - main [MainThread]: Store serial: [23270454]
+[2024-05-18 21:14:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270454]
+[2024-05-18 21:14:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyEasyDbApi
+[2024-05-18 21:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opticalpy
+[2024-05-18 21:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-05-18 21:14:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lytools
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 21:14:45] INFO root fetch - processPackages [opticalpy]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.21a1716012211] Old Version: [0.0.21a1716011226]
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/f8/5a/2285ac340206183a47c3e914572a39910e572e5b5df8b163256f9fe43973/pulumi_kubernetes_the_hard_way-0.0.21a1716011226.tar.gz
+[2024-05-18 21:14:45] INFO root fetch - processPackages [opticalpy]: Downloading https://files.pythonhosted.org/packages/6b/13/f5e91a56671e13dbe22b30bd27db29d07991124e5e50962bd5d8f4c6498d/opticalpy-1.0.1.tar.gz
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/b3/a3/ddef5ceb678c5f1afe48cfd8efbb642474a332aa147e1fd5a60815f7d364/pyeasydbapi-0.0.5.tar.gz
+[2024-05-18 21:14:45] INFO root fetch - processPackages [opticalpy]: Downloading https://files.pythonhosted.org/packages/52/b2/17946df39d99934c02f4f9e0f1056b89ff5c6ecaa2a762d13035e3280570/opticalpy-1.1.0.tar.gz
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a6/68/6b0e24c17bc1ae8c89da395b348f33a3119035ea01f3a6cc9ea6f92f6fc5/pulumi_kubernetes_the_hard_way-0.0.21a1716012211.tar.gz
+[2024-05-18 21:14:45] INFO root fetch - processPackages [lytools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/cd/76/cda5f6b65e4819fbde0a3c78ae70885a2a4dd0ef336ed122ed5dbf855d85/pyeasydbapi-0.0.6.tar.gz
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.0.5.tar.gz tmp/pyeasydbapi-0.0.6.tar.gz --markdown 20240518/p/pyEasyDbApi/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 21:14:45] INFO root fetch - processPackages [opticalpy]: executing diffoscope
+[2024-05-18 21:14:45] INFO root fetch - processPackages [opticalpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opticalpy-1.0.1.tar.gz tmp/opticalpy-1.1.0.tar.gz --markdown 20240518/o/opticalpy/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-05-18 21:14:45] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716011226.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716012211.tar.gz --markdown 20240518/p/pulumi-kubernetes-the-hard-way/0.0.21a1716011226-0.0.21a1716012211/README.md --exclude *.pyd
+[2024-05-18 21:14:45] INFO root fetch - processPackages [lytools]: Downloading https://files.pythonhosted.org/packages/6f/02/3f6dad6a0ed8a480fc24cbce6bbbd1b9fa5e5948b2b0b162c300576450a2/lytools-0.0.98.tar.gz
+[2024-05-18 21:14:46] INFO root fetch - processPackages [lytools]: Downloading https://files.pythonhosted.org/packages/8b/c7/d32c80774834f9348aa529b6d96e756ba2a90d73162c4655a6efd2de2aa8/lytools-0.0.99.tar.gz
+[2024-05-18 21:14:46] INFO root fetch - processPackages [lytools]: executing diffoscope
+[2024-05-18 21:14:46] INFO root fetch - processPackages [lytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytools-0.0.98.tar.gz tmp/lytools-0.0.99.tar.gz --markdown 20240518/l/lytools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-18 21:14:46] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.5.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.0.6.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:14:46] INFO root fetch - processPackages [opticalpy]: Remove: archive file [/home/abi/fetcher/tmp/opticalpy-1.0.1.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - processPackages [opticalpy]: Remove: archive file [/home/abi/fetcher/tmp/opticalpy-1.1.0.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - main [MainThread]: End processing [opticalpy]: success
+[2024-05-18 21:14:46] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716011226.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1716012211.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-05-18 21:14:46] INFO root fetch - processPackages [lytools]: Remove: archive file [/home/abi/fetcher/tmp/lytools-0.0.98.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - processPackages [lytools]: Remove: archive file [/home/abi/fetcher/tmp/lytools-0.0.99.tar.gz]
+[2024-05-18 21:14:46] INFO root fetch - main [MainThread]: End processing [lytools]: success
+[2024-05-18 21:14:46] INFO root fetch - main [MainThread]: Store serial: [23270466]
