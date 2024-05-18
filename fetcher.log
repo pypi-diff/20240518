@@ -20424,3 +20424,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:03:48] INFO root fetch - processPackages [harm-analysis]: Remove: archive file [/home/abi/fetcher/tmp/harm_analysis-1.1.2.tar.gz]
 [2024-05-18 21:03:48] INFO root fetch - main [MainThread]: End processing [harm-analysis]: success
 [2024-05-18 21:03:48] INFO root fetch - main [MainThread]: Store serial: [23270401]
+[2024-05-18 21:05:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270401]
+[2024-05-18 21:05:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: personal-interfaces
+[2024-05-18 21:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: byteforge-coinmarketcap
+[2024-05-18 21:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymonit
+[2024-05-18 21:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altstore-proxy
+[2024-05-18 21:05:57] INFO root fetch - processPackages [altstore-proxy]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-18 21:05:57] INFO root fetch - processPackages [pymonit]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-05-18 21:05:57] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/7c/f4/2e8968e5b00241e7ec13e28025cc3e339d198122fcedb19c90e27354383c/altstore_proxy-1.1.0.tar.gz
+[2024-05-18 21:05:57] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/28/51/d14c2c18acbdfe3aba3194ea60e05194914c04de4ad63bb4dc4f31f44012/pymonit-1.4.2.tar.gz
+[2024-05-18 21:05:57] INFO root fetch - processPackages [personal-interfaces]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-18 21:05:57] INFO root fetch - processPackages [byteforge-coinmarketcap]: New version: [1.5] Old Version: [1.4]
+[2024-05-18 21:05:57] INFO root fetch - processPackages [personal-interfaces]: Downloading https://files.pythonhosted.org/packages/75/98/8e22399553924ebc711e04969bedd93b584acc0c218d88d58956e198ee8a/personal_interfaces-0.4.0.tar.gz
+[2024-05-18 21:05:57] INFO root fetch - processPackages [byteforge-coinmarketcap]: Downloading https://files.pythonhosted.org/packages/ef/33/58daa848a3e3f9e12844eeb660e29bcc52261601362e5eae5cc5f38ab157/byteforge_coinmarketcap-1.4.tar.gz
+[2024-05-18 21:05:57] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/f3/55/8f41c421292a47237d08c70ce24484085e1728d652b95e1c50f78857aaa3/pymonit-1.4.3.tar.gz
+[2024-05-18 21:05:58] INFO root fetch - processPackages [altstore-proxy]: Downloading https://files.pythonhosted.org/packages/5a/7f/c1f8e00d127be92bdee1de060c5609df35c687902fb47b5a86770b17ac70/altstore_proxy-1.1.1.tar.gz
+[2024-05-18 21:05:58] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-18 21:05:58] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.4.2.tar.gz tmp/pymonit-1.4.3.tar.gz --markdown 20240518/p/pymonit/1.4.2-1.4.3/README.md --exclude *.pyd
+[2024-05-18 21:05:58] INFO root fetch - processPackages [altstore-proxy]: executing diffoscope
+[2024-05-18 21:05:58] INFO root fetch - processPackages [altstore-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altstore_proxy-1.1.0.tar.gz tmp/altstore_proxy-1.1.1.tar.gz --markdown 20240518/a/altstore-proxy/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-18 21:05:58] INFO root fetch - processPackages [personal-interfaces]: Downloading https://files.pythonhosted.org/packages/33/86/971ebde5306a344f79d54d32cb5261bbb585fdd3918c0cba58c2a857c4ab/personal_interfaces-0.4.1.tar.gz
+[2024-05-18 21:05:58] INFO root fetch - processPackages [byteforge-coinmarketcap]: Downloading https://files.pythonhosted.org/packages/31/92/d3eb5872a5bc1333846329266bcbd3de715d6fb10385ea9a3647ca80658d/byteforge_coinmarketcap-1.5.tar.gz
+[2024-05-18 21:05:58] INFO root fetch - processPackages [personal-interfaces]: executing diffoscope
+[2024-05-18 21:05:58] INFO root fetch - processPackages [personal-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/personal_interfaces-0.4.0.tar.gz tmp/personal_interfaces-0.4.1.tar.gz --markdown 20240518/p/personal-interfaces/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-18 21:05:58] INFO root fetch - processPackages [byteforge-coinmarketcap]: executing diffoscope
+[2024-05-18 21:05:58] INFO root fetch - processPackages [byteforge-coinmarketcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byteforge_coinmarketcap-1.4.tar.gz tmp/byteforge_coinmarketcap-1.5.tar.gz --markdown 20240518/b/byteforge-coinmarketcap/1.4-1.5/README.md --exclude *.pyd
+[2024-05-18 21:05:58] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.2.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.3.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-18 21:05:58] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.1.0.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - processPackages [altstore-proxy]: Remove: archive file [/home/abi/fetcher/tmp/altstore_proxy-1.1.1.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - main [MainThread]: End processing [altstore-proxy]: success
+[2024-05-18 21:05:58] INFO root fetch - processPackages [personal-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/personal_interfaces-0.4.0.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - processPackages [personal-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/personal_interfaces-0.4.1.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - main [MainThread]: End processing [personal-interfaces]: success
+[2024-05-18 21:05:58] INFO root fetch - processPackages [byteforge-coinmarketcap]: Remove: archive file [/home/abi/fetcher/tmp/byteforge_coinmarketcap-1.4.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - processPackages [byteforge-coinmarketcap]: Remove: archive file [/home/abi/fetcher/tmp/byteforge_coinmarketcap-1.5.tar.gz]
+[2024-05-18 21:05:58] INFO root fetch - main [MainThread]: End processing [byteforge-coinmarketcap]: success
+[2024-05-18 21:05:58] INFO root fetch - main [MainThread]: Store serial: [23270413]
