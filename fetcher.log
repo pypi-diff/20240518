@@ -15927,3 +15927,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:47:59] INFO root fetch - processPackages [autobean-format]: Remove: archive file [/home/abi/fetcher/tmp/autobean-format-0.1.6.tar.gz]
 [2024-05-18 15:47:59] INFO root fetch - main [MainThread]: End processing [autobean-format]: success
 [2024-05-18 15:47:59] INFO root fetch - main [MainThread]: Store serial: [23268179]
+[2024-05-18 15:50:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268179]
+[2024-05-18 15:50:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 15:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mailchecker
+[2024-05-18 15:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superincreasedz
+[2024-05-18 15:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RNASQLite
+[2024-05-18 15:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotrpy
+[2024-05-18 15:50:08] WARNING root fetch - processPackages [RNASQLite]: Skipping, unable to determine old version
+[2024-05-18 15:50:08] INFO root fetch - main [MainThread]: End processing [RNASQLite] error
+[2024-05-18 15:50:08] INFO root fetch - processPackages [spotrpy]: New version: [3.0] Old Version: [2.2]
+[2024-05-18 15:50:08] WARNING root fetch - processPackages [superincreasedz]: Skipping, unable to determine old version
+[2024-05-18 15:50:08] INFO root fetch - main [MainThread]: End processing [superincreasedz] error
+[2024-05-18 15:50:08] INFO root fetch - processPackages [mailchecker]: New version: [6.0.5] Old Version: [6.0.4]
+[2024-05-18 15:50:08] INFO root fetch - processPackages [spotrpy]: Downloading https://files.pythonhosted.org/packages/c4/c3/7e5ba517e9842801662360f86c616fb93069da94de7242758771132f541f/spotrpy-2.2.tar.gz
+[2024-05-18 15:50:08] INFO root fetch - processPackages [mailchecker]: Downloading https://files.pythonhosted.org/packages/f3/df/a6f285dd57338ad0d39c1acccff4666cc3745c44bdd32ecc7815dd66bdef/mailchecker-6.0.4.tar.gz
+[2024-05-18 15:50:09] INFO root fetch - processPackages [spotrpy]: Downloading https://files.pythonhosted.org/packages/f9/0f/0d2048fc4edfb78dd965bb502b832a44c66334009cfb3c0177b2fdce9093/spotrpy-3.0.tar.gz
+[2024-05-18 15:50:09] INFO root fetch - processPackages [mailchecker]: Downloading https://files.pythonhosted.org/packages/09/79/b2b475d5f18b8a2c911086cc5b5c367ee787f1f64eab0c74f581b0440c7d/mailchecker-6.0.5.tar.gz
+[2024-05-18 15:50:09] INFO root fetch - processPackages [spotrpy]: executing diffoscope
+[2024-05-18 15:50:09] INFO root fetch - processPackages [spotrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotrpy-2.2.tar.gz tmp/spotrpy-3.0.tar.gz --markdown 20240518/s/spotrpy/2.2-3.0/README.md --exclude *.pyd
+[2024-05-18 15:50:09] INFO root fetch - processPackages [mailchecker]: executing diffoscope
+[2024-05-18 15:50:09] INFO root fetch - processPackages [mailchecker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailchecker-6.0.4.tar.gz tmp/mailchecker-6.0.5.tar.gz --markdown 20240518/m/mailchecker/6.0.4-6.0.5/README.md --exclude *.pyd
+[2024-05-18 15:50:09] INFO root fetch - processPackages [spotrpy]: Remove: archive file [/home/abi/fetcher/tmp/spotrpy-2.2.tar.gz]
+[2024-05-18 15:50:09] INFO root fetch - processPackages [spotrpy]: Remove: archive file [/home/abi/fetcher/tmp/spotrpy-3.0.tar.gz]
+[2024-05-18 15:50:09] INFO root fetch - main [MainThread]: End processing [spotrpy]: success
+[2024-05-18 15:50:09] INFO root fetch - processPackages [mailchecker]: Remove: archive file [/home/abi/fetcher/tmp/mailchecker-6.0.4.tar.gz]
+[2024-05-18 15:50:09] INFO root fetch - processPackages [mailchecker]: Remove: archive file [/home/abi/fetcher/tmp/mailchecker-6.0.5.tar.gz]
+[2024-05-18 15:50:09] INFO root fetch - main [MainThread]: End processing [mailchecker]: success
+[2024-05-18 15:50:09] INFO root fetch - main [MainThread]: Store serial: [23268194]
