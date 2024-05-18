@@ -17767,3 +17767,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:03:59] INFO root fetch - processPackages [create-fastapi-project]: Remove: archive file [/home/abi/fetcher/tmp/create_fastapi_project-0.2.5.tar.gz]
 [2024-05-18 18:03:59] INFO root fetch - main [MainThread]: End processing [create-fastapi-project]: success
 [2024-05-18 18:03:59] INFO root fetch - main [MainThread]: Store serial: [23269050]
+[2024-05-18 18:06:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269050]
+[2024-05-18 18:06:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 18:06:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azcp-wrapper
+[2024-05-18 18:06:09] INFO root fetch - processPackages [azcp-wrapper]: New version: [0.0.7] Old Version: [0.0.5]
+[2024-05-18 18:06:09] INFO root fetch - processPackages [azcp-wrapper]: Downloading https://files.pythonhosted.org/packages/75/fc/19434ed4c525e128b5faf0922ccfa208b35bf653b41bfe17930468107b9d/azcp_wrapper-0.0.5.tar.gz
+[2024-05-18 18:06:09] INFO root fetch - processPackages [azcp-wrapper]: Downloading https://files.pythonhosted.org/packages/3d/02/0d29229fe0d3a7e85cc2ae114749dd6899a3a245ebdde1d09b0cf1256f38/azcp_wrapper-0.0.7.tar.gz
+[2024-05-18 18:06:09] INFO root fetch - processPackages [azcp-wrapper]: executing diffoscope
+[2024-05-18 18:06:09] INFO root fetch - processPackages [azcp-wrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azcp_wrapper-0.0.5.tar.gz tmp/azcp_wrapper-0.0.7.tar.gz --markdown 20240518/a/azcp-wrapper/0.0.5-0.0.7/README.md --exclude *.pyd
+[2024-05-18 18:06:10] INFO root fetch - processPackages [azcp-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/azcp_wrapper-0.0.5.tar.gz]
+[2024-05-18 18:06:10] INFO root fetch - processPackages [azcp-wrapper]: Remove: archive file [/home/abi/fetcher/tmp/azcp_wrapper-0.0.7.tar.gz]
+[2024-05-18 18:06:10] INFO root fetch - main [MainThread]: End processing [azcp-wrapper]: success
+[2024-05-18 18:06:10] INFO root fetch - main [MainThread]: Store serial: [23269053]
