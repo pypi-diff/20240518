@@ -19118,3 +19118,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:35:18] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
 [2024-05-18 19:35:18] INFO root fetch - main [MainThread]: End processing [rustberry]: success
 [2024-05-18 19:35:18] INFO root fetch - main [MainThread]: Store serial: [23269720]
+[2024-05-18 19:37:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269720]
+[2024-05-18 19:37:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 19:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Maslib
+[2024-05-18 19:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pure-cv
+[2024-05-18 19:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kappamodules
+[2024-05-18 19:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: importer-local
+[2024-05-18 19:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyclassparser
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pyclassparser]: New version: [0.3] Old Version: [0.2]
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pure-cv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 19:37:36] INFO root fetch - processPackages [importer-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/b1/26/b03b1e7832cbab3f720e9bf67a72ed5315cdcbe7545de71396d2152e648e/pyclassparser-0.2.tar.gz
+[2024-05-18 19:37:36] WARNING root fetch - processPackages [Maslib]: Skipping, unable to determine old version
+[2024-05-18 19:37:36] INFO root fetch - main [MainThread]: End processing [Maslib] error
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/a1/d6/b74bd499875e6643f4a97d72098432e12c0b957837f5163b1ebc266d6b71/pure_cv-0.1.8.tar.gz
+[2024-05-18 19:37:36] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/3b/68/0b10215ac7859421c193cd0df3aab70a0aef2e2db5f22c14a5a2fd7bd732/importer-local-0.0.8.tar.gz
+[2024-05-18 19:37:36] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/80/33/939765aa01c27931d172ea899fb7307071569b4fc595e6ec107018aabc97/importer-local-0.0.9.tar.gz
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pure-cv]: Downloading https://files.pythonhosted.org/packages/05/1f/42a69fcafdcdddda1f19b187fdc4d1895eebefd62a93b5be218beccaac06/pure_cv-0.1.9.tar.gz
+[2024-05-18 19:37:36] INFO root fetch - processPackages [kappamodules]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/2e/a9/1cd347da3e5ef3afd33f6046c13b77ae8b41427f8522c0c10e6b1194622a/pyclassparser-0.3.tar.gz
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pure-cv]: executing diffoscope
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pure-cv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pure_cv-0.1.8.tar.gz tmp/pure_cv-0.1.9.tar.gz --markdown 20240518/p/pure-cv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 19:37:36] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2024-05-18 19:37:36] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.8.tar.gz tmp/importer-local-0.0.9.tar.gz --markdown 20240518/i/importer-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pyclassparser]: executing diffoscope
+[2024-05-18 19:37:36] INFO root fetch - processPackages [pyclassparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclassparser-0.2.tar.gz tmp/pyclassparser-0.3.tar.gz --markdown 20240518/p/pyclassparser/0.2-0.3/README.md --exclude *.pyd
+[2024-05-18 19:37:37] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/3b/e2/1ae9387d8409532bc4bf07acb0b2668b501b1cde2d63e40733fb972b1f4c/kappamodules-0.1.7.tar.gz
+[2024-05-18 19:37:37] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.8.tar.gz]
+[2024-05-18 19:37:37] INFO root fetch - processPackages [pure-cv]: Remove: archive file [/home/abi/fetcher/tmp/pure_cv-0.1.9.tar.gz]
+[2024-05-18 19:37:37] INFO root fetch - main [MainThread]: End processing [pure-cv]: success
+[2024-05-18 19:37:37] INFO root fetch - processPackages [kappamodules]: Downloading https://files.pythonhosted.org/packages/81/fc/bada4aae7de7149188e11f5ee6f6bb78d0725367f860197922b557fbd65b/kappamodules-0.1.8.tar.gz
+[2024-05-18 19:37:37] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.8.tar.gz]
+[2024-05-18 19:37:37] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.9.tar.gz]
+[2024-05-18 19:37:37] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2024-05-18 19:37:37] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.2.tar.gz]
+[2024-05-18 19:37:37] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.3.tar.gz]
+[2024-05-18 19:37:37] INFO root fetch - main [MainThread]: End processing [pyclassparser]: success
+[2024-05-18 19:37:37] INFO root fetch - processPackages [kappamodules]: executing diffoscope
+[2024-05-18 19:37:37] INFO root fetch - processPackages [kappamodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappamodules-0.1.7.tar.gz tmp/kappamodules-0.1.8.tar.gz --markdown 20240518/k/kappamodules/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 19:37:38] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.7.tar.gz]
+[2024-05-18 19:37:38] INFO root fetch - processPackages [kappamodules]: Remove: archive file [/home/abi/fetcher/tmp/kappamodules-0.1.8.tar.gz]
+[2024-05-18 19:37:38] INFO root fetch - main [MainThread]: End processing [kappamodules]: success
+[2024-05-18 19:37:38] INFO root fetch - main [MainThread]: Store serial: [23269736]
