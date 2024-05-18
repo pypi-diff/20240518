@@ -8562,3 +8562,36 @@
 [2024-05-18 05:29:03] INFO root fetch - processPackages [codeinsight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codeinsight_sdk-0.0.9.tar.gz]
 [2024-05-18 05:29:03] INFO root fetch - main [MainThread]: End processing [codeinsight-sdk]: success
 [2024-05-18 05:29:03] INFO root fetch - main [MainThread]: Store serial: [23264401]
+[2024-05-18 05:31:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264401]
+[2024-05-18 05:31:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 05:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: preexcludedz
+[2024-05-18 05:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-dots
+[2024-05-18 05:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: balsamic
+[2024-05-18 05:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-nlp-nightly
+[2024-05-18 05:31:12] INFO root fetch - processPackages [balsamic]: New version: [0.1.97] Old Version: [0.1.96]
+[2024-05-18 05:31:12] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-05-18 05:31:12] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/49/d4/8b8c10d837c99f715971071a42cbf2e8be9b59020e8b359c31fad191cd9e/balsamic-0.1.96.tar.gz
+[2024-05-18 05:31:12] WARNING root fetch - processPackages [preexcludedz]: Skipping, unable to determine old version
+[2024-05-18 05:31:12] INFO root fetch - main [MainThread]: End processing [preexcludedz] error
+[2024-05-18 05:31:12] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-05-18 05:31:12] INFO root fetch - processPackages [mo-dots]: New version: [9.606.24115] Old Version: [9.605.24115]
+[2024-05-18 05:31:12] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-05-18 05:31:12] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/c1/78/500bc80bd2febc9c1dd08390617553bf8eb583859830968121d99c41760a/mo_dots-9.605.24115.tar.gz
+[2024-05-18 05:31:12] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/a2/ad/a53c0146b3f2a893776ecccd8fb1ae1a8819d01473cf84ec7db603e04536/balsamic-0.1.97.tar.gz
+[2024-05-18 05:31:13] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 05:31:13] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.96.tar.gz tmp/balsamic-0.1.97.tar.gz --markdown 20240518/b/balsamic/0.1.96-0.1.97/README.md --exclude *.pyd
+[2024-05-18 05:31:13] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-05-18 05:31:13] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240518/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-05-18 05:31:13] INFO root fetch - processPackages [mo-dots]: Downloading https://files.pythonhosted.org/packages/62/60/27b3dbfd973f17e5e448be2a9a9d96cea0e25479810b1ba253056fa3f295/mo_dots-9.606.24115.tar.gz
+[2024-05-18 05:31:13] INFO root fetch - processPackages [mo-dots]: executing diffoscope
+[2024-05-18 05:31:13] INFO root fetch - processPackages [mo-dots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_dots-9.605.24115.tar.gz tmp/mo_dots-9.606.24115.tar.gz --markdown 20240518/m/mo-dots/9.605.24115-9.606.24115/README.md --exclude *.pyd
+[2024-05-18 05:31:13] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.96.tar.gz]
+[2024-05-18 05:31:13] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.97.tar.gz]
+[2024-05-18 05:31:13] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 05:31:13] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.605.24115.tar.gz]
+[2024-05-18 05:31:13] INFO root fetch - processPackages [mo-dots]: Remove: archive file [/home/abi/fetcher/tmp/mo_dots-9.606.24115.tar.gz]
+[2024-05-18 05:31:13] INFO root fetch - main [MainThread]: End processing [mo-dots]: success
+[2024-05-18 05:31:14] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-05-18 05:31:14] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-05-18 05:31:14] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-05-18 05:31:14] INFO root fetch - main [MainThread]: Store serial: [23264415]
