@@ -7147,3 +7147,18 @@
 [2024-05-18 04:02:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.21a1715995443.tar.gz]
 [2024-05-18 04:02:09] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-05-18 04:02:09] INFO root fetch - main [MainThread]: Store serial: [23263894]
+[2024-05-18 04:04:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263894]
+[2024-05-18 04:04:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 04:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: retourablez
+[2024-05-18 04:04:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowMC
+[2024-05-18 04:04:18] WARNING root fetch - processPackages [retourablez]: Skipping, unable to determine old version
+[2024-05-18 04:04:18] INFO root fetch - main [MainThread]: End processing [retourablez] error
+[2024-05-18 04:04:18] INFO root fetch - processPackages [flowMC]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-18 04:04:18] INFO root fetch - processPackages [flowMC]: Downloading https://files.pythonhosted.org/packages/2d/b8/89557a9d5da6dbc376a5f0e61b906c3e0d296c18ecd9116a1e2d895cd9cc/flowmc-0.3.3.tar.gz
+[2024-05-18 04:04:18] INFO root fetch - processPackages [flowMC]: Downloading https://files.pythonhosted.org/packages/27/bf/18ecaceaa43989123413b3ebfa0e9dbc9c29759ab748938f6d1fe44cae80/flowmc-0.3.4.tar.gz
+[2024-05-18 04:04:19] INFO root fetch - processPackages [flowMC]: executing diffoscope
+[2024-05-18 04:04:19] INFO root fetch - processPackages [flowMC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmc-0.3.3.tar.gz tmp/flowmc-0.3.4.tar.gz --markdown 20240518/f/flowMC/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-18 04:04:19] INFO root fetch - processPackages [flowMC]: Remove: archive file [/home/abi/fetcher/tmp/flowmc-0.3.3.tar.gz]
+[2024-05-18 04:04:19] INFO root fetch - processPackages [flowMC]: Remove: archive file [/home/abi/fetcher/tmp/flowmc-0.3.4.tar.gz]
+[2024-05-18 04:04:19] INFO root fetch - main [MainThread]: End processing [flowMC]: success
+[2024-05-18 04:04:19] INFO root fetch - main [MainThread]: Store serial: [23263900]
