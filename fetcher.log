@@ -13001,3 +13001,18 @@
 [2024-05-18 11:51:59] INFO root fetch - processPackages [org-ds-cdk]: Remove: archive file [/home/abi/fetcher/tmp/org-ds-cdk-0.1.4.tar.gz]
 [2024-05-18 11:51:59] INFO root fetch - main [MainThread]: End processing [org-ds-cdk]: success
 [2024-05-18 11:51:59] INFO root fetch - main [MainThread]: Store serial: [23266749]
+[2024-05-18 11:54:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266749]
+[2024-05-18 11:54:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 11:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: todotree
+[2024-05-18 11:54:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phagocytizedz
+[2024-05-18 11:54:08] INFO root fetch - processPackages [todotree]: New version: [2.5.0] Old Version: [2.4.2]
+[2024-05-18 11:54:08] WARNING root fetch - processPackages [phagocytizedz]: Skipping, unable to determine old version
+[2024-05-18 11:54:08] INFO root fetch - main [MainThread]: End processing [phagocytizedz] error
+[2024-05-18 11:54:08] INFO root fetch - processPackages [todotree]: Downloading https://files.pythonhosted.org/packages/7b/1b/075333a3a257fcca0274ed25fe24eb0101507e2ea67ab1cf69a154e88c89/todotree-2.4.2.tar.gz
+[2024-05-18 11:54:09] INFO root fetch - processPackages [todotree]: Downloading https://files.pythonhosted.org/packages/64/48/062bd1eec763b116c77bafc09187b823c991a30b110d582e746d376ce03e/todotree-2.5.0.tar.gz
+[2024-05-18 11:54:09] INFO root fetch - processPackages [todotree]: executing diffoscope
+[2024-05-18 11:54:09] INFO root fetch - processPackages [todotree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todotree-2.4.2.tar.gz tmp/todotree-2.5.0.tar.gz --markdown 20240518/t/todotree/2.4.2-2.5.0/README.md --exclude *.pyd
+[2024-05-18 11:54:10] INFO root fetch - processPackages [todotree]: Remove: archive file [/home/abi/fetcher/tmp/todotree-2.4.2.tar.gz]
+[2024-05-18 11:54:10] INFO root fetch - processPackages [todotree]: Remove: archive file [/home/abi/fetcher/tmp/todotree-2.5.0.tar.gz]
+[2024-05-18 11:54:10] INFO root fetch - main [MainThread]: End processing [todotree]: success
+[2024-05-18 11:54:10] INFO root fetch - main [MainThread]: Store serial: [23266757]
