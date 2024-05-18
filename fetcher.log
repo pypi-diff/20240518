@@ -12989,3 +12989,15 @@
 [2024-05-18 11:49:49] INFO root fetch - processPackages [textlong]: Remove: archive file [/home/abi/fetcher/tmp/textlong-0.1.4.tar.gz]
 [2024-05-18 11:49:49] INFO root fetch - main [MainThread]: End processing [textlong]: success
 [2024-05-18 11:49:49] INFO root fetch - main [MainThread]: Store serial: [23266742]
+[2024-05-18 11:51:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266742]
+[2024-05-18 11:51:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 11:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: org-ds-cdk
+[2024-05-18 11:51:58] INFO root fetch - processPackages [org-ds-cdk]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 11:51:58] INFO root fetch - processPackages [org-ds-cdk]: Downloading https://files.pythonhosted.org/packages/cb/06/b544aac94347b5bcf26b115ce8d1cd0d121406a0778a4b70266025cec833/org-ds-cdk-0.1.3.tar.gz
+[2024-05-18 11:51:59] INFO root fetch - processPackages [org-ds-cdk]: Downloading https://files.pythonhosted.org/packages/a4/f9/250015790b6f63ea62897083f424583b20f8185ce2abd7c12728bb9ac956/org-ds-cdk-0.1.4.tar.gz
+[2024-05-18 11:51:59] INFO root fetch - processPackages [org-ds-cdk]: executing diffoscope
+[2024-05-18 11:51:59] INFO root fetch - processPackages [org-ds-cdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/org-ds-cdk-0.1.3.tar.gz tmp/org-ds-cdk-0.1.4.tar.gz --markdown 20240518/o/org-ds-cdk/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 11:51:59] INFO root fetch - processPackages [org-ds-cdk]: Remove: archive file [/home/abi/fetcher/tmp/org-ds-cdk-0.1.3.tar.gz]
+[2024-05-18 11:51:59] INFO root fetch - processPackages [org-ds-cdk]: Remove: archive file [/home/abi/fetcher/tmp/org-ds-cdk-0.1.4.tar.gz]
+[2024-05-18 11:51:59] INFO root fetch - main [MainThread]: End processing [org-ds-cdk]: success
+[2024-05-18 11:51:59] INFO root fetch - main [MainThread]: Store serial: [23266749]
