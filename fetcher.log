@@ -21881,3 +21881,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:51:28] INFO root fetch - processPackages [PlexAPI]: Remove: archive file [/home/abi/fetcher/tmp/PlexAPI-4.9.2.tar.gz]
 [2024-05-18 22:51:28] INFO root fetch - main [MainThread]: End processing [PlexAPI]: success
 [2024-05-18 22:51:28] INFO root fetch - main [MainThread]: Store serial: [23271166]
+[2024-05-18 22:53:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271166]
+[2024-05-18 22:53:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 22:55:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271167]
+[2024-05-18 22:55:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 22:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: artesonadoz
+[2024-05-18 22:55:42] WARNING root fetch - processPackages [artesonadoz]: Skipping, unable to determine old version
+[2024-05-18 22:55:42] INFO root fetch - main [MainThread]: End processing [artesonadoz] error
+[2024-05-18 22:55:42] INFO root fetch - main [MainThread]: Store serial: [23271172]
