@@ -14299,3 +14299,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:38:23] INFO root fetch - processPackages [aiosmtpd]: Remove: archive file [/home/abi/fetcher/tmp/aiosmtpd-1.4.6.tar.gz]
 [2024-05-18 13:38:23] INFO root fetch - main [MainThread]: End processing [aiosmtpd]: success
 [2024-05-18 13:38:23] INFO root fetch - main [MainThread]: Store serial: [23267345]
+[2024-05-18 13:40:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267345]
+[2024-05-18 13:40:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 13:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: browserbase
+[2024-05-18 13:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data-prep-toolkit-kfp
+[2024-05-18 13:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pinscrape
+[2024-05-18 13:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BigEDA
+[2024-05-18 13:40:31] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 13:40:31] INFO root fetch - processPackages [data-prep-toolkit-kfp]: New version: [0.1.0] Old Version: [0.0.1.dev9]
+[2024-05-18 13:40:32] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [pinscrape]: New version: [3.1.0] Old Version: [3.0.5]
+[2024-05-18 13:40:32] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/ba/bf/e95575aad408e2aa50198d2c293f708992db973fc14a205c8aaefd64e700/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [browserbase]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 13:40:32] INFO root fetch - processPackages [pinscrape]: Downloading https://files.pythonhosted.org/packages/2b/c7/ea3099d157f56e876cf40312294aee875533796b8dc582da3d45d3e59bdc/pinscrape-3.0.5.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [browserbase]: Downloading https://files.pythonhosted.org/packages/ea/83/0f774965e987e0664fb3e115c58d29edb758335a463c6cc909becfdfde2c/browserbase-0.1.3.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Downloading https://files.pythonhosted.org/packages/c5/c8/8d6d7be956979a103c6894ce424548dff678de6bfc85be8018d305469e67/data_prep_toolkit_kfp-0.1.0.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 13:40:32] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 13:40:32] INFO root fetch - processPackages [data-prep-toolkit-kfp]: executing diffoscope
+[2024-05-18 13:40:32] INFO root fetch - processPackages [data-prep-toolkit-kfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz tmp/data_prep_toolkit_kfp-0.1.0.tar.gz --markdown 20240518/d/data-prep-toolkit-kfp/0.0.1.dev9-0.1.0/README.md --exclude *.pyd
+[2024-05-18 13:40:32] INFO root fetch - processPackages [pinscrape]: Downloading https://files.pythonhosted.org/packages/0f/d9/ccc4e36a67847b2e85a3df872b520f6cc2d18889e963f8f1d14a2e3ec518/pinscrape-3.1.0.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [browserbase]: Downloading https://files.pythonhosted.org/packages/c6/2a/c5bef5eda3e53362599d359dc81f02b600dde7db27873877045410da7bf2/browserbase-0.1.4.tar.gz
+[2024-05-18 13:40:32] INFO root fetch - processPackages [pinscrape]: executing diffoscope
+[2024-05-18 13:40:32] INFO root fetch - processPackages [pinscrape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pinscrape-3.0.5.tar.gz tmp/pinscrape-3.1.0.tar.gz --markdown 20240518/p/pinscrape/3.0.5-3.1.0/README.md --exclude *.pyd
+[2024-05-18 13:40:32] INFO root fetch - processPackages [browserbase]: executing diffoscope
+[2024-05-18 13:40:32] INFO root fetch - processPackages [browserbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browserbase-0.1.3.tar.gz tmp/browserbase-0.1.4.tar.gz --markdown 20240518/b/browserbase/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 13:40:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 13:40:33] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.0.1.dev9.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - processPackages [data-prep-toolkit-kfp]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_toolkit_kfp-0.1.0.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - main [MainThread]: End processing [data-prep-toolkit-kfp]: success
+[2024-05-18 13:40:33] INFO root fetch - processPackages [pinscrape]: Remove: archive file [/home/abi/fetcher/tmp/pinscrape-3.0.5.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - processPackages [pinscrape]: Remove: archive file [/home/abi/fetcher/tmp/pinscrape-3.1.0.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - main [MainThread]: End processing [pinscrape]: success
+[2024-05-18 13:40:33] INFO root fetch - processPackages [browserbase]: Remove: archive file [/home/abi/fetcher/tmp/browserbase-0.1.3.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - processPackages [browserbase]: Remove: archive file [/home/abi/fetcher/tmp/browserbase-0.1.4.tar.gz]
+[2024-05-18 13:40:33] INFO root fetch - main [MainThread]: End processing [browserbase]: success
+[2024-05-18 13:40:33] INFO root fetch - main [MainThread]: Store serial: [23267357]
