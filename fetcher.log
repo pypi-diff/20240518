@@ -11092,3 +11092,24 @@
 [2024-05-18 09:05:51] INFO root fetch - processPackages [odoo14-addon-hr-timesheet-sheet]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_hr_timesheet_sheet-14.0.1.4.4.dev2-py3-none-any.whl.zip]
 [2024-05-18 09:05:51] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hr-timesheet-sheet]: success
 [2024-05-18 09:05:51] INFO root fetch - main [MainThread]: Store serial: [23265605]
+[2024-05-18 09:07:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265605]
+[2024-05-18 09:08:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matrix-rssbot
+[2024-05-18 09:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mteb
+[2024-05-18 09:08:01] INFO root fetch - processPackages [matrix-rssbot]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 09:08:01] INFO root fetch - processPackages [mteb]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-05-18 09:08:01] INFO root fetch - processPackages [matrix-rssbot]: Downloading https://files.pythonhosted.org/packages/1c/2c/273fa93875539cf7a539e520c3a5aa089a3274a3d9dd4603c33e15aaf8c3/matrix_rssbot-0.1.1.tar.gz
+[2024-05-18 09:08:01] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/aa/99/be58df74a89833b5d44fbd8f00e5c99b4ca82aa67a9c1487fd782328d3b5/mteb-1.9.2.tar.gz
+[2024-05-18 09:08:01] INFO root fetch - processPackages [matrix-rssbot]: Downloading https://files.pythonhosted.org/packages/f1/92/42ded88b203663028c91509cd71c63b05706f813b1cf2d44079fa0f342a9/matrix_rssbot-0.1.2.tar.gz
+[2024-05-18 09:08:01] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/1a/05/483a4778dcfb42b672c3c28ac435e64d386b1df507d3c0059e5da9194653/mteb-1.9.3.tar.gz
+[2024-05-18 09:08:01] INFO root fetch - processPackages [matrix-rssbot]: executing diffoscope
+[2024-05-18 09:08:01] INFO root fetch - processPackages [matrix-rssbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matrix_rssbot-0.1.1.tar.gz tmp/matrix_rssbot-0.1.2.tar.gz --markdown 20240518/m/matrix-rssbot/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 09:08:01] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-18 09:08:01] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.9.2.tar.gz tmp/mteb-1.9.3.tar.gz --markdown 20240518/m/mteb/1.9.2-1.9.3/README.md --exclude *.pyd
+[2024-05-18 09:08:02] INFO root fetch - processPackages [matrix-rssbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_rssbot-0.1.1.tar.gz]
+[2024-05-18 09:08:02] INFO root fetch - processPackages [matrix-rssbot]: Remove: archive file [/home/abi/fetcher/tmp/matrix_rssbot-0.1.2.tar.gz]
+[2024-05-18 09:08:02] INFO root fetch - main [MainThread]: End processing [matrix-rssbot]: success
+[2024-05-18 09:08:04] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.2.tar.gz]
+[2024-05-18 09:08:04] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
+[2024-05-18 09:08:04] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-18 09:08:04] INFO root fetch - main [MainThread]: Store serial: [23265611]
