@@ -12298,3 +12298,9 @@
 [2024-05-18 11:01:24] INFO root fetch - processPackages [simple_openid_connect]: Remove: archive file [/home/abi/fetcher/tmp/simple_openid_connect-1.0.1.tar.gz]
 [2024-05-18 11:01:24] INFO root fetch - main [MainThread]: End processing [simple_openid_connect]: success
 [2024-05-18 11:01:24] INFO root fetch - main [MainThread]: Store serial: [23266328]
+[2024-05-18 11:03:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266328]
+[2024-05-18 11:03:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 11:03:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mullz
+[2024-05-18 11:03:33] WARNING root fetch - processPackages [mullz]: Skipping, unable to determine old version
+[2024-05-18 11:03:33] INFO root fetch - main [MainThread]: End processing [mullz] error
+[2024-05-18 11:03:33] INFO root fetch - main [MainThread]: Store serial: [23266333]
