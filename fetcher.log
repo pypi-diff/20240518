@@ -13742,3 +13742,18 @@
 [2024-05-18 13:00:11] INFO root fetch - processPackages [openaiisrich]: Remove: archive file [/home/abi/fetcher/tmp/openaiisrich-0.2.0-py3-none-any.whl.zip]
 [2024-05-18 13:00:11] INFO root fetch - main [MainThread]: End processing [openaiisrich]: success
 [2024-05-18 13:00:11] INFO root fetch - main [MainThread]: Store serial: [23267098]
+[2024-05-18 13:02:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267098]
+[2024-05-18 13:02:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 13:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openaiisrich
+[2024-05-18 13:02:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MT5LinuxEnhanced
+[2024-05-18 13:02:21] INFO root fetch - processPackages [openaiisrich]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-18 13:02:22] WARNING root fetch - processPackages [MT5LinuxEnhanced]: Skipping, unable to determine old version
+[2024-05-18 13:02:22] INFO root fetch - main [MainThread]: End processing [MT5LinuxEnhanced] error
+[2024-05-18 13:02:22] INFO root fetch - processPackages [openaiisrich]: Downloading https://files.pythonhosted.org/packages/d7/b2/284720509f29c5bbb093f36d05ba3c9e32def1459c45c8c1b9d309313280/openaiisrich-0.2.0-py3-none-any.whl
+[2024-05-18 13:02:22] INFO root fetch - processPackages [openaiisrich]: Downloading https://files.pythonhosted.org/packages/64/dc/1698fe2ddf9db5d20147be5dcc77a000a461b3798fde86146be2e465b342/openaiisrich-0.3.0-py3-none-any.whl
+[2024-05-18 13:02:22] INFO root fetch - processPackages [openaiisrich]: executing diffoscope
+[2024-05-18 13:02:22] INFO root fetch - processPackages [openaiisrich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openaiisrich-0.2.0-py3-none-any.whl.zip tmp/openaiisrich-0.3.0-py3-none-any.whl.zip --markdown 20240518/o/openaiisrich/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 13:02:23] INFO root fetch - processPackages [openaiisrich]: Remove: archive file [/home/abi/fetcher/tmp/openaiisrich-0.2.0-py3-none-any.whl.zip]
+[2024-05-18 13:02:23] INFO root fetch - processPackages [openaiisrich]: Remove: archive file [/home/abi/fetcher/tmp/openaiisrich-0.3.0-py3-none-any.whl.zip]
+[2024-05-18 13:02:23] INFO root fetch - main [MainThread]: End processing [openaiisrich]: success
+[2024-05-18 13:02:23] INFO root fetch - main [MainThread]: Store serial: [23267103]
