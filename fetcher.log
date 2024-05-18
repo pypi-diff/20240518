@@ -10495,3 +10495,30 @@
 [2024-05-18 08:21:56] INFO root fetch - processPackages [chainforge]: Remove: archive file [/home/abi/fetcher/tmp/chainforge-0.3.2.0.tar.gz]
 [2024-05-18 08:21:56] INFO root fetch - main [MainThread]: End processing [chainforge]: success
 [2024-05-18 08:21:56] INFO root fetch - main [MainThread]: Store serial: [23265249]
+[2024-05-18 08:24:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265249]
+[2024-05-18 08:24:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 08:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-sale-order-revision
+[2024-05-18 08:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-project-setup
+[2024-05-18 08:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lumpingz
+[2024-05-18 08:24:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gdapi-py
+[2024-05-18 08:24:18] WARNING root fetch - processPackages [lumpingz]: Skipping, unable to determine old version
+[2024-05-18 08:24:18] INFO root fetch - main [MainThread]: End processing [lumpingz] error
+[2024-05-18 08:24:18] INFO root fetch - processPackages [ai-project-setup]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-18 08:24:18] WARNING root fetch - processPackages [gdapi-py]: Skipping, unable to determine old version
+[2024-05-18 08:24:18] INFO root fetch - main [MainThread]: End processing [gdapi-py] error
+[2024-05-18 08:24:18] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: New version: [14.0.1.1.2.dev5] Old Version: [14.0.1.1.2.dev4]
+[2024-05-18 08:24:18] INFO root fetch - processPackages [ai-project-setup]: Downloading https://files.pythonhosted.org/packages/6a/8e/45d0d0238af755dc7211ef09ee00a1f60047bb447e803d1372070e9f08a3/ai_project_setup-0.2.6.tar.gz
+[2024-05-18 08:24:18] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Downloading https://files.pythonhosted.org/packages/55/4c/7f9eb56a9b0080cf1411f7fd2910a948946618f7fa8dc560f995ddcfbf29/odoo14_addon_sale_order_revision-14.0.1.1.2.dev4-py3-none-any.whl
+[2024-05-18 08:24:18] INFO root fetch - processPackages [ai-project-setup]: Downloading https://files.pythonhosted.org/packages/12/a2/0ff435da0e3b37113813b728c7313574fee0b2cdfde1cb2e12e78f257069/ai_project_setup-0.2.7.tar.gz
+[2024-05-18 08:24:18] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Downloading https://files.pythonhosted.org/packages/59/4e/163b70ff7eca73881cd1373e0abf6f0c3f733210f25a8bc6b086103e2d23/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl
+[2024-05-18 08:24:18] INFO root fetch - processPackages [ai-project-setup]: executing diffoscope
+[2024-05-18 08:24:18] INFO root fetch - processPackages [ai-project-setup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_project_setup-0.2.6.tar.gz tmp/ai_project_setup-0.2.7.tar.gz --markdown 20240518/a/ai-project-setup/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-18 08:24:18] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: executing diffoscope
+[2024-05-18 08:24:18] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev4-py3-none-any.whl.zip tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-sale-order-revision/14.0.1.1.2.dev4-14.0.1.1.2.dev5/README.md --exclude *.pyd
+[2024-05-18 08:24:19] INFO root fetch - processPackages [ai-project-setup]: Remove: archive file [/home/abi/fetcher/tmp/ai_project_setup-0.2.6.tar.gz]
+[2024-05-18 08:24:19] INFO root fetch - processPackages [ai-project-setup]: Remove: archive file [/home/abi/fetcher/tmp/ai_project_setup-0.2.7.tar.gz]
+[2024-05-18 08:24:19] INFO root fetch - main [MainThread]: End processing [ai-project-setup]: success
+[2024-05-18 08:24:19] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev4-py3-none-any.whl.zip]
+[2024-05-18 08:24:19] INFO root fetch - processPackages [odoo14-addon-sale-order-revision]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_order_revision-14.0.1.1.2.dev5-py3-none-any.whl.zip]
+[2024-05-18 08:24:19] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-order-revision]: success
+[2024-05-18 08:24:19] INFO root fetch - main [MainThread]: Store serial: [23265263]
