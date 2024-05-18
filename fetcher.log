@@ -11438,3 +11438,29 @@
 [2024-05-18 09:36:21] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.51-py3-none-any.whl.zip]
 [2024-05-18 09:36:21] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-05-18 09:36:21] INFO root fetch - main [MainThread]: Store serial: [23265745]
+[2024-05-18 09:38:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265745]
+[2024-05-18 09:38:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 09:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autostarter
+[2024-05-18 09:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2024-05-18 09:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zfx
+[2024-05-18 09:38:31] INFO root fetch - processPackages [zfx]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 09:38:31] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-05-18 09:38:31] INFO root fetch - processPackages [autostarter]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 09:38:31] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/59/eb/f257e3407edfa0e36bd6d262b25e02023066e104ba26d20cee83a63198f0/zfx-1.0.8.tar.gz
+[2024-05-18 09:38:31] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 09:38:31] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-05-18 09:38:31] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-05-18 09:38:31] INFO root fetch - processPackages [autostarter]: Downloading https://files.pythonhosted.org/packages/92/29/5e670448652052b48cd430c673890580351f7d6be276c7900cd533a4121d/autostarter-0.0.1.tar.gz
+[2024-05-18 09:38:31] INFO root fetch - processPackages [zfx]: Downloading https://files.pythonhosted.org/packages/79/72/81e8c9f95e9effa80a25b20d494a3c3b21ed5cbbd53440c562d52fe8fe8a/zfx-1.0.9.tar.gz
+[2024-05-18 09:38:31] INFO root fetch - processPackages [zfx]: executing diffoscope
+[2024-05-18 09:38:31] INFO root fetch - processPackages [zfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zfx-1.0.8.tar.gz tmp/zfx-1.0.9.tar.gz --markdown 20240518/z/zfx/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 09:38:32] INFO root fetch - processPackages [autostarter]: Downloading https://files.pythonhosted.org/packages/70/86/983f79c72026a74007b322d9b3715d63b97a251bc64628d2d56984d61abb/autostarter-0.0.2.tar.gz
+[2024-05-18 09:38:32] INFO root fetch - processPackages [autostarter]: executing diffoscope
+[2024-05-18 09:38:32] INFO root fetch - processPackages [autostarter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autostarter-0.0.1.tar.gz tmp/autostarter-0.0.2.tar.gz --markdown 20240518/a/autostarter/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 09:38:32] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.8.tar.gz]
+[2024-05-18 09:38:32] INFO root fetch - processPackages [zfx]: Remove: archive file [/home/abi/fetcher/tmp/zfx-1.0.9.tar.gz]
+[2024-05-18 09:38:32] INFO root fetch - main [MainThread]: End processing [zfx]: success
+[2024-05-18 09:38:32] INFO root fetch - processPackages [autostarter]: Remove: archive file [/home/abi/fetcher/tmp/autostarter-0.0.1.tar.gz]
+[2024-05-18 09:38:32] INFO root fetch - processPackages [autostarter]: Remove: archive file [/home/abi/fetcher/tmp/autostarter-0.0.2.tar.gz]
+[2024-05-18 09:38:32] INFO root fetch - main [MainThread]: End processing [autostarter]: success
+[2024-05-18 09:38:32] INFO root fetch - main [MainThread]: Store serial: [23265759]
