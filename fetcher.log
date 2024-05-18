@@ -9308,3 +9308,27 @@
 [2024-05-18 06:30:04] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.631.24139.tar.gz]
 [2024-05-18 06:30:04] INFO root fetch - main [MainThread]: End processing [mo-testing]: success
 [2024-05-18 06:30:04] INFO root fetch - main [MainThread]: Store serial: [23264721]
+[2024-05-18 06:32:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264721]
+[2024-05-18 06:32:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 06:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: marker-pdf
+[2024-05-18 06:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PepperPepper
+[2024-05-18 06:32:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drafterz
+[2024-05-18 06:32:13] INFO root fetch - processPackages [marker-pdf]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-18 06:32:13] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-18 06:32:13] INFO root fetch - processPackages [marker-pdf]: Downloading https://files.pythonhosted.org/packages/9c/04/eea4de58702ef9ee9a836e02cb27fb6564b9a9d7e8d28758315304a77872/marker_pdf-0.2.6.tar.gz
+[2024-05-18 06:32:13] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-18 06:32:13] WARNING root fetch - processPackages [drafterz]: Skipping, unable to determine old version
+[2024-05-18 06:32:13] INFO root fetch - main [MainThread]: End processing [drafterz] error
+[2024-05-18 06:32:13] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-18 06:32:13] INFO root fetch - processPackages [marker-pdf]: Downloading https://files.pythonhosted.org/packages/44/81/f0648dfa1b515972b4aedee485252e6f830eca5a0d3e2942a7ce68fd8c8e/marker_pdf-0.2.7.tar.gz
+[2024-05-18 06:32:13] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-18 06:32:13] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240518/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-18 06:32:13] INFO root fetch - processPackages [marker-pdf]: executing diffoscope
+[2024-05-18 06:32:13] INFO root fetch - processPackages [marker-pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marker_pdf-0.2.6.tar.gz tmp/marker_pdf-0.2.7.tar.gz --markdown 20240518/m/marker-pdf/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-18 06:32:14] INFO root fetch - processPackages [marker-pdf]: Remove: archive file [/home/abi/fetcher/tmp/marker_pdf-0.2.6.tar.gz]
+[2024-05-18 06:32:14] INFO root fetch - processPackages [marker-pdf]: Remove: archive file [/home/abi/fetcher/tmp/marker_pdf-0.2.7.tar.gz]
+[2024-05-18 06:32:14] INFO root fetch - main [MainThread]: End processing [marker-pdf]: success
+[2024-05-18 06:32:14] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-18 06:32:14] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-18 06:32:14] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-18 06:32:14] INFO root fetch - main [MainThread]: Store serial: [23264731]
