@@ -22436,3 +22436,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:45:38] INFO root fetch - processPackages [wwdtm]: Remove: archive file [/home/abi/fetcher/tmp/wwdtm-2.9.1.tar.gz]
 [2024-05-18 23:45:38] INFO root fetch - main [MainThread]: End processing [wwdtm]: success
 [2024-05-18 23:45:38] INFO root fetch - main [MainThread]: Store serial: [23271445]
+[2024-05-18 23:47:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271445]
+[2024-05-18 23:47:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 23:47:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deltachat-rpc-server
+[2024-05-18 23:47:47] INFO root fetch - processPackages [deltachat-rpc-server]: New version: [1.139.0] Old Version: [1.138.5]
+[2024-05-18 23:47:47] INFO root fetch - processPackages [deltachat-rpc-server]: Downloading https://files.pythonhosted.org/packages/b6/ce/fb6731101752e02fe4ff1d3561e1b9428245682dbde14bde1a8b5fc43400/deltachat-rpc-server-1.138.5.tar.gz
+[2024-05-18 23:47:47] INFO root fetch - processPackages [deltachat-rpc-server]: Downloading https://files.pythonhosted.org/packages/07/24/e5644793fd4276e216b87aeb793e54a8260b262a8937d86da17a96df484c/deltachat-rpc-server-1.139.0.tar.gz
+[2024-05-18 23:47:48] INFO root fetch - processPackages [deltachat-rpc-server]: executing diffoscope
+[2024-05-18 23:47:48] INFO root fetch - processPackages [deltachat-rpc-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat-rpc-server-1.138.5.tar.gz tmp/deltachat-rpc-server-1.139.0.tar.gz --markdown 20240518/d/deltachat-rpc-server/1.138.5-1.139.0/README.md --exclude *.pyd
+[2024-05-18 23:47:48] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.138.5.tar.gz]
+[2024-05-18 23:47:48] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.0.tar.gz]
+[2024-05-18 23:47:48] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
+[2024-05-18 23:47:48] INFO root fetch - main [MainThread]: Store serial: [23271456]
