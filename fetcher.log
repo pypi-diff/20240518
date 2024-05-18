@@ -19328,3 +19328,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:46:37] INFO root fetch - processPackages [odoo-addon-account-move-substate]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_substate-16.0.1.0.1-py3-none-any.whl.zip]
 [2024-05-18 19:46:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-substate]: success
 [2024-05-18 19:46:37] INFO root fetch - main [MainThread]: Store serial: [23269793]
+[2024-05-18 19:48:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269793]
+[2024-05-18 19:48:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 19:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-project-forecast-line-bokeh-chart
+[2024-05-18 19:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-utm-source-multi-company
+[2024-05-18 19:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-dchcaptcha
+[2024-05-18 19:48:47] WARNING root fetch - processPackages [py-dchcaptcha]: Skipping, unable to determine old version
+[2024-05-18 19:48:47] INFO root fetch - main [MainThread]: End processing [py-dchcaptcha] error
+[2024-05-18 19:48:47] WARNING root fetch - processPackages [odoo14-addon-project-forecast-line-bokeh-chart]: Skipping, unable to determine old version
+[2024-05-18 19:48:47] INFO root fetch - main [MainThread]: End processing [odoo14-addon-project-forecast-line-bokeh-chart] error
+[2024-05-18 19:48:47] WARNING root fetch - processPackages [odoo-addon-utm-source-multi-company]: Skipping, unable to determine old version
+[2024-05-18 19:48:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-utm-source-multi-company] error
+[2024-05-18 19:48:47] INFO root fetch - main [MainThread]: Store serial: [23269804]
