@@ -17988,3 +17988,77 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:19:20] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.7.tar.gz]
 [2024-05-18 18:19:20] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-05-18 18:19:20] INFO root fetch - main [MainThread]: Store serial: [23269163]
+[2024-05-18 18:21:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269163]
+[2024-05-18 18:21:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nuon
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-http_request
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: err-aprs-backend
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: packaging-demo-avr
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leetpy
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llm-axe
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pysma-plus
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fcs-core-model-engine
+[2024-05-18 18:21:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: Probability-Distribution-Devin
+[2024-05-18 18:21:29] INFO root fetch - processPackages [packaging-demo-avr]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 18:21:29] INFO root fetch - processPackages [pysma-plus]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-18 18:21:29] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/40/c1/56b9c50b04d274fbbba43839c6f949aaa253322bd708325a00d850e75ac6/packaging_demo_avr-0.0.7.tar.gz
+[2024-05-18 18:21:29] INFO root fetch - processPackages [python-http_request]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 18:21:29] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/6f/06/fe1b4a29c5baa4045080dc5c0ca9c375bd0ccef5d5dfffaa9c8e6c3b24de/pysma_plus-0.2.5.tar.gz
+[2024-05-18 18:21:29] INFO root fetch - processPackages [leetpy]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-18 18:21:29] INFO root fetch - processPackages [err-aprs-backend]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-18 18:21:29] WARNING root fetch - processPackages [Probability-Distribution-Devin]: Skipping, unable to determine old version
+[2024-05-18 18:21:29] INFO root fetch - main [MainThread]: End processing [Probability-Distribution-Devin] error
+[2024-05-18 18:21:29] INFO root fetch - processPackages [llm-axe]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-05-18 18:21:29] INFO root fetch - processPackages [fcs-core-model-engine]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-18 18:21:29] INFO root fetch - processPackages [nuon]: New version: [0.19.99] Old Version: [0.19.98]
+[2024-05-18 18:21:30] INFO root fetch - processPackages [python-http_request]: Downloading https://files.pythonhosted.org/packages/76/a4/22386d30d6c82ae82ae8b601c372375370afb404dfdbfe2b3fe9b6cb5865/python_http_request-0.0.1.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/ce/45/798059ef339e5640b167c3163d88bfb23dd444315f125fc2fd3b6c011994/err_aprs_backend-0.5.0.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/b4/fe/0c45ce2c8b067873ba0acf7287e308ead7156182cdfbb1fb1965b70693a1/llm_axe-1.0.9.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/8d/82/73a4a9564f53819f1d2ce0052786b8fbaac8797092a6e5b9ad8368807e5a/nuon-0.19.98.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [leetpy]: Downloading https://files.pythonhosted.org/packages/ce/ed/61119299fbfb7d3057ecd9fcddf0b83088d8c334173593da00b5d3006df6/leetpy-0.2.1.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [packaging-demo-avr]: Downloading https://files.pythonhosted.org/packages/19/c1/b6cad6fba70ab51f7b9943433abab22866f3a34942411d0bc0f3e530eff3/packaging_demo_avr-0.0.8.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [fcs-core-model-engine]: Downloading https://files.pythonhosted.org/packages/07/13/1bfd22b4856ececf0ac95b3ecf79b61e12c4b44ffbb7effbaae9b5c0e5c5/fcs_core_model_engine-0.9.8-py3-none-win_amd64.whl
+[2024-05-18 18:21:30] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/70/b6/76f391e57bec0ca12e2ebd5db45303e8a46b87a98ae07835374de2196a4c/pysma_plus-0.2.6.tar.gz
+[2024-05-18 18:21:30] WARNING root fetch - processPackages [fcs-core-model-engine]: Skipping package: exceeds size limit 25252979>=10485760
+[2024-05-18 18:21:30] INFO root fetch - main [MainThread]: End processing [fcs-core-model-engine] error
+[2024-05-18 18:21:30] INFO root fetch - processPackages [python-http_request]: Downloading https://files.pythonhosted.org/packages/dc/ff/58de0b5eb805a7d90b0461e8b5299b890a05d9ee00588b84963ca6c78789/python_http_request-0.0.2.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [packaging-demo-avr]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [packaging-demo-avr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaging_demo_avr-0.0.7.tar.gz tmp/packaging_demo_avr-0.0.8.tar.gz --markdown 20240518/p/packaging-demo-avr/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 18:21:30] INFO root fetch - processPackages [pysma-plus]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [pysma-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysma_plus-0.2.5.tar.gz tmp/pysma_plus-0.2.6.tar.gz --markdown 20240518/p/pysma-plus/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-18 18:21:30] INFO root fetch - processPackages [err-aprs-backend]: Downloading https://files.pythonhosted.org/packages/8e/48/f681b0a48e6ab5b047b455b53dc606b7c95dee666964242720d808109827/err_aprs_backend-0.5.1.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [llm-axe]: Downloading https://files.pythonhosted.org/packages/e8/b7/4d11c127633b7a72bb2a714c7da3ad706fc43928410a0e3c2f0b03800864/llm_axe-1.1.0.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [nuon]: Downloading https://files.pythonhosted.org/packages/2e/32/73fde17d65f51538c324ffecb418e1d8709cd44e594ad86a351bb39fa67f/nuon-0.19.99.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [python-http_request]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [python-http_request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_http_request-0.0.1.tar.gz tmp/python_http_request-0.0.2.tar.gz --markdown 20240518/p/python-http_request/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 18:21:30] INFO root fetch - processPackages [leetpy]: Downloading https://files.pythonhosted.org/packages/66/88/770e7608ddf179de9aef8556c1246eaab789437e5fc6adc97073691afde7/leetpy-0.2.2.tar.gz
+[2024-05-18 18:21:30] INFO root fetch - processPackages [err-aprs-backend]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [err-aprs-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/err_aprs_backend-0.5.0.tar.gz tmp/err_aprs_backend-0.5.1.tar.gz --markdown 20240518/e/err-aprs-backend/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-18 18:21:30] INFO root fetch - processPackages [nuon]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [nuon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuon-0.19.98.tar.gz tmp/nuon-0.19.99.tar.gz --markdown 20240518/n/nuon/0.19.98-0.19.99/README.md --exclude *.pyd
+[2024-05-18 18:21:30] INFO root fetch - processPackages [leetpy]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [leetpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leetpy-0.2.1.tar.gz tmp/leetpy-0.2.2.tar.gz --markdown 20240518/l/leetpy/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-18 18:21:30] INFO root fetch - processPackages [llm-axe]: executing diffoscope
+[2024-05-18 18:21:30] INFO root fetch - processPackages [llm-axe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_axe-1.0.9.tar.gz tmp/llm_axe-1.1.0.tar.gz --markdown 20240518/l/llm-axe/1.0.9-1.1.0/README.md --exclude *.pyd
+[2024-05-18 18:21:31] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.7.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - processPackages [packaging-demo-avr]: Remove: archive file [/home/abi/fetcher/tmp/packaging_demo_avr-0.0.8.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - main [MainThread]: End processing [packaging-demo-avr]: success
+[2024-05-18 18:21:31] INFO root fetch - processPackages [python-http_request]: Remove: archive file [/home/abi/fetcher/tmp/python_http_request-0.0.1.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - processPackages [python-http_request]: Remove: archive file [/home/abi/fetcher/tmp/python_http_request-0.0.2.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - main [MainThread]: End processing [python-http_request]: success
+[2024-05-18 18:21:31] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.5.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.6.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
+[2024-05-18 18:21:31] INFO root fetch - processPackages [leetpy]: Remove: archive file [/home/abi/fetcher/tmp/leetpy-0.2.1.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - processPackages [leetpy]: Remove: archive file [/home/abi/fetcher/tmp/leetpy-0.2.2.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - main [MainThread]: End processing [leetpy]: success
+[2024-05-18 18:21:31] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.0.9.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - processPackages [llm-axe]: Remove: archive file [/home/abi/fetcher/tmp/llm_axe-1.1.0.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - main [MainThread]: End processing [llm-axe]: success
+[2024-05-18 18:21:31] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.5.0.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - processPackages [err-aprs-backend]: Remove: archive file [/home/abi/fetcher/tmp/err_aprs_backend-0.5.1.tar.gz]
+[2024-05-18 18:21:31] INFO root fetch - main [MainThread]: End processing [err-aprs-backend]: success
+[2024-05-18 18:21:32] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.98.tar.gz]
+[2024-05-18 18:21:32] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
+[2024-05-18 18:21:32] INFO root fetch - main [MainThread]: End processing [nuon]: success
+[2024-05-18 18:21:32] INFO root fetch - main [MainThread]: Store serial: [23269192]
