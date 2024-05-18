@@ -17177,3 +17177,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:24:42] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_barcodes_generator_product-12.0.1.1.0-py3-none-any.whl.zip]
 [2024-05-18 17:24:42] INFO root fetch - main [MainThread]: End processing [odoo12-addon-barcodes-generator-product]: success
 [2024-05-18 17:24:42] INFO root fetch - main [MainThread]: Store serial: [23268821]
+[2024-05-18 17:26:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268821]
+[2024-05-18 17:26:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 17:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chifferz
+[2024-05-18 17:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: warp-python
+[2024-05-18 17:26:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyesorm
+[2024-05-18 17:26:51] INFO root fetch - processPackages [warp-python]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-18 17:26:51] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/39/6c/4d3e7b3440418644283be94df9423bd2cbfd834f2909e84840b0b1438c57/warp_python-1.2.4.tar.gz
+[2024-05-18 17:26:51] WARNING root fetch - processPackages [chifferz]: Skipping, unable to determine old version
+[2024-05-18 17:26:51] INFO root fetch - main [MainThread]: End processing [chifferz] error
+[2024-05-18 17:26:51] INFO root fetch - processPackages [pyesorm]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-18 17:26:51] INFO root fetch - processPackages [pyesorm]: Downloading https://files.pythonhosted.org/packages/56/2f/14ff796c625be5a514360fe4441c991ec20947a7ae5fa83acea1b34abf8e/pyesorm-0.4.3.tar.gz
+[2024-05-18 17:26:51] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/21/81/e0236781777845a47add2533f0aacae2023fa25478db7f8d629bf69e5ffc/warp_python-1.2.5.tar.gz
+[2024-05-18 17:26:51] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 17:26:51] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.4.tar.gz tmp/warp_python-1.2.5.tar.gz --markdown 20240518/w/warp-python/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-18 17:26:52] INFO root fetch - processPackages [pyesorm]: Downloading https://files.pythonhosted.org/packages/62/97/d06220089018208832974365df66ae0517f6e5a720db479c1c7933403c93/pyesorm-0.4.4.tar.gz
+[2024-05-18 17:26:52] INFO root fetch - processPackages [pyesorm]: executing diffoscope
+[2024-05-18 17:26:52] INFO root fetch - processPackages [pyesorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyesorm-0.4.3.tar.gz tmp/pyesorm-0.4.4.tar.gz --markdown 20240518/p/pyesorm/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-18 17:26:52] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.4.tar.gz]
+[2024-05-18 17:26:52] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.5.tar.gz]
+[2024-05-18 17:26:52] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 17:26:52] INFO root fetch - processPackages [pyesorm]: Remove: archive file [/home/abi/fetcher/tmp/pyesorm-0.4.3.tar.gz]
+[2024-05-18 17:26:52] INFO root fetch - processPackages [pyesorm]: Remove: archive file [/home/abi/fetcher/tmp/pyesorm-0.4.4.tar.gz]
+[2024-05-18 17:26:52] INFO root fetch - main [MainThread]: End processing [pyesorm]: success
+[2024-05-18 17:26:52] INFO root fetch - main [MainThread]: Store serial: [23268828]
