@@ -13535,3 +13535,48 @@
 [2024-05-18 12:40:37] INFO root fetch - processPackages [pyaudisam]: Remove: archive file [/home/abi/fetcher/tmp/pyaudisam-1.1.0.tar.gz]
 [2024-05-18 12:40:37] INFO root fetch - main [MainThread]: End processing [pyaudisam]: success
 [2024-05-18 12:40:37] INFO root fetch - main [MainThread]: Store serial: [23266991]
+[2024-05-18 12:42:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266991]
+[2024-05-18 12:42:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 12:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AllFilesReader
+[2024-05-18 12:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rules
+[2024-05-18 12:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pg-sync-roles
+[2024-05-18 12:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: todotree
+[2024-05-18 12:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: geom-archetypal
+[2024-05-18 12:42:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openaiisrich
+[2024-05-18 12:42:47] INFO root fetch - processPackages [todotree]: New version: [2.5.0] Old Version: [2.4.2]
+[2024-05-18 12:42:47] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 12:42:47] INFO root fetch - processPackages [todotree]: Downloading https://files.pythonhosted.org/packages/7b/1b/075333a3a257fcca0274ed25fe24eb0101507e2ea67ab1cf69a154e88c89/todotree-2.4.2.tar.gz
+[2024-05-18 12:42:47] WARNING root fetch - processPackages [geom-archetypal]: Skipping, unable to determine old version
+[2024-05-18 12:42:47] INFO root fetch - main [MainThread]: End processing [geom-archetypal] error
+[2024-05-18 12:42:47] INFO root fetch - processPackages [rules]: New version: [3.4] Old Version: [3.3]
+[2024-05-18 12:42:47] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [AllFilesReader]: New version: [0.0.8] Old Version: [0.0.5]
+[2024-05-18 12:42:47] WARNING root fetch - processPackages [openaiisrich]: Skipping, unable to determine old version
+[2024-05-18 12:42:47] INFO root fetch - main [MainThread]: End processing [openaiisrich] error
+[2024-05-18 12:42:47] INFO root fetch - processPackages [rules]: Downloading https://files.pythonhosted.org/packages/6f/44/6b11fc4490ba4d25fbbb81348b5f8d2d748c47d866cb57b79fb656b86b26/rules-3.3.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [AllFilesReader]: Downloading https://files.pythonhosted.org/packages/4f/7f/07e0966291ddde932c31bdb535ffdb2f3e6f6daf0850ee7178dd2784b95e/allfilesreader-0.0.5.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [todotree]: Downloading https://files.pythonhosted.org/packages/64/48/062bd1eec763b116c77bafc09187b823c991a30b110d582e746d376ce03e/todotree-2.5.0.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-18 12:42:47] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240518/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 12:42:47] INFO root fetch - processPackages [todotree]: executing diffoscope
+[2024-05-18 12:42:47] INFO root fetch - processPackages [todotree]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/todotree-2.4.2.tar.gz tmp/todotree-2.5.0.tar.gz --markdown 20240518/t/todotree/2.4.2-2.5.0/README.md --exclude *.pyd
+[2024-05-18 12:42:47] INFO root fetch - processPackages [rules]: Downloading https://files.pythonhosted.org/packages/63/dd/06b3621f65133680297215d23567b4b83f939fe5a7b6ce92244d70950b94/rules-3.4.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [AllFilesReader]: Downloading https://files.pythonhosted.org/packages/db/63/348d688adc11b3efa1c4ea307264f6b59e311d40c553256e57e00d3225cb/allfilesreader-0.0.8.tar.gz
+[2024-05-18 12:42:47] INFO root fetch - processPackages [AllFilesReader]: executing diffoscope
+[2024-05-18 12:42:47] INFO root fetch - processPackages [AllFilesReader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allfilesreader-0.0.5.tar.gz tmp/allfilesreader-0.0.8.tar.gz --markdown 20240518/A/AllFilesReader/0.0.5-0.0.8/README.md --exclude *.pyd
+[2024-05-18 12:42:47] INFO root fetch - processPackages [rules]: executing diffoscope
+[2024-05-18 12:42:47] INFO root fetch - processPackages [rules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rules-3.3.tar.gz tmp/rules-3.4.tar.gz --markdown 20240518/r/rules/3.3-3.4/README.md --exclude *.pyd
+[2024-05-18 12:42:48] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-18 12:42:48] INFO root fetch - processPackages [todotree]: Remove: archive file [/home/abi/fetcher/tmp/todotree-2.4.2.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - processPackages [todotree]: Remove: archive file [/home/abi/fetcher/tmp/todotree-2.5.0.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - main [MainThread]: End processing [todotree]: success
+[2024-05-18 12:42:48] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.5.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.8.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - main [MainThread]: End processing [AllFilesReader]: success
+[2024-05-18 12:42:48] INFO root fetch - processPackages [rules]: Remove: archive file [/home/abi/fetcher/tmp/rules-3.3.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - processPackages [rules]: Remove: archive file [/home/abi/fetcher/tmp/rules-3.4.tar.gz]
+[2024-05-18 12:42:48] INFO root fetch - main [MainThread]: End processing [rules]: success
+[2024-05-18 12:42:48] INFO root fetch - main [MainThread]: Store serial: [23267013]
