@@ -15481,3 +15481,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:17:15] INFO root fetch - processPackages [tflite-micro]: Remove: archive file [/home/abi/fetcher/tmp/tflite_micro-0.dev20240516154032-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
 [2024-05-18 15:17:15] INFO root fetch - main [MainThread]: End processing [tflite-micro]: success
 [2024-05-18 15:17:15] INFO root fetch - main [MainThread]: Store serial: [23267945]
+[2024-05-18 15:19:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267945]
+[2024-05-18 15:19:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 15:19:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torchsense
+[2024-05-18 15:19:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stormboundz
+[2024-05-18 15:19:24] INFO root fetch - processPackages [torchsense]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 15:19:24] INFO root fetch - processPackages [torchsense]: Downloading https://files.pythonhosted.org/packages/6f/b4/6bb963f05e471c545df0e7ae9a35b9fb148be27180c18e5780a8dfcf26b0/torchsense-0.0.5.tar.gz
+[2024-05-18 15:19:24] WARNING root fetch - processPackages [stormboundz]: Skipping, unable to determine old version
+[2024-05-18 15:19:24] INFO root fetch - main [MainThread]: End processing [stormboundz] error
+[2024-05-18 15:19:24] INFO root fetch - processPackages [torchsense]: Downloading https://files.pythonhosted.org/packages/3f/77/3f4a589cf3f00ede89f2dbe3c01e097d208b6b2d7a83379ad255e0b5d421/torchsense-0.0.6.tar.gz
+[2024-05-18 15:19:25] INFO root fetch - processPackages [torchsense]: executing diffoscope
+[2024-05-18 15:19:25] INFO root fetch - processPackages [torchsense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsense-0.0.5.tar.gz tmp/torchsense-0.0.6.tar.gz --markdown 20240518/t/torchsense/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 15:19:25] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.5.tar.gz]
+[2024-05-18 15:19:25] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.6.tar.gz]
+[2024-05-18 15:19:25] INFO root fetch - main [MainThread]: End processing [torchsense]: success
+[2024-05-18 15:19:25] INFO root fetch - main [MainThread]: Store serial: [23267953]
