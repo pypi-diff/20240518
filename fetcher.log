@@ -11948,3 +11948,15 @@
 [2024-05-18 10:28:23] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.9.tar.gz]
 [2024-05-18 10:28:23] INFO root fetch - main [MainThread]: End processing [biosimulator-processes]: success
 [2024-05-18 10:28:23] INFO root fetch - main [MainThread]: Store serial: [23266003]
+[2024-05-18 10:30:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266003]
+[2024-05-18 10:30:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 10:30:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openagents-node-sdk
+[2024-05-18 10:30:33] INFO root fetch - processPackages [openagents-node-sdk]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-18 10:30:33] INFO root fetch - processPackages [openagents-node-sdk]: Downloading https://files.pythonhosted.org/packages/70/43/f67942c8f1b2111eb8a64420e13f945c5ec577484e6b11319d5fc920d879/openagents_node_sdk-0.3.4.tar.gz
+[2024-05-18 10:30:33] INFO root fetch - processPackages [openagents-node-sdk]: Downloading https://files.pythonhosted.org/packages/4b/bf/174a6be9638bd655fc7222d16ac30311c911ee88978f4c894bacee936ae8/openagents_node_sdk-0.3.5.tar.gz
+[2024-05-18 10:30:33] INFO root fetch - processPackages [openagents-node-sdk]: executing diffoscope
+[2024-05-18 10:30:33] INFO root fetch - processPackages [openagents-node-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openagents_node_sdk-0.3.4.tar.gz tmp/openagents_node_sdk-0.3.5.tar.gz --markdown 20240518/o/openagents-node-sdk/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-18 10:30:34] INFO root fetch - processPackages [openagents-node-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openagents_node_sdk-0.3.4.tar.gz]
+[2024-05-18 10:30:34] INFO root fetch - processPackages [openagents-node-sdk]: Remove: archive file [/home/abi/fetcher/tmp/openagents_node_sdk-0.3.5.tar.gz]
+[2024-05-18 10:30:34] INFO root fetch - main [MainThread]: End processing [openagents-node-sdk]: success
+[2024-05-18 10:30:34] INFO root fetch - main [MainThread]: Store serial: [23266005]
