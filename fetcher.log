@@ -13829,3 +13829,45 @@
 [2024-05-18 13:11:04] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-1.0.0.tar.gz]
 [2024-05-18 13:11:04] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
 [2024-05-18 13:11:04] INFO root fetch - main [MainThread]: Store serial: [23267140]
+[2024-05-18 13:13:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267140]
+[2024-05-18 13:13:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: funky-modifiers
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latex-papersize
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccxt
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commitizen
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: whitecanvas
+[2024-05-18 13:13:13] WARNING root fetch - processPackages [latex-papersize]: Skipping, unable to determine old version
+[2024-05-18 13:13:13] INFO root fetch - main [MainThread]: End processing [latex-papersize] error
+[2024-05-18 13:13:13] INFO root fetch - processPackages [commitizen]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ccxt]: New version: [4.3.9] Old Version: [4.3.8]
+[2024-05-18 13:13:13] INFO root fetch - processPackages [funky-modifiers]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 13:13:13] INFO root fetch - processPackages [whitecanvas]: New version: [0.3.0] Old Version: [0.2.6]
+[2024-05-18 13:13:13] INFO root fetch - processPackages [commitizen]: Downloading https://files.pythonhosted.org/packages/44/a7/117033ebdea50528ddcf8657f5e166b266c2509b4db9629819aa259707ef/commitizen-3.9.0.tar.gz
+[2024-05-18 13:13:13] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/58/9c/65dd10d684880ac9b1f6c4559e40edf802d55238a49bd7a3d5482e8dcd70/funky_modifiers-0.1.8.tar.gz
+[2024-05-18 13:13:13] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/1c/a1/3a1a3f9672e43a2620d2ab195c398183c3594751d3a306bd022e7ceccbb7/ccxt-4.3.8.tar.gz
+[2024-05-18 13:13:13] INFO root fetch - processPackages [whitecanvas]: Downloading https://files.pythonhosted.org/packages/eb/7f/42d52257ce93668c1b1ded80b78aa8e3ccc92c445d6e036f8d86176b827a/whitecanvas-0.2.6.tar.gz
+[2024-05-18 13:13:13] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/ba/21/22436212a1fbcdaaba68e04256b44d06002781088854ea1eaf452c392955/funky_modifiers-0.1.9.tar.gz
+[2024-05-18 13:13:14] INFO root fetch - processPackages [commitizen]: Downloading https://files.pythonhosted.org/packages/1e/db/0711734fc2cd7bb61b915fe0e6734a910f900fa860dc99d4509ee5bbf292/commitizen-3.9.1.tar.gz
+[2024-05-18 13:13:14] INFO root fetch - processPackages [whitecanvas]: Downloading https://files.pythonhosted.org/packages/e8/9d/6b19cfa275e2b3bc3821b32e19775aded7960a7246603d567f48cdab1e44/whitecanvas-0.3.0.tar.gz
+[2024-05-18 13:13:14] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-18 13:13:14] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.1.8.tar.gz tmp/funky_modifiers-0.1.9.tar.gz --markdown 20240518/f/funky-modifiers/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 13:13:14] INFO root fetch - processPackages [commitizen]: executing diffoscope
+[2024-05-18 13:13:14] INFO root fetch - processPackages [commitizen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commitizen-3.9.0.tar.gz tmp/commitizen-3.9.1.tar.gz --markdown 20240518/c/commitizen/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-05-18 13:13:14] INFO root fetch - processPackages [whitecanvas]: executing diffoscope
+[2024-05-18 13:13:14] INFO root fetch - processPackages [whitecanvas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whitecanvas-0.2.6.tar.gz tmp/whitecanvas-0.3.0.tar.gz --markdown 20240518/w/whitecanvas/0.2.6-0.3.0/README.md --exclude *.pyd
+[2024-05-18 13:13:14] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/f0/34/c7c38c5c0bec0a22183d7eed68184bef3efe315a8570460824012267cbac/ccxt-4.3.9.tar.gz
+[2024-05-18 13:13:14] INFO root fetch - processPackages [commitizen]: Remove: archive file [/home/abi/fetcher/tmp/commitizen-3.9.0.tar.gz]
+[2024-05-18 13:13:14] INFO root fetch - processPackages [commitizen]: Remove: archive file [/home/abi/fetcher/tmp/commitizen-3.9.1.tar.gz]
+[2024-05-18 13:13:14] INFO root fetch - main [MainThread]: End processing [commitizen]: success
+[2024-05-18 13:13:14] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.8.tar.gz]
+[2024-05-18 13:13:14] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.9.tar.gz]
+[2024-05-18 13:13:14] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-18 13:13:14] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-05-18 13:13:14] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.8.tar.gz tmp/ccxt-4.3.9.tar.gz --markdown 20240518/c/ccxt/4.3.8-4.3.9/README.md --exclude *.pyd
+[2024-05-18 13:13:15] INFO root fetch - processPackages [whitecanvas]: Remove: archive file [/home/abi/fetcher/tmp/whitecanvas-0.2.6.tar.gz]
+[2024-05-18 13:13:15] INFO root fetch - processPackages [whitecanvas]: Remove: archive file [/home/abi/fetcher/tmp/whitecanvas-0.3.0.tar.gz]
+[2024-05-18 13:13:15] INFO root fetch - main [MainThread]: End processing [whitecanvas]: success
+[2024-05-18 13:13:18] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.8.tar.gz]
+[2024-05-18 13:13:18] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
+[2024-05-18 13:13:18] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-05-18 13:13:18] INFO root fetch - main [MainThread]: Store serial: [23267155]
