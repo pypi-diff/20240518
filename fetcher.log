@@ -18125,3 +18125,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:26:02] INFO root fetch - processPackages [docketanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/docketanalyzer-0.1.1-py3-none-any.whl.zip]
 [2024-05-18 18:26:02] INFO root fetch - main [MainThread]: End processing [docketanalyzer]: success
 [2024-05-18 18:26:02] INFO root fetch - main [MainThread]: Store serial: [23269227]
+[2024-05-18 18:28:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269227]
+[2024-05-18 18:28:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 18:28:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spendsz
+[2024-05-18 18:28:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logfire
+[2024-05-18 18:28:12] INFO root fetch - processPackages [logfire]: New version: [0.33.0] Old Version: [0.32.1]
+[2024-05-18 18:28:12] WARNING root fetch - processPackages [spendsz]: Skipping, unable to determine old version
+[2024-05-18 18:28:12] INFO root fetch - main [MainThread]: End processing [spendsz] error
+[2024-05-18 18:28:12] INFO root fetch - processPackages [logfire]: Downloading https://files.pythonhosted.org/packages/6d/43/3cde261b4ad5810836b7daa64923939c5af11d4e0a6e6b6a67bedeef87d2/logfire-0.32.1.tar.gz
+[2024-05-18 18:28:12] INFO root fetch - processPackages [logfire]: Downloading https://files.pythonhosted.org/packages/a5/a7/c25f4e203b99184b7da8f74a1e9ecad5af2e1a5eb8b254b76070744bcd5b/logfire-0.33.0.tar.gz
+[2024-05-18 18:28:12] INFO root fetch - processPackages [logfire]: executing diffoscope
+[2024-05-18 18:28:12] INFO root fetch - processPackages [logfire]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logfire-0.32.1.tar.gz tmp/logfire-0.33.0.tar.gz --markdown 20240518/l/logfire/0.32.1-0.33.0/README.md --exclude *.pyd
+[2024-05-18 18:28:13] INFO root fetch - processPackages [logfire]: Remove: archive file [/home/abi/fetcher/tmp/logfire-0.32.1.tar.gz]
+[2024-05-18 18:28:13] INFO root fetch - processPackages [logfire]: Remove: archive file [/home/abi/fetcher/tmp/logfire-0.33.0.tar.gz]
+[2024-05-18 18:28:13] INFO root fetch - main [MainThread]: End processing [logfire]: success
+[2024-05-18 18:28:13] INFO root fetch - main [MainThread]: Store serial: [23269234]
