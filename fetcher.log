@@ -20373,3 +20373,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:59:28] INFO root fetch - processPackages [chaospy]: Remove: archive file [/home/abi/fetcher/tmp/chaospy-4.3.9.post1.tar.gz]
 [2024-05-18 20:59:28] INFO root fetch - main [MainThread]: End processing [chaospy]: success
 [2024-05-18 20:59:28] INFO root fetch - main [MainThread]: Store serial: [23270375]
+[2024-05-18 21:01:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270375]
+[2024-05-18 21:01:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 21:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camera-ui-python-types
+[2024-05-18 21:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: personal-custom-packages
+[2024-05-18 21:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solutionz
+[2024-05-18 21:01:37] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 21:01:37] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-18 21:01:37] WARNING root fetch - processPackages [personal-custom-packages]: Skipping, unable to determine old version
+[2024-05-18 21:01:37] INFO root fetch - main [MainThread]: End processing [personal-custom-packages] error
+[2024-05-18 21:01:37] WARNING root fetch - processPackages [solutionz]: Skipping, unable to determine old version
+[2024-05-18 21:01:37] INFO root fetch - main [MainThread]: End processing [solutionz] error
+[2024-05-18 21:01:38] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-18 21:01:38] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-18 21:01:38] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240518/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 21:01:38] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-18 21:01:38] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-18 21:01:38] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-18 21:01:38] INFO root fetch - main [MainThread]: Store serial: [23270388]
