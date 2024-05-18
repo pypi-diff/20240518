@@ -20191,3 +20191,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:46:21] INFO root fetch - processPackages [codefly-cli]: Remove: archive file [/home/abi/fetcher/tmp/codefly_cli-0.0.7.tar.gz]
 [2024-05-18 20:46:21] INFO root fetch - main [MainThread]: End processing [codefly-cli]: success
 [2024-05-18 20:46:21] INFO root fetch - main [MainThread]: Store serial: [23270273]
+[2024-05-18 20:48:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270273]
+[2024-05-18 20:48:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 20:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TestGeneratorPluginLib
+[2024-05-18 20:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-portal-hide-invoice
+[2024-05-18 20:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coherent.build
+[2024-05-18 20:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-base-iso3166
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/35/31/10b3bcf0bad37ea153d55f9b39c121567f72ced4b0a4e4cbdbdb0f76464d/coherent_build-0.6.0.tar.gz
+[2024-05-18 20:48:31] INFO root fetch - processPackages [TestGeneratorPluginLib]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-18 20:48:31] WARNING root fetch - processPackages [odoo-addon-account-portal-hide-invoice]: Skipping, unable to determine old version
+[2024-05-18 20:48:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-portal-hide-invoice] error
+[2024-05-18 20:48:31] INFO root fetch - processPackages [odoo-addon-base-iso3166]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-05-18 20:48:31] INFO root fetch - processPackages [TestGeneratorPluginLib]: Downloading https://files.pythonhosted.org/packages/d2/3e/9d068917ac0b9e88c275def7c9ec67d28831ea8a4b90e0ad108c201248a1/TestGeneratorPluginLib-1.2.2.tar.gz
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: Downloading https://files.pythonhosted.org/packages/90/1d/a3ebec08cd2a07f69be8570ed4b1dcfb06859eebc2fb838a2fb3c87408e9/coherent_build-0.7.0.tar.gz
+[2024-05-18 20:48:31] INFO root fetch - processPackages [odoo-addon-base-iso3166]: Downloading https://files.pythonhosted.org/packages/dd/00/b2b48392b1614c9e5ec8a250a0cb7164dc0d357c3d0d1c3bfe7e2217b235/odoo_addon_base_iso3166-17.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: executing diffoscope
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_build-0.6.0.tar.gz tmp/coherent_build-0.7.0.tar.gz --markdown 20240518/c/coherent.build/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-18 20:48:31] INFO root fetch - processPackages [TestGeneratorPluginLib]: Downloading https://files.pythonhosted.org/packages/2c/21/7f966c1ac69a8858a7c473a3116345620765573ffb5b1ae74cc905869d65/TestGeneratorPluginLib-1.2.3.tar.gz
+[2024-05-18 20:48:31] INFO root fetch - processPackages [TestGeneratorPluginLib]: executing diffoscope
+[2024-05-18 20:48:31] INFO root fetch - processPackages [TestGeneratorPluginLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TestGeneratorPluginLib-1.2.2.tar.gz tmp/TestGeneratorPluginLib-1.2.3.tar.gz --markdown 20240518/T/TestGeneratorPluginLib/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-18 20:48:31] INFO root fetch - processPackages [odoo-addon-base-iso3166]: Downloading https://files.pythonhosted.org/packages/b9/8f/71ad2cb997fdbe7dff094303fb5cfac2c97cf22614158966037e76a2517b/odoo_addon_base_iso3166-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 20:48:31] INFO root fetch - processPackages [odoo-addon-base-iso3166]: executing diffoscope
+[2024-05-18 20:48:31] INFO root fetch - processPackages [odoo-addon-base-iso3166]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_iso3166-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_base_iso3166-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-base-iso3166/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.6.0.tar.gz]
+[2024-05-18 20:48:31] INFO root fetch - processPackages [coherent.build]: Remove: archive file [/home/abi/fetcher/tmp/coherent_build-0.7.0.tar.gz]
+[2024-05-18 20:48:31] INFO root fetch - main [MainThread]: End processing [coherent.build]: success
+[2024-05-18 20:48:32] INFO root fetch - processPackages [TestGeneratorPluginLib]: Remove: archive file [/home/abi/fetcher/tmp/TestGeneratorPluginLib-1.2.2.tar.gz]
+[2024-05-18 20:48:32] INFO root fetch - processPackages [TestGeneratorPluginLib]: Remove: archive file [/home/abi/fetcher/tmp/TestGeneratorPluginLib-1.2.3.tar.gz]
+[2024-05-18 20:48:32] INFO root fetch - main [MainThread]: End processing [TestGeneratorPluginLib]: success
+[2024-05-18 20:48:32] INFO root fetch - processPackages [odoo-addon-base-iso3166]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_iso3166-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 20:48:32] INFO root fetch - processPackages [odoo-addon-base-iso3166]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_iso3166-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 20:48:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-iso3166]: success
+[2024-05-18 20:48:32] INFO root fetch - main [MainThread]: Store serial: [23270290]
