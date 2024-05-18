@@ -22346,3 +22346,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:34:47] INFO root fetch - processPackages [edsl]: Remove: archive file [/home/abi/fetcher/tmp/edsl-0.1.9.tar.gz]
 [2024-05-18 23:34:47] INFO root fetch - main [MainThread]: End processing [edsl]: success
 [2024-05-18 23:34:47] INFO root fetch - main [MainThread]: Store serial: [23271399]
+[2024-05-18 23:36:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271399]
+[2024-05-18 23:36:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 23:38:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271399]
+[2024-05-18 23:39:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 23:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: g4f
+[2024-05-18 23:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quad-iou
+[2024-05-18 23:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iphone-backup-decrypt
+[2024-05-18 23:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quad-iou
+[2024-05-18 23:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: NumpyTransforms
+[2024-05-18 23:39:04] INFO root fetch - processPackages [g4f]: New version: [0.3.1.4] Old Version: [0.3.1.3]
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: New version: [0.16.0] Old Version: [0.0.0]
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: New version: [0.16.0] Old Version: [0.0.0]
+[2024-05-18 23:39:04] INFO root fetch - processPackages [iphone-backup-decrypt]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-18 23:39:04] INFO root fetch - processPackages [NumpyTransforms]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-18 23:39:04] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/60/a3/ba47cd4346143303d49e1bd820abd043e714cdcaac25396cd0006aee489b/g4f-0.3.1.3.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: Downloading https://files.pythonhosted.org/packages/64/c5/7197d5ac3e2e536c3da4d3256840317e1ec377a97a408e06f1cd599a0028/quad_iou-0.0.0.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: Downloading https://files.pythonhosted.org/packages/64/c5/7197d5ac3e2e536c3da4d3256840317e1ec377a97a408e06f1cd599a0028/quad_iou-0.0.0.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [iphone-backup-decrypt]: Downloading https://files.pythonhosted.org/packages/0d/96/8852e84ec87206ac5fbcb7d2eab783f930f83752d05618b788095bc72e93/iphone_backup_decrypt-0.7.0.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [NumpyTransforms]: Downloading https://files.pythonhosted.org/packages/41/01/e4bfb2207eb81f69f631afec9ea6ee8d1ab8eac330a188cc015904e01cdc/numpytransforms-0.0.0.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/4a/7a/7d9c4ba4c9635ec96e9bb8e470ebf1c9561356e5cc9c409e239b076cecdc/g4f-0.3.1.4.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-05-18 23:39:04] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.3.1.3.tar.gz tmp/g4f-0.3.1.4.tar.gz --markdown 20240518/g/g4f/0.3.1.3-0.3.1.4/README.md --exclude *.pyd
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: Downloading https://files.pythonhosted.org/packages/a6/8b/d05fd44a14e11477e7d0b4936bb9345bc7eb51f3507c48ecaac2110506bc/quad_iou-0.16.0.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: Downloading https://files.pythonhosted.org/packages/a6/8b/d05fd44a14e11477e7d0b4936bb9345bc7eb51f3507c48ecaac2110506bc/quad_iou-0.16.0.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [iphone-backup-decrypt]: Downloading https://files.pythonhosted.org/packages/df/c0/48315975c0d22b7e4f37cd77841cc3108994129b1434a77edb7981488fa1/iphone_backup_decrypt-0.7.1.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [NumpyTransforms]: Downloading https://files.pythonhosted.org/packages/2c/73/32cb42806db79303a73d5089a6841601b554e6e23fb7e4170aecdb0b14c3/numpytransforms-0.0.1.tar.gz
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: executing diffoscope
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quad_iou-0.0.0.tar.gz tmp/quad_iou-0.16.0.tar.gz --markdown 20240518/q/quad-iou/0.0.0-0.16.0/README.md --exclude *.pyd
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: executing diffoscope
+[2024-05-18 23:39:04] INFO root fetch - processPackages [quad-iou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quad_iou-0.0.0.tar.gz tmp/quad_iou-0.16.0.tar.gz --markdown 20240518/q/quad-iou/0.0.0-0.16.0/README.md --exclude *.pyd
+[2024-05-18 23:39:04] INFO root fetch - processPackages [iphone-backup-decrypt]: executing diffoscope
+[2024-05-18 23:39:04] INFO root fetch - processPackages [iphone-backup-decrypt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iphone_backup_decrypt-0.7.0.tar.gz tmp/iphone_backup_decrypt-0.7.1.tar.gz --markdown 20240518/i/iphone-backup-decrypt/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-18 23:39:04] INFO root fetch - processPackages [NumpyTransforms]: executing diffoscope
+[2024-05-18 23:39:04] INFO root fetch - processPackages [NumpyTransforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpytransforms-0.0.0.tar.gz tmp/numpytransforms-0.0.1.tar.gz --markdown 20240518/N/NumpyTransforms/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-18 23:39:05] INFO root fetch - processPackages [quad-iou]: Remove: archive file [/home/abi/fetcher/tmp/quad_iou-0.0.0.tar.gz]
+[2024-05-18 23:39:05] INFO root fetch - processPackages [quad-iou]: Remove: archive file [/home/abi/fetcher/tmp/quad_iou-0.16.0.tar.gz]
+[2024-05-18 23:39:05] INFO root fetch - main [MainThread]: End processing [quad-iou]: success
+[2024-05-18 23:39:05] INFO root fetch - main [MainThread]: End processing [quad-iou]: success
+[2024-05-18 23:39:05] INFO root fetch - processPackages [NumpyTransforms]: Remove: archive file [/home/abi/fetcher/tmp/numpytransforms-0.0.0.tar.gz]
+[2024-05-18 23:39:05] INFO root fetch - processPackages [NumpyTransforms]: Remove: archive file [/home/abi/fetcher/tmp/numpytransforms-0.0.1.tar.gz]
+[2024-05-18 23:39:05] INFO root fetch - main [MainThread]: End processing [NumpyTransforms]: success
+[2024-05-18 23:39:05] INFO root fetch - processPackages [iphone-backup-decrypt]: Remove: archive file [/home/abi/fetcher/tmp/iphone_backup_decrypt-0.7.0.tar.gz]
+[2024-05-18 23:39:05] INFO root fetch - processPackages [iphone-backup-decrypt]: Remove: archive file [/home/abi/fetcher/tmp/iphone_backup_decrypt-0.7.1.tar.gz]
+[2024-05-18 23:39:05] INFO root fetch - main [MainThread]: End processing [iphone-backup-decrypt]: success
+[2024-05-18 23:39:06] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.3.tar.gz]
+[2024-05-18 23:39:06] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.4.tar.gz]
+[2024-05-18 23:39:06] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-05-18 23:39:06] INFO root fetch - main [MainThread]: Store serial: [23271414]
