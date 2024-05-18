@@ -14356,3 +14356,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:42:43] INFO root fetch - processPackages [pyevaljs3]: Remove: archive file [/home/abi/fetcher/tmp/pyevaljs3-0.1.2.tar.gz]
 [2024-05-18 13:42:43] INFO root fetch - main [MainThread]: End processing [pyevaljs3]: success
 [2024-05-18 13:42:43] INFO root fetch - main [MainThread]: Store serial: [23267369]
+[2024-05-18 13:44:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267369]
+[2024-05-18 13:44:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 13:44:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sapx
+[2024-05-18 13:44:54] INFO root fetch - processPackages [sapx]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 13:44:54] INFO root fetch - processPackages [sapx]: Downloading https://files.pythonhosted.org/packages/1c/b4/c5cdd5e81a44d4763cff3f175fd66d70c4660d3354788b0cc2fec3902eae/sapx-0.2.8.tar.gz
+[2024-05-18 13:44:54] INFO root fetch - processPackages [sapx]: Downloading https://files.pythonhosted.org/packages/6d/d1/5c3382399abcf6049d66401422aab67a5169f73b588c229cba076104d8ab/sapx-0.2.9.tar.gz
+[2024-05-18 13:44:54] INFO root fetch - processPackages [sapx]: executing diffoscope
+[2024-05-18 13:44:54] INFO root fetch - processPackages [sapx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapx-0.2.8.tar.gz tmp/sapx-0.2.9.tar.gz --markdown 20240518/s/sapx/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 13:44:55] INFO root fetch - processPackages [sapx]: Remove: archive file [/home/abi/fetcher/tmp/sapx-0.2.8.tar.gz]
+[2024-05-18 13:44:55] INFO root fetch - processPackages [sapx]: Remove: archive file [/home/abi/fetcher/tmp/sapx-0.2.9.tar.gz]
+[2024-05-18 13:44:55] INFO root fetch - main [MainThread]: End processing [sapx]: success
+[2024-05-18 13:44:55] INFO root fetch - main [MainThread]: Store serial: [23267372]
