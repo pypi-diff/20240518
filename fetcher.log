@@ -14969,3 +14969,29 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:32:55] INFO root fetch - processPackages [promptulate]: Remove: archive file [/home/abi/fetcher/tmp/promptulate-1.9.1.tar.gz]
 [2024-05-18 14:32:55] INFO root fetch - main [MainThread]: End processing [promptulate]: success
 [2024-05-18 14:32:55] INFO root fetch - main [MainThread]: Store serial: [23267657]
+[2024-05-18 14:34:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267657]
+[2024-05-18 14:35:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 14:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gogr-tools
+[2024-05-18 14:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchsense
+[2024-05-18 14:35:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zbl
+[2024-05-18 14:35:04] INFO root fetch - processPackages [gogr-tools]: New version: [0.0.15] Old Version: [0.0.14]
+[2024-05-18 14:35:04] INFO root fetch - processPackages [gogr-tools]: Downloading https://files.pythonhosted.org/packages/6f/fb/1dc0ff32db386f1a8e6a98a664ad26b05cd5cfc909b6bdb1fa50800c5b75/gogr_tools-0.0.14.tar.gz
+[2024-05-18 14:35:04] INFO root fetch - processPackages [zbl]: New version: [0.4.0] Old Version: [0.2.1]
+[2024-05-18 14:35:05] INFO root fetch - processPackages [torchsense]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 14:35:05] INFO root fetch - processPackages [zbl]: Downloading https://files.pythonhosted.org/packages/7a/53/907432acafb6622d10a523b91853c16dde5add1be2f5c5a7406e4c7bc49c/zbl-0.2.1-cp39-none-win_amd64.whl
+[2024-05-18 14:35:05] INFO root fetch - processPackages [torchsense]: Downloading https://files.pythonhosted.org/packages/5e/79/064e1232bc392c84f7e3b6eee1726e7727ad22040de7172e4e9e19c9225b/torchsense-0.0.4.tar.gz
+[2024-05-18 14:35:05] ERROR root fetch - processPackages [gogr-tools]: Unable to fetch info: No such project/version 'gogr-tools' 0.0.15
+[2024-05-18 14:35:05] INFO root fetch - main [MainThread]: End processing [gogr-tools] error
+[2024-05-18 14:35:05] INFO root fetch - processPackages [torchsense]: Downloading https://files.pythonhosted.org/packages/6f/b4/6bb963f05e471c545df0e7ae9a35b9fb148be27180c18e5780a8dfcf26b0/torchsense-0.0.5.tar.gz
+[2024-05-18 14:35:05] INFO root fetch - processPackages [zbl]: Downloading https://files.pythonhosted.org/packages/a8/f8/aaad7d75df30c6b7522d98a65b3d0bb2837ce694c2ce55c07ce27ea76ef3/zbl-0.4.0-cp39-none-win_amd64.whl
+[2024-05-18 14:35:05] INFO root fetch - processPackages [torchsense]: executing diffoscope
+[2024-05-18 14:35:05] INFO root fetch - processPackages [torchsense]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchsense-0.0.4.tar.gz tmp/torchsense-0.0.5.tar.gz --markdown 20240518/t/torchsense/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 14:35:05] INFO root fetch - processPackages [zbl]: executing diffoscope
+[2024-05-18 14:35:05] INFO root fetch - processPackages [zbl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zbl-0.2.1-cp39-none-win_amd64.whl.zip tmp/zbl-0.4.0-cp39-none-win_amd64.whl.zip --markdown 20240518/z/zbl/0.2.1-0.4.0/README.md --exclude *.pyd
+[2024-05-18 14:35:06] INFO root fetch - processPackages [zbl]: Remove: archive file [/home/abi/fetcher/tmp/zbl-0.2.1-cp39-none-win_amd64.whl.zip]
+[2024-05-18 14:35:06] INFO root fetch - processPackages [zbl]: Remove: archive file [/home/abi/fetcher/tmp/zbl-0.4.0-cp39-none-win_amd64.whl.zip]
+[2024-05-18 14:35:06] INFO root fetch - main [MainThread]: End processing [zbl]: success
+[2024-05-18 14:35:06] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.4.tar.gz]
+[2024-05-18 14:35:06] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.5.tar.gz]
+[2024-05-18 14:35:06] INFO root fetch - main [MainThread]: End processing [torchsense]: success
+[2024-05-18 14:35:06] INFO root fetch - main [MainThread]: Store serial: [23267671]
