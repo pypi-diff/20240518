@@ -9540,3 +9540,26 @@
 [2024-05-18 06:51:37] INFO root fetch - processPackages [quickstart-vdk]: Remove: archive file [/home/abi/fetcher/tmp/quickstart-vdk-0.2.999091100.dev13356.tar.gz]
 [2024-05-18 06:51:37] INFO root fetch - main [MainThread]: End processing [quickstart-vdk]: success
 [2024-05-18 06:51:37] INFO root fetch - main [MainThread]: Store serial: [23264801]
+[2024-05-18 06:53:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264801]
+[2024-05-18 06:53:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 06:55:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264801]
+[2024-05-18 06:55:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bank-scrapers
+[2024-05-18 06:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-l10n-ro-account-edi-ubl
+[2024-05-18 06:55:51] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-18 06:55:51] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: New version: [14.0.1.9.1.dev1] Old Version: [14.0.1.9.0]
+[2024-05-18 06:55:51] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/ca/cf/8fc6efdfb51f9364dfe7b475864ca82f302ff35627b05c89cdc035141502/bank_scrapers-1.0.4.tar.gz
+[2024-05-18 06:55:52] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/dd/8a/fcf024c906f4ffcf1fdb4729121cb2b7e33f19b685e7b423f9e0a32e9300/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.0-py3-none-any.whl
+[2024-05-18 06:55:52] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/11/ea/dd549101f84bd5c631ba47804a36c9c33f105e63b9737d84b49346e8bfe5/bank_scrapers-1.0.5.tar.gz
+[2024-05-18 06:55:52] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Downloading https://files.pythonhosted.org/packages/99/b8/7133f1ae688e9819904a9b2000a8378d671a5230dfd06bcf15deba0db595/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.1.dev1-py3-none-any.whl
+[2024-05-18 06:55:52] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 06:55:52] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.4.tar.gz tmp/bank_scrapers-1.0.5.tar.gz --markdown 20240518/b/bank-scrapers/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-18 06:55:52] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: executing diffoscope
+[2024-05-18 06:55:52] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.1.dev1-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-l10n-ro-account-edi-ubl/14.0.1.9.0-14.0.1.9.1.dev1/README.md --exclude *.pyd
+[2024-05-18 06:55:53] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.4.tar.gz]
+[2024-05-18 06:55:53] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.5.tar.gz]
+[2024-05-18 06:55:53] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 06:55:53] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.0-py3-none-any.whl.zip]
+[2024-05-18 06:55:53] INFO root fetch - processPackages [odoo14-addon-l10n-ro-account-edi-ubl]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_ro_account_edi_ubl-14.0.1.9.1.dev1-py3-none-any.whl.zip]
+[2024-05-18 06:55:53] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-ro-account-edi-ubl]: success
+[2024-05-18 06:55:53] INFO root fetch - main [MainThread]: Store serial: [23264806]
