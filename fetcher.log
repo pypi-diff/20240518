@@ -16797,3 +16797,48 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:00:08] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.9.tar.gz]
 [2024-05-18 17:00:08] INFO root fetch - main [MainThread]: End processing [importer-local]: success
 [2024-05-18 17:00:08] INFO root fetch - main [MainThread]: Store serial: [23268642]
+[2024-05-18 17:02:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268642]
+[2024-05-18 17:02:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 17:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tenebrionz
+[2024-05-18 17:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo13-addon-base-search-multi
+[2024-05-18 17:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: referrers
+[2024-05-18 17:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysma-plus
+[2024-05-18 17:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyeventor
+[2024-05-18 17:02:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chemfusekit
+[2024-05-18 17:02:17] INFO root fetch - processPackages [pysma-plus]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-18 17:02:17] INFO root fetch - processPackages [referrers]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-18 17:02:17] WARNING root fetch - processPackages [tenebrionz]: Skipping, unable to determine old version
+[2024-05-18 17:02:17] INFO root fetch - main [MainThread]: End processing [tenebrionz] error
+[2024-05-18 17:02:17] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/ea/f1/16cb8fc044de2f56c3b7ac926cb28185bcf0306aac842c67f13e4bbf8647/pysma_plus-0.2.4.tar.gz
+[2024-05-18 17:02:17] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/0c/95/5db9321ab382ee5ca15f8da3733c64c3641fabdad85e71ada60a613a6662/referrers-0.5.1.tar.gz
+[2024-05-18 17:02:17] WARNING root fetch - processPackages [odoo13-addon-base-search-multi]: Skipping, unable to determine old version
+[2024-05-18 17:02:17] INFO root fetch - main [MainThread]: End processing [odoo13-addon-base-search-multi] error
+[2024-05-18 17:02:17] INFO root fetch - processPackages [pyeventor]: New version: [1.0] Old Version: [0.1.0]
+[2024-05-18 17:02:17] INFO root fetch - processPackages [chemfusekit]: New version: [1.1.0b1] Old Version: [1.0.0]
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pyeventor]: Downloading https://files.pythonhosted.org/packages/16/16/33d7f2168c9bcb7ecc3e97064e94ad6644f58d33a5256e5fc8b75f7cf155/pyeventor-0.1.0.tar.gz
+[2024-05-18 17:02:18] INFO root fetch - processPackages [chemfusekit]: Downloading https://files.pythonhosted.org/packages/33/72/bae212ac4f4e48256bd026a2d67d66df1098cc8d8314b30ea03d05bac7cb/chemfusekit-1.0.0.tar.gz
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/6f/06/fe1b4a29c5baa4045080dc5c0ca9c375bd0ccef5d5dfffaa9c8e6c3b24de/pysma_plus-0.2.5.tar.gz
+[2024-05-18 17:02:18] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/50/90/14fffbf46a3805997e64bb3a798f85a133afd9f50ca8986dd5454c10a0b9/referrers-0.5.2.tar.gz
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pysma-plus]: executing diffoscope
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pysma-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysma_plus-0.2.4.tar.gz tmp/pysma_plus-0.2.5.tar.gz --markdown 20240518/p/pysma-plus/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-18 17:02:18] INFO root fetch - processPackages [referrers]: executing diffoscope
+[2024-05-18 17:02:18] INFO root fetch - processPackages [referrers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/referrers-0.5.1.tar.gz tmp/referrers-0.5.2.tar.gz --markdown 20240518/r/referrers/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pyeventor]: Downloading https://files.pythonhosted.org/packages/46/06/4d2e1ff1bf47a9d422e2d6f388195623f8a87cac2db761e6d92a49c76850/pyeventor-1.0.tar.gz
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pyeventor]: executing diffoscope
+[2024-05-18 17:02:18] INFO root fetch - processPackages [pyeventor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeventor-0.1.0.tar.gz tmp/pyeventor-1.0.tar.gz --markdown 20240518/p/pyeventor/0.1.0-1.0/README.md --exclude *.pyd
+[2024-05-18 17:02:18] INFO root fetch - processPackages [chemfusekit]: Downloading https://files.pythonhosted.org/packages/d5/14/1983eab0b1a1794a4e58793a864436f37b3e30f911116ef81d10f708cf71/chemfusekit-1.1.0b1-py3-none-any.whl
+[2024-05-18 17:02:18] INFO root fetch - processPackages [chemfusekit]: executing diffoscope
+[2024-05-18 17:02:18] INFO root fetch - processPackages [chemfusekit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chemfusekit-1.0.0.tar.gz tmp/chemfusekit-1.1.0b1-py3-none-any.whl.zip --markdown 20240518/c/chemfusekit/1.0.0-1.1.0b1/README.md --exclude *.pyd
+[2024-05-18 17:02:19] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.1.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.5.2.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - main [MainThread]: End processing [referrers]: success
+[2024-05-18 17:02:19] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.4.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.5.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
+[2024-05-18 17:02:19] INFO root fetch - processPackages [pyeventor]: Remove: archive file [/home/abi/fetcher/tmp/pyeventor-0.1.0.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - processPackages [pyeventor]: Remove: archive file [/home/abi/fetcher/tmp/pyeventor-1.0.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - main [MainThread]: End processing [pyeventor]: success
+[2024-05-18 17:02:19] INFO root fetch - processPackages [chemfusekit]: Remove: archive file [/home/abi/fetcher/tmp/chemfusekit-1.0.0.tar.gz]
+[2024-05-18 17:02:19] INFO root fetch - processPackages [chemfusekit]: Remove: archive file [/home/abi/fetcher/tmp/chemfusekit-1.1.0b1-py3-none-any.whl.zip]
+[2024-05-18 17:02:19] INFO root fetch - main [MainThread]: End processing [chemfusekit]: success
+[2024-05-18 17:02:19] INFO root fetch - main [MainThread]: Store serial: [23268659]
