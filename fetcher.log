@@ -10288,3 +10288,21 @@
 [2024-05-18 08:01:01] INFO root fetch - processPackages [plumage]: Remove: archive file [/home/abi/fetcher/tmp/plumage-4.0.0.tar.gz]
 [2024-05-18 08:01:01] INFO root fetch - main [MainThread]: End processing [plumage]: success
 [2024-05-18 08:01:01] INFO root fetch - main [MainThread]: Store serial: [23265135]
+[2024-05-18 08:03:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265135]
+[2024-05-18 08:03:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 08:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: origametry
+[2024-05-18 08:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mentabotix
+[2024-05-18 08:03:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chicagoanz
+[2024-05-18 08:03:10] INFO root fetch - processPackages [mentabotix]: New version: [0.1.4.6] Old Version: [0.1.4.5]
+[2024-05-18 08:03:10] WARNING root fetch - processPackages [origametry]: Skipping, unable to determine old version
+[2024-05-18 08:03:10] INFO root fetch - main [MainThread]: End processing [origametry] error
+[2024-05-18 08:03:10] WARNING root fetch - processPackages [chicagoanz]: Skipping, unable to determine old version
+[2024-05-18 08:03:10] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/1c/45/086d78521707c9931618c125c9c6a4752a1e134c3af1aa2071ca44bcfd8c/mentabotix-0.1.4.5.tar.gz
+[2024-05-18 08:03:10] INFO root fetch - main [MainThread]: End processing [chicagoanz] error
+[2024-05-18 08:03:10] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/da/b7/77d46fe745c7fd2a483dd77d7673dd8a933963f753cd75950c90ae7b19a0/mentabotix-0.1.4.6.tar.gz
+[2024-05-18 08:03:10] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-05-18 08:03:10] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.4.5.tar.gz tmp/mentabotix-0.1.4.6.tar.gz --markdown 20240518/m/mentabotix/0.1.4.5-0.1.4.6/README.md --exclude *.pyd
+[2024-05-18 08:03:11] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.5.tar.gz]
+[2024-05-18 08:03:11] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.4.6.tar.gz]
+[2024-05-18 08:03:11] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-05-18 08:03:11] INFO root fetch - main [MainThread]: Store serial: [23265147]
