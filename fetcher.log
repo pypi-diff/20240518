@@ -17633,3 +17633,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:55:15] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.3.tar.gz]
 [2024-05-18 17:55:15] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
 [2024-05-18 17:55:15] INFO root fetch - main [MainThread]: Store serial: [23268995]
+[2024-05-18 17:57:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268995]
+[2024-05-18 17:57:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langspace
+[2024-05-18 17:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neuralnetlib
+[2024-05-18 17:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stimulativez
+[2024-05-18 17:57:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psgspecialelements
+[2024-05-18 17:57:24] INFO root fetch - processPackages [langspace]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 17:57:24] INFO root fetch - processPackages [neuralnetlib]: New version: [2.6.0] Old Version: [2.5.1]
+[2024-05-18 17:57:24] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/dd/e7/7097142c4171805eb7202bf930296537e3bfae3368f333478874f2f936f6/neuralnetlib-2.5.1.tar.gz
+[2024-05-18 17:57:24] INFO root fetch - processPackages [psgspecialelements]: New version: [1.0.3] Old Version: [1.0.2.5]
+[2024-05-18 17:57:24] WARNING root fetch - processPackages [stimulativez]: Skipping, unable to determine old version
+[2024-05-18 17:57:24] INFO root fetch - main [MainThread]: End processing [stimulativez] error
+[2024-05-18 17:57:24] INFO root fetch - processPackages [langspace]: Downloading https://files.pythonhosted.org/packages/1b/7f/f862c246dbf66d1f61fd9b05c62e836b60d3c764d6a9e363ef2400f98836/langspace-0.1.1.tar.gz
+[2024-05-18 17:57:25] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/c9/ad/4c555e8d483211d0c79a029519a7023cb1788610769fcfea8abd3e19cfcf/psgspecialelements-1.0.2.5.tar.gz
+[2024-05-18 17:57:25] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/92/de/8711d763592fd0ddf6d4439f6a536f9fbcb24f0a5dc8435ad691d2e9c9d8/neuralnetlib-2.6.0.tar.gz
+[2024-05-18 17:57:25] INFO root fetch - processPackages [langspace]: Downloading https://files.pythonhosted.org/packages/b7/16/42b0bee9c5b333285f13dcdfb6763de22d3c0d7d30787907b58a364c7015/langspace-0.1.2.tar.gz
+[2024-05-18 17:57:25] INFO root fetch - processPackages [neuralnetlib]: executing diffoscope
+[2024-05-18 17:57:25] INFO root fetch - processPackages [neuralnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralnetlib-2.5.1.tar.gz tmp/neuralnetlib-2.6.0.tar.gz --markdown 20240518/n/neuralnetlib/2.5.1-2.6.0/README.md --exclude *.pyd
+[2024-05-18 17:57:25] INFO root fetch - processPackages [langspace]: executing diffoscope
+[2024-05-18 17:57:25] INFO root fetch - processPackages [langspace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langspace-0.1.1.tar.gz tmp/langspace-0.1.2.tar.gz --markdown 20240518/l/langspace/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 17:57:25] INFO root fetch - processPackages [psgspecialelements]: Downloading https://files.pythonhosted.org/packages/2c/a1/5a7c166f02f100f0bbb9e8fbbe1facbf4049f24c1582b6e0b6dcfa5f66f4/psgspecialelements-1.0.3.tar.gz
+[2024-05-18 17:57:25] INFO root fetch - processPackages [psgspecialelements]: executing diffoscope
+[2024-05-18 17:57:25] INFO root fetch - processPackages [psgspecialelements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psgspecialelements-1.0.2.5.tar.gz tmp/psgspecialelements-1.0.3.tar.gz --markdown 20240518/p/psgspecialelements/1.0.2.5-1.0.3/README.md --exclude *.pyd
+[2024-05-18 17:57:26] INFO root fetch - processPackages [langspace]: Remove: archive file [/home/abi/fetcher/tmp/langspace-0.1.1.tar.gz]
+[2024-05-18 17:57:26] INFO root fetch - processPackages [langspace]: Remove: archive file [/home/abi/fetcher/tmp/langspace-0.1.2.tar.gz]
+[2024-05-18 17:57:26] INFO root fetch - main [MainThread]: End processing [langspace]: success
+[2024-05-18 17:57:26] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.5.1.tar.gz]
+[2024-05-18 17:57:26] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.6.0.tar.gz]
+[2024-05-18 17:57:26] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
+[2024-05-18 17:57:26] INFO root fetch - processPackages [psgspecialelements]: Remove: archive file [/home/abi/fetcher/tmp/psgspecialelements-1.0.2.5.tar.gz]
+[2024-05-18 17:57:26] INFO root fetch - processPackages [psgspecialelements]: Remove: archive file [/home/abi/fetcher/tmp/psgspecialelements-1.0.3.tar.gz]
+[2024-05-18 17:57:26] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
+[2024-05-18 17:57:26] INFO root fetch - main [MainThread]: Store serial: [23269008]
