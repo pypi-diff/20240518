@@ -19253,3 +19253,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:42:13] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
 [2024-05-18 19:42:13] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
 [2024-05-18 19:42:13] INFO root fetch - main [MainThread]: Store serial: [23269766]
+[2024-05-18 19:44:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269766]
+[2024-05-18 19:44:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 19:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-redesign
+[2024-05-18 19:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flet-easy-static
+[2024-05-18 19:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bosesoundtouchapi
+[2024-05-18 19:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: immunopipe
+[2024-05-18 19:44:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-sale-line-refund-to-invoice-qty
+[2024-05-18 19:44:23] INFO root fetch - processPackages [flet-easy-static]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 19:44:23] INFO root fetch - processPackages [bosesoundtouchapi]: New version: [1.0.9] Old Version: [1.0.7]
+[2024-05-18 19:44:24] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/cf/e2/27416aa49fec3f7e18b1a22c5d976f2267ab5715d97c1314236a77e3a30a/bosesoundtouchapi-1.0.7-py3-none-any.whl
+[2024-05-18 19:44:24] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/29/63/343460e7a3cb4b3f01c2fc891c2ec2e370be02ce623daeabdd675ccaa005/flet_easy_static-0.2.2.tar.gz
+[2024-05-18 19:44:24] INFO root fetch - processPackages [immunopipe]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-18 19:44:24] INFO root fetch - processPackages [drf-redesign]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-18 19:44:24] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: New version: [14.0.2.0.2.dev1] Old Version: [14.0.1.0.2.dev4]
+[2024-05-18 19:44:24] INFO root fetch - processPackages [drf-redesign]: Downloading https://files.pythonhosted.org/packages/29/3b/a65ca8d6a0d9e5d99c91fe8f95b6e61e4b1ab9454a723c72392840eb6110/drf_redesign-0.3.7.tar.gz
+[2024-05-18 19:44:24] INFO root fetch - processPackages [bosesoundtouchapi]: Downloading https://files.pythonhosted.org/packages/2d/eb/4a9e6b4a41569551a0d849ecbd1619975ae1d3dc5f7649e91fdf88547693/bosesoundtouchapi-1.0.9-py3-none-any.whl
+[2024-05-18 19:44:24] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: Downloading https://files.pythonhosted.org/packages/9d/25/2ac07b58b0ec2879de947d809bf40a5378f0040b8e3d9dffd6178ee32e7d/odoo14_addon_sale_line_refund_to_invoice_qty-14.0.1.0.2.dev4-py3-none-any.whl
+[2024-05-18 19:44:24] INFO root fetch - processPackages [immunopipe]: Downloading https://files.pythonhosted.org/packages/ea/ff/5153ea5634f5f433d1a6db5b73b0b44ad4c92f998d19157ec33ef39538c9/immunopipe-1.3.8.tar.gz
+[2024-05-18 19:44:24] INFO root fetch - processPackages [flet-easy-static]: Downloading https://files.pythonhosted.org/packages/28/84/83924d79bcde6f2ca91a187d5482ed639709fee2b3e96a3fff17dacaeb74/flet_easy_static-0.2.3.tar.gz
+[2024-05-18 19:44:24] INFO root fetch - processPackages [flet-easy-static]: executing diffoscope
+[2024-05-18 19:44:24] INFO root fetch - processPackages [flet-easy-static]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_easy_static-0.2.2.tar.gz tmp/flet_easy_static-0.2.3.tar.gz --markdown 20240518/f/flet-easy-static/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 19:44:24] INFO root fetch - processPackages [bosesoundtouchapi]: executing diffoscope
+[2024-05-18 19:44:24] INFO root fetch - processPackages [bosesoundtouchapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip --markdown 20240518/b/bosesoundtouchapi/1.0.7-1.0.9/README.md --exclude *.pyd
+[2024-05-18 19:44:24] INFO root fetch - processPackages [drf-redesign]: Downloading https://files.pythonhosted.org/packages/b5/c2/8f1673f1cb9772dbc7d3e929da829e6fc65f552d4f55f26d4c74137d8174/drf_redesign-0.3.8.tar.gz
+[2024-05-18 19:44:24] INFO root fetch - processPackages [immunopipe]: Downloading https://files.pythonhosted.org/packages/b1/be/d5759e884ec0aaa15a388e70a21f3efc154ec0503fc1f63fa1734641fdb5/immunopipe-1.3.9.tar.gz
+[2024-05-18 19:44:24] INFO root fetch - processPackages [drf-redesign]: executing diffoscope
+[2024-05-18 19:44:24] INFO root fetch - processPackages [drf-redesign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_redesign-0.3.7.tar.gz tmp/drf_redesign-0.3.8.tar.gz --markdown 20240518/d/drf-redesign/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-18 19:44:24] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: Downloading https://files.pythonhosted.org/packages/c5/d2/4baaad0f74e144565d0c2cab058a98a52333db0d95afb685f41a34cd501f/odoo14_addon_sale_line_refund_to_invoice_qty-14.0.2.0.2.dev1-py3-none-any.whl
+[2024-05-18 19:44:24] INFO root fetch - processPackages [immunopipe]: executing diffoscope
+[2024-05-18 19:44:24] INFO root fetch - processPackages [immunopipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/immunopipe-1.3.8.tar.gz tmp/immunopipe-1.3.9.tar.gz --markdown 20240518/i/immunopipe/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-18 19:44:25] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: executing diffoscope
+[2024-05-18 19:44:25] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_line_refund_to_invoice_qty-14.0.1.0.2.dev4-py3-none-any.whl.zip tmp/odoo14_addon_sale_line_refund_to_invoice_qty-14.0.2.0.2.dev1-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-sale-line-refund-to-invoice-qty/14.0.1.0.2.dev4-14.0.2.0.2.dev1/README.md --exclude *.pyd
+[2024-05-18 19:44:25] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.2.tar.gz]
+[2024-05-18 19:44:25] INFO root fetch - processPackages [flet-easy-static]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy_static-0.2.3.tar.gz]
+[2024-05-18 19:44:25] INFO root fetch - main [MainThread]: End processing [flet-easy-static]: success
+[2024-05-18 19:44:25] INFO root fetch - processPackages [drf-redesign]: Remove: archive file [/home/abi/fetcher/tmp/drf_redesign-0.3.7.tar.gz]
+[2024-05-18 19:44:25] INFO root fetch - processPackages [drf-redesign]: Remove: archive file [/home/abi/fetcher/tmp/drf_redesign-0.3.8.tar.gz]
+[2024-05-18 19:44:25] INFO root fetch - main [MainThread]: End processing [drf-redesign]: success
+[2024-05-18 19:44:25] INFO root fetch - processPackages [immunopipe]: Remove: archive file [/home/abi/fetcher/tmp/immunopipe-1.3.8.tar.gz]
+[2024-05-18 19:44:25] INFO root fetch - processPackages [immunopipe]: Remove: archive file [/home/abi/fetcher/tmp/immunopipe-1.3.9.tar.gz]
+[2024-05-18 19:44:25] INFO root fetch - main [MainThread]: End processing [immunopipe]: success
+[2024-05-18 19:44:25] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_line_refund_to_invoice_qty-14.0.1.0.2.dev4-py3-none-any.whl.zip]
+[2024-05-18 19:44:25] INFO root fetch - processPackages [odoo14-addon-sale-line-refund-to-invoice-qty]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_line_refund_to_invoice_qty-14.0.2.0.2.dev1-py3-none-any.whl.zip]
+[2024-05-18 19:44:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-line-refund-to-invoice-qty]: success
+[2024-05-18 19:44:26] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.7-py3-none-any.whl.zip]
+[2024-05-18 19:44:26] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
+[2024-05-18 19:44:26] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
+[2024-05-18 19:44:26] INFO root fetch - main [MainThread]: Store serial: [23269780]
