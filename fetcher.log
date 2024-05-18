@@ -9179,3 +9179,9 @@
 [2024-05-18 06:14:53] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Remove: archive file [/home/abi/fetcher/tmp/snowflake_connector_python_nightly-2024.5.18-cp38-cp38-macosx_10_14_universal2.whl.zip]
 [2024-05-18 06:14:53] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
 [2024-05-18 06:14:53] INFO root fetch - main [MainThread]: Store serial: [23264654]
+[2024-05-18 06:16:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264654]
+[2024-05-18 06:17:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 06:17:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transformedz
+[2024-05-18 06:17:02] WARNING root fetch - processPackages [transformedz]: Skipping, unable to determine old version
+[2024-05-18 06:17:02] INFO root fetch - main [MainThread]: End processing [transformedz] error
+[2024-05-18 06:17:02] INFO root fetch - main [MainThread]: Store serial: [23264672]
