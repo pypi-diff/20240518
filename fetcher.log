@@ -8625,3 +8625,45 @@
 [2024-05-18 05:33:24] INFO root fetch - processPackages [odoo-addon-cooperator]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_cooperator-16.0.1.1.0.1-py3-none-any.whl.zip]
 [2024-05-18 05:33:24] INFO root fetch - main [MainThread]: End processing [odoo-addon-cooperator]: success
 [2024-05-18 05:33:24] INFO root fetch - main [MainThread]: Store serial: [23264423]
+[2024-05-18 05:35:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264423]
+[2024-05-18 05:35:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 05:35:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-05-18 05:35:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-math
+[2024-05-18 05:35:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flowmancer
+[2024-05-18 05:35:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outfangthiefz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lute3
+[2024-05-18 05:35:33] INFO root fetch - processPackages [mo-math]: New version: [7.631.24139] Old Version: [7.627.24136]
+[2024-05-18 05:35:33] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-18 05:35:33] WARNING root fetch - processPackages [outfangthiefz]: Skipping, unable to determine old version
+[2024-05-18 05:35:33] INFO root fetch - main [MainThread]: End processing [outfangthiefz] error
+[2024-05-18 05:35:33] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/76/40/16258bf8fe6d3ccdd509c4cc9a9473c9bd48f236877f9e6732eea42abc1d/mo_math-7.627.24136.tar.gz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [flowmancer]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-18 05:35:33] INFO root fetch - processPackages [lute3]: New version: [3.4.0] Old Version: [3.3.3b1]
+[2024-05-18 05:35:33] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/14/08/b528615fa44426622c03602c8dd8719e35556b0da7c2566f0ad78991bb11/mo_math-7.631.24139.tar.gz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [lute3]: Downloading https://files.pythonhosted.org/packages/b9/c5/99347ead774f5caffc4aac6bdefe577fe2382f923adc45cfc687ab2bc7bb/lute3-3.3.3b1.tar.gz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [flowmancer]: Downloading https://files.pythonhosted.org/packages/16/67/dc7e0f71395efdfa833d75db9c3cea1581c7472b0d0486c81d58b8a867af/flowmancer-0.9.4.tar.gz
+[2024-05-18 05:35:33] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-05-18 05:35:33] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_math-7.627.24136.tar.gz tmp/mo_math-7.631.24139.tar.gz --markdown 20240518/m/mo-math/7.627.24136-7.631.24139/README.md --exclude *.pyd
+[2024-05-18 05:35:33] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-05-18 05:35:33] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240518/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-18 05:35:34] INFO root fetch - processPackages [flowmancer]: Downloading https://files.pythonhosted.org/packages/6c/70/08dbb431bf20c50c0cc8980f264315b9ee83779e5be507e72b668ea0d341/flowmancer-0.9.5.tar.gz
+[2024-05-18 05:35:34] INFO root fetch - processPackages [lute3]: Downloading https://files.pythonhosted.org/packages/3c/bc/b60fd86842782000e78c0cbce9d946127b79cf20b0dc8e13b058eac23a2a/lute3-3.4.0.tar.gz
+[2024-05-18 05:35:34] INFO root fetch - processPackages [flowmancer]: executing diffoscope
+[2024-05-18 05:35:34] INFO root fetch - processPackages [flowmancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmancer-0.9.4.tar.gz tmp/flowmancer-0.9.5.tar.gz --markdown 20240518/f/flowmancer/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-18 05:35:34] INFO root fetch - processPackages [lute3]: executing diffoscope
+[2024-05-18 05:35:34] INFO root fetch - processPackages [lute3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lute3-3.3.3b1.tar.gz tmp/lute3-3.4.0.tar.gz --markdown 20240518/l/lute3/3.3.3b1-3.4.0/README.md --exclude *.pyd
+[2024-05-18 05:35:34] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.627.24136.tar.gz]
+[2024-05-18 05:35:34] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.631.24139.tar.gz]
+[2024-05-18 05:35:34] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-05-18 05:35:34] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.4.tar.gz]
+[2024-05-18 05:35:34] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.5.tar.gz]
+[2024-05-18 05:35:34] INFO root fetch - main [MainThread]: End processing [flowmancer]: success
+[2024-05-18 05:35:35] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-05-18 05:35:35] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-05-18 05:35:35] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-05-18 05:35:37] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.3.3b1.tar.gz]
+[2024-05-18 05:35:37] INFO root fetch - processPackages [lute3]: Remove: archive file [/home/abi/fetcher/tmp/lute3-3.4.0.tar.gz]
+[2024-05-18 05:35:37] INFO root fetch - main [MainThread]: End processing [lute3]: success
+[2024-05-18 05:35:37] INFO root fetch - main [MainThread]: Store serial: [23264439]
