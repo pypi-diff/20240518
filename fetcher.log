@@ -22505,3 +22505,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:54:18] INFO root fetch - processPackages [aioshelly]: Remove: archive file [/home/abi/fetcher/tmp/aioshelly-9.0.0.tar.gz]
 [2024-05-18 23:54:18] INFO root fetch - main [MainThread]: End processing [aioshelly]: success
 [2024-05-18 23:54:18] INFO root fetch - main [MainThread]: Store serial: [23271487]
+[2024-05-18 23:56:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271487]
+[2024-05-18 23:56:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 23:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grooveshop-django-api
+[2024-05-18 23:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antisiphonz
+[2024-05-18 23:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: compute-horde-facilitator-sdk
+[2024-05-18 23:56:27] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-05-18 23:56:27] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 23:56:27] WARNING root fetch - processPackages [antisiphonz]: Skipping, unable to determine old version
+[2024-05-18 23:56:27] INFO root fetch - main [MainThread]: End processing [antisiphonz] error
+[2024-05-18 23:56:27] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-05-18 23:56:27] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-05-18 23:56:27] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-05-18 23:56:27] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: Downloading https://files.pythonhosted.org/packages/e3/a6/eca69b2437afe957eb00f1715ff6627a5d8983fb98ee4a540d0670cea155/compute_horde_facilitator_sdk-0.0.2.tar.gz
+[2024-05-18 23:56:28] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: Downloading https://files.pythonhosted.org/packages/b0/0b/1c5f403cabd76350c1003f5e46a1337a4f9d12af72a78ca4386549307845/compute_horde_facilitator_sdk-0.0.3.tar.gz
+[2024-05-18 23:56:28] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: executing diffoscope
+[2024-05-18 23:56:28] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compute_horde_facilitator_sdk-0.0.2.tar.gz tmp/compute_horde_facilitator_sdk-0.0.3.tar.gz --markdown 20240518/c/compute-horde-facilitator-sdk/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 23:56:28] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: Remove: archive file [/home/abi/fetcher/tmp/compute_horde_facilitator_sdk-0.0.2.tar.gz]
+[2024-05-18 23:56:28] INFO root fetch - processPackages [compute-horde-facilitator-sdk]: Remove: archive file [/home/abi/fetcher/tmp/compute_horde_facilitator_sdk-0.0.3.tar.gz]
+[2024-05-18 23:56:28] INFO root fetch - main [MainThread]: End processing [compute-horde-facilitator-sdk]: success
+[2024-05-18 23:56:28] INFO root fetch - main [MainThread]: Store serial: [23271501]
