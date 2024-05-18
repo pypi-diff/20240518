@@ -21982,3 +21982,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:04:25] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.0.dev3.tar.gz]
 [2024-05-18 23:04:25] INFO root fetch - main [MainThread]: End processing [keri]: success
 [2024-05-18 23:04:25] INFO root fetch - main [MainThread]: Store serial: [23271224]
+[2024-05-18 23:06:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271224]
+[2024-05-18 23:06:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 23:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyutube
+[2024-05-18 23:06:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: my-road
+[2024-05-18 23:06:34] INFO root fetch - processPackages [my-road]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 23:06:34] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/98/1d/6341f4077573fb70b946a8e4018f42d1fea246a6aced3f3549fa01c71a06/my_road-1.0.0.tar.gz
+[2024-05-18 23:06:34] INFO root fetch - processPackages [pyutube]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-18 23:06:34] INFO root fetch - processPackages [my-road]: Downloading https://files.pythonhosted.org/packages/8a/73/e66efcc1e9f5e5567ce6bfec4c53dfbd3997d7d1e1c045bdbbbba9e628e1/my_road-1.0.1.tar.gz
+[2024-05-18 23:06:34] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/94/23/1747018c2c6d3cdbae6628b57c1abcf045312c8b289a1ba779f6fcd93412/pyutube-1.2.6.tar.gz
+[2024-05-18 23:06:34] INFO root fetch - processPackages [my-road]: executing diffoscope
+[2024-05-18 23:06:34] INFO root fetch - processPackages [my-road]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_road-1.0.0.tar.gz tmp/my_road-1.0.1.tar.gz --markdown 20240518/m/my-road/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 23:06:34] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/62/3a/18f70460fc695fb24f535cc56ff3f48a12b1c635d982670120700e0cfc8a/pyutube-1.2.7.tar.gz
+[2024-05-18 23:06:35] INFO root fetch - processPackages [pyutube]: executing diffoscope
+[2024-05-18 23:06:35] INFO root fetch - processPackages [pyutube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutube-1.2.6.tar.gz tmp/pyutube-1.2.7.tar.gz --markdown 20240518/p/pyutube/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-18 23:06:35] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-1.0.0.tar.gz]
+[2024-05-18 23:06:35] INFO root fetch - processPackages [my-road]: Remove: archive file [/home/abi/fetcher/tmp/my_road-1.0.1.tar.gz]
+[2024-05-18 23:06:35] INFO root fetch - main [MainThread]: End processing [my-road]: success
+[2024-05-18 23:06:35] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.6.tar.gz]
+[2024-05-18 23:06:35] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.7.tar.gz]
+[2024-05-18 23:06:35] INFO root fetch - main [MainThread]: End processing [pyutube]: success
+[2024-05-18 23:06:35] INFO root fetch - main [MainThread]: Store serial: [23271229]
