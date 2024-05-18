@@ -15571,3 +15571,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:26:02] WARNING root fetch - processPackages [altmindpy]: Skipping, unable to determine old version
 [2024-05-18 15:26:02] INFO root fetch - main [MainThread]: End processing [altmindpy] error
 [2024-05-18 15:26:02] INFO root fetch - main [MainThread]: Store serial: [23268010]
+[2024-05-18 15:28:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268010]
+[2024-05-18 15:28:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SimpleNetMNIST
+[2024-05-18 15:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: web-assets-downloader
+[2024-05-18 15:28:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tidbitz
+[2024-05-18 15:28:11] INFO root fetch - processPackages [SimpleNetMNIST]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-18 15:28:11] INFO root fetch - processPackages [web-assets-downloader]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-05-18 15:28:11] WARNING root fetch - processPackages [tidbitz]: Skipping, unable to determine old version
+[2024-05-18 15:28:11] INFO root fetch - main [MainThread]: End processing [tidbitz] error
+[2024-05-18 15:28:11] INFO root fetch - processPackages [SimpleNetMNIST]: Downloading https://files.pythonhosted.org/packages/2a/37/81203f90042b750fe5ef01696c7b9c3d9667c6e2e24996bc7ef34fc9a223/simplenetmnist-1.0.3.tar.gz
+[2024-05-18 15:28:11] INFO root fetch - processPackages [web-assets-downloader]: Downloading https://files.pythonhosted.org/packages/ca/1f/6859c31e4a6fa7f5491c348c230d3f5b87eb53d185ba2e012a1c9cf5c755/web_assets_downloader-2.1.0.tar.gz
+[2024-05-18 15:28:11] INFO root fetch - processPackages [SimpleNetMNIST]: Downloading https://files.pythonhosted.org/packages/6f/80/d494360794b6afe6833c518041f9b41f162ad74936a027091d15d4af1adb/simplenetmnist-1.0.4.tar.gz
+[2024-05-18 15:28:11] INFO root fetch - processPackages [web-assets-downloader]: Downloading https://files.pythonhosted.org/packages/58/29/3fafb3959e99d9a8a018c86d243d0b39f09fdd9788147611ffcf7c2b001c/web_assets_downloader-2.2.0.tar.gz
+[2024-05-18 15:28:11] INFO root fetch - processPackages [SimpleNetMNIST]: executing diffoscope
+[2024-05-18 15:28:11] INFO root fetch - processPackages [SimpleNetMNIST]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplenetmnist-1.0.3.tar.gz tmp/simplenetmnist-1.0.4.tar.gz --markdown 20240518/S/SimpleNetMNIST/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-18 15:28:11] INFO root fetch - processPackages [web-assets-downloader]: executing diffoscope
+[2024-05-18 15:28:11] INFO root fetch - processPackages [web-assets-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/web_assets_downloader-2.1.0.tar.gz tmp/web_assets_downloader-2.2.0.tar.gz --markdown 20240518/w/web-assets-downloader/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-05-18 15:28:12] INFO root fetch - processPackages [SimpleNetMNIST]: Remove: archive file [/home/abi/fetcher/tmp/simplenetmnist-1.0.3.tar.gz]
+[2024-05-18 15:28:12] INFO root fetch - processPackages [SimpleNetMNIST]: Remove: archive file [/home/abi/fetcher/tmp/simplenetmnist-1.0.4.tar.gz]
+[2024-05-18 15:28:12] INFO root fetch - main [MainThread]: End processing [SimpleNetMNIST]: success
+[2024-05-18 15:28:12] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.1.0.tar.gz]
+[2024-05-18 15:28:12] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.2.0.tar.gz]
+[2024-05-18 15:28:12] INFO root fetch - main [MainThread]: End processing [web-assets-downloader]: success
+[2024-05-18 15:28:12] INFO root fetch - main [MainThread]: Store serial: [23268020]
