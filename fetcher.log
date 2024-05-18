@@ -14550,3 +14550,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:58:01] INFO root fetch - processPackages [sixtracktools]: Remove: archive file [/home/abi/fetcher/tmp/sixtracktools-0.0.9.tar.gz]
 [2024-05-18 13:58:01] INFO root fetch - main [MainThread]: End processing [sixtracktools]: success
 [2024-05-18 13:58:01] INFO root fetch - main [MainThread]: Store serial: [23267452]
+[2024-05-18 14:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267452]
+[2024-05-18 14:00:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 14:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: runhelper
+[2024-05-18 14:00:11] INFO root fetch - processPackages [runhelper]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-18 14:00:11] INFO root fetch - processPackages [runhelper]: Downloading https://files.pythonhosted.org/packages/3a/5f/823f9b6b73c7c6498baf2c9793d1dec2d1ac5c6e680e71af7a99300a414c/runhelper-0.2.3.tar.gz
+[2024-05-18 14:00:11] INFO root fetch - processPackages [runhelper]: Downloading https://files.pythonhosted.org/packages/f1/c7/f7fdde169584fd8fcc3e0db06b5f6b5f1c13e64224ce32558a7a117c5d22/runhelper-0.2.4.tar.gz
+[2024-05-18 14:00:11] INFO root fetch - processPackages [runhelper]: executing diffoscope
+[2024-05-18 14:00:11] INFO root fetch - processPackages [runhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runhelper-0.2.3.tar.gz tmp/runhelper-0.2.4.tar.gz --markdown 20240518/r/runhelper/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-18 14:00:12] INFO root fetch - processPackages [runhelper]: Remove: archive file [/home/abi/fetcher/tmp/runhelper-0.2.3.tar.gz]
+[2024-05-18 14:00:12] INFO root fetch - processPackages [runhelper]: Remove: archive file [/home/abi/fetcher/tmp/runhelper-0.2.4.tar.gz]
+[2024-05-18 14:00:12] INFO root fetch - main [MainThread]: End processing [runhelper]: success
+[2024-05-18 14:00:12] INFO root fetch - main [MainThread]: Store serial: [23267455]
