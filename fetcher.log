@@ -12119,3 +12119,60 @@
 [2024-05-18 10:44:04] INFO root fetch - processPackages [tahrir-api]: Remove: archive file [/home/abi/fetcher/tmp/tahrir_api-1.1.0.tar.gz]
 [2024-05-18 10:44:04] INFO root fetch - main [MainThread]: End processing [tahrir-api]: success
 [2024-05-18 10:44:04] INFO root fetch - main [MainThread]: Store serial: [23266245]
+[2024-05-18 10:46:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266245]
+[2024-05-18 10:46:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biosimulator-processes
+[2024-05-18 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfp-nightly
+[2024-05-18 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blastpipe
+[2024-05-18 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bank-scrapers
+[2024-05-18 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-cpu
+[2024-05-18 10:46:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: crawler-user-agents
+[2024-05-18 10:46:13] INFO root fetch - processPackages [biosimulator-processes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 10:46:13] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 10:46:13] INFO root fetch - processPackages [crawler-user-agents]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-18 10:46:13] INFO root fetch - processPackages [blastpipe]: New version: [2024.7.7] Old Version: [2024.7.6]
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-05-18 10:46:13] INFO root fetch - processPackages [biosimulator-processes]: Downloading https://files.pythonhosted.org/packages/7d/51/1b73552fade705186ccd81446180148070dc1a2faacb60c3b6ff368aac74/biosimulator-processes-0.0.8.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240518] Old Version: [2.17.0.dev20240517]
+[2024-05-18 10:46:13] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/13/b0/1f956c44e81b935506ae8660d8aaaa4a975dba8db964492a98a3131961cc/bank_scrapers-1.0.8.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/30/d7/29f07e425eaec5fcd89e34126060a5351088ac84c429984da4f0d9dbf8ed/crawler_user_agents-0.2.0.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/16/39/a1e53b821ca54135f16240738901aa5a14b8ed9a6cbec2e55cd689be49d8/blastpipe-2024.7.6.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/86/4c/18b0b81869d6b1ab634315c62039335353bfb8b497ed60871e5463b01f76/tf_nightly_cpu-2.17.0.dev20240517-cp39-cp39-win_amd64.whl
+[2024-05-18 10:46:13] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/db/25/d10a43b636dad83822f69f512ddd3d27631c7cd08175c2ab11593e1bdd8c/bank_scrapers-1.0.9.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [biosimulator-processes]: Downloading https://files.pythonhosted.org/packages/20/bd/b4740713cca94bc52ac50d53ce3cdc2881f202d3d02b517851617ad668f7/biosimulator-processes-0.0.9.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-05-18 10:46:13] INFO root fetch - processPackages [crawler-user-agents]: Downloading https://files.pythonhosted.org/packages/19/2d/1e46cd19f20c2d8b9ae4284f543f727b3845f0467def01b24b6b81108d66/crawler_user_agents-0.3.0.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 10:46:13] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.8.tar.gz tmp/bank_scrapers-1.0.9.tar.gz --markdown 20240518/b/bank-scrapers/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 10:46:13] INFO root fetch - processPackages [blastpipe]: Downloading https://files.pythonhosted.org/packages/ec/7b/35bd9b095afcd2ad067408bce189f3cb5d47595d25100201682de60dff80/blastpipe-2024.7.7.tar.gz
+[2024-05-18 10:46:13] INFO root fetch - processPackages [biosimulator-processes]: executing diffoscope
+[2024-05-18 10:46:13] INFO root fetch - processPackages [biosimulator-processes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biosimulator-processes-0.0.8.tar.gz tmp/biosimulator-processes-0.0.9.tar.gz --markdown 20240518/b/biosimulator-processes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 10:46:13] INFO root fetch - processPackages [crawler-user-agents]: executing diffoscope
+[2024-05-18 10:46:13] INFO root fetch - processPackages [crawler-user-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crawler_user_agents-0.2.0.tar.gz tmp/crawler_user_agents-0.3.0.tar.gz --markdown 20240518/c/crawler-user-agents/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 10:46:13] INFO root fetch - processPackages [blastpipe]: executing diffoscope
+[2024-05-18 10:46:13] INFO root fetch - processPackages [blastpipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blastpipe-2024.7.6.tar.gz tmp/blastpipe-2024.7.7.tar.gz --markdown 20240518/b/blastpipe/2024.7.6-2024.7.7/README.md --exclude *.pyd
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/da/87/60e930d7175f8bf1d20320acacb5b19b169021941ac7ea26d4ea2d4cc1a4/tf_nightly_cpu-2.17.0.dev20240518-cp39-cp39-win_amd64.whl
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-05-18 10:46:13] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240518/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-05-18 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-05-18 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240517-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240518-cp39-cp39-win_amd64.whl.zip --markdown 20240518/t/tf-nightly-cpu/2.17.0.dev20240517-2.17.0.dev20240518/README.md --exclude *.pyd
+[2024-05-18 10:46:14] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.8.tar.gz]
+[2024-05-18 10:46:14] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.9.tar.gz]
+[2024-05-18 10:46:14] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 10:46:14] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.8.tar.gz]
+[2024-05-18 10:46:14] INFO root fetch - processPackages [biosimulator-processes]: Remove: archive file [/home/abi/fetcher/tmp/biosimulator-processes-0.0.9.tar.gz]
+[2024-05-18 10:46:14] INFO root fetch - main [MainThread]: End processing [biosimulator-processes]: success
+[2024-05-18 10:46:14] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.2.0.tar.gz]
+[2024-05-18 10:46:14] INFO root fetch - processPackages [crawler-user-agents]: Remove: archive file [/home/abi/fetcher/tmp/crawler_user_agents-0.3.0.tar.gz]
+[2024-05-18 10:46:14] INFO root fetch - main [MainThread]: End processing [crawler-user-agents]: success
+[2024-05-18 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240517-cp39-cp39-win_amd64.whl.zip]
+[2024-05-18 10:46:14] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240518-cp39-cp39-win_amd64.whl.zip]
+[2024-05-18 10:46:14] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-05-18 10:46:15] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.7.6.tar.gz]
+[2024-05-18 10:46:15] INFO root fetch - processPackages [blastpipe]: Remove: archive file [/home/abi/fetcher/tmp/blastpipe-2024.7.7.tar.gz]
+[2024-05-18 10:46:15] INFO root fetch - main [MainThread]: End processing [blastpipe]: success
+[2024-05-18 10:46:17] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-05-18 10:46:17] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-05-18 10:46:17] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-05-18 10:46:17] INFO root fetch - main [MainThread]: Store serial: [23266265]
