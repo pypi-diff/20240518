@@ -18086,3 +18086,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:23:51] INFO root fetch - processPackages [pypeec]: Remove: archive file [/home/abi/fetcher/tmp/pypeec-4.9.0.tar.gz]
 [2024-05-18 18:23:51] INFO root fetch - main [MainThread]: End processing [pypeec]: success
 [2024-05-18 18:23:51] INFO root fetch - main [MainThread]: Store serial: [23269207]
+[2024-05-18 18:25:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269207]
+[2024-05-18 18:26:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 18:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freecodecamp-reader
+[2024-05-18 18:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TaGra
+[2024-05-18 18:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frid
+[2024-05-18 18:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aiohttp-zip-response
+[2024-05-18 18:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tinyagent
+[2024-05-18 18:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docketanalyzer
+[2024-05-18 18:26:01] WARNING root fetch - processPackages [TaGra]: Skipping, unable to determine old version
+[2024-05-18 18:26:01] WARNING root fetch - processPackages [tinyagent]: Skipping, unable to determine old version
+[2024-05-18 18:26:01] INFO root fetch - main [MainThread]: End processing [TaGra] error
+[2024-05-18 18:26:01] INFO root fetch - main [MainThread]: End processing [tinyagent] error
+[2024-05-18 18:26:01] INFO root fetch - processPackages [docketanalyzer]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 18:26:01] INFO root fetch - processPackages [aiohttp-zip-response]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 18:26:01] INFO root fetch - processPackages [frid]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 18:26:01] WARNING root fetch - processPackages [freecodecamp-reader]: Skipping, unable to determine old version
+[2024-05-18 18:26:01] INFO root fetch - main [MainThread]: End processing [freecodecamp-reader] error
+[2024-05-18 18:26:01] INFO root fetch - processPackages [docketanalyzer]: Downloading https://files.pythonhosted.org/packages/61/d3/487d0235a16ad65fe81fd9b046dbbdda4b85e2f2b72482d5a37c53d7f030/docketanalyzer-0.1.0-py3-none-any.whl
+[2024-05-18 18:26:01] INFO root fetch - processPackages [frid]: Downloading https://files.pythonhosted.org/packages/ab/c4/276f758efee3065c10b10aca27b5dcd336fd5f6766bedfb6203ed86b141b/frid-0.0.8.tar.gz
+[2024-05-18 18:26:01] INFO root fetch - processPackages [aiohttp-zip-response]: Downloading https://files.pythonhosted.org/packages/23/44/ae9728ad482bd34adeec0d925535a16da692539687cf2a01bbc6f2939d49/aiohttp_zip_response-1.0.1.tar.gz
+[2024-05-18 18:26:01] INFO root fetch - processPackages [docketanalyzer]: Downloading https://files.pythonhosted.org/packages/a4/0d/42cf55385c6373a9cc63da0129fb383171e2a627fa177d6e81e4be7a72e7/docketanalyzer-0.1.1-py3-none-any.whl
+[2024-05-18 18:26:01] INFO root fetch - processPackages [aiohttp-zip-response]: Downloading https://files.pythonhosted.org/packages/47/5b/9adb1d02d213ee8762ba517bc0448478fbea67d145407b6215944a962f31/aiohttp_zip_response-1.0.2.tar.gz
+[2024-05-18 18:26:02] INFO root fetch - processPackages [frid]: Downloading https://files.pythonhosted.org/packages/bf/0e/c9daa6c9fa362976608c4807386bb44525900903ed383fdf307e9888116a/frid-0.0.9.tar.gz
+[2024-05-18 18:26:02] INFO root fetch - processPackages [aiohttp-zip-response]: executing diffoscope
+[2024-05-18 18:26:02] INFO root fetch - processPackages [aiohttp-zip-response]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiohttp_zip_response-1.0.1.tar.gz tmp/aiohttp_zip_response-1.0.2.tar.gz --markdown 20240518/a/aiohttp-zip-response/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 18:26:02] INFO root fetch - processPackages [docketanalyzer]: executing diffoscope
+[2024-05-18 18:26:02] INFO root fetch - processPackages [docketanalyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docketanalyzer-0.1.0-py3-none-any.whl.zip tmp/docketanalyzer-0.1.1-py3-none-any.whl.zip --markdown 20240518/d/docketanalyzer/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 18:26:02] INFO root fetch - processPackages [frid]: executing diffoscope
+[2024-05-18 18:26:02] INFO root fetch - processPackages [frid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frid-0.0.8.tar.gz tmp/frid-0.0.9.tar.gz --markdown 20240518/f/frid/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 18:26:02] INFO root fetch - processPackages [aiohttp-zip-response]: Remove: archive file [/home/abi/fetcher/tmp/aiohttp_zip_response-1.0.1.tar.gz]
+[2024-05-18 18:26:02] INFO root fetch - processPackages [aiohttp-zip-response]: Remove: archive file [/home/abi/fetcher/tmp/aiohttp_zip_response-1.0.2.tar.gz]
+[2024-05-18 18:26:02] INFO root fetch - main [MainThread]: End processing [aiohttp-zip-response]: success
+[2024-05-18 18:26:02] INFO root fetch - processPackages [frid]: Remove: archive file [/home/abi/fetcher/tmp/frid-0.0.8.tar.gz]
+[2024-05-18 18:26:02] INFO root fetch - processPackages [frid]: Remove: archive file [/home/abi/fetcher/tmp/frid-0.0.9.tar.gz]
+[2024-05-18 18:26:02] INFO root fetch - main [MainThread]: End processing [frid]: success
+[2024-05-18 18:26:02] INFO root fetch - processPackages [docketanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/docketanalyzer-0.1.0-py3-none-any.whl.zip]
+[2024-05-18 18:26:02] INFO root fetch - processPackages [docketanalyzer]: Remove: archive file [/home/abi/fetcher/tmp/docketanalyzer-0.1.1-py3-none-any.whl.zip]
+[2024-05-18 18:26:02] INFO root fetch - main [MainThread]: End processing [docketanalyzer]: success
+[2024-05-18 18:26:02] INFO root fetch - main [MainThread]: Store serial: [23269227]
