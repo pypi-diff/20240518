@@ -13796,3 +13796,18 @@
 [2024-05-18 13:06:43] INFO root fetch - processPackages [smartcitizen-connector]: Remove: archive file [/home/abi/fetcher/tmp/smartcitizen_connector-1.0.6.tar.gz]
 [2024-05-18 13:06:43] INFO root fetch - main [MainThread]: End processing [smartcitizen-connector]: success
 [2024-05-18 13:06:43] INFO root fetch - main [MainThread]: Store serial: [23267120]
+[2024-05-18 13:08:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267120]
+[2024-05-18 13:08:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 13:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gdmty-drf-firebase-auth
+[2024-05-18 13:08:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plexutils
+[2024-05-18 13:08:52] WARNING root fetch - processPackages [plexutils]: Skipping, unable to determine old version
+[2024-05-18 13:08:52] INFO root fetch - main [MainThread]: End processing [plexutils] error
+[2024-05-18 13:08:53] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: New version: [24.5.3] Old Version: [24.5.2]
+[2024-05-18 13:08:53] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: Downloading https://files.pythonhosted.org/packages/c2/1f/ec607d489e6acab8f5c8a8e2ca7e4fa97342415812030f5b2ed546cf6859/gdmty_drf_firebase_auth-24.5.2.tar.gz
+[2024-05-18 13:08:53] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: Downloading https://files.pythonhosted.org/packages/f4/85/10bd09f91e5d896f9d502eff9b3a112e40444c6ea02505b4fe3887f60cfd/gdmty_drf_firebase_auth-24.5.3.tar.gz
+[2024-05-18 13:08:53] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: executing diffoscope
+[2024-05-18 13:08:53] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdmty_drf_firebase_auth-24.5.2.tar.gz tmp/gdmty_drf_firebase_auth-24.5.3.tar.gz --markdown 20240518/g/gdmty-drf-firebase-auth/24.5.2-24.5.3/README.md --exclude *.pyd
+[2024-05-18 13:08:54] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_drf_firebase_auth-24.5.2.tar.gz]
+[2024-05-18 13:08:54] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_drf_firebase_auth-24.5.3.tar.gz]
+[2024-05-18 13:08:54] INFO root fetch - main [MainThread]: End processing [gdmty-drf-firebase-auth]: success
+[2024-05-18 13:08:54] INFO root fetch - main [MainThread]: Store serial: [23267129]
