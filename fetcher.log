@@ -20520,3 +20520,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:10:24] INFO root fetch - processPackages [pyunifiprotect]: Remove: archive file [/home/abi/fetcher/tmp/pyunifiprotect-6.0.0.tar.gz]
 [2024-05-18 21:10:24] INFO root fetch - main [MainThread]: End processing [pyunifiprotect]: success
 [2024-05-18 21:10:24] INFO root fetch - main [MainThread]: Store serial: [23270442]
+[2024-05-18 21:12:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270442]
+[2024-05-18 21:12:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 21:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rag-cli
+[2024-05-18 21:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-fixed-discount
+[2024-05-18 21:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: idealnessz
+[2024-05-18 21:12:34] WARNING root fetch - processPackages [idealnessz]: Skipping, unable to determine old version
+[2024-05-18 21:12:34] INFO root fetch - main [MainThread]: End processing [idealnessz] error
+[2024-05-18 21:12:34] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: New version: [17.0.1.0.1] Old Version: [17.0.1.0.0.5]
+[2024-05-18 21:12:34] WARNING root fetch - processPackages [rag-cli]: Skipping, unable to determine old version
+[2024-05-18 21:12:34] INFO root fetch - main [MainThread]: End processing [rag-cli] error
+[2024-05-18 21:12:35] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: Downloading https://files.pythonhosted.org/packages/8f/38/3f8073ef6506522d1df9a5d0eccd053497c9976535d1122163e971c975bc/odoo_addon_sale_fixed_discount-17.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 21:12:35] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: Downloading https://files.pythonhosted.org/packages/fd/86/e83291513148c1e629bd072b3faf07ee85e3f8b46f34b5ce621d22d82a6f/odoo_addon_sale_fixed_discount-17.0.1.0.1-py3-none-any.whl
+[2024-05-18 21:12:35] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: executing diffoscope
+[2024-05-18 21:12:35] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_fixed_discount-17.0.1.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_sale_fixed_discount-17.0.1.0.1-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-sale-fixed-discount/17.0.1.0.0.5-17.0.1.0.1/README.md --exclude *.pyd
+[2024-05-18 21:12:36] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_fixed_discount-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 21:12:36] INFO root fetch - processPackages [odoo-addon-sale-fixed-discount]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_fixed_discount-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 21:12:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-fixed-discount]: success
+[2024-05-18 21:12:36] INFO root fetch - main [MainThread]: Store serial: [23270454]
