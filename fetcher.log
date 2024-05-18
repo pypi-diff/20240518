@@ -11113,3 +11113,33 @@
 [2024-05-18 09:08:04] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.9.3.tar.gz]
 [2024-05-18 09:08:04] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-18 09:08:04] INFO root fetch - main [MainThread]: Store serial: [23265611]
+[2024-05-18 09:10:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265611]
+[2024-05-18 09:10:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 09:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-adapter-mirai
+[2024-05-18 09:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-membership-initial-fee
+[2024-05-18 09:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-vertical-association
+[2024-05-18 09:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transipy
+[2024-05-18 09:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: logisticianz
+[2024-05-18 09:10:14] WARNING root fetch - processPackages [odoo-addon-membership-initial-fee]: Skipping, unable to determine old version
+[2024-05-18 09:10:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-membership-initial-fee] error
+[2024-05-18 09:10:14] INFO root fetch - processPackages [nonebot-adapter-mirai]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-18 09:10:14] WARNING root fetch - processPackages [transipy]: Skipping, unable to determine old version
+[2024-05-18 09:10:14] INFO root fetch - main [MainThread]: End processing [transipy] error
+[2024-05-18 09:10:14] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: New version: [16.0.20240517.1] Old Version: [16.0.20240425.0]
+[2024-05-18 09:10:14] WARNING root fetch - processPackages [logisticianz]: Skipping, unable to determine old version
+[2024-05-18 09:10:14] INFO root fetch - main [MainThread]: End processing [logisticianz] error
+[2024-05-18 09:10:14] INFO root fetch - processPackages [nonebot-adapter-mirai]: Downloading https://files.pythonhosted.org/packages/4c/45/4a0a03c94585dbe22890fdcb25b3024115b7bee78939078614d1db560595/nonebot_adapter_mirai-2.3.0.tar.gz
+[2024-05-18 09:10:14] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: Downloading https://files.pythonhosted.org/packages/09/59/16bad6da56ae175a15a65c951d21ee2b3a221152a8b6fa2a52c64e5b8b3f/odoo_addons_oca_vertical_association-16.0.20240425.0-py3-none-any.whl
+[2024-05-18 09:10:14] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: Downloading https://files.pythonhosted.org/packages/b9/a2/25e0be648b8a772b55edd8940071b941bd86eab2edb9661e8f581c11857f/odoo_addons_oca_vertical_association-16.0.20240517.1-py3-none-any.whl
+[2024-05-18 09:10:14] INFO root fetch - processPackages [nonebot-adapter-mirai]: Downloading https://files.pythonhosted.org/packages/aa/34/2f27d329ecd931ada11842d4e25709426744e0f7cb008ed5441e227b1f7d/nonebot_adapter_mirai-2.3.1.tar.gz
+[2024-05-18 09:10:15] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: executing diffoscope
+[2024-05-18 09:10:15] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_vertical_association-16.0.20240425.0-py3-none-any.whl.zip tmp/odoo_addons_oca_vertical_association-16.0.20240517.1-py3-none-any.whl.zip --markdown 20240518/o/odoo-addons-oca-vertical-association/16.0.20240425.0-16.0.20240517.1/README.md --exclude *.pyd
+[2024-05-18 09:10:15] INFO root fetch - processPackages [nonebot-adapter-mirai]: executing diffoscope
+[2024-05-18 09:10:15] INFO root fetch - processPackages [nonebot-adapter-mirai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_adapter_mirai-2.3.0.tar.gz tmp/nonebot_adapter_mirai-2.3.1.tar.gz --markdown 20240518/n/nonebot-adapter-mirai/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-18 09:10:15] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_vertical_association-16.0.20240425.0-py3-none-any.whl.zip]
+[2024-05-18 09:10:15] INFO root fetch - processPackages [odoo-addons-oca-vertical-association]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_vertical_association-16.0.20240517.1-py3-none-any.whl.zip]
+[2024-05-18 09:10:15] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-vertical-association]: success
+[2024-05-18 09:10:15] INFO root fetch - processPackages [nonebot-adapter-mirai]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_mirai-2.3.0.tar.gz]
+[2024-05-18 09:10:15] INFO root fetch - processPackages [nonebot-adapter-mirai]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_mirai-2.3.1.tar.gz]
+[2024-05-18 09:10:15] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-mirai]: success
+[2024-05-18 09:10:15] INFO root fetch - main [MainThread]: Store serial: [23265628]
