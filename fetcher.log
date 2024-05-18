@@ -13475,3 +13475,18 @@
 [2024-05-18 12:35:25] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.8.9.tar.gz]
 [2024-05-18 12:35:25] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2024-05-18 12:35:25] INFO root fetch - main [MainThread]: Store serial: [23266956]
+[2024-05-18 12:37:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266956]
+[2024-05-18 12:37:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 12:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onlymaze
+[2024-05-18 12:37:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-18 12:37:35] WARNING root fetch - processPackages [onlymaze]: Skipping, unable to determine old version
+[2024-05-18 12:37:35] INFO root fetch - main [MainThread]: End processing [onlymaze] error
+[2024-05-18 12:37:35] INFO root fetch - processPackages [mimllearning]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 12:37:35] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/01/19/bfbea72ad47ab5447ad6cb90652413489191201adb3c2e7a9013402809c5/mimllearning-0.4.8.tar.gz
+[2024-05-18 12:37:35] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/84/bd/958d70b5217227bc933005c3bb746e70ea6d2a534843b2e0f6a0e93e2c98/mimllearning-0.4.9.tar.gz
+[2024-05-18 12:37:35] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-18 12:37:35] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.8.tar.gz tmp/mimllearning-0.4.9.tar.gz --markdown 20240518/m/mimllearning/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 12:37:36] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.8.tar.gz]
+[2024-05-18 12:37:36] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
+[2024-05-18 12:37:36] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-18 12:37:36] INFO root fetch - main [MainThread]: Store serial: [23266971]
