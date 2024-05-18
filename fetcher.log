@@ -18332,3 +18332,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:45:45] INFO root fetch - processPackages [PyTDC]: Remove: archive file [/home/abi/fetcher/tmp/PyTDC-0.4.9.tar.gz]
 [2024-05-18 18:45:45] INFO root fetch - main [MainThread]: End processing [PyTDC]: success
 [2024-05-18 18:45:45] INFO root fetch - main [MainThread]: Store serial: [23269346]
+[2024-05-18 18:47:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269346]
+[2024-05-18 18:47:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 18:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-fr-fec-oca
+[2024-05-18 18:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinyagent
+[2024-05-18 18:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-loader-lib
+[2024-05-18 18:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: espy-contact
+[2024-05-18 18:47:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tickeyz
+[2024-05-18 18:47:55] INFO root fetch - processPackages [tinyagent]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 18:47:55] INFO root fetch - processPackages [data-loader-lib]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 18:47:55] INFO root fetch - processPackages [espy-contact]: New version: [0.9] Old Version: [0.8]
+[2024-05-18 18:47:55] WARNING root fetch - processPackages [tickeyz]: Skipping, unable to determine old version
+[2024-05-18 18:47:55] INFO root fetch - main [MainThread]: End processing [tickeyz] error
+[2024-05-18 18:47:55] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: New version: [14.0.2.0.1.dev2] Old Version: [14.0.2.0.1.dev1]
+[2024-05-18 18:47:55] INFO root fetch - processPackages [data-loader-lib]: Downloading https://files.pythonhosted.org/packages/6b/e4/28d4dfa023fcb779bf8fd56f26423a55c7ebf1236c2e698ca75a8512a357/data_loader_lib-0.1.tar.gz
+[2024-05-18 18:47:55] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/07/4c/6d6ed1c239b72208f165ce670dcdc6ffc30e2eb8f70f1f7e5b6106e832a0/espy_contact-0.8.tar.gz
+[2024-05-18 18:47:55] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: Downloading https://files.pythonhosted.org/packages/f2/2f/b14200ed16f02ab6ff88b5cc47a6916a89a9c1f6eb8c5ca76f1a9e95964f/odoo14_addon_l10n_fr_fec_oca-14.0.2.0.1.dev1-py3-none-any.whl
+[2024-05-18 18:47:55] INFO root fetch - processPackages [data-loader-lib]: Downloading https://files.pythonhosted.org/packages/c1/52/b55a6bab4702016ad87637db16f08c3ce002cea31e7857d77f349f9279e3/data_loader_lib-0.2.tar.gz
+[2024-05-18 18:47:55] INFO root fetch - processPackages [espy-contact]: Downloading https://files.pythonhosted.org/packages/1f/a2/722fe00e34c488a1e91c9eb0ebe6b27115da9bc5c6d0311da983b6ab22d9/espy_contact-0.9.tar.gz
+[2024-05-18 18:47:55] INFO root fetch - processPackages [data-loader-lib]: executing diffoscope
+[2024-05-18 18:47:55] INFO root fetch - processPackages [data-loader-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_loader_lib-0.1.tar.gz tmp/data_loader_lib-0.2.tar.gz --markdown 20240518/d/data-loader-lib/0.1-0.2/README.md --exclude *.pyd
+[2024-05-18 18:47:55] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: Downloading https://files.pythonhosted.org/packages/e1/81/430845cfa80528720e4461fade2d65928701e06e4bf50f09115075fe0307/odoo14_addon_l10n_fr_fec_oca-14.0.2.0.1.dev2-py3-none-any.whl
+[2024-05-18 18:47:55] INFO root fetch - processPackages [espy-contact]: executing diffoscope
+[2024-05-18 18:47:55] INFO root fetch - processPackages [espy-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espy_contact-0.8.tar.gz tmp/espy_contact-0.9.tar.gz --markdown 20240518/e/espy-contact/0.8-0.9/README.md --exclude *.pyd
+[2024-05-18 18:47:55] INFO root fetch - processPackages [tinyagent]: Downloading https://files.pythonhosted.org/packages/82/4e/3fa4ae4f1f4ee3a6c2a3f2111f6e4df00bb0ce15358650826e0ce6057a7f/tinyagent-0.1.0.tar.gz
+[2024-05-18 18:47:55] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: executing diffoscope
+[2024-05-18 18:47:55] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_fr_fec_oca-14.0.2.0.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_l10n_fr_fec_oca-14.0.2.0.1.dev2-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-l10n-fr-fec-oca/14.0.2.0.1.dev1-14.0.2.0.1.dev2/README.md --exclude *.pyd
+[2024-05-18 18:47:56] INFO root fetch - processPackages [tinyagent]: Downloading https://files.pythonhosted.org/packages/92/c4/ec7cf63d26945ffd1139f703a26d8bbc4780a8a7198d20f856531705b551/tinyagent-0.1.1.tar.gz
+[2024-05-18 18:47:56] INFO root fetch - processPackages [data-loader-lib]: Remove: archive file [/home/abi/fetcher/tmp/data_loader_lib-0.1.tar.gz]
+[2024-05-18 18:47:56] INFO root fetch - processPackages [data-loader-lib]: Remove: archive file [/home/abi/fetcher/tmp/data_loader_lib-0.2.tar.gz]
+[2024-05-18 18:47:56] INFO root fetch - main [MainThread]: End processing [data-loader-lib]: success
+[2024-05-18 18:47:56] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.8.tar.gz]
+[2024-05-18 18:47:56] INFO root fetch - processPackages [espy-contact]: Remove: archive file [/home/abi/fetcher/tmp/espy_contact-0.9.tar.gz]
+[2024-05-18 18:47:56] INFO root fetch - main [MainThread]: End processing [espy-contact]: success
+[2024-05-18 18:47:56] INFO root fetch - processPackages [tinyagent]: executing diffoscope
+[2024-05-18 18:47:56] INFO root fetch - processPackages [tinyagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinyagent-0.1.0.tar.gz tmp/tinyagent-0.1.1.tar.gz --markdown 20240518/t/tinyagent/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 18:47:56] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_fr_fec_oca-14.0.2.0.1.dev1-py3-none-any.whl.zip]
+[2024-05-18 18:47:56] INFO root fetch - processPackages [odoo14-addon-l10n-fr-fec-oca]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_fr_fec_oca-14.0.2.0.1.dev2-py3-none-any.whl.zip]
+[2024-05-18 18:47:56] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-fr-fec-oca]: success
+[2024-05-18 18:47:56] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.0.tar.gz]
+[2024-05-18 18:47:56] INFO root fetch - processPackages [tinyagent]: Remove: archive file [/home/abi/fetcher/tmp/tinyagent-0.1.1.tar.gz]
+[2024-05-18 18:47:56] INFO root fetch - main [MainThread]: End processing [tinyagent]: success
+[2024-05-18 18:47:56] INFO root fetch - main [MainThread]: Store serial: [23269391]
