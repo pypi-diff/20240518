@@ -14772,3 +14772,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:15:29] INFO root fetch - processPackages [livescore-api]: Remove: archive file [/home/abi/fetcher/tmp/livescore-api-0.0.5.tar.gz]
 [2024-05-18 14:15:29] INFO root fetch - main [MainThread]: End processing [livescore-api]: success
 [2024-05-18 14:15:29] INFO root fetch - main [MainThread]: Store serial: [23267554]
+[2024-05-18 14:17:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267554]
+[2024-05-18 14:17:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 14:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: requisitionz
+[2024-05-18 14:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: StdioBridge
+[2024-05-18 14:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pykwl
+[2024-05-18 14:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otonagai-dl
+[2024-05-18 14:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: eurepoc
+[2024-05-18 14:17:38] INFO root fetch - processPackages [pykwl]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 14:17:38] INFO root fetch - processPackages [StdioBridge]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-18 14:17:38] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/fe/0d/54df9b3f876d3c7bc02b8863a3d36c544df1258cfed5d2fe0e8fd27e38c5/pykwl-0.0.8.tar.gz
+[2024-05-18 14:17:38] INFO root fetch - processPackages [StdioBridge]: Downloading https://files.pythonhosted.org/packages/b5/01/31b7634e067eb1dc22e778f802555f13ea30bc5b39ec1174eb78c3de24f3/StdioBridge-1.0.1.tar.gz
+[2024-05-18 14:17:38] WARNING root fetch - processPackages [eurepoc]: Skipping, unable to determine old version
+[2024-05-18 14:17:38] INFO root fetch - main [MainThread]: End processing [eurepoc] error
+[2024-05-18 14:17:38] INFO root fetch - processPackages [otonagai-dl]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-18 14:17:38] WARNING root fetch - processPackages [requisitionz]: Skipping, unable to determine old version
+[2024-05-18 14:17:38] INFO root fetch - main [MainThread]: End processing [requisitionz] error
+[2024-05-18 14:17:38] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/9c/ce/0c6cc005ec8e87d45376b352419076e568566b7c23e53c407aac647fffa3/otonagai_dl-1.0.2.tar.gz
+[2024-05-18 14:17:38] INFO root fetch - processPackages [pykwl]: Downloading https://files.pythonhosted.org/packages/af/8c/4103b3c2c1d782a7b72db67a054d581ce765d3887de52331b6ed5b7e36cd/pykwl-0.0.9.tar.gz
+[2024-05-18 14:17:38] INFO root fetch - processPackages [pykwl]: executing diffoscope
+[2024-05-18 14:17:38] INFO root fetch - processPackages [pykwl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pykwl-0.0.8.tar.gz tmp/pykwl-0.0.9.tar.gz --markdown 20240518/p/pykwl/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 14:17:38] INFO root fetch - processPackages [StdioBridge]: Downloading https://files.pythonhosted.org/packages/cd/2a/7c74bc763447a1450d45f243a21703549407d47e56f48dad0dd39eb8efd6/StdioBridge-1.1.0.tar.gz
+[2024-05-18 14:17:38] INFO root fetch - processPackages [StdioBridge]: executing diffoscope
+[2024-05-18 14:17:38] INFO root fetch - processPackages [StdioBridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StdioBridge-1.0.1.tar.gz tmp/StdioBridge-1.1.0.tar.gz --markdown 20240518/S/StdioBridge/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-18 14:17:38] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/23/8f/854e037b2d586945917129e0aa5f7eec01d0597f8fb1ea8d3d2a2a7f70d3/otonagai_dl-1.0.3.tar.gz
+[2024-05-18 14:17:38] INFO root fetch - processPackages [otonagai-dl]: executing diffoscope
+[2024-05-18 14:17:38] INFO root fetch - processPackages [otonagai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otonagai_dl-1.0.2.tar.gz tmp/otonagai_dl-1.0.3.tar.gz --markdown 20240518/o/otonagai-dl/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-18 14:17:39] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.8.tar.gz]
+[2024-05-18 14:17:39] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.9.tar.gz]
+[2024-05-18 14:17:39] INFO root fetch - main [MainThread]: End processing [pykwl]: success
+[2024-05-18 14:17:39] INFO root fetch - processPackages [StdioBridge]: Remove: archive file [/home/abi/fetcher/tmp/StdioBridge-1.0.1.tar.gz]
+[2024-05-18 14:17:39] INFO root fetch - processPackages [StdioBridge]: Remove: archive file [/home/abi/fetcher/tmp/StdioBridge-1.1.0.tar.gz]
+[2024-05-18 14:17:39] INFO root fetch - main [MainThread]: End processing [StdioBridge]: success
+[2024-05-18 14:17:39] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.2.tar.gz]
+[2024-05-18 14:17:39] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.3.tar.gz]
+[2024-05-18 14:17:39] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
+[2024-05-18 14:17:39] INFO root fetch - main [MainThread]: Store serial: [23267575]
