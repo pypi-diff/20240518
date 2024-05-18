@@ -17306,3 +17306,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:33:23] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.2.tar.gz]
 [2024-05-18 17:33:23] INFO root fetch - main [MainThread]: End processing [Shellper]: success
 [2024-05-18 17:33:23] INFO root fetch - main [MainThread]: Store serial: [23268864]
+[2024-05-18 17:35:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268864]
+[2024-05-18 17:35:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-ai-studio-utils
+[2024-05-18 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gitoptim
+[2024-05-18 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyspatialml
+[2024-05-18 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SimplHDL
+[2024-05-18 17:35:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: model-checker
+[2024-05-18 17:35:32] INFO root fetch - processPackages [model-checker]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-18 17:35:32] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:35:32] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/6a/da/19e7d7c4ad2b3252057066f7f23323759e5fcebf5f726b0a0c5d03a51a00/model_checker-0.3.3.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [SimplHDL]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-18 17:35:32] INFO root fetch - processPackages [google-ai-studio-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 17:35:32] INFO root fetch - processPackages [pyspatialml]: New version: [0.22.0] Old Version: [0.21]
+[2024-05-18 17:35:32] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [SimplHDL]: Downloading https://files.pythonhosted.org/packages/b8/5c/ffb5572d5e14e1175af15dcfccc6f57c955f3325e25b148181318dd993f1/SimplHDL-0.0.4.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [pyspatialml]: Downloading https://files.pythonhosted.org/packages/8d/9b/94ee3f80283260d608891f2e86cd4c8c9d16c86b61191d9e6bfe7861f3fe/pyspatialml-0.21.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [google-ai-studio-utils]: Downloading https://files.pythonhosted.org/packages/85/21/2c6e8ca4b4c4ab8ee58a31df884ac54c04e29ce1c08d3d0600d916fc8428/google_ai_studio_utils-0.1.8.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/96/21/6741109eca35388d951dc04eb12402a4a901222f1586fcceec3297862dfe/model_checker-0.3.4.tar.gz
+[2024-05-18 17:35:32] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:35:32] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:35:33] INFO root fetch - processPackages [model-checker]: executing diffoscope
+[2024-05-18 17:35:33] INFO root fetch - processPackages [model-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_checker-0.3.3.tar.gz tmp/model_checker-0.3.4.tar.gz --markdown 20240518/m/model-checker/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-18 17:35:33] INFO root fetch - processPackages [google-ai-studio-utils]: Downloading https://files.pythonhosted.org/packages/92/5b/32344162489ff99e4d6c599894c1fa2527a151081a6bd82710f500942e0b/google_ai_studio_utils-0.1.9.tar.gz
+[2024-05-18 17:35:33] INFO root fetch - processPackages [SimplHDL]: Downloading https://files.pythonhosted.org/packages/39/1e/55f54e6e1bd17fd5295a2c35b6e7c669102bc9bdc08f4620aafe25f0b631/simplhdl-0.0.5.tar.gz
+[2024-05-18 17:35:33] INFO root fetch - processPackages [google-ai-studio-utils]: executing diffoscope
+[2024-05-18 17:35:33] INFO root fetch - processPackages [google-ai-studio-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google_ai_studio_utils-0.1.8.tar.gz tmp/google_ai_studio_utils-0.1.9.tar.gz --markdown 20240518/g/google-ai-studio-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 17:35:33] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:35:33] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:35:33] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:35:33] INFO root fetch - processPackages [SimplHDL]: executing diffoscope
+[2024-05-18 17:35:33] INFO root fetch - processPackages [SimplHDL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SimplHDL-0.0.4.tar.gz tmp/simplhdl-0.0.5.tar.gz --markdown 20240518/S/SimplHDL/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-18 17:35:33] INFO root fetch - processPackages [pyspatialml]: Downloading https://files.pythonhosted.org/packages/68/f8/afc9074ef2a7edbc7c3fe47053082a7b41d535385f09d5c2a0e7125af318/pyspatialml-0.22.0.tar.gz
+[2024-05-18 17:35:33] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.3.tar.gz]
+[2024-05-18 17:35:33] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.4.tar.gz]
+[2024-05-18 17:35:33] INFO root fetch - main [MainThread]: End processing [model-checker]: success
+[2024-05-18 17:35:33] INFO root fetch - processPackages [google-ai-studio-utils]: Remove: archive file [/home/abi/fetcher/tmp/google_ai_studio_utils-0.1.8.tar.gz]
+[2024-05-18 17:35:33] INFO root fetch - processPackages [google-ai-studio-utils]: Remove: archive file [/home/abi/fetcher/tmp/google_ai_studio_utils-0.1.9.tar.gz]
+[2024-05-18 17:35:33] INFO root fetch - main [MainThread]: End processing [google-ai-studio-utils]: success
+[2024-05-18 17:35:34] INFO root fetch - processPackages [pyspatialml]: executing diffoscope
+[2024-05-18 17:35:34] INFO root fetch - processPackages [pyspatialml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspatialml-0.21.tar.gz tmp/pyspatialml-0.22.0.tar.gz --markdown 20240518/p/pyspatialml/0.21-0.22.0/README.md --exclude *.pyd
+[2024-05-18 17:35:34] INFO root fetch - processPackages [SimplHDL]: Remove: archive file [/home/abi/fetcher/tmp/SimplHDL-0.0.4.tar.gz]
+[2024-05-18 17:35:34] INFO root fetch - processPackages [SimplHDL]: Remove: archive file [/home/abi/fetcher/tmp/simplhdl-0.0.5.tar.gz]
+[2024-05-18 17:35:34] INFO root fetch - main [MainThread]: End processing [SimplHDL]: success
+[2024-05-18 17:35:35] INFO root fetch - processPackages [pyspatialml]: Remove: archive file [/home/abi/fetcher/tmp/pyspatialml-0.21.tar.gz]
+[2024-05-18 17:35:35] INFO root fetch - processPackages [pyspatialml]: Remove: archive file [/home/abi/fetcher/tmp/pyspatialml-0.22.0.tar.gz]
+[2024-05-18 17:35:35] INFO root fetch - main [MainThread]: End processing [pyspatialml]: success
+[2024-05-18 17:35:35] INFO root fetch - main [MainThread]: Store serial: [23268880]
