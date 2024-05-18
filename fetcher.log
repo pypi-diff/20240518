@@ -15595,3 +15595,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:28:12] INFO root fetch - processPackages [web-assets-downloader]: Remove: archive file [/home/abi/fetcher/tmp/web_assets_downloader-2.2.0.tar.gz]
 [2024-05-18 15:28:12] INFO root fetch - main [MainThread]: End processing [web-assets-downloader]: success
 [2024-05-18 15:28:12] INFO root fetch - main [MainThread]: Store serial: [23268020]
+[2024-05-18 15:30:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268020]
+[2024-05-18 15:30:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 15:30:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func-bk
+[2024-05-18 15:30:21] INFO root fetch - processPackages [func-bk]: New version: [1.2.0] Old Version: [1.0.2]
+[2024-05-18 15:30:21] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/49/84/bd70bb3e057730f3008adf08b0b85001789c5766469f9eafa0a9ca0d1db2/func_bk-1.0.2.tar.gz
+[2024-05-18 15:30:22] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/ec/72/6fd136d481dcea7091a1058c883b50a95c5b80b3ba11813c70d061d00f3e/func_bk-1.2.0.tar.gz
+[2024-05-18 15:30:22] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-05-18 15:30:22] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.0.2.tar.gz tmp/func_bk-1.2.0.tar.gz --markdown 20240518/f/func-bk/1.0.2-1.2.0/README.md --exclude *.pyd
+[2024-05-18 15:30:22] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.0.2.tar.gz]
+[2024-05-18 15:30:22] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.2.0.tar.gz]
+[2024-05-18 15:30:22] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-05-18 15:30:22] INFO root fetch - main [MainThread]: Store serial: [23268022]
