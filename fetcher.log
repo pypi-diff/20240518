@@ -22409,3 +22409,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:41:17] INFO root fetch - processPackages [frida]: Remove: archive file [/home/abi/fetcher/tmp/frida-9.1.9.tar.gz]
 [2024-05-18 23:41:17] INFO root fetch - main [MainThread]: End processing [frida]: success
 [2024-05-18 23:41:17] INFO root fetch - main [MainThread]: Store serial: [23271433]
+[2024-05-18 23:43:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271433]
+[2024-05-18 23:43:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 23:43:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neurocaps
+[2024-05-18 23:43:26] INFO root fetch - processPackages [neurocaps]: New version: [0.9.0.post4] Old Version: [0.9.0.post3]
+[2024-05-18 23:43:27] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/52/49/576a2098fcd2fcc864c7ad13da52371e9a9548007d4562f0d8f9ed83553e/neurocaps-0.9.0.post3.tar.gz
+[2024-05-18 23:43:27] INFO root fetch - processPackages [neurocaps]: Downloading https://files.pythonhosted.org/packages/69/c4/84104d7e0c983f8efcbdd952fe79bd9ba9ef0bbd8b447f255cae62320e2a/neurocaps-0.9.0.post4.tar.gz
+[2024-05-18 23:43:27] INFO root fetch - processPackages [neurocaps]: executing diffoscope
+[2024-05-18 23:43:27] INFO root fetch - processPackages [neurocaps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neurocaps-0.9.0.post3.tar.gz tmp/neurocaps-0.9.0.post4.tar.gz --markdown 20240518/n/neurocaps/0.9.0.post3-0.9.0.post4/README.md --exclude *.pyd
+[2024-05-18 23:43:28] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.0.post3.tar.gz]
+[2024-05-18 23:43:28] INFO root fetch - processPackages [neurocaps]: Remove: archive file [/home/abi/fetcher/tmp/neurocaps-0.9.0.post4.tar.gz]
+[2024-05-18 23:43:28] INFO root fetch - main [MainThread]: End processing [neurocaps]: success
+[2024-05-18 23:43:28] INFO root fetch - main [MainThread]: Store serial: [23271436]
