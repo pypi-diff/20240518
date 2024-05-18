@@ -16310,3 +16310,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:20:40] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.2.tar.gz]
 [2024-05-18 16:20:40] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
 [2024-05-18 16:20:40] INFO root fetch - main [MainThread]: Store serial: [23268376]
+[2024-05-18 16:22:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268376]
+[2024-05-18 16:22:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 16:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiconn
+[2024-05-18 16:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oj-tools
+[2024-05-18 16:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-05-18 16:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyqt5-concurrent
+[2024-05-18 16:22:49] WARNING root fetch - processPackages [aiconn]: Skipping, unable to determine old version
+[2024-05-18 16:22:49] INFO root fetch - main [MainThread]: End processing [aiconn] error
+[2024-05-18 16:22:49] INFO root fetch - processPackages [pyqt5-concurrent]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-18 16:22:49] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.4.8] Old Version: [0.4.7]
+[2024-05-18 16:22:49] INFO root fetch - processPackages [pyqt5-concurrent]: Downloading https://files.pythonhosted.org/packages/78/9c/c793950668724a03b75d33307c02744131823162dca0d591c8de1b41e5de/pyqt5_concurrent-0.1.3.tar.gz
+[2024-05-18 16:22:49] INFO root fetch - processPackages [oj-tools]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-18 16:22:49] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/84/35/9eee0d1407ee96a1ee6da0f66be57200c60c6eeb22002b1614f0b34efb79/ctrip-app-ui-0.4.7.tar.gz
+[2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: Downloading https://files.pythonhosted.org/packages/71/9f/ec7703b01ffe4ba9732c206109d607dd8a2ed98d2ecafbbd4de0b48fb246/oj_tools-0.0.6.tar.gz
+[2024-05-18 16:22:50] INFO root fetch - processPackages [pyqt5-concurrent]: Downloading https://files.pythonhosted.org/packages/f7/5b/ac8210ffdf700e20e50fb8196d4bf5e93b728e59ecd3cd6645d46426d432/pyqt5_concurrent-0.1.4.tar.gz
+[2024-05-18 16:22:50] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/43/3c/5d844ae28786593f93c4d89718058605383996a2e1628d6fefbc05eb0609/ctrip-app-ui-0.4.8.tar.gz
+[2024-05-18 16:22:50] INFO root fetch - processPackages [pyqt5-concurrent]: executing diffoscope
+[2024-05-18 16:22:50] INFO root fetch - processPackages [pyqt5-concurrent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqt5_concurrent-0.1.3.tar.gz tmp/pyqt5_concurrent-0.1.4.tar.gz --markdown 20240518/p/pyqt5-concurrent/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-18 16:22:50] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-18 16:22:50] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.4.7.tar.gz tmp/ctrip-app-ui-0.4.8.tar.gz --markdown 20240518/c/ctrip-app-ui/0.4.7-0.4.8/README.md --exclude *.pyd
+[2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: Downloading https://files.pythonhosted.org/packages/26/21/83d3c8da004bfd534be40ba9892a5fd1f5f9e3dd47e3e85d3f2b48ace70d/oj_tools-0.0.7.tar.gz
+[2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: executing diffoscope
+[2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oj_tools-0.0.6.tar.gz tmp/oj_tools-0.0.7.tar.gz --markdown 20240518/o/oj-tools/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-18 16:22:50] INFO root fetch - processPackages [pyqt5-concurrent]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_concurrent-0.1.3.tar.gz]
+[2024-05-18 16:22:50] INFO root fetch - processPackages [pyqt5-concurrent]: Remove: archive file [/home/abi/fetcher/tmp/pyqt5_concurrent-0.1.4.tar.gz]
+[2024-05-18 16:22:50] INFO root fetch - main [MainThread]: End processing [pyqt5-concurrent]: success
+[2024-05-18 16:22:50] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.4.7.tar.gz]
+[2024-05-18 16:22:50] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.4.8.tar.gz]
+[2024-05-18 16:22:50] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: Remove: archive file [/home/abi/fetcher/tmp/oj_tools-0.0.6.tar.gz]
+[2024-05-18 16:22:50] INFO root fetch - processPackages [oj-tools]: Remove: archive file [/home/abi/fetcher/tmp/oj_tools-0.0.7.tar.gz]
+[2024-05-18 16:22:50] INFO root fetch - main [MainThread]: End processing [oj-tools]: success
+[2024-05-18 16:22:50] INFO root fetch - main [MainThread]: Store serial: [23268387]
