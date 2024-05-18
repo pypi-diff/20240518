@@ -21659,3 +21659,21 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:29:40] INFO root fetch - processPackages [personal-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/personal_interfaces-0.4.1.tar.gz]
 [2024-05-18 22:29:40] INFO root fetch - main [MainThread]: End processing [personal-interfaces]: success
 [2024-05-18 22:29:40] INFO root fetch - main [MainThread]: Store serial: [23271048]
+[2024-05-18 22:31:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271048]
+[2024-05-18 22:31:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 22:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PATE
+[2024-05-18 22:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p3g
+[2024-05-18 22:31:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: my-table-db
+[2024-05-18 22:31:50] INFO root fetch - processPackages [my-table-db]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-18 22:31:50] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/49/4b/e7b65ea3844882d276949e84a065e6b6928e925298926cebcd696ec9c7a1/my_table_db-1.0.1.tar.gz
+[2024-05-18 22:31:50] WARNING root fetch - processPackages [p3g]: Skipping, unable to determine old version
+[2024-05-18 22:31:50] INFO root fetch - main [MainThread]: End processing [p3g] error
+[2024-05-18 22:31:50] WARNING root fetch - processPackages [PATE]: Skipping, unable to determine old version
+[2024-05-18 22:31:50] INFO root fetch - main [MainThread]: End processing [PATE] error
+[2024-05-18 22:31:50] INFO root fetch - processPackages [my-table-db]: Downloading https://files.pythonhosted.org/packages/41/6b/4aa22f0e2d4be0597ab7701d467d85baa7deb3dcbd64e900ca44ad611776/my_table_db-1.0.2.tar.gz
+[2024-05-18 22:31:50] INFO root fetch - processPackages [my-table-db]: executing diffoscope
+[2024-05-18 22:31:50] INFO root fetch - processPackages [my-table-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/my_table_db-1.0.1.tar.gz tmp/my_table_db-1.0.2.tar.gz --markdown 20240518/m/my-table-db/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-18 22:31:51] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.1.tar.gz]
+[2024-05-18 22:31:51] INFO root fetch - processPackages [my-table-db]: Remove: archive file [/home/abi/fetcher/tmp/my_table_db-1.0.2.tar.gz]
+[2024-05-18 22:31:51] INFO root fetch - main [MainThread]: End processing [my-table-db]: success
+[2024-05-18 22:31:51] INFO root fetch - main [MainThread]: Store serial: [23271061]
