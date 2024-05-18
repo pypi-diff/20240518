@@ -6660,3 +6660,50 @@
 [2024-05-18 03:25:46] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.165.1.tar.gz]
 [2024-05-18 03:25:46] INFO root fetch - main [MainThread]: End processing [abcli]: success
 [2024-05-18 03:25:46] INFO root fetch - main [MainThread]: Store serial: [23263491]
+[2024-05-18 03:27:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263491]
+[2024-05-18 03:27:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 03:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-18 03:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: naggierz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-nets-core
+[2024-05-18 03:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onediff
+[2024-05-18 03:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: procastro
+[2024-05-18 03:27:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onediffx
+[2024-05-18 03:27:55] INFO root fetch - processPackages [django-nets-core]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-18 03:27:55] INFO root fetch - processPackages [pypomes-db]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-18 03:27:55] INFO root fetch - processPackages [onediff]: New version: [1.1.0.dev202405170128] Old Version: [1.1.0.dev202405160127]
+[2024-05-18 03:27:55] INFO root fetch - processPackages [onediffx]: New version: [1.1.0.dev202405170128] Old Version: [1.1.0.dev202405160127]
+[2024-05-18 03:27:55] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/31/06/926c1d0ddf7f2392bd893466e8e794a1141f989a7211ccc404f0ef195df2/pypomes_db-0.8.1.tar.gz
+[2024-05-18 03:27:55] WARNING root fetch - processPackages [naggierz]: Skipping, unable to determine old version
+[2024-05-18 03:27:55] INFO root fetch - main [MainThread]: End processing [naggierz] error
+[2024-05-18 03:27:55] INFO root fetch - processPackages [procastro]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 03:27:55] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/79/c3/cda8f33a48cc3ba33d3b6d9e2fbd7ee2b5c3361c5337b09da3d8a207b017/django_nets_core-0.1.98.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/02/58/cae549d2f67008228cc6891c267aa2f9fe1d62ba0b05f11fd338b8dbde43/onediffx-1.1.0.dev202405160127.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/20/3d/9b200d2d6aa096936f93bf8225ac516dc363a779656da7cf121eb5e110f7/onediff-1.1.0.dev202405160127.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/7a/9d/08b5ca2ee6b58d4ed6d8130f33762a70038d18501b689eeeaa3707d11ead/pypomes_db-0.8.2.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [procastro]: Downloading https://files.pythonhosted.org/packages/2e/b1/bf2d035d416a004630b085b855cc1203b14ee45d8e5aa1cb22a1136554ae/procastro-0.1.8.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [django-nets-core]: Downloading https://files.pythonhosted.org/packages/36/e9/30dde935785c504d8cae7b3855974eccdf725a0992dff1f40f413d916c8b/django_nets_core-0.1.99.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-18 03:27:55] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.8.1.tar.gz tmp/pypomes_db-0.8.2.tar.gz --markdown 20240518/p/pypomes-db/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-18 03:27:55] INFO root fetch - processPackages [django-nets-core]: executing diffoscope
+[2024-05-18 03:27:55] INFO root fetch - processPackages [django-nets-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_nets_core-0.1.98.tar.gz tmp/django_nets_core-0.1.99.tar.gz --markdown 20240518/d/django-nets-core/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-18 03:27:55] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/a4/e5/634ae60e62699f76e205052da956986ee6c3b17247c7684c9d52e8c8bfec/onediffx-1.1.0.dev202405170128.tar.gz
+[2024-05-18 03:27:55] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/a1/c1/254da700684a705ff88dcde8bc7a727d3dc1f42ca35093b0e7c6a61d8805/onediff-1.1.0.dev202405170128.tar.gz
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.1.0.dev202405160127.tar.gz tmp/onediffx-1.1.0.dev202405170128.tar.gz --markdown 20240518/o/onediffx/1.1.0.dev202405160127-1.1.0.dev202405170128/README.md --exclude *.pyd
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.1.0.dev202405160127.tar.gz tmp/onediff-1.1.0.dev202405170128.tar.gz --markdown 20240518/o/onediff/1.1.0.dev202405160127-1.1.0.dev202405170128/README.md --exclude *.pyd
+[2024-05-18 03:27:56] WARNING root fetch - processPackages [procastro]: Skipping package: exceeds size limit 11450976>=10485760
+[2024-05-18 03:27:56] INFO root fetch - main [MainThread]: End processing [procastro] error
+[2024-05-18 03:27:56] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.1.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.8.2.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405160127.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.1.0.dev202405170128.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-18 03:27:56] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.98.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - processPackages [django-nets-core]: Remove: archive file [/home/abi/fetcher/tmp/django_nets_core-0.1.99.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - main [MainThread]: End processing [django-nets-core]: success
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405160127.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405170128.tar.gz]
+[2024-05-18 03:27:56] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-18 03:27:56] INFO root fetch - main [MainThread]: Store serial: [23263569]
