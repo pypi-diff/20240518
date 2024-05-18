@@ -21765,3 +21765,50 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:42:39] INFO root fetch - processPackages [nuon]: Remove: archive file [/home/abi/fetcher/tmp/nuon-0.19.99.tar.gz]
 [2024-05-18 22:42:39] INFO root fetch - main [MainThread]: End processing [nuon]: success
 [2024-05-18 22:42:39] INFO root fetch - main [MainThread]: Store serial: [23271122]
+[2024-05-18 22:44:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271122]
+[2024-05-18 22:44:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wild-code
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graphscope
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: normcap
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: inheritablyz
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ziya
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: zonevu
+[2024-05-18 22:44:47] INFO root fetch - processPackages [graphscope]: New version: [0.28.0a20240517] Old Version: [0.28.0a20240516]
+[2024-05-18 22:44:47] INFO root fetch - processPackages [zonevu]: New version: [1.1.25] Old Version: [1.1.24]
+[2024-05-18 22:44:47] INFO root fetch - processPackages [ziya]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 22:44:47] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/1e/ac/37decfc954c7c1327104c5c441f37450fa454ebfd265e1aeb01c95c055f7/zonevu-1.1.24-py3-none-any.whl
+[2024-05-18 22:44:47] WARNING root fetch - processPackages [inheritablyz]: Skipping, unable to determine old version
+[2024-05-18 22:44:47] INFO root fetch - main [MainThread]: End processing [inheritablyz] error
+[2024-05-18 22:44:47] INFO root fetch - processPackages [normcap]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-18 22:44:47] INFO root fetch - processPackages [wild-code]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-18 22:44:48] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/51/04/886659fe87c9e41a90d994714faa8895fa3a2ddd7d1df030b7609a4eca50/graphscope-0.28.0a20240516-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-18 22:44:48] INFO root fetch - processPackages [normcap]: Downloading https://files.pythonhosted.org/packages/75/97/d3bef3c12bce8b6f4119902868316da2440aa3428016fedbaa953d987926/normcap-0.5.6.tar.gz
+[2024-05-18 22:44:48] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 218045328>=10485760
+[2024-05-18 22:44:48] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2024-05-18 22:44:48] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/ec/d9/c132e3d3bb3131f4f7bb39f9ffbfcd6ab71db3e4b23813e75962970fdbc0/ziya-0.1.8.tar.gz
+[2024-05-18 22:44:48] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/38/aa/d729d3061fa6aba52a1bc379859942a776c8cefcce4cb7bb76b28ddd8677/wild_code-0.5.0.tar.gz
+[2024-05-18 22:44:48] INFO root fetch - processPackages [zonevu]: Downloading https://files.pythonhosted.org/packages/c0/67/4c0d0170da90cd447fcf8693a95a6752f51a533d85eedbb6d708995424e8/zonevu-1.1.25-py3-none-any.whl
+[2024-05-18 22:44:48] INFO root fetch - processPackages [zonevu]: executing diffoscope
+[2024-05-18 22:44:48] INFO root fetch - processPackages [zonevu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zonevu-1.1.24-py3-none-any.whl.zip tmp/zonevu-1.1.25-py3-none-any.whl.zip --markdown 20240518/z/zonevu/1.1.24-1.1.25/README.md --exclude *.pyd
+[2024-05-18 22:44:48] INFO root fetch - processPackages [ziya]: Downloading https://files.pythonhosted.org/packages/b4/86/a2ff21e28f4db4b1b8e94fe73a5ae18bf459c135ea7489a3772c612b45d3/ziya-0.1.9.tar.gz
+[2024-05-18 22:44:48] INFO root fetch - processPackages [wild-code]: Downloading https://files.pythonhosted.org/packages/26/aa/011ed111a6dec59a1eff96227603dd22ef79f9f53075d6135dea0e4d88eb/wild_code-0.5.1.tar.gz
+[2024-05-18 22:44:48] INFO root fetch - processPackages [wild-code]: executing diffoscope
+[2024-05-18 22:44:48] INFO root fetch - processPackages [wild-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wild_code-0.5.0.tar.gz tmp/wild_code-0.5.1.tar.gz --markdown 20240518/w/wild-code/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-18 22:44:48] INFO root fetch - processPackages [ziya]: executing diffoscope
+[2024-05-18 22:44:48] INFO root fetch - processPackages [ziya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziya-0.1.8.tar.gz tmp/ziya-0.1.9.tar.gz --markdown 20240518/z/ziya/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 22:44:48] INFO root fetch - processPackages [normcap]: Downloading https://files.pythonhosted.org/packages/96/d4/d143840786d989d8dfd205e1b7394ef44636ba7fd27eef4ac11d2418036e/normcap-0.5.7.tar.gz
+[2024-05-18 22:44:49] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.8.tar.gz]
+[2024-05-18 22:44:49] INFO root fetch - processPackages [ziya]: Remove: archive file [/home/abi/fetcher/tmp/ziya-0.1.9.tar.gz]
+[2024-05-18 22:44:49] INFO root fetch - main [MainThread]: End processing [ziya]: success
+[2024-05-18 22:44:49] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.24-py3-none-any.whl.zip]
+[2024-05-18 22:44:49] INFO root fetch - processPackages [zonevu]: Remove: archive file [/home/abi/fetcher/tmp/zonevu-1.1.25-py3-none-any.whl.zip]
+[2024-05-18 22:44:49] INFO root fetch - main [MainThread]: End processing [zonevu]: success
+[2024-05-18 22:44:49] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.5.0.tar.gz]
+[2024-05-18 22:44:49] INFO root fetch - processPackages [wild-code]: Remove: archive file [/home/abi/fetcher/tmp/wild_code-0.5.1.tar.gz]
+[2024-05-18 22:44:49] INFO root fetch - main [MainThread]: End processing [wild-code]: success
+[2024-05-18 22:44:50] INFO root fetch - processPackages [normcap]: executing diffoscope
+[2024-05-18 22:44:50] INFO root fetch - processPackages [normcap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/normcap-0.5.6.tar.gz tmp/normcap-0.5.7.tar.gz --markdown 20240518/n/normcap/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-18 22:44:52] INFO root fetch - processPackages [normcap]: Remove: archive file [/home/abi/fetcher/tmp/normcap-0.5.6.tar.gz]
+[2024-05-18 22:44:52] INFO root fetch - processPackages [normcap]: Remove: archive file [/home/abi/fetcher/tmp/normcap-0.5.7.tar.gz]
+[2024-05-18 22:44:52] INFO root fetch - main [MainThread]: End processing [normcap]: success
+[2024-05-18 22:44:52] INFO root fetch - main [MainThread]: Store serial: [23271141]
