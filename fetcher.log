@@ -9936,3 +9936,18 @@
 [2024-05-18 07:32:47] WARNING root fetch - processPackages [pretransmittingz]: Skipping, unable to determine old version
 [2024-05-18 07:32:47] INFO root fetch - main [MainThread]: End processing [pretransmittingz] error
 [2024-05-18 07:32:47] INFO root fetch - main [MainThread]: Store serial: [23264984]
+[2024-05-18 07:34:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264984]
+[2024-05-18 07:34:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 07:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2024-05-18 07:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PayNexus
+[2024-05-18 07:34:56] WARNING root fetch - processPackages [PayNexus]: Skipping, unable to determine old version
+[2024-05-18 07:34:56] INFO root fetch - main [MainThread]: End processing [PayNexus] error
+[2024-05-18 07:34:56] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240516] Old Version: [2.17.0.dev20240515]
+[2024-05-18 07:34:56] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/92/01/61ed0047297994c8991257024bbc2beb16994754d9868e0f04812c691457/tflite_runtime_nightly-2.17.0.dev20240515-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-18 07:34:56] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/b2/df/6aa1af8c0392e43412ac13615f7a7171c39d1ee6c0136f6c5fa2ce28e094/tflite_runtime_nightly-2.17.0.dev20240516-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-05-18 07:34:57] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-05-18 07:34:57] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240515-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240516-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240518/t/tflite-runtime-nightly/2.17.0.dev20240515-2.17.0.dev20240516/README.md --exclude *.pyd
+[2024-05-18 07:34:57] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240515-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-18 07:34:57] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240516-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-05-18 07:34:57] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-05-18 07:34:57] INFO root fetch - main [MainThread]: Store serial: [23264996]
