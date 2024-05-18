@@ -11229,3 +11229,39 @@
 [2024-05-18 09:18:54] WARNING root fetch - processPackages [transipy]: Skipping, unable to determine old version
 [2024-05-18 09:18:54] INFO root fetch - main [MainThread]: End processing [transipy] error
 [2024-05-18 09:18:54] INFO root fetch - main [MainThread]: Store serial: [23265656]
+[2024-05-18 09:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265656]
+[2024-05-18 09:21:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 09:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: litellm
+[2024-05-18 09:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beangrep
+[2024-05-18 09:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: immotilityz
+[2024-05-18 09:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OZI
+[2024-05-18 09:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gbrl
+[2024-05-18 09:21:03] WARNING root fetch - processPackages [gbrl]: Skipping, unable to determine old version
+[2024-05-18 09:21:03] INFO root fetch - main [MainThread]: End processing [gbrl] error
+[2024-05-18 09:21:03] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-18 09:21:03] INFO root fetch - processPackages [OZI]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-05-18 09:21:04] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-18 09:21:04] INFO root fetch - processPackages [beangrep]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-18 09:21:04] WARNING root fetch - processPackages [immotilityz]: Skipping, unable to determine old version
+[2024-05-18 09:21:04] INFO root fetch - main [MainThread]: End processing [immotilityz] error
+[2024-05-18 09:21:04] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/56/05/efe371f7bc5556c61fbb04daa3c8c791ae84f48dd036d716dca86c171604/OZI-1.7.3.tar.gz
+[2024-05-18 09:21:04] INFO root fetch - processPackages [beangrep]: Downloading https://files.pythonhosted.org/packages/e3/0d/de4bcbe810cd4cbeeb2d05e11e959e81f4cb9749be0261467cc4b3241069/beangrep-0.3.0.tar.gz
+[2024-05-18 09:21:04] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/fc/07/81dc4cebe2b820c03821dccfba3de45a4b6aeb2911a8a6430116837fe51b/OZI-1.7.4.tar.gz
+[2024-05-18 09:21:04] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-18 09:21:04] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-18 09:21:04] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.7.3.tar.gz tmp/OZI-1.7.4.tar.gz --markdown 20240518/O/OZI/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-05-18 09:21:04] INFO root fetch - processPackages [beangrep]: Downloading https://files.pythonhosted.org/packages/32/6a/7cc2700d516e7caccc995e071dd32cf7f1f77992bd6cab9c531f10dc0832/beangrep-0.4.0.tar.gz
+[2024-05-18 09:21:04] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-18 09:21:04] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240518/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-18 09:21:04] INFO root fetch - processPackages [beangrep]: executing diffoscope
+[2024-05-18 09:21:04] INFO root fetch - processPackages [beangrep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beangrep-0.3.0.tar.gz tmp/beangrep-0.4.0.tar.gz --markdown 20240518/b/beangrep/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-18 09:21:05] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.7.3.tar.gz]
+[2024-05-18 09:21:05] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.7.4.tar.gz]
+[2024-05-18 09:21:05] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-18 09:21:05] INFO root fetch - processPackages [beangrep]: Remove: archive file [/home/abi/fetcher/tmp/beangrep-0.3.0.tar.gz]
+[2024-05-18 09:21:05] INFO root fetch - processPackages [beangrep]: Remove: archive file [/home/abi/fetcher/tmp/beangrep-0.4.0.tar.gz]
+[2024-05-18 09:21:05] INFO root fetch - main [MainThread]: End processing [beangrep]: success
+[2024-05-18 09:21:05] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-18 09:21:05] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-18 09:21:05] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-18 09:21:05] INFO root fetch - main [MainThread]: Store serial: [23265673]
