@@ -16929,3 +16929,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:07:16] INFO root fetch - processPackages [rustberry]: Remove: archive file [/home/abi/fetcher/tmp/rustberry-0.0.9-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.whl.zip]
 [2024-05-18 17:07:16] INFO root fetch - main [MainThread]: End processing [rustberry]: success
 [2024-05-18 17:07:16] INFO root fetch - main [MainThread]: Store serial: [23268704]
+[2024-05-18 17:09:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268704]
+[2024-05-18 17:09:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 17:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pychute
+[2024-05-18 17:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metabolights-utils
+[2024-05-18 17:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-checker
+[2024-05-18 17:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitoptim
+[2024-05-18 17:09:33] INFO root fetch - processPackages [pychute]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 17:09:33] INFO root fetch - processPackages [pychute]: Downloading https://files.pythonhosted.org/packages/ca/07/ed1b9d99e792a04cc8050f5fd0d1f36cf9305d54c49cc907df5db88d1599/pychute-0.0.7.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:09:33] INFO root fetch - processPackages [model-checker]: New version: [0.3.2] Old Version: [0.2.9]
+[2024-05-18 17:09:33] INFO root fetch - processPackages [metabolights-utils]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-18 17:09:33] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [pychute]: Downloading https://files.pythonhosted.org/packages/d1/bf/5e7b15bd2329cae400fbc37eebaa3bd234fbe30d7cd31f29cc6a469e6cff/pychute-0.0.8.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [metabolights-utils]: Downloading https://files.pythonhosted.org/packages/bd/8e/b47b096b774dd9884b891bede5c49ce79167a93bab19fe93e5d40ff73d61/metabolights_utils-0.9.8.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [pychute]: executing diffoscope
+[2024-05-18 17:09:33] INFO root fetch - processPackages [pychute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pychute-0.0.7.tar.gz tmp/pychute-0.0.8.tar.gz --markdown 20240518/p/pychute/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 17:09:33] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/b0/5d/2fd0841d97c92fe2c2e0aad9e80136575bc38e7eef167fe4380eda54a596/model_checker-0.2.9.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [metabolights-utils]: Downloading https://files.pythonhosted.org/packages/87/47/6c0324333142cb1da7e62fca84a9198992ffb8901c7f9642e1f58cd5ed2f/metabolights_utils-0.9.9.tar.gz
+[2024-05-18 17:09:33] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:09:33] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:09:33] INFO root fetch - processPackages [metabolights-utils]: executing diffoscope
+[2024-05-18 17:09:33] INFO root fetch - processPackages [metabolights-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metabolights_utils-0.9.8.tar.gz tmp/metabolights_utils-0.9.9.tar.gz --markdown 20240518/m/metabolights-utils/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-18 17:09:34] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/24/a9/1a665c0ce562bd14385e9542bbe47ef445f370e2c6a005da375479cb6371/model_checker-0.3.2.tar.gz
+[2024-05-18 17:09:34] INFO root fetch - processPackages [model-checker]: executing diffoscope
+[2024-05-18 17:09:34] INFO root fetch - processPackages [model-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_checker-0.2.9.tar.gz tmp/model_checker-0.3.2.tar.gz --markdown 20240518/m/model-checker/0.2.9-0.3.2/README.md --exclude *.pyd
+[2024-05-18 17:09:34] INFO root fetch - processPackages [pychute]: Remove: archive file [/home/abi/fetcher/tmp/pychute-0.0.7.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - processPackages [pychute]: Remove: archive file [/home/abi/fetcher/tmp/pychute-0.0.8.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - main [MainThread]: End processing [pychute]: success
+[2024-05-18 17:09:34] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:09:34] INFO root fetch - processPackages [metabolights-utils]: Remove: archive file [/home/abi/fetcher/tmp/metabolights_utils-0.9.8.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - processPackages [metabolights-utils]: Remove: archive file [/home/abi/fetcher/tmp/metabolights_utils-0.9.9.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - main [MainThread]: End processing [metabolights-utils]: success
+[2024-05-18 17:09:34] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.2.9.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.3.2.tar.gz]
+[2024-05-18 17:09:34] INFO root fetch - main [MainThread]: End processing [model-checker]: success
+[2024-05-18 17:09:34] INFO root fetch - main [MainThread]: Store serial: [23268717]
