@@ -22475,3 +22475,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:49:58] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.1.tar.gz]
 [2024-05-18 23:49:58] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
 [2024-05-18 23:49:58] INFO root fetch - main [MainThread]: Store serial: [23271470]
+[2024-05-18 23:52:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271470]
+[2024-05-18 23:52:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 23:52:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uneschewablyz
+[2024-05-18 23:52:07] WARNING root fetch - processPackages [uneschewablyz]: Skipping, unable to determine old version
+[2024-05-18 23:52:07] INFO root fetch - main [MainThread]: End processing [uneschewablyz] error
+[2024-05-18 23:52:07] INFO root fetch - main [MainThread]: Store serial: [23271478]
