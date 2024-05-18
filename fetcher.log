@@ -21282,3 +21282,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:00:47] INFO root fetch - processPackages [unconscious]: Remove: archive file [/home/abi/fetcher/tmp/unconscious-0.0.6.tar.gz]
 [2024-05-18 22:00:47] INFO root fetch - main [MainThread]: End processing [unconscious]: success
 [2024-05-18 22:00:47] INFO root fetch - main [MainThread]: Store serial: [23270788]
+[2024-05-18 22:02:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270788]
+[2024-05-18 22:02:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func2stream
+[2024-05-18 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: param-logger
+[2024-05-18 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonexhibitionz
+[2024-05-18 22:02:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datafog
+[2024-05-18 22:02:57] WARNING root fetch - processPackages [param-logger]: Skipping, unable to determine old version
+[2024-05-18 22:02:57] INFO root fetch - main [MainThread]: End processing [param-logger] error
+[2024-05-18 22:02:57] INFO root fetch - processPackages [datafog]: New version: [3.2.1b1] Old Version: [3.2.0b9]
+[2024-05-18 22:02:57] INFO root fetch - processPackages [datafog]: Downloading https://files.pythonhosted.org/packages/0b/72/4fd52108a28c8691cc83e7f5f41afc81a1e4f991e8dc1175672350b662d7/datafog-3.2.0b9.tar.gz
+[2024-05-18 22:02:57] WARNING root fetch - processPackages [nonexhibitionz]: Skipping, unable to determine old version
+[2024-05-18 22:02:57] INFO root fetch - main [MainThread]: End processing [nonexhibitionz] error
+[2024-05-18 22:02:57] WARNING root fetch - processPackages [func2stream]: Skipping, unable to determine old version
+[2024-05-18 22:02:57] INFO root fetch - main [MainThread]: End processing [func2stream] error
+[2024-05-18 22:02:57] INFO root fetch - processPackages [datafog]: Downloading https://files.pythonhosted.org/packages/5c/54/3bbe9bc2b70c6263319d94700c33bc1779652a380bf314a93708d98f74c4/datafog-3.2.1b1.tar.gz
+[2024-05-18 22:02:57] INFO root fetch - processPackages [datafog]: executing diffoscope
+[2024-05-18 22:02:57] INFO root fetch - processPackages [datafog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datafog-3.2.0b9.tar.gz tmp/datafog-3.2.1b1.tar.gz --markdown 20240518/d/datafog/3.2.0b9-3.2.1b1/README.md --exclude *.pyd
+[2024-05-18 22:02:58] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-3.2.0b9.tar.gz]
+[2024-05-18 22:02:58] INFO root fetch - processPackages [datafog]: Remove: archive file [/home/abi/fetcher/tmp/datafog-3.2.1b1.tar.gz]
+[2024-05-18 22:02:58] INFO root fetch - main [MainThread]: End processing [datafog]: success
+[2024-05-18 22:02:58] INFO root fetch - main [MainThread]: Store serial: [23270801]
