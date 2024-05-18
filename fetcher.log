@@ -13250,3 +13250,36 @@
 [2024-05-18 12:15:52] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
 [2024-05-18 12:15:52] INFO root fetch - main [MainThread]: End processing [textual]: success
 [2024-05-18 12:15:52] INFO root fetch - main [MainThread]: Store serial: [23266852]
+[2024-05-18 12:17:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266852]
+[2024-05-18 12:18:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 12:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AllFilesReader
+[2024-05-18 12:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-aws-apigateway
+[2024-05-18 12:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-transformation-library-ingri
+[2024-05-18 12:18:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sdgclassification-benchmark
+[2024-05-18 12:18:00] INFO root fetch - processPackages [AllFilesReader]: New version: [0.0.8] Old Version: [0.0.5]
+[2024-05-18 12:18:01] INFO root fetch - processPackages [AllFilesReader]: Downloading https://files.pythonhosted.org/packages/4f/7f/07e0966291ddde932c31bdb535ffdb2f3e6f6daf0850ee7178dd2784b95e/allfilesreader-0.0.5.tar.gz
+[2024-05-18 12:18:01] WARNING root fetch - processPackages [data-transformation-library-ingri]: Skipping, unable to determine old version
+[2024-05-18 12:18:01] INFO root fetch - main [MainThread]: End processing [data-transformation-library-ingri] error
+[2024-05-18 12:18:01] INFO root fetch - processPackages [pytest-aws-apigateway]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-18 12:18:01] INFO root fetch - processPackages [sdgclassification-benchmark]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-18 12:18:01] INFO root fetch - processPackages [sdgclassification-benchmark]: Downloading https://files.pythonhosted.org/packages/5f/ce/43d7b9bd5c581996853212679243da2dce023604308ca8cc3e21448d0575/sdgclassification_benchmark-0.8.0.tar.gz
+[2024-05-18 12:18:01] INFO root fetch - processPackages [pytest-aws-apigateway]: Downloading https://files.pythonhosted.org/packages/c2/fb/ef0f35e30ce6c378e66fe8d982a805f27cf52605d82b87d306e59ea36cb9/pytest_aws_apigateway-0.6.0.tar.gz
+[2024-05-18 12:18:01] INFO root fetch - processPackages [AllFilesReader]: Downloading https://files.pythonhosted.org/packages/db/63/348d688adc11b3efa1c4ea307264f6b59e311d40c553256e57e00d3225cb/allfilesreader-0.0.8.tar.gz
+[2024-05-18 12:18:01] INFO root fetch - processPackages [AllFilesReader]: executing diffoscope
+[2024-05-18 12:18:01] INFO root fetch - processPackages [AllFilesReader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/allfilesreader-0.0.5.tar.gz tmp/allfilesreader-0.0.8.tar.gz --markdown 20240518/A/AllFilesReader/0.0.5-0.0.8/README.md --exclude *.pyd
+[2024-05-18 12:18:01] INFO root fetch - processPackages [sdgclassification-benchmark]: Downloading https://files.pythonhosted.org/packages/99/03/6d8a4e3f981f3e874bee25c4a7fdc4b77b6a4773bdb54a094d440e6b99c9/sdgclassification_benchmark-0.9.0.tar.gz
+[2024-05-18 12:18:01] INFO root fetch - processPackages [pytest-aws-apigateway]: Downloading https://files.pythonhosted.org/packages/30/d3/d3e58cb3de4f65060dcc32c0e2bd61a8e472616103a4461c40b52b47973c/pytest_aws_apigateway-0.7.0.tar.gz
+[2024-05-18 12:18:01] INFO root fetch - processPackages [pytest-aws-apigateway]: executing diffoscope
+[2024-05-18 12:18:01] INFO root fetch - processPackages [pytest-aws-apigateway]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_aws_apigateway-0.6.0.tar.gz tmp/pytest_aws_apigateway-0.7.0.tar.gz --markdown 20240518/p/pytest-aws-apigateway/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-18 12:18:01] INFO root fetch - processPackages [sdgclassification-benchmark]: executing diffoscope
+[2024-05-18 12:18:01] INFO root fetch - processPackages [sdgclassification-benchmark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdgclassification_benchmark-0.8.0.tar.gz tmp/sdgclassification_benchmark-0.9.0.tar.gz --markdown 20240518/s/sdgclassification-benchmark/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-18 12:18:01] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.5.tar.gz]
+[2024-05-18 12:18:01] INFO root fetch - processPackages [AllFilesReader]: Remove: archive file [/home/abi/fetcher/tmp/allfilesreader-0.0.8.tar.gz]
+[2024-05-18 12:18:01] INFO root fetch - main [MainThread]: End processing [AllFilesReader]: success
+[2024-05-18 12:18:02] INFO root fetch - processPackages [pytest-aws-apigateway]: Remove: archive file [/home/abi/fetcher/tmp/pytest_aws_apigateway-0.6.0.tar.gz]
+[2024-05-18 12:18:02] INFO root fetch - processPackages [pytest-aws-apigateway]: Remove: archive file [/home/abi/fetcher/tmp/pytest_aws_apigateway-0.7.0.tar.gz]
+[2024-05-18 12:18:02] INFO root fetch - main [MainThread]: End processing [pytest-aws-apigateway]: success
+[2024-05-18 12:18:02] INFO root fetch - processPackages [sdgclassification-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/sdgclassification_benchmark-0.8.0.tar.gz]
+[2024-05-18 12:18:02] INFO root fetch - processPackages [sdgclassification-benchmark]: Remove: archive file [/home/abi/fetcher/tmp/sdgclassification_benchmark-0.9.0.tar.gz]
+[2024-05-18 12:18:02] INFO root fetch - main [MainThread]: End processing [sdgclassification-benchmark]: success
+[2024-05-18 12:18:02] INFO root fetch - main [MainThread]: Store serial: [23266866]
