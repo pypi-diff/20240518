@@ -15401,3 +15401,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:07:48] WARNING root fetch - processPackages [larundaz]: Skipping, unable to determine old version
 [2024-05-18 15:07:48] INFO root fetch - main [MainThread]: End processing [larundaz] error
 [2024-05-18 15:07:48] INFO root fetch - main [MainThread]: Store serial: [23267910]
+[2024-05-18 15:09:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267910]
+[2024-05-18 15:09:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 15:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mara
+[2024-05-18 15:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Miraheze-PyUtils
+[2024-05-18 15:09:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lavague-drivers-selenium
+[2024-05-18 15:09:58] INFO root fetch - processPackages [lavague-drivers-selenium]: New version: [0.1.2] Old Version: [0.1.1.post1]
+[2024-05-18 15:09:58] INFO root fetch - processPackages [mara]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-18 15:09:58] WARNING root fetch - processPackages [Miraheze-PyUtils]: Skipping, unable to determine old version
+[2024-05-18 15:09:58] INFO root fetch - main [MainThread]: End processing [Miraheze-PyUtils] error
+[2024-05-18 15:09:58] INFO root fetch - processPackages [lavague-drivers-selenium]: Downloading https://files.pythonhosted.org/packages/92/35/83e7393e6116dd929a4775b1c1574114a5b4ebcca967cbfbd5e88365c94e/lavague_drivers_selenium-0.1.1.post1.tar.gz
+[2024-05-18 15:09:58] INFO root fetch - processPackages [mara]: Downloading https://files.pythonhosted.org/packages/0d/3e/448f42271aea154e0e527366d6eddb0f2c142f3d17625ac5a7cd8e688bd0/mara-2.0.0.tar.gz
+[2024-05-18 15:09:58] INFO root fetch - processPackages [lavague-drivers-selenium]: Downloading https://files.pythonhosted.org/packages/d4/24/db634004a77f281e58c22ea3d534b503145ced6d1adc901a2d0798b64415/lavague_drivers_selenium-0.1.2.tar.gz
+[2024-05-18 15:09:58] INFO root fetch - processPackages [lavague-drivers-selenium]: executing diffoscope
+[2024-05-18 15:09:58] INFO root fetch - processPackages [lavague-drivers-selenium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lavague_drivers_selenium-0.1.1.post1.tar.gz tmp/lavague_drivers_selenium-0.1.2.tar.gz --markdown 20240518/l/lavague-drivers-selenium/0.1.1.post1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 15:09:59] INFO root fetch - processPackages [mara]: Downloading https://files.pythonhosted.org/packages/6c/29/45df9a910b7363052df9ae4707ca4cc536d24427d0b7286266579dbad61f/mara-2.1.0.tar.gz
+[2024-05-18 15:09:59] INFO root fetch - processPackages [mara]: executing diffoscope
+[2024-05-18 15:09:59] INFO root fetch - processPackages [mara]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mara-2.0.0.tar.gz tmp/mara-2.1.0.tar.gz --markdown 20240518/m/mara/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-18 15:09:59] INFO root fetch - processPackages [lavague-drivers-selenium]: Remove: archive file [/home/abi/fetcher/tmp/lavague_drivers_selenium-0.1.1.post1.tar.gz]
+[2024-05-18 15:09:59] INFO root fetch - processPackages [lavague-drivers-selenium]: Remove: archive file [/home/abi/fetcher/tmp/lavague_drivers_selenium-0.1.2.tar.gz]
+[2024-05-18 15:09:59] INFO root fetch - main [MainThread]: End processing [lavague-drivers-selenium]: success
+[2024-05-18 15:09:59] INFO root fetch - processPackages [mara]: Remove: archive file [/home/abi/fetcher/tmp/mara-2.0.0.tar.gz]
+[2024-05-18 15:09:59] INFO root fetch - processPackages [mara]: Remove: archive file [/home/abi/fetcher/tmp/mara-2.1.0.tar.gz]
+[2024-05-18 15:09:59] INFO root fetch - main [MainThread]: End processing [mara]: success
+[2024-05-18 15:09:59] INFO root fetch - main [MainThread]: Store serial: [23267920]
