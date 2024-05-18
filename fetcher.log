@@ -13124,3 +13124,15 @@
 [2024-05-18 12:00:45] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051709.tar.gz]
 [2024-05-18 12:00:45] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
 [2024-05-18 12:00:45] INFO root fetch - main [MainThread]: Store serial: [23266801]
+[2024-05-18 12:02:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266801]
+[2024-05-18 12:02:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 12:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dp-PDF-Crawler
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/20/a5/86c5cb426784005dc30507582948398cc8b7da876e9ef27e63fedd46c458/dp-PDF-Crawler-0.2.0.tar.gz
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/cd/af/e88dd3258b656ebd56171fb0104e3676df2d10776f6ac33fb0074eed6491/dp-PDF-Crawler-0.3.0.tar.gz
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: executing diffoscope
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp-PDF-Crawler-0.2.0.tar.gz tmp/dp-PDF-Crawler-0.3.0.tar.gz --markdown 20240518/d/dp-PDF-Crawler/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.2.0.tar.gz]
+[2024-05-18 12:02:54] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.3.0.tar.gz]
+[2024-05-18 12:02:54] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
+[2024-05-18 12:02:54] INFO root fetch - main [MainThread]: Store serial: [23266804]
