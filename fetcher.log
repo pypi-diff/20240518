@@ -21410,3 +21410,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:09:59] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.5.0.post45-py3-none-manylinux2014_x86_64.whl.zip]
 [2024-05-18 22:09:59] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
 [2024-05-18 22:09:59] INFO root fetch - main [MainThread]: Store serial: [23270843]
+[2024-05-18 22:12:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270843]
+[2024-05-18 22:12:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django_bocor_ds
+[2024-05-18 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyEasyDbApi
+[2024-05-18 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: me-toolbox
+[2024-05-18 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: melkdb
+[2024-05-18 22:12:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: warp-python
+[2024-05-18 22:12:11] INFO root fetch - processPackages [django_bocor_ds]: New version: [2.3.0] Old Version: [2.2.1]
+[2024-05-18 22:12:11] INFO root fetch - processPackages [warp-python]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-18 22:12:11] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-18 22:12:12] INFO root fetch - processPackages [melkdb]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 22:12:12] INFO root fetch - processPackages [django_bocor_ds]: Downloading https://files.pythonhosted.org/packages/19/22/cd9a1417e499d22b06477442086b732a21cc3eec354319ef32c5cb7efba2/django_bocor_ds-2.2.1.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/29/e1/754e298a8165335b9479e000e4220ea132bc49b9157ee75c440ebf19c2b2/pyeasydbapi-0.1.9.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [me-toolbox]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 22:12:12] INFO root fetch - processPackages [melkdb]: Downloading https://files.pythonhosted.org/packages/59/22/aac39c35169ffcd66298244530cb471d9ae7c93bcc5102eebf8022e2bb84/melkdb-0.1.0.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [me-toolbox]: Downloading https://files.pythonhosted.org/packages/7a/37/fa39d971e22733456797af998cec41ff2ef3afa5860c477decf4a10db746/me_toolbox-0.0.8.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/79/d6/9261521110c41c899ba586c14f59cda7d7020f83001a463cf90aa12040b9/warp_python-1.2.9.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/5f/c5/af946580c622edc3613e056d3104ab3ecbef2e1e5b5d75205c447ece4391/pyeasydbapi-0.2.0.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 22:12:12] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.8.tar.gz tmp/warp_python-1.2.9.tar.gz --markdown 20240518/w/warp-python/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-18 22:12:12] INFO root fetch - processPackages [django_bocor_ds]: Downloading https://files.pythonhosted.org/packages/34/ce/5782948fee1fab6bcc8ac3f212f31903345c6a7a4eb24fca7e8282109dc4/django_bocor_ds-2.3.0.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 22:12:12] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.9.tar.gz tmp/pyeasydbapi-0.2.0.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-18 22:12:12] INFO root fetch - processPackages [me-toolbox]: Downloading https://files.pythonhosted.org/packages/e7/81/09362c69dc8b5600961979131d511f559f386495e23bf36e63d59421dc4d/me_toolbox-0.0.9.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [melkdb]: Downloading https://files.pythonhosted.org/packages/03/9f/52493f9c59bdb6e85ef444d4bd65df2b7be1940093c1c5fd24b8823078f4/melkdb-0.2.0.tar.gz
+[2024-05-18 22:12:12] INFO root fetch - processPackages [me-toolbox]: executing diffoscope
+[2024-05-18 22:12:12] INFO root fetch - processPackages [me-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/me_toolbox-0.0.8.tar.gz tmp/me_toolbox-0.0.9.tar.gz --markdown 20240518/m/me-toolbox/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 22:12:12] INFO root fetch - processPackages [melkdb]: executing diffoscope
+[2024-05-18 22:12:12] INFO root fetch - processPackages [melkdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/melkdb-0.1.0.tar.gz tmp/melkdb-0.2.0.tar.gz --markdown 20240518/m/melkdb/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 22:12:12] INFO root fetch - processPackages [django_bocor_ds]: executing diffoscope
+[2024-05-18 22:12:12] INFO root fetch - processPackages [django_bocor_ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_bocor_ds-2.2.1.tar.gz tmp/django_bocor_ds-2.3.0.tar.gz --markdown 20240518/d/django_bocor_ds/2.2.1-2.3.0/README.md --exclude *.pyd
+[2024-05-18 22:12:13] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 22:12:13] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.9.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.2.0.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 22:12:13] INFO root fetch - processPackages [me-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/me_toolbox-0.0.8.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - processPackages [me-toolbox]: Remove: archive file [/home/abi/fetcher/tmp/me_toolbox-0.0.9.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - main [MainThread]: End processing [me-toolbox]: success
+[2024-05-18 22:12:13] INFO root fetch - processPackages [melkdb]: Remove: archive file [/home/abi/fetcher/tmp/melkdb-0.1.0.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - processPackages [melkdb]: Remove: archive file [/home/abi/fetcher/tmp/melkdb-0.2.0.tar.gz]
+[2024-05-18 22:12:13] INFO root fetch - main [MainThread]: End processing [melkdb]: success
+[2024-05-18 22:12:14] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.2.1.tar.gz]
+[2024-05-18 22:12:14] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.3.0.tar.gz]
+[2024-05-18 22:12:14] INFO root fetch - main [MainThread]: End processing [django_bocor_ds]: success
+[2024-05-18 22:12:14] INFO root fetch - main [MainThread]: Store serial: [23270858]
