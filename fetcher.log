@@ -9208,3 +9208,15 @@
 [2024-05-18 06:21:21] WARNING root fetch - processPackages [platbandz]: Skipping, unable to determine old version
 [2024-05-18 06:21:21] INFO root fetch - main [MainThread]: End processing [platbandz] error
 [2024-05-18 06:21:21] INFO root fetch - main [MainThread]: Store serial: [23264681]
+[2024-05-18 06:23:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264681]
+[2024-05-18 06:23:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 06:23:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uac-api
+[2024-05-18 06:23:29] INFO root fetch - processPackages [uac-api]: New version: [0.4.7] Old Version: [0.4.5]
+[2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: Downloading https://files.pythonhosted.org/packages/fe/85/21096444f7301fb5825fba7921f217bfcbce14c6fc770a47567951c5d3d5/uac-api-0.4.5.tar.gz
+[2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: Downloading https://files.pythonhosted.org/packages/f8/4e/249ce8eb1ed6099ff2b24ec045fd22e7fb15b3a7fe8e2a82828b1f73bd92/uac-api-0.4.7.tar.gz
+[2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: executing diffoscope
+[2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uac-api-0.4.5.tar.gz tmp/uac-api-0.4.7.tar.gz --markdown 20240518/u/uac-api/0.4.5-0.4.7/README.md --exclude *.pyd
+[2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: Remove: archive file [/home/abi/fetcher/tmp/uac-api-0.4.5.tar.gz]
+[2024-05-18 06:23:30] INFO root fetch - processPackages [uac-api]: Remove: archive file [/home/abi/fetcher/tmp/uac-api-0.4.7.tar.gz]
+[2024-05-18 06:23:30] INFO root fetch - main [MainThread]: End processing [uac-api]: success
+[2024-05-18 06:23:30] INFO root fetch - main [MainThread]: Store serial: [23264684]
