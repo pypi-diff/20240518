@@ -14870,3 +14870,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:22:02] INFO root fetch - processPackages [pydra-fsl]: Remove: archive file [/home/abi/fetcher/tmp/pydra_fsl-0.1.1.tar.gz]
 [2024-05-18 14:22:02] INFO root fetch - main [MainThread]: End processing [pydra-fsl]: success
 [2024-05-18 14:22:02] INFO root fetch - main [MainThread]: Store serial: [23267610]
+[2024-05-18 14:24:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267610]
+[2024-05-18 14:24:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 14:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trueseeing
+[2024-05-18 14:24:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ursactl
+[2024-05-18 14:24:11] INFO root fetch - processPackages [ursactl]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-05-18 14:24:11] INFO root fetch - processPackages [trueseeing]: New version: [2.2.4] Old Version: [2.2.2]
+[2024-05-18 14:24:11] INFO root fetch - processPackages [ursactl]: Downloading https://files.pythonhosted.org/packages/37/7d/393622d7fac442e323538cbbc64103bc8aa443bb8c9c36023fd9fa3ea5fb/ursactl-0.8.3.tar.gz
+[2024-05-18 14:24:11] INFO root fetch - processPackages [trueseeing]: Downloading https://files.pythonhosted.org/packages/06/e4/6d212a0e77cae21fc9aa04764466826c255057d57600c5a2ffe75f8538ba/trueseeing-2.2.2.tar.gz
+[2024-05-18 14:24:12] INFO root fetch - processPackages [ursactl]: Downloading https://files.pythonhosted.org/packages/e6/7b/b79d3b66c173cb05fe30fc63e82dfd4420fa12d59ff1736c77944baf8bf5/ursactl-0.9.0.tar.gz
+[2024-05-18 14:24:12] INFO root fetch - processPackages [ursactl]: executing diffoscope
+[2024-05-18 14:24:12] INFO root fetch - processPackages [ursactl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ursactl-0.8.3.tar.gz tmp/ursactl-0.9.0.tar.gz --markdown 20240518/u/ursactl/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-05-18 14:24:12] INFO root fetch - processPackages [ursactl]: Remove: archive file [/home/abi/fetcher/tmp/ursactl-0.8.3.tar.gz]
+[2024-05-18 14:24:12] INFO root fetch - processPackages [ursactl]: Remove: archive file [/home/abi/fetcher/tmp/ursactl-0.9.0.tar.gz]
+[2024-05-18 14:24:12] INFO root fetch - main [MainThread]: End processing [ursactl]: success
+[2024-05-18 14:24:13] INFO root fetch - processPackages [trueseeing]: Downloading https://files.pythonhosted.org/packages/95/66/3ad9c079234130ee477d28576e68c8c815356af477b758137dfd3fa1f2ad/trueseeing-2.2.4.tar.gz
+[2024-05-18 14:24:13] INFO root fetch - processPackages [trueseeing]: executing diffoscope
+[2024-05-18 14:24:13] INFO root fetch - processPackages [trueseeing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trueseeing-2.2.2.tar.gz tmp/trueseeing-2.2.4.tar.gz --markdown 20240518/t/trueseeing/2.2.2-2.2.4/README.md --exclude *.pyd
+[2024-05-18 14:24:15] INFO root fetch - processPackages [trueseeing]: Remove: archive file [/home/abi/fetcher/tmp/trueseeing-2.2.2.tar.gz]
+[2024-05-18 14:24:15] INFO root fetch - processPackages [trueseeing]: Remove: archive file [/home/abi/fetcher/tmp/trueseeing-2.2.4.tar.gz]
+[2024-05-18 14:24:15] INFO root fetch - main [MainThread]: End processing [trueseeing]: success
+[2024-05-18 14:24:15] INFO root fetch - main [MainThread]: Store serial: [23267616]
