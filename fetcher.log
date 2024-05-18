@@ -15425,3 +15425,38 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:09:59] INFO root fetch - processPackages [mara]: Remove: archive file [/home/abi/fetcher/tmp/mara-2.1.0.tar.gz]
 [2024-05-18 15:09:59] INFO root fetch - main [MainThread]: End processing [mara]: success
 [2024-05-18 15:09:59] INFO root fetch - main [MainThread]: Store serial: [23267920]
+[2024-05-18 15:12:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267920]
+[2024-05-18 15:12:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 15:14:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267922]
+[2024-05-18 15:14:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 15:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deezer-oauth-cli
+[2024-05-18 15:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unsanenessz
+[2024-05-18 15:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blacknoise
+[2024-05-18 15:14:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-05-18 15:14:13] INFO root fetch - processPackages [deezer-oauth-cli]: New version: [1.3.0] Old Version: [1.2.8]
+[2024-05-18 15:14:13] INFO root fetch - processPackages [blacknoise]: New version: [1.0.0] Old Version: [0.0.6]
+[2024-05-18 15:14:13] WARNING root fetch - processPackages [unsanenessz]: Skipping, unable to determine old version
+[2024-05-18 15:14:13] INFO root fetch - main [MainThread]: End processing [unsanenessz] error
+[2024-05-18 15:14:14] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.5.18] Old Version: [2024.5.15]
+[2024-05-18 15:14:14] INFO root fetch - processPackages [blacknoise]: Downloading https://files.pythonhosted.org/packages/13/9b/feed162eff1cb73a4c754509dcb2752c91d7c91bf13a6d82c54c4e9ca4eb/blacknoise-0.0.6.tar.gz
+[2024-05-18 15:14:14] INFO root fetch - processPackages [deezer-oauth-cli]: Downloading https://files.pythonhosted.org/packages/1f/6c/c454893b3b8ab4b95a7211f40d2f2ce0dc44d47a3923d6e844411c9672ea/deezer_oauth_cli-1.2.8.tar.gz
+[2024-05-18 15:14:14] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/d2/08/070d9f12f27518674974c6a9fea86d0bfb573225ae4dcee1eaf1dcf6e74e/fbgemm_gpu_nightly_cpu-2024.5.15-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-18 15:14:14] INFO root fetch - processPackages [blacknoise]: Downloading https://files.pythonhosted.org/packages/ef/10/6bdb18963b903a024939cadbdd5be3ac3ad1044e05a32b5589b2d9528230/blacknoise-1.0.0.tar.gz
+[2024-05-18 15:14:14] INFO root fetch - processPackages [deezer-oauth-cli]: Downloading https://files.pythonhosted.org/packages/33/37/11d4fca72da6db98a158eaef74ee2a10d5e46e6b10cb715538477664e5f0/deezer_oauth_cli-1.3.0.tar.gz
+[2024-05-18 15:14:14] INFO root fetch - processPackages [blacknoise]: executing diffoscope
+[2024-05-18 15:14:14] INFO root fetch - processPackages [blacknoise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blacknoise-0.0.6.tar.gz tmp/blacknoise-1.0.0.tar.gz --markdown 20240518/b/blacknoise/0.0.6-1.0.0/README.md --exclude *.pyd
+[2024-05-18 15:14:14] INFO root fetch - processPackages [deezer-oauth-cli]: executing diffoscope
+[2024-05-18 15:14:14] INFO root fetch - processPackages [deezer-oauth-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deezer_oauth_cli-1.2.8.tar.gz tmp/deezer_oauth_cli-1.3.0.tar.gz --markdown 20240518/d/deezer-oauth-cli/1.2.8-1.3.0/README.md --exclude *.pyd
+[2024-05-18 15:14:14] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/9e/21/8fda54a52ec23bea1eba97d1db9a5fcb3372c08fa33b3f63de42c952a3cf/fbgemm_gpu_nightly_cpu-2024.5.18-cp38-cp38-manylinux2014_x86_64.whl
+[2024-05-18 15:14:15] INFO root fetch - processPackages [blacknoise]: Remove: archive file [/home/abi/fetcher/tmp/blacknoise-0.0.6.tar.gz]
+[2024-05-18 15:14:15] INFO root fetch - processPackages [blacknoise]: Remove: archive file [/home/abi/fetcher/tmp/blacknoise-1.0.0.tar.gz]
+[2024-05-18 15:14:15] INFO root fetch - main [MainThread]: End processing [blacknoise]: success
+[2024-05-18 15:14:15] INFO root fetch - processPackages [deezer-oauth-cli]: Remove: archive file [/home/abi/fetcher/tmp/deezer_oauth_cli-1.2.8.tar.gz]
+[2024-05-18 15:14:15] INFO root fetch - processPackages [deezer-oauth-cli]: Remove: archive file [/home/abi/fetcher/tmp/deezer_oauth_cli-1.3.0.tar.gz]
+[2024-05-18 15:14:15] INFO root fetch - main [MainThread]: End processing [deezer-oauth-cli]: success
+[2024-05-18 15:14:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-05-18 15:14:16] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.5.15-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.5.18-cp38-cp38-manylinux2014_x86_64.whl.zip --markdown 20240518/f/fbgemm-gpu-nightly-cpu/2024.5.15-2024.5.18/README.md --exclude *.pyd
+[2024-05-18 15:14:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.15-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-18 15:14:57] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.18-cp38-cp38-manylinux2014_x86_64.whl.zip]
+[2024-05-18 15:14:57] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-05-18 15:14:57] INFO root fetch - main [MainThread]: Store serial: [23267936]
