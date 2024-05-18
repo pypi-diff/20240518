@@ -22280,3 +22280,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:30:26] INFO root fetch - processPackages [simple-ddl-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple_ddl_parser-1.5.0.tar.gz]
 [2024-05-18 23:30:26] INFO root fetch - main [MainThread]: End processing [simple-ddl-parser]: success
 [2024-05-18 23:30:26] INFO root fetch - main [MainThread]: Store serial: [23271373]
+[2024-05-18 23:32:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271373]
+[2024-05-18 23:32:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 23:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QRClipboard
+[2024-05-18 23:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sms-message-inforu-local
+[2024-05-18 23:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coherent.test
+[2024-05-18 23:32:35] INFO root fetch - processPackages [sms-message-inforu-local]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 23:32:35] INFO root fetch - processPackages [coherent.test]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 23:32:35] WARNING root fetch - processPackages [QRClipboard]: Skipping, unable to determine old version
+[2024-05-18 23:32:35] INFO root fetch - main [MainThread]: End processing [QRClipboard] error
+[2024-05-18 23:32:35] INFO root fetch - processPackages [sms-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/5e/b9/5c39850f549ba52dcd543a85c9c891f18f732652fb5af28b2b623a6bf09c/sms-message-inforu-local-0.0.2.tar.gz
+[2024-05-18 23:32:35] INFO root fetch - processPackages [coherent.test]: Downloading https://files.pythonhosted.org/packages/a1/3f/acb2a2bc6ad7ea6f58dd0a11162697f159f89848c9a6e1207592c16846fa/coherent_test-0.1.0.tar.gz
+[2024-05-18 23:32:35] INFO root fetch - processPackages [sms-message-inforu-local]: Downloading https://files.pythonhosted.org/packages/14/a4/0157fee2ed9daefe9b5b0fc90fc5e61d550d25a15e3d1b9274773e06af3d/sms_message_inforu_local-0.0.3.tar.gz
+[2024-05-18 23:32:35] INFO root fetch - processPackages [coherent.test]: Downloading https://files.pythonhosted.org/packages/70/12/ca24458098ce4147f35f30ec5475c218dc2da0c26c678c60d430d4a6cc87/coherent_test-0.2.0.tar.gz
+[2024-05-18 23:32:36] INFO root fetch - processPackages [sms-message-inforu-local]: executing diffoscope
+[2024-05-18 23:32:36] INFO root fetch - processPackages [sms-message-inforu-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sms-message-inforu-local-0.0.2.tar.gz tmp/sms_message_inforu_local-0.0.3.tar.gz --markdown 20240518/s/sms-message-inforu-local/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 23:32:36] INFO root fetch - processPackages [coherent.test]: executing diffoscope
+[2024-05-18 23:32:36] INFO root fetch - processPackages [coherent.test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coherent_test-0.1.0.tar.gz tmp/coherent_test-0.2.0.tar.gz --markdown 20240518/c/coherent.test/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 23:32:36] INFO root fetch - processPackages [coherent.test]: Remove: archive file [/home/abi/fetcher/tmp/coherent_test-0.1.0.tar.gz]
+[2024-05-18 23:32:36] INFO root fetch - processPackages [coherent.test]: Remove: archive file [/home/abi/fetcher/tmp/coherent_test-0.2.0.tar.gz]
+[2024-05-18 23:32:36] INFO root fetch - main [MainThread]: End processing [coherent.test]: success
+[2024-05-18 23:32:36] INFO root fetch - processPackages [sms-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/sms-message-inforu-local-0.0.2.tar.gz]
+[2024-05-18 23:32:36] INFO root fetch - processPackages [sms-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/sms_message_inforu_local-0.0.3.tar.gz]
+[2024-05-18 23:32:36] INFO root fetch - main [MainThread]: End processing [sms-message-inforu-local]: success
+[2024-05-18 23:32:36] INFO root fetch - main [MainThread]: Store serial: [23271385]
