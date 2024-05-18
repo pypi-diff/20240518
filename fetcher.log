@@ -12176,3 +12176,27 @@
 [2024-05-18 10:46:17] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-05-18 10:46:17] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-05-18 10:46:17] INFO root fetch - main [MainThread]: Store serial: [23266265]
+[2024-05-18 10:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266265]
+[2024-05-18 10:48:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 10:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyluba
+[2024-05-18 10:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monzo-utils
+[2024-05-18 10:48:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: denizenz
+[2024-05-18 10:48:25] INFO root fetch - processPackages [monzo-utils]: New version: [0.0.97] Old Version: [0.0.96]
+[2024-05-18 10:48:25] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/39/98/9b122efa78342e490a2b8aa45bdddd52c9736e43332fc7f1a8bead4a3f67/monzo_utils-0.0.96-py3-none-any.whl
+[2024-05-18 10:48:25] INFO root fetch - processPackages [pyluba]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-18 10:48:25] WARNING root fetch - processPackages [denizenz]: Skipping, unable to determine old version
+[2024-05-18 10:48:25] INFO root fetch - main [MainThread]: End processing [denizenz] error
+[2024-05-18 10:48:26] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/1b/09/95a94317caced7dcf365a5f7e9130bf5127baa9d35a6b3ccec895d70f087/pyluba-0.0.5.tar.gz
+[2024-05-18 10:48:26] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/5c/81/9070c78a492e29c2fd3c8b26bab519be632b5a1f2022d80445266d94b2b7/monzo_utils-0.0.97-py3-none-any.whl
+[2024-05-18 10:48:26] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-05-18 10:48:26] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.96-py3-none-any.whl.zip tmp/monzo_utils-0.0.97-py3-none-any.whl.zip --markdown 20240518/m/monzo-utils/0.0.96-0.0.97/README.md --exclude *.pyd
+[2024-05-18 10:48:26] INFO root fetch - processPackages [pyluba]: Downloading https://files.pythonhosted.org/packages/2e/7d/efc6ba05831890453810261e04727a36950001059bab64b1b7a667dc9ee1/pyluba-0.0.6.tar.gz
+[2024-05-18 10:48:26] INFO root fetch - processPackages [pyluba]: executing diffoscope
+[2024-05-18 10:48:26] INFO root fetch - processPackages [pyluba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyluba-0.0.5.tar.gz tmp/pyluba-0.0.6.tar.gz --markdown 20240518/p/pyluba/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-18 10:48:26] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.96-py3-none-any.whl.zip]
+[2024-05-18 10:48:26] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.97-py3-none-any.whl.zip]
+[2024-05-18 10:48:26] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-05-18 10:48:27] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.5.tar.gz]
+[2024-05-18 10:48:27] INFO root fetch - processPackages [pyluba]: Remove: archive file [/home/abi/fetcher/tmp/pyluba-0.0.6.tar.gz]
+[2024-05-18 10:48:27] INFO root fetch - main [MainThread]: End processing [pyluba]: success
+[2024-05-18 10:48:27] INFO root fetch - main [MainThread]: Store serial: [23266274]
