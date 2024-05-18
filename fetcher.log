@@ -13811,3 +13811,21 @@
 [2024-05-18 13:08:54] INFO root fetch - processPackages [gdmty-drf-firebase-auth]: Remove: archive file [/home/abi/fetcher/tmp/gdmty_drf_firebase_auth-24.5.3.tar.gz]
 [2024-05-18 13:08:54] INFO root fetch - main [MainThread]: End processing [gdmty-drf-firebase-auth]: success
 [2024-05-18 13:08:54] INFO root fetch - main [MainThread]: Store serial: [23267129]
+[2024-05-18 13:10:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267129]
+[2024-05-18 13:11:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 13:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dp-PDF-Crawler
+[2024-05-18 13:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dispositionsz
+[2024-05-18 13:11:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: latex-papersize
+[2024-05-18 13:11:03] INFO root fetch - processPackages [dp-PDF-Crawler]: New version: [1.0.0] Old Version: [0.4.0]
+[2024-05-18 13:11:03] WARNING root fetch - processPackages [latex-papersize]: Skipping, unable to determine old version
+[2024-05-18 13:11:03] INFO root fetch - main [MainThread]: End processing [latex-papersize] error
+[2024-05-18 13:11:03] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/9f/4a/2141b12915cca46df530ca9c7af0b19e779895567b20db480e005b2d640e/dp-PDF-Crawler-0.4.0.tar.gz
+[2024-05-18 13:11:03] WARNING root fetch - processPackages [dispositionsz]: Skipping, unable to determine old version
+[2024-05-18 13:11:03] INFO root fetch - main [MainThread]: End processing [dispositionsz] error
+[2024-05-18 13:11:03] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/ea/42/45c9aa993340f7fda255908283563826ddcf089b19955a8481c0b94fe363/dp-PDF-Crawler-1.0.0.tar.gz
+[2024-05-18 13:11:03] INFO root fetch - processPackages [dp-PDF-Crawler]: executing diffoscope
+[2024-05-18 13:11:03] INFO root fetch - processPackages [dp-PDF-Crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp-PDF-Crawler-0.4.0.tar.gz tmp/dp-PDF-Crawler-1.0.0.tar.gz --markdown 20240518/d/dp-PDF-Crawler/0.4.0-1.0.0/README.md --exclude *.pyd
+[2024-05-18 13:11:04] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-0.4.0.tar.gz]
+[2024-05-18 13:11:04] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-1.0.0.tar.gz]
+[2024-05-18 13:11:04] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
+[2024-05-18 13:11:04] INFO root fetch - main [MainThread]: Store serial: [23267140]
