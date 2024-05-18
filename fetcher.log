@@ -16286,3 +16286,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:18:30] INFO root fetch - processPackages [cnparser]: Remove: archive file [/home/abi/fetcher/tmp/cnparser-1.5.4.tar.gz]
 [2024-05-18 16:18:30] INFO root fetch - main [MainThread]: End processing [cnparser]: success
 [2024-05-18 16:18:30] INFO root fetch - main [MainThread]: Store serial: [23268365]
+[2024-05-18 16:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268365]
+[2024-05-18 16:20:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 16:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: traitgpt
+[2024-05-18 16:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uncharmedz
+[2024-05-18 16:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RNASQLite
+[2024-05-18 16:20:39] INFO root fetch - processPackages [RNASQLite]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 16:20:39] INFO root fetch - processPackages [traitgpt]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-18 16:20:39] WARNING root fetch - processPackages [uncharmedz]: Skipping, unable to determine old version
+[2024-05-18 16:20:39] INFO root fetch - main [MainThread]: End processing [uncharmedz] error
+[2024-05-18 16:20:39] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/3a/cf/4559594ad934931dc04f981f27d6cba4577dca3681bc6cc64e5ea11d9dae/rnasqlite-0.1.1.tar.gz
+[2024-05-18 16:20:39] INFO root fetch - processPackages [traitgpt]: Downloading https://files.pythonhosted.org/packages/25/31/8d8d0cf7f0f0ced888d736b1e4e879e1611b13674d846982642c00ab8a5a/traitgpt-0.0.7.tar.gz
+[2024-05-18 16:20:40] INFO root fetch - processPackages [RNASQLite]: Downloading https://files.pythonhosted.org/packages/c8/83/fdc02319752212caabd2ba4bd3ee78e9246f9a75d275105fd6a9425e9699/rnasqlite-0.1.2.tar.gz
+[2024-05-18 16:20:40] INFO root fetch - processPackages [traitgpt]: Downloading https://files.pythonhosted.org/packages/12/aa/f3e81efc8662c5d89bae53613e30ca3c8e9ce3c570d93a987e5ad4c9416f/traitgpt-0.0.8.tar.gz
+[2024-05-18 16:20:40] INFO root fetch - processPackages [RNASQLite]: executing diffoscope
+[2024-05-18 16:20:40] INFO root fetch - processPackages [RNASQLite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rnasqlite-0.1.1.tar.gz tmp/rnasqlite-0.1.2.tar.gz --markdown 20240518/R/RNASQLite/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 16:20:40] INFO root fetch - processPackages [traitgpt]: executing diffoscope
+[2024-05-18 16:20:40] INFO root fetch - processPackages [traitgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traitgpt-0.0.7.tar.gz tmp/traitgpt-0.0.8.tar.gz --markdown 20240518/t/traitgpt/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-18 16:20:40] INFO root fetch - processPackages [traitgpt]: Remove: archive file [/home/abi/fetcher/tmp/traitgpt-0.0.7.tar.gz]
+[2024-05-18 16:20:40] INFO root fetch - processPackages [traitgpt]: Remove: archive file [/home/abi/fetcher/tmp/traitgpt-0.0.8.tar.gz]
+[2024-05-18 16:20:40] INFO root fetch - main [MainThread]: End processing [traitgpt]: success
+[2024-05-18 16:20:40] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.1.tar.gz]
+[2024-05-18 16:20:40] INFO root fetch - processPackages [RNASQLite]: Remove: archive file [/home/abi/fetcher/tmp/rnasqlite-0.1.2.tar.gz]
+[2024-05-18 16:20:40] INFO root fetch - main [MainThread]: End processing [RNASQLite]: success
+[2024-05-18 16:20:40] INFO root fetch - main [MainThread]: Store serial: [23268376]
