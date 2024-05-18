@@ -19915,3 +19915,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:26:37] INFO root fetch - processPackages [codefly-cli]: Remove: archive file [/home/abi/fetcher/tmp/codefly_cli-0.0.6.tar.gz]
 [2024-05-18 20:26:37] INFO root fetch - main [MainThread]: End processing [codefly-cli]: success
 [2024-05-18 20:26:37] INFO root fetch - main [MainThread]: Store serial: [23270065]
+[2024-05-18 20:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270065]
+[2024-05-18 20:28:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 20:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: caikit-nlp
+[2024-05-18 20:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-stock-cancel-restriction
+[2024-05-18 20:28:47] INFO root fetch - processPackages [caikit-nlp]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 20:28:47] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: New version: [17.0.1.0.0.3] Old Version: [16.0.1.0.0.6]
+[2024-05-18 20:28:48] INFO root fetch - processPackages [caikit-nlp]: Downloading https://files.pythonhosted.org/packages/72/4c/37eda2c874b59b1b1dd96002b07fbb789215c8fbc67b335c97f85350899c/caikit-nlp-0.4.8.tar.gz
+[2024-05-18 20:28:48] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: Downloading https://files.pythonhosted.org/packages/5c/1c/46431e6a09240f3df02d2dd88beffd4474b451313e3a855637bb471dd478/odoo_addon_sale_stock_cancel_restriction-16.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 20:28:48] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: Downloading https://files.pythonhosted.org/packages/cb/64/ec923b261c1115f9116bcff18c26b60934a0c8d0c5793cb5e5234f4e8203/odoo_addon_sale_stock_cancel_restriction-17.0.1.0.0.3-py3-none-any.whl
+[2024-05-18 20:28:48] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: executing diffoscope
+[2024-05-18 20:28:48] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_stock_cancel_restriction-16.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_sale_stock_cancel_restriction-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-sale-stock-cancel-restriction/16.0.1.0.0.6-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-05-18 20:28:48] INFO root fetch - processPackages [caikit-nlp]: Downloading https://files.pythonhosted.org/packages/a5/f1/cd17614ddbe1a2bdf006195176f52a91780aa04dd60b1f7ba7e93d57478c/caikit_nlp-0.4.9.tar.gz
+[2024-05-18 20:28:48] INFO root fetch - processPackages [caikit-nlp]: executing diffoscope
+[2024-05-18 20:28:48] INFO root fetch - processPackages [caikit-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caikit-nlp-0.4.8.tar.gz tmp/caikit_nlp-0.4.9.tar.gz --markdown 20240518/c/caikit-nlp/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 20:28:49] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_stock_cancel_restriction-16.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 20:28:49] INFO root fetch - processPackages [odoo-addon-sale-stock-cancel-restriction]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_stock_cancel_restriction-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-05-18 20:28:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-stock-cancel-restriction]: success
+[2024-05-18 20:28:49] INFO root fetch - processPackages [caikit-nlp]: Remove: archive file [/home/abi/fetcher/tmp/caikit-nlp-0.4.8.tar.gz]
+[2024-05-18 20:28:49] INFO root fetch - processPackages [caikit-nlp]: Remove: archive file [/home/abi/fetcher/tmp/caikit_nlp-0.4.9.tar.gz]
+[2024-05-18 20:28:49] INFO root fetch - main [MainThread]: End processing [caikit-nlp]: success
+[2024-05-18 20:28:49] INFO root fetch - main [MainThread]: Store serial: [23270071]
