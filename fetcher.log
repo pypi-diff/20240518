@@ -8993,3 +8993,72 @@
 [2024-05-18 06:03:57] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-spotinst-9.0.9.tar.gz]
 [2024-05-18 06:03:57] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2024-05-18 06:03:57] INFO root fetch - main [MainThread]: Store serial: [23264558]
+[2024-05-18 06:06:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264558]
+[2024-05-18 06:06:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-fieldservice-stock
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyLLM
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-fieldservice-size
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-fieldservice-activity
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-fieldservice-sale-stock
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cacajaoz
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: surya-ocr
+[2024-05-18 06:06:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chromedriver-binary
+[2024-05-18 06:06:06] INFO root fetch - processPackages [surya-ocr]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-18 06:06:06] INFO root fetch - processPackages [MyLLM]: New version: [4.8.9] Old Version: [4.8.8]
+[2024-05-18 06:06:06] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: New version: [15.0.1.0.0.8] Old Version: [15.0.1.0.0.7]
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.2.1.3]
+[2024-05-18 06:06:06] WARNING root fetch - processPackages [cacajaoz]: Skipping, unable to determine old version
+[2024-05-18 06:06:06] INFO root fetch - main [MainThread]: End processing [cacajaoz] error
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.7]
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: New version: [14.0.1.0.3.dev3] Old Version: [14.0.1.0.3.dev2]
+[2024-05-18 06:06:06] INFO root fetch - processPackages [surya-ocr]: Downloading https://files.pythonhosted.org/packages/51/ea/46eaf9855bbe01ee8a2ddaba71db45ee458109d81a736e816ced34f28897/surya_ocr-0.4.5.tar.gz
+[2024-05-18 06:06:06] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/17/a3/c8c72d3fe2409e7c53f4f1b62d22d58eda0f109b746f00cee99c542888b9/myllm-4.8.8.tar.gz
+[2024-05-18 06:06:06] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: Downloading https://files.pythonhosted.org/packages/4a/e0/a2d62f9e20c6fb990cdd3fc63191908ea12b034c923d3c2e5b40d13a1371/odoo_addon_fieldservice_sale_stock-15.0.1.0.0.7-py3-none-any.whl
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: Downloading https://files.pythonhosted.org/packages/f7/c7/0cbdcaff3985ab2e5ae646d511a90bd7c06244df69ce2a3af11292cee638/odoo_addon_fieldservice_stock-16.0.1.2.1.3-py3-none-any.whl
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Downloading https://files.pythonhosted.org/packages/09/84/004d57802b226bee50824cbe481ec91a9904b10921cc512d7d528d32d224/odoo_addon_fieldservice_activity-16.0.1.0.0.7-py3-none-any.whl
+[2024-05-18 06:06:06] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: Downloading https://files.pythonhosted.org/packages/66/f7/269b9ff851cd69cffb87c8c76d9ed039ceb90e897928dd479d1dfabab4e5/odoo14_addon_fieldservice_size-14.0.1.0.3.dev2-py3-none-any.whl
+[2024-05-18 06:06:07] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/57/3a/bfe2f2c55e10a6dee7a033bc1731f5ed17fe7c958a210478832a958f6d80/myllm-4.8.9.tar.gz
+[2024-05-18 06:06:07] INFO root fetch - processPackages [surya-ocr]: Downloading https://files.pythonhosted.org/packages/e7/4c/daed027e18a47176818685818bd878f774513fedff52e3eece344782286e/surya_ocr-0.4.6.tar.gz
+[2024-05-18 06:06:07] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-05-18 06:06:07] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.8.8.tar.gz tmp/myllm-4.8.9.tar.gz --markdown 20240518/M/MyLLM/4.8.8-4.8.9/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240518/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [surya-ocr]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [surya-ocr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surya_ocr-0.4.5.tar.gz tmp/surya_ocr-0.4.6.tar.gz --markdown 20240518/s/surya-ocr/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: Downloading https://files.pythonhosted.org/packages/f0/ae/a00e886dcdbc427b8b295760d08c0d4c16750b3306561fb5083bde159c61/odoo_addon_fieldservice_sale_stock-15.0.1.0.0.8-py3-none-any.whl
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Downloading https://files.pythonhosted.org/packages/77/35/01da4e294bd1e93ad4c61e7f75262cbe7260721b7565d8b1d2ec40255cf4/odoo_addon_fieldservice_activity-16.0.1.0.0.8-py3-none-any.whl
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: Downloading https://files.pythonhosted.org/packages/dc/4e/1db2b57f38ee828c044fb0377c3866cf52f0dc1fb60aedcdd8814a536d44/odoo_addon_fieldservice_stock-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: Downloading https://files.pythonhosted.org/packages/e7/44/8fa8c0bbc2c0e1197b3e0679fb1ce2a560c58acaab2e6a6c0a9e3f8de8fd/odoo14_addon_fieldservice_size-14.0.1.0.3.dev3-py3-none-any.whl
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_sale_stock-15.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_sale_stock-15.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-fieldservice-sale-stock/15.0.1.0.0.7-15.0.1.0.0.8/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-fieldservice-activity/16.0.1.0.0.7-16.0.1.0.0.8/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fieldservice_stock-16.0.1.2.1.3-py3-none-any.whl.zip tmp/odoo_addon_fieldservice_stock-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-fieldservice-stock/16.0.1.2.1.3-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: executing diffoscope
+[2024-05-18 06:06:07] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_fieldservice_size-14.0.1.0.3.dev2-py3-none-any.whl.zip tmp/odoo14_addon_fieldservice_size-14.0.1.0.3.dev3-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-fieldservice-size/14.0.1.0.3.dev2-14.0.1.0.3.dev3/README.md --exclude *.pyd
+[2024-05-18 06:06:07] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.8.tar.gz]
+[2024-05-18 06:06:07] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.9.tar.gz]
+[2024-05-18 06:06:07] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-05-18 06:06:08] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-05-18 06:06:08] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_sale_stock-15.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-sale-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_sale_stock-15.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-sale-stock]: success
+[2024-05-18 06:06:08] INFO root fetch - processPackages [surya-ocr]: Remove: archive file [/home/abi/fetcher/tmp/surya_ocr-0.4.5.tar.gz]
+[2024-05-18 06:06:08] INFO root fetch - processPackages [surya-ocr]: Remove: archive file [/home/abi/fetcher/tmp/surya_ocr-0.4.6.tar.gz]
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [surya-ocr]: success
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_fieldservice_size-14.0.1.0.3.dev2-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo14-addon-fieldservice-size]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_fieldservice_size-14.0.1.0.3.dev3-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fieldservice-size]: success
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-activity]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_activity-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-activity]: success
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_stock-16.0.1.2.1.3-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - processPackages [odoo-addon-fieldservice-stock]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fieldservice_stock-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-fieldservice-stock]: success
+[2024-05-18 06:06:08] INFO root fetch - main [MainThread]: Store serial: [23264578]
