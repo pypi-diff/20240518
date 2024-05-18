@@ -12457,3 +12457,21 @@
 [2024-05-18 11:10:10] INFO root fetch - processPackages [bvhio]: Remove: archive file [/home/abi/fetcher/tmp/bvhio-1.3.9.tar.gz]
 [2024-05-18 11:10:10] INFO root fetch - main [MainThread]: End processing [bvhio]: success
 [2024-05-18 11:10:10] INFO root fetch - main [MainThread]: Store serial: [23266531]
+[2024-05-18 11:12:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266531]
+[2024-05-18 11:12:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 11:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PelerGUI
+[2024-05-18 11:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stereocameraz
+[2024-05-18 11:12:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BigEDA
+[2024-05-18 11:12:18] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 11:12:18] WARNING root fetch - processPackages [PelerGUI]: Skipping, unable to determine old version
+[2024-05-18 11:12:18] INFO root fetch - main [MainThread]: End processing [PelerGUI] error
+[2024-05-18 11:12:18] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 11:12:19] WARNING root fetch - processPackages [stereocameraz]: Skipping, unable to determine old version
+[2024-05-18 11:12:19] INFO root fetch - main [MainThread]: End processing [stereocameraz] error
+[2024-05-18 11:12:19] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 11:12:19] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 11:12:19] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 11:12:19] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 11:12:19] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 11:12:19] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 11:12:19] INFO root fetch - main [MainThread]: Store serial: [23266538]
