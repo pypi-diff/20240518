@@ -13397,3 +13397,24 @@
 [2024-05-18 12:26:43] INFO root fetch - processPackages [pydra-freesurfer]: Remove: archive file [/home/abi/fetcher/tmp/pydra_freesurfer-0.1.1.tar.gz]
 [2024-05-18 12:26:43] INFO root fetch - main [MainThread]: End processing [pydra-freesurfer]: success
 [2024-05-18 12:26:43] INFO root fetch - main [MainThread]: Store serial: [23266917]
+[2024-05-18 12:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266917]
+[2024-05-18 12:28:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 12:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyphyi
+[2024-05-18 12:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onlymaze
+[2024-05-18 12:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lycoris-lora
+[2024-05-18 12:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sdkfabric-notion
+[2024-05-18 12:28:52] WARNING root fetch - processPackages [pyphyi]: Skipping, unable to determine old version
+[2024-05-18 12:28:52] INFO root fetch - main [MainThread]: End processing [pyphyi] error
+[2024-05-18 12:28:52] INFO root fetch - processPackages [lycoris-lora]: New version: [3.0.0.dev1] Old Version: [2.3.0.dev9]
+[2024-05-18 12:28:52] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/d2/76/b9b8612cf8e9e812055d7f98dec84386109b39d02af8977ab7cea3d3d785/lycoris_lora-2.3.0.dev9.tar.gz
+[2024-05-18 12:28:52] WARNING root fetch - processPackages [onlymaze]: Skipping, unable to determine old version
+[2024-05-18 12:28:52] INFO root fetch - main [MainThread]: End processing [onlymaze] error
+[2024-05-18 12:28:52] WARNING root fetch - processPackages [sdkfabric-notion]: Skipping, unable to determine old version
+[2024-05-18 12:28:52] INFO root fetch - main [MainThread]: End processing [sdkfabric-notion] error
+[2024-05-18 12:28:52] INFO root fetch - processPackages [lycoris-lora]: Downloading https://files.pythonhosted.org/packages/37/37/3db452d29f3809ec79beaf59a62112fff1f51d05a9aa5e2c642448e4c77f/lycoris_lora-3.0.0.dev1.tar.gz
+[2024-05-18 12:28:52] INFO root fetch - processPackages [lycoris-lora]: executing diffoscope
+[2024-05-18 12:28:52] INFO root fetch - processPackages [lycoris-lora]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lycoris_lora-2.3.0.dev9.tar.gz tmp/lycoris_lora-3.0.0.dev1.tar.gz --markdown 20240518/l/lycoris-lora/2.3.0.dev9-3.0.0.dev1/README.md --exclude *.pyd
+[2024-05-18 12:28:53] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-2.3.0.dev9.tar.gz]
+[2024-05-18 12:28:53] INFO root fetch - processPackages [lycoris-lora]: Remove: archive file [/home/abi/fetcher/tmp/lycoris_lora-3.0.0.dev1.tar.gz]
+[2024-05-18 12:28:53] INFO root fetch - main [MainThread]: End processing [lycoris-lora]: success
+[2024-05-18 12:28:53] INFO root fetch - main [MainThread]: Store serial: [23266925]
