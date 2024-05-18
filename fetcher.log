@@ -11524,3 +11524,15 @@
 [2024-05-18 09:42:53] INFO root fetch - processPackages [transipy]: Remove: archive file [/home/abi/fetcher/tmp/transipy-1.0.2.tar.gz]
 [2024-05-18 09:42:53] INFO root fetch - main [MainThread]: End processing [transipy]: success
 [2024-05-18 09:42:53] INFO root fetch - main [MainThread]: Store serial: [23265793]
+[2024-05-18 09:44:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265793]
+[2024-05-18 09:45:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 09:45:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gasparse
+[2024-05-18 09:45:02] INFO root fetch - processPackages [gasparse]: New version: [0.0.5a0] Old Version: [0.0.4a0]
+[2024-05-18 09:45:02] INFO root fetch - processPackages [gasparse]: Downloading https://files.pythonhosted.org/packages/d1/ff/be6ffc617755c16655bdedb6f0638eaa1b5c97b45f976d2563e3ddd235f2/gasparse-0.0.4a0.tar.gz
+[2024-05-18 09:45:02] INFO root fetch - processPackages [gasparse]: Downloading https://files.pythonhosted.org/packages/cd/31/3bb9a28799f0c04ea70327281f352eabc79ccab4298f212c2359d2481b0e/gasparse-0.0.5a0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-05-18 09:45:03] INFO root fetch - processPackages [gasparse]: executing diffoscope
+[2024-05-18 09:45:03] INFO root fetch - processPackages [gasparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gasparse-0.0.4a0.tar.gz tmp/gasparse-0.0.5a0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240518/g/gasparse/0.0.4a0-0.0.5a0/README.md --exclude *.pyd
+[2024-05-18 09:45:04] INFO root fetch - processPackages [gasparse]: Remove: archive file [/home/abi/fetcher/tmp/gasparse-0.0.4a0.tar.gz]
+[2024-05-18 09:45:04] INFO root fetch - processPackages [gasparse]: Remove: archive file [/home/abi/fetcher/tmp/gasparse-0.0.5a0-cp311-cp311-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-05-18 09:45:04] INFO root fetch - main [MainThread]: End processing [gasparse]: success
+[2024-05-18 09:45:04] INFO root fetch - main [MainThread]: Store serial: [23265798]
