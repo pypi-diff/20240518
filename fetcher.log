@@ -7853,3 +7853,33 @@
 [2024-05-18 04:51:46] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.5.5.tar.gz]
 [2024-05-18 04:51:46] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
 [2024-05-18 04:51:46] INFO root fetch - main [MainThread]: Store serial: [23264158]
+[2024-05-18 04:53:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264158]
+[2024-05-18 04:53:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prompts.py
+[2024-05-18 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-kwargs
+[2024-05-18 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torch-sas
+[2024-05-18 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prosobranchz
+[2024-05-18 04:53:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balsamic
+[2024-05-18 04:53:54] INFO root fetch - processPackages [balsamic]: New version: [0.1.91] Old Version: [0.1.9]
+[2024-05-18 04:53:54] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/fd/3c/b8264dc1cedeeded80fee43a7de5ee187f0389a989de20875d5d86333a7b/balsamic-0.1.9.tar.gz
+[2024-05-18 04:53:54] WARNING root fetch - processPackages [prompts.py]: Skipping, unable to determine old version
+[2024-05-18 04:53:54] INFO root fetch - main [MainThread]: End processing [prompts.py] error
+[2024-05-18 04:53:54] INFO root fetch - processPackages [mo-kwargs]: New version: [7.631.24139] Old Version: [7.627.24136]
+[2024-05-18 04:53:54] WARNING root fetch - processPackages [prosobranchz]: Skipping, unable to determine old version
+[2024-05-18 04:53:54] INFO root fetch - main [MainThread]: End processing [prosobranchz] error
+[2024-05-18 04:53:54] WARNING root fetch - processPackages [torch-sas]: Skipping, unable to determine old version
+[2024-05-18 04:53:54] INFO root fetch - main [MainThread]: End processing [torch-sas] error
+[2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/ba/09/92f563fb418f6aa1f9aade5e4c189c3aaa52a41f5ac3863759540543f93b/mo_kwargs-7.627.24136.tar.gz
+[2024-05-18 04:53:55] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/54/92/10ad7a346c5be124182cfd859e99dc4d3c4ac5a64c892b39a6b5a83eac17/balsamic-0.1.91.tar.gz
+[2024-05-18 04:53:55] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 04:53:55] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.9.tar.gz tmp/balsamic-0.1.91.tar.gz --markdown 20240518/b/balsamic/0.1.9-0.1.91/README.md --exclude *.pyd
+[2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: Downloading https://files.pythonhosted.org/packages/49/f5/fa080f9bba021c00ea480e3bca4146ee282a5957a31173255741d1e4de76/mo_kwargs-7.631.24139.tar.gz
+[2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: executing diffoscope
+[2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_kwargs-7.627.24136.tar.gz tmp/mo_kwargs-7.631.24139.tar.gz --markdown 20240518/m/mo-kwargs/7.627.24136-7.631.24139/README.md --exclude *.pyd
+[2024-05-18 04:53:55] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.9.tar.gz]
+[2024-05-18 04:53:55] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.91.tar.gz]
+[2024-05-18 04:53:55] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.627.24136.tar.gz]
+[2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.631.24139.tar.gz]
+[2024-05-18 04:53:55] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
+[2024-05-18 04:53:55] INFO root fetch - main [MainThread]: Store serial: [23264177]
