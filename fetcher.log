@@ -16372,3 +16372,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:25:01] INFO root fetch - processPackages [drf-audit-trail]: Remove: archive file [/home/abi/fetcher/tmp/drf_audit_trail-0.1.1.tar.gz]
 [2024-05-18 16:25:01] INFO root fetch - main [MainThread]: End processing [drf-audit-trail]: success
 [2024-05-18 16:25:01] INFO root fetch - main [MainThread]: Store serial: [23268402]
+[2024-05-18 16:27:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268402]
+[2024-05-18 16:27:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 16:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: almo
+[2024-05-18 16:27:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiconn
+[2024-05-18 16:27:10] INFO root fetch - processPackages [almo]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-05-18 16:27:10] INFO root fetch - processPackages [aiconn]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 16:27:10] INFO root fetch - processPackages [almo]: Downloading https://files.pythonhosted.org/packages/ef/71/28713649d43c0189238448b4b6fbdfcc05d3f9e3071578e33b0fea6597ec/almo-0.0.0-cp312-cp312-macosx_13_0_arm64.whl
+[2024-05-18 16:27:10] INFO root fetch - processPackages [aiconn]: Downloading https://files.pythonhosted.org/packages/17/20/2c4b1e33e26b47d150a86521de0db0233971948a5ec3de084968feb728cc/aiconn-0.0.1.tar.gz
+[2024-05-18 16:27:10] INFO root fetch - processPackages [aiconn]: Downloading https://files.pythonhosted.org/packages/37/9d/53edc62812689405babe46b29dfe04566951c77ca8055cd93b6eccdd5a69/aiconn-0.0.2.tar.gz
+[2024-05-18 16:27:10] INFO root fetch - processPackages [almo]: Downloading https://files.pythonhosted.org/packages/09/3d/144aa25ba2aaae165ed4f32c7ab05bc6a3bba4d35d0546a27d139d2fe6b0/almo-0.1.0.tar.gz
+[2024-05-18 16:27:10] INFO root fetch - processPackages [aiconn]: executing diffoscope
+[2024-05-18 16:27:10] INFO root fetch - processPackages [aiconn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiconn-0.0.1.tar.gz tmp/aiconn-0.0.2.tar.gz --markdown 20240518/a/aiconn/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 16:27:10] INFO root fetch - processPackages [almo]: executing diffoscope
+[2024-05-18 16:27:10] INFO root fetch - processPackages [almo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almo-0.0.0-cp312-cp312-macosx_13_0_arm64.whl.zip tmp/almo-0.1.0.tar.gz --markdown 20240518/a/almo/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-05-18 16:27:11] INFO root fetch - processPackages [aiconn]: Remove: archive file [/home/abi/fetcher/tmp/aiconn-0.0.1.tar.gz]
+[2024-05-18 16:27:11] INFO root fetch - processPackages [aiconn]: Remove: archive file [/home/abi/fetcher/tmp/aiconn-0.0.2.tar.gz]
+[2024-05-18 16:27:11] INFO root fetch - main [MainThread]: End processing [aiconn]: success
+[2024-05-18 16:27:11] INFO root fetch - processPackages [almo]: Remove: archive file [/home/abi/fetcher/tmp/almo-0.0.0-cp312-cp312-macosx_13_0_arm64.whl.zip]
+[2024-05-18 16:27:11] INFO root fetch - processPackages [almo]: Remove: archive file [/home/abi/fetcher/tmp/almo-0.1.0.tar.gz]
+[2024-05-18 16:27:11] INFO root fetch - main [MainThread]: End processing [almo]: success
+[2024-05-18 16:27:11] INFO root fetch - main [MainThread]: Store serial: [23268407]
