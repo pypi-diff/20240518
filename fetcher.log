@@ -20391,3 +20391,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:01:38] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
 [2024-05-18 21:01:38] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
 [2024-05-18 21:01:38] INFO root fetch - main [MainThread]: Store serial: [23270388]
+[2024-05-18 21:03:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270388]
+[2024-05-18 21:03:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: harm-analysis
+[2024-05-18 21:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: param-logger
+[2024-05-18 21:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymonit
+[2024-05-18 21:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opticalpy
+[2024-05-18 21:03:47] INFO root fetch - processPackages [pymonit]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-05-18 21:03:47] INFO root fetch - processPackages [opticalpy]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 21:03:47] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/f3/72/136d68dfc87e0a1f07c9cbae68b1a071ccc45d9955d80e98c30444efe0bf/pymonit-1.4.1.tar.gz
+[2024-05-18 21:03:47] INFO root fetch - processPackages [harm-analysis]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-18 21:03:47] INFO root fetch - processPackages [opticalpy]: Downloading https://files.pythonhosted.org/packages/7e/6d/717e7a2925de15ce1384f9b26fb6eb58ddf5872675598e017976a7f1a0f5/opticalpy-1.0.0.tar.gz
+[2024-05-18 21:03:47] WARNING root fetch - processPackages [param-logger]: Skipping, unable to determine old version
+[2024-05-18 21:03:47] INFO root fetch - main [MainThread]: End processing [param-logger] error
+[2024-05-18 21:03:47] INFO root fetch - processPackages [opticalpy]: Downloading https://files.pythonhosted.org/packages/6b/13/f5e91a56671e13dbe22b30bd27db29d07991124e5e50962bd5d8f4c6498d/opticalpy-1.0.1.tar.gz
+[2024-05-18 21:03:47] INFO root fetch - processPackages [harm-analysis]: Downloading https://files.pythonhosted.org/packages/43/b2/807ef2e8a1505913e07507c0e95e010e38e41142b181504e66a748c3e62c/harm-analysis-1.1.1.tar.gz
+[2024-05-18 21:03:47] INFO root fetch - processPackages [opticalpy]: executing diffoscope
+[2024-05-18 21:03:47] INFO root fetch - processPackages [opticalpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opticalpy-1.0.0.tar.gz tmp/opticalpy-1.0.1.tar.gz --markdown 20240518/o/opticalpy/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 21:03:47] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/28/51/d14c2c18acbdfe3aba3194ea60e05194914c04de4ad63bb4dc4f31f44012/pymonit-1.4.2.tar.gz
+[2024-05-18 21:03:47] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-18 21:03:47] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.4.1.tar.gz tmp/pymonit-1.4.2.tar.gz --markdown 20240518/p/pymonit/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-05-18 21:03:48] INFO root fetch - processPackages [harm-analysis]: Downloading https://files.pythonhosted.org/packages/28/15/3a6c9f9a1f8a302775c28dc69c18dc2aa55ced24d67607f3a2517febb46a/harm_analysis-1.1.2.tar.gz
+[2024-05-18 21:03:48] INFO root fetch - processPackages [harm-analysis]: executing diffoscope
+[2024-05-18 21:03:48] INFO root fetch - processPackages [harm-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harm-analysis-1.1.1.tar.gz tmp/harm_analysis-1.1.2.tar.gz --markdown 20240518/h/harm-analysis/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-18 21:03:48] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.1.tar.gz]
+[2024-05-18 21:03:48] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.2.tar.gz]
+[2024-05-18 21:03:48] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-18 21:03:48] INFO root fetch - processPackages [opticalpy]: Remove: archive file [/home/abi/fetcher/tmp/opticalpy-1.0.0.tar.gz]
+[2024-05-18 21:03:48] INFO root fetch - processPackages [opticalpy]: Remove: archive file [/home/abi/fetcher/tmp/opticalpy-1.0.1.tar.gz]
+[2024-05-18 21:03:48] INFO root fetch - main [MainThread]: End processing [opticalpy]: success
+[2024-05-18 21:03:48] INFO root fetch - processPackages [harm-analysis]: Remove: archive file [/home/abi/fetcher/tmp/harm-analysis-1.1.1.tar.gz]
+[2024-05-18 21:03:48] INFO root fetch - processPackages [harm-analysis]: Remove: archive file [/home/abi/fetcher/tmp/harm_analysis-1.1.2.tar.gz]
+[2024-05-18 21:03:48] INFO root fetch - main [MainThread]: End processing [harm-analysis]: success
+[2024-05-18 21:03:48] INFO root fetch - main [MainThread]: Store serial: [23270401]
