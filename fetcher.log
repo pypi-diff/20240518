@@ -10412,3 +10412,24 @@
 [2024-05-18 08:14:06] INFO root fetch - processPackages [odoo-addon-rma]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_rma-17.0.1.1.0.1-py3-none-any.whl.zip]
 [2024-05-18 08:14:06] INFO root fetch - main [MainThread]: End processing [odoo-addon-rma]: success
 [2024-05-18 08:14:06] INFO root fetch - main [MainThread]: Store serial: [23265191]
+[2024-05-18 08:16:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265191]
+[2024-05-18 08:16:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bank-scrapers
+[2024-05-18 08:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchlure
+[2024-05-18 08:16:14] INFO root fetch - processPackages [torchlure]: New version: [0.2405.9] Old Version: [0.2405.8]
+[2024-05-18 08:16:14] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-18 08:16:14] INFO root fetch - processPackages [torchlure]: Downloading https://files.pythonhosted.org/packages/6b/bd/5c01822218b31e5f06617a604408e705618024d5eaa4c1ed27ba9f1d3cbe/torchlure-0.2405.8.tar.gz
+[2024-05-18 08:16:14] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/87/35/6bec536ac0d22db9c39af18bd331f227988c400be9b37988e15f0a50e901/bank_scrapers-1.0.6.tar.gz
+[2024-05-18 08:16:15] INFO root fetch - processPackages [torchlure]: Downloading https://files.pythonhosted.org/packages/2e/bd/9d08ec703de646b0eab2bcbb117bc2c5879361cbd622ae8503c3366206fe/torchlure-0.2405.9.tar.gz
+[2024-05-18 08:16:15] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/43/60/a208649420d99a3a21dde92227859506e2ea2f35450343752cc4d776415d/bank_scrapers-1.0.7.tar.gz
+[2024-05-18 08:16:15] INFO root fetch - processPackages [torchlure]: executing diffoscope
+[2024-05-18 08:16:15] INFO root fetch - processPackages [torchlure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlure-0.2405.8.tar.gz tmp/torchlure-0.2405.9.tar.gz --markdown 20240518/t/torchlure/0.2405.8-0.2405.9/README.md --exclude *.pyd
+[2024-05-18 08:16:15] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 08:16:15] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.6.tar.gz tmp/bank_scrapers-1.0.7.tar.gz --markdown 20240518/b/bank-scrapers/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-18 08:16:15] INFO root fetch - processPackages [torchlure]: Remove: archive file [/home/abi/fetcher/tmp/torchlure-0.2405.8.tar.gz]
+[2024-05-18 08:16:15] INFO root fetch - processPackages [torchlure]: Remove: archive file [/home/abi/fetcher/tmp/torchlure-0.2405.9.tar.gz]
+[2024-05-18 08:16:15] INFO root fetch - main [MainThread]: End processing [torchlure]: success
+[2024-05-18 08:16:15] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.6.tar.gz]
+[2024-05-18 08:16:15] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.7.tar.gz]
+[2024-05-18 08:16:15] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 08:16:15] INFO root fetch - main [MainThread]: Store serial: [23265225]
