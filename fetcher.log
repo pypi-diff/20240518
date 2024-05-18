@@ -14649,3 +14649,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:04:35] INFO root fetch - processPackages [pykwl]: Remove: archive file [/home/abi/fetcher/tmp/pykwl-0.0.9.tar.gz]
 [2024-05-18 14:04:35] INFO root fetch - main [MainThread]: End processing [pykwl]: success
 [2024-05-18 14:04:35] INFO root fetch - main [MainThread]: Store serial: [23267493]
+[2024-05-18 14:06:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267493]
+[2024-05-18 14:06:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 14:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiconnectpy
+[2024-05-18 14:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semchunk
+[2024-05-18 14:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: horribilityz
+[2024-05-18 14:06:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyflagoras
+[2024-05-18 14:06:46] WARNING root fetch - processPackages [pyflagoras]: Skipping, unable to determine old version
+[2024-05-18 14:06:46] INFO root fetch - main [MainThread]: End processing [pyflagoras] error
+[2024-05-18 14:06:46] WARNING root fetch - processPackages [horribilityz]: Skipping, unable to determine old version
+[2024-05-18 14:06:46] INFO root fetch - main [MainThread]: End processing [horribilityz] error
+[2024-05-18 14:06:46] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-18 14:06:46] INFO root fetch - processPackages [semchunk]: New version: [0.3.0] Old Version: [0.2.4]
+[2024-05-18 14:06:46] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/22/60/b0d8029aea8b9ea05b321a35f2e0bc5bccd16f13e09768bcb995978eae87/audiconnectpy-2.0.0.tar.gz
+[2024-05-18 14:06:46] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/b1/54/3bb0f68b05369d962faed1b1c22b9f8b25fa8b2e471e31f482cab512e9e8/semchunk-0.2.4.tar.gz
+[2024-05-18 14:06:46] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/bb/04/a7d1ae12ade63c75da8f49c33e6b13e8af435ce9f14a7bac7b8b96d93913/audiconnectpy-2.1.0.tar.gz
+[2024-05-18 14:06:46] INFO root fetch - processPackages [semchunk]: Downloading https://files.pythonhosted.org/packages/66/c0/802af289d7384c1ee679166291a46ba74992787a0aae37123524b8086d80/semchunk-0.3.0.tar.gz
+[2024-05-18 14:06:46] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-18 14:06:46] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.0.0.tar.gz tmp/audiconnectpy-2.1.0.tar.gz --markdown 20240518/a/audiconnectpy/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-18 14:06:46] INFO root fetch - processPackages [semchunk]: executing diffoscope
+[2024-05-18 14:06:46] INFO root fetch - processPackages [semchunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semchunk-0.2.4.tar.gz tmp/semchunk-0.3.0.tar.gz --markdown 20240518/s/semchunk/0.2.4-0.3.0/README.md --exclude *.pyd
+[2024-05-18 14:06:47] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.0.0.tar.gz]
+[2024-05-18 14:06:47] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.0.tar.gz]
+[2024-05-18 14:06:47] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-18 14:06:47] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.2.4.tar.gz]
+[2024-05-18 14:06:47] INFO root fetch - processPackages [semchunk]: Remove: archive file [/home/abi/fetcher/tmp/semchunk-0.3.0.tar.gz]
+[2024-05-18 14:06:47] INFO root fetch - main [MainThread]: End processing [semchunk]: success
+[2024-05-18 14:06:47] INFO root fetch - main [MainThread]: Store serial: [23267507]
