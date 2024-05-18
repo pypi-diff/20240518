@@ -11849,3 +11849,24 @@
 [2024-05-18 10:21:51] INFO root fetch - processPackages [zhmiscellany]: Remove: archive file [/home/abi/fetcher/tmp/zhmiscellany-2.0.9-py3-none-any.whl.zip]
 [2024-05-18 10:21:51] INFO root fetch - main [MainThread]: End processing [zhmiscellany]: success
 [2024-05-18 10:21:51] INFO root fetch - main [MainThread]: Store serial: [23265962]
+[2024-05-18 10:23:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265962]
+[2024-05-18 10:24:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 10:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhmiscellany
+[2024-05-18 10:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contact-person-profile-csv-imp-local
+[2024-05-18 10:24:00] INFO root fetch - processPackages [zhmiscellany]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-18 10:24:00] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 10:24:00] INFO root fetch - processPackages [zhmiscellany]: Downloading https://files.pythonhosted.org/packages/95/39/59e6804d7598733071622426c3026951776be684cf1ab7c3d9b2e07fde3b/zhmiscellany-2.0.8-py3-none-any.whl
+[2024-05-18 10:24:00] INFO root fetch - processPackages [zhmiscellany]: Downloading https://files.pythonhosted.org/packages/fb/03/7f749bfbdeb5cd3ca7e5368713ad40a4096f1c3d143f67803e9eb770b856/zhmiscellany-2.0.9-py3-none-any.whl
+[2024-05-18 10:24:00] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/38/8e/697a7a19f7efccb43ada97483628a3b05cd2c0ecf731e43238d4c94beb46/contact_person_profile_csv_imp_local-0.0.8.tar.gz
+[2024-05-18 10:24:00] INFO root fetch - processPackages [zhmiscellany]: executing diffoscope
+[2024-05-18 10:24:00] INFO root fetch - processPackages [zhmiscellany]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhmiscellany-2.0.8-py3-none-any.whl.zip tmp/zhmiscellany-2.0.9-py3-none-any.whl.zip --markdown 20240518/z/zhmiscellany/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-18 10:24:01] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/2c/27/f654a86e934199e979e23917591a3a16a0877f5bfff9aa07956945918b8b/contact_person_profile_csv_imp_local-0.0.9.tar.gz
+[2024-05-18 10:24:01] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: executing diffoscope
+[2024-05-18 10:24:01] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz --markdown 20240518/c/contact-person-profile-csv-imp-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 10:24:01] INFO root fetch - processPackages [zhmiscellany]: Remove: archive file [/home/abi/fetcher/tmp/zhmiscellany-2.0.8-py3-none-any.whl.zip]
+[2024-05-18 10:24:01] INFO root fetch - processPackages [zhmiscellany]: Remove: archive file [/home/abi/fetcher/tmp/zhmiscellany-2.0.9-py3-none-any.whl.zip]
+[2024-05-18 10:24:01] INFO root fetch - main [MainThread]: End processing [zhmiscellany]: success
+[2024-05-18 10:24:01] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz]
+[2024-05-18 10:24:01] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz]
+[2024-05-18 10:24:01] INFO root fetch - main [MainThread]: End processing [contact-person-profile-csv-imp-local]: success
+[2024-05-18 10:24:01] INFO root fetch - main [MainThread]: Store serial: [23265967]
