@@ -22304,3 +22304,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 23:32:36] INFO root fetch - processPackages [sms-message-inforu-local]: Remove: archive file [/home/abi/fetcher/tmp/sms_message_inforu_local-0.0.3.tar.gz]
 [2024-05-18 23:32:36] INFO root fetch - main [MainThread]: End processing [sms-message-inforu-local]: success
 [2024-05-18 23:32:36] INFO root fetch - main [MainThread]: Store serial: [23271385]
+[2024-05-18 23:34:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271385]
+[2024-05-18 23:34:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 23:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edsl
+[2024-05-18 23:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pros-cli
+[2024-05-18 23:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-sale-quotation-number
+[2024-05-18 23:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-05-18 23:34:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: infinituplez
+[2024-05-18 23:34:45] INFO root fetch - processPackages [flatpack]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-05-18 23:34:45] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: New version: [14.0.2.0.2.dev3] Old Version: [14.0.2.0.2.dev2]
+[2024-05-18 23:34:45] INFO root fetch - processPackages [pros-cli]: New version: [3.5.2.0] Old Version: [3.5.1]
+[2024-05-18 23:34:45] INFO root fetch - processPackages [edsl]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 23:34:45] WARNING root fetch - processPackages [infinituplez]: Skipping, unable to determine old version
+[2024-05-18 23:34:45] INFO root fetch - main [MainThread]: End processing [infinituplez] error
+[2024-05-18 23:34:45] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/92/5a/46a0817bd1cfcbeb0f041626a2cc2b28a97a17caa6609495cfb355a5d90e/flatpack-3.4.8.tar.gz
+[2024-05-18 23:34:45] INFO root fetch - processPackages [edsl]: Downloading https://files.pythonhosted.org/packages/a7/b4/ca2ddafd1ecd31e28b2974e932e58274993e658c949b77ae37d057d7c856/edsl-0.1.8.tar.gz
+[2024-05-18 23:34:45] INFO root fetch - processPackages [pros-cli]: Downloading https://files.pythonhosted.org/packages/bb/15/0de3c4cb7759d2e9d8f386ca23b69b7839beccf0715bfbdc21ab0a069442/pros_cli-3.5.1-py3-none-any.whl
+[2024-05-18 23:34:45] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: Downloading https://files.pythonhosted.org/packages/ec/03/dcee290ebd2a6827babfe8808bbe8d89b5d2069a95a0130604d16de290bb/odoo14_addon_sale_quotation_number-14.0.2.0.2.dev2-py3-none-any.whl
+[2024-05-18 23:34:45] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b6/9545d80064161872f90e25faa6bb7dc31698e88762b3d442b5fb491967fd/flatpack-3.4.9.tar.gz
+[2024-05-18 23:34:45] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-05-18 23:34:45] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.4.8.tar.gz tmp/flatpack-3.4.9.tar.gz --markdown 20240518/f/flatpack/3.4.8-3.4.9/README.md --exclude *.pyd
+[2024-05-18 23:34:46] INFO root fetch - processPackages [pros-cli]: Downloading https://files.pythonhosted.org/packages/7b/09/77f8cd1bc90385bfe6c1377e21a5ca9f98910054ec3b53917032b2bb06b6/pros_cli-3.5.2.0-py3-none-any.whl
+[2024-05-18 23:34:46] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: Downloading https://files.pythonhosted.org/packages/96/3c/7601a596b8b98ec2b19c6d545ee1957e5dbcf257d974bd33c7ada10759d3/odoo14_addon_sale_quotation_number-14.0.2.0.2.dev3-py3-none-any.whl
+[2024-05-18 23:34:46] INFO root fetch - processPackages [edsl]: Downloading https://files.pythonhosted.org/packages/f7/d4/f0e4527adeb00ef9119790d25c4faad0d3fa62ee7c189076b9b09f11e7f4/edsl-0.1.9.tar.gz
+[2024-05-18 23:34:46] INFO root fetch - processPackages [pros-cli]: executing diffoscope
+[2024-05-18 23:34:46] INFO root fetch - processPackages [pros-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pros_cli-3.5.1-py3-none-any.whl.zip tmp/pros_cli-3.5.2.0-py3-none-any.whl.zip --markdown 20240518/p/pros-cli/3.5.1-3.5.2.0/README.md --exclude *.pyd
+[2024-05-18 23:34:46] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: executing diffoscope
+[2024-05-18 23:34:46] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_quotation_number-14.0.2.0.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_sale_quotation_number-14.0.2.0.2.dev3-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-sale-quotation-number/14.0.2.0.2.dev2-14.0.2.0.2.dev3/README.md --exclude *.pyd
+[2024-05-18 23:34:46] INFO root fetch - processPackages [edsl]: executing diffoscope
+[2024-05-18 23:34:46] INFO root fetch - processPackages [edsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edsl-0.1.8.tar.gz tmp/edsl-0.1.9.tar.gz --markdown 20240518/e/edsl/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 23:34:46] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.8.tar.gz]
+[2024-05-18 23:34:46] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.4.9.tar.gz]
+[2024-05-18 23:34:46] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-05-18 23:34:46] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_quotation_number-14.0.2.0.2.dev2-py3-none-any.whl.zip]
+[2024-05-18 23:34:46] INFO root fetch - processPackages [odoo14-addon-sale-quotation-number]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_quotation_number-14.0.2.0.2.dev3-py3-none-any.whl.zip]
+[2024-05-18 23:34:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-quotation-number]: success
+[2024-05-18 23:34:47] INFO root fetch - processPackages [pros-cli]: Remove: archive file [/home/abi/fetcher/tmp/pros_cli-3.5.1-py3-none-any.whl.zip]
+[2024-05-18 23:34:47] INFO root fetch - processPackages [pros-cli]: Remove: archive file [/home/abi/fetcher/tmp/pros_cli-3.5.2.0-py3-none-any.whl.zip]
+[2024-05-18 23:34:47] INFO root fetch - main [MainThread]: End processing [pros-cli]: success
+[2024-05-18 23:34:47] INFO root fetch - processPackages [edsl]: Remove: archive file [/home/abi/fetcher/tmp/edsl-0.1.8.tar.gz]
+[2024-05-18 23:34:47] INFO root fetch - processPackages [edsl]: Remove: archive file [/home/abi/fetcher/tmp/edsl-0.1.9.tar.gz]
+[2024-05-18 23:34:47] INFO root fetch - main [MainThread]: End processing [edsl]: success
+[2024-05-18 23:34:47] INFO root fetch - main [MainThread]: Store serial: [23271399]
