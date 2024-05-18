@@ -11617,3 +11617,24 @@
 [2024-05-18 09:55:55] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.5.tar.gz]
 [2024-05-18 09:55:55] INFO root fetch - main [MainThread]: End processing [offlinesec-client]: success
 [2024-05-18 09:55:55] INFO root fetch - main [MainThread]: Store serial: [23265861]
+[2024-05-18 09:57:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265861]
+[2024-05-18 09:58:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:58:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PepperPepper
+[2024-05-18 09:58:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: battlemetrics
+[2024-05-18 09:58:03] INFO root fetch - processPackages [battlemetrics]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-18 09:58:03] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-18 09:58:03] INFO root fetch - processPackages [battlemetrics]: Downloading https://files.pythonhosted.org/packages/1f/7d/a311ea62fe5283025f49f05c0026d3eeb3773ca030594bd3a5fd27fc4d02/battlemetrics-1.0.6.tar.gz
+[2024-05-18 09:58:03] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-18 09:58:04] INFO root fetch - processPackages [battlemetrics]: Downloading https://files.pythonhosted.org/packages/a9/73/c1920c678d7eb9cddd909fff9a983ee9d942b7d8f36faeb44e092e8780bb/battlemetrics-1.0.7.tar.gz
+[2024-05-18 09:58:04] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-18 09:58:04] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-18 09:58:04] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240518/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-18 09:58:04] INFO root fetch - processPackages [battlemetrics]: executing diffoscope
+[2024-05-18 09:58:04] INFO root fetch - processPackages [battlemetrics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/battlemetrics-1.0.6.tar.gz tmp/battlemetrics-1.0.7.tar.gz --markdown 20240518/b/battlemetrics/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-18 09:58:04] INFO root fetch - processPackages [battlemetrics]: Remove: archive file [/home/abi/fetcher/tmp/battlemetrics-1.0.6.tar.gz]
+[2024-05-18 09:58:04] INFO root fetch - processPackages [battlemetrics]: Remove: archive file [/home/abi/fetcher/tmp/battlemetrics-1.0.7.tar.gz]
+[2024-05-18 09:58:04] INFO root fetch - main [MainThread]: End processing [battlemetrics]: success
+[2024-05-18 09:58:04] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-18 09:58:04] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-18 09:58:04] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-18 09:58:04] INFO root fetch - main [MainThread]: Store serial: [23265867]
