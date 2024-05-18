@@ -15302,3 +15302,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:59:05] INFO root fetch - processPackages [torchsense]: Remove: archive file [/home/abi/fetcher/tmp/torchsense-0.0.5.tar.gz]
 [2024-05-18 14:59:05] INFO root fetch - main [MainThread]: End processing [torchsense]: success
 [2024-05-18 14:59:05] INFO root fetch - main [MainThread]: Store serial: [23267870]
+[2024-05-18 15:01:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267870]
+[2024-05-18 15:01:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 15:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: knowledge-graph-maker
+[2024-05-18 15:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onnx2tf
+[2024-05-18 15:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AoE2ScenarioParser
+[2024-05-18 15:01:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: config-center
+[2024-05-18 15:01:14] INFO root fetch - processPackages [config-center]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 15:01:14] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-18 15:01:14] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/57/e1/dd76887ecdc674872bf2a3df9d219eac5c545936245ce5dd788161294bc1/config_center-0.0.2.tar.gz
+[2024-05-18 15:01:14] INFO root fetch - processPackages [knowledge-graph-maker]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 15:01:14] INFO root fetch - processPackages [AoE2ScenarioParser]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 15:01:14] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/6f/b3/519ee148592d2531639c5f3c1434df000ecf2c24a5b55b61cba8fd4767f9/onnx2tf-1.9.8.tar.gz
+[2024-05-18 15:01:14] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/58/f7/6e02230c7844f7b36e149acd0df488223f2108abbf3a6e6cfe9dae9fc253/knowledge_graph_maker-0.1.0.tar.gz
+[2024-05-18 15:01:14] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/9e/6e/9f96888b0436cbd46a49cd86974106761b7ed814d32a50d9be0c2e5c871d/config_center-0.0.3.tar.gz
+[2024-05-18 15:01:14] INFO root fetch - processPackages [AoE2ScenarioParser]: Downloading https://files.pythonhosted.org/packages/3d/93/ab5e073126c6476e74084784c65bcef50f12a4c67f560ce6e3a3abd7d795/AoE2ScenarioParser-0.1.8.tar.gz
+[2024-05-18 15:01:14] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/0e/df/e0c6978b06db6c5c04de100ecbe0bbb281caed31c4dd88663e61e36ca571/onnx2tf-1.9.9.tar.gz
+[2024-05-18 15:01:14] INFO root fetch - processPackages [config-center]: executing diffoscope
+[2024-05-18 15:01:14] INFO root fetch - processPackages [config-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_center-0.0.2.tar.gz tmp/config_center-0.0.3.tar.gz --markdown 20240518/c/config-center/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 15:01:14] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2024-05-18 15:01:14] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20240518/o/onnx2tf/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-18 15:01:15] INFO root fetch - processPackages [knowledge-graph-maker]: Downloading https://files.pythonhosted.org/packages/af/db/1035be0f4c2000187ba9bd06c48c24d0ab49d25e516e77b248be27374ee5/knowledge_graph_maker-0.1.1.tar.gz
+[2024-05-18 15:01:15] INFO root fetch - processPackages [knowledge-graph-maker]: executing diffoscope
+[2024-05-18 15:01:15] INFO root fetch - processPackages [knowledge-graph-maker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledge_graph_maker-0.1.0.tar.gz tmp/knowledge_graph_maker-0.1.1.tar.gz --markdown 20240518/k/knowledge-graph-maker/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 15:01:15] INFO root fetch - processPackages [AoE2ScenarioParser]: Downloading https://files.pythonhosted.org/packages/7c/15/d32e660078be22276875a9e5a8b166bb8e5f4765a2738153cc2415d24831/AoE2ScenarioParser-0.1.9.tar.gz
+[2024-05-18 15:01:15] INFO root fetch - processPackages [AoE2ScenarioParser]: executing diffoscope
+[2024-05-18 15:01:15] INFO root fetch - processPackages [AoE2ScenarioParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AoE2ScenarioParser-0.1.8.tar.gz tmp/AoE2ScenarioParser-0.1.9.tar.gz --markdown 20240518/A/AoE2ScenarioParser/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 15:01:15] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.2.tar.gz]
+[2024-05-18 15:01:15] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.3.tar.gz]
+[2024-05-18 15:01:15] INFO root fetch - main [MainThread]: End processing [config-center]: success
+[2024-05-18 15:01:15] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.1.0.tar.gz]
+[2024-05-18 15:01:15] INFO root fetch - processPackages [knowledge-graph-maker]: Remove: archive file [/home/abi/fetcher/tmp/knowledge_graph_maker-0.1.1.tar.gz]
+[2024-05-18 15:01:15] INFO root fetch - main [MainThread]: End processing [knowledge-graph-maker]: success
+[2024-05-18 15:01:16] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.8.tar.gz]
+[2024-05-18 15:01:16] INFO root fetch - processPackages [onnx2tf]: Remove: archive file [/home/abi/fetcher/tmp/onnx2tf-1.9.9.tar.gz]
+[2024-05-18 15:01:16] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2024-05-18 15:01:16] INFO root fetch - processPackages [AoE2ScenarioParser]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioParser-0.1.8.tar.gz]
+[2024-05-18 15:01:16] INFO root fetch - processPackages [AoE2ScenarioParser]: Remove: archive file [/home/abi/fetcher/tmp/AoE2ScenarioParser-0.1.9.tar.gz]
+[2024-05-18 15:01:16] INFO root fetch - main [MainThread]: End processing [AoE2ScenarioParser]: success
+[2024-05-18 15:01:16] INFO root fetch - main [MainThread]: Store serial: [23267883]
