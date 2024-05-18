@@ -9501,3 +9501,24 @@
 [2024-05-18 06:47:18] INFO root fetch - processPackages [ibind]: Remove: archive file [/home/abi/fetcher/tmp/ibind-0.1.1.tar.gz]
 [2024-05-18 06:47:18] INFO root fetch - main [MainThread]: End processing [ibind]: success
 [2024-05-18 06:47:18] INFO root fetch - main [MainThread]: Store serial: [23264785]
+[2024-05-18 06:49:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264785]
+[2024-05-18 06:49:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: WrenchCL
+[2024-05-18 06:49:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simplextep
+[2024-05-18 06:49:26] INFO root fetch - processPackages [WrenchCL]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-18 06:49:26] INFO root fetch - processPackages [WrenchCL]: Downloading https://files.pythonhosted.org/packages/24/75/c6f7d98936f9bd042cef83d3486c95fdb583761aa9587a9f7fe28ebe1e9a/WrenchCL-2.1.1.tar.gz
+[2024-05-18 06:49:26] INFO root fetch - processPackages [Simplextep]: New version: [0.25] Old Version: [0.24]
+[2024-05-18 06:49:27] INFO root fetch - processPackages [Simplextep]: Downloading https://files.pythonhosted.org/packages/23/7d/0b443661c8766aa2d45277b5836912cadea434d5b68cf41cd07186dd44df/Simplextep-0.24-py3-none-any.whl
+[2024-05-18 06:49:27] INFO root fetch - processPackages [WrenchCL]: Downloading https://files.pythonhosted.org/packages/31/4f/23d384ebff8c5e90620aae8859429b820f7a64c7b4cf0f120bdaa2259489/WrenchCL-2.1.2.tar.gz
+[2024-05-18 06:49:27] INFO root fetch - processPackages [WrenchCL]: executing diffoscope
+[2024-05-18 06:49:27] INFO root fetch - processPackages [WrenchCL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/WrenchCL-2.1.1.tar.gz tmp/WrenchCL-2.1.2.tar.gz --markdown 20240518/W/WrenchCL/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-18 06:49:27] INFO root fetch - processPackages [Simplextep]: Downloading https://files.pythonhosted.org/packages/4d/05/fb4926b0bc0767df097bf6a5400f2b11236d988e2e29b1d9c1f2dbca8b70/Simplextep-0.25-py3-none-any.whl
+[2024-05-18 06:49:27] INFO root fetch - processPackages [Simplextep]: executing diffoscope
+[2024-05-18 06:49:27] INFO root fetch - processPackages [Simplextep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simplextep-0.24-py3-none-any.whl.zip tmp/Simplextep-0.25-py3-none-any.whl.zip --markdown 20240518/S/Simplextep/0.24-0.25/README.md --exclude *.pyd
+[2024-05-18 06:49:28] INFO root fetch - processPackages [WrenchCL]: Remove: archive file [/home/abi/fetcher/tmp/WrenchCL-2.1.1.tar.gz]
+[2024-05-18 06:49:28] INFO root fetch - processPackages [WrenchCL]: Remove: archive file [/home/abi/fetcher/tmp/WrenchCL-2.1.2.tar.gz]
+[2024-05-18 06:49:28] INFO root fetch - main [MainThread]: End processing [WrenchCL]: success
+[2024-05-18 06:49:28] INFO root fetch - processPackages [Simplextep]: Remove: archive file [/home/abi/fetcher/tmp/Simplextep-0.24-py3-none-any.whl.zip]
+[2024-05-18 06:49:28] INFO root fetch - processPackages [Simplextep]: Remove: archive file [/home/abi/fetcher/tmp/Simplextep-0.25-py3-none-any.whl.zip]
+[2024-05-18 06:49:28] INFO root fetch - main [MainThread]: End processing [Simplextep]: success
+[2024-05-18 06:49:28] INFO root fetch - main [MainThread]: Store serial: [23264790]
