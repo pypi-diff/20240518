@@ -13289,3 +13289,27 @@
 [2024-05-18 12:20:11] WARNING root fetch - processPackages [actaz]: Skipping, unable to determine old version
 [2024-05-18 12:20:11] INFO root fetch - main [MainThread]: End processing [actaz] error
 [2024-05-18 12:20:11] INFO root fetch - main [MainThread]: Store serial: [23266870]
+[2024-05-18 12:22:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266870]
+[2024-05-18 12:22:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 12:22:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyPhyi
+[2024-05-18 12:22:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-keycloak-middleware
+[2024-05-18 12:22:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: way3
+[2024-05-18 12:22:20] INFO root fetch - processPackages [way3]: New version: [0.0.28] Old Version: [0.0.27]
+[2024-05-18 12:22:20] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/93/0d/05c407dbfedb5936de239f22d1c23e08f01d291d5a1bc0fcabac1fc3ff35/way3-0.0.27.tar.gz
+[2024-05-18 12:22:20] WARNING root fetch - processPackages [PyPhyi]: Skipping, unable to determine old version
+[2024-05-18 12:22:20] INFO root fetch - main [MainThread]: End processing [PyPhyi] error
+[2024-05-18 12:22:20] INFO root fetch - processPackages [fastapi-keycloak-middleware]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-18 12:22:20] INFO root fetch - processPackages [fastapi-keycloak-middleware]: Downloading https://files.pythonhosted.org/packages/ad/31/9853e7316d69a0e1139f9006056fc1ddee4eb4b461577216de80ceaef28d/fastapi_keycloak_middleware-0.4.1.tar.gz
+[2024-05-18 12:22:20] INFO root fetch - processPackages [way3]: Downloading https://files.pythonhosted.org/packages/c8/ef/5b8f58b9c06d75c3e5605a214ed7a4bbb9672041a8454c4213610621c88e/way3-0.0.28.tar.gz
+[2024-05-18 12:22:20] INFO root fetch - processPackages [way3]: executing diffoscope
+[2024-05-18 12:22:20] INFO root fetch - processPackages [way3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/way3-0.0.27.tar.gz tmp/way3-0.0.28.tar.gz --markdown 20240518/w/way3/0.0.27-0.0.28/README.md --exclude *.pyd
+[2024-05-18 12:22:20] INFO root fetch - processPackages [fastapi-keycloak-middleware]: Downloading https://files.pythonhosted.org/packages/19/bf/c2b63f34e54c23d33ec343f37aee2a0759b7c38b807b809d3924b10c4cc7/fastapi_keycloak_middleware-0.4.2.tar.gz
+[2024-05-18 12:22:20] INFO root fetch - processPackages [fastapi-keycloak-middleware]: executing diffoscope
+[2024-05-18 12:22:20] INFO root fetch - processPackages [fastapi-keycloak-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_keycloak_middleware-0.4.1.tar.gz tmp/fastapi_keycloak_middleware-0.4.2.tar.gz --markdown 20240518/f/fastapi-keycloak-middleware/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-18 12:22:21] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.27.tar.gz]
+[2024-05-18 12:22:21] INFO root fetch - processPackages [way3]: Remove: archive file [/home/abi/fetcher/tmp/way3-0.0.28.tar.gz]
+[2024-05-18 12:22:21] INFO root fetch - main [MainThread]: End processing [way3]: success
+[2024-05-18 12:22:21] INFO root fetch - processPackages [fastapi-keycloak-middleware]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_keycloak_middleware-0.4.1.tar.gz]
+[2024-05-18 12:22:21] INFO root fetch - processPackages [fastapi-keycloak-middleware]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_keycloak_middleware-0.4.2.tar.gz]
+[2024-05-18 12:22:21] INFO root fetch - main [MainThread]: End processing [fastapi-keycloak-middleware]: success
+[2024-05-18 12:22:21] INFO root fetch - main [MainThread]: Store serial: [23266881]
