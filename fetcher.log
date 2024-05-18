@@ -17201,3 +17201,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:26:52] INFO root fetch - processPackages [pyesorm]: Remove: archive file [/home/abi/fetcher/tmp/pyesorm-0.4.4.tar.gz]
 [2024-05-18 17:26:52] INFO root fetch - main [MainThread]: End processing [pyesorm]: success
 [2024-05-18 17:26:52] INFO root fetch - main [MainThread]: Store serial: [23268828]
+[2024-05-18 17:28:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268828]
+[2024-05-18 17:29:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 17:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyesorm
+[2024-05-18 17:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: haybox
+[2024-05-18 17:29:01] WARNING root fetch - processPackages [haybox]: Skipping, unable to determine old version
+[2024-05-18 17:29:01] INFO root fetch - main [MainThread]: End processing [haybox] error
+[2024-05-18 17:29:01] INFO root fetch - processPackages [pyesorm]: New version: [0.4.4] Old Version: [0.4.3]
+[2024-05-18 17:29:01] INFO root fetch - processPackages [pyesorm]: Downloading https://files.pythonhosted.org/packages/56/2f/14ff796c625be5a514360fe4441c991ec20947a7ae5fa83acea1b34abf8e/pyesorm-0.4.3.tar.gz
+[2024-05-18 17:29:01] INFO root fetch - processPackages [pyesorm]: Downloading https://files.pythonhosted.org/packages/62/97/d06220089018208832974365df66ae0517f6e5a720db479c1c7933403c93/pyesorm-0.4.4.tar.gz
+[2024-05-18 17:29:02] INFO root fetch - processPackages [pyesorm]: executing diffoscope
+[2024-05-18 17:29:02] INFO root fetch - processPackages [pyesorm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyesorm-0.4.3.tar.gz tmp/pyesorm-0.4.4.tar.gz --markdown 20240518/p/pyesorm/0.4.3-0.4.4/README.md --exclude *.pyd
+[2024-05-18 17:29:02] INFO root fetch - processPackages [pyesorm]: Remove: archive file [/home/abi/fetcher/tmp/pyesorm-0.4.3.tar.gz]
+[2024-05-18 17:29:02] INFO root fetch - processPackages [pyesorm]: Remove: archive file [/home/abi/fetcher/tmp/pyesorm-0.4.4.tar.gz]
+[2024-05-18 17:29:02] INFO root fetch - main [MainThread]: End processing [pyesorm]: success
+[2024-05-18 17:29:02] INFO root fetch - main [MainThread]: Store serial: [23268833]
