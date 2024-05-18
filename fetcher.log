@@ -11733,3 +11733,12 @@
 [2024-05-18 10:08:52] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240517.tar.gz]
 [2024-05-18 10:08:52] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-05-18 10:08:52] INFO root fetch - main [MainThread]: Store serial: [23265905]
+[2024-05-18 10:10:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265905]
+[2024-05-18 10:11:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 10:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prediction-strength
+[2024-05-18 10:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cheerz
+[2024-05-18 10:11:01] WARNING root fetch - processPackages [prediction-strength]: Skipping, unable to determine old version
+[2024-05-18 10:11:01] INFO root fetch - main [MainThread]: End processing [prediction-strength] error
+[2024-05-18 10:11:01] WARNING root fetch - processPackages [cheerz]: Skipping, unable to determine old version
+[2024-05-18 10:11:01] INFO root fetch - main [MainThread]: End processing [cheerz] error
+[2024-05-18 10:11:01] INFO root fetch - main [MainThread]: Store serial: [23265916]
