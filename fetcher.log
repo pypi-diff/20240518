@@ -12239,3 +12239,9 @@
 [2024-05-18 10:52:47] INFO root fetch - main [MainThread]: End processing [markrunner-server] error
 [2024-05-18 10:52:47] INFO root fetch - main [MainThread]: End processing [honeystonez] error
 [2024-05-18 10:52:47] INFO root fetch - main [MainThread]: Store serial: [23266301]
+[2024-05-18 10:54:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266301]
+[2024-05-18 10:54:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 10:54:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opticalpy
+[2024-05-18 10:54:57] WARNING root fetch - processPackages [opticalpy]: Skipping, unable to determine old version
+[2024-05-18 10:54:57] INFO root fetch - main [MainThread]: End processing [opticalpy] error
+[2024-05-18 10:54:57] INFO root fetch - main [MainThread]: Store serial: [23266305]
