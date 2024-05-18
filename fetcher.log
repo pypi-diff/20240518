@@ -16776,3 +16776,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:57:58] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.1.3.tar.gz]
 [2024-05-18 16:57:58] INFO root fetch - main [MainThread]: End processing [g4f]: success
 [2024-05-18 16:57:58] INFO root fetch - main [MainThread]: Store serial: [23268636]
+[2024-05-18 17:00:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268636]
+[2024-05-18 17:00:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 17:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: audiconnectpy
+[2024-05-18 17:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: importer-local
+[2024-05-18 17:00:07] INFO root fetch - processPackages [audiconnectpy]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-05-18 17:00:07] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/22/60/b0d8029aea8b9ea05b321a35f2e0bc5bccd16f13e09768bcb995978eae87/audiconnectpy-2.0.0.tar.gz
+[2024-05-18 17:00:07] INFO root fetch - processPackages [importer-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 17:00:07] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/3b/68/0b10215ac7859421c193cd0df3aab70a0aef2e2db5f22c14a5a2fd7bd732/importer-local-0.0.8.tar.gz
+[2024-05-18 17:00:07] INFO root fetch - processPackages [audiconnectpy]: Downloading https://files.pythonhosted.org/packages/bb/04/a7d1ae12ade63c75da8f49c33e6b13e8af435ce9f14a7bac7b8b96d93913/audiconnectpy-2.1.0.tar.gz
+[2024-05-18 17:00:07] INFO root fetch - processPackages [audiconnectpy]: executing diffoscope
+[2024-05-18 17:00:07] INFO root fetch - processPackages [audiconnectpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiconnectpy-2.0.0.tar.gz tmp/audiconnectpy-2.1.0.tar.gz --markdown 20240518/a/audiconnectpy/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-05-18 17:00:08] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/80/33/939765aa01c27931d172ea899fb7307071569b4fc595e6ec107018aabc97/importer-local-0.0.9.tar.gz
+[2024-05-18 17:00:08] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2024-05-18 17:00:08] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.8.tar.gz tmp/importer-local-0.0.9.tar.gz --markdown 20240518/i/importer-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:00:08] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.0.0.tar.gz]
+[2024-05-18 17:00:08] INFO root fetch - processPackages [audiconnectpy]: Remove: archive file [/home/abi/fetcher/tmp/audiconnectpy-2.1.0.tar.gz]
+[2024-05-18 17:00:08] INFO root fetch - main [MainThread]: End processing [audiconnectpy]: success
+[2024-05-18 17:00:08] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.8.tar.gz]
+[2024-05-18 17:00:08] INFO root fetch - processPackages [importer-local]: Remove: archive file [/home/abi/fetcher/tmp/importer-local-0.0.9.tar.gz]
+[2024-05-18 17:00:08] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2024-05-18 17:00:08] INFO root fetch - main [MainThread]: Store serial: [23268642]
