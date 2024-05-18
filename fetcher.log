@@ -9975,3 +9975,48 @@
 [2024-05-18 07:37:07] INFO root fetch - processPackages [elastiknn-client]: Remove: archive file [/home/abi/fetcher/tmp/elastiknn-client-8.9.2.0.tar.gz]
 [2024-05-18 07:37:07] INFO root fetch - main [MainThread]: End processing [elastiknn-client]: success
 [2024-05-18 07:37:07] INFO root fetch - main [MainThread]: Store serial: [23265006]
+[2024-05-18 07:39:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265006]
+[2024-05-18 07:39:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 07:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: betterschema
+[2024-05-18 07:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thecoidz
+[2024-05-18 07:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-base-location-geonames-import
+[2024-05-18 07:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: artifacts
+[2024-05-18 07:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gink
+[2024-05-18 07:39:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: faceext
+[2024-05-18 07:39:16] WARNING root fetch - processPackages [thecoidz]: Skipping, unable to determine old version
+[2024-05-18 07:39:16] INFO root fetch - main [MainThread]: End processing [thecoidz] error
+[2024-05-18 07:39:16] WARNING root fetch - processPackages [betterschema]: Skipping, unable to determine old version
+[2024-05-18 07:39:16] INFO root fetch - main [MainThread]: End processing [betterschema] error
+[2024-05-18 07:39:16] INFO root fetch - processPackages [artifacts]: New version: [20240518] Old Version: [20230928]
+[2024-05-18 07:39:16] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: New version: [14.0.1.0.3.dev9] Old Version: [14.0.1.0.3.dev8]
+[2024-05-18 07:39:16] INFO root fetch - processPackages [gink]: New version: [0.20240518.1716010702] Old Version: [0.20240516.1715898271]
+[2024-05-18 07:39:16] INFO root fetch - processPackages [faceext]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 07:39:16] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: Downloading https://files.pythonhosted.org/packages/89/c9/f28ac2e0dd79c5ebcd1690fedb4a6b9c5dce936b463ad0491f6e2f1a102d/odoo14_addon_base_location_geonames_import-14.0.1.0.3.dev8-py3-none-any.whl
+[2024-05-18 07:39:16] INFO root fetch - processPackages [artifacts]: Downloading https://files.pythonhosted.org/packages/db/a2/fde1104f080d6fe045c0956943c2a2b341a67d2ea8846b88d67fbdf79ed1/artifacts-20230928.tar.gz
+[2024-05-18 07:39:16] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/98/00/baa0d237e1937cae8c607b2a24ef1a7e21f845d8dcdcf5fbdac1e1f94437/gink-0.20240516.1715898271.tar.gz
+[2024-05-18 07:39:16] INFO root fetch - processPackages [faceext]: Downloading https://files.pythonhosted.org/packages/9a/ee/e50633bd800b1a5a1ff9fafaa3237603950dccb5cb2cc9bf695b448b0e2f/faceext-0.0.2.tar.gz
+[2024-05-18 07:39:17] INFO root fetch - processPackages [artifacts]: Downloading https://files.pythonhosted.org/packages/f1/b7/5f7b8edfebc5c45c06fa74e1640a8ba2faf48c67fa62859c36c6c7f66447/artifacts-20240518.tar.gz
+[2024-05-18 07:39:17] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: Downloading https://files.pythonhosted.org/packages/fa/29/1aa0d85b6fb7eb6886406e03c98abb7245728d02089075d6bab623de4593/odoo14_addon_base_location_geonames_import-14.0.1.0.3.dev9-py3-none-any.whl
+[2024-05-18 07:39:17] INFO root fetch - processPackages [gink]: Downloading https://files.pythonhosted.org/packages/ef/3c/74c4183f0765fdff33fc8a36b874601dfecb94246d2e7e49644fcc5ce8ad/gink-0.20240518.1716010702.tar.gz
+[2024-05-18 07:39:17] INFO root fetch - processPackages [faceext]: Downloading https://files.pythonhosted.org/packages/18/f6/1170f8b9966cdc0a9573c7b21671da8b9445c54fde88b641728b4f6cfdf2/faceext-0.0.3.tar.gz
+[2024-05-18 07:39:17] INFO root fetch - processPackages [artifacts]: executing diffoscope
+[2024-05-18 07:39:17] INFO root fetch - processPackages [artifacts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artifacts-20230928.tar.gz tmp/artifacts-20240518.tar.gz --markdown 20240518/a/artifacts/20230928-20240518/README.md --exclude *.pyd
+[2024-05-18 07:39:17] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: executing diffoscope
+[2024-05-18 07:39:17] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_base_location_geonames_import-14.0.1.0.3.dev8-py3-none-any.whl.zip tmp/odoo14_addon_base_location_geonames_import-14.0.1.0.3.dev9-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-base-location-geonames-import/14.0.1.0.3.dev8-14.0.1.0.3.dev9/README.md --exclude *.pyd
+[2024-05-18 07:39:17] INFO root fetch - processPackages [gink]: executing diffoscope
+[2024-05-18 07:39:17] INFO root fetch - processPackages [gink]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gink-0.20240516.1715898271.tar.gz tmp/gink-0.20240518.1716010702.tar.gz --markdown 20240518/g/gink/0.20240516.1715898271-0.20240518.1716010702/README.md --exclude *.pyd
+[2024-05-18 07:39:17] INFO root fetch - processPackages [faceext]: executing diffoscope
+[2024-05-18 07:39:17] INFO root fetch - processPackages [faceext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faceext-0.0.2.tar.gz tmp/faceext-0.0.3.tar.gz --markdown 20240518/f/faceext/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 07:39:17] INFO root fetch - processPackages [faceext]: Remove: archive file [/home/abi/fetcher/tmp/faceext-0.0.2.tar.gz]
+[2024-05-18 07:39:17] INFO root fetch - processPackages [faceext]: Remove: archive file [/home/abi/fetcher/tmp/faceext-0.0.3.tar.gz]
+[2024-05-18 07:39:17] INFO root fetch - main [MainThread]: End processing [faceext]: success
+[2024-05-18 07:39:18] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_location_geonames_import-14.0.1.0.3.dev8-py3-none-any.whl.zip]
+[2024-05-18 07:39:18] INFO root fetch - processPackages [odoo14-addon-base-location-geonames-import]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_base_location_geonames_import-14.0.1.0.3.dev9-py3-none-any.whl.zip]
+[2024-05-18 07:39:18] INFO root fetch - main [MainThread]: End processing [odoo14-addon-base-location-geonames-import]: success
+[2024-05-18 07:39:18] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240516.1715898271.tar.gz]
+[2024-05-18 07:39:18] INFO root fetch - processPackages [gink]: Remove: archive file [/home/abi/fetcher/tmp/gink-0.20240518.1716010702.tar.gz]
+[2024-05-18 07:39:18] INFO root fetch - main [MainThread]: End processing [gink]: success
+[2024-05-18 07:39:18] INFO root fetch - processPackages [artifacts]: Remove: archive file [/home/abi/fetcher/tmp/artifacts-20230928.tar.gz]
+[2024-05-18 07:39:18] INFO root fetch - processPackages [artifacts]: Remove: archive file [/home/abi/fetcher/tmp/artifacts-20240518.tar.gz]
+[2024-05-18 07:39:18] INFO root fetch - main [MainThread]: End processing [artifacts]: success
+[2024-05-18 07:39:18] INFO root fetch - main [MainThread]: Store serial: [23265022]
