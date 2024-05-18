@@ -18320,3 +18320,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 18:43:35] INFO root fetch - processPackages [dtw-python]: Remove: archive file [/home/abi/fetcher/tmp/dtw_python-1.4.4.tar.gz]
 [2024-05-18 18:43:35] INFO root fetch - main [MainThread]: End processing [dtw-python]: success
 [2024-05-18 18:43:35] INFO root fetch - main [MainThread]: Store serial: [23269328]
+[2024-05-18 18:45:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269328]
+[2024-05-18 18:45:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 18:45:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyTDC
+[2024-05-18 18:45:44] INFO root fetch - processPackages [PyTDC]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 18:45:44] INFO root fetch - processPackages [PyTDC]: Downloading https://files.pythonhosted.org/packages/35/ba/72250ebc371b0429e67c15d022593bd8804f2132bf1e0d8ef9946e8e65e5/PyTDC-0.4.8.tar.gz
+[2024-05-18 18:45:45] INFO root fetch - processPackages [PyTDC]: Downloading https://files.pythonhosted.org/packages/99/89/920e17b7b936051eb7b7f1db9ca7858d7c8830b0a9452b8a2a787f4a2828/PyTDC-0.4.9.tar.gz
+[2024-05-18 18:45:45] INFO root fetch - processPackages [PyTDC]: executing diffoscope
+[2024-05-18 18:45:45] INFO root fetch - processPackages [PyTDC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTDC-0.4.8.tar.gz tmp/PyTDC-0.4.9.tar.gz --markdown 20240518/P/PyTDC/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 18:45:45] INFO root fetch - processPackages [PyTDC]: Remove: archive file [/home/abi/fetcher/tmp/PyTDC-0.4.8.tar.gz]
+[2024-05-18 18:45:45] INFO root fetch - processPackages [PyTDC]: Remove: archive file [/home/abi/fetcher/tmp/PyTDC-0.4.9.tar.gz]
+[2024-05-18 18:45:45] INFO root fetch - main [MainThread]: End processing [PyTDC]: success
+[2024-05-18 18:45:45] INFO root fetch - main [MainThread]: Store serial: [23269346]
