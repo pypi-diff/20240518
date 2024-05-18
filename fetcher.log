@@ -21635,3 +21635,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:27:30] INFO root fetch - processPackages [deltachat-rpc-server]: Remove: archive file [/home/abi/fetcher/tmp/deltachat-rpc-server-1.139.0.tar.gz]
 [2024-05-18 22:27:30] INFO root fetch - main [MainThread]: End processing [deltachat-rpc-server]: success
 [2024-05-18 22:27:30] INFO root fetch - main [MainThread]: Store serial: [23271036]
+[2024-05-18 22:29:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23271036]
+[2024-05-18 22:29:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 22:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warp-python
+[2024-05-18 22:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: interpositionsz
+[2024-05-18 22:29:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: personal-interfaces
+[2024-05-18 22:29:39] INFO root fetch - processPackages [personal-interfaces]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-18 22:29:39] INFO root fetch - processPackages [warp-python]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-18 22:29:39] WARNING root fetch - processPackages [interpositionsz]: Skipping, unable to determine old version
+[2024-05-18 22:29:39] INFO root fetch - main [MainThread]: End processing [interpositionsz] error
+[2024-05-18 22:29:39] INFO root fetch - processPackages [personal-interfaces]: Downloading https://files.pythonhosted.org/packages/75/98/8e22399553924ebc711e04969bedd93b584acc0c218d88d58956e198ee8a/personal_interfaces-0.4.0.tar.gz
+[2024-05-18 22:29:39] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/ab/29/f87526b611d22fe1fd2bf578b3da6297a2b7bbeee24ce1d4441558da5f38/warp_python-1.2.8.tar.gz
+[2024-05-18 22:29:40] INFO root fetch - processPackages [personal-interfaces]: Downloading https://files.pythonhosted.org/packages/33/86/971ebde5306a344f79d54d32cb5261bbb585fdd3918c0cba58c2a857c4ab/personal_interfaces-0.4.1.tar.gz
+[2024-05-18 22:29:40] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/79/d6/9261521110c41c899ba586c14f59cda7d7020f83001a463cf90aa12040b9/warp_python-1.2.9.tar.gz
+[2024-05-18 22:29:40] INFO root fetch - processPackages [personal-interfaces]: executing diffoscope
+[2024-05-18 22:29:40] INFO root fetch - processPackages [personal-interfaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/personal_interfaces-0.4.0.tar.gz tmp/personal_interfaces-0.4.1.tar.gz --markdown 20240518/p/personal-interfaces/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-18 22:29:40] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 22:29:40] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.8.tar.gz tmp/warp_python-1.2.9.tar.gz --markdown 20240518/w/warp-python/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-18 22:29:40] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.8.tar.gz]
+[2024-05-18 22:29:40] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
+[2024-05-18 22:29:40] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 22:29:40] INFO root fetch - processPackages [personal-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/personal_interfaces-0.4.0.tar.gz]
+[2024-05-18 22:29:40] INFO root fetch - processPackages [personal-interfaces]: Remove: archive file [/home/abi/fetcher/tmp/personal_interfaces-0.4.1.tar.gz]
+[2024-05-18 22:29:40] INFO root fetch - main [MainThread]: End processing [personal-interfaces]: success
+[2024-05-18 22:29:40] INFO root fetch - main [MainThread]: Store serial: [23271048]
