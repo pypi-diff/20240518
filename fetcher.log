@@ -21458,3 +21458,9 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 22:12:14] INFO root fetch - processPackages [django_bocor_ds]: Remove: archive file [/home/abi/fetcher/tmp/django_bocor_ds-2.3.0.tar.gz]
 [2024-05-18 22:12:14] INFO root fetch - main [MainThread]: End processing [django_bocor_ds]: success
 [2024-05-18 22:12:14] INFO root fetch - main [MainThread]: Store serial: [23270858]
+[2024-05-18 22:14:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270858]
+[2024-05-18 22:14:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 22:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cantalaz
+[2024-05-18 22:14:24] WARNING root fetch - processPackages [cantalaz]: Skipping, unable to determine old version
+[2024-05-18 22:14:24] INFO root fetch - main [MainThread]: End processing [cantalaz] error
+[2024-05-18 22:14:24] INFO root fetch - main [MainThread]: Store serial: [23270879]
