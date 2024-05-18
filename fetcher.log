@@ -11464,3 +11464,48 @@
 [2024-05-18 09:38:32] INFO root fetch - processPackages [autostarter]: Remove: archive file [/home/abi/fetcher/tmp/autostarter-0.0.2.tar.gz]
 [2024-05-18 09:38:32] INFO root fetch - main [MainThread]: End processing [autostarter]: success
 [2024-05-18 09:38:32] INFO root fetch - main [MainThread]: Store serial: [23265759]
+[2024-05-18 09:40:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265759]
+[2024-05-18 09:40:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 09:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TitanicSurvivalModel100424
+[2024-05-18 09:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: link-shorteners
+[2024-05-18 09:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-proxmoxve
+[2024-05-18 09:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: boastingz
+[2024-05-18 09:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: polarmints
+[2024-05-18 09:40:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: power-spherical
+[2024-05-18 09:40:41] INFO root fetch - processPackages [link-shorteners]: New version: [1.10.0] Old Version: [1.0.7]
+[2024-05-18 09:40:41] INFO root fetch - processPackages [polarmints]: New version: [0.1.9] Old Version: [0.1.8rc0]
+[2024-05-18 09:40:42] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [6.7.0] Old Version: [6.6.0]
+[2024-05-18 09:40:42] WARNING root fetch - processPackages [boastingz]: Skipping, unable to determine old version
+[2024-05-18 09:40:42] INFO root fetch - main [MainThread]: End processing [boastingz] error
+[2024-05-18 09:40:42] INFO root fetch - processPackages [TitanicSurvivalModel100424]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-18 09:40:42] INFO root fetch - processPackages [polarmints]: Downloading https://files.pythonhosted.org/packages/a3/75/ab0d055eb2a559452c254d4127e273975a4de0b11b8c8480888f93029e00/polarmints-0.1.8rc0.tar.gz
+[2024-05-18 09:40:42] WARNING root fetch - processPackages [power-spherical]: Skipping, unable to determine old version
+[2024-05-18 09:40:42] INFO root fetch - main [MainThread]: End processing [power-spherical] error
+[2024-05-18 09:40:42] INFO root fetch - processPackages [link-shorteners]: Downloading https://files.pythonhosted.org/packages/1d/d8/b5a2476b37b38a80622bf0bd0a2cb8f1c0c1eb7cadf574d8ef4093d06a13/link-shorteners-1.0.7.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [TitanicSurvivalModel100424]: Downloading https://files.pythonhosted.org/packages/8c/6f/664a9a4f32d166afffab921578e9724caff4ca712fda3003c7c27bc022b9/TitanicSurvivalModel100424-0.1.0.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [polarmints]: Downloading https://files.pythonhosted.org/packages/5a/d2/449df655d22ba9e6a43a351279766abe770cbc011dc48cd6266ea488d88b/polarmints-0.1.9.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/2e/57/bde7e0775825ba7975cb67ce261fd785dec29bed25c295581c262a2b7f48/pulumi_proxmoxve-6.6.0.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [polarmints]: executing diffoscope
+[2024-05-18 09:40:42] INFO root fetch - processPackages [polarmints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polarmints-0.1.8rc0.tar.gz tmp/polarmints-0.1.9.tar.gz --markdown 20240518/p/polarmints/0.1.8rc0-0.1.9/README.md --exclude *.pyd
+[2024-05-18 09:40:42] INFO root fetch - processPackages [link-shorteners]: Downloading https://files.pythonhosted.org/packages/43/a7/61560cf358f99bf1d7ec2c5940cf91db6923cbdcb1f407add081f20fe68f/link-shorteners-1.10.0.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [TitanicSurvivalModel100424]: Downloading https://files.pythonhosted.org/packages/ba/21/18a771bc41576012ffe0223f94fb8a391bedd42cc97108a568ed4e4d84c6/titanicsurvivalmodel100424-0.1.1.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/09/e3/3b399e39ddc7dcc14c59c8660dd4f38c7d52161d6e3e722223a1dafc063d/pulumi_proxmoxve-6.7.0.tar.gz
+[2024-05-18 09:40:42] INFO root fetch - processPackages [link-shorteners]: executing diffoscope
+[2024-05-18 09:40:42] INFO root fetch - processPackages [link-shorteners]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/link-shorteners-1.0.7.tar.gz tmp/link-shorteners-1.10.0.tar.gz --markdown 20240518/l/link-shorteners/1.0.7-1.10.0/README.md --exclude *.pyd
+[2024-05-18 09:40:42] INFO root fetch - processPackages [TitanicSurvivalModel100424]: executing diffoscope
+[2024-05-18 09:40:42] INFO root fetch - processPackages [TitanicSurvivalModel100424]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TitanicSurvivalModel100424-0.1.0.tar.gz tmp/titanicsurvivalmodel100424-0.1.1.tar.gz --markdown 20240518/T/TitanicSurvivalModel100424/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-18 09:40:42] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2024-05-18 09:40:42] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-6.6.0.tar.gz tmp/pulumi_proxmoxve-6.7.0.tar.gz --markdown 20240518/p/pulumi-proxmoxve/6.6.0-6.7.0/README.md --exclude *.pyd
+[2024-05-18 09:40:42] INFO root fetch - processPackages [polarmints]: Remove: archive file [/home/abi/fetcher/tmp/polarmints-0.1.8rc0.tar.gz]
+[2024-05-18 09:40:42] INFO root fetch - processPackages [polarmints]: Remove: archive file [/home/abi/fetcher/tmp/polarmints-0.1.9.tar.gz]
+[2024-05-18 09:40:42] INFO root fetch - main [MainThread]: End processing [polarmints]: success
+[2024-05-18 09:40:43] INFO root fetch - processPackages [link-shorteners]: Remove: archive file [/home/abi/fetcher/tmp/link-shorteners-1.0.7.tar.gz]
+[2024-05-18 09:40:43] INFO root fetch - processPackages [link-shorteners]: Remove: archive file [/home/abi/fetcher/tmp/link-shorteners-1.10.0.tar.gz]
+[2024-05-18 09:40:43] INFO root fetch - main [MainThread]: End processing [link-shorteners]: success
+[2024-05-18 09:40:43] INFO root fetch - processPackages [TitanicSurvivalModel100424]: Remove: archive file [/home/abi/fetcher/tmp/TitanicSurvivalModel100424-0.1.0.tar.gz]
+[2024-05-18 09:40:43] INFO root fetch - processPackages [TitanicSurvivalModel100424]: Remove: archive file [/home/abi/fetcher/tmp/titanicsurvivalmodel100424-0.1.1.tar.gz]
+[2024-05-18 09:40:43] INFO root fetch - main [MainThread]: End processing [TitanicSurvivalModel100424]: success
+[2024-05-18 09:40:43] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.6.0.tar.gz]
+[2024-05-18 09:40:43] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.7.0.tar.gz]
+[2024-05-18 09:40:43] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2024-05-18 09:40:43] INFO root fetch - main [MainThread]: Store serial: [23265787]
