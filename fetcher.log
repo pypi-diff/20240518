@@ -6707,3 +6707,42 @@
 [2024-05-18 03:27:56] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.1.0.dev202405170128.tar.gz]
 [2024-05-18 03:27:56] INFO root fetch - main [MainThread]: End processing [onediff]: success
 [2024-05-18 03:27:56] INFO root fetch - main [MainThread]: Store serial: [23263569]
+[2024-05-18 03:30:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263569]
+[2024-05-18 03:30:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 03:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yahist
+[2024-05-18 03:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pycellmech
+[2024-05-18 03:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-18 03:30:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flask-openapi3-scalar
+[2024-05-18 03:30:05] INFO root fetch - processPackages [abcli]: New version: [8.168.1] Old Version: [8.165.1]
+[2024-05-18 03:30:05] INFO root fetch - processPackages [flask-openapi3-scalar]: New version: [1.22.41] Old Version: [1.22.38]
+[2024-05-18 03:30:05] INFO root fetch - processPackages [pycellmech]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-05-18 03:30:05] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/c2/bf/7ed79b07b2835ab9220362ea82032cf776d7c8da564d3a5b58c64d4bdd69/abcli-8.165.1.tar.gz
+[2024-05-18 03:30:05] INFO root fetch - processPackages [yahist]: New version: [1.9.6] Old Version: [1.9.5]
+[2024-05-18 03:30:05] INFO root fetch - processPackages [flask-openapi3-scalar]: Downloading https://files.pythonhosted.org/packages/a1/a8/97fa34861877c19b80205c3aea417368c77b2e8f7c5d254c3b160ceb8342/flask_openapi3_scalar-1.22.38.tar.gz
+[2024-05-18 03:30:05] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/18/f0/13589c508a06dd328b1fb833585458db42cbc600934933dabec48f5e897e/pycellmech-2.1.4.tar.gz
+[2024-05-18 03:30:05] INFO root fetch - processPackages [yahist]: Downloading https://files.pythonhosted.org/packages/4f/72/b0fa94e59c521e2b6bd97518e650cd15a0db294fc55141ac5c7d16dcb339/yahist-1.9.5-py3-none-any.whl
+[2024-05-18 03:30:05] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e6/e0/f2da8eb93e4c6059ab84df502d604eae283cc62ae2f82da1dfa5919ba8b7/abcli-8.168.1.tar.gz
+[2024-05-18 03:30:05] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/a1/8a/0c5cf43b43ca1b66d1b290d8550c756fc807132a28fc40d1618a53e706cf/pycellmech-2.1.5.tar.gz
+[2024-05-18 03:30:06] INFO root fetch - processPackages [flask-openapi3-scalar]: Downloading https://files.pythonhosted.org/packages/cf/45/9e157656d9b09fc412e1438af5ff68cbdf42bdf60e873781167616c3d6d6/flask_openapi3_scalar-1.22.41.tar.gz
+[2024-05-18 03:30:06] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-18 03:30:06] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.165.1.tar.gz tmp/abcli-8.168.1.tar.gz --markdown 20240518/a/abcli/8.165.1-8.168.1/README.md --exclude *.pyd
+[2024-05-18 03:30:06] INFO root fetch - processPackages [pycellmech]: executing diffoscope
+[2024-05-18 03:30:06] INFO root fetch - processPackages [pycellmech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycellmech-2.1.4.tar.gz tmp/pycellmech-2.1.5.tar.gz --markdown 20240518/p/pycellmech/2.1.4-2.1.5/README.md --exclude *.pyd
+[2024-05-18 03:30:06] INFO root fetch - processPackages [flask-openapi3-scalar]: executing diffoscope
+[2024-05-18 03:30:06] INFO root fetch - processPackages [flask-openapi3-scalar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_openapi3_scalar-1.22.38.tar.gz tmp/flask_openapi3_scalar-1.22.41.tar.gz --markdown 20240518/f/flask-openapi3-scalar/1.22.38-1.22.41/README.md --exclude *.pyd
+[2024-05-18 03:30:06] INFO root fetch - processPackages [yahist]: Downloading https://files.pythonhosted.org/packages/fd/c9/cd40646f43bad4db0aef98bdc4af0c5d706cf0933ea75c06d76340fec7bf/yahist-1.9.6-py3-none-any.whl
+[2024-05-18 03:30:06] INFO root fetch - processPackages [yahist]: executing diffoscope
+[2024-05-18 03:30:06] INFO root fetch - processPackages [yahist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yahist-1.9.5-py3-none-any.whl.zip tmp/yahist-1.9.6-py3-none-any.whl.zip --markdown 20240518/y/yahist/1.9.5-1.9.6/README.md --exclude *.pyd
+[2024-05-18 03:30:06] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.4.tar.gz]
+[2024-05-18 03:30:06] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.5.tar.gz]
+[2024-05-18 03:30:06] INFO root fetch - main [MainThread]: End processing [pycellmech]: success
+[2024-05-18 03:30:06] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.165.1.tar.gz]
+[2024-05-18 03:30:06] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.168.1.tar.gz]
+[2024-05-18 03:30:06] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-18 03:30:07] INFO root fetch - processPackages [yahist]: Remove: archive file [/home/abi/fetcher/tmp/yahist-1.9.5-py3-none-any.whl.zip]
+[2024-05-18 03:30:07] INFO root fetch - processPackages [yahist]: Remove: archive file [/home/abi/fetcher/tmp/yahist-1.9.6-py3-none-any.whl.zip]
+[2024-05-18 03:30:07] INFO root fetch - main [MainThread]: End processing [yahist]: success
+[2024-05-18 03:30:20] INFO root fetch - processPackages [flask-openapi3-scalar]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3_scalar-1.22.38.tar.gz]
+[2024-05-18 03:30:20] INFO root fetch - processPackages [flask-openapi3-scalar]: Remove: archive file [/home/abi/fetcher/tmp/flask_openapi3_scalar-1.22.41.tar.gz]
+[2024-05-18 03:30:20] INFO root fetch - main [MainThread]: End processing [flask-openapi3-scalar]: success
+[2024-05-18 03:30:20] INFO root fetch - main [MainThread]: Store serial: [23263644]
