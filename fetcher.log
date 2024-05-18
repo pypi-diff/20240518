@@ -14942,3 +14942,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:28:35] WARNING root fetch - processPackages [portendingz]: Skipping, unable to determine old version
 [2024-05-18 14:28:35] INFO root fetch - main [MainThread]: End processing [portendingz] error
 [2024-05-18 14:28:35] INFO root fetch - main [MainThread]: Store serial: [23267646]
+[2024-05-18 14:30:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267646]
+[2024-05-18 14:30:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 14:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qualystbx
+[2024-05-18 14:30:44] INFO root fetch - processPackages [qualystbx]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 14:30:44] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/90/5e/4c2ae2847265fdf0aeaace13899c1e8a7e86365ce767f492afd962168931/qualystbx-0.1.0.tar.gz
+[2024-05-18 14:30:44] INFO root fetch - processPackages [qualystbx]: Downloading https://files.pythonhosted.org/packages/09/58/e2f852b23b33958935f67b5be8d5081a9ed9ebca85339f27a3ac7715c82c/qualystbx-0.2.0.tar.gz
+[2024-05-18 14:30:45] INFO root fetch - processPackages [qualystbx]: executing diffoscope
+[2024-05-18 14:30:45] INFO root fetch - processPackages [qualystbx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualystbx-0.1.0.tar.gz tmp/qualystbx-0.2.0.tar.gz --markdown 20240518/q/qualystbx/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 14:30:45] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.1.0.tar.gz]
+[2024-05-18 14:30:45] INFO root fetch - processPackages [qualystbx]: Remove: archive file [/home/abi/fetcher/tmp/qualystbx-0.2.0.tar.gz]
+[2024-05-18 14:30:45] INFO root fetch - main [MainThread]: End processing [qualystbx]: success
+[2024-05-18 14:30:45] INFO root fetch - main [MainThread]: Store serial: [23267649]
