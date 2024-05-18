@@ -17216,3 +17216,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:29:02] INFO root fetch - processPackages [pyesorm]: Remove: archive file [/home/abi/fetcher/tmp/pyesorm-0.4.4.tar.gz]
 [2024-05-18 17:29:02] INFO root fetch - main [MainThread]: End processing [pyesorm]: success
 [2024-05-18 17:29:02] INFO root fetch - main [MainThread]: Store serial: [23268833]
+[2024-05-18 17:31:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268833]
+[2024-05-18 17:31:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 17:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: warp-python
+[2024-05-18 17:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BigEDA
+[2024-05-18 17:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-md-report
+[2024-05-18 17:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitoptim
+[2024-05-18 17:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: contact-person-profile-csv-imp-local
+[2024-05-18 17:31:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: parasystolez
+[2024-05-18 17:31:11] INFO root fetch - processPackages [warp-python]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-05-18 17:31:11] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:31:11] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 17:31:11] INFO root fetch - processPackages [BigEDA]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 17:31:11] INFO root fetch - processPackages [pytest-md-report]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-18 17:31:11] WARNING root fetch - processPackages [parasystolez]: Skipping, unable to determine old version
+[2024-05-18 17:31:11] INFO root fetch - main [MainThread]: End processing [parasystolez] error
+[2024-05-18 17:31:11] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/2f/fe/5c10bf9dfaa50e4e1234e81e022638b3ef20c821e939dae4cdc3da332e46/bigeda-0.0.8.tar.gz
+[2024-05-18 17:31:11] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:31:11] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/38/8e/697a7a19f7efccb43ada97483628a3b05cd2c0ecf731e43238d4c94beb46/contact_person_profile_csv_imp_local-0.0.8.tar.gz
+[2024-05-18 17:31:11] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/21/81/e0236781777845a47add2533f0aacae2023fa25478db7f8d629bf69e5ffc/warp_python-1.2.5.tar.gz
+[2024-05-18 17:31:11] INFO root fetch - processPackages [pytest-md-report]: Downloading https://files.pythonhosted.org/packages/9e/99/a63757c50ed07fe7d4d11ce50e6f977ec8ed7a7f7cf6629aa01eef39c3db/pytest_md_report-0.6.1.tar.gz
+[2024-05-18 17:31:12] INFO root fetch - processPackages [BigEDA]: Downloading https://files.pythonhosted.org/packages/b1/5d/ec41b2b9af7223a14c0e82d4f64cbeb0d0339a0d8bca37dbb041af6ef14d/bigeda-0.0.9.tar.gz
+[2024-05-18 17:31:12] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:31:12] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Downloading https://files.pythonhosted.org/packages/2c/27/f654a86e934199e979e23917591a3a16a0877f5bfff9aa07956945918b8b/contact_person_profile_csv_imp_local-0.0.9.tar.gz
+[2024-05-18 17:31:12] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:31:12] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:31:12] INFO root fetch - processPackages [BigEDA]: executing diffoscope
+[2024-05-18 17:31:12] INFO root fetch - processPackages [BigEDA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigeda-0.0.8.tar.gz tmp/bigeda-0.0.9.tar.gz --markdown 20240518/B/BigEDA/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:31:12] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/e5/5e/51ccbba2a75decda8786a02aee1cb16d14a354bda936804e9de6858a1854/warp_python-1.2.6.tar.gz
+[2024-05-18 17:31:12] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: executing diffoscope
+[2024-05-18 17:31:12] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz --markdown 20240518/c/contact-person-profile-csv-imp-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:31:12] INFO root fetch - processPackages [pytest-md-report]: Downloading https://files.pythonhosted.org/packages/62/b3/b68a712044b2096c28edf73e262e17e56c82a30f55abc16b8e9d39c24650/pytest_md_report-0.6.2.tar.gz
+[2024-05-18 17:31:12] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 17:31:12] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.5.tar.gz tmp/warp_python-1.2.6.tar.gz --markdown 20240518/w/warp-python/1.2.5-1.2.6/README.md --exclude *.pyd
+[2024-05-18 17:31:12] INFO root fetch - processPackages [pytest-md-report]: executing diffoscope
+[2024-05-18 17:31:12] INFO root fetch - processPackages [pytest-md-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_md_report-0.6.1.tar.gz tmp/pytest_md_report-0.6.2.tar.gz --markdown 20240518/p/pytest-md-report/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-18 17:31:12] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:31:12] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.8.tar.gz]
+[2024-05-18 17:31:12] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:31:12] INFO root fetch - processPackages [contact-person-profile-csv-imp-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_person_profile_csv_imp_local-0.0.9.tar.gz]
+[2024-05-18 17:31:12] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:31:12] INFO root fetch - main [MainThread]: End processing [contact-person-profile-csv-imp-local]: success
+[2024-05-18 17:31:13] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.8.tar.gz]
+[2024-05-18 17:31:13] INFO root fetch - processPackages [BigEDA]: Remove: archive file [/home/abi/fetcher/tmp/bigeda-0.0.9.tar.gz]
+[2024-05-18 17:31:13] INFO root fetch - main [MainThread]: End processing [BigEDA]: success
+[2024-05-18 17:31:13] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.5.tar.gz]
+[2024-05-18 17:31:13] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.6.tar.gz]
+[2024-05-18 17:31:13] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 17:31:13] INFO root fetch - processPackages [pytest-md-report]: Remove: archive file [/home/abi/fetcher/tmp/pytest_md_report-0.6.1.tar.gz]
+[2024-05-18 17:31:13] INFO root fetch - processPackages [pytest-md-report]: Remove: archive file [/home/abi/fetcher/tmp/pytest_md_report-0.6.2.tar.gz]
+[2024-05-18 17:31:13] INFO root fetch - main [MainThread]: End processing [pytest-md-report]: success
+[2024-05-18 17:31:13] INFO root fetch - main [MainThread]: Store serial: [23268852]
