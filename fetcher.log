@@ -9788,3 +9788,33 @@
 [2024-05-18 07:17:36] INFO root fetch - processPackages [odoo-addon-mrp-multi-level]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mrp_multi_level-17.0.1.0.1-py3-none-any.whl.zip]
 [2024-05-18 07:17:36] INFO root fetch - main [MainThread]: End processing [odoo-addon-mrp-multi-level]: success
 [2024-05-18 07:17:36] INFO root fetch - main [MainThread]: Store serial: [23264902]
+[2024-05-18 07:19:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264902]
+[2024-05-18 07:19:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 07:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-manufacture
+[2024-05-18 07:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gsmyexapmle
+[2024-05-18 07:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pranay-algebrator
+[2024-05-18 07:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: algebrator
+[2024-05-18 07:19:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-eidos
+[2024-05-18 07:19:45] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: New version: [16.0.20240327.2] Old Version: [16.0.20240302.1]
+[2024-05-18 07:19:45] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Downloading https://files.pythonhosted.org/packages/34/0e/23faa46a864cd82cb6cfb55722b409ca7d2d4616516b8e888f1292548cc5/odoo_addons_oca_manufacture-16.0.20240302.1-py3-none-any.whl
+[2024-05-18 07:19:45] WARNING root fetch - processPackages [pranay-algebrator]: Skipping, unable to determine old version
+[2024-05-18 07:19:45] INFO root fetch - main [MainThread]: End processing [pranay-algebrator] error
+[2024-05-18 07:19:45] WARNING root fetch - processPackages [algebrator]: Skipping, unable to determine old version
+[2024-05-18 07:19:45] WARNING root fetch - processPackages [gsmyexapmle]: Skipping, unable to determine old version
+[2024-05-18 07:19:45] INFO root fetch - main [MainThread]: End processing [algebrator] error
+[2024-05-18 07:19:45] INFO root fetch - main [MainThread]: End processing [gsmyexapmle] error
+[2024-05-18 07:19:45] INFO root fetch - processPackages [streamlit-eidos]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 07:19:46] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Downloading https://files.pythonhosted.org/packages/e4/15/ecef7f829fdebd308f6c4170d02e787ab5dcad88eea494b24c59121c206a/odoo_addons_oca_manufacture-16.0.20240327.2-py3-none-any.whl
+[2024-05-18 07:19:46] INFO root fetch - processPackages [streamlit-eidos]: Downloading https://files.pythonhosted.org/packages/a0/f3/dd1cb1612db64a3c6c249848437fd0c16d406b33bf205c8325cdd35d9071/streamlit-eidos-0.1.0.tar.gz
+[2024-05-18 07:19:46] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: executing diffoscope
+[2024-05-18 07:19:46] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_manufacture-16.0.20240302.1-py3-none-any.whl.zip tmp/odoo_addons_oca_manufacture-16.0.20240327.2-py3-none-any.whl.zip --markdown 20240518/o/odoo-addons-oca-manufacture/16.0.20240302.1-16.0.20240327.2/README.md --exclude *.pyd
+[2024-05-18 07:19:46] INFO root fetch - processPackages [streamlit-eidos]: Downloading https://files.pythonhosted.org/packages/88/00/db5dad1656cace34251e2684d693b58724a5fc8bce7021f4e0a0e1f3d6c8/streamlit-eidos-0.2.0.tar.gz
+[2024-05-18 07:19:46] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_manufacture-16.0.20240302.1-py3-none-any.whl.zip]
+[2024-05-18 07:19:46] INFO root fetch - processPackages [odoo-addons-oca-manufacture]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_manufacture-16.0.20240327.2-py3-none-any.whl.zip]
+[2024-05-18 07:19:46] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-manufacture]: success
+[2024-05-18 07:19:46] INFO root fetch - processPackages [streamlit-eidos]: executing diffoscope
+[2024-05-18 07:19:46] INFO root fetch - processPackages [streamlit-eidos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-eidos-0.1.0.tar.gz tmp/streamlit-eidos-0.2.0.tar.gz --markdown 20240518/s/streamlit-eidos/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 07:19:47] INFO root fetch - processPackages [streamlit-eidos]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-eidos-0.1.0.tar.gz]
+[2024-05-18 07:19:47] INFO root fetch - processPackages [streamlit-eidos]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-eidos-0.2.0.tar.gz]
+[2024-05-18 07:19:47] INFO root fetch - main [MainThread]: End processing [streamlit-eidos]: success
+[2024-05-18 07:19:47] INFO root fetch - main [MainThread]: Store serial: [23264922]
