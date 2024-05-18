@@ -16120,3 +16120,54 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:05:22] INFO root fetch - processPackages [nvidia-dali-nightly-cuda120]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda120-1.39.0.dev20240517.tar.gz]
 [2024-05-18 16:05:22] INFO root fetch - main [MainThread]: End processing [nvidia-dali-nightly-cuda120]: success
 [2024-05-18 16:05:22] INFO root fetch - main [MainThread]: Store serial: [23268281]
+[2024-05-18 16:07:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268281]
+[2024-05-18 16:07:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 16:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cherrygpt
+[2024-05-18 16:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvidia-dali-tf-plugin-nightly-cuda120
+[2024-05-18 16:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neuralnetlib
+[2024-05-18 16:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outpostkit
+[2024-05-18 16:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hgitaly
+[2024-05-18 16:07:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datapools
+[2024-05-18 16:07:32] INFO root fetch - processPackages [outpostkit]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-18 16:07:32] WARNING root fetch - processPackages [cherrygpt]: Skipping, unable to determine old version
+[2024-05-18 16:07:32] INFO root fetch - main [MainThread]: End processing [cherrygpt] error
+[2024-05-18 16:07:32] INFO root fetch - processPackages [neuralnetlib]: New version: [2.5.1] Old Version: [2.5.0]
+[2024-05-18 16:07:32] INFO root fetch - processPackages [datapools]: New version: [1.0.56] Old Version: [1.0.55]
+[2024-05-18 16:07:32] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: New version: [1.39.0.dev20240517] Old Version: [1.38.0.dev20240507]
+[2024-05-18 16:07:32] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/e8/20/6f4f3b0edb61dd5f691668605b0901894c58c85e728662fff6913423203c/outpostkit-0.0.7.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/c5/49/c4c44a48b879e3503ed3d81d4f02446d6eb02853028124597305027323d1/neuralnetlib-2.5.0.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [hgitaly]: New version: [1.5.0] Old Version: [1.4.1]
+[2024-05-18 16:07:32] INFO root fetch - processPackages [datapools]: Downloading https://files.pythonhosted.org/packages/8a/f6/94db58f56902ae3fbe29621edc845b8cd288c239a9101b491062caa8a9a0/datapools-1.0.55.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: Downloading https://files.pythonhosted.org/packages/89/71/a4a2066ebe006ab2d37652b5c72cb1a25e682d33333ddafa941ed6aa5254/nvidia_dali_tf_plugin_nightly_cuda120-1.38.0.dev20240507.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [outpostkit]: Downloading https://files.pythonhosted.org/packages/b3/af/8945c62fc6dc5596e5618810b3971a4c11d217517a24d0cd40a10b5b9553/outpostkit-0.0.9.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [neuralnetlib]: Downloading https://files.pythonhosted.org/packages/dd/e7/7097142c4171805eb7202bf930296537e3bfae3368f333478874f2f936f6/neuralnetlib-2.5.1.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [hgitaly]: Downloading https://files.pythonhosted.org/packages/2e/68/6091a837c062148ba08a4118254ace131e3317bca72ac2b1d6f12aa1e565/hgitaly-1.4.1.tar.gz
+[2024-05-18 16:07:32] INFO root fetch - processPackages [outpostkit]: executing diffoscope
+[2024-05-18 16:07:32] INFO root fetch - processPackages [outpostkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostkit-0.0.7.tar.gz tmp/outpostkit-0.0.9.tar.gz --markdown 20240518/o/outpostkit/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-18 16:07:33] INFO root fetch - processPackages [neuralnetlib]: executing diffoscope
+[2024-05-18 16:07:33] INFO root fetch - processPackages [neuralnetlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuralnetlib-2.5.0.tar.gz tmp/neuralnetlib-2.5.1.tar.gz --markdown 20240518/n/neuralnetlib/2.5.0-2.5.1/README.md --exclude *.pyd
+[2024-05-18 16:07:33] INFO root fetch - processPackages [datapools]: Downloading https://files.pythonhosted.org/packages/84/6d/75c9435300720198c5fe0fa88c86fb830584e1f8e8949e950af49b88423e/datapools-1.0.56.tar.gz
+[2024-05-18 16:07:33] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: Downloading https://files.pythonhosted.org/packages/85/dd/088aebb1322e639f35f139cbba137184f5158ad73c306fcf2eb078448c3e/nvidia_dali_tf_plugin_nightly_cuda120-1.39.0.dev20240517.tar.gz
+[2024-05-18 16:07:33] INFO root fetch - processPackages [hgitaly]: Downloading https://files.pythonhosted.org/packages/fb/f2/831e61d3224c71e37f2c5034bcdf54822ebdf6d986d5cb44a1a312034561/hgitaly-1.5.0.tar.gz
+[2024-05-18 16:07:33] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: executing diffoscope
+[2024-05-18 16:07:33] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_tf_plugin_nightly_cuda120-1.38.0.dev20240507.tar.gz tmp/nvidia_dali_tf_plugin_nightly_cuda120-1.39.0.dev20240517.tar.gz --markdown 20240518/n/nvidia-dali-tf-plugin-nightly-cuda120/1.38.0.dev20240507-1.39.0.dev20240517/README.md --exclude *.pyd
+[2024-05-18 16:07:33] INFO root fetch - processPackages [datapools]: executing diffoscope
+[2024-05-18 16:07:33] INFO root fetch - processPackages [datapools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datapools-1.0.55.tar.gz tmp/datapools-1.0.56.tar.gz --markdown 20240518/d/datapools/1.0.55-1.0.56/README.md --exclude *.pyd
+[2024-05-18 16:07:33] INFO root fetch - processPackages [hgitaly]: executing diffoscope
+[2024-05-18 16:07:33] INFO root fetch - processPackages [hgitaly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgitaly-1.4.1.tar.gz tmp/hgitaly-1.5.0.tar.gz --markdown 20240518/h/hgitaly/1.4.1-1.5.0/README.md --exclude *.pyd
+[2024-05-18 16:07:33] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.5.0.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - processPackages [neuralnetlib]: Remove: archive file [/home/abi/fetcher/tmp/neuralnetlib-2.5.1.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - main [MainThread]: End processing [neuralnetlib]: success
+[2024-05-18 16:07:33] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.7.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - processPackages [outpostkit]: Remove: archive file [/home/abi/fetcher/tmp/outpostkit-0.0.9.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - main [MainThread]: End processing [outpostkit]: success
+[2024-05-18 16:07:33] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_tf_plugin_nightly_cuda120-1.38.0.dev20240507.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda120]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_tf_plugin_nightly_cuda120-1.39.0.dev20240517.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - main [MainThread]: End processing [nvidia-dali-tf-plugin-nightly-cuda120]: success
+[2024-05-18 16:07:33] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.55.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.56.tar.gz]
+[2024-05-18 16:07:33] INFO root fetch - main [MainThread]: End processing [datapools]: success
+[2024-05-18 16:07:34] INFO root fetch - processPackages [hgitaly]: Remove: archive file [/home/abi/fetcher/tmp/hgitaly-1.4.1.tar.gz]
+[2024-05-18 16:07:34] INFO root fetch - processPackages [hgitaly]: Remove: archive file [/home/abi/fetcher/tmp/hgitaly-1.5.0.tar.gz]
+[2024-05-18 16:07:34] INFO root fetch - main [MainThread]: End processing [hgitaly]: success
+[2024-05-18 16:07:34] INFO root fetch - main [MainThread]: Store serial: [23268296]
