@@ -12754,3 +12754,39 @@
 [2024-05-18 11:31:56] INFO root fetch - processPackages [Glances]: Remove: archive file [/home/abi/fetcher/tmp/glances-4.0.5.tar.gz]
 [2024-05-18 11:31:56] INFO root fetch - main [MainThread]: End processing [Glances]: success
 [2024-05-18 11:31:56] INFO root fetch - main [MainThread]: Store serial: [23266639]
+[2024-05-18 11:34:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266639]
+[2024-05-18 11:34:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: policyengine-us
+[2024-05-18 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-18 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyanodermaz
+[2024-05-18 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nautilus_trader
+[2024-05-18 11:34:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: msg91-otp-widget
+[2024-05-18 11:34:06] INFO root fetch - processPackages [mimllearning]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 11:34:06] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/01/19/bfbea72ad47ab5447ad6cb90652413489191201adb3c2e7a9013402809c5/mimllearning-0.4.8.tar.gz
+[2024-05-18 11:34:06] WARNING root fetch - processPackages [cyanodermaz]: Skipping, unable to determine old version
+[2024-05-18 11:34:06] INFO root fetch - main [MainThread]: End processing [cyanodermaz] error
+[2024-05-18 11:34:06] INFO root fetch - processPackages [nautilus_trader]: New version: [1.192.0] Old Version: [1.191.0]
+[2024-05-18 11:34:06] INFO root fetch - processPackages [policyengine-us]: New version: [0.777.0] Old Version: [0.776.0]
+[2024-05-18 11:34:06] WARNING root fetch - processPackages [msg91-otp-widget]: Skipping, unable to determine old version
+[2024-05-18 11:34:06] INFO root fetch - main [MainThread]: End processing [msg91-otp-widget] error
+[2024-05-18 11:34:06] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/c8/b4/a2674ca3eda3caf1856dfce34691d9beee4f7ac53873e2b3d60f8d73cf41/policyengine-us-0.776.0.tar.gz
+[2024-05-18 11:34:06] INFO root fetch - processPackages [nautilus_trader]: Downloading https://files.pythonhosted.org/packages/1f/12/5312e6f905790d62ec3d13ddbbeedea961470c09c56a6b38b12613a7859d/nautilus_trader-1.191.0.tar.gz
+[2024-05-18 11:34:06] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/84/bd/958d70b5217227bc933005c3bb746e70ea6d2a534843b2e0f6a0e93e2c98/mimllearning-0.4.9.tar.gz
+[2024-05-18 11:34:06] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-18 11:34:06] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.8.tar.gz tmp/mimllearning-0.4.9.tar.gz --markdown 20240518/m/mimllearning/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 11:34:07] INFO root fetch - processPackages [nautilus_trader]: Downloading https://files.pythonhosted.org/packages/c1/3d/b6a0f4c82625cc89398eb463806bc118eff8695cfad7741aaa3c45f73dbe/nautilus_trader-1.192.0.tar.gz
+[2024-05-18 11:34:07] INFO root fetch - processPackages [nautilus_trader]: executing diffoscope
+[2024-05-18 11:34:07] INFO root fetch - processPackages [nautilus_trader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautilus_trader-1.191.0.tar.gz tmp/nautilus_trader-1.192.0.tar.gz --markdown 20240518/n/nautilus_trader/1.191.0-1.192.0/README.md --exclude *.pyd
+[2024-05-18 11:34:07] INFO root fetch - processPackages [policyengine-us]: Downloading https://files.pythonhosted.org/packages/ca/4c/43469c3f4a12cc83754ec7cceb38d566da9b973b314fe21d415f5c30b1b8/policyengine-us-0.777.0.tar.gz
+[2024-05-18 11:34:07] INFO root fetch - processPackages [policyengine-us]: executing diffoscope
+[2024-05-18 11:34:07] INFO root fetch - processPackages [policyengine-us]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policyengine-us-0.776.0.tar.gz tmp/policyengine-us-0.777.0.tar.gz --markdown 20240518/p/policyengine-us/0.776.0-0.777.0/README.md --exclude *.pyd
+[2024-05-18 11:34:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.8.tar.gz]
+[2024-05-18 11:34:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
+[2024-05-18 11:34:07] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-18 11:34:15] INFO root fetch - processPackages [nautilus_trader]: Remove: archive file [/home/abi/fetcher/tmp/nautilus_trader-1.191.0.tar.gz]
+[2024-05-18 11:34:15] INFO root fetch - processPackages [nautilus_trader]: Remove: archive file [/home/abi/fetcher/tmp/nautilus_trader-1.192.0.tar.gz]
+[2024-05-18 11:34:15] INFO root fetch - main [MainThread]: End processing [nautilus_trader]: success
+[2024-05-18 11:34:40] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.776.0.tar.gz]
+[2024-05-18 11:34:40] INFO root fetch - processPackages [policyengine-us]: Remove: archive file [/home/abi/fetcher/tmp/policyengine-us-0.777.0.tar.gz]
+[2024-05-18 11:34:40] INFO root fetch - main [MainThread]: End processing [policyengine-us]: success
+[2024-05-18 11:34:40] INFO root fetch - main [MainThread]: Store serial: [23266652]
