@@ -14721,3 +14721,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:11:09] INFO root fetch - processPackages [cdk-sops-secrets]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sops-secrets-1.8.3.tar.gz]
 [2024-05-18 14:11:09] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2024-05-18 14:11:09] INFO root fetch - main [MainThread]: Store serial: [23267530]
+[2024-05-18 14:13:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267530]
+[2024-05-18 14:13:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 14:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aggradationz
+[2024-05-18 14:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otonagai-dl
+[2024-05-18 14:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: backtrader-paperswithbacktest
+[2024-05-18 14:13:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyo3Tree
+[2024-05-18 14:13:18] WARNING root fetch - processPackages [pyo3Tree]: Skipping, unable to determine old version
+[2024-05-18 14:13:18] INFO root fetch - main [MainThread]: End processing [pyo3Tree] error
+[2024-05-18 14:13:18] WARNING root fetch - processPackages [aggradationz]: Skipping, unable to determine old version
+[2024-05-18 14:13:18] INFO root fetch - main [MainThread]: End processing [aggradationz] error
+[2024-05-18 14:13:18] INFO root fetch - processPackages [otonagai-dl]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 14:13:18] WARNING root fetch - processPackages [backtrader-paperswithbacktest]: Skipping, unable to determine old version
+[2024-05-18 14:13:18] INFO root fetch - main [MainThread]: End processing [backtrader-paperswithbacktest] error
+[2024-05-18 14:13:18] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/3a/a6/c049c7541dbd18fafef8edc18ef1e6fe559194052ad540537ca704f67d1a/otonagai_dl-1.0.0.tar.gz
+[2024-05-18 14:13:18] INFO root fetch - processPackages [otonagai-dl]: Downloading https://files.pythonhosted.org/packages/67/c7/a77fba971ceb626b8c5212ae2f1afbc35b3c793f8f69f6fcfa879ba611fe/otonagai_dl-1.0.1.tar.gz
+[2024-05-18 14:13:18] INFO root fetch - processPackages [otonagai-dl]: executing diffoscope
+[2024-05-18 14:13:18] INFO root fetch - processPackages [otonagai-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otonagai_dl-1.0.0.tar.gz tmp/otonagai_dl-1.0.1.tar.gz --markdown 20240518/o/otonagai-dl/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 14:13:19] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.0.tar.gz]
+[2024-05-18 14:13:19] INFO root fetch - processPackages [otonagai-dl]: Remove: archive file [/home/abi/fetcher/tmp/otonagai_dl-1.0.1.tar.gz]
+[2024-05-18 14:13:19] INFO root fetch - main [MainThread]: End processing [otonagai-dl]: success
+[2024-05-18 14:13:19] INFO root fetch - main [MainThread]: Store serial: [23267546]
