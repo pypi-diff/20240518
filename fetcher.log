@@ -11659,3 +11659,26 @@
 [2024-05-18 10:00:14] INFO root fetch - processPackages [typedload]: Remove: archive file [/home/abi/fetcher/tmp/typedload-2.9.tar.gz]
 [2024-05-18 10:00:14] INFO root fetch - main [MainThread]: End processing [typedload]: success
 [2024-05-18 10:00:14] INFO root fetch - main [MainThread]: Store serial: [23265875]
+[2024-05-18 10:02:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265875]
+[2024-05-18 10:02:24] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 10:04:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265876]
+[2024-05-18 10:04:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 10:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polarmints
+[2024-05-18 10:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langfun
+[2024-05-18 10:04:30] INFO root fetch - processPackages [polarmints]: New version: [0.1.9] Old Version: [0.1.8rc0]
+[2024-05-18 10:04:30] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240517] Old Version: [0.0.2.dev20240516]
+[2024-05-18 10:04:30] INFO root fetch - processPackages [polarmints]: Downloading https://files.pythonhosted.org/packages/a3/75/ab0d055eb2a559452c254d4127e273975a4de0b11b8c8480888f93029e00/polarmints-0.1.8rc0.tar.gz
+[2024-05-18 10:04:30] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/4f/50/dd54895e0e0097835f0126391fe840343f45669cf3c97a531e734529178a/langfun-0.0.2.dev20240516.tar.gz
+[2024-05-18 10:04:30] INFO root fetch - processPackages [polarmints]: Downloading https://files.pythonhosted.org/packages/5a/d2/449df655d22ba9e6a43a351279766abe770cbc011dc48cd6266ea488d88b/polarmints-0.1.9.tar.gz
+[2024-05-18 10:04:30] INFO root fetch - processPackages [polarmints]: executing diffoscope
+[2024-05-18 10:04:30] INFO root fetch - processPackages [polarmints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polarmints-0.1.8rc0.tar.gz tmp/polarmints-0.1.9.tar.gz --markdown 20240518/p/polarmints/0.1.8rc0-0.1.9/README.md --exclude *.pyd
+[2024-05-18 10:04:30] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/58/7f/97bc9748cc11e5a433d57381950bd87238c7ac341f9837a5f76029196c9c/langfun-0.0.2.dev20240517.tar.gz
+[2024-05-18 10:04:30] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-18 10:04:30] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240516.tar.gz tmp/langfun-0.0.2.dev20240517.tar.gz --markdown 20240518/l/langfun/0.0.2.dev20240516-0.0.2.dev20240517/README.md --exclude *.pyd
+[2024-05-18 10:04:31] INFO root fetch - processPackages [polarmints]: Remove: archive file [/home/abi/fetcher/tmp/polarmints-0.1.8rc0.tar.gz]
+[2024-05-18 10:04:31] INFO root fetch - processPackages [polarmints]: Remove: archive file [/home/abi/fetcher/tmp/polarmints-0.1.9.tar.gz]
+[2024-05-18 10:04:31] INFO root fetch - main [MainThread]: End processing [polarmints]: success
+[2024-05-18 10:04:31] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240516.tar.gz]
+[2024-05-18 10:04:31] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240517.tar.gz]
+[2024-05-18 10:04:31] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-18 10:04:31] INFO root fetch - main [MainThread]: Store serial: [23265882]
