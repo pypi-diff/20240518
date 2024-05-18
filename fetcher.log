@@ -19016,3 +19016,57 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:28:08] INFO root fetch - processPackages [gogotable]: Remove: archive file [/home/abi/fetcher/tmp/gogotable-0.1.2.tar.gz]
 [2024-05-18 19:28:08] INFO root fetch - main [MainThread]: End processing [gogotable]: success
 [2024-05-18 19:28:08] INFO root fetch - main [MainThread]: Store serial: [23269670]
+[2024-05-18 19:30:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269670]
+[2024-05-18 19:30:17] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymonit
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heartburnz
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amoo-sajjad-cow
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: paperless-asn-qr-codes
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PKNSETools
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: funcy-typing
+[2024-05-18 19:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyclassparser
+[2024-05-18 19:30:17] INFO root fetch - processPackages [PKNSETools]: New version: [0.1.20240518.111] Old Version: [0.1.20240517.110]
+[2024-05-18 19:30:17] INFO root fetch - processPackages [pyclassparser]: New version: [0.2] Old Version: [0.1]
+[2024-05-18 19:30:17] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/14/1f/d6a911109404212127b67f380d50dbfb7f8003f061a3bc2a9616abf258ac/PKNSETools-0.1.20240517.110.tar.gz
+[2024-05-18 19:30:17] INFO root fetch - processPackages [funcy-typing]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-18 19:30:17] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/e3/04/0569861a45a39d07f659a5deca24b1d20a077e6089fa49438c56a15cce5c/pyclassparser-0.1.tar.gz
+[2024-05-18 19:30:17] WARNING root fetch - processPackages [amoo-sajjad-cow]: Skipping, unable to determine old version
+[2024-05-18 19:30:17] INFO root fetch - main [MainThread]: End processing [amoo-sajjad-cow] error
+[2024-05-18 19:30:17] INFO root fetch - processPackages [paperless-asn-qr-codes]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-18 19:30:17] WARNING root fetch - processPackages [heartburnz]: Skipping, unable to determine old version
+[2024-05-18 19:30:17] INFO root fetch - main [MainThread]: End processing [heartburnz] error
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pymonit]: New version: [1.4.0] Old Version: [1.3.21]
+[2024-05-18 19:30:18] INFO root fetch - processPackages [funcy-typing]: Downloading https://files.pythonhosted.org/packages/24/48/306fe3d906314080e317dabce37773f37c241fd3fd2e1114595c3b45a7e4/funcy_typing-2.0.0.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/b1/26/b03b1e7832cbab3f720e9bf67a72ed5315cdcbe7545de71396d2152e648e/pyclassparser-0.2.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [paperless-asn-qr-codes]: Downloading https://files.pythonhosted.org/packages/ea/47/8d46467a7f5d7d68cf11eecd958d3d2e2ae0015b541b4d8a337109439576/paperless_asn_qr_codes-0.2.0.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [PKNSETools]: Downloading https://files.pythonhosted.org/packages/87/da/a322b707a432cd8f2a124cc13101f89212a8a1ea488bdd0aa31c1507ef43/PKNSETools-0.1.20240518.111.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pyclassparser]: executing diffoscope
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pyclassparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclassparser-0.1.tar.gz tmp/pyclassparser-0.2.tar.gz --markdown 20240518/p/pyclassparser/0.1-0.2/README.md --exclude *.pyd
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/2a/6f/4b1f1f826169bcdbf2e48eaaecdf1d99f4ae9af17bbf418aae02747106a0/pymonit-1.3.21.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [PKNSETools]: executing diffoscope
+[2024-05-18 19:30:18] INFO root fetch - processPackages [PKNSETools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKNSETools-0.1.20240517.110.tar.gz tmp/PKNSETools-0.1.20240518.111.tar.gz --markdown 20240518/P/PKNSETools/0.1.20240517.110-0.1.20240518.111/README.md --exclude *.pyd
+[2024-05-18 19:30:18] INFO root fetch - processPackages [funcy-typing]: Downloading https://files.pythonhosted.org/packages/03/ac/f5462f281d8eaa80f85d6955b9d0984f639d81833fa046ef9cea6f0fa6c5/funcy_typing-2.0.1.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [funcy-typing]: executing diffoscope
+[2024-05-18 19:30:18] INFO root fetch - processPackages [funcy-typing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcy_typing-2.0.0.tar.gz tmp/funcy_typing-2.0.1.tar.gz --markdown 20240518/f/funcy-typing/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-18 19:30:18] INFO root fetch - processPackages [paperless-asn-qr-codes]: Downloading https://files.pythonhosted.org/packages/c3/42/fef7a2e5bdffc6181ab3c0f9fff056d08d499fced5ae4687f20113f1f46c/paperless_asn_qr_codes-0.3.0.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pymonit]: Downloading https://files.pythonhosted.org/packages/c1/d1/6de847eab87581d6f8be98043952bf2fb136900b3489d1914e93e7cccee3/pymonit-1.4.0.tar.gz
+[2024-05-18 19:30:18] INFO root fetch - processPackages [paperless-asn-qr-codes]: executing diffoscope
+[2024-05-18 19:30:18] INFO root fetch - processPackages [paperless-asn-qr-codes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paperless_asn_qr_codes-0.2.0.tar.gz tmp/paperless_asn_qr_codes-0.3.0.tar.gz --markdown 20240518/p/paperless-asn-qr-codes/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.1.tar.gz]
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.2.tar.gz]
+[2024-05-18 19:30:18] INFO root fetch - main [MainThread]: End processing [pyclassparser]: success
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pymonit]: executing diffoscope
+[2024-05-18 19:30:18] INFO root fetch - processPackages [pymonit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymonit-1.3.21.tar.gz tmp/pymonit-1.4.0.tar.gz --markdown 20240518/p/pymonit/1.3.21-1.4.0/README.md --exclude *.pyd
+[2024-05-18 19:30:19] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240517.110.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - processPackages [PKNSETools]: Remove: archive file [/home/abi/fetcher/tmp/PKNSETools-0.1.20240518.111.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - main [MainThread]: End processing [PKNSETools]: success
+[2024-05-18 19:30:19] INFO root fetch - processPackages [funcy-typing]: Remove: archive file [/home/abi/fetcher/tmp/funcy_typing-2.0.0.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - processPackages [funcy-typing]: Remove: archive file [/home/abi/fetcher/tmp/funcy_typing-2.0.1.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - main [MainThread]: End processing [funcy-typing]: success
+[2024-05-18 19:30:19] INFO root fetch - processPackages [paperless-asn-qr-codes]: Remove: archive file [/home/abi/fetcher/tmp/paperless_asn_qr_codes-0.2.0.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - processPackages [paperless-asn-qr-codes]: Remove: archive file [/home/abi/fetcher/tmp/paperless_asn_qr_codes-0.3.0.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - main [MainThread]: End processing [paperless-asn-qr-codes]: success
+[2024-05-18 19:30:19] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.3.21.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - processPackages [pymonit]: Remove: archive file [/home/abi/fetcher/tmp/pymonit-1.4.0.tar.gz]
+[2024-05-18 19:30:19] INFO root fetch - main [MainThread]: End processing [pymonit]: success
+[2024-05-18 19:30:19] INFO root fetch - main [MainThread]: Store serial: [23269695]
