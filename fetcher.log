@@ -17585,3 +17585,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:53:00] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.5.7rc197.tar.gz]
 [2024-05-18 17:53:00] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
 [2024-05-18 17:53:00] INFO root fetch - main [MainThread]: Store serial: [23268979]
+[2024-05-18 17:55:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268979]
+[2024-05-18 17:55:10] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HueBLE
+[2024-05-18 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Simba-UW-tf-dev
+[2024-05-18 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: model-explorer-onnx
+[2024-05-18 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: s3path
+[2024-05-18 17:55:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bdmc
+[2024-05-18 17:55:10] INFO root fetch - processPackages [bdmc]: New version: [0.1.5.8] Old Version: [0.1.5.7]
+[2024-05-18 17:55:10] INFO root fetch - processPackages [model-explorer-onnx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-18 17:55:11] INFO root fetch - processPackages [Simba-UW-tf-dev]: New version: [1.92.3] Old Version: [1.92.2]
+[2024-05-18 17:55:11] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/ac/a9/c4a2f6c656a52c70a71d25d7b1bb1d4563019a5d4abff26dff5bf6693320/bdmc-0.1.5.7.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/55/b2/28653433bfcdc68a92e39c39ee90dc9a69f35d760baa642e6ce7158cb37b/model_explorer_onnx-0.1.4.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [HueBLE]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-18 17:55:11] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/0c/ca/ce828f58d8d781a42364fa74eb32854a306dc1aec775147fa95c6d95dfe0/Simba-UW-tf-dev-1.92.2.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [s3path]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-18 17:55:11] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/c4/e6/1bc1ca7e261f8f0f64116d396221beaff4f929d427bb01547a1f67531ea7/hueble-1.0.3.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [bdmc]: Downloading https://files.pythonhosted.org/packages/7b/a4/6d673f004389618881a3a5641b084f02f3e3c9606bea3e6b2a5fb9f265d6/bdmc-0.1.5.8.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [s3path]: Downloading https://files.pythonhosted.org/packages/67/35/4aaa21a4be76baffcec7150b02a121dca7e50e4480b9978e1c57957a1e6e/s3path-0.5.6.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [model-explorer-onnx]: Downloading https://files.pythonhosted.org/packages/f9/39/0c3e0c0009c696f44733244d06cc29560b0d9a9b11c21511713acb5a8d8a/model_explorer_onnx-0.1.5.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [bdmc]: executing diffoscope
+[2024-05-18 17:55:11] INFO root fetch - processPackages [bdmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdmc-0.1.5.7.tar.gz tmp/bdmc-0.1.5.8.tar.gz --markdown 20240518/b/bdmc/0.1.5.7-0.1.5.8/README.md --exclude *.pyd
+[2024-05-18 17:55:11] INFO root fetch - processPackages [model-explorer-onnx]: executing diffoscope
+[2024-05-18 17:55:11] INFO root fetch - processPackages [model-explorer-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_explorer_onnx-0.1.4.tar.gz tmp/model_explorer_onnx-0.1.5.tar.gz --markdown 20240518/m/model-explorer-onnx/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-18 17:55:11] INFO root fetch - processPackages [HueBLE]: Downloading https://files.pythonhosted.org/packages/3e/af/4b39f334f64ac6c13df2719b6516eaaab94b2ba283377961523878ff25ea/hueble-1.0.4.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [s3path]: Downloading https://files.pythonhosted.org/packages/d5/3e/0e472ca5cd36478dc8d88ccb00d7a28b2381c16cc85f28c382e6df0cb22c/s3path-0.5.7.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [Simba-UW-tf-dev]: Downloading https://files.pythonhosted.org/packages/04/cc/a8c4ae398e8bc98695ecb6d47a0e9ab3b6b673366640cf4803bc836951af/Simba-UW-tf-dev-1.92.3.tar.gz
+[2024-05-18 17:55:11] INFO root fetch - processPackages [HueBLE]: executing diffoscope
+[2024-05-18 17:55:11] INFO root fetch - processPackages [HueBLE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hueble-1.0.3.tar.gz tmp/hueble-1.0.4.tar.gz --markdown 20240518/H/HueBLE/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-18 17:55:11] INFO root fetch - processPackages [s3path]: executing diffoscope
+[2024-05-18 17:55:11] INFO root fetch - processPackages [s3path]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/s3path-0.5.6.tar.gz tmp/s3path-0.5.7.tar.gz --markdown 20240518/s/s3path/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-18 17:55:11] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.7.tar.gz]
+[2024-05-18 17:55:11] INFO root fetch - processPackages [bdmc]: Remove: archive file [/home/abi/fetcher/tmp/bdmc-0.1.5.8.tar.gz]
+[2024-05-18 17:55:11] INFO root fetch - main [MainThread]: End processing [bdmc]: success
+[2024-05-18 17:55:12] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.4.tar.gz]
+[2024-05-18 17:55:12] INFO root fetch - processPackages [model-explorer-onnx]: Remove: archive file [/home/abi/fetcher/tmp/model_explorer_onnx-0.1.5.tar.gz]
+[2024-05-18 17:55:12] INFO root fetch - main [MainThread]: End processing [model-explorer-onnx]: success
+[2024-05-18 17:55:12] INFO root fetch - processPackages [Simba-UW-tf-dev]: executing diffoscope
+[2024-05-18 17:55:12] INFO root fetch - processPackages [Simba-UW-tf-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Simba-UW-tf-dev-1.92.2.tar.gz tmp/Simba-UW-tf-dev-1.92.3.tar.gz --markdown 20240518/S/Simba-UW-tf-dev/1.92.2-1.92.3/README.md --exclude *.pyd
+[2024-05-18 17:55:12] INFO root fetch - processPackages [s3path]: Remove: archive file [/home/abi/fetcher/tmp/s3path-0.5.6.tar.gz]
+[2024-05-18 17:55:12] INFO root fetch - processPackages [s3path]: Remove: archive file [/home/abi/fetcher/tmp/s3path-0.5.7.tar.gz]
+[2024-05-18 17:55:12] INFO root fetch - main [MainThread]: End processing [s3path]: success
+[2024-05-18 17:55:12] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.3.tar.gz]
+[2024-05-18 17:55:12] INFO root fetch - processPackages [HueBLE]: Remove: archive file [/home/abi/fetcher/tmp/hueble-1.0.4.tar.gz]
+[2024-05-18 17:55:12] INFO root fetch - main [MainThread]: End processing [HueBLE]: success
+[2024-05-18 17:55:15] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.2.tar.gz]
+[2024-05-18 17:55:15] INFO root fetch - processPackages [Simba-UW-tf-dev]: Remove: archive file [/home/abi/fetcher/tmp/Simba-UW-tf-dev-1.92.3.tar.gz]
+[2024-05-18 17:55:15] INFO root fetch - main [MainThread]: End processing [Simba-UW-tf-dev]: success
+[2024-05-18 17:55:15] INFO root fetch - main [MainThread]: Store serial: [23268995]
