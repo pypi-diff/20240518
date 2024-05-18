@@ -11143,3 +11143,24 @@
 [2024-05-18 09:10:15] INFO root fetch - processPackages [nonebot-adapter-mirai]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_adapter_mirai-2.3.1.tar.gz]
 [2024-05-18 09:10:15] INFO root fetch - main [MainThread]: End processing [nonebot-adapter-mirai]: success
 [2024-05-18 09:10:15] INFO root fetch - main [MainThread]: Store serial: [23265628]
+[2024-05-18 09:12:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265628]
+[2024-05-18 09:12:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anyhedge
+[2024-05-18 09:12:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PayNexus
+[2024-05-18 09:12:24] INFO root fetch - processPackages [PayNexus]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-18 09:12:24] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/38/7c/a0ca78132b1f81bedcc6c637ce80de4bfd75780b96542dceb9e92562d79a/PayNexus-0.2.0-py3-none-any.whl
+[2024-05-18 09:12:24] INFO root fetch - processPackages [anyhedge]: New version: [3.0.0] Old Version: [2.1.4]
+[2024-05-18 09:12:24] INFO root fetch - processPackages [anyhedge]: Downloading https://files.pythonhosted.org/packages/54/79/0c55874db0dfa8e3ba9d367f56b4fa20722abf64b30a56f5c26c1b4a97cb/anyhedge-2.1.4.tar.gz
+[2024-05-18 09:12:24] INFO root fetch - processPackages [PayNexus]: Downloading https://files.pythonhosted.org/packages/e0/6f/729f8fd1942cec83c6b68920a03ff046900035d5cc34f8c9dc5abf0013a9/PayNexus-0.2.1-py3-none-any.whl
+[2024-05-18 09:12:25] INFO root fetch - processPackages [PayNexus]: executing diffoscope
+[2024-05-18 09:12:25] INFO root fetch - processPackages [PayNexus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PayNexus-0.2.0-py3-none-any.whl.zip tmp/PayNexus-0.2.1-py3-none-any.whl.zip --markdown 20240518/P/PayNexus/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-18 09:12:25] INFO root fetch - processPackages [anyhedge]: Downloading https://files.pythonhosted.org/packages/f1/6b/3f5f4205315daf6376f828c2a82c7793bf3f6a74f22a393b2c022ad7607c/anyhedge-3.0.0.tar.gz
+[2024-05-18 09:12:25] INFO root fetch - processPackages [anyhedge]: executing diffoscope
+[2024-05-18 09:12:25] INFO root fetch - processPackages [anyhedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anyhedge-2.1.4.tar.gz tmp/anyhedge-3.0.0.tar.gz --markdown 20240518/a/anyhedge/2.1.4-3.0.0/README.md --exclude *.pyd
+[2024-05-18 09:12:25] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/PayNexus-0.2.0-py3-none-any.whl.zip]
+[2024-05-18 09:12:25] INFO root fetch - processPackages [PayNexus]: Remove: archive file [/home/abi/fetcher/tmp/PayNexus-0.2.1-py3-none-any.whl.zip]
+[2024-05-18 09:12:25] INFO root fetch - main [MainThread]: End processing [PayNexus]: success
+[2024-05-18 09:12:25] INFO root fetch - processPackages [anyhedge]: Remove: archive file [/home/abi/fetcher/tmp/anyhedge-2.1.4.tar.gz]
+[2024-05-18 09:12:25] INFO root fetch - processPackages [anyhedge]: Remove: archive file [/home/abi/fetcher/tmp/anyhedge-3.0.0.tar.gz]
+[2024-05-18 09:12:25] INFO root fetch - main [MainThread]: End processing [anyhedge]: success
+[2024-05-18 09:12:25] INFO root fetch - main [MainThread]: Store serial: [23265634]
