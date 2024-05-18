@@ -9677,3 +9677,15 @@
 [2024-05-18 07:06:43] INFO root fetch - processPackages [quantplay]: Remove: archive file [/home/abi/fetcher/tmp/quantplay-1.5.9.tar.gz]
 [2024-05-18 07:06:43] INFO root fetch - main [MainThread]: End processing [quantplay]: success
 [2024-05-18 07:06:43] INFO root fetch - main [MainThread]: Store serial: [23264869]
+[2024-05-18 07:08:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264869]
+[2024-05-18 07:08:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 07:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyCirclize
+[2024-05-18 07:08:54] INFO root fetch - processPackages [pyCirclize]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-18 07:08:54] INFO root fetch - processPackages [pyCirclize]: Downloading https://files.pythonhosted.org/packages/96/4b/cd97378cca06d477859472b9fc41aeddeea0a90d26b1dbb7406e5c796e6b/pycirclize-1.4.0.tar.gz
+[2024-05-18 07:08:55] INFO root fetch - processPackages [pyCirclize]: Downloading https://files.pythonhosted.org/packages/02/19/d3bc5fac30f6fe95646bb833df8df182de3c231ec67e3fc6ea9415099e8d/pycirclize-1.5.0.tar.gz
+[2024-05-18 07:08:55] INFO root fetch - processPackages [pyCirclize]: executing diffoscope
+[2024-05-18 07:08:55] INFO root fetch - processPackages [pyCirclize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycirclize-1.4.0.tar.gz tmp/pycirclize-1.5.0.tar.gz --markdown 20240518/p/pyCirclize/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-18 07:08:56] INFO root fetch - processPackages [pyCirclize]: Remove: archive file [/home/abi/fetcher/tmp/pycirclize-1.4.0.tar.gz]
+[2024-05-18 07:08:56] INFO root fetch - processPackages [pyCirclize]: Remove: archive file [/home/abi/fetcher/tmp/pycirclize-1.5.0.tar.gz]
+[2024-05-18 07:08:56] INFO root fetch - main [MainThread]: End processing [pyCirclize]: success
+[2024-05-18 07:08:56] INFO root fetch - main [MainThread]: Store serial: [23264872]
