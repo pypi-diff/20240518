@@ -12553,3 +12553,46 @@
 [2024-05-18 11:16:43] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.4.dev20240517.tar.gz]
 [2024-05-18 11:16:43] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
 [2024-05-18 11:16:43] INFO root fetch - main [MainThread]: Store serial: [23266560]
+[2024-05-18 11:18:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266560]
+[2024-05-18 11:18:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 11:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: harken-translation_readers
+[2024-05-18 11:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spyndex
+[2024-05-18 11:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: retalkz
+[2024-05-18 11:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PepperPepper
+[2024-05-18 11:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: harken-translation_readers
+[2024-05-18 11:18:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: smo_rejection
+[2024-05-18 11:18:52] INFO root fetch - processPackages [harken-translation_readers]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 11:18:52] WARNING root fetch - processPackages [smo_rejection]: Skipping, unable to determine old version
+[2024-05-18 11:18:52] INFO root fetch - main [MainThread]: End processing [smo_rejection] error
+[2024-05-18 11:18:52] INFO root fetch - processPackages [harken-translation_readers]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 11:18:52] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-18 11:18:52] WARNING root fetch - processPackages [retalkz]: Skipping, unable to determine old version
+[2024-05-18 11:18:52] INFO root fetch - main [MainThread]: End processing [retalkz] error
+[2024-05-18 11:18:52] INFO root fetch - processPackages [spyndex]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-18 11:18:52] INFO root fetch - processPackages [harken-translation_readers]: Downloading https://files.pythonhosted.org/packages/94/ed/a9848fdef3700c560da1ed6da68f60b13e783442aba5ea148e3cdb1c9b78/harken_translation_readers-0.0.2.tar.gz
+[2024-05-18 11:18:52] INFO root fetch - processPackages [harken-translation_readers]: Downloading https://files.pythonhosted.org/packages/94/ed/a9848fdef3700c560da1ed6da68f60b13e783442aba5ea148e3cdb1c9b78/harken_translation_readers-0.0.2.tar.gz
+[2024-05-18 11:18:52] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-18 11:18:52] INFO root fetch - processPackages [spyndex]: Downloading https://files.pythonhosted.org/packages/88/12/08093dfd340391465924eb053b1e5740789122eb014b627fd0d1cd0cd800/spyndex-0.5.0.tar.gz
+[2024-05-18 11:18:52] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: Downloading https://files.pythonhosted.org/packages/4f/a9/4fb1f512d2c2aa17e5d68f0942ceb37ccc83c3c63fafe1cdf10b05db3e16/harken_translation_readers-0.0.3.tar.gz
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: Downloading https://files.pythonhosted.org/packages/4f/a9/4fb1f512d2c2aa17e5d68f0942ceb37ccc83c3c63fafe1cdf10b05db3e16/harken_translation_readers-0.0.3.tar.gz
+[2024-05-18 11:18:53] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-18 11:18:53] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240518/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: executing diffoscope
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harken_translation_readers-0.0.2.tar.gz tmp/harken_translation_readers-0.0.3.tar.gz --markdown 20240518/h/harken-translation_readers/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: executing diffoscope
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/harken_translation_readers-0.0.2.tar.gz tmp/harken_translation_readers-0.0.3.tar.gz --markdown 20240518/h/harken-translation_readers/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 11:18:53] INFO root fetch - processPackages [spyndex]: Downloading https://files.pythonhosted.org/packages/82/94/d9b8f033d2f0ae3a7e6b3042ae28f90aa5901508944e643f2d011fe5b7f2/spyndex-0.6.0.tar.gz
+[2024-05-18 11:18:53] INFO root fetch - processPackages [spyndex]: executing diffoscope
+[2024-05-18 11:18:53] INFO root fetch - processPackages [spyndex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spyndex-0.5.0.tar.gz tmp/spyndex-0.6.0.tar.gz --markdown 20240518/s/spyndex/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-18 11:18:53] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-18 11:18:53] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-18 11:18:53] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: Remove: archive file [/home/abi/fetcher/tmp/harken_translation_readers-0.0.2.tar.gz]
+[2024-05-18 11:18:53] INFO root fetch - processPackages [harken-translation_readers]: Remove: archive file [/home/abi/fetcher/tmp/harken_translation_readers-0.0.3.tar.gz]
+[2024-05-18 11:18:53] INFO root fetch - main [MainThread]: End processing [harken-translation_readers]: success
+[2024-05-18 11:18:53] INFO root fetch - main [MainThread]: End processing [harken-translation_readers]: success
+[2024-05-18 11:18:54] INFO root fetch - processPackages [spyndex]: Remove: archive file [/home/abi/fetcher/tmp/spyndex-0.5.0.tar.gz]
+[2024-05-18 11:18:54] INFO root fetch - processPackages [spyndex]: Remove: archive file [/home/abi/fetcher/tmp/spyndex-0.6.0.tar.gz]
+[2024-05-18 11:18:54] INFO root fetch - main [MainThread]: End processing [spyndex]: success
+[2024-05-18 11:18:54] INFO root fetch - main [MainThread]: Store serial: [23266578]
