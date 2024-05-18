@@ -13580,3 +13580,48 @@
 [2024-05-18 12:42:48] INFO root fetch - processPackages [rules]: Remove: archive file [/home/abi/fetcher/tmp/rules-3.4.tar.gz]
 [2024-05-18 12:42:48] INFO root fetch - main [MainThread]: End processing [rules]: success
 [2024-05-18 12:42:48] INFO root fetch - main [MainThread]: Store serial: [23267013]
+[2024-05-18 12:44:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267013]
+[2024-05-18 12:44:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-18 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kebihelp
+[2024-05-18 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: data-transformation-library-ingri
+[2024-05-18 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hemstitchedz
+[2024-05-18 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flask-p
+[2024-05-18 12:44:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pysma-plus
+[2024-05-18 12:44:57] WARNING root fetch - processPackages [data-transformation-library-ingri]: Skipping, unable to determine old version
+[2024-05-18 12:44:57] INFO root fetch - main [MainThread]: End processing [data-transformation-library-ingri] error
+[2024-05-18 12:44:57] INFO root fetch - processPackages [mimllearning]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 12:44:57] INFO root fetch - processPackages [kebihelp]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-18 12:44:57] INFO root fetch - processPackages [pysma-plus]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-18 12:44:57] WARNING root fetch - processPackages [hemstitchedz]: Skipping, unable to determine old version
+[2024-05-18 12:44:57] INFO root fetch - main [MainThread]: End processing [hemstitchedz] error
+[2024-05-18 12:44:57] INFO root fetch - processPackages [flask-p]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-18 12:44:57] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/01/19/bfbea72ad47ab5447ad6cb90652413489191201adb3c2e7a9013402809c5/mimllearning-0.4.8.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [kebihelp]: Downloading https://files.pythonhosted.org/packages/b2/ce/f3407173a657eb1dc99ad0e1307974d70a78534b0c68a02a390bed3abd4e/kebihelp-0.1.1.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/ea/f1/16cb8fc044de2f56c3b7ac926cb28185bcf0306aac842c67f13e4bbf8647/pysma_plus-0.2.4.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [flask-p]: Downloading https://files.pythonhosted.org/packages/5a/d4/ad6f47e6db512c6d75a95ba40b74ad338058cdaab33bff439c5a5256f80c/flask-p-0.0.1.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/84/bd/958d70b5217227bc933005c3bb746e70ea6d2a534843b2e0f6a0e93e2c98/mimllearning-0.4.9.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [kebihelp]: Downloading https://files.pythonhosted.org/packages/1a/72/08b81c56f0ddfc75e4d7b648762aa89447a4d1e01b147de321b70d6eabd0/kebihelp-0.1.2.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [pysma-plus]: Downloading https://files.pythonhosted.org/packages/6f/06/fe1b4a29c5baa4045080dc5c0ca9c375bd0ccef5d5dfffaa9c8e6c3b24de/pysma_plus-0.2.5.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [flask-p]: Downloading https://files.pythonhosted.org/packages/ae/74/89067dc302aaf08d4ca2d7a89d3d8185bac9266741dc3134b730b84b63a1/flask-p-0.0.2.tar.gz
+[2024-05-18 12:44:57] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-18 12:44:57] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.4.8.tar.gz tmp/mimllearning-0.4.9.tar.gz --markdown 20240518/m/mimllearning/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 12:44:57] INFO root fetch - processPackages [kebihelp]: executing diffoscope
+[2024-05-18 12:44:57] INFO root fetch - processPackages [kebihelp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kebihelp-0.1.1.tar.gz tmp/kebihelp-0.1.2.tar.gz --markdown 20240518/k/kebihelp/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-18 12:44:58] INFO root fetch - processPackages [flask-p]: executing diffoscope
+[2024-05-18 12:44:58] INFO root fetch - processPackages [flask-p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask-p-0.0.1.tar.gz tmp/flask-p-0.0.2.tar.gz --markdown 20240518/f/flask-p/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-18 12:44:58] INFO root fetch - processPackages [pysma-plus]: executing diffoscope
+[2024-05-18 12:44:58] INFO root fetch - processPackages [pysma-plus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysma_plus-0.2.4.tar.gz tmp/pysma_plus-0.2.5.tar.gz --markdown 20240518/p/pysma-plus/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-18 12:44:58] INFO root fetch - processPackages [kebihelp]: Remove: archive file [/home/abi/fetcher/tmp/kebihelp-0.1.1.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - processPackages [kebihelp]: Remove: archive file [/home/abi/fetcher/tmp/kebihelp-0.1.2.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - main [MainThread]: End processing [kebihelp]: success
+[2024-05-18 12:44:58] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.8.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.4.9.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-18 12:44:58] INFO root fetch - processPackages [flask-p]: Remove: archive file [/home/abi/fetcher/tmp/flask-p-0.0.1.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - processPackages [flask-p]: Remove: archive file [/home/abi/fetcher/tmp/flask-p-0.0.2.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - main [MainThread]: End processing [flask-p]: success
+[2024-05-18 12:44:58] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.4.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - processPackages [pysma-plus]: Remove: archive file [/home/abi/fetcher/tmp/pysma_plus-0.2.5.tar.gz]
+[2024-05-18 12:44:58] INFO root fetch - main [MainThread]: End processing [pysma-plus]: success
+[2024-05-18 12:44:58] INFO root fetch - main [MainThread]: Store serial: [23267032]
