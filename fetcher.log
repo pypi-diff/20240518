@@ -11572,3 +11572,27 @@
 [2024-05-18 09:49:25] INFO root fetch - processPackages [smartpasslib]: Remove: archive file [/home/abi/fetcher/tmp/smartpasslib-0.4.1.tar.gz]
 [2024-05-18 09:49:25] INFO root fetch - main [MainThread]: End processing [smartpasslib]: success
 [2024-05-18 09:49:25] INFO root fetch - main [MainThread]: Store serial: [23265839]
+[2024-05-18 09:51:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265839]
+[2024-05-18 09:51:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonnephriticz
+[2024-05-18 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vaers
+[2024-05-18 09:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bank-scrapers
+[2024-05-18 09:51:35] INFO root fetch - processPackages [bank-scrapers]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 09:51:35] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/13/b0/1f956c44e81b935506ae8660d8aaaa4a975dba8db964492a98a3131961cc/bank_scrapers-1.0.8.tar.gz
+[2024-05-18 09:51:35] WARNING root fetch - processPackages [nonnephriticz]: Skipping, unable to determine old version
+[2024-05-18 09:51:35] INFO root fetch - main [MainThread]: End processing [nonnephriticz] error
+[2024-05-18 09:51:35] INFO root fetch - processPackages [vaers]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-18 09:51:35] INFO root fetch - processPackages [vaers]: Downloading https://files.pythonhosted.org/packages/76/63/e4cf38acc1204600042bba3974837ef67891f76398412504dfb620839b6b/vaers-0.0.3.tar.gz
+[2024-05-18 09:51:35] INFO root fetch - processPackages [bank-scrapers]: Downloading https://files.pythonhosted.org/packages/db/25/d10a43b636dad83822f69f512ddd3d27631c7cd08175c2ab11593e1bdd8c/bank_scrapers-1.0.9.tar.gz
+[2024-05-18 09:51:35] INFO root fetch - processPackages [bank-scrapers]: executing diffoscope
+[2024-05-18 09:51:35] INFO root fetch - processPackages [bank-scrapers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bank_scrapers-1.0.8.tar.gz tmp/bank_scrapers-1.0.9.tar.gz --markdown 20240518/b/bank-scrapers/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 09:51:36] INFO root fetch - processPackages [vaers]: Downloading https://files.pythonhosted.org/packages/5d/44/aea48b378b9787e7089d77894882b21b0115bd21793f112fbc78bf9f0c19/vaers-0.0.4.tar.gz
+[2024-05-18 09:51:36] INFO root fetch - processPackages [vaers]: executing diffoscope
+[2024-05-18 09:51:36] INFO root fetch - processPackages [vaers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaers-0.0.3.tar.gz tmp/vaers-0.0.4.tar.gz --markdown 20240518/v/vaers/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-18 09:51:36] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.8.tar.gz]
+[2024-05-18 09:51:36] INFO root fetch - processPackages [bank-scrapers]: Remove: archive file [/home/abi/fetcher/tmp/bank_scrapers-1.0.9.tar.gz]
+[2024-05-18 09:51:36] INFO root fetch - main [MainThread]: End processing [bank-scrapers]: success
+[2024-05-18 09:51:36] INFO root fetch - processPackages [vaers]: Remove: archive file [/home/abi/fetcher/tmp/vaers-0.0.3.tar.gz]
+[2024-05-18 09:51:36] INFO root fetch - processPackages [vaers]: Remove: archive file [/home/abi/fetcher/tmp/vaers-0.0.4.tar.gz]
+[2024-05-18 09:51:36] INFO root fetch - main [MainThread]: End processing [vaers]: success
+[2024-05-18 09:51:36] INFO root fetch - main [MainThread]: Store serial: [23265849]
