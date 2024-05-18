@@ -17153,3 +17153,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:22:32] INFO root fetch - processPackages [mnist-separator]: Remove: archive file [/home/abi/fetcher/tmp/mnist_separator-1.0.5.tar.gz]
 [2024-05-18 17:22:32] INFO root fetch - main [MainThread]: End processing [mnist-separator]: success
 [2024-05-18 17:22:32] INFO root fetch - main [MainThread]: Store serial: [23268811]
+[2024-05-18 17:24:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268811]
+[2024-05-18 17:24:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 17:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poja-by-tanjona
+[2024-05-18 17:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-barcodes-generator-product
+[2024-05-18 17:24:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: warp-python
+[2024-05-18 17:24:41] WARNING root fetch - processPackages [poja-by-tanjona]: Skipping, unable to determine old version
+[2024-05-18 17:24:41] INFO root fetch - main [MainThread]: End processing [poja-by-tanjona] error
+[2024-05-18 17:24:41] INFO root fetch - processPackages [warp-python]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-18 17:24:41] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/d0/c6/668e40e74942fcce41c218eb4bf9f1443bd141cf3b881fa6743de21b3128/warp_python-1.2.3.tar.gz
+[2024-05-18 17:24:41] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: New version: [12.0.1.1.0] Old Version: [12.0.1.0.2]
+[2024-05-18 17:24:41] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: Downloading https://files.pythonhosted.org/packages/f6/11/66a30e5ea0766908ed09c774dffc1a5727d3410492a7e280f358e7bb55a4/odoo12_addon_barcodes_generator_product-12.0.1.0.2-py3-none-any.whl
+[2024-05-18 17:24:41] INFO root fetch - processPackages [warp-python]: Downloading https://files.pythonhosted.org/packages/39/6c/4d3e7b3440418644283be94df9423bd2cbfd834f2909e84840b0b1438c57/warp_python-1.2.4.tar.gz
+[2024-05-18 17:24:41] INFO root fetch - processPackages [warp-python]: executing diffoscope
+[2024-05-18 17:24:41] INFO root fetch - processPackages [warp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/warp_python-1.2.3.tar.gz tmp/warp_python-1.2.4.tar.gz --markdown 20240518/w/warp-python/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-18 17:24:41] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: Downloading https://files.pythonhosted.org/packages/1e/8a/04a687e8833c234e713efd7890fe031b3430237ea3ff1a7f431f6eb3f66b/odoo12_addon_barcodes_generator_product-12.0.1.1.0-py3-none-any.whl
+[2024-05-18 17:24:41] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: executing diffoscope
+[2024-05-18 17:24:41] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_barcodes_generator_product-12.0.1.0.2-py3-none-any.whl.zip tmp/odoo12_addon_barcodes_generator_product-12.0.1.1.0-py3-none-any.whl.zip --markdown 20240518/o/odoo12-addon-barcodes-generator-product/12.0.1.0.2-12.0.1.1.0/README.md --exclude *.pyd
+[2024-05-18 17:24:42] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.3.tar.gz]
+[2024-05-18 17:24:42] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.4.tar.gz]
+[2024-05-18 17:24:42] INFO root fetch - main [MainThread]: End processing [warp-python]: success
+[2024-05-18 17:24:42] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_barcodes_generator_product-12.0.1.0.2-py3-none-any.whl.zip]
+[2024-05-18 17:24:42] INFO root fetch - processPackages [odoo12-addon-barcodes-generator-product]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_barcodes_generator_product-12.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-18 17:24:42] INFO root fetch - main [MainThread]: End processing [odoo12-addon-barcodes-generator-product]: success
+[2024-05-18 17:24:42] INFO root fetch - main [MainThread]: Store serial: [23268821]
