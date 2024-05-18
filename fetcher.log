@@ -16171,3 +16171,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 16:07:34] INFO root fetch - processPackages [hgitaly]: Remove: archive file [/home/abi/fetcher/tmp/hgitaly-1.5.0.tar.gz]
 [2024-05-18 16:07:34] INFO root fetch - main [MainThread]: End processing [hgitaly]: success
 [2024-05-18 16:07:34] INFO root fetch - main [MainThread]: Store serial: [23268296]
+[2024-05-18 16:09:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268296]
+[2024-05-18 16:09:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 16:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ncmlistdownloader
+[2024-05-18 16:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stdf-tamer
+[2024-05-18 16:09:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xerophagiaz
+[2024-05-18 16:09:43] INFO root fetch - processPackages [ncmlistdownloader]: New version: [2.0.0.240517a1] Old Version: [2.0.0.240516a1]
+[2024-05-18 16:09:43] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/b0/23/f7b3453ecc296fc6b424c37b4151f6fd4cfb40ce9ece09cbe99614334739/ncmlistdownloader-2.0.0.240516a1.tar.gz
+[2024-05-18 16:09:43] INFO root fetch - processPackages [stdf-tamer]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 16:09:43] WARNING root fetch - processPackages [xerophagiaz]: Skipping, unable to determine old version
+[2024-05-18 16:09:43] INFO root fetch - main [MainThread]: End processing [xerophagiaz] error
+[2024-05-18 16:09:43] INFO root fetch - processPackages [stdf-tamer]: Downloading https://files.pythonhosted.org/packages/31/c2/d1606fef389c807cd052724994f5d6d23f2dfd5a14b8577710f483ace7e9/stdf_tamer-1.0.8.tar.gz
+[2024-05-18 16:09:44] INFO root fetch - processPackages [ncmlistdownloader]: Downloading https://files.pythonhosted.org/packages/79/59/a499f6fe29332e283ec487f5829a36ce5249fad5f01ccb7087ed9402d2ac/ncmlistdownloader-2.0.0.240517a1.tar.gz
+[2024-05-18 16:09:44] INFO root fetch - processPackages [ncmlistdownloader]: executing diffoscope
+[2024-05-18 16:09:44] INFO root fetch - processPackages [ncmlistdownloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ncmlistdownloader-2.0.0.240516a1.tar.gz tmp/ncmlistdownloader-2.0.0.240517a1.tar.gz --markdown 20240518/n/ncmlistdownloader/2.0.0.240516a1-2.0.0.240517a1/README.md --exclude *.pyd
+[2024-05-18 16:09:44] INFO root fetch - processPackages [stdf-tamer]: Downloading https://files.pythonhosted.org/packages/46/04/dd2d98127a10dc17e24249e74dddf31d7873d9be4df391c1f1f433b49d82/stdf_tamer-1.0.9.tar.gz
+[2024-05-18 16:09:44] INFO root fetch - processPackages [stdf-tamer]: executing diffoscope
+[2024-05-18 16:09:44] INFO root fetch - processPackages [stdf-tamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stdf_tamer-1.0.8.tar.gz tmp/stdf_tamer-1.0.9.tar.gz --markdown 20240518/s/stdf-tamer/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 16:09:44] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-2.0.0.240516a1.tar.gz]
+[2024-05-18 16:09:44] INFO root fetch - processPackages [ncmlistdownloader]: Remove: archive file [/home/abi/fetcher/tmp/ncmlistdownloader-2.0.0.240517a1.tar.gz]
+[2024-05-18 16:09:44] INFO root fetch - main [MainThread]: End processing [ncmlistdownloader]: success
+[2024-05-18 16:09:44] INFO root fetch - processPackages [stdf-tamer]: Remove: archive file [/home/abi/fetcher/tmp/stdf_tamer-1.0.8.tar.gz]
+[2024-05-18 16:09:44] INFO root fetch - processPackages [stdf-tamer]: Remove: archive file [/home/abi/fetcher/tmp/stdf_tamer-1.0.9.tar.gz]
+[2024-05-18 16:09:44] INFO root fetch - main [MainThread]: End processing [stdf-tamer]: success
+[2024-05-18 16:09:44] INFO root fetch - main [MainThread]: Store serial: [23268307]
