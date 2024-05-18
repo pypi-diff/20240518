@@ -2565,3 +2565,11 @@
 [2024-05-18 02:38:24] INFO root fetch - processPackages [bcf-client]: Remove: archive file [/home/abi/fetcher/tmp/bcf_client-0.0.240518.tar.gz]
 [2024-05-18 02:38:24] INFO root fetch - main [MainThread]: End processing [bcf-client]: success
 [2024-05-18 02:38:24] INFO root fetch - main [MainThread]: Store serial: [23262342]
+[2024-05-18 02:40:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262342]
+[2024-05-18 02:40:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 02:40:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nm-magic-wand-nightly
+[2024-05-18 02:40:34] INFO root fetch - processPackages [nm-magic-wand-nightly]: New version: [0.2.2.20240518] Old Version: [0.2.2.20240517]
+[2024-05-18 02:40:34] INFO root fetch - processPackages [nm-magic-wand-nightly]: Downloading https://files.pythonhosted.org/packages/aa/cb/a76a44a92815288f52be6d6dbe84da802bcfe9a5e44cc8ba6b5350354194/nm_magic_wand_nightly-0.2.2.20240517-cp39-cp39-manylinux_2_17_x86_64.whl
+[2024-05-18 02:40:34] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 76882666>=10485760
+[2024-05-18 02:40:34] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
+[2024-05-18 02:40:34] INFO root fetch - main [MainThread]: Store serial: [23262346]
