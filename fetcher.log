@@ -7883,3 +7883,27 @@
 [2024-05-18 04:53:55] INFO root fetch - processPackages [mo-kwargs]: Remove: archive file [/home/abi/fetcher/tmp/mo_kwargs-7.631.24139.tar.gz]
 [2024-05-18 04:53:55] INFO root fetch - main [MainThread]: End processing [mo-kwargs]: success
 [2024-05-18 04:53:55] INFO root fetch - main [MainThread]: Store serial: [23264177]
+[2024-05-18 04:55:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264177]
+[2024-05-18 04:56:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 04:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FirstGame
+[2024-05-18 04:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: memhive
+[2024-05-18 04:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral
+[2024-05-18 04:56:04] INFO root fetch - processPackages [FirstGame]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-18 04:56:04] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/7b/5b/07c52c24f35cd7beb8ddbb73a6d53db45abcef44515a63c0cf895ad79644/FirstGame-1.0.2.tar.gz
+[2024-05-18 04:56:04] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: New version: [15.0.1.0.0.5] Old Version: [15.0.1.0.0.4]
+[2024-05-18 04:56:04] WARNING root fetch - processPackages [memhive]: Skipping, unable to determine old version
+[2024-05-18 04:56:04] INFO root fetch - main [MainThread]: End processing [memhive] error
+[2024-05-18 04:56:04] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: Downloading https://files.pythonhosted.org/packages/30/45/e9a61b25a8a11b457a829add000eb0d76eaee08fc1e32ad40a39450a3b04/odoo_addon_account_invoice_anglo_saxon_no_cogs_deferral-15.0.1.0.0.4-py3-none-any.whl
+[2024-05-18 04:56:05] INFO root fetch - processPackages [FirstGame]: Downloading https://files.pythonhosted.org/packages/7a/2b/d173f0a7a29b4f62655cd578b1623ca61184cb753eada7e961d36ae3a22c/FirstGame-1.0.3.tar.gz
+[2024-05-18 04:56:05] INFO root fetch - processPackages [FirstGame]: executing diffoscope
+[2024-05-18 04:56:05] INFO root fetch - processPackages [FirstGame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FirstGame-1.0.2.tar.gz tmp/FirstGame-1.0.3.tar.gz --markdown 20240518/F/FirstGame/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-18 04:56:05] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: Downloading https://files.pythonhosted.org/packages/ad/97/19ac413054917262888dacd4926ace9ef669fba4081cc5f5fa37a26fc357/odoo_addon_account_invoice_anglo_saxon_no_cogs_deferral-15.0.1.0.0.5-py3-none-any.whl
+[2024-05-18 04:56:05] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: executing diffoscope
+[2024-05-18 04:56:05] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_anglo_saxon_no_cogs_deferral-15.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_anglo_saxon_no_cogs_deferral-15.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral/15.0.1.0.0.4-15.0.1.0.0.5/README.md --exclude *.pyd
+[2024-05-18 04:56:05] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.2.tar.gz]
+[2024-05-18 04:56:05] INFO root fetch - processPackages [FirstGame]: Remove: archive file [/home/abi/fetcher/tmp/FirstGame-1.0.3.tar.gz]
+[2024-05-18 04:56:05] INFO root fetch - main [MainThread]: End processing [FirstGame]: success
+[2024-05-18 04:56:06] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_anglo_saxon_no_cogs_deferral-15.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-05-18 04:56:06] INFO root fetch - processPackages [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_anglo_saxon_no_cogs_deferral-15.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-05-18 04:56:06] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-anglo-saxon-no-cogs-deferral]: success
+[2024-05-18 04:56:06] INFO root fetch - main [MainThread]: Store serial: [23264186]
