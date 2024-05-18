@@ -15562,3 +15562,12 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 15:23:52] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4rc1.tar.gz]
 [2024-05-18 15:23:52] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
 [2024-05-18 15:23:52] INFO root fetch - main [MainThread]: Store serial: [23268001]
+[2024-05-18 15:25:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268001]
+[2024-05-18 15:26:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 15:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eurepoc
+[2024-05-18 15:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altmindpy
+[2024-05-18 15:26:01] WARNING root fetch - processPackages [eurepoc]: Skipping, unable to determine old version
+[2024-05-18 15:26:01] INFO root fetch - main [MainThread]: End processing [eurepoc] error
+[2024-05-18 15:26:02] WARNING root fetch - processPackages [altmindpy]: Skipping, unable to determine old version
+[2024-05-18 15:26:02] INFO root fetch - main [MainThread]: End processing [altmindpy] error
+[2024-05-18 15:26:02] INFO root fetch - main [MainThread]: Store serial: [23268010]
