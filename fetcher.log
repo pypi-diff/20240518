@@ -17666,3 +17666,56 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:57:26] INFO root fetch - processPackages [psgspecialelements]: Remove: archive file [/home/abi/fetcher/tmp/psgspecialelements-1.0.3.tar.gz]
 [2024-05-18 17:57:26] INFO root fetch - main [MainThread]: End processing [psgspecialelements]: success
 [2024-05-18 17:57:26] INFO root fetch - main [MainThread]: Store serial: [23269008]
+[2024-05-18 17:59:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269008]
+[2024-05-18 17:59:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dmk-packages
+[2024-05-18 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: music-brainz-api-micro
+[2024-05-18 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytzen
+[2024-05-18 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: photobooth-app
+[2024-05-18 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reasonify-headless
+[2024-05-18 17:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gitoptim
+[2024-05-18 17:59:36] INFO root fetch - processPackages [dmk-packages]: New version: [0.7.2] Old Version: [0.7.0]
+[2024-05-18 17:59:36] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:59:36] INFO root fetch - processPackages [photobooth-app]: New version: [3.0a4] Old Version: [3.0a3]
+[2024-05-18 17:59:36] INFO root fetch - processPackages [music-brainz-api-micro]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-18 17:59:36] INFO root fetch - processPackages [dmk-packages]: Downloading https://files.pythonhosted.org/packages/74/fe/9df948db256445f2b2600e743130212eda29708eedb0eb3e283400f3dea6/dmk_packages-0.7.0.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [pytzen]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-18 17:59:36] INFO root fetch - processPackages [reasonify-headless]: New version: [0.1.0a1] Old Version: [0.0.2.2]
+[2024-05-18 17:59:36] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [photobooth-app]: Downloading https://files.pythonhosted.org/packages/cb/34/79696d8562177d327b41020ad28bdf312f45190d73e532b2d72c94d404d1/photobooth_app-3.0a3.tar.gz
+[2024-05-18 17:59:36] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 40330603>=10485760
+[2024-05-18 17:59:36] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
+[2024-05-18 17:59:36] INFO root fetch - processPackages [reasonify-headless]: Downloading https://files.pythonhosted.org/packages/55/02/4f30284be16d42efeb2642faa0af2e1679f4c918e6ed5e63dec58c2af438/reasonify_headless-0.0.2.2.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [dmk-packages]: Downloading https://files.pythonhosted.org/packages/83/a1/59538d611b1389bc988a6905950dfc0741a9cf82ebc4f5761c4a10224f12/dmk_packages-0.7.2.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [music-brainz-api-micro]: Downloading https://files.pythonhosted.org/packages/d4/cf/bdf7733388dd047671a3fe886aed0f676bf21d796f52bf639c6f66ffe89c/music_brainz_api_micro-0.1.4.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [pytzen]: Downloading https://files.pythonhosted.org/packages/75/6e/f755eb6ba78a2faaf81e763ac943d25cf5deb628688067873e0876f1dbca/pytzen-1.0.8.tar.gz
+[2024-05-18 17:59:36] INFO root fetch - processPackages [dmk-packages]: executing diffoscope
+[2024-05-18 17:59:36] INFO root fetch - processPackages [dmk-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmk_packages-0.7.0.tar.gz tmp/dmk_packages-0.7.2.tar.gz --markdown 20240518/d/dmk-packages/0.7.0-0.7.2/README.md --exclude *.pyd
+[2024-05-18 17:59:36] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:59:36] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:59:37] INFO root fetch - processPackages [reasonify-headless]: Downloading https://files.pythonhosted.org/packages/84/00/22558f7cbcb52e033c74e3bdcd543c58228faa8848635c0f2907567346a4/reasonify_headless-0.1.0a1.tar.gz
+[2024-05-18 17:59:37] INFO root fetch - processPackages [pytzen]: Downloading https://files.pythonhosted.org/packages/a9/9d/c36feb27eb006936cdb986698c33a2f2b5c4067a6839d138a49f264e1675/pytzen-1.0.9.tar.gz
+[2024-05-18 17:59:37] INFO root fetch - processPackages [music-brainz-api-micro]: Downloading https://files.pythonhosted.org/packages/d2/b1/93acc182ce23962148fd6ae84be0f73115385f056efb6d7670878b00321b/music_brainz_api_micro-0.1.5.tar.gz
+[2024-05-18 17:59:37] INFO root fetch - processPackages [pytzen]: executing diffoscope
+[2024-05-18 17:59:37] INFO root fetch - processPackages [pytzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytzen-1.0.8.tar.gz tmp/pytzen-1.0.9.tar.gz --markdown 20240518/p/pytzen/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-18 17:59:37] INFO root fetch - processPackages [reasonify-headless]: executing diffoscope
+[2024-05-18 17:59:37] INFO root fetch - processPackages [reasonify-headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasonify_headless-0.0.2.2.tar.gz tmp/reasonify_headless-0.1.0a1.tar.gz --markdown 20240518/r/reasonify-headless/0.0.2.2-0.1.0a1/README.md --exclude *.pyd
+[2024-05-18 17:59:37] INFO root fetch - processPackages [music-brainz-api-micro]: executing diffoscope
+[2024-05-18 17:59:37] INFO root fetch - processPackages [music-brainz-api-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music_brainz_api_micro-0.1.4.tar.gz tmp/music_brainz_api_micro-0.1.5.tar.gz --markdown 20240518/m/music-brainz-api-micro/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-18 17:59:37] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:59:37] INFO root fetch - processPackages [dmk-packages]: Remove: archive file [/home/abi/fetcher/tmp/dmk_packages-0.7.0.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - processPackages [dmk-packages]: Remove: archive file [/home/abi/fetcher/tmp/dmk_packages-0.7.2.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - main [MainThread]: End processing [dmk-packages]: success
+[2024-05-18 17:59:37] INFO root fetch - processPackages [pytzen]: Remove: archive file [/home/abi/fetcher/tmp/pytzen-1.0.8.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - processPackages [pytzen]: Remove: archive file [/home/abi/fetcher/tmp/pytzen-1.0.9.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - main [MainThread]: End processing [pytzen]: success
+[2024-05-18 17:59:37] INFO root fetch - processPackages [music-brainz-api-micro]: Remove: archive file [/home/abi/fetcher/tmp/music_brainz_api_micro-0.1.4.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - processPackages [music-brainz-api-micro]: Remove: archive file [/home/abi/fetcher/tmp/music_brainz_api_micro-0.1.5.tar.gz]
+[2024-05-18 17:59:37] INFO root fetch - main [MainThread]: End processing [music-brainz-api-micro]: success
+[2024-05-18 17:59:38] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.0.2.2.tar.gz]
+[2024-05-18 17:59:38] INFO root fetch - processPackages [reasonify-headless]: Remove: archive file [/home/abi/fetcher/tmp/reasonify_headless-0.1.0a1.tar.gz]
+[2024-05-18 17:59:38] INFO root fetch - main [MainThread]: End processing [reasonify-headless]: success
+[2024-05-18 17:59:38] INFO root fetch - main [MainThread]: Store serial: [23269027]
