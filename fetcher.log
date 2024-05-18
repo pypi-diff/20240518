@@ -10645,3 +10645,33 @@
 [2024-05-18 08:33:03] INFO root fetch - processPackages [nonebot-plugin-orangejuice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-orangejuice-0.9.1.tar.gz]
 [2024-05-18 08:33:03] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-orangejuice]: success
 [2024-05-18 08:33:03] INFO root fetch - main [MainThread]: Store serial: [23265310]
+[2024-05-18 08:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265310]
+[2024-05-18 08:35:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-18 08:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: undisgorgedz
+[2024-05-18 08:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cute-robot-voice
+[2024-05-18 08:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyedifice
+[2024-05-18 08:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llmonad
+[2024-05-18 08:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: almgroad
+[2024-05-18 08:35:12] INFO root fetch - processPackages [almgroad]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 08:35:12] INFO root fetch - processPackages [almgroad]: Downloading https://files.pythonhosted.org/packages/2c/f6/6d06d771fba465c55fd80a1ab368ad05918f985ecebd77953e0d7c257b69/almgroad-0.1.2-py3-none-any.whl
+[2024-05-18 08:35:12] WARNING root fetch - processPackages [cute-robot-voice]: Skipping, unable to determine old version
+[2024-05-18 08:35:12] INFO root fetch - main [MainThread]: End processing [cute-robot-voice] error
+[2024-05-18 08:35:12] WARNING root fetch - processPackages [undisgorgedz]: Skipping, unable to determine old version
+[2024-05-18 08:35:12] INFO root fetch - main [MainThread]: End processing [undisgorgedz] error
+[2024-05-18 08:35:12] INFO root fetch - processPackages [pyedifice]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-05-18 08:35:12] WARNING root fetch - processPackages [llmonad]: Skipping, unable to determine old version
+[2024-05-18 08:35:12] INFO root fetch - main [MainThread]: End processing [llmonad] error
+[2024-05-18 08:35:12] INFO root fetch - processPackages [pyedifice]: Downloading https://files.pythonhosted.org/packages/61/62/78edb5e7f75236ae60b47e969041100c9f136196e21b806063e2494b9c2e/pyedifice-0.5.5.tar.gz
+[2024-05-18 08:35:12] INFO root fetch - processPackages [almgroad]: Downloading https://files.pythonhosted.org/packages/4f/43/971f8571ec641f45ec9858313799589e94b6c8ef0840ab2aeb4aad41ce5c/almgroad-0.1.3-py3-none-any.whl
+[2024-05-18 08:35:13] INFO root fetch - processPackages [almgroad]: executing diffoscope
+[2024-05-18 08:35:13] INFO root fetch - processPackages [almgroad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/almgroad-0.1.2-py3-none-any.whl.zip tmp/almgroad-0.1.3-py3-none-any.whl.zip --markdown 20240518/a/almgroad/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 08:35:13] INFO root fetch - processPackages [pyedifice]: Downloading https://files.pythonhosted.org/packages/91/83/5915fe529eb3cb29e43836478c1b0cc599386b303ee56cdaae4b603f8cb4/pyedifice-0.5.6.tar.gz
+[2024-05-18 08:35:13] INFO root fetch - processPackages [pyedifice]: executing diffoscope
+[2024-05-18 08:35:13] INFO root fetch - processPackages [pyedifice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyedifice-0.5.5.tar.gz tmp/pyedifice-0.5.6.tar.gz --markdown 20240518/p/pyedifice/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-05-18 08:35:13] INFO root fetch - processPackages [almgroad]: Remove: archive file [/home/abi/fetcher/tmp/almgroad-0.1.2-py3-none-any.whl.zip]
+[2024-05-18 08:35:13] INFO root fetch - processPackages [almgroad]: Remove: archive file [/home/abi/fetcher/tmp/almgroad-0.1.3-py3-none-any.whl.zip]
+[2024-05-18 08:35:13] INFO root fetch - main [MainThread]: End processing [almgroad]: success
+[2024-05-18 08:35:17] INFO root fetch - processPackages [pyedifice]: Remove: archive file [/home/abi/fetcher/tmp/pyedifice-0.5.5.tar.gz]
+[2024-05-18 08:35:17] INFO root fetch - processPackages [pyedifice]: Remove: archive file [/home/abi/fetcher/tmp/pyedifice-0.5.6.tar.gz]
+[2024-05-18 08:35:17] INFO root fetch - main [MainThread]: End processing [pyedifice]: success
+[2024-05-18 08:35:17] INFO root fetch - main [MainThread]: Store serial: [23265329]
