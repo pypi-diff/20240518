@@ -19301,3 +19301,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 19:44:26] INFO root fetch - processPackages [bosesoundtouchapi]: Remove: archive file [/home/abi/fetcher/tmp/bosesoundtouchapi-1.0.9-py3-none-any.whl.zip]
 [2024-05-18 19:44:26] INFO root fetch - main [MainThread]: End processing [bosesoundtouchapi]: success
 [2024-05-18 19:44:26] INFO root fetch - main [MainThread]: Store serial: [23269780]
+[2024-05-18 19:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269780]
+[2024-05-18 19:46:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 19:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nuggetyz
+[2024-05-18 19:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: drf-material
+[2024-05-18 19:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-stock-picking-propagate-scheduled-date
+[2024-05-18 19:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-move-substate
+[2024-05-18 19:46:35] INFO root fetch - processPackages [drf-material]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-18 19:46:35] WARNING root fetch - processPackages [nuggetyz]: Skipping, unable to determine old version
+[2024-05-18 19:46:35] INFO root fetch - main [MainThread]: End processing [nuggetyz] error
+[2024-05-18 19:46:35] WARNING root fetch - processPackages [odoo-addon-stock-picking-propagate-scheduled-date]: Skipping, unable to determine old version
+[2024-05-18 19:46:35] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-picking-propagate-scheduled-date] error
+[2024-05-18 19:46:35] INFO root fetch - processPackages [odoo-addon-account-move-substate]: New version: [16.0.1.0.1] Old Version: [16.0.1.0.0.6]
+[2024-05-18 19:46:36] INFO root fetch - processPackages [drf-material]: Downloading https://files.pythonhosted.org/packages/81/d0/7d0c7ae7d0bfe21be5eac505c478fff4bf632d5a2bfb916f8f893b288981/drf_material-0.3.0.tar.gz
+[2024-05-18 19:46:36] INFO root fetch - processPackages [odoo-addon-account-move-substate]: Downloading https://files.pythonhosted.org/packages/dd/7a/350fbb919046b3336fdbcd555d17ff2b8cb3b7611bfd8bcbbffefa465fd1/odoo_addon_account_move_substate-16.0.1.0.0.6-py3-none-any.whl
+[2024-05-18 19:46:36] INFO root fetch - processPackages [drf-material]: Downloading https://files.pythonhosted.org/packages/c7/5c/9391ebffcc42ed41d21cb1c325e0be176fdfb15861aea846d69ecbd396ba/drf_material-0.3.1.tar.gz
+[2024-05-18 19:46:36] INFO root fetch - processPackages [drf-material]: executing diffoscope
+[2024-05-18 19:46:36] INFO root fetch - processPackages [drf-material]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_material-0.3.0.tar.gz tmp/drf_material-0.3.1.tar.gz --markdown 20240518/d/drf-material/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-18 19:46:36] INFO root fetch - processPackages [odoo-addon-account-move-substate]: Downloading https://files.pythonhosted.org/packages/90/eb/a777be30b69b8cfb8a97d3180034be91742bd4c43d9f75556b2c1216fb31/odoo_addon_account_move_substate-16.0.1.0.1-py3-none-any.whl
+[2024-05-18 19:46:36] INFO root fetch - processPackages [odoo-addon-account-move-substate]: executing diffoscope
+[2024-05-18 19:46:36] INFO root fetch - processPackages [odoo-addon-account-move-substate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_substate-16.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_account_move_substate-16.0.1.0.1-py3-none-any.whl.zip --markdown 20240518/o/odoo-addon-account-move-substate/16.0.1.0.0.6-16.0.1.0.1/README.md --exclude *.pyd
+[2024-05-18 19:46:37] INFO root fetch - processPackages [drf-material]: Remove: archive file [/home/abi/fetcher/tmp/drf_material-0.3.0.tar.gz]
+[2024-05-18 19:46:37] INFO root fetch - processPackages [drf-material]: Remove: archive file [/home/abi/fetcher/tmp/drf_material-0.3.1.tar.gz]
+[2024-05-18 19:46:37] INFO root fetch - main [MainThread]: End processing [drf-material]: success
+[2024-05-18 19:46:37] INFO root fetch - processPackages [odoo-addon-account-move-substate]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_substate-16.0.1.0.0.6-py3-none-any.whl.zip]
+[2024-05-18 19:46:37] INFO root fetch - processPackages [odoo-addon-account-move-substate]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_move_substate-16.0.1.0.1-py3-none-any.whl.zip]
+[2024-05-18 19:46:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-substate]: success
+[2024-05-18 19:46:37] INFO root fetch - main [MainThread]: Store serial: [23269793]
