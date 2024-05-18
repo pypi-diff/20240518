@@ -13679,3 +13679,18 @@
 [2024-05-18 12:51:30] INFO root fetch - processPackages [openclimatedata]: Remove: archive file [/home/abi/fetcher/tmp/openclimatedata-0.9.tar.gz]
 [2024-05-18 12:51:30] INFO root fetch - main [MainThread]: End processing [openclimatedata]: success
 [2024-05-18 12:51:30] INFO root fetch - main [MainThread]: Store serial: [23267064]
+[2024-05-18 12:53:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267064]
+[2024-05-18 12:53:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 12:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altstore-proxy
+[2024-05-18 12:53:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backupp
+[2024-05-18 12:53:39] WARNING root fetch - processPackages [altstore-proxy]: Skipping, unable to determine old version
+[2024-05-18 12:53:39] INFO root fetch - main [MainThread]: End processing [altstore-proxy] error
+[2024-05-18 12:53:39] INFO root fetch - processPackages [backupp]: New version: [0.0.9rc1] Old Version: [0.0.9]
+[2024-05-18 12:53:39] INFO root fetch - processPackages [backupp]: Downloading https://files.pythonhosted.org/packages/3f/76/ff0914deb281d2b844977a89532e4e76c5558dfb825db728646dec581d9c/backupp-0.0.9-py2.py3-none-any.whl
+[2024-05-18 12:53:39] INFO root fetch - processPackages [backupp]: Downloading https://files.pythonhosted.org/packages/c0/12/04af5ae766512376ce104815515a05fc60baef777a1e09b0ac3dc11e784d/backupp-0.0.9rc1-py2.py3-none-any.whl
+[2024-05-18 12:53:39] INFO root fetch - processPackages [backupp]: executing diffoscope
+[2024-05-18 12:53:39] INFO root fetch - processPackages [backupp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backupp-0.0.9-py2.py3-none-any.whl.zip tmp/backupp-0.0.9rc1-py2.py3-none-any.whl.zip --markdown 20240518/b/backupp/0.0.9-0.0.9rc1/README.md --exclude *.pyd
+[2024-05-18 12:53:40] INFO root fetch - processPackages [backupp]: Remove: archive file [/home/abi/fetcher/tmp/backupp-0.0.9-py2.py3-none-any.whl.zip]
+[2024-05-18 12:53:40] INFO root fetch - processPackages [backupp]: Remove: archive file [/home/abi/fetcher/tmp/backupp-0.0.9rc1-py2.py3-none-any.whl.zip]
+[2024-05-18 12:53:40] INFO root fetch - main [MainThread]: End processing [backupp]: success
+[2024-05-18 12:53:40] INFO root fetch - main [MainThread]: Store serial: [23267072]
