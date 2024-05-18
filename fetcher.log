@@ -14059,3 +14059,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:17:42] INFO root fetch - processPackages [sling]: Remove: archive file [/home/abi/fetcher/tmp/sling-1.2.9.tar.gz]
 [2024-05-18 13:17:42] INFO root fetch - main [MainThread]: End processing [sling]: success
 [2024-05-18 13:17:42] INFO root fetch - main [MainThread]: Store serial: [23267205]
+[2024-05-18 13:19:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267205]
+[2024-05-18 13:19:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ALLMDEV
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funky-modifiers
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: summa-embed
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ALLMDEV]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-18 13:19:52] INFO root fetch - processPackages [funky-modifiers]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 13:19:52] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/58/9c/65dd10d684880ac9b1f6c4559e40edf802d55238a49bd7a3d5482e8dcd70/funky_modifiers-0.1.8.tar.gz
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/e5/5a/d50a20d92bed24a6abe470f6e5cdf255da43c972cab6cee2f74d870766f8/ALLMDEV-1.3.1-py3-none-any.whl
+[2024-05-18 13:19:52] INFO root fetch - processPackages [funky-modifiers]: Downloading https://files.pythonhosted.org/packages/ba/21/22436212a1fbcdaaba68e04256b44d06002781088854ea1eaf452c392955/funky_modifiers-0.1.9.tar.gz
+[2024-05-18 13:19:52] INFO root fetch - processPackages [summa-embed]: New version: [0.23.8] Old Version: [0.23.0]
+[2024-05-18 13:19:52] INFO root fetch - processPackages [funky-modifiers]: executing diffoscope
+[2024-05-18 13:19:52] INFO root fetch - processPackages [funky-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funky_modifiers-0.1.8.tar.gz tmp/funky_modifiers-0.1.9.tar.gz --markdown 20240518/f/funky-modifiers/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/5c/3b/193f023d0807297362f3da6b28285e1386d5051afe39ef990b94e131efbd/ALLMDEV-1.3.2-py3-none-any.whl
+[2024-05-18 13:19:52] INFO root fetch - processPackages [summa-embed]: Downloading https://files.pythonhosted.org/packages/47/ae/bf419d21a452af1a053c32417ebd2fc362fb77a131db77bd2362febffb9a/summa_embed-0.23.0.tar.gz
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-05-18 13:19:52] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.3.1-py3-none-any.whl.zip tmp/ALLMDEV-1.3.2-py3-none-any.whl.zip --markdown 20240518/A/ALLMDEV/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-18 13:19:53] INFO root fetch - processPackages [summa-embed]: Downloading https://files.pythonhosted.org/packages/c0/34/eedbfa36b63c9901df968caa877867c4e0af830c83d59cf63f611f679215/summa_embed-0.23.8-cp312-none-win_amd64.whl
+[2024-05-18 13:19:53] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.8.tar.gz]
+[2024-05-18 13:19:53] INFO root fetch - processPackages [funky-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/funky_modifiers-0.1.9.tar.gz]
+[2024-05-18 13:19:53] INFO root fetch - main [MainThread]: End processing [funky-modifiers]: success
+[2024-05-18 13:19:53] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.1-py3-none-any.whl.zip]
+[2024-05-18 13:19:53] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.2-py3-none-any.whl.zip]
+[2024-05-18 13:19:53] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-05-18 13:20:02] INFO root fetch - processPackages [summa-embed]: executing diffoscope
+[2024-05-18 13:20:02] INFO root fetch - processPackages [summa-embed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/summa_embed-0.23.0.tar.gz tmp/summa_embed-0.23.8-cp312-none-win_amd64.whl.zip --markdown 20240518/s/summa-embed/0.23.0-0.23.8/README.md --exclude *.pyd
+[2024-05-18 13:20:03] INFO root fetch - processPackages [summa-embed]: Remove: archive file [/home/abi/fetcher/tmp/summa_embed-0.23.0.tar.gz]
+[2024-05-18 13:20:03] INFO root fetch - processPackages [summa-embed]: Remove: archive file [/home/abi/fetcher/tmp/summa_embed-0.23.8-cp312-none-win_amd64.whl.zip]
+[2024-05-18 13:20:03] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
+[2024-05-18 13:20:03] INFO root fetch - main [MainThread]: Store serial: [23267231]
