@@ -15206,3 +15206,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:50:23] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.8.tar.gz]
 [2024-05-18 14:50:23] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
 [2024-05-18 14:50:23] INFO root fetch - main [MainThread]: Store serial: [23267833]
+[2024-05-18 14:52:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267833]
+[2024-05-18 14:52:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 14:52:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: config-center
+[2024-05-18 14:52:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cassianz
+[2024-05-18 14:52:32] WARNING root fetch - processPackages [cassianz]: Skipping, unable to determine old version
+[2024-05-18 14:52:32] INFO root fetch - main [MainThread]: End processing [cassianz] error
+[2024-05-18 14:52:32] INFO root fetch - processPackages [config-center]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-18 14:52:32] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/57/e1/dd76887ecdc674872bf2a3df9d219eac5c545936245ce5dd788161294bc1/config_center-0.0.2.tar.gz
+[2024-05-18 14:52:32] INFO root fetch - processPackages [config-center]: Downloading https://files.pythonhosted.org/packages/9e/6e/9f96888b0436cbd46a49cd86974106761b7ed814d32a50d9be0c2e5c871d/config_center-0.0.3.tar.gz
+[2024-05-18 14:52:33] INFO root fetch - processPackages [config-center]: executing diffoscope
+[2024-05-18 14:52:33] INFO root fetch - processPackages [config-center]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_center-0.0.2.tar.gz tmp/config_center-0.0.3.tar.gz --markdown 20240518/c/config-center/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-18 14:52:33] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.2.tar.gz]
+[2024-05-18 14:52:33] INFO root fetch - processPackages [config-center]: Remove: archive file [/home/abi/fetcher/tmp/config_center-0.0.3.tar.gz]
+[2024-05-18 14:52:33] INFO root fetch - main [MainThread]: End processing [config-center]: success
+[2024-05-18 14:52:33] INFO root fetch - main [MainThread]: Store serial: [23267840]
