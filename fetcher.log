@@ -6606,3 +6606,36 @@
 [2024-05-18 03:21:25] INFO root fetch - processPackages [cocnc]: Remove: archive file [/home/abi/fetcher/tmp/cocnc-0.1.7.tar.gz]
 [2024-05-18 03:21:25] INFO root fetch - main [MainThread]: End processing [cocnc]: success
 [2024-05-18 03:21:25] INFO root fetch - main [MainThread]: Store serial: [23263356]
+[2024-05-18 03:23:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263356]
+[2024-05-18 03:23:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpydantic
+[2024-05-18 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unethereallyz
+[2024-05-18 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PKDevTools
+[2024-05-18 03:23:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: parea-ai
+[2024-05-18 03:23:35] INFO root fetch - processPackages [PKDevTools]: New version: [0.13.20240517.120] Old Version: [0.13.20240517.119]
+[2024-05-18 03:23:35] WARNING root fetch - processPackages [unethereallyz]: Skipping, unable to determine old version
+[2024-05-18 03:23:35] INFO root fetch - main [MainThread]: End processing [unethereallyz] error
+[2024-05-18 03:23:35] INFO root fetch - processPackages [numpydantic]: New version: [1.0.0rc1] Old Version: [0.0.0]
+[2024-05-18 03:23:35] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/01/b4/6d82db82d9762ed3b09c95103ec5fd750e23adfd410c15dca92014a25509/PKDevTools-0.13.20240517.119.tar.gz
+[2024-05-18 03:23:35] INFO root fetch - processPackages [parea-ai]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-05-18 03:23:35] INFO root fetch - processPackages [numpydantic]: Downloading https://files.pythonhosted.org/packages/9a/a5/14d991f2b4290a6062c7bfffac42fb795c3925718d87e8dd1c9fd7eafa95/numpydantic-0.0.0.tar.gz
+[2024-05-18 03:23:35] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/cd/80/fcef2226405a0fb8e3a9a7fbda2b47a712f63d9294eac7e3fc336bbf5b0f/parea_ai-0.2.98.tar.gz
+[2024-05-18 03:23:35] INFO root fetch - processPackages [PKDevTools]: Downloading https://files.pythonhosted.org/packages/11/a3/7095fb08e5796aea38d3e543c191ec1e8e249c2e22e93d5f30f1b9d65557/PKDevTools-0.13.20240517.120.tar.gz
+[2024-05-18 03:23:35] INFO root fetch - processPackages [PKDevTools]: executing diffoscope
+[2024-05-18 03:23:35] INFO root fetch - processPackages [PKDevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PKDevTools-0.13.20240517.119.tar.gz tmp/PKDevTools-0.13.20240517.120.tar.gz --markdown 20240518/P/PKDevTools/0.13.20240517.119-0.13.20240517.120/README.md --exclude *.pyd
+[2024-05-18 03:23:35] INFO root fetch - processPackages [numpydantic]: Downloading https://files.pythonhosted.org/packages/c8/63/577ac909995ae8fee799b6e9371c456af0012db9881906727eabfc73fb28/numpydantic-1.0.0rc1.tar.gz
+[2024-05-18 03:23:35] INFO root fetch - processPackages [numpydantic]: executing diffoscope
+[2024-05-18 03:23:35] INFO root fetch - processPackages [numpydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpydantic-0.0.0.tar.gz tmp/numpydantic-1.0.0rc1.tar.gz --markdown 20240518/n/numpydantic/0.0.0-1.0.0rc1/README.md --exclude *.pyd
+[2024-05-18 03:23:35] INFO root fetch - processPackages [parea-ai]: Downloading https://files.pythonhosted.org/packages/9d/1c/c389e28a1a12c54ff1c8111a2f00058e77ba07333943eb06d3592659a691/parea_ai-0.2.99.tar.gz
+[2024-05-18 03:23:36] INFO root fetch - processPackages [parea-ai]: executing diffoscope
+[2024-05-18 03:23:36] INFO root fetch - processPackages [parea-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parea_ai-0.2.98.tar.gz tmp/parea_ai-0.2.99.tar.gz --markdown 20240518/p/parea-ai/0.2.98-0.2.99/README.md --exclude *.pyd
+[2024-05-18 03:23:36] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240517.119.tar.gz]
+[2024-05-18 03:23:36] INFO root fetch - processPackages [PKDevTools]: Remove: archive file [/home/abi/fetcher/tmp/PKDevTools-0.13.20240517.120.tar.gz]
+[2024-05-18 03:23:36] INFO root fetch - main [MainThread]: End processing [PKDevTools]: success
+[2024-05-18 03:23:36] INFO root fetch - processPackages [numpydantic]: Remove: archive file [/home/abi/fetcher/tmp/numpydantic-0.0.0.tar.gz]
+[2024-05-18 03:23:36] INFO root fetch - processPackages [numpydantic]: Remove: archive file [/home/abi/fetcher/tmp/numpydantic-1.0.0rc1.tar.gz]
+[2024-05-18 03:23:36] INFO root fetch - main [MainThread]: End processing [numpydantic]: success
+[2024-05-18 03:23:36] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.98.tar.gz]
+[2024-05-18 03:23:36] INFO root fetch - processPackages [parea-ai]: Remove: archive file [/home/abi/fetcher/tmp/parea_ai-0.2.99.tar.gz]
+[2024-05-18 03:23:36] INFO root fetch - main [MainThread]: End processing [parea-ai]: success
+[2024-05-18 03:23:36] INFO root fetch - main [MainThread]: Store serial: [23263428]
