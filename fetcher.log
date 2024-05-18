@@ -6914,3 +6914,38 @@
 [2024-05-18 03:43:39] INFO root fetch - processPackages [bagbag]: Remove: archive file [/home/abi/fetcher/tmp/bagbag-0.68.9.tar.gz]
 [2024-05-18 03:43:39] INFO root fetch - main [MainThread]: End processing [bagbag]: success
 [2024-05-18 03:43:39] INFO root fetch - main [MainThread]: Store serial: [23263812]
+[2024-05-18 03:45:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263812]
+[2024-05-18 03:45:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-18 03:47:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23263812]
+[2024-05-18 03:47:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 03:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycellmech
+[2024-05-18 03:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QEasyWidgets
+[2024-05-18 03:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abcli
+[2024-05-18 03:47:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jungliz
+[2024-05-18 03:47:53] INFO root fetch - processPackages [abcli]: New version: [8.175.1] Old Version: [8.172.1]
+[2024-05-18 03:47:53] INFO root fetch - processPackages [pycellmech]: New version: [2.1.6] Old Version: [2.1.5]
+[2024-05-18 03:47:53] WARNING root fetch - processPackages [jungliz]: Skipping, unable to determine old version
+[2024-05-18 03:47:53] INFO root fetch - main [MainThread]: End processing [jungliz] error
+[2024-05-18 03:47:53] INFO root fetch - processPackages [QEasyWidgets]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 03:47:53] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/e6/74/3d0f0828618f4bb441fa9b9f461019897a1e03382825ea8db16e5346f77d/abcli-8.172.1.tar.gz
+[2024-05-18 03:47:53] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/a1/8a/0c5cf43b43ca1b66d1b290d8550c756fc807132a28fc40d1618a53e706cf/pycellmech-2.1.5.tar.gz
+[2024-05-18 03:47:53] INFO root fetch - processPackages [QEasyWidgets]: Downloading https://files.pythonhosted.org/packages/56/7d/cfdec36ed6ef752c3fe3abe4f2db9e48dd193ac7b031a220e93dbc5326b7/QEasyWidgets-0.1.8.tar.gz
+[2024-05-18 03:47:53] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/6b/77/c84bb8d8ad776698f87c688ff9acffd74e85aa6ac3a12a966227040ab968/pycellmech-2.1.6.tar.gz
+[2024-05-18 03:47:53] INFO root fetch - processPackages [abcli]: Downloading https://files.pythonhosted.org/packages/2a/64/0b71e258fd4e8bda58dd151cb78f043a5a57f02457d1dc5d7210a7d147ae/abcli-8.175.1.tar.gz
+[2024-05-18 03:47:53] INFO root fetch - processPackages [pycellmech]: executing diffoscope
+[2024-05-18 03:47:53] INFO root fetch - processPackages [pycellmech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycellmech-2.1.5.tar.gz tmp/pycellmech-2.1.6.tar.gz --markdown 20240518/p/pycellmech/2.1.5-2.1.6/README.md --exclude *.pyd
+[2024-05-18 03:47:53] INFO root fetch - processPackages [abcli]: executing diffoscope
+[2024-05-18 03:47:53] INFO root fetch - processPackages [abcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abcli-8.172.1.tar.gz tmp/abcli-8.175.1.tar.gz --markdown 20240518/a/abcli/8.172.1-8.175.1/README.md --exclude *.pyd
+[2024-05-18 03:47:53] INFO root fetch - processPackages [QEasyWidgets]: Downloading https://files.pythonhosted.org/packages/7b/2f/1bd6a089d6d08172fd85a327b443ccd03eadc0f60b4997a9167ea9691fd5/QEasyWidgets-0.1.9.tar.gz
+[2024-05-18 03:47:54] INFO root fetch - processPackages [QEasyWidgets]: executing diffoscope
+[2024-05-18 03:47:54] INFO root fetch - processPackages [QEasyWidgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QEasyWidgets-0.1.8.tar.gz tmp/QEasyWidgets-0.1.9.tar.gz --markdown 20240518/Q/QEasyWidgets/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 03:47:54] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.5.tar.gz]
+[2024-05-18 03:47:54] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.6.tar.gz]
+[2024-05-18 03:47:54] INFO root fetch - main [MainThread]: End processing [pycellmech]: success
+[2024-05-18 03:47:54] INFO root fetch - processPackages [QEasyWidgets]: Remove: archive file [/home/abi/fetcher/tmp/QEasyWidgets-0.1.8.tar.gz]
+[2024-05-18 03:47:54] INFO root fetch - processPackages [QEasyWidgets]: Remove: archive file [/home/abi/fetcher/tmp/QEasyWidgets-0.1.9.tar.gz]
+[2024-05-18 03:47:54] INFO root fetch - main [MainThread]: End processing [QEasyWidgets]: success
+[2024-05-18 03:47:54] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.172.1.tar.gz]
+[2024-05-18 03:47:54] INFO root fetch - processPackages [abcli]: Remove: archive file [/home/abi/fetcher/tmp/abcli-8.175.1.tar.gz]
+[2024-05-18 03:47:54] INFO root fetch - main [MainThread]: End processing [abcli]: success
+[2024-05-18 03:47:54] INFO root fetch - main [MainThread]: Store serial: [23263825]
