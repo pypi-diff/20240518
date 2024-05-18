@@ -21096,3 +21096,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 21:52:01] INFO root fetch - processPackages [openapi-python-client]: Remove: archive file [/home/abi/fetcher/tmp/openapi-python-client-0.9.2.tar.gz]
 [2024-05-18 21:52:01] INFO root fetch - main [MainThread]: End processing [openapi-python-client]: success
 [2024-05-18 21:52:01] INFO root fetch - main [MainThread]: Store serial: [23270704]
+[2024-05-18 21:54:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270704]
+[2024-05-18 21:54:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syenodioritez
+[2024-05-18 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botasaurus-driver
+[2024-05-18 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cli-command-parser
+[2024-05-18 21:54:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyEasyDbApi
+[2024-05-18 21:54:10] INFO root fetch - processPackages [pyEasyDbApi]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 21:54:10] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/39/ab/fa8ef609511886a3db65c2bce16a7d131e070400896aeeedeed7ff7ec723/pyeasydbapi-0.1.8.tar.gz
+[2024-05-18 21:54:10] WARNING root fetch - processPackages [syenodioritez]: Skipping, unable to determine old version
+[2024-05-18 21:54:10] INFO root fetch - main [MainThread]: End processing [syenodioritez] error
+[2024-05-18 21:54:10] INFO root fetch - processPackages [cli-command-parser]: New version: [2024.5.18.post1] Old Version: [2024.4.21]
+[2024-05-18 21:54:10] INFO root fetch - processPackages [botasaurus-driver]: New version: [4.0.9] Old Version: [4.0.8]
+[2024-05-18 21:54:10] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/fa/97/daabb6b8664b54c46b5d5e640c276a3d86a64037fb53eb5b4ea5576bb5af/cli_command_parser-2024.4.21.tar.gz
+[2024-05-18 21:54:10] INFO root fetch - processPackages [botasaurus-driver]: Downloading https://files.pythonhosted.org/packages/fa/7e/4cded5fa90ea0a7190b71e9cff4e212107c073d4621880dcdb18dab7bf09/botasaurus_driver-4.0.8.tar.gz
+[2024-05-18 21:54:10] INFO root fetch - processPackages [pyEasyDbApi]: Downloading https://files.pythonhosted.org/packages/29/e1/754e298a8165335b9479e000e4220ea132bc49b9157ee75c440ebf19c2b2/pyeasydbapi-0.1.9.tar.gz
+[2024-05-18 21:54:11] INFO root fetch - processPackages [pyEasyDbApi]: executing diffoscope
+[2024-05-18 21:54:11] INFO root fetch - processPackages [pyEasyDbApi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeasydbapi-0.1.8.tar.gz tmp/pyeasydbapi-0.1.9.tar.gz --markdown 20240518/p/pyEasyDbApi/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 21:54:11] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/72/8e/56879f21f6648cdb662c760330166c8a53775d24709b04703cb396650780/cli_command_parser-2024.5.18.post1.tar.gz
+[2024-05-18 21:54:11] INFO root fetch - processPackages [botasaurus-driver]: Downloading https://files.pythonhosted.org/packages/ad/57/c5587eb0a46a39cf90a36835b2e3372614749a4cde08db6baad1ff2eac4e/botasaurus_driver-4.0.9.tar.gz
+[2024-05-18 21:54:11] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2024-05-18 21:54:11] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2024.4.21.tar.gz tmp/cli_command_parser-2024.5.18.post1.tar.gz --markdown 20240518/c/cli-command-parser/2024.4.21-2024.5.18.post1/README.md --exclude *.pyd
+[2024-05-18 21:54:11] INFO root fetch - processPackages [botasaurus-driver]: executing diffoscope
+[2024-05-18 21:54:11] INFO root fetch - processPackages [botasaurus-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus_driver-4.0.8.tar.gz tmp/botasaurus_driver-4.0.9.tar.gz --markdown 20240518/b/botasaurus-driver/4.0.8-4.0.9/README.md --exclude *.pyd
+[2024-05-18 21:54:11] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.8.tar.gz]
+[2024-05-18 21:54:11] INFO root fetch - processPackages [pyEasyDbApi]: Remove: archive file [/home/abi/fetcher/tmp/pyeasydbapi-0.1.9.tar.gz]
+[2024-05-18 21:54:11] INFO root fetch - main [MainThread]: End processing [pyEasyDbApi]: success
+[2024-05-18 21:54:12] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.4.21.tar.gz]
+[2024-05-18 21:54:12] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.5.18.post1.tar.gz]
+[2024-05-18 21:54:12] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2024-05-18 21:54:12] INFO root fetch - processPackages [botasaurus-driver]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_driver-4.0.8.tar.gz]
+[2024-05-18 21:54:12] INFO root fetch - processPackages [botasaurus-driver]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_driver-4.0.9.tar.gz]
+[2024-05-18 21:54:12] INFO root fetch - main [MainThread]: End processing [botasaurus-driver]: success
+[2024-05-18 21:54:12] INFO root fetch - main [MainThread]: Store serial: [23270717]
