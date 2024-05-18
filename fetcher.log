@@ -19675,3 +19675,66 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:12:40] INFO root fetch - processPackages [warp-python]: Remove: archive file [/home/abi/fetcher/tmp/warp_python-1.2.9.tar.gz]
 [2024-05-18 20:12:40] INFO root fetch - main [MainThread]: End processing [warp-python]: success
 [2024-05-18 20:12:40] INFO root fetch - main [MainThread]: Store serial: [23269967]
+[2024-05-18 20:14:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23269967]
+[2024-05-18 20:14:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyclassparser
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: time-split
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-iterutils
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: NTTS
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-queue-job
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-test-queue-job
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-filewrap
+[2024-05-18 20:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-nai3-bot
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-queue-job]: New version: [14.0.3.5.5.dev8] Old Version: [14.0.3.5.5.dev7]
+[2024-05-18 20:14:49] WARNING root fetch - processPackages [nonebot-plugin-nai3-bot]: Skipping, unable to determine old version
+[2024-05-18 20:14:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-nai3-bot] error
+[2024-05-18 20:14:49] INFO root fetch - processPackages [pyclassparser]: New version: [0.4] Old Version: [0.3]
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-queue-job]: Downloading https://files.pythonhosted.org/packages/13/06/ccb1789f936720fb9abfbfc3866a2dc24555d9156be3db84537b85c5be19/odoo14_addon_queue_job-14.0.3.5.5.dev7-py3-none-any.whl
+[2024-05-18 20:14:49] WARNING root fetch - processPackages [NTTS]: Skipping, unable to determine old version
+[2024-05-18 20:14:49] INFO root fetch - main [MainThread]: End processing [NTTS] error
+[2024-05-18 20:14:49] INFO root fetch - processPackages [python-iterutils]: New version: [0.0.2.3] Old Version: [0.0.2.2]
+[2024-05-18 20:14:49] INFO root fetch - processPackages [time-split]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-05-18 20:14:49] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/2e/a9/1cd347da3e5ef3afd33f6046c13b77ae8b41427f8522c0c10e6b1194622a/pyclassparser-0.3.tar.gz
+[2024-05-18 20:14:49] INFO root fetch - processPackages [python-filewrap]: New version: [0.0.5] Old Version: [0.0.4.1]
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: New version: [14.0.3.2.1.dev1] Old Version: [14.0.3.2.1]
+[2024-05-18 20:14:49] INFO root fetch - processPackages [python-iterutils]: Downloading https://files.pythonhosted.org/packages/4a/39/81996d511d9f448bd07127a748ee5d978c2d6b39d89c5c139f3a53ede76e/python_iterutils-0.0.2.2.tar.gz
+[2024-05-18 20:14:49] INFO root fetch - processPackages [time-split]: Downloading https://files.pythonhosted.org/packages/92/42/e72437b4e9fbe1a9d420799948ae50484e362fd8c7269c22b36e19e2dde6/time_split-0.2.1.tar.gz
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: Downloading https://files.pythonhosted.org/packages/7a/6b/926d1bf213ebe8ae4bc133619d42f51da69f7e6babe9e95232e2c3535a5c/odoo14_addon_test_queue_job-14.0.3.2.1-py3-none-any.whl
+[2024-05-18 20:14:49] INFO root fetch - processPackages [python-filewrap]: Downloading https://files.pythonhosted.org/packages/d7/0e/80b2c4b0b35608fc4a0528299b9c75ff41c7c350543077b4b2697e322a97/python_filewrap-0.0.4.1.tar.gz
+[2024-05-18 20:14:49] INFO root fetch - processPackages [pyclassparser]: Downloading https://files.pythonhosted.org/packages/8d/9b/0081529549a2745ff7e86895f2493a5dbc5ad7f0204fb9c0a51cd510afd4/pyclassparser-0.4.tar.gz
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-queue-job]: Downloading https://files.pythonhosted.org/packages/8a/f7/e471497d682fee8ff51b8687848c863d06ca2c2f564226247248f12bf1b0/odoo14_addon_queue_job-14.0.3.5.5.dev8-py3-none-any.whl
+[2024-05-18 20:14:49] INFO root fetch - processPackages [pyclassparser]: executing diffoscope
+[2024-05-18 20:14:49] INFO root fetch - processPackages [pyclassparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyclassparser-0.3.tar.gz tmp/pyclassparser-0.4.tar.gz --markdown 20240518/p/pyclassparser/0.3-0.4/README.md --exclude *.pyd
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-queue-job]: executing diffoscope
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-queue-job]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_queue_job-14.0.3.5.5.dev7-py3-none-any.whl.zip tmp/odoo14_addon_queue_job-14.0.3.5.5.dev8-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-queue-job/14.0.3.5.5.dev7-14.0.3.5.5.dev8/README.md --exclude *.pyd
+[2024-05-18 20:14:49] INFO root fetch - processPackages [python-iterutils]: Downloading https://files.pythonhosted.org/packages/7e/cd/aed5be0d574c8a9d24db7005b6da8297643bf4cf521f418a09e5b8b7e044/python_iterutils-0.0.2.3.tar.gz
+[2024-05-18 20:14:49] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: Downloading https://files.pythonhosted.org/packages/1e/50/77ba1fdbc3bb78babe939adbc88c08d759766fdbd43e3312cd508ba28264/odoo14_addon_test_queue_job-14.0.3.2.1.dev1-py3-none-any.whl
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-filewrap]: Downloading https://files.pythonhosted.org/packages/28/fb/29ef9ce735c10409d639ca06952187744dfef62bdd754102da8b0e1fc0ed/python_filewrap-0.0.5.tar.gz
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-iterutils]: executing diffoscope
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-iterutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_iterutils-0.0.2.2.tar.gz tmp/python_iterutils-0.0.2.3.tar.gz --markdown 20240518/p/python-iterutils/0.0.2.2-0.0.2.3/README.md --exclude *.pyd
+[2024-05-18 20:14:50] INFO root fetch - processPackages [time-split]: Downloading https://files.pythonhosted.org/packages/2e/1d/7dee5bc84eb3dc8fbaf0096d173d194eac7868fb61e67db34308659dfe49/time_split-0.3.0.tar.gz
+[2024-05-18 20:14:50] INFO root fetch - processPackages [time-split]: executing diffoscope
+[2024-05-18 20:14:50] INFO root fetch - processPackages [time-split]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_split-0.2.1.tar.gz tmp/time_split-0.3.0.tar.gz --markdown 20240518/t/time-split/0.2.1-0.3.0/README.md --exclude *.pyd
+[2024-05-18 20:14:50] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: executing diffoscope
+[2024-05-18 20:14:50] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_test_queue_job-14.0.3.2.1-py3-none-any.whl.zip tmp/odoo14_addon_test_queue_job-14.0.3.2.1.dev1-py3-none-any.whl.zip --markdown 20240518/o/odoo14-addon-test-queue-job/14.0.3.2.1-14.0.3.2.1.dev1/README.md --exclude *.pyd
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-filewrap]: executing diffoscope
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-filewrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_filewrap-0.0.4.1.tar.gz tmp/python_filewrap-0.0.5.tar.gz --markdown 20240518/p/python-filewrap/0.0.4.1-0.0.5/README.md --exclude *.pyd
+[2024-05-18 20:14:50] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.3.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - processPackages [pyclassparser]: Remove: archive file [/home/abi/fetcher/tmp/pyclassparser-0.4.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [pyclassparser]: success
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-iterutils]: Remove: archive file [/home/abi/fetcher/tmp/python_iterutils-0.0.2.2.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-iterutils]: Remove: archive file [/home/abi/fetcher/tmp/python_iterutils-0.0.2.3.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [python-iterutils]: success
+[2024-05-18 20:14:50] INFO root fetch - processPackages [odoo14-addon-queue-job]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_queue_job-14.0.3.5.5.dev7-py3-none-any.whl.zip]
+[2024-05-18 20:14:50] INFO root fetch - processPackages [odoo14-addon-queue-job]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_queue_job-14.0.3.5.5.dev8-py3-none-any.whl.zip]
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-queue-job]: success
+[2024-05-18 20:14:50] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_test_queue_job-14.0.3.2.1-py3-none-any.whl.zip]
+[2024-05-18 20:14:50] INFO root fetch - processPackages [odoo14-addon-test-queue-job]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_test_queue_job-14.0.3.2.1.dev1-py3-none-any.whl.zip]
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-test-queue-job]: success
+[2024-05-18 20:14:50] INFO root fetch - processPackages [time-split]: Remove: archive file [/home/abi/fetcher/tmp/time_split-0.2.1.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - processPackages [time-split]: Remove: archive file [/home/abi/fetcher/tmp/time_split-0.3.0.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [time-split]: success
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-filewrap]: Remove: archive file [/home/abi/fetcher/tmp/python_filewrap-0.0.4.1.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - processPackages [python-filewrap]: Remove: archive file [/home/abi/fetcher/tmp/python_filewrap-0.0.5.tar.gz]
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: End processing [python-filewrap]: success
+[2024-05-18 20:14:50] INFO root fetch - main [MainThread]: Store serial: [23269990]
