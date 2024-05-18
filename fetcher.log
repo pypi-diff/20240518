@@ -14089,3 +14089,30 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:20:03] INFO root fetch - processPackages [summa-embed]: Remove: archive file [/home/abi/fetcher/tmp/summa_embed-0.23.8-cp312-none-win_amd64.whl.zip]
 [2024-05-18 13:20:03] INFO root fetch - main [MainThread]: End processing [summa-embed]: success
 [2024-05-18 13:20:03] INFO root fetch - main [MainThread]: Store serial: [23267231]
+[2024-05-18 13:22:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267231]
+[2024-05-18 13:22:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 13:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plessorsz
+[2024-05-18 13:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dp-PDF-Crawler
+[2024-05-18 13:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extrautilities
+[2024-05-18 13:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altstore-proxy
+[2024-05-18 13:22:12] INFO root fetch - processPackages [dp-PDF-Crawler]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 13:22:12] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/ea/42/45c9aa993340f7fda255908283563826ddcf089b19955a8481c0b94fe363/dp-PDF-Crawler-1.0.0.tar.gz
+[2024-05-18 13:22:12] WARNING root fetch - processPackages [plessorsz]: Skipping, unable to determine old version
+[2024-05-18 13:22:12] INFO root fetch - main [MainThread]: End processing [plessorsz] error
+[2024-05-18 13:22:12] WARNING root fetch - processPackages [altstore-proxy]: Skipping, unable to determine old version
+[2024-05-18 13:22:12] INFO root fetch - main [MainThread]: End processing [altstore-proxy] error
+[2024-05-18 13:22:12] INFO root fetch - processPackages [extrautilities]: New version: [1.0] Old Version: [0.9]
+[2024-05-18 13:22:12] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/a1/14/7d49680b7329ece5e4134a752cc6edcaf7e9f01748a9cc98f6da923eeb98/extrautilities-0.9.tar.gz
+[2024-05-18 13:22:12] INFO root fetch - processPackages [dp-PDF-Crawler]: Downloading https://files.pythonhosted.org/packages/98/a8/a84656fd05ad84a9fe8b4a5f667a833903a186217f29dbc5c85420ce5a7e/dp-PDF-Crawler-1.0.1.tar.gz
+[2024-05-18 13:22:12] INFO root fetch - processPackages [dp-PDF-Crawler]: executing diffoscope
+[2024-05-18 13:22:12] INFO root fetch - processPackages [dp-PDF-Crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp-PDF-Crawler-1.0.0.tar.gz tmp/dp-PDF-Crawler-1.0.1.tar.gz --markdown 20240518/d/dp-PDF-Crawler/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 13:22:12] INFO root fetch - processPackages [extrautilities]: Downloading https://files.pythonhosted.org/packages/39/6f/d855f5b2c4fb6991ec5a8d8c526e55e100ca03b6610c900ba7f3166b158f/extrautilities-1.0.tar.gz
+[2024-05-18 13:22:12] INFO root fetch - processPackages [extrautilities]: executing diffoscope
+[2024-05-18 13:22:12] INFO root fetch - processPackages [extrautilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extrautilities-0.9.tar.gz tmp/extrautilities-1.0.tar.gz --markdown 20240518/e/extrautilities/0.9-1.0/README.md --exclude *.pyd
+[2024-05-18 13:22:13] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-1.0.0.tar.gz]
+[2024-05-18 13:22:13] INFO root fetch - processPackages [dp-PDF-Crawler]: Remove: archive file [/home/abi/fetcher/tmp/dp-PDF-Crawler-1.0.1.tar.gz]
+[2024-05-18 13:22:13] INFO root fetch - main [MainThread]: End processing [dp-PDF-Crawler]: success
+[2024-05-18 13:22:13] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-0.9.tar.gz]
+[2024-05-18 13:22:13] INFO root fetch - processPackages [extrautilities]: Remove: archive file [/home/abi/fetcher/tmp/extrautilities-1.0.tar.gz]
+[2024-05-18 13:22:13] INFO root fetch - main [MainThread]: End processing [extrautilities]: success
+[2024-05-18 13:22:13] INFO root fetch - main [MainThread]: Store serial: [23267264]
