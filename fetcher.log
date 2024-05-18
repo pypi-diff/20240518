@@ -17105,3 +17105,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 17:20:21] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.9.tar.gz]
 [2024-05-18 17:20:21] INFO root fetch - main [MainThread]: End processing [datascope-experiments]: success
 [2024-05-18 17:20:21] INFO root fetch - main [MainThread]: Store serial: [23268791]
+[2024-05-18 17:22:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23268791]
+[2024-05-18 17:22:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datascope
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hiperz
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mnist-separator
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Shellper
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-sale-validity-auto-cancel
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gitoptim
+[2024-05-18 17:22:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: poja-by-tanjona
+[2024-05-18 17:22:30] INFO root fetch - processPackages [gitoptim]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-05-18 17:22:30] INFO root fetch - processPackages [Shellper]: New version: [0.3.2.1] Old Version: [0.3.2]
+[2024-05-18 17:22:30] INFO root fetch - processPackages [datascope]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 17:22:30] WARNING root fetch - processPackages [odoo14-addon-sale-validity-auto-cancel]: Skipping, unable to determine old version
+[2024-05-18 17:22:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-validity-auto-cancel] error
+[2024-05-18 17:22:30] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/45/6f/0f75b31a907c70dcedde994a3eba2781183474400bc622ed9ec1307d905d/gitoptim-0.1.0.dev8.tar.gz
+[2024-05-18 17:22:30] INFO root fetch - processPackages [mnist-separator]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-18 17:22:30] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/1b/a2/c914df7058798441b5494721c4e145f71f88a92f37f951bed22101a7277e/shellper-0.3.2.tar.gz
+[2024-05-18 17:22:30] WARNING root fetch - processPackages [hiperz]: Skipping, unable to determine old version
+[2024-05-18 17:22:30] INFO root fetch - main [MainThread]: End processing [hiperz] error
+[2024-05-18 17:22:31] WARNING root fetch - processPackages [poja-by-tanjona]: Skipping, unable to determine old version
+[2024-05-18 17:22:31] INFO root fetch - main [MainThread]: End processing [poja-by-tanjona] error
+[2024-05-18 17:22:31] INFO root fetch - processPackages [datascope]: Downloading https://files.pythonhosted.org/packages/d9/83/1114235865b67bc03772aa172d9ef95cb7512d6a39d6dd3a19f9dd4d1257/datascope-0.0.8.tar.gz
+[2024-05-18 17:22:31] INFO root fetch - processPackages [mnist-separator]: Downloading https://files.pythonhosted.org/packages/fe/f4/c349af0a370176f6c46fc162d2ad77f574a443df6994c0551f681ab3760b/mnist_separator-1.0.4.tar.gz
+[2024-05-18 17:22:31] INFO root fetch - processPackages [gitoptim]: Downloading https://files.pythonhosted.org/packages/2d/7b/8189c9a337faab6ae94d38e0f71db1ec38377ec5391a00d135a942ee8b90/gitoptim-0.1.0.dev9.tar.gz
+[2024-05-18 17:22:31] INFO root fetch - processPackages [gitoptim]: executing diffoscope
+[2024-05-18 17:22:31] INFO root fetch - processPackages [gitoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitoptim-0.1.0.dev8.tar.gz tmp/gitoptim-0.1.0.dev9.tar.gz --markdown 20240518/g/gitoptim/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-05-18 17:22:31] INFO root fetch - processPackages [Shellper]: Downloading https://files.pythonhosted.org/packages/3e/88/59f308260cd18c08939ffd2495671f220a505d857988ec768c20530799c2/shellper-0.3.2.1.tar.gz
+[2024-05-18 17:22:31] INFO root fetch - processPackages [datascope]: Downloading https://files.pythonhosted.org/packages/d7/a0/85745901d507429a18795ac1f45246626c5bad2fe69dd45782b50bcb6e14/datascope-0.0.9.tar.gz
+[2024-05-18 17:22:31] INFO root fetch - processPackages [Shellper]: executing diffoscope
+[2024-05-18 17:22:31] INFO root fetch - processPackages [Shellper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellper-0.3.2.tar.gz tmp/shellper-0.3.2.1.tar.gz --markdown 20240518/S/Shellper/0.3.2-0.3.2.1/README.md --exclude *.pyd
+[2024-05-18 17:22:31] INFO root fetch - processPackages [mnist-separator]: Downloading https://files.pythonhosted.org/packages/0d/26/a0d668b8096ab221c89e0c638248195d6285a6a0e1dc2da30a0777500596/mnist_separator-1.0.5.tar.gz
+[2024-05-18 17:22:31] INFO root fetch - processPackages [datascope]: executing diffoscope
+[2024-05-18 17:22:31] INFO root fetch - processPackages [datascope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datascope-0.0.8.tar.gz tmp/datascope-0.0.9.tar.gz --markdown 20240518/d/datascope/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 17:22:31] INFO root fetch - processPackages [mnist-separator]: executing diffoscope
+[2024-05-18 17:22:31] INFO root fetch - processPackages [mnist-separator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mnist_separator-1.0.4.tar.gz tmp/mnist_separator-1.0.5.tar.gz --markdown 20240518/m/mnist-separator/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-18 17:22:31] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev8.tar.gz]
+[2024-05-18 17:22:31] INFO root fetch - processPackages [gitoptim]: Remove: archive file [/home/abi/fetcher/tmp/gitoptim-0.1.0.dev9.tar.gz]
+[2024-05-18 17:22:31] INFO root fetch - main [MainThread]: End processing [gitoptim]: success
+[2024-05-18 17:22:31] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.tar.gz]
+[2024-05-18 17:22:31] INFO root fetch - processPackages [Shellper]: Remove: archive file [/home/abi/fetcher/tmp/shellper-0.3.2.1.tar.gz]
+[2024-05-18 17:22:31] INFO root fetch - main [MainThread]: End processing [Shellper]: success
+[2024-05-18 17:22:32] INFO root fetch - processPackages [datascope]: Remove: archive file [/home/abi/fetcher/tmp/datascope-0.0.8.tar.gz]
+[2024-05-18 17:22:32] INFO root fetch - processPackages [datascope]: Remove: archive file [/home/abi/fetcher/tmp/datascope-0.0.9.tar.gz]
+[2024-05-18 17:22:32] INFO root fetch - main [MainThread]: End processing [datascope]: success
+[2024-05-18 17:22:32] INFO root fetch - processPackages [mnist-separator]: Remove: archive file [/home/abi/fetcher/tmp/mnist_separator-1.0.4.tar.gz]
+[2024-05-18 17:22:32] INFO root fetch - processPackages [mnist-separator]: Remove: archive file [/home/abi/fetcher/tmp/mnist_separator-1.0.5.tar.gz]
+[2024-05-18 17:22:32] INFO root fetch - main [MainThread]: End processing [mnist-separator]: success
+[2024-05-18 17:22:32] INFO root fetch - main [MainThread]: Store serial: [23268811]
