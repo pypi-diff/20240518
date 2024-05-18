@@ -2611,3 +2611,33 @@
 [2024-05-18 02:42:45] INFO root fetch - processPackages [ipyslides]: Remove: archive file [/home/abi/fetcher/tmp/ipyslides-3.8.8.tar.gz]
 [2024-05-18 02:42:45] INFO root fetch - main [MainThread]: End processing [ipyslides]: success
 [2024-05-18 02:42:45] INFO root fetch - main [MainThread]: Store serial: [23262364]
+[2024-05-18 02:44:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23262364]
+[2024-05-18 02:44:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 02:44:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycellmech
+[2024-05-18 02:44:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: freegenius
+[2024-05-18 02:44:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfds-nightly
+[2024-05-18 02:44:53] INFO root fetch - processPackages [pycellmech]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-05-18 02:44:53] INFO root fetch - processPackages [freegenius]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-18 02:44:53] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405170044] Old Version: [4.9.4.dev202405160044]
+[2024-05-18 02:44:53] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/d5/ca/411a282eb501daf2e794cd1fb0f3e90fdbc6bf2302cf9c34892282b27dbc/freegenius-0.2.8.tar.gz
+[2024-05-18 02:44:54] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/49/cb/674aec09379dfe711e1bfe2a5c957c25b94949bf2a45c6d27f6d802346f3/tfds-nightly-4.9.4.dev202405160044.tar.gz
+[2024-05-18 02:44:54] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/53/4d/4ec8933257ef4a8343ef96a95d8d66f5437acb08a692beeea9099fee061b/pycellmech-2.1.0.tar.gz
+[2024-05-18 02:44:54] INFO root fetch - processPackages [pycellmech]: Downloading https://files.pythonhosted.org/packages/ce/8d/9991dba0def25126be3c1987437308309f6918edf46c73197c875fdf8b21/pycellmech-2.1.1.tar.gz
+[2024-05-18 02:44:54] INFO root fetch - processPackages [pycellmech]: executing diffoscope
+[2024-05-18 02:44:54] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/85/e0/79c8d3b405fbb09c8afb4fc4cba33e77303a57f60e90bbef2e19a2c5a73a/freegenius-0.2.9.tar.gz
+[2024-05-18 02:44:54] INFO root fetch - processPackages [pycellmech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycellmech-2.1.0.tar.gz tmp/pycellmech-2.1.1.tar.gz --markdown 20240518/p/pycellmech/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-05-18 02:44:54] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/03/14/f6f839737a28cd1ee7fd5a5a9594dc53b604d852c49f00f5550701e4ab6f/tfds-nightly-4.9.4.dev202405170044.tar.gz
+[2024-05-18 02:44:54] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-05-18 02:44:54] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.2.8.tar.gz tmp/freegenius-0.2.9.tar.gz --markdown 20240518/f/freegenius/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-18 02:44:54] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-18 02:44:54] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405160044.tar.gz tmp/tfds-nightly-4.9.4.dev202405170044.tar.gz --markdown 20240518/t/tfds-nightly/4.9.4.dev202405160044-4.9.4.dev202405170044/README.md --exclude *.pyd
+[2024-05-18 02:44:55] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.0.tar.gz]
+[2024-05-18 02:44:55] INFO root fetch - processPackages [pycellmech]: Remove: archive file [/home/abi/fetcher/tmp/pycellmech-2.1.1.tar.gz]
+[2024-05-18 02:44:55] INFO root fetch - main [MainThread]: End processing [pycellmech]: success
+[2024-05-18 02:44:56] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.8.tar.gz]
+[2024-05-18 02:44:56] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.2.9.tar.gz]
+[2024-05-18 02:44:56] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-05-18 02:45:03] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405160044.tar.gz]
+[2024-05-18 02:45:03] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405170044.tar.gz]
+[2024-05-18 02:45:03] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-18 02:45:03] INFO root fetch - main [MainThread]: Store serial: [23262376]
