@@ -20092,3 +20092,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 20:37:37] INFO root fetch - processPackages [numpoly]: Remove: archive file [/home/abi/fetcher/tmp/numpoly-1.2.9.tar.gz]
 [2024-05-18 20:37:37] INFO root fetch - main [MainThread]: End processing [numpoly]: success
 [2024-05-18 20:37:37] INFO root fetch - main [MainThread]: Store serial: [23270201]
+[2024-05-18 20:39:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23270201]
+[2024-05-18 20:39:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-18 20:39:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bismuthsdk
+[2024-05-18 20:39:46] INFO root fetch - processPackages [bismuthsdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 20:39:46] INFO root fetch - processPackages [bismuthsdk]: Downloading https://files.pythonhosted.org/packages/a0/70/af965433c991b650f3a1f65e75675f8ef0364ca300a1609bd855febc0869/bismuthsdk-0.1.8.tar.gz
+[2024-05-18 20:39:47] INFO root fetch - processPackages [bismuthsdk]: Downloading https://files.pythonhosted.org/packages/a5/63/e13e9ec2aed923740dc88b67e680cc7e75a2aecd7118ddd657ca8382eda2/bismuthsdk-0.1.9.tar.gz
+[2024-05-18 20:39:47] INFO root fetch - processPackages [bismuthsdk]: executing diffoscope
+[2024-05-18 20:39:47] INFO root fetch - processPackages [bismuthsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bismuthsdk-0.1.8.tar.gz tmp/bismuthsdk-0.1.9.tar.gz --markdown 20240518/b/bismuthsdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 20:39:47] INFO root fetch - processPackages [bismuthsdk]: Remove: archive file [/home/abi/fetcher/tmp/bismuthsdk-0.1.8.tar.gz]
+[2024-05-18 20:39:47] INFO root fetch - processPackages [bismuthsdk]: Remove: archive file [/home/abi/fetcher/tmp/bismuthsdk-0.1.9.tar.gz]
+[2024-05-18 20:39:47] INFO root fetch - main [MainThread]: End processing [bismuthsdk]: success
+[2024-05-18 20:39:47] INFO root fetch - main [MainThread]: Store serial: [23270224]
