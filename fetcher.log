@@ -11682,3 +11682,27 @@
 [2024-05-18 10:04:31] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240517.tar.gz]
 [2024-05-18 10:04:31] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-05-18 10:04:31] INFO root fetch - main [MainThread]: Store serial: [23265882]
+[2024-05-18 10:06:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265882]
+[2024-05-18 10:06:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-18 10:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: people-local
+[2024-05-18 10:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: morigerousz
+[2024-05-18 10:06:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: effect-form-validators
+[2024-05-18 10:06:40] INFO root fetch - processPackages [people-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-18 10:06:40] INFO root fetch - processPackages [people-local]: Downloading https://files.pythonhosted.org/packages/8b/1c/6315cdb848f482a3caf92189f2b65376a69c68543b2b6f4db62d865cb36e/people-local-0.0.8.tar.gz
+[2024-05-18 10:06:40] WARNING root fetch - processPackages [morigerousz]: Skipping, unable to determine old version
+[2024-05-18 10:06:40] INFO root fetch - main [MainThread]: End processing [morigerousz] error
+[2024-05-18 10:06:40] INFO root fetch - processPackages [effect-form-validators]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-18 10:06:40] INFO root fetch - processPackages [people-local]: Downloading https://files.pythonhosted.org/packages/cc/ba/07a77e133c7523ecf4191eb3efb5529e4cee964e55f5dff0504d09de7d34/people-local-0.0.9.tar.gz
+[2024-05-18 10:06:40] INFO root fetch - processPackages [effect-form-validators]: Downloading https://files.pythonhosted.org/packages/63/1a/f9b808d3a58e1c02664f3eeab96b7732b2e9bfc03ba3485a528ed969980b/effect-form-validators-0.1.8.tar.gz
+[2024-05-18 10:06:40] INFO root fetch - processPackages [people-local]: executing diffoscope
+[2024-05-18 10:06:40] INFO root fetch - processPackages [people-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/people-local-0.0.8.tar.gz tmp/people-local-0.0.9.tar.gz --markdown 20240518/p/people-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-18 10:06:41] INFO root fetch - processPackages [effect-form-validators]: Downloading https://files.pythonhosted.org/packages/ae/95/9972f0554c810dfac0fe921d2f6be0c7168da44a5fcd8460152177b87a6c/effect-form-validators-0.1.9.tar.gz
+[2024-05-18 10:06:41] INFO root fetch - processPackages [effect-form-validators]: executing diffoscope
+[2024-05-18 10:06:41] INFO root fetch - processPackages [effect-form-validators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/effect-form-validators-0.1.8.tar.gz tmp/effect-form-validators-0.1.9.tar.gz --markdown 20240518/e/effect-form-validators/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-18 10:06:41] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.8.tar.gz]
+[2024-05-18 10:06:41] INFO root fetch - processPackages [people-local]: Remove: archive file [/home/abi/fetcher/tmp/people-local-0.0.9.tar.gz]
+[2024-05-18 10:06:41] INFO root fetch - main [MainThread]: End processing [people-local]: success
+[2024-05-18 10:06:41] INFO root fetch - processPackages [effect-form-validators]: Remove: archive file [/home/abi/fetcher/tmp/effect-form-validators-0.1.8.tar.gz]
+[2024-05-18 10:06:41] INFO root fetch - processPackages [effect-form-validators]: Remove: archive file [/home/abi/fetcher/tmp/effect-form-validators-0.1.9.tar.gz]
+[2024-05-18 10:06:41] INFO root fetch - main [MainThread]: End processing [effect-form-validators]: success
+[2024-05-18 10:06:41] INFO root fetch - main [MainThread]: Store serial: [23265892]
