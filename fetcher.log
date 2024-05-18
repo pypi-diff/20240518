@@ -15098,3 +15098,42 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:43:48] INFO root fetch - processPackages [agenta]: Remove: archive file [/home/abi/fetcher/tmp/agenta-0.9.0.tar.gz]
 [2024-05-18 14:43:48] INFO root fetch - main [MainThread]: End processing [agenta]: success
 [2024-05-18 14:43:48] INFO root fetch - main [MainThread]: Store serial: [23267717]
+[2024-05-18 14:45:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267717]
+[2024-05-18 14:45:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 14:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ocpsvg
+[2024-05-18 14:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dicom-utils
+[2024-05-18 14:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Gewebehaken
+[2024-05-18 14:45:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zibuyu-LLM
+[2024-05-18 14:45:57] INFO root fetch - processPackages [ocpsvg]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-18 14:45:57] INFO root fetch - processPackages [zibuyu-LLM]: New version: [2.1.19] Old Version: [0.1.9]
+[2024-05-18 14:45:57] INFO root fetch - processPackages [dicom-utils]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 14:45:57] INFO root fetch - processPackages [Gewebehaken]: New version: [0.4] Old Version: [0.3]
+[2024-05-18 14:45:58] INFO root fetch - processPackages [ocpsvg]: Downloading https://files.pythonhosted.org/packages/18/fe/487b3301555d61823b53724c4979e262f9b060f2591a2d22339608d945bc/ocpsvg-0.2.0.tar.gz
+[2024-05-18 14:45:58] INFO root fetch - processPackages [Gewebehaken]: Downloading https://files.pythonhosted.org/packages/c3/c0/208eb852b7af017428dac0f9edfb148220f2da5d55a58c1da21289e6ef03/Gewebehaken-0.3.tar.gz
+[2024-05-18 14:45:58] INFO root fetch - processPackages [dicom-utils]: Downloading https://files.pythonhosted.org/packages/32/38/6caf074314e651a4364c70fe2351c6193e63be1d9b4e77c3df22e6e742c1/dicom-utils-1.0.0.tar.gz
+[2024-05-18 14:45:58] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/8b/1d/73751ba8bfaf5b2eb71d0251541264c73d9b0da5c2d08f0111dbee0978db/zibuyu_LLM-0.1.9-py3-none-any.whl
+[2024-05-18 14:45:58] INFO root fetch - processPackages [ocpsvg]: Downloading https://files.pythonhosted.org/packages/af/82/765fbd19851900ce411bfa932d06646345045aa642b673ca5dc1b49d5568/ocpsvg-0.2.1.tar.gz
+[2024-05-18 14:45:58] INFO root fetch - processPackages [Gewebehaken]: Downloading https://files.pythonhosted.org/packages/f3/89/9596dcf1fba8744be5d877bd491e3a2ef4bb9a3eae6bb59114c92334fcc8/gewebehaken-0.4.tar.gz
+[2024-05-18 14:45:58] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/28/04/a955cdca3b2ec39a045a505afeb9b377fde8ba0805b223e6fc5ca7f5e0a9/zibuyu_LLM-2.1.19-py3-none-any.whl
+[2024-05-18 14:45:58] INFO root fetch - processPackages [dicom-utils]: Downloading https://files.pythonhosted.org/packages/a7/f2/2e0ed9c3f350ad3860e4e5392d3bfa74f64aca4c9d83eabd81cc71bb1e46/dicom-utils-1.0.1.tar.gz
+[2024-05-18 14:45:58] INFO root fetch - processPackages [ocpsvg]: executing diffoscope
+[2024-05-18 14:45:58] INFO root fetch - processPackages [ocpsvg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocpsvg-0.2.0.tar.gz tmp/ocpsvg-0.2.1.tar.gz --markdown 20240518/o/ocpsvg/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-18 14:45:58] INFO root fetch - processPackages [dicom-utils]: executing diffoscope
+[2024-05-18 14:45:58] INFO root fetch - processPackages [dicom-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicom-utils-1.0.0.tar.gz tmp/dicom-utils-1.0.1.tar.gz --markdown 20240518/d/dicom-utils/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-18 14:45:58] INFO root fetch - processPackages [Gewebehaken]: executing diffoscope
+[2024-05-18 14:45:58] INFO root fetch - processPackages [Gewebehaken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Gewebehaken-0.3.tar.gz tmp/gewebehaken-0.4.tar.gz --markdown 20240518/G/Gewebehaken/0.3-0.4/README.md --exclude *.pyd
+[2024-05-18 14:45:58] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-18 14:45:58] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip tmp/zibuyu_LLM-2.1.19-py3-none-any.whl.zip --markdown 20240518/z/zibuyu-LLM/0.1.9-2.1.19/README.md --exclude *.pyd
+[2024-05-18 14:45:59] INFO root fetch - processPackages [ocpsvg]: Remove: archive file [/home/abi/fetcher/tmp/ocpsvg-0.2.0.tar.gz]
+[2024-05-18 14:45:59] INFO root fetch - processPackages [ocpsvg]: Remove: archive file [/home/abi/fetcher/tmp/ocpsvg-0.2.1.tar.gz]
+[2024-05-18 14:45:59] INFO root fetch - main [MainThread]: End processing [ocpsvg]: success
+[2024-05-18 14:45:59] INFO root fetch - processPackages [Gewebehaken]: Remove: archive file [/home/abi/fetcher/tmp/Gewebehaken-0.3.tar.gz]
+[2024-05-18 14:45:59] INFO root fetch - processPackages [Gewebehaken]: Remove: archive file [/home/abi/fetcher/tmp/gewebehaken-0.4.tar.gz]
+[2024-05-18 14:45:59] INFO root fetch - main [MainThread]: End processing [Gewebehaken]: success
+[2024-05-18 14:45:59] INFO root fetch - processPackages [dicom-utils]: Remove: archive file [/home/abi/fetcher/tmp/dicom-utils-1.0.0.tar.gz]
+[2024-05-18 14:45:59] INFO root fetch - processPackages [dicom-utils]: Remove: archive file [/home/abi/fetcher/tmp/dicom-utils-1.0.1.tar.gz]
+[2024-05-18 14:45:59] INFO root fetch - main [MainThread]: End processing [dicom-utils]: success
+[2024-05-18 14:45:59] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.1.9-py3-none-any.whl.zip]
+[2024-05-18 14:45:59] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-2.1.19-py3-none-any.whl.zip]
+[2024-05-18 14:45:59] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-18 14:45:59] INFO root fetch - main [MainThread]: Store serial: [23267729]
