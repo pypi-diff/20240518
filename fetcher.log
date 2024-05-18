@@ -7527,3 +7527,18 @@
 [2024-05-18 04:36:28] INFO root fetch - processPackages [odoo-addon-mrp-analytic]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mrp_analytic-15.0.1.0.0.7-py3-none-any.whl.zip]
 [2024-05-18 04:36:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-mrp-analytic]: success
 [2024-05-18 04:36:28] INFO root fetch - main [MainThread]: Store serial: [23264059]
+[2024-05-18 04:38:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264059]
+[2024-05-18 04:38:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 04:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balsamic
+[2024-05-18 04:38:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dinornithidaez
+[2024-05-18 04:38:36] INFO root fetch - processPackages [balsamic]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-18 04:38:37] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/99/bc/b21bd601c71311fde41a66242ef381dd2b96bc00cfb4a45d6e71491eb1a7/balsamic-0.1.5.tar.gz
+[2024-05-18 04:38:37] WARNING root fetch - processPackages [dinornithidaez]: Skipping, unable to determine old version
+[2024-05-18 04:38:37] INFO root fetch - main [MainThread]: End processing [dinornithidaez] error
+[2024-05-18 04:38:37] INFO root fetch - processPackages [balsamic]: Downloading https://files.pythonhosted.org/packages/42/e8/13d73fb8da827b12b82ea24715da448bacd1d4f9180a36ceb6748211a026/balsamic-0.1.6.tar.gz
+[2024-05-18 04:38:37] INFO root fetch - processPackages [balsamic]: executing diffoscope
+[2024-05-18 04:38:37] INFO root fetch - processPackages [balsamic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balsamic-0.1.5.tar.gz tmp/balsamic-0.1.6.tar.gz --markdown 20240518/b/balsamic/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-18 04:38:37] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.5.tar.gz]
+[2024-05-18 04:38:37] INFO root fetch - processPackages [balsamic]: Remove: archive file [/home/abi/fetcher/tmp/balsamic-0.1.6.tar.gz]
+[2024-05-18 04:38:37] INFO root fetch - main [MainThread]: End processing [balsamic]: success
+[2024-05-18 04:38:37] INFO root fetch - main [MainThread]: Store serial: [23264067]
