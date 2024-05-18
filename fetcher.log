@@ -12948,3 +12948,24 @@
 [2024-05-18 11:43:23] INFO root fetch - processPackages [org-ds-cdk]: Remove: archive file [/home/abi/fetcher/tmp/org-ds-cdk-0.1.3.tar.gz]
 [2024-05-18 11:43:23] INFO root fetch - main [MainThread]: End processing [org-ds-cdk]: success
 [2024-05-18 11:43:23] INFO root fetch - main [MainThread]: Store serial: [23266720]
+[2024-05-18 11:45:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23266720]
+[2024-05-18 11:45:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 11:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smo_rejection
+[2024-05-18 11:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: markrunner-server
+[2024-05-18 11:45:32] INFO root fetch - processPackages [smo_rejection]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-18 11:45:32] INFO root fetch - processPackages [markrunner-server]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-18 11:45:32] INFO root fetch - processPackages [markrunner-server]: Downloading https://files.pythonhosted.org/packages/e1/a6/f6e1bb7d1fceed85be1ebb207bb90b306b4b0a6b91717c420a80008fcb9f/markrunner_server-0.1.2.tar.gz
+[2024-05-18 11:45:32] INFO root fetch - processPackages [smo_rejection]: Downloading https://files.pythonhosted.org/packages/aa/eb/a03516b64353bc67a643e37e0f8e9afeed16d8a98ed1cbc42cd6358c90b8/smo_rejection-0.1.0.tar.gz
+[2024-05-18 11:45:32] INFO root fetch - processPackages [markrunner-server]: Downloading https://files.pythonhosted.org/packages/9f/b2/cb7c0ffbb64b11f57d50efed3dc3d049ce33751ed8b5e994187e903df7cd/markrunner_server-0.1.3.tar.gz
+[2024-05-18 11:45:32] INFO root fetch - processPackages [markrunner-server]: executing diffoscope
+[2024-05-18 11:45:32] INFO root fetch - processPackages [markrunner-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markrunner_server-0.1.2.tar.gz tmp/markrunner_server-0.1.3.tar.gz --markdown 20240518/m/markrunner-server/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-18 11:45:32] INFO root fetch - processPackages [smo_rejection]: Downloading https://files.pythonhosted.org/packages/82/44/0dda364339007eeace856a263e43ea3c85557d6fbda6a242333dbd0cfa80/smo_rejection-0.2.0.tar.gz
+[2024-05-18 11:45:33] INFO root fetch - processPackages [smo_rejection]: executing diffoscope
+[2024-05-18 11:45:33] INFO root fetch - processPackages [smo_rejection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smo_rejection-0.1.0.tar.gz tmp/smo_rejection-0.2.0.tar.gz --markdown 20240518/s/smo_rejection/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-18 11:45:33] INFO root fetch - processPackages [markrunner-server]: Remove: archive file [/home/abi/fetcher/tmp/markrunner_server-0.1.2.tar.gz]
+[2024-05-18 11:45:33] INFO root fetch - processPackages [markrunner-server]: Remove: archive file [/home/abi/fetcher/tmp/markrunner_server-0.1.3.tar.gz]
+[2024-05-18 11:45:33] INFO root fetch - main [MainThread]: End processing [markrunner-server]: success
+[2024-05-18 11:45:33] INFO root fetch - processPackages [smo_rejection]: Remove: archive file [/home/abi/fetcher/tmp/smo_rejection-0.1.0.tar.gz]
+[2024-05-18 11:45:33] INFO root fetch - processPackages [smo_rejection]: Remove: archive file [/home/abi/fetcher/tmp/smo_rejection-0.2.0.tar.gz]
+[2024-05-18 11:45:33] INFO root fetch - main [MainThread]: End processing [smo_rejection]: success
+[2024-05-18 11:45:33] INFO root fetch - main [MainThread]: Store serial: [23266733]
