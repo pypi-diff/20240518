@@ -8255,3 +8255,24 @@
 [2024-05-18 05:09:26] INFO root fetch - processPackages [chromophile]: Remove: archive file [/home/abi/fetcher/tmp/chromophile-1.0.5.tar.gz]
 [2024-05-18 05:09:26] INFO root fetch - main [MainThread]: End processing [chromophile]: success
 [2024-05-18 05:09:26] INFO root fetch - main [MainThread]: Store serial: [23264312]
+[2024-05-18 05:11:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264312]
+[2024-05-18 05:11:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 05:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chromophile
+[2024-05-18 05:11:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-httpfile
+[2024-05-18 05:11:36] INFO root fetch - processPackages [chromophile]: New version: [1.0.5] Old Version: [1.0.3]
+[2024-05-18 05:11:36] INFO root fetch - processPackages [python-httpfile]: New version: [0.0.1.1] Old Version: [0.0.1]
+[2024-05-18 05:11:36] INFO root fetch - processPackages [chromophile]: Downloading https://files.pythonhosted.org/packages/8a/35/8f8ed73bc5589656fa0d6b716ea6762079a3b449392307a12ed884ee3285/chromophile-1.0.3.tar.gz
+[2024-05-18 05:11:36] INFO root fetch - processPackages [python-httpfile]: Downloading https://files.pythonhosted.org/packages/04/42/b8dc9d6bb3d57d0464c436c465c81af4b811b1ae3e421a03caabee825c8f/python_httpfile-0.0.1.tar.gz
+[2024-05-18 05:11:36] INFO root fetch - processPackages [python-httpfile]: Downloading https://files.pythonhosted.org/packages/a4/37/0e1179ff6b5a1bb6850c819311cfb7df64e66f56f455f98d134f5a0cba53/python_httpfile-0.0.1.1.tar.gz
+[2024-05-18 05:11:36] INFO root fetch - processPackages [chromophile]: Downloading https://files.pythonhosted.org/packages/32/11/5948d48d79b966ff737ef1195ffe1571d31e9e658f3ecdc0b80ee17d5c63/chromophile-1.0.5.tar.gz
+[2024-05-18 05:11:36] INFO root fetch - processPackages [python-httpfile]: executing diffoscope
+[2024-05-18 05:11:36] INFO root fetch - processPackages [python-httpfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_httpfile-0.0.1.tar.gz tmp/python_httpfile-0.0.1.1.tar.gz --markdown 20240518/p/python-httpfile/0.0.1-0.0.1.1/README.md --exclude *.pyd
+[2024-05-18 05:11:36] INFO root fetch - processPackages [chromophile]: executing diffoscope
+[2024-05-18 05:11:36] INFO root fetch - processPackages [chromophile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromophile-1.0.3.tar.gz tmp/chromophile-1.0.5.tar.gz --markdown 20240518/c/chromophile/1.0.3-1.0.5/README.md --exclude *.pyd
+[2024-05-18 05:11:37] INFO root fetch - processPackages [python-httpfile]: Remove: archive file [/home/abi/fetcher/tmp/python_httpfile-0.0.1.tar.gz]
+[2024-05-18 05:11:37] INFO root fetch - processPackages [python-httpfile]: Remove: archive file [/home/abi/fetcher/tmp/python_httpfile-0.0.1.1.tar.gz]
+[2024-05-18 05:11:37] INFO root fetch - main [MainThread]: End processing [python-httpfile]: success
+[2024-05-18 05:11:37] INFO root fetch - processPackages [chromophile]: Remove: archive file [/home/abi/fetcher/tmp/chromophile-1.0.3.tar.gz]
+[2024-05-18 05:11:37] INFO root fetch - processPackages [chromophile]: Remove: archive file [/home/abi/fetcher/tmp/chromophile-1.0.5.tar.gz]
+[2024-05-18 05:11:37] INFO root fetch - main [MainThread]: End processing [chromophile]: success
+[2024-05-18 05:11:37] INFO root fetch - main [MainThread]: Store serial: [23264318]
