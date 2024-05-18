@@ -10066,3 +10066,42 @@
 [2024-05-18 07:41:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-payroll]: success
 [2024-05-18 07:41:32] INFO root fetch - main [MainThread]: End processing [odoo-addon-payroll]: success
 [2024-05-18 07:41:32] INFO root fetch - main [MainThread]: Store serial: [23265033]
+[2024-05-18 07:43:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265033]
+[2024-05-18 07:43:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-18 07:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-fastly
+[2024-05-18 07:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gbrl
+[2024-05-18 07:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonproficientz
+[2024-05-18 07:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dscdk-apigateway
+[2024-05-18 07:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dmk-packages
+[2024-05-18 07:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mojo-collections
+[2024-05-18 07:43:42] WARNING root fetch - processPackages [gbrl]: Skipping, unable to determine old version
+[2024-05-18 07:43:42] INFO root fetch - main [MainThread]: End processing [gbrl] error
+[2024-05-18 07:43:42] INFO root fetch - processPackages [pulumi-fastly]: New version: [8.8.0a1715970151] Old Version: [8.8.0a1715756624]
+[2024-05-18 07:43:42] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/dd/1e/61e61685d99b6e91247ed1f03ce7ae1cda92fc110e2443a6a39c01b0420c/pulumi_fastly-8.8.0a1715756624.tar.gz
+[2024-05-18 07:43:42] WARNING root fetch - processPackages [dscdk-apigateway]: Skipping, unable to determine old version
+[2024-05-18 07:43:42] INFO root fetch - main [MainThread]: End processing [dscdk-apigateway] error
+[2024-05-18 07:43:42] INFO root fetch - processPackages [dmk-packages]: New version: [0.7.2] Old Version: [0.7.0]
+[2024-05-18 07:43:42] WARNING root fetch - processPackages [nonproficientz]: Skipping, unable to determine old version
+[2024-05-18 07:43:42] INFO root fetch - main [MainThread]: End processing [nonproficientz] error
+[2024-05-18 07:43:42] INFO root fetch - processPackages [mojo-collections]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-05-18 07:43:42] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/2e/ec/68b5093ba256f9326f8cae7f8a972343398242c4947f7057547f43cc6b5d/pulumi_fastly-8.8.0a1715970151.tar.gz
+[2024-05-18 07:43:42] INFO root fetch - processPackages [dmk-packages]: Downloading https://files.pythonhosted.org/packages/74/fe/9df948db256445f2b2600e743130212eda29708eedb0eb3e283400f3dea6/dmk_packages-0.7.0.tar.gz
+[2024-05-18 07:43:42] INFO root fetch - processPackages [mojo-collections]: Downloading https://files.pythonhosted.org/packages/b7/e5/8f7936a14257a9fa6da21b4a67cbd0cd2c860d401ac6e1e1aa928b64ed04/mojo_collections-1.3.8.tar.gz
+[2024-05-18 07:43:42] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2024-05-18 07:43:42] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-8.8.0a1715756624.tar.gz tmp/pulumi_fastly-8.8.0a1715970151.tar.gz --markdown 20240518/p/pulumi-fastly/8.8.0a1715756624-8.8.0a1715970151/README.md --exclude *.pyd
+[2024-05-18 07:43:42] INFO root fetch - processPackages [dmk-packages]: Downloading https://files.pythonhosted.org/packages/83/a1/59538d611b1389bc988a6905950dfc0741a9cf82ebc4f5761c4a10224f12/dmk_packages-0.7.2.tar.gz
+[2024-05-18 07:43:42] INFO root fetch - processPackages [dmk-packages]: executing diffoscope
+[2024-05-18 07:43:42] INFO root fetch - processPackages [dmk-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dmk_packages-0.7.0.tar.gz tmp/dmk_packages-0.7.2.tar.gz --markdown 20240518/d/dmk-packages/0.7.0-0.7.2/README.md --exclude *.pyd
+[2024-05-18 07:43:42] INFO root fetch - processPackages [mojo-collections]: Downloading https://files.pythonhosted.org/packages/31/86/5ffc027a28589905ce0d6d6714764c5ea521b59c6b59bd73dc8df592f6d2/mojo_collections-1.3.9.tar.gz
+[2024-05-18 07:43:42] INFO root fetch - processPackages [mojo-collections]: executing diffoscope
+[2024-05-18 07:43:42] INFO root fetch - processPackages [mojo-collections]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_collections-1.3.8.tar.gz tmp/mojo_collections-1.3.9.tar.gz --markdown 20240518/m/mojo-collections/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-05-18 07:43:43] INFO root fetch - processPackages [dmk-packages]: Remove: archive file [/home/abi/fetcher/tmp/dmk_packages-0.7.0.tar.gz]
+[2024-05-18 07:43:43] INFO root fetch - processPackages [dmk-packages]: Remove: archive file [/home/abi/fetcher/tmp/dmk_packages-0.7.2.tar.gz]
+[2024-05-18 07:43:43] INFO root fetch - main [MainThread]: End processing [dmk-packages]: success
+[2024-05-18 07:43:43] INFO root fetch - processPackages [mojo-collections]: Remove: archive file [/home/abi/fetcher/tmp/mojo_collections-1.3.8.tar.gz]
+[2024-05-18 07:43:43] INFO root fetch - processPackages [mojo-collections]: Remove: archive file [/home/abi/fetcher/tmp/mojo_collections-1.3.9.tar.gz]
+[2024-05-18 07:43:43] INFO root fetch - main [MainThread]: End processing [mojo-collections]: success
+[2024-05-18 07:43:43] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.8.0a1715756624.tar.gz]
+[2024-05-18 07:43:43] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.8.0a1715970151.tar.gz]
+[2024-05-18 07:43:43] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2024-05-18 07:43:43] INFO root fetch - main [MainThread]: Store serial: [23265054]
