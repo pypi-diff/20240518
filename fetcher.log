@@ -10478,3 +10478,20 @@
 [2024-05-18 08:18:29] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240517.tar.gz]
 [2024-05-18 08:18:29] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2024-05-18 08:18:29] INFO root fetch - main [MainThread]: Store serial: [23265244]
+[2024-05-18 08:20:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265244]
+[2024-05-18 08:20:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 08:20:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DePTH
+[2024-05-18 08:20:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chainforge
+[2024-05-18 08:20:39] INFO root fetch - processPackages [DePTH]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-18 08:20:39] INFO root fetch - processPackages [chainforge]: New version: [0.3.2.0] Old Version: [0.3.1.9]
+[2024-05-18 08:20:39] INFO root fetch - processPackages [DePTH]: Downloading https://files.pythonhosted.org/packages/7d/e4/b1dcd33f84fd343b1c7d93b646f161308e6d29e20376a57db4112fad0f4d/depth-1.0.0.tar.gz
+[2024-05-18 08:20:39] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/52/6c/1ddf72de8162c7675fa2b96ada0f1cd0b308cb187cc78aa7b6105c93adfd/chainforge-0.3.1.9.tar.gz
+[2024-05-18 08:20:39] WARNING root fetch - processPackages [DePTH]: Skipping package: exceeds size limit 40517094>=10485760
+[2024-05-18 08:20:39] INFO root fetch - main [MainThread]: End processing [DePTH] error
+[2024-05-18 08:20:39] INFO root fetch - processPackages [chainforge]: Downloading https://files.pythonhosted.org/packages/e7/e7/d15c954c9cf9886da4fb3e7260a614e7610a8af0a8dac203aca414091b0c/chainforge-0.3.2.0.tar.gz
+[2024-05-18 08:20:40] INFO root fetch - processPackages [chainforge]: executing diffoscope
+[2024-05-18 08:20:40] INFO root fetch - processPackages [chainforge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainforge-0.3.1.9.tar.gz tmp/chainforge-0.3.2.0.tar.gz --markdown 20240518/c/chainforge/0.3.1.9-0.3.2.0/README.md --exclude *.pyd
+[2024-05-18 08:21:56] INFO root fetch - processPackages [chainforge]: Remove: archive file [/home/abi/fetcher/tmp/chainforge-0.3.1.9.tar.gz]
+[2024-05-18 08:21:56] INFO root fetch - processPackages [chainforge]: Remove: archive file [/home/abi/fetcher/tmp/chainforge-0.3.2.0.tar.gz]
+[2024-05-18 08:21:56] INFO root fetch - main [MainThread]: End processing [chainforge]: success
+[2024-05-18 08:21:56] INFO root fetch - main [MainThread]: Store serial: [23265249]
