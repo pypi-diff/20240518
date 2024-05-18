@@ -11366,3 +11366,24 @@
 [2024-05-18 09:31:55] INFO root fetch - processPackages [linkwiz]: Remove: archive file [/home/abi/fetcher/tmp/linkwiz-0.2.6.tar.gz]
 [2024-05-18 09:31:55] INFO root fetch - main [MainThread]: End processing [linkwiz]: success
 [2024-05-18 09:31:55] INFO root fetch - main [MainThread]: Store serial: [23265723]
+[2024-05-18 09:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23265723]
+[2024-05-18 09:34:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 09:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taskgen-ai
+[2024-05-18 09:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asktable
+[2024-05-18 09:34:05] INFO root fetch - processPackages [taskgen-ai]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-05-18 09:34:05] INFO root fetch - processPackages [taskgen-ai]: Downloading https://files.pythonhosted.org/packages/df/96/1ad3e218ce2ada115d19a27cc1094d9c6f2276d272ec8495e9949bf094c7/taskgen_ai-2.1.1.tar.gz
+[2024-05-18 09:34:05] INFO root fetch - processPackages [asktable]: New version: [0.14.3] Old Version: [0.14.2]
+[2024-05-18 09:34:05] INFO root fetch - processPackages [taskgen-ai]: Downloading https://files.pythonhosted.org/packages/62/db/c9c17dc0da52d0f85535428b725cb0fc8594b24ac713cc227c3c8d46977c/taskgen_ai-2.2.0.tar.gz
+[2024-05-18 09:34:05] INFO root fetch - processPackages [asktable]: Downloading https://files.pythonhosted.org/packages/b7/74/5017fce52c02643defa0bb4040b558abcb598508081f94c73bdf0defb1e0/asktable-0.14.2-py3-none-any.whl
+[2024-05-18 09:34:05] INFO root fetch - processPackages [taskgen-ai]: executing diffoscope
+[2024-05-18 09:34:05] INFO root fetch - processPackages [taskgen-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskgen_ai-2.1.1.tar.gz tmp/taskgen_ai-2.2.0.tar.gz --markdown 20240518/t/taskgen-ai/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-05-18 09:34:05] INFO root fetch - processPackages [asktable]: Downloading https://files.pythonhosted.org/packages/44/07/84dd725fd15a3c201293c487a0774378b79cf16ffa08862215b38947013d/asktable-0.14.3-py3-none-any.whl
+[2024-05-18 09:34:05] INFO root fetch - processPackages [asktable]: executing diffoscope
+[2024-05-18 09:34:05] INFO root fetch - processPackages [asktable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asktable-0.14.2-py3-none-any.whl.zip tmp/asktable-0.14.3-py3-none-any.whl.zip --markdown 20240518/a/asktable/0.14.2-0.14.3/README.md --exclude *.pyd
+[2024-05-18 09:34:06] INFO root fetch - processPackages [taskgen-ai]: Remove: archive file [/home/abi/fetcher/tmp/taskgen_ai-2.1.1.tar.gz]
+[2024-05-18 09:34:06] INFO root fetch - processPackages [taskgen-ai]: Remove: archive file [/home/abi/fetcher/tmp/taskgen_ai-2.2.0.tar.gz]
+[2024-05-18 09:34:06] INFO root fetch - main [MainThread]: End processing [taskgen-ai]: success
+[2024-05-18 09:34:06] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.14.2-py3-none-any.whl.zip]
+[2024-05-18 09:34:06] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.14.3-py3-none-any.whl.zip]
+[2024-05-18 09:34:06] INFO root fetch - main [MainThread]: End processing [asktable]: success
+[2024-05-18 09:34:06] INFO root fetch - main [MainThread]: Store serial: [23265728]
