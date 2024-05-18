@@ -9459,3 +9459,12 @@
 [2024-05-18 06:42:56] INFO root fetch - processPackages [TopDownHockey-Scraper]: Remove: archive file [/home/abi/fetcher/tmp/topdownhockey_scraper-3.2.3.tar.gz]
 [2024-05-18 06:42:56] INFO root fetch - main [MainThread]: End processing [TopDownHockey-Scraper]: success
 [2024-05-18 06:42:56] INFO root fetch - main [MainThread]: Store serial: [23264767]
+[2024-05-18 06:45:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23264767]
+[2024-05-18 06:45:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 06:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-sas
+[2024-05-18 06:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: footium-api
+[2024-05-18 06:45:06] WARNING root fetch - processPackages [torch-sas]: Skipping, unable to determine old version
+[2024-05-18 06:45:06] INFO root fetch - main [MainThread]: End processing [torch-sas] error
+[2024-05-18 06:45:06] WARNING root fetch - processPackages [footium-api]: Skipping, unable to determine old version
+[2024-05-18 06:45:06] INFO root fetch - main [MainThread]: End processing [footium-api] error
+[2024-05-18 06:45:06] INFO root fetch - main [MainThread]: Store serial: [23264774]
