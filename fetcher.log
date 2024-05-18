@@ -14472,3 +14472,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 13:51:27] INFO root fetch - processPackages [python-rapidjson]: Remove: archive file [/home/abi/fetcher/tmp/python-rapidjson-1.9.tar.gz]
 [2024-05-18 13:51:27] INFO root fetch - main [MainThread]: End processing [python-rapidjson]: success
 [2024-05-18 13:51:27] INFO root fetch - main [MainThread]: Store serial: [23267420]
+[2024-05-18 13:53:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267420]
+[2024-05-18 13:53:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-18 13:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deps-rocker
+[2024-05-18 13:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biliup
+[2024-05-18 13:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ergate
+[2024-05-18 13:53:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: distyll-info
+[2024-05-18 13:53:36] INFO root fetch - processPackages [deps-rocker]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-18 13:53:36] INFO root fetch - processPackages [deps-rocker]: Downloading https://files.pythonhosted.org/packages/99/64/d1291babe737b04245a83eed3091b3520f8245f4a516b18eb1f30a5331d5/deps_rocker-0.1.7.tar.gz
+[2024-05-18 13:53:36] WARNING root fetch - processPackages [ergate]: Skipping, unable to determine old version
+[2024-05-18 13:53:36] INFO root fetch - main [MainThread]: End processing [ergate] error
+[2024-05-18 13:53:36] INFO root fetch - processPackages [distyll-info]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-18 13:53:36] INFO root fetch - processPackages [biliup]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-18 13:53:36] INFO root fetch - processPackages [deps-rocker]: Downloading https://files.pythonhosted.org/packages/dd/12/287d3fba5d71707210db52b55695ee7e5dbb9c71450c286f74e535887165/deps_rocker-0.1.8.tar.gz
+[2024-05-18 13:53:36] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/33/26/87446b9e80024414938248abd6d5d23524d52b9a0e07980909695db33a0a/biliup-0.4.8.tar.gz
+[2024-05-18 13:53:36] INFO root fetch - processPackages [deps-rocker]: executing diffoscope
+[2024-05-18 13:53:36] INFO root fetch - processPackages [deps-rocker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deps_rocker-0.1.7.tar.gz tmp/deps_rocker-0.1.8.tar.gz --markdown 20240518/d/deps-rocker/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-18 13:53:36] INFO root fetch - processPackages [distyll-info]: Downloading https://files.pythonhosted.org/packages/87/aa/812379e6f0aff454c1390325f7139a421533c4da3d190b6f3ec8187bc269/distyll_info-0.2.2.tar.gz
+[2024-05-18 13:53:37] INFO root fetch - processPackages [distyll-info]: Downloading https://files.pythonhosted.org/packages/cd/ad/90b43970beb4d0ce52540b97e1b307cf20e2f925244d101062280d670036/distyll_info-0.2.3.tar.gz
+[2024-05-18 13:53:37] INFO root fetch - processPackages [distyll-info]: executing diffoscope
+[2024-05-18 13:53:37] INFO root fetch - processPackages [distyll-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/distyll_info-0.2.2.tar.gz tmp/distyll_info-0.2.3.tar.gz --markdown 20240518/d/distyll-info/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-18 13:53:37] INFO root fetch - processPackages [biliup]: Downloading https://files.pythonhosted.org/packages/ca/50/28c81627954370eeba7075b44c9ef20597ed8f140a1390c814dd976e6c70/biliup-0.4.9.tar.gz
+[2024-05-18 13:53:37] INFO root fetch - processPackages [deps-rocker]: Remove: archive file [/home/abi/fetcher/tmp/deps_rocker-0.1.7.tar.gz]
+[2024-05-18 13:53:37] INFO root fetch - processPackages [deps-rocker]: Remove: archive file [/home/abi/fetcher/tmp/deps_rocker-0.1.8.tar.gz]
+[2024-05-18 13:53:37] INFO root fetch - main [MainThread]: End processing [deps-rocker]: success
+[2024-05-18 13:53:37] INFO root fetch - processPackages [distyll-info]: Remove: archive file [/home/abi/fetcher/tmp/distyll_info-0.2.2.tar.gz]
+[2024-05-18 13:53:37] INFO root fetch - processPackages [distyll-info]: Remove: archive file [/home/abi/fetcher/tmp/distyll_info-0.2.3.tar.gz]
+[2024-05-18 13:53:37] INFO root fetch - main [MainThread]: End processing [distyll-info]: success
+[2024-05-18 13:53:39] INFO root fetch - processPackages [biliup]: executing diffoscope
+[2024-05-18 13:53:39] INFO root fetch - processPackages [biliup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biliup-0.4.8.tar.gz tmp/biliup-0.4.9.tar.gz --markdown 20240518/b/biliup/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-18 13:53:39] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.8.tar.gz]
+[2024-05-18 13:53:39] INFO root fetch - processPackages [biliup]: Remove: archive file [/home/abi/fetcher/tmp/biliup-0.4.9.tar.gz]
+[2024-05-18 13:53:39] INFO root fetch - main [MainThread]: End processing [biliup]: success
+[2024-05-18 13:53:39] INFO root fetch - main [MainThread]: Store serial: [23267434]
