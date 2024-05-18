@@ -15019,3 +15019,20 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-05-18 14:37:16] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.3rc0.tar.gz]
 [2024-05-18 14:37:16] INFO root fetch - main [MainThread]: End processing [dalpha]: success
 [2024-05-18 14:37:16] INFO root fetch - main [MainThread]: Store serial: [23267681]
+[2024-05-18 14:39:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23267681]
+[2024-05-18 14:39:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-18 14:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2024-05-18 14:39:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: photobooth-app
+[2024-05-18 14:39:25] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-05-18 14:39:25] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-05-18 14:39:26] INFO root fetch - processPackages [photobooth-app]: New version: [3.0a3] Old Version: [3.0a2]
+[2024-05-18 14:39:26] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-05-18 14:39:26] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-05-18 14:39:26] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240518:/home/abi/fetcher/20240518:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240518/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/README.md --exclude *.pyd
+[2024-05-18 14:39:26] INFO root fetch - processPackages [photobooth-app]: Downloading https://files.pythonhosted.org/packages/ba/1e/ccd0293b3d2d5964cda37fa9e4ab23412b1d1fccc173979d2644cdc722fa/photobooth_app-3.0a2.tar.gz
+[2024-05-18 14:39:26] WARNING root fetch - processPackages [photobooth-app]: Skipping package: exceeds size limit 53727626>=10485760
+[2024-05-18 14:39:26] INFO root fetch - main [MainThread]: End processing [photobooth-app] error
+[2024-05-18 14:39:27] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-05-18 14:39:27] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-05-18 14:39:27] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-05-18 14:39:27] INFO root fetch - main [MainThread]: Store serial: [23267692]
